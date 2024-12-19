@@ -1,51 +1,68 @@
 site_name: 'GPT 101'
 site_description: 'Documentation for Prompt Engineering 101 Workshop'
-site_author: 'University of Arizona Data Sciences Institute'
-site_url: https://ua-data7.github.io/introllms
+site_author: 'University of Arizona Institute for Computation & Data-enabled Insight'
+site_url: https://tyson-swetnam.github.io/intro-gpt
 
 # Repository
-repo_name: introllms
-repo_url: https://github.com/ua-data7/introllms
+repo_name: intro-gpt
+repo_url: https://github.com/tyson-swetnam/intro-gpt
 edit_uri: edit/main/docs/
 # Copyright
-copyright: 'Copyright &copy; 2023 University of Arizona Data Science Institute'
+copyright: 'Copyright &copy; 2025 University of Arizona Institute for Computation & Data-enabled Insight'
 
 # Page tree
 nav:
   - Home: index.md
   - Workshop Agenda: agenda.md
   - Getting Started:
-    - ChatGPT: chatgpt.md
-    - Bing: bing.md  
-    - Bard: bard.md  
   - Prompt Engineering: 
-    - Basic Prompt Enginering: chatgpt_prompts.md
+    - Writing Prompts: prompts.md
     - Daily Productivity: daily-productivity.md
   - Education:
-    - Teaching & Mentoring: education.md
-  - Plugins:
-    - Plugins: plugins.md
+    - Teaching: teaching.md
+    - Tutoring: tutoring.md
   - Research:
     - AI Landscape: ai_landscape.md
-    - Coding with CoPilot: github_copilot.md
-    - OpenAI extensions: openai_extensions.md
-    - HuggingFace: 
-      - Models: huggingface_models.md
-      - Datasets: huggingface_datasets.md
-      - Gradio: huggingface_gradio.md  
+    - GitHub Copilot: github_copilot.md
+    - OpenAI Playground: openai_extensions.md
   - Ethics:
     - Ethics: ethics.md
+
 # Configuration
-imgwidth: 70px;
+
 theme:
-  highlightjs: true
-  name: material
+  name: 'material'
+  custom_dir: material/overrides
+  # 404 page
+  static_templates:
+    - 404.html
+  # Don't include MkDocs' JavaScript
+  include_search_page: false
+  search_index_only: true
+  # Default values, taken from mkdocs_theme.yml
+  language: en
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: home 
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
   font:
-    text: 'Open Sans'
-    code: 'Roboto Mono'
-  logo: 'assets/uarizona.png'
-  favicon: 'assets/favicon.ico'
-# setting features for the navigation tab
+    text: Montserrat
+    code: Regular
   features:
     - navigation.instant
     - navigation.tracking
@@ -53,41 +70,37 @@ theme:
     - navigation.tabs.sticky
     - navigation.indexes
     - navigation.top
-    - toc.integrate
-    - toc.follow
-    - content.code.copy
-  # Default values, taken from mkdocs_theme.yml
-  language: en
-  # custom_dir: 'overrides'
-  palette:
-    # Palette toggle for light mode
-    - media: "(prefers-color-scheme: white)"
-      primary: 'white'
-      toggle:
-        icon: material/weather-night
-        name: Switch to dark mode
-
-    # Palette toggle for dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      toggle:
-        icon: material/weather-sunny
-        name: Switch to system preference
+  favicon: 'assets/ua.ico'
+  logo: 'assets/ua.png'
 
 # Options
 extra:
   social:
+    - icon: fontawesome/brands/orcid
+      link: https://orcid.org/0000-0002-6639-7181
+    - icon: simple/googlescholar  
+      link: https://scholar.google.com/citations?user=nanIeAYAAAAJ&hl=en
     - icon: fontawesome/brands/github
-      link: https://github.com/ua-data7/
- 
+      link: https://github.com/tyson-swetnam/
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/tswetnam
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/tyson-swetnam
+    - icon: fontawesome/brands/docker
+      link: https://hub.docker.com/u/tswetnam
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/channel/UC5xPt9KZHccC0ehMNEkINzQ
+  analytics:
+    provider: google
+    property: G-NYETZFD8DN
+  
 # Extensions
 markdown_extensions:
-  - admonition
   - abbr
+  - admonition
   - attr_list
   - def_list
   - footnotes
-  - meta
   - md_in_html
   - toc:
       permalink: true
@@ -96,18 +109,16 @@ markdown_extensions:
   - pymdownx.betterem:
       smart_enable: all
   - pymdownx.caret
-  - pymdownx.critic
   - pymdownx.details
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
-  - pymdownx.highlight
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.keys
-  - pymdownx.magiclink:
-      repo_url_shorthand: true
-      user: squidfunk
-      repo: mkdocs-material
   - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.superfences:
@@ -115,7 +126,12 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
-  - pymdownx.tabbed
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
@@ -124,9 +140,15 @@ extra_css:
   - stylesheets/extra.css
  
 plugins:
+    - blog:
+        blog_dir: ./blog
+        post_date_format: full
+        archive: false
+        archive_name: archive
+        archive_url_format: "archive/{date}"
+        archive_date_format: MMMM yyyy
+        archive_toc: true
+        post_url_format: "{date}/{slug}"
     - search
     - mkdocstrings
     - git-revision-date
-    - mkdocs-jupyter:
-          include_source: True
-          ignore_h1_titles: True
