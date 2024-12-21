@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block extrahead %}
+  <link rel="stylesheet" href="{{ 'assets/stylesheets/custom.7c86dd97.min.css' | url }}">
+{% endblock %}
+{% block announce %}
+  <div id="announcement" class="announcement">
+    For updates connect with <strong>tyson-tswetnam</strong> on
+    <a href="https://www.linkedin.com/in/tyson-swetnam/">
+      <span class="twemoji linkedin">
+        {% include ".icons/fontawesome/brands/linkedin.svg" %}
+      </span>
+      <strong>LinkedIn</strong>
+    </a>
+    <button id="close-announcement" class="close-button" aria-label="Close">&times;</button>
+  </div>
+{% endblock %}
+{% block scripts %}
+  {{ super() }}
+  <script src="{{ 'assets/javascripts/custom.4e50d00f.min.js' | url }}"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var closeBtn = document.getElementById('close-announcement');
+      var announcement = document.getElementById('announcement');
+      closeBtn.addEventListener('click', function() {
+        announcement.style.display = 'none';
+      });
+    });
+  </script>
+{% endblock %}

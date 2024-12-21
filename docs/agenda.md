@@ -6,19 +6,17 @@
 
 ### Date 
 
-2023-08-15 09:00 AM - 16:00 PM Pacific Daylight Time
+TBA 09:00 AM - 16:00 PM Pacific Daylight Time
 
 ### Location 
 
-**[ENR 2 Building](https://goo.gl/maps/W36U2fKksCMfYqg38){target=_blank}  Classroom # 225**
+**[TBA](https://maps.app.goo.gl/inT43RrY73w84Tzz7){target=_blank}  Classroom # TBA**
 
 No food or drinks inside the classrooms, please.
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3375.096855617267!2d-110.95787922395212!3d32.228558473897614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86d67101744a05dd%3A0xd83a65c45dc91119!2sEnvironment%20and%20Natural%20Resources%202%20Building!5e0!3m2!1sen!2sus!4v1691096773186!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3374.760767611586!2d-110.94968017435951!3d32.23760742389371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86d671a883fe0cfb%3A0xe159a4ee267fc6f8!2sBIO5%20Institute!5e0!3m2!1sen!2sus!4v1734803710834!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 #### Instructors(s): 
-
-[Andrew Bennett PhD](http://arbennett.github.io/){target=_blank} [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-7742-3138){target=_blank}
 
 [Michele Cosi](https://cosimichele.github.io/){target=_blank} [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0001-7609-1939){target=_blank}
 
@@ -37,15 +35,15 @@ This website follows the [FAIR](https://www.go-fair.org/fair-principles/){target
 | :fontawesome-solid-hourglass-half: | Lessons | Instructor | Link |
 |------------------------------------|---------|------------|------|
 | 09:00 | Introductions & [Code of Conduct](#code-of-conduct) | Tyson | [presentation](https://docs.google.com/presentation/d/1PzPafN5Yznf8jdgpquPAaN0TmYC9WJwvPxM_I2LPwFo/edit?usp=sharing){target=_blank} |
-| 09:10 | [Session 1: Introduction to Large Language Models](https://github.com/clizarraga-UAD7/DeepLearning/wiki/Introduction-to-LLMs) | Carlos | 
-| 09:30| [Session 2: Prompt Engineering](chatgpt_prompts.md#simple-openai-prompt-writing) |  Jeff 
+| 09:10 | [Session 1: AI Landscape](ai_landscape.md) | Tyson | 
+| 09:30| [Session 2: ChatGPT](chatgpt.md) |  Jeff 
 | 10:00 | Break |  |
-| 10:10 | [Session 3: Prompt Engineering Continued & Open Mic](daily-productivity.md) | Michele & Tyson  |
+| 10:10 | [Session 3: Prompt Engineering Continued](daily-productivity.md) | Michele & Tyson  |
 | 11:00 | Lunch |  |  
 | 12:00 | [Session 4: Plugins & Code Interpreter](plugins.md) | Jeff | 
-| 12:30 | Session 5: CoPilot & VSCode | Andrew |
+| 12:30 | [Session 5: CoPilot](copilot.md) | Tyson |
 | 13:00 | Break |  
-| 13:10 | Session 6: Hugging Face & Gradio | Tyson
+| 13:10 | [Session 6: Hugging Face](huggingface.md) | Tyson
 | 13:50 | Open Mic & Discussion|  |
 | 14:00 - ? | Hackathon |  
 

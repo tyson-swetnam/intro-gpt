@@ -14,7 +14,6 @@ copyright: 'Copyright &copy; 2025 University of Arizona Institute for Computatio
 nav:
   - Home: index.md
   - Workshop Agenda: agenda.md
-  - Getting Started:
   - Prompt Engineering: 
     - Writing Prompts: prompts.md
     - Daily Productivity: daily-productivity.md
