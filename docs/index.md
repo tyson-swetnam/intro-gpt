@@ -8,7 +8,7 @@
 
 Welcome to our workshop on generative AI, and prompt engineering for academic research and education. Generative AI are now deeply integrated into how we work, conduct research, learn, and teach. 
 
-This workshop will equip you with the basic skills to effectively utilize these powerful tools, focusing on the art of crafting "prompts" — the instructions that guide AI models — and exploring how to integrate AI into your workflows.
+This workshop will equip you with the basic skills to effectively utilize these powerful tools, focusing on the art of crafting "prompts" — the instructions that guide AI models — and exploring how to integrate AI into your daily work.
 
 !!! Success "Learning Objectives"
 
@@ -18,17 +18,17 @@ This workshop will equip you with the basic skills to effectively utilize these 
     *   Create effective prompts for leading AI models like Gemini, ChatGPT, Copilot, Claude, and others.
     *   Understand how and when to integrate AI assistants into your daily work, teaching, and research.
 
-## Getting Started
+## Getting Started :material-run-fast:
 
-These platforms will be the primary tools used during the workshop.
+These platforms will be the primary tools used during the workshop, info on account creation here:
 
-:material-run-fast: Getting Started with [:simple-openai: ChatGPT](chatgpt.md)
+:material-run-fast: [:simple-openai: ChatGPT](chatgpt.md)
 
-:material-run-fast: Getting Started with [:simple-google: Gemini](gemini.md)
+:material-run-fast: [:simple-google: Gemini](gemini.md)
 
-:material-run-fast: Getting Started with [:material-microsoft-copilot: Microsoft Copilot](copilot.md)
+:material-run-fast: [:simple-githubcopilot: Microsoft Copilot](copilot.md)
 
-:material-run-fast: Getting Started with [:simple-anthropic: Claude](claude.md)
+:material-run-fast: [:simple-anthropic: Claude](claude.md)
 
 ## General Productivity
 

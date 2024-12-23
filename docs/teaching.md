@@ -3,17 +3,21 @@
 <img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png" width="128">  
 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
-Are you thinking about integrating ChatGPT and OpenAI into your coursework?
+**Have you integrated AI into your coursework yet?**
 
-There is already a large list of potential uses for ChatGPT in higher education.
+Making the decision to incorporate an AI into your education strategy, student assessment, and grading is no easy task.
+
+An important fact to consider is that [*most* of your students are already making use of AI for their assignments and study.](https://www.gse.harvard.edu/ideas/usable-knowledge/24/09/students-are-using-ai-already-heres-what-they-think-adults-should-know){target=_blank} (ref: [:fontawesome-regular-file-pdf: Source](https://digitalthriving.gse.harvard.edu/wp-content/uploads/2024/06/Teen-and-Young-Adult-Perspectives-on-Generative-AI.pdf){target=_blank} ).
 
 Read about [:simple-openai: OpenAI Educator Considerations](https://platform.openai.com/docs/chatgpt-education/educator-considerations-for-chatgpt){target=_blank}
 
-ChatGPT's `GPT-3.5-turbo` and `GPT-4` models can compose essays and pass advanced knowledge assessments [(OpenAI :simple-arxiv:)](https://doi.org/10.48550/arXiv.2303.08774){target=_blank}.  Online education, a recent and lucrative innovation in academia, now faces challenges regarding effective remote student assessment [(Susnjak :simple-arxiv:)](https://doi.org/10.48550/arXiv.2212.09292){target=_blank}. 
+ChatGPT's models can compose essays and pass advanced knowledge assessments [(OpenAI :simple-arxiv:)](https://doi.org/10.48550/arXiv.2303.08774){target=_blank}.  Online education, a recent and lucrative innovation in academia, now faces challenges regarding effective remote student assessment [(Susnjak :simple-arxiv:)](https://doi.org/10.48550/arXiv.2212.09292){target=_blank}. 
 
 Attempting to modify coursework to avoid assessment techniques where ChatGPT excels or using [bots to detect ChatGPT generated content](https://platform.openai.com/ai-text-classifier){target=_blank} may prove to be futile. Instead of engaging in a cheating arms race, why not embrace ChatGPT and other AI frameworks?
 
-Proponents of integrating ChatGPT into educational curricula [(:simple-newyorktimes:)](https://www.nytimes.com/2023/01/12/technology/chatgpt-schools-teachers.html){target=_blank} argue that by adapting and integrating ChatGPT into the curriculum, we can develop a modern workforce empowered by AI assistants. I find myself aligned with this perspective (as does my AI text editor, ChatGPT-4).
+Proponents of integrating ChatGPT into educational curricula [(:simple-newyorktimes:)](https://www.nytimes.com/2023/01/12/technology/chatgpt-schools-teachers.html){target=_blank} argue that by adapting and integrating ChatGPT into the curriculum, we can develop a modern workforce empowered by AI assistants.
+
+**Disclosure: Most of the material on this website was copy edited or originated based on suggestions made by ChatGPT and Gemini**
 
 !!! Info "Teaching with ChatGPT"
 
@@ -26,6 +30,21 @@ Proponents of integrating ChatGPT into educational curricula [(:simple-newyorkti
     [AI in the Classroom by Greylock Podcast](https://greylock.com/greymatter/ai-in-the-classroom/){target=_blank}
 
     [How to handle AI in Schools by CommonSense.org](https://www.commonsense.org/education/articles/chatgpt-and-beyond-how-to-handle-ai-in-schools){target=_blank}
+
+??? Tip "Pro vs Cons of AI in Economics Classrooms"
+
+    At the 2024 EconEd conference Professor Justin Wolfers examined how AI is revolutionizing economics education by enhancing student learning and easing educators' workloads. In response, Professor Jon Meer discussed how educators are navigating AI integration in the classroom. Meer’s session provides a practical and valuable roadmap for effective implementation.
+
+    [https://www.macmillanlearning.com/college/us/events/econed](https://www.macmillanlearning.com/college/us/events/econed){target=_blank} 
+
+    Justin's Pros presentation: [https://www.youtube.com/watch?v=sTeOLgMN4UM](https://www.youtube.com/watch?v=sTeOLgMN4UM){target=_blank}
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/sTeOLgMN4UM?si=wuVujujwUz57-Vnv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    Jon's Cons presentation: [https://www.youtube.com/watch?v=NXbEvLd1vVk](https://www.youtube.com/watch?v=NXbEvLd1vVk){target=_blank}
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/NXbEvLd1vVk?si=kfkw-Jpg-LQP7swq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 ## Guiding Graduate Students and Postdoctoral Researchers in AI Usage
 
@@ -53,7 +72,7 @@ By incorporating AI into graduate and postdoctoral training while maintaining a 
 
 We strongly encourage faculty and research teams to explore how they can incorporate LLMs like GPT-4 into their daily work in the context of developing their own [Research Objects](https://doi.org/10.1038/npre.2010.4626.1){target=_blank}.
 
-## Using ChatGPT/Bard as a Study Buddy
+## Using ChatGPT/Gemini as a Study Buddy
 
 | Type | Prompt example |
 | :-- | :-- |
@@ -71,9 +90,9 @@ We strongly encourage faculty and research teams to explore how they can incorpo
 | Vocabulary building  | `What does 'aimer' mean in French and what is the antonym?` |
 | Conversation practice | `Engage me in a conversation in French (I'm a beginner)` |
 
-## ChatGPT and Bard used in academic and essay writing
+## Prompting in academic writing
 
-Both ChatGPT/Bard can help you with the following tasks:
+Chatbots excel at:
 
 1. _Summarization_: Can provide brief overviews of lengthy articles, helping to summarize their content.
 
@@ -87,36 +106,32 @@ The topic explanation includes:
 
 2. _Examples_: Can provide examples of how a particular concept or idea can be applied in different scenarios, offering practical illustrations.
 
-3. _Explanation of complex concepts_: If you struggle to understand a specific concept, you can ask a related question, and ChatGPT/Bard will explain it in simpler terms, breaking down complex ideas into more easily understandable language.
+3. _Explanation of complex concepts_: If you struggle to understand a specific concept, you can ask a related question, and ChatGPT/Gemini will explain it in simpler terms, breaking down complex ideas into more easily understandable language.
 
-A variety of commands makes ChatGPT/Bard a flexible tool that can contribute to your academic writing or other assignments. Basic commands include _‘define’_, _‘compare’_, _‘describe’_, _‘calculate’_, and _‘summarize’_ ─ you can try to type in your detailed request and then iterate adjusting your commands based on the answer the chatbot provides.
+A variety of commands makes ChatGPT/Gemini a flexible tool that can contribute to your academic writing or other assignments. Basic commands include _‘define’_, _‘compare’_, _‘describe’_, _‘calculate’_, and _‘summarize’_ ─ you can try to type in your detailed request and then iterate adjusting your commands based on the answer the chatbot provides.
 
 ***
 
-## Teaching and learning with ChatGPT and Bard
+## Teaching and learning with Chatbots
 
-[ChatGPT](https://chat.openai.com/) and [Bard](https://bard.google.com/) can improve teaching and learning processes by generating and
- assessing information and can be used as a standalone tool or 
-integrated into other systems. It can perform simple or technical tasks 
-and examples show how it can augment teaching and learning.
+[ChatGPT](https://chat.openai.com/) and [Gemini](https://gemini.google.com/) can improve teaching and learning processes by generating and assessing information and can be used as a standalone tool or  integrated into other systems. It can perform simple or technical tasks and examples show how it can augment teaching and learning.
 
 | Role playing | Description | Example of implementation |
 | :-- | :-- | :-- |
-| **Possibility engine** | AI can suggest alternative ways to express an idea | Students can write queries in ChatGPT/Bard and use the "Regenerate" response function to explore alternative responses. |
-| **Socratic opponent** | AI can act as an opponent to develop an argument | Students can enter prompts into ChatGPT/Bard, using the  structure of a conversation or debate. Teachers can ask their students  to use ChatGPT/Bard to prepare for discussions. |
-| **Collaboration coach** | AI helps groups to research and solve problems together | When completing tasks and assignments, students can use ChatGPT/Bard to find information while working in groups. | 
-| **Guide on the side** | AI acts as a guide to navigating physical and conceptual spaces | Teachers use ChatGPT/Bard to generate content for their  classes or courses, such as discussion questions, and to seek advice on  how to support students in learning specific concepts. |
-| **Personal tutor** | AI tutors each student and gives immediate feedback on progress | ChatGPT/Bard provides personalized feedback to students based on information provided by students or teachers (e.g., test scores). |
-| **Co-designer** | AI assists throughout the design process | Teachers can seek ideas from ChatGPT/Bard for designing or  updating a curriculum, including rubrics for assessment. Alternatively,  they can focus on specific goals, such as making the curriculum more  accessible. ChatGPT can provide recommendations and suggestions to help  achieve these objectives. |
-| **Exploratorium**  | AI provides tools to play with, explore, and interpret data | Teachers provide basic information to students who  write different queries in ChatGPT to find out more. ChatGPT/Bard can be used  to support language learning. |
-| **Study buddy** | AI helps the student reflect on learning material | Students explain their current level of understanding  to ChatGPT/Bard and ask for ways to help them study the material. ChatGPT/Bard  could also be used to help students prepare for other tasks (e.g., job  interviews). |
-| **Motivator** | AI offers games and challenges to extend learning | Teachers or students ask ChatGPT/Bard for ideas about how to  extend students’ learning after providing a summary of the current  level of knowledge (e.g., quizzes, exercises). |
-| **Dynamic assessment** | AI provides educators with a profile of each student’s current knowledge | Students engage in a tutorial-style dialogue with  ChatGPT/Bard, and then request that ChatGPT/Bard create a summary of their current  knowledge for sharing with their teacher or for assessment purposes. |
+| **Possibility engine** | AI can suggest alternative ways to express an idea | Students can write queries in ChatGPT/Gemini and use the "Regenerate" response function to explore alternative responses. |
+| **Socratic opponent** | AI can act as an opponent to develop an argument | Students can enter prompts into ChatGPT/Gemini, using the  structure of a conversation or debate. Teachers can ask their students  to use ChatGPT/Gemini to prepare for discussions. |
+| **Collaboration coach** | AI helps groups to research and solve problems together | When completing tasks and assignments, students can use ChatGPT/Gemini to find information while working in groups. | 
+| **Guide on the side** | AI acts as a guide to navigating physical and conceptual spaces | Teachers use ChatGPT/Gemini to generate content for their  classes or courses, such as discussion questions, and to seek advice on  how to support students in learning specific concepts. |
+| **Personal tutor** | AI tutors each student and gives immediate feedback on progress | ChatGPT/Gemini provides personalized feedback to students based on information provided by students or teachers (e.g., test scores). |
+| **Co-designer** | AI assists throughout the design process | Teachers can seek ideas from ChatGPT/Gemini for designing or  updating a curriculum, including rubrics for assessment. Alternatively,  they can focus on specific goals, such as making the curriculum more  accessible. ChatGPT can provide recommendations and suggestions to help  achieve these objectives. |
+| **Exploratorium**  | AI provides tools to play with, explore, and interpret data | Teachers provide basic information to students who  write different queries in ChatGPT to find out more. ChatGPT/Gemini can be used  to support language learning. |
+| **Study buddy** | AI helps the student reflect on learning material | Students explain their current level of understanding  to ChatGPT/Gemini and ask for ways to help them study the material. ChatGPT/Gemini  could also be used to help students prepare for other tasks (e.g., job  interviews). |
+| **Motivator** | AI offers games and challenges to extend learning | Teachers or students ask ChatGPT/Gemini for ideas about how to  extend students’ learning after providing a summary of the current  level of knowledge (e.g., quizzes, exercises). |
+| **Dynamic assessment** | AI provides educators with a profile of each student’s current knowledge | Students engage in a tutorial-style dialogue with  ChatGPT/Gemini, and then request that ChatGPT/Gemini create a summary of their current  knowledge for sharing with their teacher or for assessment purposes. |
 
-## Use of ChatGPT and Bard to support teachers
+## Use of ChatGPT to support teachers
 
-[ChatGPT 3.5](https://chat.openai.com/) is an AI chatbot that has been available since November 
-2022. It has the potential to revolutionize education systems, but it's 
+It has the potential to revolutionize education systems, but it's 
 also a threat. Some people have tried to ban ChatGPT in schools, while 
 others believe it's the "silver bullet" solution to many education 
 challenges around the world. The exact impact of the chatbot on the 
@@ -124,22 +139,22 @@ sector is unclear.
 
 Skeptics say chatbots harm learning, but they disrupt traditional 
 tools like essay writing. With a shortage of 69 million teachers 
-worldwide, could ChatGPT or Bard supplement or replace them? The launch of 
-ChatGPT and Bard show potential to replace some human tasks. Are teachers an 
+worldwide, could ChatGPT or Gemini supplement or replace them? The launch of 
+Chatbots show potential to replace some human tasks. Are teachers an 
 exception? Can chatbots complete tasks currently done by teachers? What 
-are the risks? How can teachers use ChatGPT and Bard to improve their practice 
+are the risks? How can teachers use Chatbots to improve their practice 
 and efficiency?
 
-## Opportunities of using ChatGPT and Bard as a learning tool
+## Opportunities of using Chatbots as a learning tool
 
 * **Enhance lessons**. In low- and middle-income 
 countries, teachers face the challenge of making a dense curriculum 
-engaging. To help with this, ChatGPT/Bard can translate learning objectives 
+engaging. To help with this, ChatGPT/Gemini can translate learning objectives 
 into lesson plans, offer ideas for class preparation, and aid in 
-creating new assignments and assessments. However, ChatGPT/Bard does not 
+creating new assignments and assessments. However, ChatGPT/Gemini does not 
 assist with delivery, so teachers must still have strong teaching skills
  to ensure quality lessons.
-* **Create assessment questions**. ChatGPT/Bard can help 
+* **Create assessment questions**. ChatGPT/Gemini can help 
 teachers improve assessment questions and generate multiple-choice 
 items. It can also encourage higher-order thinking skills by providing 
 prompts for essay questions and practical tasks. By using different 
@@ -155,7 +170,7 @@ teachers' language proficiency, enabling them to teach better in both
 their native and a foreign language. Tools like [Duolingo](https://www.duolingo.com/) and ChatGPT 
 reportedly provide affordable, accessible, and highly personalized 
 language lessons.
-* **Provide additional support to students**. ChatGPT/Bard can
+* **Provide additional support to students**. ChatGPT/Gemini can
  be used by teachers to encourage student curiosity and generate ideas 
 for homework assignments. AI tools are particularly helpful in 
 identifying the source information used in the chats. However, there is a
@@ -166,7 +181,7 @@ privacy risks, bias, and hallucination. Furthermore, teachers should
 focus on questions that cannot be answered by ChatGPT, such as those 
 that require knowledge outside of the chatbot's training data, such as 
 human emotions or subjective perspectives.
-* **Grading assessment and papers**. ChatGPT/Bard can be used 
+* **Grading assessment and papers**. ChatGPT/Gemini can be used 
 to automatically grade multiple-choice/one-answer tests; it can also 
 help teachers with standards-based grading.  This has potential 
 unintended consequences for low accuracy, poor grading, or false positive
@@ -179,7 +194,7 @@ transparency of their algorithms whenever needed.
 
 ## More Resources on Education
 
-* [Using ChatGPT and Bard in Higher Education Teaching Environments](https://github.com/clizarraga-UAD7/MLWorkshops/wiki/Using-ChatGPT-and-Bard-in-Higher-Education) | [Presentation](https://tinyurl.com/UAD7ChatGPT-HE). 
+* [Using Chatbots in Higher Education Teaching Environments](https://github.com/clizarraga-UAD7/MLWorkshops/wiki/Using-ChatGPT-and-Gemini-in-Higher-Education) | [Presentation](https://tinyurl.com/UAD7ChatGPT-HE). 
 * [Prompt Engineering Basics for Education](https://github.com/clizarraga-UAD7/MLWorkshops/wiki/Prompt-Engineering-Basics)
 * [AI Tools Landscape](https://github.com/ua-data7/LearningResources/wiki/AI-Tools-Landscape)
 * [AIPRM’s Ultimate Generative AI Glossary](https://www.aiprm.com/ai-glossary/) (STEM Club Fuller Library collaboration).
@@ -193,9 +208,9 @@ transparency of their algorithms whenever needed.
 * [ChatGPT for Studying: How to use the AI-powered chatbot to learn anything you want](https://www.studysmarter.co.uk/magazine/chatgpt-for-studying/). StudySmarter.
 * [Learn Prompting](https://learnprompting.org/docs/intro). 
 * [Prompt Engineering Guide](https://www.promptingguide.ai/).
-* [The Prompt's The Thing: An Essential Guide to Google Bard](https://spyscape.com/article/bing-prompt-guide). Skyscape.
+* [The Prompt's The Thing: An Essential Guide to Google Gemini](https://spyscape.com/article/bing-prompt-guide). Skyscape.
 * [100+ Creative ideas to use AI in education](https://docs.google.com/presentation/d/1wVgLWgeEvJm3fznlm0aV8ZiuWsW3o3aUQUCcvuM5vxQ/edit#slide=id.p). Sandra Abegglen, Marianna Karatsiori and Antonio Martinez-Arboleda.
-* [200+ Best Bard AI prompts you can't miss - ChatGPT compatible](https://tipseason.com/bard-prompts-for-everyone/). TipSeason.
+* [200+ Best Gemini AI prompts you can't miss - ChatGPT compatible](https://tipseason.com/Gemini-prompts-for-everyone/). TipSeason.
 
 ***
 
