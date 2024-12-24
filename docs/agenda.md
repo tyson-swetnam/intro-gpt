@@ -1,4 +1,4 @@
-# 8/15/2023 Workshop Agenda
+# TBD 2025 Workshop Agenda
 
 ![banner](assets/banner3_ai.png){width=1000}
 
@@ -36,9 +36,9 @@ This website follows the [FAIR](https://www.go-fair.org/fair-principles/){target
 |------------------------------------|---------|------------|------|
 | 09:00 | Introductions & [Code of Conduct](#code-of-conduct) | Tyson | [presentation](https://docs.google.com/presentation/d/1PzPafN5Yznf8jdgpquPAaN0TmYC9WJwvPxM_I2LPwFo/edit?usp=sharing){target=_blank} |
 | 09:10 | [Session 1: AI Landscape](ai_landscape.md) | Tyson | 
-| 09:30| [Session 2: ChatGPT](chatgpt.md) |  Jeff 
+| 09:30| Session 2: What is [ChatGPT](chatgpt.md) and [Gemini](gemini.md)? |  Jeff 
 | 10:00 | Break |  |
-| 10:10 | [Session 3: Prompt Engineering Continued](daily-productivity.md) | Michele & Tyson  |
+| 10:10 | [Session 3: Prompt Engineering](daily-productivity.md) | Michele & Tyson  |
 | 11:00 | Lunch |  |  
 | 12:00 | [Session 4: Plugins & Code Interpreter](plugins.md) | Jeff | 
 | 12:30 | [Session 5: CoPilot](copilot.md) | Tyson |
