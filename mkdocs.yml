@@ -14,16 +14,23 @@ copyright: 'Copyright &copy; 2025 University of Arizona Institute for Computatio
 nav:
   - Home: index.md
   - Workshop Agenda: agenda.md
+  - LLMs:
+    - ChatGPT: chatgpt.md
+    - Gemini: gemini.md
+    - Claude: claude.md
   - Prompt Engineering: 
     - Writing Prompts: prompts.md
-    - Daily Productivity: daily-productivity.md
+    - General Productivity: daily-productivity.md
   - Education:
-    - Teaching: teaching.md
-    - Tutoring: tutoring.md
+    - Bringing AI into the Classroom: education.md
+    - Teaching with AI: teaching.md
+    - AI for Tutoring: tutoring.md
   - Research:
     - AI Landscape: ai_landscape.md
-    - GitHub Copilot: github_copilot.md
-    - OpenAI Playground: openai_extensions.md
+    - GitHub Copilot: copilot.md
+    - OpenAI Playground: openai.md
+    - HuggingFace: huggingface.md
+    - Gradio Apps: gradio.md
   - Ethics:
     - Ethics: ethics.md
 

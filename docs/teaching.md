@@ -192,12 +192,14 @@ transparency of their algorithms whenever needed.
 
 ***
 
-## More Resources on Education
+## More Resources on AI at University of Arizona
 
-* [Using Chatbots in Higher Education Teaching Environments](https://github.com/clizarraga-UAD7/MLWorkshops/wiki/Using-ChatGPT-and-Gemini-in-Higher-Education) | [Presentation](https://tinyurl.com/UAD7ChatGPT-HE). 
-* [Prompt Engineering Basics for Education](https://github.com/clizarraga-UAD7/MLWorkshops/wiki/Prompt-Engineering-Basics)
-* [AI Tools Landscape](https://github.com/ua-data7/LearningResources/wiki/AI-Tools-Landscape)
-* [AIPRM’s Ultimate Generative AI Glossary](https://www.aiprm.com/ai-glossary/) (STEM Club Fuller Library collaboration).
+[University of Arizona Artificial Intelligence](https://artificialintelligence.arizona.edu/){target=_blank} 
+
+[University of Arizona Library Student Guide to AI](https://libguides.library.arizona.edu/students-chatgpt/){target=_blank} 
+
+[University of Arizona Data Lab Workshop Series](https://datascience.arizona.edu/education/uarizona-data-lab){target=_blank} 
+
 
 ***
 
