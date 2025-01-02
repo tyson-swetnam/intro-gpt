@@ -1,23 +1,45 @@
 # Teaching and Mentoring with AI
 
-<img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png" width="128">  
-[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 
-**Have you integrated AI into your coursework yet?**
+??? Question "**Have you integrated AI into your coursework yet?**"
 
-Making the decision to incorporate an AI into your education strategy, student assessment, and grading is no easy task.
+    !!! Failure "No, and thats OKAY!" 
 
-An important fact to consider is that [*most* of your students are already making use of AI for their assignments and study.](https://www.gse.harvard.edu/ideas/usable-knowledge/24/09/students-are-using-ai-already-heres-what-they-think-adults-should-know){target=_blank} (ref: [:fontawesome-regular-file-pdf: Source](https://digitalthriving.gse.harvard.edu/wp-content/uploads/2024/06/Teen-and-Young-Adult-Perspectives-on-Generative-AI.pdf){target=_blank} ).
+        A thoughtful, wait and see, approach to incorporating AI into your educational material is rational and reasonable.
 
-Read about [:simple-openai: OpenAI Educator Considerations](https://platform.openai.com/docs/chatgpt-education/educator-considerations-for-chatgpt){target=_blank}
+        Making the decision to incorporate an AI into your education strategy, student assessment, and grading is no easy task. 
 
-ChatGPT's models can compose essays and pass advanced knowledge assessments [(OpenAI :simple-arxiv:)](https://doi.org/10.48550/arXiv.2303.08774){target=_blank}.  Online education, a recent and lucrative innovation in academia, now faces challenges regarding effective remote student assessment [(Susnjak :simple-arxiv:)](https://doi.org/10.48550/arXiv.2212.09292){target=_blank}. 
+        Further, costs and accessibility issues around AI continue to persist across academia. Underserved institutions and colleges with small budgets, or little investment into IT may not have the ability to meet security requirements needed for secure access to student's coursework or personal data (protected by FERPA).
 
-Attempting to modify coursework to avoid assessment techniques where ChatGPT excels or using [bots to detect ChatGPT generated content](https://platform.openai.com/ai-text-classifier){target=_blank} may prove to be futile. Instead of engaging in a cheating arms race, why not embrace ChatGPT and other AI frameworks?
+        An important fact to consider though is that [*most* of your students are already making use of AI for their assignments and study.](https://www.gse.harvard.edu/ideas/usable-knowledge/24/09/students-are-using-ai-already-heres-what-they-think-adults-should-know){target=_blank} (ref: [:fontawesome-regular-file-pdf: Source](https://digitalthriving.gse.harvard.edu/wp-content/uploads/2024/06/Teen-and-Young-Adult-Perspectives-on-Generative-AI.pdf){target=_blank} ).
 
-Proponents of integrating ChatGPT into educational curricula [(:simple-newyorktimes:)](https://www.nytimes.com/2023/01/12/technology/chatgpt-schools-teachers.html){target=_blank} argue that by adapting and integrating ChatGPT into the curriculum, we can develop a modern workforce empowered by AI assistants.
+        Read about [:simple-openai: OpenAI Educator Considerations](https://platform.openai.com/docs/chatgpt-education/educator-considerations-for-chatgpt){target=_blank}
+
+    !!! Success "Yes, but go ahead and read on"
+
+        Thats great! 
+        
+        Make sure to read through the rest of this section to make sure that you're using GPTs in ways that keep your student's data and personal information safe. 
+        
+        Also, ensure that you're using approved AI software that has been vetted by university security and IT staff.
+
+GPTs can compose essays and pass advanced knowledge assessments [(OpenAI :simple-arxiv:)](https://doi.org/10.48550/arXiv.2303.08774){target=_blank}.  As a result, online education, a recent and lucrative innovation in academia, now faces extreme challenges regarding effective remote student assessment [(Susnjak :simple-arxiv:)](https://doi.org/10.48550/arXiv.2212.09292){target=_blank}. 
+
+Attempting to modify coursework to avoid assessment techniques where GPTs excel or using [bots to detect GPT generated content](https://platform.openai.com/ai-text-classifier){target=_blank} are increasingly proven to be futile. 
+
+**Instead of engaging in a cheating arms race, why not embrace AI?**
+
+Proponents of integrating AI into educational curricula [(:simple-newyorktimes:)](https://www.nytimes.com/2023/01/12/technology/chatgpt-schools-teachers.html){target=_blank} argue that by adapting and integrating GPTs into the curriculum, we also develop a modern workforce who are empowered by AI assistants.
 
 **Disclosure: Most of the material on this website was copy edited or originated based on suggestions made by ChatGPT and Gemini**
+
+!!! Tip ":simple-google: Google for Education"
+
+    Google offers self-paced courses on generative AI. 
+    
+    Register with your @arizona.edu Google account and enroll in this 2-hour workshop: 
+    [:simple-google: Generative AI For Educators](https://skillshop.exceedlms.com/student/path/1176018-generative-ai-for-educators){target=_blank} 
 
 !!! Info "Teaching with ChatGPT"
 
@@ -68,53 +90,13 @@ By incorporating AI into graduate and postdoctoral training while maintaining a 
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">I will no longer approve graduate student dissertation proposals or dissertations unless they used ChatGPT or a similar AI to help them write part of it! (With appropriate acknowledgment). Yes, I am serious! <br><br>We&#39;re training PhDs to think, not to be robots.</p>&mdash; Seth (@DrSethMurray) <a href="https://twitter.com/DrSethMurray/status/1643353489341394945?ref_src=twsrc%5Etfw">April 4, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-## Integrating LLMs into Research and Education
+## Teaching with Chatbots
 
-We strongly encourage faculty and research teams to explore how they can incorporate LLMs like GPT-4 into their daily work in the context of developing their own [Research Objects](https://doi.org/10.1038/npre.2010.4626.1){target=_blank}.
+[ChatGPT](https://chat.openai.com/){target=_blank} and [Gemini](https://gemini.google.com/){target=_blank} can improve teaching and learning processes by generating and assessing information and can be used as a standalone tool or  integrated into other systems. It can perform simple or technical tasks and examples show how it can augment teaching and learning.
 
-## Using ChatGPT/Gemini as a Study Buddy
+[Gemini LearnLM](https://ai.google.dev/gemini-api/docs/learnlm){target=_blank} is available in [Google's AI Studio](https://aistudio.google.com/app/prompts/new_chat){target=_blank} and has advanced features for teaching or tutoring.
 
-| Type | Prompt example |
-| :-- | :-- |
-| **Exam preparation** | |
-| Generate questions | `Generate practice questions on this: {paste material or give topic}` |
-| Multiple-choice questions | `Generate multiple choice questions on this: {paste material or give topic}` |
-| Create flashcards | `Create flashcards on this topic for me: {paste material or give topic}` | 
-| Improve text/explanation | `How can the following text/explanation about {topic} be improved?: {paste text}` | 
-| Mnemonics | `Help me remember the 5 most common facts/properties about {topic}` |
-| Historical or factual events | `Help me memorize US History` |
-| **Formulas and equations assistance** | | 
-| Step-by-step instructions | `Find the derivative of f(x) = 3x^3 + 2x^2 + 1` | 
-| Concepts clarification | `Clarify the concept for the equation: Find the derivative of f(x) = 3x^3 + 2x^2 + 1` | 
-| **Language learning** | |
-| Vocabulary building  | `What does 'aimer' mean in French and what is the antonym?` |
-| Conversation practice | `Engage me in a conversation in French (I'm a beginner)` |
-
-## Prompting in academic writing
-
-Chatbots excel at:
-
-1. _Summarization_: Can provide brief overviews of lengthy articles, helping to summarize their content.
-
-2. _Feedback on essays_: Can offer feedback on drafts of academic papers by highlighting areas that need improvement, suggesting alternative phrasing for ideas, and providing general writing tips to enhance the overall quality of the paper.
-
-3. _Research assistance_: Can assist with research by generating relevant articles, academic papers, and other sources that can be used as references for your work.
-
-The topic explanation includes:
-
-1. _Definitions_: By entering a keyword or phrase, can generate a definition and provide context to help you understand the meaning of the term.
-
-2. _Examples_: Can provide examples of how a particular concept or idea can be applied in different scenarios, offering practical illustrations.
-
-3. _Explanation of complex concepts_: If you struggle to understand a specific concept, you can ask a related question, and ChatGPT/Gemini will explain it in simpler terms, breaking down complex ideas into more easily understandable language.
-
-A variety of commands makes ChatGPT/Gemini a flexible tool that can contribute to your academic writing or other assignments. Basic commands include _‘define’_, _‘compare’_, _‘describe’_, _‘calculate’_, and _‘summarize’_ ─ you can try to type in your detailed request and then iterate adjusting your commands based on the answer the chatbot provides.
-
-***
-
-## Teaching and learning with Chatbots
-
-[ChatGPT](https://chat.openai.com/) and [Gemini](https://gemini.google.com/) can improve teaching and learning processes by generating and assessing information and can be used as a standalone tool or  integrated into other systems. It can perform simple or technical tasks and examples show how it can augment teaching and learning.
+**Table: Potential role playing examples for chatbots for teaching and tutoring**
 
 | Role playing | Description | Example of implementation |
 | :-- | :-- | :-- |

@@ -1,39 +1,30 @@
-# Getting Started with Anthropic's Claude
+# :simple-anthropic: Anthropic Claude
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
-
-Claude is a family of large language models (LLMs) developed by Anthropic, a company focused on AI safety and research. Claude is known for its strong performance in areas like:
-
-*   **Helpful and Honest Responses:** Claude is designed to be more aligned with human values and less likely to produce harmful or misleading outputs.
-*   **Reasoning and Problem-Solving:** Claude excels at complex reasoning tasks, making it a powerful tool for analysis and problem-solving.
-*   **Conversational Abilities:** Claude can engage in natural and engaging conversations.
-*   **Large Context Window:** Claude can handle prompts with a large context window of up to 200,000 tokens (approximately 150,000 words or 500 pages of text).
-
-**Claude Model Family:**
-
-*   **Claude 3 Opus:** The most powerful and intelligent model, best for complex analysis, task automation, and high accuracy.
-*   **Claude 3 Sonnet:** A balanced model, great for data processing, coding tasks, and content creation. It offers a good trade-off between performance and speed.
-*   **Claude 3 Haiku:** The fastest and most compact model, ideal for quick responses, simple queries, and cost-effective automation.
 
 ## Creating a Claude Account
 
 There are two main ways to access Claude:
 
-**1. Through the Claude Web Chat Interface (claude.ai):**
+**1. Claude Chat Interface (claude.ai):**
 
    *   **Go to:** [https://claude.ai/](https://claude.ai/){target=_blank}
-   *   **Sign up or Log in:**
-        
-        *   **Sign up:** You can create an account using your email address or with a Google account.
-        *   **Log in:** If you already have an account, log in with your credentials.
+    
+      *  **Sign up:** You can create an account using your email address or with a Google account.
+      * **Log in:** If you already have an account, log in with your credentials.
    
-   *   **Start Chatting:** Once logged in, you can immediately start interacting with Claude through the chat interface.
 
-**2. Through the Anthropic API (for Developers):**
+**2. Connect Through the Anthropic API (for Developers):**
 
    *   **Request Access:** Go to [https://www.anthropic.com/api](https://www.anthropic.com/api){target=_blank} and fill out the form to request API access. Provide details about your intended use case.
+
    *   **Review Documentation:** Familiarize yourself with the Anthropic API documentation: [https://docs.anthropic.com/claude/reference/getting-started-with-the-api](https://docs.anthropic.com/claude/reference/getting-started-with-the-api){target=_blank}
+
    *   **Obtain API Key:** Once your request is approved, you'll receive an API key that you'll use to authenticate your API requests.
+
+!!! Warning "**Treat your API key like a password**" 
+    Do not share it publicly or commit it to version control platforms (like GitHub).
+
 
 !!! info "Free Tier and Paid Plans"
 
@@ -62,6 +53,20 @@ There are two main ways to access Claude:
 *   **Iterate:** Refine your prompts based on Claude's responses to improve the results.
 *   **Use System Prompts:** For complex or multi-step tasks, consider using system prompts to provide overall instructions to guide Claude's behavior.
 *   **Experiment:** Try different prompting techniques and model settings to find what works best for your use case.
+
+Claude is a family of large language models (LLMs) developed by Anthropic, a company focused on AI safety and research. Claude is known for its strong performance in areas like:
+
+*   **Helpful and Honest Responses:** Claude is designed to be more aligned with human values and less likely to produce harmful or misleading outputs.
+*   **Reasoning and Problem-Solving:** Claude excels at complex reasoning tasks, making it a powerful tool for analysis and problem-solving.
+*   **Conversational Abilities:** Claude can engage in natural and engaging conversations.
+*   **Large Context Window:** Claude can handle prompts with a large context window of up to 200,000 tokens (approximately 150,000 words or 500 pages of text).
+
+[**Claude Model Family:**](https://www.anthropic.com/news/claude-3-family){target=_blank}
+
+*   **Claude 3 Opus:** The most powerful and intelligent model, best for complex analysis, task automation, and high accuracy.
+*   **Claude 3 Sonnet:** A balanced model, great for data processing, coding tasks, and content creation. It offers a good trade-off between performance and speed.
+*   **Claude 3 Haiku:** The fastest and most compact model, ideal for quick responses, simple queries, and cost-effective automation.
+
 
 ## Further Resources
 

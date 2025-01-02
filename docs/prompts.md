@@ -1,38 +1,34 @@
-# Prompt Engineering
-
-![banner](assets/dailyprod-banner.png){width=1000}
+# Writing Prompts
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 
+![banner](assets/dailyprod-banner.png){width=1000}
+
+??? Question "How do GPTs Work?"
 
 
-## How do GPTs Work?
 
-Read the [:simple-openai: ChatGPT Documentation](https://openai.com/blog/chatgpt){target=_blank}
+    !!! Success "Natural Language" 
+    
+        ChatGPT's models use natural language prompts to elicit contextual responses. [Current models](https://openai.com/index/learning-to-reason-with-llms/){target=_blank} are beginning to 'reason' in their responses. 
 
-Read the [:fontawesome-regular-file-pdf: ChatGPT Technical Report](https://doi.org/10.48550/arXiv.2303.08774){target=_blank}
+        GPTs can respond to either langauge (prose) or computer code. 
 
-Read the [:fontawesome-regular-file-pdf: Bard Documentation](https://ai.google/static/documents/google-about-bard.pdf){target=_blank}
+        Other LLM models (like [Sora](https://openai.com/sora/){target=_blank} or [MidJourney](https://www.midjourney.com/){target=_blank}) produce videos or images based on text and image prompts.
 
-ChatGPT's `GPT-3.5` and `GPT-v4` models use natural language prompts to elicit contextual responses. 
+    !!! Success ":octicons-markdown-16: MarkDown Syntax"
 
-GPTs can respond to either langauge (prose) or computer code. 
+        GPTs use a syntax called [MarkDown :octicons-markdown-16:](https://www.markdownguide.org/){target=_blank}. Markdown is plain text that uses special characters for formatting. 
 
-Other LLM models (like [DALL-E](https://openai.com/product/dall-e-2){target=_blank} or [MidJourney](https://www.midjourney.com/){target=_blank}) produce images based on prompts.
-
-GPTs use a syntax called [MarkDown :octicons-markdown-16:](https://www.markdownguide.org/){target=_blank}. Markdown is plain text that uses special characters for formatting. 
-
-This website, for example, is written using MarkDown syntax ([MkDocs-Material](https://squidfunk.github.io/mkdocs-material/){target=_blank}) and converted to HTML using Python. 
+        This website, for example, is written using MarkDown syntax ([MkDocs-Material](https://squidfunk.github.io/mkdocs-material/){target=_blank}) and converted to HTML using Python. 
 
 ___
-
-## :simple-openai: Prompt Writing
 
 GPT Chat asks for a message to begin its conversation. These messages are called "Prompts". 
 
 Begin a conversation with a specific type of prompt. This will help narrow the potential range of responses and improve results to subsequent prompts. 
 
-### **Priming**
+## **Priming**
 
 GPTs do better when provided with "prompt primers".
 
@@ -47,29 +43,114 @@ Responses are more likely to be useful when multiple specific output types are d
 | Multiple | "Write five examples of assessments for watershed health related to geomorphology, water quality, and species diversity." |
 
 
-!!! Tip "How long can or should a prompt be?"
+??? Question "How long can or should a prompt be?"
 
-    The length of a prompt is [measured in "tokens"](https://techcommunity.microsoft.com/t5/healthcare-and-life-sciences/unlocking-the-power-of-tokens-optimizing-token-usage-in-gpt-for/ba-p/3826665{target=_blank}). A token can represent an individual character, a word, or a subword depending on the specific tokenization approach. A rough estimate for the average number of words in English language per token is `0.75`. 
+    !!! Success "ChatGPT & Gemini"
 
-    Currently, ChatGPT version `GPT-3.5turbo` uses up to 2,048 tokens per prompt, GPT-4 and Bing Chat can take up to 32,768 tokens. BARD currently has a limit of 20,000 tokens in a prompt. 
+        The length of a prompt is [measured in "tokens"](https://techcommunity.microsoft.com/t5/healthcare-and-life-sciences/unlocking-the-power-of-tokens-optimizing-token-usage-in-gpt-for/ba-p/3826665{target=_blank}). 
+        
+        A token can represent an individual character, a word, or a subword depending on the specific tokenization approach. A rough estimate for the average number of words in English language per token is `0.75`. 
+
+        A default size 2,048 token prompt is equivalent to about ~1,536 words or 3-6 pages of text, and a 32,768 token prompt would be ~24,576 words or 50-100 pages of text.
+
+        Currently, ChatGPT GPT-4o allows up to 16,383 tokens per prompt, Gemini 2.0 Flash Thinking Experimental can take up to 32,768 tokens. Gemini 1.5 Pro allows up to 2,000,000 tokens! 
     
-    This means that a 2,048 token prompt would be equivalent to about 1,536 words (3-6 pages), and a 32,768 token prompt would be 24,576 words (50-100 pages). 
-    
-    However, this is only an approximation and may vary depending on the specific text and model. 
+    !!! Success "Document retrieval & RAG"
 
-    What this also means is that current GPT are not capable of reading many PDFs at one time, for example, to do a literature review, or to write a sequel to a novel or book series. 
+        Other techniques for ingesting text include "Retrieval Augmented Generation" or RAG, which allows you to add text from PDFs, HTML, or other well known text formats, like MarkDown or JSON. These RAG implementations are available using ChatGPT 4o, Gemini and [NotebookLM](https://notebooklm.google.com){target=_blank} or through other services like [Weaviate](https://weaviate.io/developers/weaviate){target=_blank} where you can host your own vector database.
+
+
+??? Tip "Customizing Your Responses"
+
+    ChatGPT offers [**Custom Instructions**](https://help.openai.com/en/articles/8096356-custom-instructions-for-chatgpt){target=_blank} for more personalized responses. 
+
+    **What would you like ChatGPT to know about you to provide better responses?**
+
+    !!! Success "**Thought starters**"
+
+        * Where are you based?
+        * What do you do for work?
+        * What are your hobbies or interests?
+        * What subjects are you interested in?
+        * What are some goals that you have?
+
+    !!! Info "My prompt"
+
+        ```markdown
+        I work at a Research 1 University with Research Software Engineers, Data Scientists,
+        Data Science Educators, and domain researchers working in research computing. 
+
+        I am a Professor of geoinformatics with a background in high performance computing,
+        Docker, Kubernetes, scientific software, infrastructure as code, and cloud computing.
+
+        I am interested in generative and predictive artificial intelligence and machine
+        learning, containerized workflows, open science, and reproducible research. I am
+        working on digital twins, precision health care, scientific and educational data
+        commons, data curation, and synthesis science research for earth, life, and space
+        sciences.
+
+        I can talk comfortably about scientific software,  computing architectures, software
+        design patterns, and modern scientific research with artificial intelligence. 
+
+        I have a goal of educating the research community on open science techniques,
+        reproducible research, the FAIR and CARE and TRUST data principles.
+        ```
+
+
+    **How would you like ChatGPT to respond?**
+
+    !!! Success "**Thought starters**"
+
+        * How formal or casual should ChatGPT be?
+        * How long or short should responses generally be?
+        * How do you want to be addressed?
+        * Should ChatGPT have opinions on topics or remain neutral?
+
+    !!! Info "My prompt"
+    
+        ```
+        I would like for ChatGPT to provide collegiality and formal responses to my queries.
+
+        When I prompt about editing draft text for documentation and scientific writing I
+        want the text to be edited for clarity, accessibility, and readability for specific
+        audiences which I will specify. If I don't specify them, ask me what type of
+        readership to edit for.
+
+        Ask how long a response should be if I do not specify. When I am asking specifically
+        for outlines or ideas about a new document without a source URL or PDF, ask me if I
+        want the outline to be brief or maximized to the longest possible length response.
+
+        When re-writing one document into a new document, try to keep the length the same. 
+        If the document is too long for a single response, respond with as much of the first
+        part as possible and ask whether you should continue in subsequent prompts.
+
+        When I prompt you about computer code or algorithms, I want you to maximize the
+        number of lines of code and comments in the response, do not waste tokens on
+        explaining the text other than as brief comments in the code blocks.  
+        I will most frequently ask for Python, Markdown, YAML, JavaScript, JSON, 
+        GeoJSON, HTML, and R languages. 
+
+        I want to be addressed as Professor.
+                
+        ChatGPT should remain neutral unless it has a factual correction to a prompt.
+        ```
+
+
 ___
-### **Prompt Structure**
+
+## **Prompt Structure: ROLE + TASK + FORMAT**
+
+Prompt responses are improved by giving the Chatbot a multi-shot opportunity at answering your request. 
 
 | Role | Task | Format |
-|------|------|--------|
-| Act as [\[ROLE\]](#role-based) | Create a [\[TASK\]](#tasks) | ... show as [\[FORMAT\]](#format) |
+|:-----|------|--------|
+| Act as [\[ROLE\]](#role) | Create a [\[TASK\]](#tasks) | ... show as [\[FORMAT\]](#format) |
 
-Your prompt should specify the role in which ChatGPT responds, what its task is, and the format of how its outputs should be returned. 
+A complete prompt should specify the role in which the chatbot responds, what its task is, and the format of how its outputs should be returned. 
 
 A second step to the initial prompt is to [link or chain](#linked-prompts) your subsequent prompts. 
 
-This lesson only covers ChatGPT, but the same prompt techniques can be used in other LLMs.
+This lesson only covers ChatGPT, Gemini, and Claude type responses, but the same prompt techniques can be used in other LLMs, like NotebookLM, MidJourney, or Sora.
 
 ??? Tip "ChatGPT :simple-awesomelists: Awesome Lists"
 
@@ -85,7 +166,7 @@ This lesson only covers ChatGPT, but the same prompt techniques can be used in o
    
     [:simple-awesomelists: API plugins, extensions, & applications](https://github.com/humanloop/awesome-chatgpt){target=_blank}
 
-#### **Role**
+### **Role**
 
 Set the role for ChatGPT to play during your session. 
 
@@ -141,13 +222,7 @@ Examples of roles you might ask for are: a domain science expert, an IT or DevOp
     Again, there is no guarantee that the results ChatGPT provides are factual, but it does greatly improve the odds that they are relevant to the prompt. Most importantly, these extensions provide citations for their results, allowing you to research the results yourself. 
 
 
-#### Custom Instructions
-
-Rolled out to subscribing users in July 2023, [Custom Instructions](https://openai.com/blog/custom-instructions-for-chatgpt){target=_blank} is a more explicit way to set roles and specify how you want ChatGPT to respond.
-
-![](assets/custom_instructions.png){width=450}
-
-#### **Tasks**
+### **Tasks**
 
 Prompts which return informative responses to questions like "What is ..." or "How does ..."
 
@@ -183,7 +258,7 @@ There are extension tools for ChatGPT which allows you to prompt with references
 
     [:simple-google: Bard](bard.md) also has access to the web and limited integration with Google Workspace.
 
-#### **Format**
+### **Format**
 
 By default ChatGPT outputs MarkDown syntax text. It can also output software code, and soon images, video, music and sounds.
 
@@ -217,7 +292,7 @@ ChatGPT can provide instructional details about how to do specific tasks.
     I want you to create a tutorial for building and deploying a github.io website using the MkDocs Material Theme
     ```
 ___
-### **Linked Prompts**
+## **Linked Prompts**
 
 Follow-up your prompts sequentially.
 
@@ -250,36 +325,37 @@ ChatGPT can provide instructional details about how to do specific tasks.
     ```
 ___
 
-### **General Prompt Traits**
+!!! Tip "**General Prompt Traits**"
 
-!!! Success "Strategies"
-        
-    Keep these W's in mind when writing prompts
+    !!! Success "Strategies"
+            
+        Keep these W's in mind when writing prompts
 
-    | W's | Reasons |
-    |----|---------|
-    | Who | do you want ChatGPT to role-play: an engineer, an editor, a teacher, or a student? |
-    | What | is the specific context of your prompts? |
-    | When | is the specific time period of interest? Specify if so. |
-    | Where | is the geographic region or conceptual area? |
-    | In what way | do you want ChatGPT to respond: in a programming language, code, text-to-image? |
-**Syntax**
+        | W's | Reasons |
+        |----|---------|
+        | Who | do you want ChatGPT to role-play: an engineer, an editor, a teacher, or a student? |
+        | What | is the specific context of your prompts? |
+        | When | is the specific time period of interest? Specify if so. |
+        | Where | is the geographic region or conceptual area? |
+        | In what way | do you want ChatGPT to respond: in a programming language, code, text-to-image? |
 
-Use [MarkDown syntax](https://www.markdownguide.org/basic-syntax/){target=_blank} in your prompts.
+        **Syntax**
 
-For code examples use single backtick ` or triple ``` for block quotes when adding your own code to your prompts.
+        Use [MarkDown syntax](https://www.markdownguide.org/basic-syntax/){target=_blank} in your prompts.
 
-**Context**
+        For code examples use single backtick ` or triple ``` for block quotes when adding your own code to your prompts.
 
-Develop a clear context around which you are seeking responses. Types of prompt help to establish the context of the responses you will recieve. 
+        **Context**
 
-**Precision**
+        Develop a clear context around which you are seeking responses. Types of prompt help to establish the context of the responses you will recieve. 
 
-Keep your prompts precise and use clear language. Constrain the topic areas for which you wish your repsonses to be drawn from.
+        **Precision**
 
-**Simplicity** 
+        Keep your prompts precise and use clear language. Constrain the topic areas for which you wish your repsonses to be drawn from.
 
-Break down your prompts into simple tasks which do not contain too many complex tasks or ones that require rationalization. 
+        **Simplicity** 
+
+        Break down your prompts into simple tasks which do not contain too many complex tasks or ones that require rationalization. 
 
 ??? Danger "Indirect Prompt Injection and Malware"
 
@@ -291,7 +367,7 @@ Break down your prompts into simple tasks which do not contain too many complex 
 
 ChatGPT is trained on langauges, including software language. Use ChatGPT as your new paired-programming AI assistant. 
 
-:material-run-fast: Go to our lesson on [:octicons-copilot-48: GitHub CoPilot](github_copilot.md)
+:material-run-fast: Go to our lesson on [:octicons-copilot-48: GitHub CoPilot](code.md)
 
 For novice programmers, ChatGPT likely fills a long unfilled hole in your knowledge map. It can write code faster than you can, and with the proper prompts, create programs in minutes which may have taken you hours or days. 
 
@@ -438,35 +514,33 @@ You can include Linux command line flags in your prompts,
 | Size | 	`-s` or `--size`  |	Specifies the maximum number of characters in the output |
 | Temperature |	`-t` or `--temperature`	| Control the creativity of output. The higher the temperature will result in more creative output (maybe less coherent). The temperature can be any value between 0 and 1 (default may be 0.5) |
 
-
-
-
-
 ## Assessment
 
 ??? Question "How long can a prompt be?"
 
-    !!! Answer "Well, it depends"
+    !!! Success "Well, it depends"
 
         A good rule of thumb, depending on the platform, is at most 1,500 words or 3-5 pages of text. 
         
         For larger, newer GPTs the length of a prompt may be up to 100 pages.
 
-??? Question "True or False: ChatGPT has access to web browsing by default"
+??? Question "True or False: ChatGPT and Gemini have access to the web by default"
 
     !!! Failure "False"
 
-        ChatGPT cannot access the internet and is only trained until current events in September of 2021
+        Not all Chatbots can access the internet by default.
 
-        Alpha Plugins for ChatGPT have browsing, but are waitlisted.
+        Some chatbots advanced features allow search of the internet for more recent materials that are outside of the training dates for their foundation model.
 
-        Third-party plugins like WebChatGPT can enable browsing, but its results are not optimal.  
+        Services like [Perplexity.ai](https://perplexity.ai){target=_blank} are targeted toward search. 
+        
+        [Google Search](https://google.com){target=_blank} now includes AI summaries for some queries by default. 
 
-        Bing Chat, and Bard both have access to the internet, and can generate responses to current events.
+        
 
 ??? Question "Short, concise, prompts are better than long meandering prompts?"
 
-    !!! Answer "it depends"
+    !!! Success "it depends"
 
         Prompts should be specific, but they do not necessarily need to be concise.
 

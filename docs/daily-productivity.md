@@ -1,14 +1,10 @@
-![banner](assets/dailyprod-banner.png){width=1000}
-
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+
+![banner](assets/dailyprod-banner.png){width=1000}
 
 What tasks do you do every day? What are your daily habits? Where are the pain points that you can improve? Where do you spend time that you wish you had back?
 
-## Advanced Prompt Engineering
-
-Advanced prompt engineering goes beyond single prompt engineering. It is the process of creating a series of prompts that are designed to help you achieve a more complex goal, or utilizing specialized prompts tailored to specific tasks for enhanced efficiency and output quality.
-
-### Popular Uses of Prompt Engineering for Daily Work Productivity
+## Popular Uses of Prompt Engineering for Daily Work Productivity
 
 Prompt engineering can significantly enhance daily work productivity. Here are some of the most popular applications:
 
@@ -79,22 +75,8 @@ Using unapproved third-party AI tools can pose significant risks. These tools mi
 Therefore, to maintain data security, privacy, and compliance with institutional policies, it is essential to use only officially sanctioned AI tools and plug-ins provided or approved by the university for official communications like Zoom meetings. Always consult your institution's IT department or relevant policies for guidance on approved tools and their proper usage.
 
 
-## Practical Applications of ChatGPT in Higher Education and Research
 
-Building on our understanding of prompt engineering, let's now delve into the more advanced practical applications of specifically within the context of higher education and research.
-
-### Popular Uses of Prompt Engineering in Higher Education Teaching
-
-*   **Curriculum Development:** Generate course outlines, learning objectives, and assessment criteria tailored to specific subjects and learning levels.
-*   **Lesson Planning:** Create detailed lesson plans, including activities, discussion prompts, and resources, aligned with educational standards.
-*   **Content Creation:** Develop engaging educational content such as lecture notes, study guides, and interactive exercises.
-*   **Automated Grading and Feedback:** Provide instant feedback on student assignments, identify common mistakes, and suggest areas for improvement.
-*   **Personalized Learning Support:** Offer tailored support to students based on their individual learning styles, pace, and needs.
-*   **Interactive Learning Tools:** Create chatbots that can answer student questions, provide explanations, and guide them through complex topics.
-*   **Language Learning Support:** Assist students in practicing new languages through conversation, translation exercises, and grammar correction.
-*   **Administrative Task Automation:** Streamline tasks such as scheduling, enrollment, and responding to common student inquiries.
-
-### Example 1: Personal Assistant Tasks
+### Example 3: Personal Assistant Tasks
 
 ChatGPT can be used as a personal assistant to help you with a variety of tasks. For instance, you can use it to draft emails, manage your calendar, or schedule meetings.
 
@@ -194,7 +176,7 @@ ChatGPT could then provide you with a suitable Python function, demonstrating th
 
 Let's say you're having trouble with a piece of JavaScript code that's not behaving as expected. You could ask ChatGPT for help as follows:
 
-??? example "Debugging JavaScript"
+!!! example "Debugging JavaScript"
 
     ```
     my JavaScript code to add event listeners to buttons isn't working as expected. Here's the code:
@@ -213,7 +195,7 @@ Let's say you're having trouble with a piece of JavaScript code that's not behav
 
 ChatGPT could then explain the issue (in this case, a common pitfall with JavaScript closures) and suggest a corrected version of your code.
 
-??? warning "Limitations"
+!!! warning "Limitations"
     Remember, while ChatGPT is knowledgeable in many programming languages and concepts, it doesn't replace a full Integrated Development Environment (IDE) or debugger and should be used as a supplementary tool for coding assistance.
 
 ### Popular Uses of Prompt Engineering in Research (Data Science and Code Interpreters)
@@ -226,43 +208,7 @@ ChatGPT could then explain the issue (in this case, a common pitfall with JavaSc
 *   **Hypothesis Generation:** Explore potential research questions and hypotheses based on existing data and literature.
 *   **Experimental Design:** Assist in designing experiments, including determining sample sizes, selecting appropriate variables, and suggesting control measures.
 
-### Example 4: Advanced Data Analysis with Code Interpreter
 
-A significant advancement in the realm of AI tools is the introduction of Code Interpreters. These tools allow LLMs to write and execute code in response to natural language prompts. This capability is particularly transformative for data analysis tasks.
-
-#### Data Analysis Workflow
-
-Imagine you are a researcher with a dataset of student performance metrics. You want to understand the correlation between study hours and exam scores. You could use a Code Interpreter as follows:
-
-??? example "Data Analysis with Code Interpreter"
-
-    ```
-    Analyze the attached CSV file 'student_data.csv'.
-    
-    1.  Load the dataset into a Pandas DataFrame.
-    2.  Clean the data by handling any missing values.
-    3.  Generate a scatter plot to visualize the relationship between 'study_hours' and 'exam_scores'.
-    4.  Calculate the Pearson correlation coefficient between these two variables.
-    5.  Interpret the results and provide a brief summary.
-    ```
-
-The Code Interpreter would then:
-
-1.  Write Python code to load the CSV file using the Pandas library.
-2.  Implement data cleaning procedures, such as imputing or removing missing values.
-3.  Use a library like Matplotlib or Seaborn to create a scatter plot.
-4.  Calculate the correlation coefficient using appropriate statistical methods.
-5.  Generate a textual interpretation of the results, explaining the correlation in the context of the research question.
-
-#### Benefits of Using Code Interpreters
-
-*   **Accessibility:** Enables researchers without extensive programming skills to perform complex data analyses.
-*   **Efficiency:** Automates the coding process, saving time and reducing the potential for manual coding errors.
-*   **Reproducibility:** Provides a clear record of the analysis steps, enhancing the reproducibility of research findings.
-*   **Iterative Analysis:** Allows for quick iteration through different analysis approaches, facilitating exploratory data analysis.
-
-??? warning "Limitations"
-    While Code Interpreters are powerful tools, they should be used with an understanding of their limitations. The generated code should be reviewed for correctness and appropriateness, especially in the context of complex or nuanced analyses. Researchers should also be aware of potential biases in data and interpretations.
 
 ## Bing AI for Advanced Information Gathering and Verification
 
