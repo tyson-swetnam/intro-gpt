@@ -28,11 +28,11 @@ GPTs can compose essays and pass advanced knowledge assessments [(OpenAI :simple
 
 Attempting to modify coursework to avoid assessment techniques where GPTs excel or using [bots to detect GPT generated content](https://platform.openai.com/ai-text-classifier){target=_blank} are increasingly proven to be futile. 
 
-**Instead of engaging in a cheating arms race, why not embrace AI?**
+!!! Question "**Instead of engaging in a cheating arms race, why not embrace AI?**"
 
-Proponents of integrating AI into educational curricula [(:simple-newyorktimes:)](https://www.nytimes.com/2023/01/12/technology/chatgpt-schools-teachers.html){target=_blank} argue that by adapting and integrating GPTs into the curriculum, we also develop a modern workforce who are empowered by AI assistants.
+    Proponents of integrating AI into educational curricula [(:simple-newyorktimes:)](https://www.nytimes.com/2023/01/12/technology/chatgpt-schools-teachers.html){target=_blank} argue that by adapting and integrating GPTs into the curriculum, we also develop a modern workforce who are empowered by AI assistants.
 
-**Disclosure: Most of the material on this website was copy edited or originated based on suggestions made by ChatGPT and Gemini**
+!!! Danger "**Disclosure: Most of the material on this website was copy edited or originated based on suggestions made by ChatGPT and Gemini**"
 
 !!! Tip ":simple-google: Google for Education"
 
@@ -66,6 +66,63 @@ Proponents of integrating AI into educational curricula [(:simple-newyorktimes:)
     Jon's Cons presentation: [https://www.youtube.com/watch?v=NXbEvLd1vVk](https://www.youtube.com/watch?v=NXbEvLd1vVk){target=_blank}
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/NXbEvLd1vVk?si=kfkw-Jpg-LQP7swq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Security and FERPA Considerations for GPTs in Higher Education
+
+The integration of GPTs into classrooms introduces challenges, particularly in terms of data security and compliance with the Family Educational Rights and Privacy Act (FERPA). 
+
+This section outlines key considerations for educators and administrators.
+
+!!! Danger "FERPA Protections"
+
+    FERPA protects the privacy of student education records. It gives parents certain rights regarding their children's education records. These rights transfer to the student at 18 years of age or beyond the high school level.
+
+    * **Education Records:** Includes files, documents, or other materials that contain information directly related to a student and are maintained by an agency or institution of education.
+    * **Directory Information:** Information contained in an education record that would not generally be considered harmful or an invasion of privacy if disclosed.
+    * **Rights Under FERPA:** Parents and eligible students have the right to inspect and review the student's education records, request the amendment of records they believe are inaccurate or misleading, and have some control over disclosing personally identifiable information from education records.
+
+## Generative AI and Compliance with FERPA
+    
+Commercial GPTs, such as those used for creating educational content, chatbots, or data analysis tools, can potentially handle personal or sensitive information. 
+
+**Faculty members must ensure that using these technologies complies with FERPA regulations before using them in the classroom.**
+
+FERPA mandates the protection of student education records. 
+
+Before using GPTs in educational settings, remember:
+
+- Do not use student education records with Commercial or external AI tools, unless the data falls under directory information, and even then make certain you are compliant with university policy.
+- When using student data, implement data minimization which anonymizes student information to avoid release of personally identifiable information (PII).
+- Be extremely cautious when inputting student data into GPTs, as this can lead to unintended data leaks or exposure of PII.
+
+### Identifying and Securing Student Data
+
+To ensure FERPA compliance:
+
+- Consult with your university's information technology and information security unit before using an AI software. Ensure that you only use secure, vetted, platforms that are approved by your university.  
+- Do not use 3rd party software (plugins or extensions) to analyze or prompt with student data.
+
+## Security Risks and Mitigation Strategies
+
+### Data Leakage and Exposure
+
+- Avoid copying sensitive emails, video/audio transcripts, or student information into GPT platforms for summarization or analysis.
+- Educate all staff and teaching assistants on the risks of sharing personal or confidential information with AI systems.
+
+### Academic Integrity
+
+- [Develop clear policies](https://libguides.library.arizona.edu/students-chatgpt/integrity){target=_blank} on the appropriate use of AI tools for all assignments and exams. The existing [Code of Academic Integrity](https://deanofstudents.arizona.edu/policies/code-academic-integrity){target=_blank} already explains how to deal with cases of plagarism.
+- Implement detection mechanisms to identify AI-generated content in student submissions.
+
+### Technical Security Measures
+
+- Implement zero-trust security solutions, such as secure web gateways, to control access to GPT tools.
+- Use URL and content filtering to prevent unauthorized data uploads and limit access to AI platforms.
+
+### Ethical Considerations
+
+- Address potential equity issues arising from unequal access to AI tools among students.
+- Consider the impact of AI on critical thinking skills and social interactions in the learning environment.
 
 
 ## Guiding Graduate Students and Postdoctoral Researchers in AI Usage
@@ -111,67 +168,6 @@ By incorporating AI into graduate and postdoctoral training while maintaining a 
 | **Motivator** | AI offers games and challenges to extend learning | Teachers or students ask ChatGPT/Gemini for ideas about how to  extend students’ learning after providing a summary of the current  level of knowledge (e.g., quizzes, exercises). |
 | **Dynamic assessment** | AI provides educators with a profile of each student’s current knowledge | Students engage in a tutorial-style dialogue with  ChatGPT/Gemini, and then request that ChatGPT/Gemini create a summary of their current  knowledge for sharing with their teacher or for assessment purposes. |
 
-## Use of ChatGPT to support teachers
-
-It has the potential to revolutionize education systems, but it's 
-also a threat. Some people have tried to ban ChatGPT in schools, while 
-others believe it's the "silver bullet" solution to many education 
-challenges around the world. The exact impact of the chatbot on the 
-sector is unclear.
-
-Skeptics say chatbots harm learning, but they disrupt traditional 
-tools like essay writing. With a shortage of 69 million teachers 
-worldwide, could ChatGPT or Gemini supplement or replace them? The launch of 
-Chatbots show potential to replace some human tasks. Are teachers an 
-exception? Can chatbots complete tasks currently done by teachers? What 
-are the risks? How can teachers use Chatbots to improve their practice 
-and efficiency?
-
-## Opportunities of using Chatbots as a learning tool
-
-* **Enhance lessons**. In low- and middle-income 
-countries, teachers face the challenge of making a dense curriculum 
-engaging. To help with this, ChatGPT/Gemini can translate learning objectives 
-into lesson plans, offer ideas for class preparation, and aid in 
-creating new assignments and assessments. However, ChatGPT/Gemini does not 
-assist with delivery, so teachers must still have strong teaching skills
- to ensure quality lessons.
-* **Create assessment questions**. ChatGPT/Gemini can help 
-teachers improve assessment questions and generate multiple-choice 
-items. It can also encourage higher-order thinking skills by providing 
-prompts for essay questions and practical tasks. By using different 
-types of assessment, teachers can help students develop critical 
-thinking, problem-solving, and collaborative skills.
-* **Support with language barriers**. The ideal scenario 
-is for teachers to instruct in their native language, but some education
- systems are shifting towards teaching in a second language, such as 
-English, even when evidence suggests the opposite approach. In such 
-situations, teachers who are not proficient in English struggle to teach
- effectively. A proposed solution is the use of chatbots to enhance 
-teachers' language proficiency, enabling them to teach better in both 
-their native and a foreign language. Tools like [Duolingo](https://www.duolingo.com/) and ChatGPT 
-reportedly provide affordable, accessible, and highly personalized 
-language lessons.
-* **Provide additional support to students**. ChatGPT/Gemini can
- be used by teachers to encourage student curiosity and generate ideas 
-for homework assignments. AI tools are particularly helpful in 
-identifying the source information used in the chats. However, there is a
- risk that students may ask the chat to complete their homework for them
- instead of seeking help. To address this risk and teach about 
-integrity, teachers can discuss the limitations of these tools, such as 
-privacy risks, bias, and hallucination. Furthermore, teachers should 
-focus on questions that cannot be answered by ChatGPT, such as those 
-that require knowledge outside of the chatbot's training data, such as 
-human emotions or subjective perspectives.
-* **Grading assessment and papers**. ChatGPT/Gemini can be used 
-to automatically grade multiple-choice/one-answer tests; it can also 
-help teachers with standards-based grading.  This has potential 
-unintended consequences for low accuracy, poor grading, or false positive
- proctoring (mistakenly red-flagging students for cheating). When 
-considering systems for proctoring or grading, it is critical to take 
-measures to secure fairness, accountability, confidentiality, and 
-transparency of their algorithms whenever needed.
-
 ***
 
 ## More Resources on AI at University of Arizona
@@ -180,10 +176,9 @@ transparency of their algorithms whenever needed.
 
 [University of Arizona Library Student Guide to AI](https://libguides.library.arizona.edu/students-chatgpt/){target=_blank} 
 
-[University of Arizona Data Lab Workshop Series](https://datascience.arizona.edu/education/uarizona-data-lab){target=_blank} 
+[University of Arizona Data Lab AI Workshop Series](https://datascience.arizona.edu/education/uarizona-data-lab){target=_blank} 
 
 
-***
 
 ## References
 
@@ -198,6 +193,3 @@ transparency of their algorithms whenever needed.
 
 ***
 
-Created: 05/28/2023 (C. Lizárraga); Last update: 02/06/2024 (C. Lizárraga)
-
-<img src="https://datascience.arizona.edu/sites/default/files/Data%20Science%20Institute_Webheader%20%281%29.svg" width="256">
