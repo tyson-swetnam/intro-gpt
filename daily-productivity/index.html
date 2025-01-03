@@ -1,0 +1,1940 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentation for Prompt Engineering 101 Workshop">
+      
+      
+        <meta name="author" content="University of Arizona Institute for Computation & Data-enabled Insight">
+      
+      
+        <link rel="canonical" href="https://tyson-swetnam.github.io/intro-gpt/daily-productivity/">
+      
+      
+        <link rel="prev" href="../prompts/">
+      
+      
+        <link rel="next" href="../code/">
+      
+      
+      <link rel="icon" href="../assets/ua.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
+    
+    
+      
+        <title>General Productivity - GPT 101</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,700,700i%7CRegular:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Montserrat";--md-code-font:"Regular"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-NYETZFD8DN"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-NYETZFD8DN",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-NYETZFD8DN",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#popular-uses-of-prompt-engineering-for-daily-work-productivity" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="GPT 101" class="md-header__button md-logo" aria-label="GPT 101" data-md-component="logo">
+      
+  <img src="../assets/ua.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            GPT 101
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              General Productivity
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="home" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/tyson-swetnam/intro-gpt" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    intro-gpt
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href=".." class="md-tabs__link">
+          
+  
+    
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../chatgpt/" class="md-tabs__link">
+          
+  
+    
+  
+  Setup
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../prompts/" class="md-tabs__link">
+          
+  
+    
+  
+  Prompt Engineering
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../education/" class="md-tabs__link">
+          
+  
+    
+  
+  Education
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../openai/" class="md-tabs__link">
+          
+  
+    
+  
+  Research
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="GPT 101" class="md-nav__button md-logo" aria-label="GPT 101" data-md-component="logo">
+      
+  <img src="../assets/ua.png" alt="logo">
+
+    </a>
+    GPT 101
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/tyson-swetnam/intro-gpt" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    intro-gpt
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href=".." class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Home
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../agenda/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Workshop Agenda
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ai_landscape/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Landscape
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ethics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ethics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Setup
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Setup
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chatgpt/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ChatGPT
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gemini/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gemini
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../claude/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Claude
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../copilot/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Copilot
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Prompt Engineering
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Prompt Engineering
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../prompts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Writing Prompts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    General Productivity
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    General Productivity
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#popular-uses-of-prompt-engineering-for-daily-work-productivity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Popular Uses of Prompt Engineering for Daily Work Productivity
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Popular Uses of Prompt Engineering for Daily Work Productivity">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-1-personal-planner" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example 1: Personal Planner
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-2-content-creation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example 2: Content Creation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#utilizing-ai-meeting-summary-software-zoom-ai-companion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Utilizing AI Meeting Summary Software: Zoom AI Companion
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Utilizing AI Meeting Summary Software: Zoom AI Companion">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-3-personal-assistant-tasks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example 3: Personal Assistant Tasks
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Example 3: Personal Assistant Tasks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#drafting-emails" class="md-nav__link">
+    <span class="md-ellipsis">
+      Drafting emails
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#managing-your-calendar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Managing your calendar
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#taking-one-step-further" class="md-nav__link">
+    <span class="md-ellipsis">
+      Taking one step further!
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-2-creative-writing-and-brainstorming" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example 2: Creative writing and brainstorming
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Example 2: Creative writing and brainstorming">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#research-proposal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Research Proposal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#campus-sustainability-campaign" class="md-nav__link">
+    <span class="md-ellipsis">
+      Campus sustainability campaign
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-3-programming-help" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example 3: Programming help
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Example 3: Programming help">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#coding-assistant" class="md-nav__link">
+    <span class="md-ellipsis">
+      Coding Assistant
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#debugging" class="md-nav__link">
+    <span class="md-ellipsis">
+      Debugging
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#popular-uses-of-prompt-engineering-in-research-data-science-and-code-interpreters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Popular Uses of Prompt Engineering in Research (Data Science and Code Interpreters)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bing-ai-for-advanced-information-gathering-and-verification" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bing AI for Advanced Information Gathering and Verification
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bing AI for Advanced Information Gathering and Verification">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-1-complex-web-searches" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example 1: Complex Web Searches
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-2-data-aggregation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example 2: Data Aggregation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-3-information-verification" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example 3: Information Verification
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#synergistic-use-of-chatgpt-and-bing-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      Synergistic Use of ChatGPT and Bing AI
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Synergistic Use of ChatGPT and Bing AI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-1-research-assistance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example 1: Research Assistance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-2-lecture-preparation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example 2: Lecture Preparation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../code/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Code Interpretation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Education
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Education
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../education/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AI in the Classroom
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../teaching/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Teaching with AI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutoring/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AI Tutoring
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Research
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Research
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../openai/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OpenAI API
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../huggingface/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    HuggingFace
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gradio/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gradio Apps
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#popular-uses-of-prompt-engineering-for-daily-work-productivity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Popular Uses of Prompt Engineering for Daily Work Productivity
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Popular Uses of Prompt Engineering for Daily Work Productivity">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-1-personal-planner" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example 1: Personal Planner
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-2-content-creation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example 2: Content Creation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#utilizing-ai-meeting-summary-software-zoom-ai-companion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Utilizing AI Meeting Summary Software: Zoom AI Companion
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Utilizing AI Meeting Summary Software: Zoom AI Companion">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-3-personal-assistant-tasks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example 3: Personal Assistant Tasks
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Example 3: Personal Assistant Tasks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#drafting-emails" class="md-nav__link">
+    <span class="md-ellipsis">
+      Drafting emails
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#managing-your-calendar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Managing your calendar
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#taking-one-step-further" class="md-nav__link">
+    <span class="md-ellipsis">
+      Taking one step further!
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-2-creative-writing-and-brainstorming" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example 2: Creative writing and brainstorming
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Example 2: Creative writing and brainstorming">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#research-proposal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Research Proposal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#campus-sustainability-campaign" class="md-nav__link">
+    <span class="md-ellipsis">
+      Campus sustainability campaign
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-3-programming-help" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example 3: Programming help
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Example 3: Programming help">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#coding-assistant" class="md-nav__link">
+    <span class="md-ellipsis">
+      Coding Assistant
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#debugging" class="md-nav__link">
+    <span class="md-ellipsis">
+      Debugging
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#popular-uses-of-prompt-engineering-in-research-data-science-and-code-interpreters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Popular Uses of Prompt Engineering in Research (Data Science and Code Interpreters)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bing-ai-for-advanced-information-gathering-and-verification" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bing AI for Advanced Information Gathering and Verification
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bing AI for Advanced Information Gathering and Verification">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-1-complex-web-searches" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example 1: Complex Web Searches
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-2-data-aggregation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example 2: Data Aggregation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-3-information-verification" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example 3: Information Verification
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#synergistic-use-of-chatgpt-and-bing-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      Synergistic Use of ChatGPT and Bing AI
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Synergistic Use of ChatGPT and Bing AI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-1-research-assistance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example 1: Research Assistance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-2-lecture-preparation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example 2: Lecture Preparation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+  <h1>General Productivity</h1>
+
+<p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+<p><img alt="banner" src="../assets/dailyprod-banner.png" width="1000" /></p>
+<p>What tasks do you do every day? What are your daily habits? Where are the pain points that you can improve? Where do you spend time that you wish you had back?</p>
+<h2 id="popular-uses-of-prompt-engineering-for-daily-work-productivity">Popular Uses of Prompt Engineering for Daily Work Productivity<a class="headerlink" href="#popular-uses-of-prompt-engineering-for-daily-work-productivity" title="Permanent link">&para;</a></h2>
+<p>Prompt engineering can significantly enhance daily work productivity. Here are some of the most popular applications:</p>
+<ul>
+<li><strong>Email Drafting and Management:</strong> Automate the creation of routine emails, summarize long email threads, and even prioritize your inbox based on sender and content.</li>
+<li><strong>Meeting Summarization:</strong> Quickly get the gist of meeting transcripts, identify action items, and track decisions made.</li>
+<li><strong>Task Prioritization and Planning:</strong> Organize tasks based on urgency and importance, create daily or weekly schedules, and set reminders.</li>
+<li><strong>Content Creation and Brainstorming:</strong> Generate ideas for articles, blog posts, social media content, and marketing campaigns.</li>
+<li><strong>Code Generation and Debugging:</strong> Write basic code snippets, find and fix bugs in existing code, and understand complex code segments.</li>
+<li><strong>Data Analysis and Interpretation:</strong> Summarize datasets, identify trends, and generate reports from raw data.</li>
+<li><strong>Language Translation:</strong> Translate documents or conversations in real-time, facilitating communication with international colleagues or clients.</li>
+<li><strong>Learning and Skill Development:</strong> Get quick explanations of complex topics, find learning resources, and even practice new skills through simulated scenarios.</li>
+</ul>
+<h3 id="example-1-personal-planner">Example 1: Personal Planner<a class="headerlink" href="#example-1-personal-planner" title="Permanent link">&para;</a></h3>
+<p>Suppose you're using ChatGPT as a personal planner. You might give it a set of instructions like this:</p>
+<details class="example">
+<summary>Planning your day</summary>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>I need your help planning my day tomorrow.
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>First, please list all my scheduled meetings and deadlines from my calendar.
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>Then, taking into account 2 hours of break time, could you suggest a time-managed itinerary for me?
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>Lastly, based on the priority of the tasks, can you create a task list in the order I should tackle them?
+</span></code></pre></div>
+</details>
+<p>This prompt involves three tasks: <strong>retrieving data</strong>, <strong>creating an itinerary</strong>, and <strong>arranging tasks based on priority</strong>.</p>
+<h3 id="example-2-content-creation">Example 2: Content Creation<a class="headerlink" href="#example-2-content-creation" title="Permanent link">&para;</a></h3>
+<p>Imagine you're using ChatGPT for content creation. Here's how you might chain instructions:</p>
+<details class="example">
+<summary>Blog post creation</summary>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>I&#39;d like to write a blog post about sustainable living.
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>First, could you generate a list of five key topics that I should cover?
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>Once we have the topics, can you then provide a brief outline for each of them?
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>Finally, for each of the outlines, could you come up with an engaging introduction paragraph?
+</span></code></pre></div>
+</details>
+<p>This prompt includes three tasks: <strong>generating topics</strong>, <strong>creating outlines</strong>, and <strong>writing introduction paragraphs</strong>.</p>
+<h2 id="utilizing-ai-meeting-summary-software-zoom-ai-companion">Utilizing AI Meeting Summary Software: Zoom AI Companion<a class="headerlink" href="#utilizing-ai-meeting-summary-software-zoom-ai-companion" title="Permanent link">&para;</a></h2>
+<p><a href="https://www.zoom.com/en/ai-assistant/" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.033 14.649H.743a.74.74 0 0 1-.686-.458.74.74 0 0 1 .16-.808L3.19 10.41H1.06A1.06 1.06 0 0 1 0 9.35h3.957c.301 0 .57.18.686.458a.74.74 0 0 1-.161.808L1.51 13.59h2.464c.585 0 1.06.475 1.06 1.06zM24 11.338a2.068 2.068 0 0 0-3.603-1.38 2.06 2.06 0 0 0-1.536-.686c-1.14 0-2.066.926-2.066 2.066v3.311a1.06 1.06 0 0 0 1.06-1.06v-2.251a1.004 1.004 0 0 1 2.013 0v2.251c0 .586.474 1.06 1.06 1.06v-3.311a1.004 1.004 0 0 1 2.012 0v2.251c0 .586.475 1.06 1.06 1.06zM16.265 12a2.728 2.728 0 1 1-5.457 0 2.728 2.728 0 0 1 5.457 0m-1.06 0a1.669 1.669 0 1 0-3.338 0 1.669 1.669 0 0 0 3.338 0m-4.82 0a2.728 2.728 0 1 1-5.458 0 2.728 2.728 0 0 1 5.457 0zm-1.06 0a1.669 1.669 0 1 0-3.338 0 1.669 1.669 0 0 0 3.338 0"/></svg></span> AI Companion</a>, along with other AI-powered meeting summary tools, can significantly boost productivity by automating note-taking and extracting key information from meetings. To effectively use these tools, it's important to understand best practices and institutional policies.</p>
+<p><strong>Getting Started and Optimizing Use</strong></p>
+<p>Begin by ensuring that the AI Companion feature is enabled in your Zoom settings. Your organization's administrator may need to activate it. You can then customize settings, such as choosing between brief and detailed summaries or specifying keywords for emphasis. Before meetings, set clear agendas to provide context for the AI. During the meeting, speak clearly, emphasize important terms, and encourage active participation to enrich the AI's analysis. While in a meeting you can ask the AI Companion for a summary or specific details, for example, "Has a decision been made about X?". After a meeting ends, Zoom will send an email summary to the host, which can be edited and shared with participants. Zoom can also highlight key parts of the meeting recording, or break down the recording into smart chapters.</p>
+<p><strong>Review and Refinement</strong></p>
+<p>After the meeting, always review the AI-generated summary for accuracy and completeness, as these tools are helpful but may not be perfect. Edit and annotate the summary to correct errors, add context, or highlight crucial information. Share the summary with participants, clearly indicating its AI-generated nature.  Zoom AI Companion offers features like in-meeting questions and post-meeting summaries via email. Leverage Zoom's integrations with other productivity tools to seamlessly incorporate meeting summaries into your workflow.</p>
+<p><strong>Institutional Policies and Data Security</strong></p>
+<p>It's crucial to adhere to institutional policies regarding the use of AI tools in official communications. <strong>For platforms like Zoom, this typically means using only official, approved plug-ins such as Zoom AI Companion.</strong> Third-party software may not comply with the university's data security and privacy requirements.</p>
+<p><strong>Why Official Plug-ins Matter</strong></p>
+<p>Using unapproved third-party AI tools can pose significant risks. These tools might:</p>
+<ol>
+<li><strong>Compromise Data Security:</strong> They may store or process meeting data on external servers without adequate security measures, potentially exposing sensitive information to breaches.</li>
+<li><strong>Violate Data Privacy:</strong> They might not adhere to data privacy regulations or institutional policies regarding the handling of personal and confidential data.</li>
+<li><strong>Lack of Accountability:</strong> The university may have limited recourse or control over third-party vendors in case of data breaches or misuse.</li>
+<li><strong>Integration Issues:</strong> They may not integrate seamlessly with existing university systems, leading to inefficiencies and compatibility problems.</li>
+</ol>
+<p>Therefore, to maintain data security, privacy, and compliance with institutional policies, it is essential to use only officially sanctioned AI tools and plug-ins provided or approved by the university for official communications like Zoom meetings. Always consult your institution's IT department or relevant policies for guidance on approved tools and their proper usage.</p>
+<h3 id="example-3-personal-assistant-tasks">Example 3: Personal Assistant Tasks<a class="headerlink" href="#example-3-personal-assistant-tasks" title="Permanent link">&para;</a></h3>
+<p>ChatGPT can be used as a personal assistant to help you with a variety of tasks. For instance, you can use it to draft emails, manage your calendar, or schedule meetings.</p>
+<h4 id="drafting-emails">Drafting emails<a class="headerlink" href="#drafting-emails" title="Permanent link">&para;</a></h4>
+<p>You can ask ChatGPT to draft an email by giving it the main points to include. For instance:</p>
+<details class="example">
+<summary>Drafting an email</summary>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>can you help me draft an email? It&#39;s for my team, summarizing the key points from our meeting today. The points are:
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>We agreed on a new project timeline with a final deadline of July 30th.
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>Our client asked for a weekly status update, which we&#39;ll rotate among team members.
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>We decided to conduct a brainstorming session next Wednesday to come up with new marketing strategies.
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>Remember to submit expense reports by the end of this week.
+</span></code></pre></div>
+</details>
+<p>ChatGPT will then generate a professional and well-structured email draft based on these points.</p>
+<h4 id="managing-your-calendar">Managing your calendar<a class="headerlink" href="#managing-your-calendar" title="Permanent link">&para;</a></h4>
+<p>Assuming an integration with a calendar API (see <a href="../openai_api/#openai-api">OpenAI API</a>), you might use ChatGPT to manage your schedule as follows:</p>
+<details class="example">
+<summary>Managing Calendar</summary>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>can you schedule a team meeting for next Tuesday at 3 PM in my calendar? Also, set a reminder for me to prepare the meeting agenda by Monday afternoon.
+</span></code></pre></div>
+</details>
+<p>ChatGPT would use the calendar API to create the meeting event and set the corresponding reminder.</p>
+<details class="warning">
+<summary>Limitations</summary>
+<p>Often, you will see that ChatGPT is able to generate the correct answer, but it will also issue a warning:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>Please note, as of my knowledge cutoff in September 2021,
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>this feature would require custom coding and integration with an existing calendar system,
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>as ChatGPT by itself does not have the ability to interact directly with external systems and databases.
+</span></code></pre></div>
+<p><strong>However</strong>, with the public release of the OpenAI API, this is no longer a limitation. You can now integrate ChatGPT with external systems and databases. See the <a href="../openai_api/#openai-api">OpenAI API</a> section for more details.</p>
+</details>
+<h4 id="taking-one-step-further">Taking one step further!<a class="headerlink" href="#taking-one-step-further" title="Permanent link">&para;</a></h4>
+<details class="example">
+<summary>Your AI personal assistant!</summary>
+<p>Very recently, Microsoft announced Windows Copilot which will bring a range of new generative AI-powered features to Windows 11 starting in June. Notably, this is a Windows feature and so far will not be integrated with MAC OS. See this <img alt="article" src="https://www.theverge.com/2023/5/23/23732454/microsoft-ai-windows-11-copilot-build" /> for more details.</p>
+</details>
+<h3 id="example-2-creative-writing-and-brainstorming">Example 2: Creative writing and brainstorming<a class="headerlink" href="#example-2-creative-writing-and-brainstorming" title="Permanent link">&para;</a></h3>
+<p>ChatGPT excels in innovative applications. Whether you're developing a research proposal, constructing a lecture series, or strategizing a campus event, you can harness ChatGPT to cultivate original ideas, write comprehensive narratives, or devise memorable catchphrases. In ideation sessions, it can contribute various perspectives and proposals, invigorating creativity and fostering critical thinking.</p>
+<h4 id="research-proposal">Research Proposal<a class="headerlink" href="#research-proposal" title="Permanent link">&para;</a></h4>
+<p>Suppose you're crafting a research proposal about the influence of mythical narratives on modern literature but are stuck on formulating your main hypothesis. You might use ChatGPT in this way:</p>
+<details class="example">
+<summary>Modern literature research Proposal</summary>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>I&#39;m constructing a research proposal and I need help formulating a unique hypothesis.
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>The research is about the influence of mythical narratives, such as those featuring wizards and magical creatures, on modern literature.
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>Can you help refine this idea and suggest some potential research questions and methodologies?
+</span></code></pre></div>
+</details>
+<p>ChatGPT could then generate a refined research idea, list potential research questions, and suggest methodologies, thereby aiding in your research proposal development process.</p>
+<h4 id="campus-sustainability-campaign">Campus sustainability campaign<a class="headerlink" href="#campus-sustainability-campaign" title="Permanent link">&para;</a></h4>
+<p>Imagine you're brainstorming ideas for a new campus sustainability campaign. You might prompt ChatGPT as follows:</p>
+<details class="example">
+<summary>Campus sustainability campaign</summary>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>I need some creative ideas for a sustainability campaign promoting eco-friendly practices on our campus.
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>The campaign should emphasize our institution&#39;s commitment to sustainable practices and our role in promoting environmental responsibility.
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>Can you suggest some innovative strategies, potential catchphrases, and engaging events?
+</span></code></pre></div>
+</details>
+<p>ChatGPT can then provide a variety of strategies, memorable catchphrases, and event ideas to stimulate your brainstorming session, offering different perspectives and creative solutions.</p>
+<h3 id="example-3-programming-help">Example 3: Programming help<a class="headerlink" href="#example-3-programming-help" title="Permanent link">&para;</a></h3>
+<p>Another impressive application of ChatGPT is in the field of programming. You can use it as a coding assistant, where it can help write code, debug issues, or explain complex code snippets. By asking it to convert your high-level descriptions into code, or to suggest improvements for existing code, you can significantly enhance your programming productivity.</p>
+<h4 id="coding-assistant">Coding Assistant<a class="headerlink" href="#coding-assistant" title="Permanent link">&para;</a></h4>
+<p>Suppose you're working on a Python program to perform data analysis, but you're not sure how to write a function to calculate the median from a list of numbers. You might use ChatGPT like this:</p>
+<details class="example">
+<summary>Python median function</summary>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>I&#39;m trying to write a Python function that takes a list of numbers as an argument and returns the median. I&#39;m not sure about the best way to implement this. Could you help me write the code?
+</span></code></pre></div>
+</details>
+<p>ChatGPT could then provide you with a suitable Python function, demonstrating the logic to calculate the median from a list of numbers.</p>
+<h4 id="debugging">Debugging<a class="headerlink" href="#debugging" title="Permanent link">&para;</a></h4>
+<p>Let's say you're having trouble with a piece of JavaScript code that's not behaving as expected. You could ask ChatGPT for help as follows:</p>
+<div class="admonition example">
+<p class="admonition-title">Debugging JavaScript</p>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>my JavaScript code to add event listeners to buttons isn&#39;t working as expected. Here&#39;s the code:
+</span></code></pre></div>
+<div class="language-javascript highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="kd">let</span><span class="w"> </span><span class="nx">buttons</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s1">&#39;.btn&#39;</span><span class="p">);</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">buttons</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="w">    </span><span class="nx">buttons</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="w">        </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Button &#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39; clicked&#39;</span><span class="p">);</span>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="w">    </span><span class="p">});</span>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="p">}</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>When I click a button, it always logs &#39;Button 5 clicked&#39;, no matter which button I click. What&#39;s going wrong, and how can I fix it?&quot;
+</span></code></pre></div></p>
+</div>
+<p>ChatGPT could then explain the issue (in this case, a common pitfall with JavaScript closures) and suggest a corrected version of your code.</p>
+<div class="admonition warning">
+<p class="admonition-title">Limitations</p>
+<p>Remember, while ChatGPT is knowledgeable in many programming languages and concepts, it doesn't replace a full Integrated Development Environment (IDE) or debugger and should be used as a supplementary tool for coding assistance.</p>
+</div>
+<h3 id="popular-uses-of-prompt-engineering-in-research-data-science-and-code-interpreters">Popular Uses of Prompt Engineering in Research (Data Science and Code Interpreters)<a class="headerlink" href="#popular-uses-of-prompt-engineering-in-research-data-science-and-code-interpreters" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Data Cleaning and Preprocessing:</strong> Automate the process of cleaning and preparing data for analysis, including handling missing values, data normalization, and outlier detection.</li>
+<li><strong>Code Generation:</strong> Generate code snippets for specific data analysis tasks, such as statistical tests, data visualization, and machine learning model implementation.</li>
+<li><strong>Algorithm Selection and Design:</strong> Suggest appropriate algorithms or models based on the characteristics of the data and the research question.</li>
+<li><strong>Automated Report Writing:</strong> Generate summaries of data analysis results, including key findings, visualizations, and interpretations.</li>
+<li><strong>Literature Review Assistance:</strong> Quickly find and summarize relevant research papers, identify key concepts, and extract important information.</li>
+<li><strong>Hypothesis Generation:</strong> Explore potential research questions and hypotheses based on existing data and literature.</li>
+<li><strong>Experimental Design:</strong> Assist in designing experiments, including determining sample sizes, selecting appropriate variables, and suggesting control measures.</li>
+</ul>
+<h2 id="bing-ai-for-advanced-information-gathering-and-verification">Bing AI for Advanced Information Gathering and Verification<a class="headerlink" href="#bing-ai-for-advanced-information-gathering-and-verification" title="Permanent link">&para;</a></h2>
+<p>Bing AI offers a multitude of features encompassing semantic search, image search, and real-time web data extraction. These capabilities are powered by Microsoft's state-of-the-art AI technologies, capable of understanding and interpreting web content on a large scale. For instance, Bing AI can sift through search results, images, and other web content to provide you with concise, accurate, and pertinent information.</p>
+<p>Let's consider some advanced use cases where Bing AI can be particularly beneficial:</p>
+<h3 id="example-1-complex-web-searches">Example 1: Complex Web Searches<a class="headerlink" href="#example-1-complex-web-searches" title="Permanent link">&para;</a></h3>
+<p>Suppose you're examining the implications of climate change on polar ice caps for your environmental science class. A conventional search might yield an overwhelming number of results, making it challenging to pinpoint the most relevant information. With Bing AI, however, you can perform a more refined search like:</p>
+<details class="example">
+<summary>Complex web searches</summary>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>Bing AI, find me recent peer-reviewed articles on the rate of polar ice cap melting due to climate change.
+</span></code></pre></div>
+</details>
+<p>Bing AI would then employ its semantic search abilities to locate relevant scientific articles, even summarizing the key findings.</p>
+<h3 id="example-2-data-aggregation">Example 2: Data Aggregation<a class="headerlink" href="#example-2-data-aggregation" title="Permanent link">&para;</a></h3>
+<p>Imagine you're evaluating the impact of a recent educational policy change across several countries for a comparative education study. Instead of manually hunting for data for each country, you could instruct Bing AI:</p>
+<details class="example">
+<summary>Data aggregation</summary>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>Bing AI, compile the latest data on literacy rates in OECD countries following the 2023 education policy modifications.
+</span></code></pre></div>
+</details>
+<p>Bing AI could then efficiently mine and aggregate the requested data from various reliable sources.</p>
+<h3 id="example-3-information-verification">Example 3: Information Verification<a class="headerlink" href="#example-3-information-verification" title="Permanent link">&para;</a></h3>
+<p>In a world abundant with misinformation, verifying claims is crucial. For example, if you encounter a claim that a particular university has a certain acceptance rate, you can verify it by asking Bing AI:</p>
+<details class="example">
+<summary>Information verification</summary>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>Bing AI, validate the current acceptance rate of The University of Arizona, Arizona State University, and Northern Arizona University.
+</span></code></pre></div>
+</details>
+<p>Bing AI would then cross-check the information from reliable sources and provide you with a verified answer.</p>
+<p>These advanced capabilities of Bing AI can significantly enhance productivity in research, information verification, and data analysis.</p>
+<h2 id="synergistic-use-of-chatgpt-and-bing-ai">Synergistic Use of ChatGPT and Bing AI<a class="headerlink" href="#synergistic-use-of-chatgpt-and-bing-ai" title="Permanent link">&para;</a></h2>
+<p>Integrating the capabilities of ChatGPT and Bing AI brings together the strengths of both platforms. While ChatGPT shines in understanding context and generating human-like text, Bing AI excels in web data extraction and advanced search capabilities. By combining these, you can create a powerful AI toolset that can help manage your daily tasks and fulfill your information needs in a more streamlined and efficient manner.</p>
+<p>Let's now delve into a couple of practical examples showcasing how to leverage both ChatGPT and Bing AI:</p>
+<h3 id="example-1-research-assistance">Example 1: Research Assistance<a class="headerlink" href="#example-1-research-assistance" title="Permanent link">&para;</a></h3>
+<p>Imagine you're undertaking a research project on educational policies across various countries. You can prompt:</p>
+<details class="example">
+<summary>Literacy rates</summary>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>using Bing AI, find me the latest data on literacy rates in OECD countries after the 2023 education policy changes and
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>summarize the findings.
+</span></code></pre></div>
+</details>
+<p>In this case, ChatGPT collaborates with Bing AI to extract the relevant data and provide a summarized version of the key findings.</p>
+<h3 id="example-2-lecture-preparation">Example 2: Lecture Preparation<a class="headerlink" href="#example-2-lecture-preparation" title="Permanent link">&para;</a></h3>
+<p>Suppose you're preparing a lecture on climate change impacts on polar ice caps. You could ask:</p>
+<details class="example">
+<summary>Lecture preparation</summary>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>using Bing AI, find me recent peer-reviewed articles on the rate of polar ice cap melting due to climate change and create
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>a summarized overview for my lecture.
+</span></code></pre></div>
+</details>
+<p>Here, Bing AI assists in locating the articles, while ChatGPT uses its language generation abilities to create a lecture-ready summary.</p>
+<p>Harnessing the synergies of ChatGPT and Bing AI can result in powerful capabilities that can revolutionize your academic and administrative workflows.</p>
+
+
+
+
+
+
+
+  
+    
+  
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    2025-01-02
+  </span>
+
+    
+    
+    
+    
+  </aside>
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 University of Arizona Institute for Computation & Data-enabled Insight
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://orcid.org/0000-0002-6639-7181" target="_blank" rel="noopener" title="orcid.org" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M294.75 188.19h-45.92V342h47.47c67.62 0 83.12-51.34 83.12-76.91 0-41.64-26.54-76.9-84.67-76.9M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8m-80.79 360.76h-29.84v-207.5h29.84zm-14.92-231.14a19.57 19.57 0 1 1 19.57-19.57 19.64 19.64 0 0 1-19.57 19.57M300 369h-81V161.26h80.6c76.73 0 110.44 54.83 110.44 103.85C410 318.39 368.38 369 300 369"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://scholar.google.com/citations?user=nanIeAYAAAAJ&hl=en" target="_blank" rel="noopener" title="scholar.google.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.242 13.769 0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269M12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/tyson-swetnam/" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/tswetnam" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/tyson-swetnam" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5m282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://hub.docker.com/u/tswetnam" target="_blank" rel="noopener" title="hub.docker.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M349.9 236.3h-66.1v-59.4h66.1zm0-204.3h-66.1v60.7h66.1zm78.2 144.8H362v59.4h66.1zm-156.3-72.1h-66.1v60.1h66.1zm78.1 0h-66.1v60.1h66.1zm276.8 100c-14.4-9.7-47.6-13.2-73.1-8.4-3.3-24-16.7-44.9-41.1-63.7l-14-9.3-9.3 14c-18.4 27.8-23.4 73.6-3.7 103.8-8.7 4.7-25.8 11.1-48.4 10.7H2.4c-8.7 50.8 5.8 116.8 44 162.1 37.1 43.9 92.7 66.2 165.4 66.2 157.4 0 273.9-72.5 328.4-204.2 21.4.4 67.6.1 91.3-45.2 1.5-2.5 6.6-13.2 8.5-17.1zm-511.1-27.9h-66v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1zm78.1 0h-66.1v59.4h66.1zm-78.1-72.1h-66.1v60.1h66.1z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.youtube.com/channel/UC5xPt9KZHccC0ehMNEkINzQ" target="_blank" rel="noopener" title="www.youtube.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305m-317.51 213.508V175.185l142.739 81.205z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "navigation.top"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      
+    
+  </body>
+</html>
