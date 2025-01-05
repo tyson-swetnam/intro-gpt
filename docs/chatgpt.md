@@ -8,7 +8,7 @@ This work is licensed under a
 
 **Log In to Your Account**  
    
-   - Visit [chat.openai.com](https://chat.openai.com/) and log in using your existing credentials or create a new account.
+   - Visit [chatgpt.com](https://chatgpt.com/){target=_blank} and log in using your existing credentials or create a new account.
    
 **Access Account Settings:**
      

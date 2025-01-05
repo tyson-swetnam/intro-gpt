@@ -37,16 +37,18 @@ This website follows the [FAIR](https://www.go-fair.org/fair-principles/){target
 |------------------------------------|---------|------------|------|
 | 09:00 | Introductions & [Code of Conduct](#code-of-conduct) | Tyson | |
 | 09:10 | [Session 1: The Landscape](ai_landscape.md) | Tyson | [presentation](https://docs.google.com/presentation/d/1PzPafN5Yznf8jdgpquPAaN0TmYC9WJwvPxM_I2LPwFo/edit?usp=sharing){target=_blank} |
-| 09:30| Session 2: What is [ChatGPT](chatgpt.md) and [Gemini](gemini.md)? |  Jeff 
+| 09:30| [Session 2: What is GPT](chatgpt.md)? |  Carlos | 
 | 10:00 | Break |  |
-| 10:10 | [Session 3: Prompt Engineering](daily-productivity.md) | Michele & Tyson  |
+| 10:10 | [Session 3: Prompt Engineering](daily-productivity.md) | Michele |
 | 11:00 | Lunch |  |  
-| 12:00 | [Session 4: Plugins & Code Interpreter](plugins.md) | Jeff | 
+| 12:00 | [Session 4: Code Interpreters](code.md) | Jeff | 
 | 12:30 | [Session 5: CoPilot](copilot.md) | Tyson |
 | 13:00 | Break |  
-| 13:10 | [Session 6: Hugging Face](huggingface.md) | Tyson
-| 13:50 | Open Mic & Discussion|  |
-| 14:00 - ? | Hackathon |  
+| 13:10 | [Session 6: Education](education.md) | Jeff |
+| 13:30 | [Session 7: Teaching](teaching.md) | Michele |
+| 14:00 | [Session 8: Tutoring](tutoring.md) | Carlos  |
+| 15:00 | [Session 9: Research](research.md) | Tyson |
+ 
 
 ## Pre-requisites
 

@@ -76,7 +76,7 @@
 | | Mega | $120 | 60 hrs fast GPU time/month, unlimited relaxed GPU time, stealth mode. |
 | [**DALL·E 3**](https://openai.com/dall-e-3){target=_blank} | Via ChatGPT Plus  | Included in ChatGPT Plus   | Available for image generation within ChatGPT Plus.  |
 | [**DALL-E API**](https://openai.com/dall-e-3){target=_blank} | Pay-as-you-go | Varies | **DALL-E 3:** Standard quality $0.040/image, HD quality $0.080/image. <br> **DALL-E 2:** $0.020/image (1024x1024), $0.018/image (512x512), $0.016/image (256x256). |
-| [**OpenAI Sora**](https://sora.com/onboarding)){target=_blank} | Research Preview | Not yet released |  Not yet available to the public. Currently in a red teaming phase. |
+| [**OpenAI Sora**](https://sora.com/onboarding){target=_blank} | Research Preview | Not yet released |  Not yet available to the public. Currently in a red teaming phase. |
 | [**Anthropic Claude**](https://www.anthropic.com/pricing){target=_blank} | Claude 3 Haiku | $0.25/1K input, $1.25/1K output | Entry-level model with 200K context window. |
 | | Claude 3 Sonnet | $3/1K input, $15/1K output  | Mid-tier model with enhanced capabilities, 200K context window. |
 | | Claude 3 Opus | $15/1K input, $75/1K output | Advanced model comparable to GPT-4, 200K context window. |
@@ -153,29 +153,6 @@
     *   **Multimodal Integration:** Combining image/video analysis with other modalities (text, audio) for a more holistic understanding of content.
     *   **3D Scene Generation:**  Generating 3D models and environments from images and videos.
     *   **Real-time Analysis:**  Performing image and video analysis in real-time for applications like augmented reality and live video processing.
-
-??? Info "Understanding Embeddings"
-
-    [What are Embeddings? - Vicki Boykis](https://vickiboykis.com/what_are_embeddings/){target=_blank} - [download PDF :fontawesome-regular-file-pdf:](https://raw.githubusercontent.com/veekaybee/what_are_embeddings/main/embeddings.pdf)
-    
-    Embeddings are a way to represent data (words, images, etc.) as numerical vectors in a multi-dimensional space. These vectors capture semantic relationships between data points, meaning similar items are located closer together in the embedding space.
-
-    Embedded space for geospatial applications:
-    
-    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Visualizing how embeddings can organize satellite imagery. Millions of points covering the state of Alabama move between their geographic position and their location in the embedding space. <a href="https://t.co/Z6FtoMQ84B">pic.twitter.com/Z6FtoMQ84B</a></p>&mdash; Caleb Kruse (@clkruse) <a href="https://twitter.com/clkruse/status/1658131846121803777?ref_src=twsrc%5Etfw">May 15, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-    Embedded space for natural language:
-
-    [Credit: Stephen Wolfram](https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/){target=_blank}
-
-    [![wolfram](https://content.wolfram.com/uploads/sites/43/2023/02/hero3-chat-exposition.png)](https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/)
-
-    **Why are Embeddings Important?**
-
-    *   **Machine Learning:** Embeddings are essential for training machine learning models, as they provide a way to represent complex data in a format that algorithms can understand.
-    *   **Semantic Search:**  Embeddings enable semantic search, where you can find information based on meaning rather than just keyword matching.
-    *   **Recommendation Systems:** Embeddings help power recommendation systems by identifying items with similar characteristics.
-    *   **Data Visualization:**  Embeddings can be used to visualize relationships between data points in a lower-dimensional space.
 
 !!! Info "Glossary"
 

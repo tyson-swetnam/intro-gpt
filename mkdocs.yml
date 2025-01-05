@@ -14,14 +14,15 @@ copyright: 'Copyright &copy; 2025 University of Arizona Institute for Computatio
 nav:
   - Home:  
     - Welcome: index.md
-    - Workshop Agenda: agenda.md
+    - Agenda: agenda.md
     - Landscape: ai_landscape.md
     - Ethics: ethics.md
   - Setup:
     - ChatGPT: chatgpt.md
+    - Microsoft Copilot: microsoft.md
     - Gemini: gemini.md
     - Claude: claude.md
-    - Copilot: copilot.md
+    - GitHub Copilot: copilot.md
   - Prompt Engineering: 
     - Writing Prompts: prompts.md
     - General Productivity: daily-productivity.md
@@ -30,10 +31,15 @@ nav:
     - AI in the Classroom: education.md
     - Teaching with AI: teaching.md
     - AI Tutoring: tutoring.md
+    - Admissions & Recruiting: admissions.md
   - Research:
+    - AI for Research: research.md
+    - Agentic AI: agentic.md
+    - RAG: rag.md
     - OpenAI API: openai.md
     - HuggingFace: huggingface.md
     - Gradio Apps: gradio.md
+    - Text Mining: text_mining.md
 
 # Configuration
 
@@ -77,6 +83,7 @@ theme:
     - navigation.tabs.sticky
     - navigation.indexes
     - navigation.top
+    - content.code.copy
   favicon: 'assets/ua.ico'
   logo: 'assets/ua.png'
 

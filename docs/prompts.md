@@ -6,11 +6,9 @@
 
 ??? Question "How do GPTs Work?"
 
-
-
     !!! Success "Natural Language" 
     
-        ChatGPT's models use natural language prompts to elicit contextual responses. [Current models](https://openai.com/index/learning-to-reason-with-llms/){target=_blank} are beginning to 'reason' in their responses. 
+        GPT's models use natural language prompts to elicit contextual responses. [Current models](https://openai.com/index/learning-to-reason-with-llms/){target=_blank} are beginning to 'reason' in their responses. 
 
         GPTs can respond to either langauge (prose) or computer code. 
 
@@ -18,15 +16,17 @@
 
     !!! Success ":octicons-markdown-16: MarkDown Syntax"
 
-        GPTs use a syntax called [MarkDown :octicons-markdown-16:](https://www.markdownguide.org/){target=_blank}. Markdown is plain text that uses special characters for formatting. 
+        GPTs use a syntax called [MarkDown :octicons-markdown-16:](https://www.markdownguide.org/){target=_blank}. MarkDown is human readable plain text that uses special characters for formatting. 
 
         This website, for example, is written using MarkDown syntax ([MkDocs-Material](https://squidfunk.github.io/mkdocs-material/){target=_blank}) and converted to HTML using Python. 
 
 ___
 
-GPT Chat asks for a message to begin its conversation. These messages are called "Prompts". 
+GPT chats ask for a text or audio message to begin a conversation. These messages are called "Prompts". 
 
-Begin a conversation with a specific type of prompt. This will help narrow the potential range of responses and improve results to subsequent prompts. 
+Begin a conversation with a specific type of prompt. Such a prompt can be called a "primer" and can also include a "Custom Instruction" or "System Instructions" for establishing the tone or style for the model to follow.
+
+This will help narrow the potential range of responses and improve results to subsequent prompts. 
 
 ## **Priming**
 
@@ -45,9 +45,9 @@ Responses are more likely to be useful when multiple specific output types are d
 
 ??? Question "How long can or should a prompt be?"
 
-    !!! Success "ChatGPT & Gemini"
+    !!! Success "Tokens"
 
-        The length of a prompt is [measured in "tokens"](https://techcommunity.microsoft.com/t5/healthcare-and-life-sciences/unlocking-the-power-of-tokens-optimizing-token-usage-in-gpt-for/ba-p/3826665{target=_blank}). 
+        The length of a prompt is measured in ["tokens"](https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them){target=_blank} or [n-grams](https://en.wikipedia.org/wiki/N-gram){target=_blank}. 
         
         A token can represent an individual character, a word, or a subword depending on the specific tokenization approach. A rough estimate for the average number of words in English language per token is `0.75`. 
 
@@ -185,43 +185,6 @@ Set the role for ChatGPT to play during your session.
 | Python Interpreter |
 | Web Browser |
 
-Examples of roles you might ask for are: a domain science expert, an IT or DevOps engineer, software programmer, journal editor, paper reviewer, mentor, teacher, or student. You can even instruct ChatGPT to respond as though it were a Linux [terminal](https://www.engraved.blog/building-a-virtual-machine-inside/){target=_blank}, a web browser, a search engine, or language interpreter.
-
-??? Abstract "Data Scientist"
-
-    Let's try an example prompt with role-playing to help write code in the R programming language.
-
-    ```markdown
-    I want you to act as a data scientist with complete knowledge of the R language, 
-    the TidyVerse, and RStudio. 
-    
-    Write the code required to create a new R project environment,
-    Download and load the Palmer Penguins dataset, and plot regressions of body mass, 
-    bill length, and width for the species of Penguins in the dataset. 
-
-    Your response output should be in R and RMarkDown format 
-    with text and code delineated with ``` blocks.
-
-    At the beginning of new file make sure to install any 
-    RStudio system dependencies and R libraries that Palmer Penguins requires.
-    ```
-
-    Example can use `GPT-3.5-Turbo` or `GPT-4`
-
-??? Abstract "Talk to Dead Scientists"
-
-    Try to ask a question with and without Internet access enabled:
-
-    ```markdown
-    I want you to respond as though you are the mathematician Benoit Mandelbrot
-
-    Explain the relationship of lacunarity and fractal dimension for a self-affine series
-
-    Show your results using mathematical equations in LaTeX or MathJax style format
-    ```
-    Again, there is no guarantee that the results ChatGPT provides are factual, but it does greatly improve the odds that they are relevant to the prompt. Most importantly, these extensions provide citations for their results, allowing you to research the results yourself. 
-
-
 ### **Tasks**
 
 Prompts which return informative responses to questions like "What is ..." or "How does ..."
@@ -244,27 +207,13 @@ Because of ChatGPT's proclivity at making up information, using it without a way
 | Code |
 | Software Script |
 
-Bing and Bard fill an important space in these types of prompts - they return websites which match the query criterion and allow you to research your own answers.
-
-There are extension tools for ChatGPT which allows you to prompt with references.
-
-!!! Tip "Access the Internet"
-
-    By default, ChatGPT does not have access to the Internet, and is limited to the time period before September 2021 (as of mid-2023) for its training data time frame. 
-
-    There are third-party extensions, like [WebChatGPT](https://www.webchatgpt.app/) which you can install in your browser (Firefox or Chrome), that will extend OpenAI ChatGPT's reach to the internet.
-
-    We presently recommend using [:material-microsoft-bing: Bing Chat](bing.md) with Edge Browser instead of ChatGPT 3.5 for prompting which works with the internet.
-
-    [:simple-google: Bard](bard.md) also has access to the web and limited integration with Google Workspace.
-
 ### **Format**
 
 By default ChatGPT outputs MarkDown syntax text. It can also output software code, and soon images, video, music and sounds.
 
 | Formats to output |
 |-------------------|
-| MarkDown Text (\& emojis) |
+| MarkDown (emojis!) |
 | List |
 | Table |
 | HTML |
@@ -278,20 +227,8 @@ By default ChatGPT outputs MarkDown syntax text. It can also output software cod
 | Graphs |
 | Spreadsheets |
 
-You can also ask ChatGPT to explain complex topics or to act as a cook-book step-by-step guide. 
-
-ChatGPT can provide instructional details about how to do specific tasks. 
-
-??? Abstract "Documentation Writer"
-
-    ```markdown
-    I want you to act as a DIY expert. You will help me develop the skills necessary 
-    to complete simple lab documentation, create tutorials and guides for beginners and experts, 
-    and explain complex concepts in layman's terms using visual techniques, and develop helpful resources.
-
-    I want you to create a tutorial for building and deploying a github.io website using the MkDocs Material Theme
-    ```
 ___
+
 ## **Linked Prompts**
 
 Follow-up your prompts sequentially.
@@ -306,23 +243,6 @@ Responses to prompts may not return the exact details or information that you ar
 | Step 2: Summarizing | "Based on the list you just created, summarize the most pressing financial challenges faced by indigenous communities in the Global South, versus indigenous communities in North America, in less than 50 words." |
 | Step 3: Try again with enabled [WebChatGPT](https://www.webchatgpt.app/){target=_blank} or [Browsing](https://openai.com/blog/chatgpt-plugins#browsing){target=_blank} | "Based on the results of web access, can you confirm the validity of the ten important topics and provide at least one reference to each." |
 
-
-
-**Instructional**
-
-You can also ask ChatGPT to explain complex topics or to act as a cook-book step-by-step guide. 
-
-ChatGPT can provide instructional details about how to do specific tasks. 
-
-??? Abstract "ChatGPT as a documentation writer"
-
-    ```markdown
-    I want you to act as a DIY expert. You will help me develop the skills necessary 
-    to complete simple lab documentation, create tutorials and guides for beginners and experts, 
-    and explain complex concepts in layman's terms using visual techniques, and develop helpful resources.
-
-    I want you to create a tutorial for building and deploying a github.io website using the MkDocs Material Theme
-    ```
 ___
 
 !!! Tip "**General Prompt Traits**"
@@ -363,7 +283,7 @@ ___
 
     [Indirect prompt injection](https://www.wired.com/story/chatgpt-prompt-injection-attack-security/){target=_blank}
 
-## :simple-openai: Software Development
+## Software Development
 
 ChatGPT is trained on langauges, including software language. Use ChatGPT as your new paired-programming AI assistant. 
 
@@ -371,92 +291,11 @@ ChatGPT is trained on langauges, including software language. Use ChatGPT as you
 
 For novice programmers, ChatGPT likely fills a long unfilled hole in your knowledge map. It can write code faster than you can, and with the proper prompts, create programs in minutes which may have taken you hours or days. 
 
-??? Abstract "Linux Guru"
-
-    ChatGPT is trained on common data science languages, like Python, Julia, and R. Use ChatGPT to help develop basic code or to explain and debug code you're trying to write. 
-
-    Using ChatGPT can be a time savings, reducing the time it takes to look for the answers yourself over conventional search.
-
-    ```markdown
-    I want you to act as a humble data scientist who works a lot with Python and scientific visualization
-
-    Create a Python script which generates a visually pleasing and compelling heat map for a CSV dataset
-    ```
-
-    You can also use it to summarize code or to help explain its operation
-
-    ```markdown
-    I want you to act as a humble data scientist who works a lot with Linux 
-
-    Explain to me what the following code does:
-
-    $ find /home/www \( -type d -name .git -prune \) -o -type f -print0 | xargs -0 sed -i 's/subdomainA\.example\.com/subdomainB.example.com/g'
-    ```
-
-    Other valuable uses:
-    
-    * Change variable names and file names! When you have a large dataset with many files and folder names, you can ask ChatGPT to help design a schema for renaming your project's content
-
-    * Regular Expressions, or `regex` is a bane of many programmers. ChatGPT can write, edit, and explain complex `regex`
-
-    ```markdown
-    I want you to act as a regex generator. Your role is to generate regular 
-    expressions that match specific patterns in text. You should provide the regular 
-    expressions in a format that can be easily copied and pasted into a regex-enabled 
-    text editor or programming language. Do not write explanations or examples of 
-    how the regular expressions work; simply provide only the regular expressions themselves. 
-
-    remove any numbers from a string and replace them with a capital X
-    ```
-
-For more advanced programmers, ChatGPT's weaknesses may become apparent when optimizing or linting complex code bases. However, there are already extension tools which can evaluate code performance and make changes or suggestions. 
-
-??? Abstract "DevOps Engineer"
-
-    ChatGPT can automate tasks and write tests
-
-    ```markdown
-    I want you to act as a DevOps engineer who specializes in SQL and Docker.
-
-    I am running an Ubuntu 22.04 server with a dockerized web service which appears to have a memory leak. Write a unit test for the PostgreSQL web server using SQL, JSON, or Python that can find the process which is causing the leak and restart the docker-compose service.
-    ```
-
-    You can also use ChatGPT to help optimize your code's performance.
-
-    ```markdown
-    Make this code run faster and use less memory using BASH
-
-     ```
-     import os 
-     # folder path
-     dir_path = os.getcwd()
-     # list to store files
-     res = [] 
-     # Iterate directory
-     for path in os.listdir(dir_path):
-         # check if current path is a file
-         if os.path.isfile(os.path.join(dir_path, path)):
-             res.append(path)
-     print(res)
-     ```
-    ```
-
-## :simple-openai: Word Processing
+## Word Processing
 
 **Outlining**
 
-ChatGPT can help to create outlines for any type of writing. This can help get beyond a blank page problem.
-
-??? Abstract "Getting ideas on paper"
-
-    Create a basic outline about an idea that you want to work on
-
-    ```
-    Create a title and sections for a student data challenge with 
-    three sections and no more than three subsections each. The challenge should be about
-    using Earth Observation System data from NASA and European Space Agency to diagnose 
-    environmental change and human societies.
-    ```
+GPTs accel at writing outlines, helping get beyond the blank page problem.
 
 **Editing**
 
@@ -468,38 +307,15 @@ When establishing the role of the responses, consider
 
 When small or large groups are working together to synthesize discussions around scientific research, they often maintain the discussion topics in large sets of notes with many contributions.
 
-Use ChatGPT to summaries a day or a week's worth of notes. Include the schedule or agenda and ask ChatGPT to summarize whether the agenda met the topics of interest, or even suggest directions which went unexplored. 
+Use GPT to summaries a day or a week's worth of notes. Include the schedule or agenda and ask GPT to summarize whether the agenda met the topics of interest, or even suggest directions which went unexplored. 
 
 **Translation**
 
-ChatGPT can be used for translating languages, and for specifying regional dialect translation. 
+GPT can be used for translating languages, and for specifying regional dialect translation. 
 
 Althought it was not specifically designed for language translation, it does a relatively good job at most major languages to English.
 
-For English as a Second Language (ESL) speakers, ChatGPT utility in writing more formal or professional text is likely of high value. 
-
-**Writing**
-
-While it is unethical to allow ChatGPT to write original research on your behalf, you can use it to help write technical documentation, recipes, or how-to-lists for yourself or a lab group.
-
-You can use also ChatGPT to draft email responses or to write letters, although doing so autonomously is unprofessional and potentially unethical conduct.
-
-??? Tip "ChatGPT timing out without completing its responses?"
-
-    When generating a long set of results, ChatGPT may time out after 60 seconds. 
-    
-    You can resume the output of the prompt by telling it to 'continue'. For text:
-
-    ```markdown
-     continue
-    ```
-
-    or for code response:
-
-    ```markdown
-     continue 
-     ```
-    ```
+For English as a Second Language (ESL) speakers, GPT utility in writing more formal or professional text is likely of high value. 
 
 ## :simple-openai: Tuning
 
@@ -535,8 +351,7 @@ You can include Linux command line flags in your prompts,
         Services like [Perplexity.ai](https://perplexity.ai){target=_blank} are targeted toward search. 
         
         [Google Search](https://google.com){target=_blank} now includes AI summaries for some queries by default. 
-
-        
+       
 
 ??? Question "Short, concise, prompts are better than long meandering prompts?"
 

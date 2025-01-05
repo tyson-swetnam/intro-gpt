@@ -4,7 +4,7 @@
 
 ![banner](assets/banner3_ai.png){width=1000}
 
-## [:material-run-fast: Go to TBD 2025 Workshop Agenda](agenda.md)
+## [:material-run-fast: Workshop Agenda](agenda.md)
 
 Welcome to our workshop on generative AI and Prompt Engineering for academic research and education.
 
@@ -18,19 +18,36 @@ Generative AI are now deeply integrated into how we work, conduct research, teac
     *   Create effective prompts for leading AI models like Gemini, ChatGPT, Copilot, Claude, and others.
     *   Decide when to integrate AI into your own life and work.
 
-!!! Tip "Getting Started: Create accounts" 
+## [:material-run-fast: Setup](chatgpt.md)
 
-    These platforms will be the primary tools used during the workshop, info on account creation here:
+!!! Warning "**Prerequisites**" 
+    
+    **We will be using Professional paid versions of GPTs for this workshop.** 
+    
+    If your department does not provide you with a subscription to a major GPT, or you cannot afford to purchase a monthly subscription, please contact the organizers for details about getting a demo account for the workshop.
+
+
+!!! example "Account Setup Instructions"
 
     [:material-run-fast: :simple-openai: ChatGPT](chatgpt.md)
 
     [:material-run-fast: :simple-google: Gemini](gemini.md)
 
-    [:material-run-fast: :simple-githubcopilot: Microsoft Copilot](copilot.md)
+    [:material-run-fast: :material-microsoft: Microsoft Copilot](microsoft.md)
+
+    [:material-run-fast: :simple-githubcopilot: GitHub Copilot](copilot.md)
 
     [:material-run-fast: :simple-anthropic: Claude](claude.md)
 
     [:material-run-fast: :hugging: HuggingFace](huggingface.md)
+
+## [:material-run-fast: AI Landscape](ai_landscape.md)
+
+An examination of the generative AI landscape, as of today. This will include a review of Large Language Models within the greater ecosystem. 
+
+## [:material-run-fast: Prompt Engineering](prompts.md)
+
+Next, we will cover the basics of Prompt Engineering for daily productivity, as well as in academic teaching and research
 
 !!! Info "General Productivity"
 
@@ -42,9 +59,13 @@ Generative AI are now deeply integrated into how we work, conduct research, teac
     *   **Smart Summarization and Note-Taking:** Using AI to quickly digest information and generate concise summaries.
     *   **Automated Task Management:**  Leveraging AI to schedule meetings, set reminders, and manage projects.
 
+## [:material-run-fast: Education](education.md)
+
+As the last lesson in the introductory Prompt Engineering Workshop, we will cover use cases for bringing AI into your teaching regime, into the classroom, and providing students with the ability to learn from AI as virtual tutors and teaching assistants.
+
 !!! Info "Education"
 
-    [:material-run-fast: AI in the Classroom](education.md)
+    [:material-run-fast: AI in the Classroom](teaching.md)
 
     [:material-run-fast: Ethics of AI in Education](ethics.md)
 
@@ -55,6 +76,13 @@ Generative AI are now deeply integrated into how we work, conduct research, teac
     *   **Provide Intelligent Tutoring:** Offer students personalized support and feedback.
     *   **Enhance Accessibility:**  Make learning more inclusive for all students.
 
+## [:material-run-fast: Research](research.md)
+
+We will briefly touch on the applications of AI for scientific research, primarily through the use of code interpreters and code execution using commercial software.
+
+
+A future workshop on advanced uses of AI for scientific research will cover the creation and deployment of AI for science gateways and integration of custom, private, GPTs and LLMs for private and secure applications. 
+
 !!! Info "Research"
 
     [:material-run-fast: Go to our lesson on AI in Research](research.md)
@@ -63,13 +91,12 @@ Generative AI are now deeply integrated into how we work, conduct research, teac
 
     *   **Literature Review and Synthesis:** Using AI to quickly analyze and summarize research papers.
     *   **Data Analysis and Exploration:** Leveraging AI to identify patterns and insights in complex datasets.
-    *   **Hypothesis Generation:**  Using AI to brainstorm new research questions and directions.
-    *   **Grant Proposal Writing:**  Utilizing AI to assist in crafting compelling grant proposals.
-    *   **Code Generation and Debugging:** Using AI tools like GitHub Copilot to streamline the coding process.
+    *   **Writing:**  Utilizing AI to assist in crafting compelling grant proposals.
+    *   **Code Interpreter and execution:** Using AI tools like GitHub Copilot to streamline the coding process.
 
 !!! Example "Tools and Platforms"
 
-    [:material-run-fast: Go to our lesson on :octicons-copilot-48: GitHub Copilot](copilot.md)
+    [:material-run-fast: Go to our lesson on :octicons-copilot-48: GitHub Copilot](code.md)
 
     [:material-run-fast: Go to our lesson on  :simple-openai: the OpenAI API](openai.md)
 

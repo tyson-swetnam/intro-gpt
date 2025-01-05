@@ -25,7 +25,18 @@
 
 
 
-## :hugging: Model Hub
+## :hugging: SmolLM
+
+The smol models (SmolLM) include sets of high quality pre-trained datasets.
+
+### Hugging Face TB Research
+
+[:hugging: HuggingFaceTB](https://huggingface.co/HuggingFaceTB)
+
+### FineWeb-Edu
+
+[:hugging: FineWeb-Edu](https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu)
+
 
 
 ## Academic Research Models
