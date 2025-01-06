@@ -1,10 +1,12 @@
-# Teaching and Mentoring with AI
+# Teaching with AI
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 
-??? Question "**Have you integrated AI into your coursework yet?**"
+!!! Danger "**Full Disclosure: Material on this website was copy edited or is based on suggestions made by a GPT**"
 
-    !!! Failure "No, and thats OKAY!" 
+!!! Question "**Have you integrated AI into your coursework yet?**"
+
+    ??? Failure "No, and thats OKAY!" 
 
         A thoughtful, wait and see, approach to incorporating AI into your educational material is rational and reasonable.
 
@@ -16,7 +18,7 @@
 
         Read about [:simple-openai: OpenAI Educator Considerations](https://platform.openai.com/docs/chatgpt-education/educator-considerations-for-chatgpt){target=_blank}
 
-    !!! Success "Yes, but go ahead and read on"
+    ??? Success "Yes, but go ahead and read on"
 
         Thats great! 
         
@@ -24,34 +26,14 @@
         
         Also, ensure that you're using approved AI software that has been vetted by university security and IT staff.
 
-GPTs can compose essays and pass advanced knowledge assessments [(OpenAI :simple-arxiv:)](https://doi.org/10.48550/arXiv.2303.08774){target=_blank}.  As a result, online education, a recent and lucrative innovation in academia, now faces extreme challenges regarding effective remote student assessment [(Susnjak :simple-arxiv:)](https://doi.org/10.48550/arXiv.2212.09292){target=_blank}. 
+GPTs can compose essays, pass advanced tests, and are a threat to academic integrity [(Eke 2023)](https://doi.org/10.1016/j.jrt.2023.100060){target=_blank}. As a result, online education, a recent and lucrative innovation in academia, now faces extreme challenges regarding effective remote student assessment [(Susnjak & McIntosh 2024)](https://doi.org/10.3390/educsci14060656){target=_blank}. 
 
-Attempting to modify coursework to avoid assessment techniques where GPTs excel or using [bots to detect GPT generated content](https://platform.openai.com/ai-text-classifier){target=_blank} are increasingly proven to be futile. 
+Attempting to modify coursework to avoid assessment techniques where GPTs excel or using bots to detect GPT generated content are increasingly proven to be futile [(Sloan MIT 2024)](https://mitsloanedtech.mit.edu/ai/teach/ai-detectors-dont-work/){target=_blank}. 
 
-!!! Question "**Instead of engaging in a cheating arms race, why not embrace AI?**"
+"**Instead of engaging in a cheating arms race, why not embrace AI?**"
 
-    Proponents of integrating AI into educational curricula [(:simple-newyorktimes:)](https://www.nytimes.com/2023/01/12/technology/chatgpt-schools-teachers.html){target=_blank} argue that by adapting and integrating GPTs into the curriculum, we also develop a modern workforce who are empowered by AI assistants.
+Proponents of integrating AI into educational curricula [(:simple-newyorktimes:)](https://www.nytimes.com/2023/01/12/technology/chatgpt-schools-teachers.html){target=_blank} argue that by adapting and integrating GPTs into the curriculum, we also develop a modern workforce who are empowered by AI assistants.
 
-!!! Danger "**Disclosure: Most of the material on this website was copy edited or originated based on suggestions made by ChatGPT and Gemini**"
-
-!!! Tip ":simple-google: Google for Education"
-
-    Google offers self-paced courses on generative AI. 
-    
-    Register with your @arizona.edu Google account and enroll in this 2-hour workshop: 
-    [:simple-google: Generative AI For Educators](https://skillshop.exceedlms.com/student/path/1176018-generative-ai-for-educators){target=_blank} 
-
-!!! Info "Teaching with ChatGPT"
-
-    [ChatGPT for Teachers by We Are Teachers](https://www.weareteachers.com/chatgpt-for-teachers/){target=_blank}
-
-    [Using AI in the Classroom by University of Wisconsin Madison](https://idc.ls.wisc.edu/guides/using-artificial-intelligence-in-the-classroom/){target=_blank}
-
-    [ChatGPT Resources for Faculty by University of Pittsburg](https://teaching.pitt.edu/resources/chatgpt-resources-for-faculty/){target=_blank}
-
-    [AI in the Classroom by Greylock Podcast](https://greylock.com/greymatter/ai-in-the-classroom/){target=_blank}
-
-    [How to handle AI in Schools by CommonSense.org](https://www.commonsense.org/education/articles/chatgpt-and-beyond-how-to-handle-ai-in-schools){target=_blank}
 
 ??? Tip "Pro vs Cons of AI in Economics Classrooms"
 
@@ -178,6 +160,25 @@ By incorporating AI into graduate and postdoctoral training while maintaining a 
 
 [University of Arizona Data Lab AI Workshop Series](https://datascience.arizona.edu/education/uarizona-data-lab){target=_blank} 
 
+
+!!! Tip ":simple-google: Google for Education"
+
+    Google offers self-paced courses on generative AI. 
+    
+    Register with your @arizona.edu Google account and enroll in this 2-hour workshop: 
+    [:simple-google: Generative AI For Educators](https://skillshop.exceedlms.com/student/path/1176018-generative-ai-for-educators){target=_blank} 
+
+!!! Info "Teaching with ChatGPT"
+
+    [ChatGPT for Teachers by We Are Teachers](https://www.weareteachers.com/chatgpt-for-teachers/){target=_blank}
+
+    [Using AI in the Classroom by University of Wisconsin Madison](https://idc.ls.wisc.edu/guides/using-artificial-intelligence-in-the-classroom/){target=_blank}
+
+    [ChatGPT Resources for Faculty by University of Pittsburg](https://teaching.pitt.edu/resources/chatgpt-resources-for-faculty/){target=_blank}
+
+    [AI in the Classroom by Greylock Podcast](https://greylock.com/greymatter/ai-in-the-classroom/){target=_blank}
+
+    [How to handle AI in Schools by CommonSense.org](https://www.commonsense.org/education/articles/chatgpt-and-beyond-how-to-handle-ai-in-schools){target=_blank}
 
 
 ## References

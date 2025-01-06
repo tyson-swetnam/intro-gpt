@@ -2,9 +2,15 @@
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 
-Large Language Models (LLMs) and Artificial Intelligence (AI) are rapidly changing the landscape of higher education. Their influence is being felt in admissions, classrooms, and job market. These AI present both opportunities and challenges for students, educators, and institutions. 
+Large Language Models (LLMs) and Artificial Intelligence (AI) are rapidly changing the landscape of higher education. Their influence is being felt in admissions, classrooms, and those entering the job market. These AI present both opportunities and challenges for students, educators, and institutions. 
 
 This section explores the multifaceted ways these technologies are impacting higher education.
+
+ [:material-run-fast: **Lesson on Teaching with AI**](teaching.md)
+
+ [:material-run-fast: **Lesson on AI Tutoring**](tutoring.md)
+
+ [:material-run-fast: **Lesson on AI in Admissions & Job Recruiting**](admissions.md)
 
 ## New Opportunities for Teaching and Learning
 
@@ -24,17 +30,6 @@ This section explores the multifaceted ways these technologies are impacting hig
     *   Higher education must equip students with the skills to effectively utilize and collaborate with AI tools.
 *   **Research Assistance:**
     *   LLMs can assist researchers with literature reviews, data analysis, and even drafting research papers, accelerating the research process.
-
-## Uses of Prompt Engineering in Higher Education for Teaching
-
-*   **Curriculum Development:** Generate course outlines, learning objectives, and assessment criteria tailored to specific subjects and learning levels.
-*   **Lesson Planning:** Create detailed lesson plans, including activities, discussion prompts, and resources, aligned with educational standards.
-*   **Content Creation:** Develop engaging educational content such as lecture notes, study guides, and interactive exercises.
-*   **Automated Grading and Feedback:** Provide instant feedback on student assignments, identify common mistakes, and suggest areas for improvement.
-*   **Interactive Learning Tools:** Create chatbots that can answer student questions, provide explanations, and guide them through complex topics.
-*   **Language Learning Support:** Assist students in practicing new languages through conversation, translation exercises, and grammar correction.
-
-  
 
 ## Challenges and Ethical Considerations
 
@@ -72,13 +67,8 @@ This section explores the multifaceted ways these technologies are impacting hig
 To effectively navigate the challenges and harness the opportunities presented by AI, higher education institutions should consider the following:
 
 *   **Develop clear policies and guidelines** regarding the use of AI tools in teaching, learning, and assessment.
-*   **Invest in professional development** for faculty to equip them with the skills and knowledge to integrate AI effectively into their teaching practices.
+*   **Offer professional development** opportunities for faculty to equip them with the skills and knowledge to integrate AI effectively into their teaching practices.
 *   **Foster critical thinking and digital literacy** among students, emphasizing the importance of evaluating information critically and understanding the limitations of AI.
-*   **Promote ethical considerations** surrounding AI, engaging students in discussions about bias, fairness, and responsible use.
+*   **Promote ethical behaviors** surrounding AI, engage students in discussions about bias, fairness, and responsible use.
 *   **Invest in research** on the impact of AI on learning and teaching, to inform evidence-based practices.
-*   **Embrace a collaborative approach**, involving faculty, students, administrators, and technology experts in shaping the future of AI in higher education.
-
-
-## Conclusion
-
-The integration of LLMs, chatbots, and AI in higher education is an ongoing process with the potential to transform the learning experience. By proactively addressing the challenges and embracing the opportunities, higher education institutions can leverage these technologies to create more engaging, personalized, and effective learning environments for all students. It's not about replacing educators, but rather augmenting their capabilities and empowering them to better prepare students for a future where AI plays an increasingly significant role.
+*   **Embrace a collaborative approach** involving faculty, students, administrators, and technology experts in shaping the adoption of AI.

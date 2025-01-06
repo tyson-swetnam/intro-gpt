@@ -16,6 +16,6 @@ Once logged in, you should see a :material-shield-check: shield icon that shows 
 
 ## Integration with Microsoft 365
 
-The Microsoft 365 app is migrating to Microsoft Copilot at [m365.cloud.microsoft.](m365.cloud.microsoft){target=_blank}
+The Microsoft 365 app is migrating to Microsoft Copilot at [m365.cloud.microsoft.](https://m365.cloud.microsoft){target=_blank}
 
 [Announcements made by Microsoft in fall 2024 suggest Copilot release in OneDrive early 2025](https://techcommunity.microsoft.com/blog/microsoft365copilotblog/microsoft-365-copilot-wave-2-ai-innovations-in-sharepoint-and-onedrive/4245159){target=_blank}.

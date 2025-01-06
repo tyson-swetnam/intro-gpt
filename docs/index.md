@@ -43,7 +43,9 @@ Generative AI are now deeply integrated into how we work, conduct research, teac
 
 ## [:material-run-fast: AI Landscape](ai_landscape.md)
 
-An examination of the generative AI landscape, as of today. This will include a review of Large Language Models within the greater ecosystem. 
+An examination of the generative AI landscape, as of today. 
+
+Includes an overview of Large Language Models within the greater AI ecosystem, ethics of AI, and future directions. 
 
 ## [:material-run-fast: Prompt Engineering](prompts.md)
 
@@ -61,7 +63,7 @@ Next, we will cover the basics of Prompt Engineering for daily productivity, as 
 
 ## [:material-run-fast: Education](education.md)
 
-As the last lesson in the introductory Prompt Engineering Workshop, we will cover use cases for bringing AI into your teaching regime, into the classroom, and providing students with the ability to learn from AI as virtual tutors and teaching assistants.
+We will discuss strategies for integrating AI into your teaching style, AI use in the classroom, and providing students with the ability to learn from AI as virtual tutors and teaching assistants.
 
 !!! Info "Education"
 

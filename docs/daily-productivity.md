@@ -1352,4 +1352,7 @@ In a world abundant with misinformation, verifying claims is crucial. For exampl
 
     === "Gemini Advanced w/ Deep Research response"
 
+        [View response in Gemini](https://g.co/gemini/share/824d32771fb7)
+
+        [View response in Google Docs]
 

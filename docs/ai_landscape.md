@@ -153,7 +153,7 @@
     *   **Multimodal Integration:** Combining image/video analysis with other modalities (text, audio) for a more holistic understanding of content.
     *   **3D Scene Generation:**  Generating 3D models and environments from images and videos.
     *   **Real-time Analysis:**  Performing image and video analysis in real-time for applications like augmented reality and live video processing.
-
+v
 !!! Info "Glossary"
 
     [:simple-google: Google's Machine Learning Glossary](https://developers.google.com/machine-learning/glossary){target=_blank}

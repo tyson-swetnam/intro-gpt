@@ -12,8 +12,6 @@ Real world examples of Agentic AI include self-driving vehicles, warehouse robot
 
 RAG databases allow you to host your own private data
 
-OpenAI Platform
-
 Open Source projects like [Weaviate](https://weaviate.io/developers/weaviate) or [Pinecone](https://docs.pinecone.io/guides/get-started/overview) allow you to self-host private data.
 
 ### Embeddings
@@ -47,6 +45,8 @@ Text passages (or other data, like images) are transformed into numerical repres
 ### Vector Database
 
 A vector database stores embeddings efficiently, often using specialized data structures to handle large-scale, high-dimensional searches.
+
+[OpenAI Platform](https://platform.openai.com/docs/overview) allows you to upload your own data to a [vector store](https://platform.openai.com/docs/api-reference/vector-stores) and [file search](https://platform.openai.com/docs/assistants/tools/file-search) in custom assistants
 
 ### 
 

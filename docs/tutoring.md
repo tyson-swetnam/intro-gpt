@@ -14,32 +14,22 @@ The opportunity for one-on-one tutoring with AI also will enable traditionally u
 
 Here's how you can use AI to become a more effective self-tutor:
 
-??? Question "Clarifying Complex Concepts"
+??? Question "Explain Concepts"
 
-    **ChatGPT Prompt Writing Use Cases:** 
+    Struggling to grasp a difficult concept from lectures or textbooks? 
+            
+    Have the AI explain them to you in a way that you understand.
 
-    !!! example "Explain complex ideas"
+    !!! example "Complex ideas"
     
         === "Prompt"
      
-            Struggling to grasp a difficult concept from lectures or textbooks? 
-            
-            Have the AI explain them to you in a way that you understand.
-
             ```
             Explain the concept of photosynthesis in simple terms, 
             as if you were talking to a person who had never taken 
             introductory biology.
             ```
             
-        === "ChatGPT o1 Customization on" 
-
-            Certainly, Professor. 
-
-            Photosynthesis is like a plant’s version of cooking its own meal. Using a special green pigment called chlorophyll, a plant takes three main ingredients—sunlight, water, and a gas called carbon dioxide—and transforms them into sugars that the plant can use for energy and growth. In the process, the plant also releases oxygen, which animals (including humans) need to breathe. 
-
-            So, you can think of photosynthesis as nature’s way of allowing plants to feed themselves while making the air more breathable for the rest of us.
-
         === "ChatGPT o1 Response"
 
             Photosynthesis is like a plant’s way of making its own food using sunlight. Here’s a simple way to picture what happens:
@@ -286,26 +276,20 @@ Here's how you can use AI to become a more effective self-tutor:
 
 ***
 
-## Table: Online, AI-driven Educational Platforms
+### **Table**: Online, AI-driven Educational Platforms
 
 | **Platform** | **Subject Areas** | **Target Audience** | **Pricing** | **Key Features**  |
 | :----------- | :---------------- | :------------------ | :---------- | :---------------- |
 | [**IXL**](https://www.ixl.com/){target=_blank}  | Math, Language Arts, Science, Social Studies, Spanish | Pre-K to 12th Grade | Starts at $9.95/month (single subject), $19.95/month (all subjects) | Personalized learning, adaptive questions, real-time diagnostics, progress tracking, awards, and certificates. Covers a vast range of skills and grade levels. |
 | [**Khan Academy**](https://www.khanacademy.org/){target=_blank} | Math, Science, Economics, Arts & Humanities, Computing, Test Prep (SAT, LSAT, MCAT, etc.) | K-12, College, Adults | Free | Comprehensive video lessons, practice exercises, personalized learning dashboard, progress tracking. Covers a wide array of subjects.                                      |
-| [**Prodigy**](https://www.prodigygame.com/){target=_blank}   | Math, English | Grades 1-8  | Free (with optional membership)  | Game-based learning, adaptive questions, curriculum-aligned content, reports for parents and teachers. Makes learning math and English engaging through a fantasy game world. |
-| [**ABCmouse**](https://www.abcmouse.com/){target=_blank} | Reading, Math, Science, Art & Colors | Ages 2-8  | $12.99/month or $59.99/year  | Over 10,000 learning activities, curriculum-based lessons, progress tracking, interactive games, songs, and puzzles. Focuses on early childhood education.  |
-| [**Adventure Academy**](https://www.adventureacademy.com/){target=_blank} | Reading, Math, Science, Social Studies  | Ages 8-13  | $12.99/month or $59.99/year |  Similar to ABCmouse, from the same company, but geared towards older elementary and middle school students.  MMO style game. |
-| [**MobyMax**](https://www.mobymax.com/){target=_blank} | Math, Language Arts, Science, Social Studies | K-8 | Contact for pricing (various licenses available)  | Adaptive curriculum, personalized learning, assessments, progress monitoring, motivational tools (badges, games). |
 | [**Duolingo**](https://www.duolingo.com/){target=_blank} | Languages  | All ages  | Free (with Duolingo Plus subscription for added features) | Gamified language learning, bite-sized lessons, personalized practice, spaced repetition. Focuses on vocabulary, grammar, and pronunciation. |
 | [**Quizlet**](https://quizlet.com/){target=_blank} | Various (User-Generated Content) | All ages | Free (with Quizlet Plus subscription for added features)  | Flashcards, study games, practice tests, and learning tools. Users can create their own study sets or use existing ones. |
-| [**BrainPOP**](https://www.brainpop.com/){target=_blank} | Science, Social Studies, English, Math, Arts & Music, Health, Engineering & Tech | Grades K-8 | Contact for pricing (various plans for schools and families) | Animated educational videos, quizzes, activities, and games. Covers a wide range of topics in an engaging and accessible way.|
 | [**EdX**](https://www.edx.org/){target=_blank} | Various (University-Level Courses) | Adults, Professionals | Free to audit courses, paid certificates and degrees available | Online courses from top universities and institutions worldwide. Offers professional certificates, MicroMasters programs, and online Master's degrees. |
 | [**Coursera**](https://www.coursera.org/){target=_blank} | Various (University-Level Courses) | Adults, Professionals | Free to audit courses, paid certificates and degrees available  | Similar to EdX, offering a vast catalog of online courses from leading universities and organizations. Provides specializations, professional certificates, and online degrees. |
 | [**Udemy**](https://www.udemy.com/){target=_blank} | Various (Skills-Based Courses) | Adults, Professionals | Courses priced individually (often discounted)  | Wide range of courses on various topics, including business, technology, personal development, and the arts. |
 | [**MasterClass**](https://www.masterclass.com/){target=_blank} | Various (Expert-Led Courses) | Adults | $120/year (individual), $180/year (duo), $240/year (family)  |  Video lessons taught by renowned experts in their respective fields, covering topics like writing, cooking, acting, music, and more. |
 | [**Codecademy**](https://www.codecademy.com/){target=_blank} | Programming, Data Science, Web Development | Teens, Adults | Free (basic courses), Pro: $239.88/year or $39.99/month | Interactive coding lessons, projects, quizzes, and skill paths. Focuses on practical, hands-on learning for in-demand tech skills. |
 | [**Brilliant**](https://brilliant.org/){target=_blank} | Math, Science, Computer Science | Teens, Adults | $149/year or $24.99/month | Interactive problem-solving courses, focusing on conceptual understanding. |
-| [**Outschool**](https://outschool.com){target=_blank} | Various, depends on the course | Ages 3-18 | Varies, each class is priced by the teacher | Live online classes for kids and teens. Small group classes. Wide range of subjects. |
 | [**Google Classroom**](https://edu.google.com/products/classroom/){target=_blank} | Various, can be used as a platform for any subject | K-12, Higher Education | Free for schools that use Google Workspace for Education | Helps teachers create, distribute, and grade assignments in a paperless way. Integrates with other Google services. |
 | [**Kahoot**](https://kahoot.com/){target=_blank} | Various, can be used to gamify any subject | K-12, Higher Education, Corporate Training | Free (basic), with paid plans for more features | Game-based learning platform that makes it easy to create, share and play learning games or trivia quizzes in minutes. |
 | [**Grammarly**](https://www.grammarly.com/grammar-check){target=_blank} | AI writing tool that helps improve writing style, grammatical errors, and spelling. | K-12, Higher Education, Professionals | Free (basic), with paid plans | | 
