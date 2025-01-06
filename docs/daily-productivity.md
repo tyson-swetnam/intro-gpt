@@ -924,9 +924,9 @@ You can ask ChatGPT to draft an email by giving it the main points to include. F
 
         Best regards,
 
-        [Your Name]
-        [Your Title / Position]
-        [Company Name]
+        Your Name
+        Your Title / Position
+        Company Name
 
         
     === "Gemini Advanced 2.0 Response"
@@ -995,7 +995,7 @@ With GPTs for research you can perform a more refined search like:
 
         - Extensive melt events occurred in 2012 and 2019
         - Record melt was observed in 2019
-        - Rain-driven melt reached Greenland Summit in August 2021[4]
+        - Rain-driven melt reached Greenland Summit in August 2021(4)
 
         ## Global Impact
 
@@ -1013,16 +1013,16 @@ With GPTs for research you can perform a more refined search like:
         These studies underscore the urgent need for continued monitoring and mitigation efforts to address the accelerating loss of polar ice.
 
         Citations:
-        [1] https://www.fortunejournals.com/articles/polar-ice-caps-melting-a-hallmark-to-vanishing-ice-along-with-a-global-climate-change-and-addressing-solutions-to-it.pdf
-        [2] https://www.mdpi.com/2073-4433/14/2/409
-        [3] https://www.nature.com/articles/s41586-024-08368-y
-        [4] https://tc.copernicus.org/articles/18/2691/2024/
-        [5] https://pmc.ncbi.nlm.nih.gov/articles/PMC7531873/
-        [6] https://tc.copernicus.org/articles/17/3083/2023/
-        [7] https://www.nature.com/articles/s41558-023-01818-x
-        [8] https://www.science.org/doi/10.1126/sciadv.adn9188
-        [9] https://rmets.onlinelibrary.wiley.com/doi/10.1002/wea.4518
-        [10] https://news.uchicago.edu/story/scientists-find-evidence-meltwater-fracturing-ice-shelves-antarctica
+        (1) https://www.fortunejournals.com/articles/polar-ice-caps-melting-a-hallmark-to-vanishing-ice-along-with-a-global-climate-change-and-addressing-solutions-to-it.pdf
+        (2) https://www.mdpi.com/2073-4433/14/2/409
+        (3) https://www.nature.com/articles/s41586-024-08368-y
+        (4) https://tc.copernicus.org/articles/18/2691/2024/
+        (5) https://pmc.ncbi.nlm.nih.gov/articles/PMC7531873/
+        (6) https://tc.copernicus.org/articles/17/3083/2023/
+        (7) https://www.nature.com/articles/s41558-023-01818-x
+        (8) https://www.science.org/doi/10.1126/sciadv.adn9188
+        (9) https://rmets.onlinelibrary.wiley.com/doi/10.1002/wea.4518
+        (10) https://news.uchicago.edu/story/scientists-find-evidence-meltwater-fracturing-ice-shelves-antarctica
 
 
     === "ChatGPT o1 response"
@@ -1266,21 +1266,20 @@ In a world abundant with misinformation, verifying claims is crucial. For exampl
 
         The current acceptance rates for the three universities are:
 
-        1. University of Arizona: 84.6%[1][5]
-        2. Arizona State University: 86.5%[2][6]
-        3. Northern Arizona University: 80%[3][7]
-
-        These acceptance rates are based on the most recent data available from the search results. The University of Arizona and Arizona State University have slightly higher acceptance rates compared to Northern Arizona University. All three universities have acceptance rates that are considerably higher than the national average of 56.7%[1][2].
+        1. University of Arizona: 84.6% (1,5)
+        2. Arizona State University: 86.5% (2,6)
+        3. Northern Arizona University: 80% (3,7)
+        These acceptance rates are based on the most recent data available from the search results. The University of Arizona and Arizona State University have slightly higher acceptance rates compared to Northern Arizona University. All three universities have acceptance rates that are considerably higher than the national average of 56.7%(1,2).
 
         Citations:
-        [1] https://www.acceptancerate.com/schools/university-of-arizona
-        [2] https://www.acceptancerate.com/schools/arizona-state-university
-        [3] https://www.shiksha.com/studyabroad/usa/universities/northern-arizona-university/acceptance-rate
-        [4] https://www.collegedroid.com/colleges/northern-arizona-university/admission
-        [5] https://www.shiksha.com/studyabroad/usa/universities/university-of-arizona/admissions
-        [6] https://www.usnews.com/best-colleges/arizona-state-university-1081/applying
-        [7] https://www.niche.com/colleges/northern-arizona-university/admissions/
-        [8] https://www.usnews.com/best-colleges/university-of-arizona-1083/applying
+        (1) https://www.acceptancerate.com/schools/university-of-arizona
+        (2) https://www.acceptancerate.com/schools/arizona-state-university
+        (3) https://www.shiksha.com/studyabroad/usa/universities/northern-arizona-university/acceptance-rate
+        (4) https://www.collegedroid.com/colleges/northern-arizona-university/admission
+        (5) https://www.shiksha.com/studyabroad/usa/universities/university-of-arizona/admissions
+        (6) https://www.usnews.com/best-colleges/arizona-state-university-1081/applying
+        (7) https://www.niche.com/colleges/northern-arizona-university/admissions/
+        (8) https://www.usnews.com/best-colleges/university-of-arizona-1083/applying
 
 
     === "ChatGPT o1 response"

@@ -10,5 +10,12 @@ University admissions officers are using AI ([4](https://www.forbes.com/sites/br
 
 
 
-!!! Question "**Resume Building**"
+!!! Question "**Resume Builder**"
 
+    === "Prompt"
+
+        ```
+        I am applying to a job at a major technology company, my resume hasn't been updated in several years.
+
+        Help me update my resume with my more recent accomplishments using my LinkedIn page and my Google Scholar.
+        ```

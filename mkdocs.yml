@@ -84,6 +84,8 @@ theme:
     - navigation.indexes
     - navigation.top
     - content.code.copy
+    - content.code.prettify
+    - content.tooltips
   favicon: 'assets/ua.ico'
   logo: 'assets/ua.png'
 
@@ -163,6 +165,10 @@ plugins:
         archive_date_format: MMMM yyyy
         archive_toc: true
         post_url_format: "{date}/{slug}"
+    - social:
+        cards_layout_options:
+          background_color: blue # Change background color
+          background_image: null # Remove background image
     - search
     - mkdocstrings
     - git-revision-date
