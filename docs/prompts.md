@@ -4,7 +4,13 @@
 
 ![banner](assets/dailyprod-banner.png){width=1000}
 
-??? Question "How do GPTs Work?"
+??? Question "How does a GPT Work?"
+
+    !!! Success "Transformers"
+
+        GPTs use a type of neural network known as a "transformer". Transformers convert prompts into smaller units called 'tokens' which are then encoded based on position in the prompt (how the model understands the words). The transformer focuses attention on the relevant parts of each sequence of tokens to find relationships. These are fed forward and refined before the model begins to 'decode' or respond to the prompt by predicting the next word, one token at a time. 
+
+        The sequence of transformer operations are: _tokenization, attention, decoding, and text generation_. 
 
     !!! Success "Natural Language" 
     
@@ -20,13 +26,14 @@
 
         This website, for example, is written using MarkDown syntax ([MkDocs-Material](https://squidfunk.github.io/mkdocs-material/){target=_blank}) and converted to HTML using Python. 
 
-___
 
-GPT chats ask for a text or audio message to begin a conversation. These messages are called "Prompts". 
+    !!! Success "Prompts"
 
-Begin a conversation with a specific type of prompt. Such a prompt can be called a "primer" and can also include a "Custom Instruction" or "System Instructions" for establishing the tone or style for the model to follow.
+        GPT chats ask for a text or audio message to begin a conversation. These messages are called "Prompts". 
 
-This will help narrow the potential range of responses and improve results to subsequent prompts. 
+        Begin a conversation with a specific type of prompt. Such a prompt can be called a "primer" and can also include a "Custom Instruction" or "System Instructions" for establishing the tone or style for the model to follow.
+
+        This will help narrow the potential range of responses and improve results to subsequent prompts. 
 
 ## **Priming**
 
@@ -38,9 +45,9 @@ Responses are more likely to be useful when multiple specific output types are d
 
 | Types of Priming | Example |
 |------------------|---------|
-| Zero (Shot) | "Write five examples of assessments for watershed health." |
-| Single | "Write five examples of assessments for watershed health. Here is one example: Geomorphology" |
-| Multiple | "Write five examples of assessments for watershed health related to geomorphology, water quality, and species diversity." |
+| **Zero** (Shot) | "Write five examples of assessments for watershed health." |
+| **Single** | "Write five examples of assessments for watershed health. Here is one example: Geomorphology" |
+| **Multiple** | "Write five examples of assessments for watershed health related to geomorphology, water quality, and species diversity." |
 
 
 ??? Question "How long can or should a prompt be?"
@@ -144,7 +151,7 @@ Prompt responses are improved by giving the Chatbot a multi-shot opportunity at 
 
 | Role | Task | Format |
 |:-----|------|--------|
-| Act as [\[ROLE\]](#role) | Create a [\[TASK\]](#tasks) | ... show as [\[FORMAT\]](#format) |
+| **Act as [\[ROLE\]](#role)** | **Create a [\[TASK\]](#tasks)** | ... **show as [\[FORMAT\]](#format)** |
 
 A complete prompt should specify the role in which the chatbot responds, what its task is, and the format of how its outputs should be returned. 
 
@@ -152,38 +159,34 @@ A second step to the initial prompt is to [link or chain](#linked-prompts) your 
 
 This lesson only covers ChatGPT, Gemini, and Claude type responses, but the same prompt techniques can be used in other LLMs, like NotebookLM, MidJourney, or Sora.
 
-??? Tip "ChatGPT :simple-awesomelists: Awesome Lists"
+??? Tip ":simple-awesomelists: Awesome List: Prompts"
 
     There is an ever changing meta-list of :simple-awesomelists: Awesome lists curated around ChatGPT plugins and extensions.
 
-    [:simple-github: search: `chatgpt+awesome`](https://github.com/search?q=awesome-chatgpt+&type=repositories&s=stars&o=desc){target=_blank}
+    **[Prompts.chat](https://prompts.chat/){target=_blank}** has over 116K :star: stars on GitHub!
 
-    Check out lists around:
+      * [:simple-github: :simple-awesomelists:   ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts){target=_blank}
 
-    [:simple-awesomelists: ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts){target=_blank}
-
-    [:simple-awesomelists: ChatGPT Data Science Prompts](https://github.com/travistangvh/ChatGPT-Data-Science-Prompts){target=_blank}
-   
-    [:simple-awesomelists: API plugins, extensions, & applications](https://github.com/humanloop/awesome-chatgpt){target=_blank}
+      * [:simple-github: search: `chatgpt+awesome`](https://github.com/search?q=awesome-chatgpt+&type=repositories&s=stars&o=desc){target=_blank}
 
 ### **Role**
 
-Set the role for ChatGPT to play during your session. 
+Set the role for the GPT to play during your session. 
 
 "I want you to act as ..." will establish what type of conversation you are planning to have. 
 
-| Types of Role |
+| Examples of Role |
 |---------------|
-| Project Manager  |
-| Copywriter / Editor  |
-| Paper Reviewer |
-| Teacher / Mentor / Advisor |
-| Student / Learner / Participant |
-| Software Engineer  |
-| DevOps Engineer  |
-| Linux Terminal  |
-| Python Interpreter |
-| Web Browser |
+| **Project Manager**  |
+| **Copywriter / Editor**  |
+| **Paper Reviewer** |
+| **Teacher / Mentor / Advisor** |
+| **Student / Learner / Participant** |
+| **Software Engineer**  |
+| **DevOps Engineer**  |
+| **Linux Terminal**  |
+| **Python Interpreter** |
+| **Web Browser** |
 
 ### **Tasks**
 
@@ -193,19 +196,19 @@ Because of ChatGPT's proclivity at making up information, using it without a way
 
 | Types of Task | 
 |---------------|
-| Scientific Article | 
-| Essay |
-| Blog Post |
-| Outline |
-| Email | 
-| Cover Letter |
-| Recipe |
-| Tutorial |
-| Lesson Plan | 
-| Jupyter Notebook |
-| Configuration |
-| Code |
-| Software Script |
+| **Scientific Article** | 
+| **Essay** |
+| **Blog Post** |
+| **Outline** |
+| **Email** | 
+| **Cover Letter** |
+| **Recipe** |
+| **Tutorial** |
+| **Lesson Plan** | 
+| **Jupyter Notebook** |
+| **Configuration** |
+| **Code** |
+| **Software Script** |
 
 ### **Format**
 
@@ -213,19 +216,19 @@ By default ChatGPT outputs MarkDown syntax text. It can also output software cod
 
 | Formats to output |
 |-------------------|
-| MarkDown (emojis!) |
-| List |
-| Table |
-| HTML |
-| CSS |
-| Regular Expression |
-| CSV / TXT |
-| JSON |
-| Rich Text |
-| Gantt Chart |
-| Word Cloud |
-| Graphs |
-| Spreadsheets |
+| **MarkDown** (emojis!) |
+| **List** |
+| **Table** |
+| **HTML** |
+| **CSS** |
+| **Regular Expression** |
+| **CSV / TXT** |
+| **JSON** |
+| **Rich Text** |
+| **Gantt Chart** |
+| **Word Cloud** |
+| **Graphs** |
+| **Spreadsheets** |
 
 ___
 
@@ -239,11 +242,9 @@ Responses to prompts may not return the exact details or information that you ar
 
 | Linked Prompting | Examples |
 |------------------|----------|
-| Step 1: Priming | "I want you to act as an eminent hydrologist from CUASHI. Provide me with a list of the ten most important topics in hydrology over the last decade focused around research in the global south, working with indigenous communities, and traditional ecological knowledge systems." |
-| Step 2: Summarizing | "Based on the list you just created, summarize the most pressing financial challenges faced by indigenous communities in the Global South, versus indigenous communities in North America, in less than 50 words." |
-| Step 3: Try again with enabled [WebChatGPT](https://www.webchatgpt.app/){target=_blank} or [Browsing](https://openai.com/blog/chatgpt-plugins#browsing){target=_blank} | "Based on the results of web access, can you confirm the validity of the ten important topics and provide at least one reference to each." |
+| **Priming** | "I want you to act as an eminent hydrologist from CUASHI. Provide me with a list of the ten most important topics in hydrology over the last decade focused around research in the global south, working with indigenous communities, and traditional ecological knowledge systems." |
+| **Summarizing** | "Based on the list you just created, summarize the most pressing financial challenges faced by indigenous communities in the Global South, versus indigenous communities in North America, in less than 50 words." |
 
-___
 
 !!! Tip "**General Prompt Traits**"
 

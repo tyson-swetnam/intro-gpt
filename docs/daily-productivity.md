@@ -4,6 +4,7 @@
 
 ![banner](assets/dailyprod-banner.png){width=1000}
 
+## When to use a GPT
 
 Prompt engineering can significantly enhance your productivity. In particular when Enterprise GPTs are integrated into your Microsoft Office Suite or Google Drive, and have secure access to your documents and data, GPTs can be used to:
 
@@ -19,7 +20,72 @@ In our [:material-run-fast: Code Interpreter](code.md) lesson we discuss how GPT
 *   **Code Generation and Debugging:** Write basic code snippets, find and fix bugs in existing code, and understand complex code segments.
 *   **Data Analysis and Interpretation:** Summarize datasets, identify trends, and generate reports from raw data.
 
-## Utilizing AI Meeting Summary Software: **Zoom AI Companion** 
+## Choosing the right GPT
+Below are tables that rank the most popular GPTs by popularity from most to least, within each activity type for Chat, Research, Code, and Image/Videos.
+
+### Best for Chat
+
+| **Platform** | **Strength** | **Weakness** | **Cost** | **Interface** | **Docs** |
+|--------------|--------------|--------------|----------|---------------|----------|
+| **ChatGPT (OpenAI)** | - Strong reasoning  <br/>- Integrates with other apps (plugins) <br/>- Multi-turn conversation | - Limited file uploads (depending on plan/plugins) <br/>- Occasionally behind newest research releases | **Free**, \$20/mo (Plus), \$42+/mo (Enterprise) | [**ChatGPT**](https://chat.openai.com/) |  [**OpenAI Docs**](https://platform.openai.com/docs/) |
+| **Claude 3 (Anthropic)** | - Fast, coherent dialogue <br/>- Good at creative text generation | - Sometimes less accurate with fact-based queries <br/>- Limited third-party integrations | **Free**, \$10–\$50+/mo (various tiers)  | [**Claude Chat**](https://www.anthropic.com/claude-3-family) | [**Anthropic Docs**](https://docs.anthropic.com/en/docs/welcome) |
+| **Gemini (Google)** | - Multimodal (images + text) <br/>- Strong search integration (Google) | - Some features only in Beta <br/>- Pricing unclear in early versions | **Free**, Pro Tiers TBA | [**Gemini**](https://ai.google.dev/models/gemini) | [**Gemini Docs**](https://ai.google.dev/gemini-api/docs) |
+| **DeepSeek (Open Source)**  | - Focuses on chat + search integration <br/>- Local & open source solutions | - Smaller dev community <br/>- May require self-hosting  | **Free** (Open Source) | [**DeepSeek Chat**](https://chat.deepseek.com/) | [**DeepSeek Docs**](https://api-docs.deepseek.com/)                                                                             |
+| **Microsoft 365 Copilot** | - Built on ChatGPT plus Microsoft Graph <br/>- Deep MS Office/Outlook integration | - Typically behind latest ChatGPT features <br/>- Enterprise pricing can be high | \$30/mo (add-on for Microsoft 365 E3/E5) | [**Copilot**](https://copilot.microsoft.com/) | [**Copilot Docs**](https://www.microsoft.com/en-us/ai)                                                                          |
+| **Grok (xAI)** | - Multimodal: text, images, basic computer vision <br/>- Emerging technology | - Currently in limited release <br/>- Ecosystem still growing | **Free**, future subscription TBA | [**Grok**](https://x.ai/grok) | [**xAI Docs**](https://docs.x.ai/docs/overview) |
+| **HuggingFace Chat** | - Large variety of community-contributed models <br/>- Multimodal options | - Quality varies by model <br/>- Some advanced features behind paid tiers or require GPU credits | **Free**, Pay-as-you-go GPU | [**HF Chat**](https://huggingface.co/chat/) | [**HF Docs**](https://huggingface.co/docs) |
+| **Jasper** | - Focus on marketing copy, blog posts <br/>- Easy content workflows | - Less technical depth <br/>- Pricier than some for similar text output | Starting at \$39/mo | [**Jasper Chat**](https://www.jasper.ai/)|  [**Jasper Docs**](https://developers.jasper.ai/docs/getting-started-1) |
+| **Perplexity** | - Combined chat + search <br/>- Large reference library | - Subscription required for advanced features <br/>- Not as flexible as GPT-4 plugins | **Free**, Subscription tier \$20+/mo | [**Perplexity Chat**](https://www.perplexity.ai/) | [**Perplexity Docs**](https://docs.perplexity.ai/home) |
+| **NotebookLM (Google)** | - RAG (Retrieval-Augmented Generation) <br/>- Integrates with Google Drive | - Still in beta <br/>- Occasional slow responses | **Free**, future subscription TBA | [**NotebookLM**](https://notebooklm.google.com/) |  [**NotebookLM Docs**](https://support.google.com/notebooklm?sjid=1094920587730113510-NC#topic=14287611) |
+
+### Best for Research
+
+| **Platform** | **Strength** | **Weakness** | **Cost** | **Interface** | **Docs** |
+|--------------|--------------|--------------|----------|---------------|----------|
+| **Perplexity** | - Large archive, direct references <br/>- Web search integration | - Must subscribe for advanced features <br/>- Not as “creative” as GPT-like models  | **Free**, Subscription tier \$20+/mo  | [**Perplexity Chat**](https://www.perplexity.ai/) | [**Perplexity Docs**](https://docs.perplexity.ai/home) |
+| **ChatGPT 4o** | - Strong general-purpose reasoning <br/>- Code, language, knowledge tasks | - Subscription needed | \$20/mo (Plus)                | [**ChatGPT Chat**](https://chatgpt.com) | [**OpenAI Docs**](https://platform.openai.com/docs/) |
+| **Gemini 1.5 Pro (Deep Research mode)** | - In-depth chain-of-thought <br/>- Multimodal research capabilities | - Early product, can be slow <br/>- Pricing not fully public | **Free** (Beta), Pro Tiers TBA | [**Gemini**](https://ai.google.dev/models/gemini) | [**Gemini Docs**](https://ai.google.dev/gemini-api/docs)                                                                        |
+| **ScholarAI** | - Large academic archive integration <br/>- Focus on literature reviews | - Limited reasoning beyond domain texts <br/>- Requires GPT-4 or Plus-based backend | \$20–\$40/mo (addon to GPT-4) | *(No dedicated UI link; typically custom UI)* | *(Depends on GPT-4 / ScholarAI custom docs)*|
+| **Scholar GPT** | - Similar to ScholarAI; academic focus <br/>- Pulls from major journal databases | - Must have ChatGPT Plus <br/>- Reliability depends on subscription backend | \$20/mo (Plus required) | *(No dedicated UI link; typically custom)* | *(Leverages GPT-4 docs)* |
+| **Semantic Scholar** | - Comprehensive academic metadata <br/>- Free to use | - Not truly an LLM-based chat <br/>- Lacks advanced generative capabilities | **Free**  | [**Semantic Scholar**](https://www.semanticscholar.org/)  | [**Semantic Scholar API**](https://api.semanticscholar.org/corpus/) |
+
+### Best for Code
+
+| **Platform** | **Strength** | **Weakness** | **Cost** | **Interface** | **Docs** |
+|--------------|--------------|--------------|----------|---------------|----------|
+| **GitHub Copilot** | - Seamless code autocompletion <br/>- Integrates with VS Code, JetBrains, etc. | - Limited context window <br/>- Some framework-specific gaps | \$10/mo (Individual), \$19/mo (Business)    | [**GitHub Copilot**](https://github.com/features/copilot) | [**Copilot Docs**](https://docs.github.com/en/copilot)                                                                            |
+| **ChatGPT Code Interpreter** | - Interactive code execution in a sandbox <br/>- Good for data analysis, transformations  | - Must have GPT-4 subscription <br/>- No direct local environment access | \$20/mo (Plus) | [**ChatGPT**](https://chat.openai.com/)| | [**OpenAI Docs**](https://platform.openai.com/docs/guides/code) |
+| **Gemini 2.0**  | - Focus on code + text synergy <br/>- Potential for deep chain-of-thought | - Still early, can be slow with large code bases <br/>- Pricing not fully disclosed | **Free** (Beta), Pro Tiers TBA | [**Gemini**](https://ai.google.dev/models/gemini) | [**Gemini Docs**](https://ai.google.dev/gemini-api/docs)|
+| **Continue.dev** | - Open-source local code interpreter <br/>- Extensible with plugins | - Requires technical setup <br/>- Smaller dev community | **Free** (Open Source) | [**Continue.dev**](https://continue.dev/) | [**Continue.dev Docs**](https://continue.dev/docs/) |
+| **Codeium**  | - Free AI-powered autocomplete <br/>- Supports multiple IDEs | - Less advanced than Copilot on edge cases <br/>- Limited large-language reasoning  | **Free** | [**Codeium**](https://www.codeium.com/) | [**Codeium Docs**](https://docs.codeium.com/) |
+| **Phind** | - Code search + AI chat combined  | - Smaller community <br/>- Some advanced features behind paid tiers | **Free**, Paid tiers TBA | [**Phind**](https://www.phind.com/) | [**Phind Docs**](https://help.phind.com/hc/en-us) |
+
+### Best for Image/Video
+
+| **Platform** | **Strength** | **Weakness** | **Cost** | **Interface** | **Docs** |
+|--------------|--------------|--------------|----------|---------------|----------|
+| **Midjourney v6** | - Generally highest-quality AI images <br/>- Rich feature set via Discord commands | - Requires Discord usage <br/>- More expensive for casual users | \$10–\$60/mo (various tiers) | [**Midjourney**](https://www.midjourney.com/) | [**Midjourney Docs**](https://docs.midjourney.com/) |
+| **DALL·E 3 (OpenAI)** | - Conveniently integrated in ChatGPT <br/>- Good for quick generation, concept art | - Not always photorealistic <br/>- Requires ChatGPT Plus or API usage | \$20/mo (ChatGPT Plus) or pay-per-use API | [**DALL·E 3**](https://openai.com/dall-e-3) | [**DALL·E Docs**](https://platform.openai.com/docs/guides/images)|
+| **Stable Diffusion 3** | - Fully open source <br/>- Highly customizable (fine-tuning) | - Requires GPU resources <br/>- Results vary without parameter tuning  | **Free** (Open Source), or API services     | [**Stability AI**](https://stability.ai/) | [**SD3 Paper**](https://arxiv.org/abs/2303.14686)  |
+| **Adobe Firefly** | - Easy to use for designers <br/>- Integration with Adobe apps (Photoshop, Illustrator) | - Requires Adobe subscription <br/>- Not as flexible for coding or specialized prompts  | Included with Adobe CC or \$4.99–\$9.99 add-on | [**Firefly**](https://www.adobe.com/products/firefly.html) | [**Firefly Docs**](https://developer.adobe.com/firefly-services/docs/guides/) |
+| **Sora (OpenAI)**  | - Computer Vision (video) generation <br/>- Experimental “world simulator” approach | - Limited early access <br/>- High compute demands  | **Limited Access**, likely enterprise only   | [**Sora**](https://openai.com/sora) | [**Sora Report**](https://openai.com/research/video-generation-models-as-world-simulators) |
+
+
+!!! Info  "About the Table"
+
+    * **ChatGPT** is still the dominant chat platform as of late 2024, having recently released [model o1](https://openai.com/o1/){target=_blank} and announcing [model o3](https://www.youtube.com/watch?v=SKBG1sqdyIU){target=_blank}
+    *   **LLaMA 3:** Meta's LLaMA 3 is a significant open-source model that is highly competitive and driving innovation.
+    *   **Gemini:** Google's Gemini (formerly Bard) is rapidly evolving and positioned as a strong competitor to ChatGPT, particularly in multimodal capabilities.
+    *   **Copilot:** Microsoft's Copilot (integrating OpenAI's technology) has become ubiquitous, especially for productivity and search.
+    *   **Claude 3:** Anthropic's Claude 3 is gaining popularity due to its strong performance on reasoning tasks and commitment to AI safety.
+    *   **Sora:** Although it is not yet fully accessible, OpenAI's text-to-video model has the potential to be a major innovation.
+    *   **Grok:** is powered by _what might be_ the largest super computer in the world, xAI's Collossus 
+    *   **Image Generation:** DALL-E 3, Stable Diffusion 3, and Midjourney v6 are leading the way in image generation, each with its strengths (photorealism, open-source nature, artistic style).
+    *   **GitHub Copilot:** Remains a dominant force in code generation and is increasingly integrated into developers' workflows.
+
+**Tip:** If you’re evaluating GPT or generative AI options, consider **security** (e.g., on-prem vs. cloud), **fine-tuning capabilities**, and **API limits** in addition to monthly cost and raw model quality.
+
+## Meeting Summary
 
 [:simple-zoom: AI Companion](https://www.zoom.com/en/ai-assistant/){target=_blank}, along with other AI-powered meeting summary tools, can significantly boost productivity by automating note-taking and extracting key information from meetings. To effectively use these tools, it's important to understand best practices and institutional policies.
 
@@ -79,7 +145,7 @@ Zoom can also highlight key parts of the meeting recording, or break down the re
 
     [Google for Education](https://edu.google.com/intl/ALL_us/) also has integration with Gemini, which needs to be authorized by a system administrator. 
 
-## Use Cases
+## Chat Use Cases
 
 ### Example 1: Personal Planner
 

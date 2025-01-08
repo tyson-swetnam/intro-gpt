@@ -10,40 +10,6 @@
     
     Image Credit: [Yang et al. :simple-arxiv:](https://arxiv.org/abs/2304.13712){target=_blank} (While this image depicts the state of LLMs in 2023, it effectively illustrates the foundational models and their evolution)
 
-## Table: Most Popular Chat, LLM, and Multimodal Models (2024-2025)
-
-| Name   | Creator | Application | Access | Publications  |
-|------- | ------- | ------------| -------| ------------- |
-| [:simple-openai: ChatGPT](https://chatgpt.com/){target=_blank}   | [:simple-openai: OpenAI](https://openai.com/chatgpt/overview/)      | Chat, Multimodal        | Free, Subscription | [:simple-openai: OpenAI Platform Documentation](https://platform.openai.com/docs/api-reference/streaming) | 
-| [:simple-ollama: (o)LLaMA](https://llama.meta.com/llama3/){target=_blank}      | [:simple-meta: Meta](https://ai.meta.com/)      | LLM, Research           | Open Source   | [:simple-ollama: ollama Documentation](https://ollama.com/blog/llama3)                                                                                    |
-| [:simple-googlegemini: Gemini](https://ai.google.dev/models/gemini){target=_blank} | [:simple-google: Google](https://deepmind.google/) | LLM, Multimodal, Search, Chat | Free, Subscription  | [:simple-googlegemini: Gemini Documentation](https://ai.google.dev/gemini-api/docs) |
-| [:simple-google: NotebookLM](https://notebooklm.google.com/){target=_blank} | [:simple-google: Google](https://notebooklm.google/){target=_blank} | LLM, RAG, Chat | Free, Subscription | [:simple-google: Notebook LM Documentation](https://support.google.com/notebooklm?sjid=1094920587730113510-NC#topic=14287611){target=_blank} |
-| [:material-microsoft: Microsoft 365 Copilot](https://copilot.microsoft.com/){target=_blank} | [:material-microsoft: Microsoft](https://www.microsoft.com/en-us/ai) | Productivity, Search, Chat | Free, Subscription | [:material-microsoft: Microsoft Copilot Documentation](https://www.microsoft.com/en-us/microsoft-365/copilot)|   |
-| [:simple-x: Grok](https://x.ai/grok){target=_blank}  | [:simple-x: xAI](https://x.ai/grok){target=_blank}  | LLM, Multimodal, Chat, Computer Vision | Free, Subscription | [:simple-x: xAI Documentation](https://docs.x.ai/docs/overview) |
-| [:simple-anthropic: Claude 3](https://www.anthropic.com/news/claude-3-family){target=_blank} | [:simple-anthropic: Anthropic](https://www.anthropic.com)      | Chat        | Free, Subscription  | [:simple-anthropic: Anthropic Documentation](https://docs.anthropic.com/en/docs/welcome)                                          |
-| [:simple-githubcopilot: GitHub Copilot](https://github.com/features/copilot){target=_blank} | [:simple-github: GitHub](https://github.com/) | Write Code | Subscription | [:simple-githubcopilot: GitHub Copilot Documentation](https://docs.github.com/en/copilot)  |
-| [:hugging: HuggingFace Chat](https://huggingface.co/chat/){target=_blank} | LLM, Multimodal, Chat | [:hugging: HuggingFace](https://huggingface.co){target=_blank} | Free, Subscription | :hugging: HuggingFace Documentation |
-| [Jasper](https://www.jasper.ai/){target=_blank} | LLM, Chat | Jasper | Free, Subscription | [Jasper Documentation](https://developers.jasper.ai/docs/getting-started-1){target=_blank} |
-| [Perplexity](https://www.perplexity.ai/){target=_blank} | LLM, Chat, Search Engine | Perplexity | Free, Subscription | Perplexity.ai |
-| [:simple-openai: DALL·E 3](https://openai.com/dall-e-3){target=_blank}         | [:simple-openai: OpenAI](https://openai.com/)      | Computer Vision, Chat   | Via ChatGPT Plus, API       | [:simple-openai: DALL-E 3 Documentation](https://platform.openai.com/docs/guides/images)     |
-| [:simple-openai: Sora](https://openai.com/sora) | [:simple-openai: OpenAI](https://openai.com/) | Computer Vision (video) | Limited access | [:simple-openai: Sora Technical Report](https://openai.com/research/video-generation-models-as-world-simulators)     |
-| [Stable Diffusion 3](https://stability.ai/news/stable-diffusion-3) | [Stability AI](https://stability.ai/) | Computer Vision | Open Source, API | [:simple-arxiv: Stable Diffusion 3 Paper](https://arxiv.org/abs/2303.14686) |
-| [Midjourney v6](https://www.midjourney.com/){target=_blank} | [Midjourney](https://www.midjourney.com/){target=_blank} | Computer Vision | Subscription  | [Midjourney Documentation](https://docs.midjourney.com/){target=_blank} |
-| [Adobe Firefly](https://www.adobe.com/products/firefly.html){target=_blank} | [Adobe](https://www.adobe.com/){target=_blank} | Computer Vision | Proprietary, Subscription | [Adobe Documentation](https://developer.adobe.com/firefly-services/docs/guides/){target=_blank} | 
-
-
-!!! Info  "About the Table"
-
-    * **ChatGPT** is still the dominant chat platform as of late 2024, having recently released [model o1](https://openai.com/o1/){target=_blank} and announcing [model o3](https://www.youtube.com/watch?v=SKBG1sqdyIU){target=_blank}
-    *   **LLaMA 3:** Meta's LLaMA 3 is a significant open-source model that is highly competitive and driving innovation.
-    *   **Gemini:** Google's Gemini (formerly Bard) is rapidly evolving and positioned as a strong competitor to ChatGPT, particularly in multimodal capabilities.
-    *   **Copilot:** Microsoft's Copilot (integrating OpenAI's technology) has become ubiquitous, especially for productivity and search.
-    *   **Claude 3:** Anthropic's Claude 3 is gaining popularity due to its strong performance on reasoning tasks and commitment to AI safety.
-    *   **Sora:** Although it is not yet fully accessible, OpenAI's text-to-video model has the potential to be a major innovation.
-    *   **Grok:** is powered by _what might be_ the largest super computer in the world, xAI's Collossus 
-    *   **Image Generation:** DALL-E 3, Stable Diffusion 3, and Midjourney v6 are leading the way in image generation, each with its strengths (photorealism, open-source nature, artistic style).
-    *   **GitHub Copilot:** Remains a dominant force in code generation and is increasingly integrated into developers' workflows.
-
 ## View the [:octicons-trophy-24: HuggingFace :simple-huggingface: Arena LLM Leaderboard](https://huggingface.co/spaces/lmarena-ai/chatbot-arena-leaderboard){target=_blank}
 
 <iframe
@@ -153,7 +119,7 @@
     *   **Multimodal Integration:** Combining image/video analysis with other modalities (text, audio) for a more holistic understanding of content.
     *   **3D Scene Generation:**  Generating 3D models and environments from images and videos.
     *   **Real-time Analysis:**  Performing image and video analysis in real-time for applications like augmented reality and live video processing.
-v
+
 !!! Info "Glossary"
 
     [:simple-google: Google's Machine Learning Glossary](https://developers.google.com/machine-learning/glossary){target=_blank}

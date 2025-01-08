@@ -23,7 +23,11 @@ No food or drinks inside the classrooms, please.
 
 [Jeffrey K. Gillan PhD](https://www.gillanscience.com/){target=_blank} [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-0731-3048){target=_blank}
 
+[Megh Krishnaswamy](https://meghavarshini.github.io/){target=_blank} [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-0205-9298?lang=en)
+
 [Carlos Lizárraga-Celaya PhD](https://carloslizarragac.github.io/){target=_blank} [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-0893-4268){target=_blank}
+
+[Enrique Noriega PhD](https://www.linkedin.com/in/enoriega/){target=_blank} [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0001-7150-2989){target=_blank}
 
 [Tyson Lee Swetnam PhD](https://tysonswetnam.com/){target=_blank} [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](http://orcid.org/0000-0002-6639-7181){target=_blank}
 
@@ -36,12 +40,12 @@ This website follows the [FAIR](https://www.go-fair.org/fair-principles/){target
 | :fontawesome-solid-hourglass-half: | Lessons | Instructor | Link |
 |------------------------------------|---------|------------|------|
 | 09:00 | Introductions & [Code of Conduct](#code-of-conduct) | Tyson | |
-| 09:10 | [Session 1: The Landscape](ai_landscape.md) | Tyson | [presentation](https://docs.google.com/presentation/d/1PzPafN5Yznf8jdgpquPAaN0TmYC9WJwvPxM_I2LPwFo/edit?usp=sharing){target=_blank} |
-| 09:30| [Session 2: What is GPT](chatgpt.md)? |  Carlos | 
+| 09:10 | [Session 1: The Landscape](ai_landscape.md) | Enrique & Tyson | [presentation](https://docs.google.com/presentation/d/1PzPafN5Yznf8jdgpquPAaN0TmYC9WJwvPxM_I2LPwFo/edit?usp=sharing){target=_blank} |
+| 09:30| [Session 2: What is GPT](chatgpt.md)? | Enrique & Carlos | 
 | 10:00 | Break |  |
-| 10:10 | [Session 3: Prompt Engineering](daily-productivity.md) | Michele |
+| 10:10 | [Session 3: Prompt Engineering](daily-productivity.md) | Megh & Michele |
 | 11:00 | Lunch |  |  
-| 12:00 | [Session 4: Code Interpreters](code.md) | Jeff | 
+| 12:00 | [Session 4: Code Interpreters](code.md) | Megh & Jeff | 
 | 12:30 | [Session 5: CoPilot](copilot.md) | Tyson |
 | 13:00 | Break |  
 | 13:10 | [Session 6: Education](education.md) | Jeff |
@@ -50,21 +54,13 @@ This website follows the [FAIR](https://www.go-fair.org/fair-principles/){target
 | 15:00 | [Session 9: Research](research.md) | Tyson |
  
 
-## Pre-requisites
+## Prerequisites
 
 :material-check: a laptop with an active wifi connection
 
-:material-check: Create a free [ChatGPT](https://chat.openai.com){target=_blank} account
+:material-check: A professional [ChatGPT](chatgpt.md), [Google Gemini](gemini.md), [Microsoft Copilot](microsoft.md), or [Claude](claude.md) account. 
 
-**Optional**
-
-:material-check: a personal Google account (to access [Bard](https://bard.google.com){target=_blank} - suggest using [Chrome Browser](https://www.google.com/chrome/))
-
-:material-check: Install the [Microsoft Edge Browser](https://www.microsoft.com/en-us/edge){target=_blank} for using Microsoft Bing w/ Chat
-
-:heavy_dollar_sign: [ChatGPT Plus account (plugins are currently waitlisted)](https://openai.com/blog/chatgpt-plugins){target=_blank}
-
-:heavy_dollar_sign: [OpenAI API account (currently waitlisted)](https://share.hsforms.com/1u4goaXwDRKC9-x9IvKno0A4sk30){target=_blank} 
+:material-check: [GitHub](copilot.md) account with free Educational Benefit access to Copilot.  
 
 ## Code of Conduct
 
