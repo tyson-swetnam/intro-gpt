@@ -320,7 +320,9 @@ For English as a Second Language (ESL) speakers, GPT utility in writing more for
 
 ## :simple-openai: Tuning
 
-You can include Linux command line flags in your prompts,
+In some GPTs conventional command line arguments can be included.
+
+For example, Linux command line flags in your ChatGPT prompts, can include:
 
 | Parameter name |	Use | 	Description |
 | :--: | :--: | :-- |

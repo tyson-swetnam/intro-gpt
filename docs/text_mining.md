@@ -24,6 +24,8 @@ This guide provides information on text mining resources
 
 - **[Ravenpack News Analytics](https://www.ravenpack.com/){target=_blank}**: Use for financial and economic analysis. Access through WRDS. 
 
+- **[Web of Science](https://www.webofscience.com/wos/woscc/basic-search)**: is a collection of databases that index the world’s leading scholarly literature in the sciences, social sciences, arts, and humanities, as published in journals, conference proceedings, symposia, seminars, colloquia, workshops, and conventions across the globe.
+
 ## Freely Available Text Data Sources
 
 - **[arXiv Bulk Data](https://arxiv.org/help/bulk_data){target=_blank}**: Our mission is to provide rapid dissemination of scientific results at no cost to authors or readers. Providing free Application Programming Interfaces (APIs) helps us to advance that mission by enabling platforms and projects that extend the discoverability of arXiv e-prints and provide valuable services to scientists and interested readers. 
@@ -43,6 +45,9 @@ This guide provides information on text mining resources
 - **[Project Gutenberg Robot Access](https://www.gutenberg.org/wiki/Gutenberg:Robot_access){target=_blank}**: Project Gutenberg is a library of over 60,000 free eBooks. Information about robot access to our pages outlines allowable automated access to content. 
 
 - **[PubMed APIs](https://www.ncbi.nlm.nih.gov/home/develop/api/){target=_blank}**: PMC hosts a number of important article datasets and makes our APIs and some code available via public code repositories. 
+
+- **[OpenAlex](https://openalex.org/)**: is a fully open catalog of the global research system. It's named after the ancient Library of Alexandria and made by the nonprofit OurResearch.
+
 
 # Social Media and the Web
 
