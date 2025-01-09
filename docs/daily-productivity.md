@@ -107,30 +107,6 @@ Below are tables that rank the most popular GPTs by popularity from most to leas
 | **Imagine with Meta** | - Text-to-image via Emu model <br/>- Free and evolving toolset | - Factual/historical inaccuracies reported <br/>- Still experimental | **Free** | [**Imagine**](https://www.meta.ai/){target=_blank} | N/A |
 | **Craiyon** | - Simple web UI <br/>- Free usage for low-res images | - Quality less advanced than Midjourney or DALL·E <br/>- Ads on free tier | **Free** or subscription | [**Craiyon**](https://www.craiyon.com/){target=_blank} | N/A |
 
----
-
-**Tables updated!**
-
-### Best for Code
-
-| **Platform** | **Strength** | **Weakness** | **Cost** | **Interface** | **Docs** |
-|--------------|--------------|--------------|----------|---------------|----------|
-| **GitHub Copilot** | - Seamless code autocompletion <br/>- Integrates with VS Code, JetBrains, etc. | - Limited context window <br/>- Some framework-specific gaps | \$10/mo (Individual), \$19/mo (Business)    | [**GitHub Copilot**](https://github.com/features/copilot){target=_blank} | [**Copilot Docs**](https://docs.github.com/en/copilot){target=_blank}                                                                            |
-| **ChatGPT Code Interpreter** | - Interactive code execution in a sandbox <br/>- Good for data analysis, transformations  | - Must have GPT-4 subscription <br/>- No direct local environment access | \$20/mo (Plus) | [**ChatGPT**](https://chat.openai.com/){target=_blank} | | [**OpenAI Docs**](https://platform.openai.com/docs/guides/code){target=_blank} |
-| **Gemini 2.0**  | - Focus on code + text synergy <br/>- Potential for deep chain-of-thought | - Still early, can be slow with large code bases <br/>- Pricing not fully disclosed | **Free** (Beta), Pro Tiers TBA | [**Gemini**](https://ai.google.dev/models/gemini){target=_blank} | [**Gemini Docs**](https://ai.google.dev/gemini-api/docs){target=_blank} |
-| **Continue.dev** | - Open-source local code interpreter <br/>- Extensible with plugins | - Requires technical setup <br/>- Smaller dev community | **Free** (Open Source) | [**Continue.dev**](https://continue.dev/){target=_blank} | [**Continue.dev Docs**](https://continue.dev/docs/){target=_blank} |
-| **Codeium**  | - Free AI-powered autocomplete <br/>- Supports multiple IDEs | - Less advanced than Copilot on edge cases <br/>- Limited large-language reasoning  | **Free** | [**Codeium**](https://www.codeium.com/){target=_blank} | [**Codeium Docs**](https://docs.codeium.com/){target=_blank} |
-| **Phind** | - Code search + AI chat combined  | - Smaller community <br/>- Some advanced features behind paid tiers | **Free**, Paid tiers TBA | [**Phind**](https://www.phind.com/){target=_blank} | [**Phind Docs**](https://help.phind.com/hc/en-us){target=_blank} |
-
-### Best for Image/Video
-
-| **Platform** | **Strength** | **Weakness** | **Cost** | **Interface** | **Docs** |
-|--------------|--------------|--------------|----------|---------------|----------|
-| **Midjourney v6** | - Generally highest-quality AI images <br/>- Rich feature set via Discord commands | - Requires Discord usage <br/>- More expensive for casual users | \$10–\$60/mo (various tiers) | [**Midjourney**](https://www.midjourney.com/){target=_blank} | [**Midjourney Docs**](https://docs.midjourney.com/){target=_blank} |
-| **DALL·E 3 (OpenAI)** | - Conveniently integrated in ChatGPT <br/>- Good for quick generation, concept art | - Not always photorealistic <br/>- Requires ChatGPT Plus or API usage | \$20/mo (ChatGPT Plus) or pay-per-use API | [**DALL·E 3**](https://openai.com/dall-e-3){target=_blank} | [**DALL·E Docs**](https://platform.openai.com/docs/guides/images){target=_blank} |
-| **Stable Diffusion 3** | - Fully open source <br/>- Highly customizable (fine-tuning) | - Requires GPU resources <br/>- Results vary without parameter tuning  | **Free** (Open Source), or API services     | [**Stability AI**](https://stability.ai/){target=_blank} | [**SD3 Paper**](https://arxiv.org/abs/2303.14686){target=_blank}  |
-| **Adobe Firefly** | - Easy to use for designers <br/>- Integration with Adobe apps (Photoshop, Illustrator) | - Requires Adobe subscription <br/>- Not as flexible for coding or specialized prompts  | Included with Adobe CC or \$4.99–\$9.99 add-on | [**Firefly**](https://www.adobe.com/products/firefly.html){target=_blank} | [**Firefly Docs**](https://developer.adobe.com/firefly-services/docs/guides/){target=_blank} |
-| **Sora (OpenAI)**  | - Computer Vision (video) generation <br/>- Experimental “world simulator” approach | - Limited early access <br/>- High compute demands  | **Limited Access**, likely enterprise only   | [**Sora**](https://openai.com/sora){target=_blank} | [**Sora Report**](https://openai.com/research/video-generation-models-as-world-simulators){target=_blank} |
 
 
 !!! Info  "About the Table"
