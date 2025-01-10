@@ -193,7 +193,7 @@ _Note: ChatGPT and Copilot lack access to my University Outlook or Google Calend
 
 This prompt involves three tasks: **retrieving data**, **creating an itinerary**, and **arranging tasks based on priority**.
 
-!!! example "Planning your day" 
+??? example "Planning your day" 
 
     === "Prompt"
 
@@ -248,7 +248,7 @@ This prompt involves three tasks: **retrieving data**, **creating an itinerary**
 
 Assuming you have integration with your calendar, you might use the GPT to manage your schedule as follows:
 
-!!! example "Managing Calendar"
+??? example "Managing Calendar"
 
     === "Prompt"
 
@@ -279,7 +279,7 @@ This prompt includes three tasks: **generating topics**, **creating outlines**, 
 
 _Note, these are very long responses:_
 
-!!! example "Blog post creation"
+??? example "Blog post creation"
 
 
     === "Prompt"
@@ -302,9 +302,9 @@ _Note, these are very long responses:_
         4. **Eco-Friendly Diet**
         5. **Green Home Practices**
 
-        ### Brief Outlines
+        **Brief Outlines**
 
-        #### 1. Reducing Waste
+        **1. Reducing Waste**
         - **Introduction**: Importance of waste reduction
         - **Body**:
         - Benefits of reducing waste
@@ -313,7 +313,7 @@ _Note, these are very long responses:_
         - Reducing single-use plastics
         - **Conclusion**: Encouragement to adopt waste reduction habits
 
-        #### 2. Energy Efficiency
+        **2. Energy Efficiency**
         - **Introduction**: The role of energy efficiency in sustainability
         - **Body**:
         - Benefits of energy efficiency
@@ -322,7 +322,7 @@ _Note, these are very long responses:_
         - Renewable energy sources
         - **Conclusion**: Call to action for adopting energy-efficient practices
 
-        #### 3. Sustainable Transportation
+        **3. Sustainable Transportation**
         - **Introduction**: Impact of transportation on the environment
         - **Body**:
         - Benefits of sustainable transportation
@@ -331,7 +331,7 @@ _Note, these are very long responses:_
         - Policy and infrastructure changes needed
         - **Conclusion**: Encouragement to choose sustainable transportation options
 
-        #### 4. Eco-Friendly Diet
+        **4. Eco-Friendly Diet**
         - **Introduction**: Connection between diet and sustainability
         - **Body**:
         - Benefits of an eco-friendly diet
@@ -340,7 +340,7 @@ _Note, these are very long responses:_
         - Supporting local and organic food producers
         - **Conclusion**: Motivation to make sustainable food choices
 
-        #### 5. Green Home Practices
+        **5. Green Home Practices**
         - **Introduction**: Importance of sustainable living spaces
         - **Body**:
         - Benefits of green home practices
@@ -349,21 +349,26 @@ _Note, these are very long responses:_
         - DIY eco-friendly home projects
         - **Conclusion**: Encouragement to implement green practices at home
 
-        ### Engaging Introduction Paragraphs
+        **Engaging Introduction Paragraphs**
 
-        #### 1. Reducing Waste
+        **1. Reducing Waste**
+
         In a world where waste is piling up at an alarming rate, taking steps to reduce our waste footprint has never been more crucial. By making small changes in our daily habits, we can significantly impact the environment and pave the way for a cleaner, greener future. Let's explore how we can all contribute to reducing waste and making a difference.
 
-        #### 2. Energy Efficiency
+        **2. Energy Efficiency**
+
         Energy efficiency is more than just a buzzword; it's a vital component of sustainable living. By optimizing our energy use, we can reduce our carbon footprint, save money, and contribute to a healthier planet. Join me as we delve into practical ways to enhance energy efficiency in our homes and lives.
 
-        #### 3. Sustainable Transportation
+        **3. Sustainable Transportation**
+
         Transportation is a major contributor to greenhouse gas emissions, but it doesn't have to be. Embracing sustainable transportation options can lead to a cleaner environment and a healthier lifestyle. Let's take a journey through the various ways we can make our commutes and travels more eco-friendly.
 
-        #### 4. Eco-Friendly Diet
+        **4. Eco-Friendly Diet**
+
         What we eat has a profound impact on the planet. Adopting an eco-friendly diet not only benefits our health but also supports the environment. From plant-based meals to reducing food waste, discover how our dietary choices can lead to a more sustainable world.
 
-        #### 5. Green Home Practices
+        **5. Green Home Practices**
+
         Our homes are our sanctuaries, and making them sustainable can have a lasting positive impact on the environment. From water conservation to using sustainable materials, there are countless ways to create a green home. Let's explore practical tips and ideas to transform our living spaces into eco-friendly havens.
 
         I hope these topics, outlines, and introductions help you get started on your blog post! If you need further assistance or more details on any of these points, feel free to ask.
@@ -374,9 +379,10 @@ _Note, these are very long responses:_
 
         ---
 
-        ## 1. Energy Efficiency and Renewable Energy
+        **1. Energy Efficiency and Renewable Energy**
+        
+        **Brief Outline**
 
-        ### Brief Outline
         1. **Understanding Your Energy Footprint**  
         - Why it matters and how to measure it  
         - Tools for monitoring home energy usage
@@ -397,14 +403,16 @@ _Note, these are very long responses:_
         - Financial savings and return on investment  
         - Positive environmental impact
 
-        ### Introduction Paragraph
+        **Introduction Paragraph**
+
         Ever wonder how much power your home truly consumes—and how you could use less without sacrificing comfort? Energy efficiency and renewable energy sources lie at the core of sustainable living. By understanding your energy footprint and making thoughtful improvements—like sealing drafts, installing solar panels, or simply turning off unnecessary electronics—you can lower both your monthly bills and your impact on the planet. This shift toward clean energy isn’t just beneficial for the environment; it can significantly enhance your quality of life in the long run.
 
         ---
 
-        ## 2. Sustainable Transportation
+        **2. Sustainable Transportation**
 
-        ### Brief Outline
+        **Brief Outline**
+
         1. **The Impact of Transportation on Carbon Emissions**  
         - Global transport emissions data  
         - How personal choices contribute to the bigger picture
@@ -425,14 +433,16 @@ _Note, these are very long responses:_
         - The role of local governments in promoting green transportation  
         - Community advocacy and infrastructure improvements
 
-        ### Introduction Paragraph
+        **Introduction Paragraph**
+
         Getting from A to B is a necessary part of daily life, but how we choose to do it can have a big impact on our planet. Whether it’s taking the bus instead of driving alone, riding a bike to work, or investing in an electric car, there are plenty of ways to keep our carbon footprints in check. In this section, we’ll explore how sustainable transportation choices not only help the environment but also save money and contribute to healthier, happier communities.
 
         ---
 
-        ## 3. Waste Reduction and Recycling
+        **3. Waste Reduction and Recycling**
 
-        ### Brief Outline
+        **Brief Outline**
+
         1. **The Global Waste Problem**  
         - Current statistics on waste generation  
         - Consequences of landfills, incineration, and pollution
@@ -453,14 +463,16 @@ _Note, these are very long responses:_
         - Supporting local recycling programs  
         - Advocating for better waste management systems
 
-        ### Introduction Paragraph
+        **Introduction Paragraph**
+
         Do you ever stop to think about where your trash goes after it leaves the curb? Our world is grappling with staggering amounts of waste, and it’s more important than ever to consider how we can lighten that load. By making small but impactful changes—like switching to reusable products, sorting recyclables properly, and composting food scraps—we can all play a part in cutting down on needless waste. It’s time to transform our throwaway culture into one that values resources, creativity, and the planet’s well-being.
 
         ---
 
-        ## 4. Ethical and Sustainable Consumption
+        **4. Ethical and Sustainable Consumption**
 
-        ### Brief Outline
+        **Brief Outline**
+
         1. **The True Cost of Consumer Goods**  
         - Environmental and social impacts of production  
         - Importance of fair labor practices and supply chain transparency
@@ -481,14 +493,16 @@ _Note, these are very long responses:_
         - Sharing, borrowing, and community swap events  
         - Local artisans and farmers’ markets
 
-        ### Introduction Paragraph
+        **Introduction Paragraph**
+
         When we swipe our credit cards or add items to our online carts, it’s easy to forget the journey each product took to reach us. From raw materials to human labor, every purchase carries hidden environmental and social costs. By choosing to consume less and shop more ethically—whether it’s supporting fair trade coffee growers or opting for secondhand clothes—we can make a difference that extends far beyond our personal wardrobes or pantries. Let’s explore why mindful consumption is key to a more sustainable future.
 
         ---
 
-        ## 5. Sustainable Food Choices
+        **5. Sustainable Food Choices**
 
-        ### Brief Outline
+        **Brief Outline**
+
         1. **Understanding Food Systems**  
         - The environmental impact of industrial agriculture  
         - Water use, greenhouse gas emissions, and biodiversity loss
@@ -509,7 +523,8 @@ _Note, these are very long responses:_
         - Container gardening and community gardens  
         - The satisfaction and health benefits of homegrown produce
 
-        ### Introduction Paragraph
+        **Introduction Paragraph**
+
         Have you ever wondered how the food on your plate gets there, or what it takes to produce it? Our dietary choices have significant ripple effects on the health of our bodies, our communities, and our planet. From selecting fresh, locally sourced ingredients to cutting back on food waste, there are many ways we can align our eating habits with a more sustainable lifestyle. Join us as we delve into practical tips for making mindful food choices that benefit both you and the environment.
 
         ---
@@ -522,15 +537,15 @@ _Note, these are very long responses:_
 
         [View response Document on Google Drive](https://docs.google.com/document/d/18pPtxS0MnIx11GbcZim_cHhSk78pYZrlyEgnfNSsWF4/edit?usp=sharing){target=_blank}
 
-        # Sustainable Living: A Beginner's Guide
+        **Sustainable Living: A Beginner's Guide**
 
         This guide is a culmination of research on various aspects of sustainable living, from reducing our carbon footprint to building sustainable communities. In today's world, it's more important than ever to be mindful of our impact on the planet. Sustainable living is a lifestyle that attempts to reduce an individual's or society's use of the Earth's natural resources. It is about living in a way that meets the needs of the present without compromising the ability of future generations to meet their own needs. But the benefits of sustainable living extend far beyond environmental impact. By embracing sustainable practices, we can also improve our health and well-being, reduce our living costs, and increase our self-sufficiency. This blog post will explore five key topics related to sustainable living, providing practical tips and insights to help you embark on your own journey towards a more eco-conscious lifestyle.
 
-        ## Reducing Your Carbon Footprint
+        **Reducing Your Carbon Footprint**
 
         Our carbon footprint is the total amount of greenhouse gases generated by our actions. This includes emissions from transportation, energy consumption, and the food we eat. By making conscious choices in these areas, we can significantly reduce our impact on the environment.
 
-        ### Transportation
+        **Transportation**
 
         Transportation is a major contributor to greenhouse gas emissions. Here are some ways to reduce your carbon footprint related to transportation:
 
@@ -539,7 +554,7 @@ _Note, these are very long responses:_
         *   **Carpool:** If you need to drive, try carpooling with colleagues or friends to reduce the number of cars on the road. Sharing rides is a great way to connect with others and reduce your environmental impact.
         *   **Choose fuel-efficient vehicles:** When purchasing a new car, consider fuel-efficient options such as hybrid or electric vehicles. These vehicles use less fuel and produce fewer emissions, saving you money and reducing your impact on the planet.
 
-        ### Energy Consumption
+        **Energy Consumption**
 
         Our homes consume a significant amount of energy. Here are some tips for reducing your energy consumption at home:
 
@@ -548,7 +563,7 @@ _Note, these are very long responses:_
         *   **Reduce your heating and cooling needs:** Proper insulation, energy-efficient windows, and smart thermostats can help regulate the temperature in your home and reduce energy consumption. Imagine a cozy winter evening with less reliance on your heating system!
         *   **Unplug electronics when not in use:** Even when turned off, many electronics continue to draw power. Unplug them or use a power strip that can be switched off. This simple habit can make a surprising difference in your energy consumption.
 
-        ### Food Choices
+        **Food Choices**
 
         The food we eat also has a carbon footprint. Here are some tips for reducing your carbon footprint related to food choices:
 
@@ -557,11 +572,11 @@ _Note, these are very long responses:_
         *   **Reduce food waste:** Plan your meals, store food properly, and compost food scraps to minimize food waste. Wasted food not only wastes resources but also contributes to methane emissions in landfills.
 
 
-        ## Sustainable Consumption and Waste Reduction
+        **Sustainable Consumption and Waste Reduction**
 
         Our society is facing a growing crisis of overconsumption and waste. The constant pursuit of material possessions and the disposable nature of many products are taking a toll on our planet. It's time to rethink our consumption habits and embrace a more sustainable way of living.
 
-        ### Minimalism
+        **Minimalism**
 
         Minimalism is a lifestyle that emphasizes living with less. By decluttering our homes and lives, we can reduce our consumption and waste. Here are some principles of minimalism:
 
@@ -569,7 +584,7 @@ _Note, these are very long responses:_
         *   **Quality over quantity:** Invest in high-quality, durable items that will last longer. Choosing a well-made item over a cheaper, disposable one can save you money and reduce waste in the long run.
         *   **Declutter regularly:** Get rid of items you no longer need or use. Donate, sell, or recycle them whenever possible. Decluttering can be liberating and create a more peaceful living space.
 
-        ### Zero Waste Living
+        **Zero Waste Living**
 
         Zero waste living is a philosophy that encourages individuals to minimize their waste generation. While achieving zero waste may be challenging, there are many steps we can take to reduce our waste significantly. Here are some tips for zero waste living:
 
@@ -579,7 +594,7 @@ _Note, these are very long responses:_
         *   **Recycle properly:** Familiarize yourself with your local recycling guidelines and recycle as much as possible. Recycling helps conserve resources and reduce landfill waste.
         *   **Compost organic waste:** Composting food scraps and yard waste reduces landfill waste and creates nutrient-rich soil for your garden.
 
-        ### Conscious Consumerism
+        **Conscious Consumerism**
 
         Conscious consumerism involves making informed choices about the products we buy. Here are some tips for conscious consumerism:
 
@@ -589,11 +604,11 @@ _Note, these are very long responses:_
         *   **Choose products with minimal packaging:** Opt for products with minimal or recyclable packaging. Excess packaging often ends up in landfills.
 
 
-        ## Sustainable Food Choices
+        **Sustainable Food Choices**
 
         The food we eat has a significant impact on the environment. From the production and transportation of food to the packaging and waste it generates, our food choices have far-reaching consequences. By making more sustainable food choices, we can all contribute to a healthier planet.
 
-        ### Plant-Based Diets
+        **Plant-Based Diets**
 
         Plant-based diets have been shown to have a lower environmental impact than diets that include meat. Here are some benefits of plant-based diets:
 
@@ -601,7 +616,7 @@ _Note, these are very long responses:_
         *   **Less land use:** Raising livestock requires large amounts of land for grazing and feed production. Plant-based diets require less land, freeing up land for other uses, such as growing crops or restoring natural habitats.
         *   **Reduced water consumption:** Animal agriculture is a water-intensive industry. Plant-based diets require less water, which is essential for conserving this precious resource.
 
-        ### Local and Seasonal Eating
+        **Local and Seasonal Eating**
 
         Eating locally and seasonally is another way to make more sustainable food choices. Here's why:
 
@@ -609,7 +624,7 @@ _Note, these are very long responses:_
         *   **Fresher and more nutritious:** Locally grown produce is often fresher and more nutritious than food that has been transported long distances.
         *   **Supports local farmers:** Buying local food supports local farmers and the local economy, fostering community resilience and food security.
 
-        ### Reducing Food Waste
+        **Reducing Food Waste**
 
         Food waste is a major environmental problem. Here are some tips for reducing food waste in your home:
 
@@ -618,11 +633,11 @@ _Note, these are very long responses:_
         *   **Use leftovers creatively:** Turn leftovers into new meals instead of throwing them away. Get creative in the kitchen and find new ways to use up leftover ingredients.
 
 
-        ## Sustainable Home and Garden
+        **Sustainable Home and Garden**
 
         Our homes and gardens are an important part of our lives, and they can also be a source of sustainability. By making small changes in our homes and gardens, we can reduce our environmental impact and create a more sustainable living space.
 
-        ### Energy Efficiency
+        **Energy Efficiency**
 
         Improving the energy efficiency of your home can save money and reduce your carbon footprint. Here are some tips:
 
@@ -631,7 +646,7 @@ _Note, these are very long responses:_
         *   **Use energy-efficient lighting:** Switch to LED bulbs, which use less energy and last longer than traditional incandescent bulbs.
         *   **Install a programmable thermostat:** A programmable thermostat can help regulate the temperature in your home and reduce energy consumption by automatically adjusting the temperature based on your schedule.
 
-        ### Water Conservation
+        **Water Conservation**
 
         Water is a precious resource, and it's important to conserve it. Here are some tips for conserving water in your home and garden:
 
@@ -640,7 +655,7 @@ _Note, these are very long responses:_
         *   **Water your garden efficiently:** Water your garden early in the morning or late in the evening to minimize evaporation. Use a soaker hose or drip irrigation system to deliver water directly to the roots of your plants.
         *   **Collect rainwater:** Install a rain barrel to collect rainwater for watering your garden. This is a great way to conserve water and reduce your reliance on municipal water supplies.
 
-        ### Composting
+        **Composting**
 
         Composting is a natural process that turns organic waste into nutrient-rich soil. It's a fantastic way to reduce landfill waste, create valuable soil for your garden, and connect with the natural cycle of decomposition. Here's how to get started:
 
@@ -648,7 +663,7 @@ _Note, these are very long responses:_
         *   **Add the right materials:** Compost a mix of "green" materials (such as food scraps and grass clippings) and "brown" materials (such as leaves and twigs). This balance provides the necessary nutrients and carbon for decomposition.
         *   **Maintain the compost:** Turn the compost regularly to provide aeration and ensure proper decomposition. This helps to speed up the process and prevent unpleasant odors.
 
-        ### Sustainable Gardening
+        **Sustainable Gardening**
 
         Creating a sustainable garden involves using practices that minimize environmental impact. Here are some tips:
 
@@ -657,11 +672,11 @@ _Note, these are very long responses:_
         *   **Build healthy soil:** Healthy soil is essential for plant growth. Add compost and other organic matter to improve soil fertility and water retention.
 
 
-        ## Sustainable Community and Activism
+        **Sustainable Community and Activism**
 
         Creating a sustainable future requires the collective effort of individuals, communities, and governments. By working together, we can create a more sustainable world for ourselves and future generations. Individual actions are essential, but systemic change is also necessary to address the root causes of environmental problems.
 
-        ### Supporting Local Businesses
+        **Supporting Local Businesses**
 
         Supporting local businesses is important for sustainability. Here's why:
 
@@ -669,7 +684,7 @@ _Note, these are very long responses:_
         *   **Supports the local economy:** Spending money at local businesses keeps money within the community and supports local jobs.
         *   **Promotes community building:** Local businesses often play an important role in community building and social cohesion.
 
-        ### Advocating for Sustainable Policies
+        **Advocating for Sustainable Policies**
 
         We can all play a role in advocating for sustainable policies in our communities. Here are some ways to get involved:
 
@@ -677,7 +692,7 @@ _Note, these are very long responses:_
         *   **Attend community meetings:** Attend community meetings and voice your opinions on sustainability issues. Engage in local discussions and contribute to decision-making processes.
         *   **Support organizations working on sustainability:** Donate to or volunteer with organizations that are working to promote sustainability. There are many organizations working on various aspects of sustainability, from environmental conservation to social justice.
 
-        ### Community Initiatives
+        **Community Initiatives**
 
         Many communities have initiatives in place to promote sustainability. Here are some examples:
 
@@ -686,7 +701,7 @@ _Note, these are very long responses:_
         *   **Recycling programs:** Community recycling programs make it easier for residents to recycle and reduce waste, diverting materials from landfills and conserving resources.
 
 
-        ## Conclusion
+        **Conclusion**
 
         Sustainable living is not just a trend; it's a necessity. By adopting sustainable practices in our daily lives, we can reduce our environmental impact and contribute to a healthier planet. Start with small changes, and gradually incorporate more sustainable habits into your lifestyle. Remember that every action counts, and together, we can make a difference. Sustainable living is a journey, not a destination. There will be challenges and setbacks along the way, but the rewards are well worth the effort. By embracing sustainable practices, we not only benefit the environment but also improve our own lives and create a more just and equitable world for all.
 
@@ -707,23 +722,25 @@ GPTs can be used to help craft scientific research proposals.
     Source: [https://new.nsf.gov/news/notice-to-the-research-community-on-ai](https://new.nsf.gov/news/notice-to-the-research-community-on-ai) 
 
 
-!!! example "Open Science Research Proposal"
+??? example "Open Science Research Proposal"
 
     === "Prompt"
 
         ```
-        I'm constructing a research proposal for the National Science Foundation in the Directorate for Computer and Information Sciences and Engineering, 
+        I'm constructing a research proposal for the National Science Foundation 
+        in the Directorate for Computer and Information Sciences and Engineering, 
         and I need help formulating the broader impacts and intellectual merit
         The research is about the influence of Agentic AI, open source Foundational Models, and GPTs, 
         and recent mandates for open data and open science.
-        Can you help refine this idea and suggest some potential research questions and methodologies?
+        Can you help refine this idea and suggest some research questions and methodologies?
         ```
 
     === "Copilot Response"
         
         Absolutely, I'd be happy to help you refine your research proposal! Let's break down the key components and formulate some potential research questions and methodologies.
 
-        ### Broader Impacts
+        **Broader Impacts**
+
         The broader impacts of your research should focus on how it benefits society and contributes to desired societal outcomes. Here are some potential broader impacts for your research:
 
         1. **Advancing STEM Education**: Your research could enhance educational tools and resources, making advanced AI concepts more accessible to students and educators.
@@ -731,14 +748,16 @@ GPTs can be used to help craft scientific research proposals.
         3. **Enhancing Public Engagement with AI**: Open data and open science mandates can increase public understanding and engagement with AI technologies, fostering a more informed society.
         4. **Improving Economic Competitiveness**: By advancing the capabilities of Agentic AI and GPTs, your research could drive innovation and economic growth in various industries[1](https://new.nsf.gov/funding/learn/broader-impacts).
 
-        ### Intellectual Merit
+        **Intellectual Merit**
+
         The intellectual merit of your research should highlight its potential to advance knowledge within the field. Here are some aspects to consider:
 
         1. **Novelty and Innovation**: Investigate how Agentic AI and open-source foundational models can lead to new AI capabilities and applications[2](https://scholarspace.manoa.hawaii.edu/server/api/core/bitstreams/0db8344c-6e60-42c0-af45-744ec0b3a822/content).
         2. **Interdisciplinary Approach**: Explore the intersection of AI, data science, and open science policies, contributing to multiple fields of study[3](https://www.forbes.com/councils/forbestechcouncil/2025/01/03/agentic-ai-a-new-paradigm-in-autonomous-artificial-intelligence/).
         3. **Methodological Rigor**: Employ robust methodologies to ensure the reliability and validity of your findings[4](https://arxiv.org/abs/2303.10130).
 
-        ### Potential Research Questions
+        **Potential Research Questions**
+
         Here are some research questions that could guide your study:
 
         1. **How do Agentic AI systems influence decision-making processes in various domains?**
@@ -746,7 +765,8 @@ GPTs can be used to help craft scientific research proposals.
         3. **How do recent mandates for open data and open science impact the accessibility and reproducibility of AI research?**
         4. **What are the societal implications of widespread adoption of GPT-based technologies?**
 
-        ### Methodologies
+        **Methodologies**
+
         To address these research questions, you could consider the following methodologies:
 
         1. **Literature Review**: Conduct a comprehensive review of existing literature on Agentic AI, open-source models, and open science policies to identify gaps and opportunities for further research.
@@ -759,13 +779,19 @@ GPTs can be used to help craft scientific research proposals.
 
     === "ChatGPT o1 Response"
 
-        Below is a structured way to approach framing your research idea for an NSF CISE (Computer & Information Science & Engineering) proposal. The first section lays out **Intellectual Merit**—the “what” and “why” of the research. The second section discusses **Broader Impacts**—the “so what” for society, education, workforce development, industry, and policy. Following that are some **potential research questions** and **methodological approaches** you might consider.
+        Below is a structured way to approach framing your research idea for an NSF CISE 
+        (Computer & Information Science & Engineering) proposal. 
+        The first section lays out **Intellectual Merit**—the “what” and “why” of the research. 
+        The second section discusses **Broader Impacts**—the “so what” for society, 
+        education, workforce development, industry, and policy. 
+        Following that are some **potential research questions** and **methodological approaches** 
+        you might consider.
 
         ---
 
-        ## 1. Intellectual Merit
+        **1. Intellectual Merit**
 
-        ### 1.1 Research Context and Rationale
+        **1.1 Research Context and Rationale**
 
         - **Agentic AI**: Rapid advances in large language models (LLMs) such as GPT, combined with techniques for autonomous or “agentic” behavior, have begun to shift how AI systems operate in real-world contexts. These emergent systems can observe, reason, plan, act, and even self-improve with minimal human supervision, raising new questions about reliability, controllability, and social impact.  
         - **Open-Source Foundational Models**: The open-sourcing of powerful LLMs and related foundational models (e.g., large-scale image, speech, or multi-modal models) lowers the barriers to entry for researchers and developers. This democratization can spark innovation and accelerate research, but it also complicates oversight, regulatory approaches, and responsible deployment.  
@@ -773,7 +799,7 @@ GPTs can be used to help craft scientific research proposals.
 
         Your project aims to understand, design, and shape how these trends intersect—and in particular, how **Agentic AI systems built on open-source foundational models** interact with the evolving **mandates for open data and open science**.  
 
-        ### 1.2 Research Objectives
+        **1.2 Research Objectives**
 
         1. **Theoretical and Technical Foundations**:  
         - Investigate the architectural and algorithmic choices that enable agentic behavior in next-generation AI systems, focusing on transparency, robustness, and replicability.  
@@ -787,7 +813,7 @@ GPTs can be used to help craft scientific research proposals.
         - Identify best practices for integrating agentic AI systems into existing regulatory and ethical frameworks, especially given the open-source nature of these models and the new mandates for open science.  
         - Highlight how transparent, community-driven approaches can mitigate potential harms while fostering positive innovation.
 
-        ### 1.3 Significance and Novelty
+        **1.3 Significance and Novelty**
 
         - **Convergence of Agentic AI and Open Source**: A nuanced exploration of how open-source foundational models could accelerate agentic AI while also raising new challenges in oversight and accountability.  
         - **New Evaluation Protocols**: Contributing novel, reproducible benchmarks and measurement protocols that reflect real-world complexities (e.g., emergent capabilities, safety concerns, domain-specific constraints).  
@@ -795,9 +821,9 @@ GPTs can be used to help craft scientific research proposals.
 
         ---
 
-        ## 2. Broader Impacts
+        **2. Broader Impacts**
 
-        ### 2.1 Educational and Workforce Development
+        **2.1 Educational and Workforce Development**
 
         - **Curriculum and Training**: Develop open-access materials—tutorials, code repositories, and case studies—for students and practitioners on *agentic AI systems, open-source development practices, and ethical deployment*.  
         - **Research-to-Practice Pipeline**: Engage undergraduate and graduate students in hands-on, collaborative projects with industry or government labs, enhancing their computational skills and awareness of responsible AI frameworks.  
@@ -805,25 +831,25 @@ GPTs can be used to help craft scientific research proposals.
         - Proactively recruit and mentor students from underrepresented groups for research experiences.  
         - Offer workshops or seminars in collaboration with minority-serving institutions to diversify the talent pool working on open-source AI.
 
-        ### 2.2 Societal and Policy Impact
+        **2.2 Societal and Policy Impact**
 
         - **Community-Driven Frameworks**: Provide open-source code, data documentation, and ethical guidelines that can serve as a template for developers worldwide.  
         - **Transparency and Trust**: By making methodologies, code, and results publicly available, your research helps build public trust and understanding of AI technologies, addressing misinformation or misinterpretation.  
         - **Guidance for Policymakers**: Generate white papers or policy briefs that translate technical findings into actionable recommendations for government agencies, standards bodies, and open-science policy makers.
 
-        ### 2.3 Industry Collaboration and Technology Transfer
+        **2.3 Industry Collaboration and Technology Transfer**
 
         - **Open-Source Consortium**: Collaborate with industry partners, nonprofits, or open-source communities to share insights, prototypes, and best practices, accelerating the transition of foundational AI models from research to real-world applications.  
         - **Startup Engagement**: Encourage commercialization avenues for new AI tools and benchmarks developed under the project, enabling startup companies to incorporate robust and responsible agentic AI solutions into their products.
 
-        ### 2.4 Public Engagement
+        **2.4 Public Engagement**
 
         - **Citizen Science and Outreach**: Involve citizen-scientists, community stakeholders, or volunteer developers in data collection and annotation efforts for open benchmarks, showcasing the power of open collaboration.  
         - **Public Lectures and Demonstrations**: Organize public events or online demonstrations that explain complex AI concepts in accessible ways, highlighting both the potential and the limitations of agentic AI in society.
 
         ---
 
-        ## 3. Potential Research Questions
+        **3. Potential Research Questions**
 
         1. **Design and Architecture**  
         - *How can we design agentic AI systems that are easily interpretable, safe, and reliable while maintaining state-of-the-art performance on complex tasks?*  
@@ -846,7 +872,7 @@ GPTs can be used to help craft scientific research proposals.
 
         ---
 
-        ## 4. Suggested Methodologies
+        **4. Suggested Methodologies**
 
         1. **Multi-Modal Benchmark Development**  
         - Collect or synthesize domain-specific open datasets (respecting privacy, fairness, and ethical considerations) and develop new tasks that mirror real-world complexity (e.g., multi-step reasoning, adaptive planning).  
@@ -872,7 +898,7 @@ GPTs can be used to help craft scientific research proposals.
 
         ---
 
-        ### Pulling It All Together
+        **Pulling It All Together**
 
         By framing your work in terms of the critical juncture where **Agentic AI**, **open-source foundational models**, and **open science mandates** converge, you can highlight both the **scientific promise** and the **social responsibility** of your proposed research. A clearly articulated plan for creating reproducible benchmarks, novel metrics, and robust governance frameworks will underscore the Intellectual Merit, while educational initiatives, diverse outreach, policy guidance, and community-based engagement will serve as the backbone of the Broader Impacts.
 
@@ -885,15 +911,16 @@ GPTs can be used to help craft scientific research proposals.
 
         [View response in Google Docs](https://docs.google.com/document/d/1wq2XU_6p6URJDf9aveVS_BzpD0zbaNG4Y0epdTUQJt4/edit?usp=sharing){target=_blank}
 
-        # Agentic AI, Open Source Foundational Models, and GPTs in the Context of Open Data and Open Science Mandates
+        **Agentic AI, Open Source Foundational Models, and GPTs in the Context of Open Data and Open Science Mandates**
 
-        ## Introduction
+        **Introduction**
         This research proposal explores the intersection of agentic artificial intelligence (AI), open-source foundational models (FMs), and generative pre-trained transformers (GPTs) with recent mandates for open data and open science. These mandates, driven by the increasing recognition of the societal benefits of accessible and transparent research [1], raise critical questions about the development, deployment, and governance of advanced AI systems. This proposal aims to investigate the potential overlaps and conflicts between these emerging technologies and open science principles, ultimately contributing to a deeper understanding of their broader impacts and intellectual merit.
 
-        ## Broader Impacts and Intellectual Merit
+        **Broader Impacts and Intellectual Merit**
         The National Science Foundation (NSF) emphasizes two core criteria for evaluating research proposals: Intellectual Merit and Broader Impacts [2, 3]. Intellectual merit refers to the potential of the proposed research to advance knowledge and understanding within its field or across different fields. Broader impacts, on the other hand, encompass the potential to benefit society and contribute to the achievement of specific, desired societal outcomes [3]. These criteria are central to the NSF's mission of promoting the progress of science and advancing national health, prosperity, and welfare [4].
 
-        ### Broader Impacts
+        **Broader Impacts**
+
         This research will have several broader impacts:
 
         * **Ethical and Societal Implications:** By examining the interplay of agentic AI, open-source FMs, and GPTs with open data and open science, this research will shed light on the ethical and societal implications of these technologies. This includes exploring potential risks such as misuse, bias, and unintended consequences, as well as benefits such as increased accessibility, transparency, and collaboration in AI research and development. For example, research shows that ethical misbehavior by agentic AI "can become even more alarming when AI systems interact with one another" [5]. In one study, AI agents in a simulated marketplace learned to collude with each other to set artificially high prices, even punishing sellers who deviated from the established rules. This highlights the need for careful consideration of the potential risks and the development of effective governance mechanisms to ensure responsible AI development. Operationalizing these practices for governing agentic AI systems can be challenging, especially when balancing safety, usability, privacy, and cost [6].
@@ -915,7 +942,8 @@ GPTs can be used to help craft scientific research proposals.
             * **Qualifications of the proposer:** The research team possesses the necessary expertise and experience to conduct this research successfully.
 
 
-        ### Intellectual Merit
+        **Intellectual Merit**
+
         This research will make significant intellectual contributions to the field of AI and computer science:
 
         * **Novel Framework:** This research will develop a novel framework for analyzing the relationship between agentic AI, open-source FMs, and GPTs with open data and open science mandates. This framework will provide a comprehensive understanding of the potential benefits, challenges, and risks associated with these technologies.
@@ -923,12 +951,14 @@ GPTs can be used to help craft scientific research proposals.
         * **Theoretical Contributions:** This research will contribute to the theoretical understanding of agentic AI, open-source FMs, and GPTs by exploring their capabilities, limitations, and potential implications in the context of open science. This will include developing new models and frameworks for understanding the behavior and impact of these technologies.
         * **Interdisciplinary Approach:** This research will adopt an interdisciplinary approach, drawing on insights from computer science, law, ethics, and social science to provide a holistic understanding of the complex issues surrounding agentic AI and open science.
 
-        ## Potential Overlaps and Conflicts
+        **Potential Overlaps and Conflicts**
+
         Investigating the potential overlaps and conflicts between agentic AI and open data/open science mandates is a crucial step in this research [9]. While both aim to advance knowledge and benefit society, there might be tensions between the autonomous nature of agentic AI and the principles of transparency and accountability in open science. For example, the "black box" nature of some AI models might make it difficult to understand how they arrive at their conclusions, which could conflict with the open science goal of making research processes transparent and reproducible.
 
         Furthermore, the use of agentic AI in research could raise concerns about data privacy and security, especially when dealing with sensitive information in open data environments. Addressing these potential overlaps and conflicts will be essential for developing responsible AI governance frameworks that align with open science principles.
 
-        ## Research Questions
+        **Research Questions**
+
         This research will address the following key questions:
 
         * How do recent mandates for open data and open science influence the development and deployment of agentic AI, open-source FMs, and GPTs?
@@ -937,7 +967,8 @@ GPTs can be used to help craft scientific research proposals.
         * What are the ethical implications of using agentic AI systems in research and development, particularly in the context of open data and open science?
         * How can we ensure that the development and deployment of agentic AI align with societal values and contribute to the public good?
 
-        ## Research Methodology
+        **Research Methodology**
+
         This research will employ a mixed-methods approach, combining qualitative and quantitative data collection and analysis techniques. The following methodologies will be used:
 
         * **Case Studies:** In-depth case studies will be conducted to examine the use of agentic AI, open-source FMs, and GPTs in various research domains. This will involve analyzing real-world examples of how these technologies are being used and their impact on research practices and outcomes. For example, case studies could focus on how researchers in different fields are using open-source FMs to develop new AI applications or how agentic AI is being used to automate data analysis and interpretation.
@@ -945,10 +976,12 @@ GPTs can be used to help craft scientific research proposals.
         * **Experimental Designs:** Experiments will be conducted to investigate the performance, capabilities, and limitations of agentic AI systems in specific research tasks. This will involve comparing the performance of different AI models and evaluating their effectiveness in achieving research goals. For example, experiments could compare the accuracy and efficiency of different agentic AI systems in tasks such as literature review, data analysis, or hypothesis generation.
         * **Literature Review:** A comprehensive review of existing literature on agentic AI, open-source FMs, GPTs, open data, and open science will be conducted. This will provide a theoretical foundation for the research and identify key concepts, debates, and gaps in the current literature. This review will include an analysis of relevant publications, policy documents, and ethical guidelines to inform the research design and interpretation of findings.
 
-        ## Conclusion
+        **Conclusion**
+
         This research proposal outlines a comprehensive investigation into the intersection of agentic AI, open-source FMs, and GPTs with recent mandates for open data and open science. By addressing key research questions and employing a robust methodology, this project will generate valuable insights into the broader impacts and intellectual merit of these emerging technologies. The findings will contribute to the development of responsible AI governance frameworks, promote open and collaborative research practices, and ultimately advance the progress of science for the benefit of society.
 
-        ## Synthesis
+        **Synthesis**
+
         This research proposal aims to investigate the complex relationship between agentic AI, open-source FMs, and GPTs with the growing movement towards open data and open science. By combining case studies, surveys, experimental designs, and a comprehensive literature review, this project will explore the potential benefits, challenges, and ethical implications of these technologies in the context of open and transparent research practices. The findings will contribute to a deeper understanding of how these technologies can be leveraged to advance scientific knowledge while ensuring responsible development and deployment that aligns with societal values. This research will have significant implications for the field of AI, shaping future research directions and informing policy decisions related to open science and AI governance.
 
 
@@ -958,11 +991,11 @@ GPTs can be used to help craft scientific research proposals.
 
 ChatGPT can be used as a personal assistant to help you with a variety of tasks. For instance, you can use it to draft emails, manage your calendar, or schedule meetings.
 
-#### Drafting emails
-
 You can ask ChatGPT to draft an email by giving it the main points to include. For instance:
 
-!!! example "Drafting an email"
+??? example "Drafting an email"
+
+    You can ask ChatGPT to draft an email by giving it the main points to include. For instance:
 
     === "Prompt"
 
@@ -1081,11 +1114,11 @@ With GPTs for research you can perform a more refined search like:
 
         Recent peer-reviewed studies from high-impact journals have reported alarming rates of polar ice melt, particularly in the Arctic and Antarctic regions. Here are some key findings from recent and highly cited articles:
 
-        ## Arctic Sea Ice Loss
+        **Arctic Sea Ice Loss**
 
         A 2020 study published in Nature Climate Change found that the Arctic could experience ice-free summers as early as 2035[1]. This rapid loss of sea ice is attributed to increased solar heating of the ocean surface, which accelerates ice melt and creates a feedback loop.
 
-        ## Antarctic Ice Sheet Melt
+        **Antarctic Ice Sheet Melt**
 
         A 2024 study in Nature revealed that the record-low Antarctic sea ice in 2023 led to unprecedented ocean heat loss to the atmosphere[3]. Key findings include:
 
@@ -1093,7 +1126,7 @@ With GPTs for research you can perform a more refined search like:
         - A doubling of mid-winter ocean heat loss
         - A shift in peak heat loss from late April to mid-June
 
-        ## Greenland Ice Sheet Melt
+        **Greenland Ice Sheet Melt**
 
         Research has shown accelerating ice loss in Greenland:
 
@@ -1101,11 +1134,11 @@ With GPTs for research you can perform a more refined search like:
         - Record melt was observed in 2019
         - Rain-driven melt reached Greenland Summit in August 2021(4)
 
-        ## Global Impact
+        **Global Impact**
 
         A 2020 study published in PNAS examined the future climate response to Antarctic Ice Sheet melt[5]. The research suggests that meltwater and ice discharge from a retreating Antarctic Ice Sheet could have significant impacts on global climate over the next 250 years, affecting warming rates and ice sheet stability.
 
-        ## Implications
+        **Implications**
 
         The rapid melting of polar ice caps has far-reaching consequences:
 
@@ -1135,7 +1168,7 @@ With GPTs for research you can perform a more refined search like:
 
         ---
 
-        ## 1. Shepherd et al. (2018)  
+        **1. Shepherd et al. (2018)**  
         **Citation**: Shepherd, A., Ivins, E. R., Rignot, E., Smith, B., van den Broeke, M. R., & The IMBIE Team. (2018). *Mass balance of the Antarctic Ice Sheet from 1992 to 2017*. **Nature**, 558(7709), 219–222.  
         **Link**: [https://doi.org/10.1038/s41586-018-0179-y](https://doi.org/10.1038/s41586-018-0179-y)
 
@@ -1148,7 +1181,7 @@ With GPTs for research you can perform a more refined search like:
 
         ---
 
-        ## 2. Shepherd et al. (2020)  
+        **2. Shepherd et al. (2020)**  
         **Citation**: Shepherd, A., Ivins, E. R., Rignot, E., Smith, B., van den Broeke, M. R., & The IMBIE Team. (2020). *Mass balance of the Greenland Ice Sheet from 1992 to 2018*. **Nature**, 579(7798), 233–239.  
         **Link**: [https://doi.org/10.1038/s41586-020-00166-7](https://doi.org/10.1038/s41586-020-00166-7)
 
@@ -1161,7 +1194,7 @@ With GPTs for research you can perform a more refined search like:
 
         ---
 
-        ## 3. Rignot et al. (2019)  
+        **3. Rignot et al. (2019)**  
         **Citation**: Rignot, E., Mouginot, J., Scheuchl, B., van den Broeke, M., van Wessem, J. M., & Morlighem, M. (2019). *Four decades of Antarctic Ice Sheet mass balance from 1979 to 2017*. **Proceedings of the National Academy of Sciences (PNAS)**, 116(4), 1095–1103.  
         **Link**: [https://doi.org/10.1073/pnas.1812883116](https://doi.org/10.1073/pnas.1812883116)
 
@@ -1174,7 +1207,7 @@ With GPTs for research you can perform a more refined search like:
 
         ---
 
-        ## 4. Slater et al. (2021)  
+        **4. Slater et al. (2021)**  
         **Citation**: Slater, T., Shepherd, A., Ivins, E. R., et al. (2021). *Review article: Earth's ice imbalance*. **The Cryosphere**, 15(5), 233–245.  
         **Link**: [https://doi.org/10.5194/tc-15-233-2021](https://doi.org/10.5194/tc-15-233-2021)
 
@@ -1186,7 +1219,8 @@ With GPTs for research you can perform a more refined search like:
 
         ---
 
-        ## 5. IPCC Assessment Reports (2019–2022)  
+        **5. IPCC Assessment Reports (2019–2022)**
+
         While not a single study, the Intergovernmental Panel on Climate Change (IPCC) releases comprehensive assessment reports synthesizing peer-reviewed literature:
 
         - **Key documents**:  
@@ -1200,7 +1234,7 @@ With GPTs for research you can perform a more refined search like:
 
         ---
 
-        ## How to Access and Track Citations
+        **How to Access and Track Citations**
 
         1. **Publisher Websites**:  
         - Nature, Science, PNAS, and The Cryosphere typically host original research articles and supplementary materials.
@@ -1218,7 +1252,8 @@ With GPTs for research you can perform a more refined search like:
 
         ---
 
-        ### In Summary
+        **In Summary**
+
         - **Antarctica** has lost ice at an increasing rate, rising from tens of gigatonnes per year in the 1990s to a few hundred gigatonnes per year in recent years.  
         - **Greenland** has similarly seen a jump in melt rates, reaching over 200 Gt/yr on average in the past few decades.  
         - These losses have contributed several millimeters each to global sea-level rise, with continued acceleration expected under current and future warming.  
@@ -1241,7 +1276,7 @@ With GPTs for research you can perform a more refined search like:
 
 Imagine you're evaluating the impact of a recent educational policy change across several countries for a comparative education study. Instead of manually hunting for data for each country, you could instruct a GPT to research it for you.
 
-!!! example "Data aggregation"
+??? example "Data aggregation"
 
     === "Prompt"
 
@@ -1336,7 +1371,7 @@ Imagine you're evaluating the impact of a recent educational policy change acros
 
         ---
 
-        ### About Current Data Availability
+        **About Current Data Availability**
 
         - **OECD Data Sources**  
         The OECD primarily gathers adult literacy data through the Programme for the International Assessment of Adult Competencies (PIAAC). However, full, post-2023 policy modification results may not be published immediately, as the data collection and analysis cycles can lag by a few years.
@@ -1358,7 +1393,7 @@ Imagine you're evaluating the impact of a recent educational policy change acros
 
 In a world abundant with misinformation, verifying claims is crucial. For example, if you encounter a claim that a particular university has a certain acceptance rate, you can verify it by asking:
 
-!!! example "Information verification"
+??? example "Information verification"
 
     === "Prompt"
 
@@ -1392,46 +1427,52 @@ In a world abundant with misinformation, verifying claims is crucial. For exampl
 
         ---
 
-        ## 1. University of Arizona (UArizona)
+        **1. University of Arizona (UArizona)**
 
-        ### Reported Acceptance Rate
+        **Reported Acceptance Rate**
+
         - **Typical acceptance range**: 80–85%  
         Over the past few admission cycles (2021–2023), the University of Arizona’s overall acceptance rate has often hovered between 80% and 85%. Some external sources (e.g., U.S. News, College Board) list it around 85%.
 
-        ### Reasons for This Acceptance Rate
+        **Reasons for This Acceptance Rate**
+
         1. **Land-Grant Mission**: As a land-grant university, UArizona serves the state population broadly, influencing a relatively inclusive admissions policy.  
         2. **Large Enrollment Goals**: UArizona aims to maintain a robust undergraduate population and has the capacity (campus size and resources) to admit a high volume of students.  
         3. **Variety of Programs**: With hundreds of majors and pathways, UArizona can accommodate diverse academic interests and varying levels of academic preparedness, thereby contributing to a higher overall acceptance rate.
 
         ---
 
-        ## 2. Arizona State University (ASU)
+        **2. Arizona State University (ASU)**
 
-        ### Reported Acceptance Rate
+        **Reported Acceptance Rate**
+
         - **Typical acceptance range**: 85–90%  
         In recent data, Arizona State University’s acceptance rate often rests near the upper-80% range. Some reports list it closer to 88–89%, depending on the specific year and source.
 
-        ### Reasons for This Acceptance Rate
+        **Reasons for This Acceptance Rate**
+
         1. **Charter & Inclusivity**: ASU’s charter emphasizes inclusivity rather than exclusivity, seeking to measure itself by “who it includes, not who it excludes.” This philosophy underpins a relatively high acceptance rate.  
         2. **Multiple Campuses and Online Programs**: ASU has multiple campuses in the Phoenix metropolitan area and extensive online programs, allowing them to offer admission to a large, diverse pool of applicants.  
         3. **Application Volume**: ASU attracts one of the largest applicant pools in the country; while many are admitted, not all ultimately enroll, which helps manage capacity.
 
         ---
 
-        ## 3. Northern Arizona University (NAU)
+        **3. Northern Arizona University (NAU)**
 
-        ### Reported Acceptance Rate
+        **Reported Acceptance Rate**
+
         - **Typical acceptance range**: 75–85%  
         NAU’s acceptance rate is also high; reported figures often fall in the high-70s to low-80s percentile. A commonly cited figure is around 82%.
 
-        ### Reasons for This Acceptance Rate
+        **Reasons for This Acceptance Rate**
+
         1. **Regional Focus & Mission**: NAU is regionally focused on serving northern Arizona’s educational needs but also attracts out-of-state students looking for a traditional campus environment in Flagstaff.  
         2. **Enrollment Strategies**: Like other state universities, NAU has capacity-based enrollment goals and offers admissions to a significant proportion of its applicants.  
         3. **Broad Program Offerings**: NAU’s range of undergraduate degrees, especially in fields like forestry, education, health sciences, and hospitality, supports a wide net for admissions.
 
         ---
 
-        ## Important Considerations
+        **Important Considerations**
 
         1. **Year-to-Year Variability**: Acceptance rates can fluctuate. If a university sees a surge in applications but enrollments remain stable, the acceptance rate might temporarily dip, or vice versa.  
         2. **Program-Specific Differences**: Highly competitive programs within these universities (e.g., certain honors colleges, nursing, engineering, business) might have more selective admission than the university-wide average.  
@@ -1440,7 +1481,7 @@ In a world abundant with misinformation, verifying claims is crucial. For exampl
 
         ---
 
-        ### How to Validate the Acceptance Rates
+        **How to Validate the Acceptance Rates**
 
         - **Check Official University Fact Books**: Most universities publish an annual fact book or institutional data dashboard with up-to-date admissions statistics.  
         - **Consult IPEDS or Common Data Set**: The Integrated Postsecondary Education Data System (IPEDS) and each school’s Common Data Set provide standardized admissions metrics.  
@@ -1448,7 +1489,7 @@ In a world abundant with misinformation, verifying claims is crucial. For exampl
 
         ---
 
-        ## Summary
+        **Summary**
 
         Each of Arizona’s three public universities generally has a high acceptance rate—ranging roughly from the mid-70s to around 90%. These rates are reflective of large state institutions with broad missions to serve diverse populations and maintain substantial undergraduate enrollment. To get the most accurate and current figures, always look at official university data or well-established third-party sources.
 

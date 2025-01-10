@@ -75,43 +75,44 @@ Here's how you can use AI to become a more effective self-tutor:
    
     !!! example "Use analogies and metaphors" 
         
-        These can make abstract ideas more relatable. 
-       
-        For example: 
+        === "Prompt"
+
+            These can make abstract ideas more relatable. 
         
-        ```
-        Give me an analogy to understand the concept of photosynthesis.
-        ```
+            For example: 
+            
+            ```
+            Give me an analogy to understand the concept of photosynthesis.
+            ```
         
     !!! example "Explore different perspectives" 
     
-        Ask the AI to explain a concept from various angles. 
+        === "Prompt"
 
-        For example, 
-            
-        ```
-        Explain the theory of evolution in plants from 
-        a biological, historical, and philosophical perspective.
-        ```
+            Ask the AI to explain a concept from various angles. 
+
+            For example, 
+                
+            ```
+            Explain the theory of evolution in plants from 
+            a biological, historical, and philosophical perspective.
+            ```
 
 ??? Question "Reinforcement Learning"
 
-    **ChatGPT Prompt Writing Use Cases:** 
-
     !!! example  "Generate practice questions" 
     
-        Specify the topic and type of question. 
-        
-        For example: 
-        
-        ```
-        Create 5 multiple-choice questions about the causes 
-        of World War I.``` 
-        
-        or 
-        
-        ```Give me a series of questions to prepare for 
-        my final exam in the class of Calculus III```
+        === "Prompt"
+
+            Specify the topic and type of question. 
+            
+            For example: 
+            
+            ```
+            Create 5 multiple-choice questions about the causes 
+            of World War I.
+            ``` 
+
     
     !!! example   "Get feedback on your answers" 
     
@@ -258,21 +259,91 @@ Here's how you can use AI to become a more effective self-tutor:
 
 ## Using ChatGPT/Gemini as a Study Buddy
 
-| Type | Prompt example |
-| :-- | :-- |
-| **Exam preparation** | |
-| Generate questions | `Generate practice questions on this: {paste material or give topic}` |
-| Multiple-choice questions | `Generate multiple choice questions on this: {paste material or give topic}` |
-| Create flashcards | `Create flashcards on this topic for me: {paste material or give topic}` | 
-| Improve text/explanation | `How can the following text/explanation about {topic} be improved?: {paste text}` | 
-| Mnemonics | `Help me remember the 5 most common facts/properties about {topic}` |
-| Historical or factual events | `Help me memorize US History` |
-| **Formulas and equations assistance** | | 
-| Step-by-step instructions | `Find the derivative of f(x) = 3x^3 + 2x^2 + 1` | 
-| Concepts clarification | `Clarify the concept for the equation: Find the derivative of f(x) = 3x^3 + 2x^2 + 1` | 
-| **Language learning** | |
-| Vocabulary building  | `What does 'aimer' mean in French and what is the antonym?` |
-| Conversation practice | `Engage me in a conversation in French (I'm a beginner)` |
+!!! Question "Exam Preparation"
+    
+    ??? Success "Generate questions" 
+
+        === "Prompt"
+
+        ```
+        Generate practice questions on this: {paste material or give topic}
+        ``` 
+    
+    ??? Success "Multiple-choice questions" 
+    
+        === "Prompt"
+        
+        ```
+        Generate multiple choice questions on this: {paste material or give topic
+        ``` 
+    
+    ??? Success "Create flashcards" 
+    
+        === "Prompt"
+            
+        ```
+        Create flashcards on this topic for me: {paste material or give topic}
+        ```
+    
+    ??? Success "Improve text/explanation"
+    
+        === "Prompt"
+            
+        ```
+        How can the following text/explanation about {topic} be improved?: {paste text}
+        ``` 
+    
+    ??? Success "Mnemonics"
+    
+        === "Prompt"
+         
+        ```
+        Help me remember the 5 most common facts/properties about {topic}
+        ``` 
+
+    ??? Success "Historical or factual events" 
+    
+        === "Prompt"
+        
+        ```
+        Help me memorize US History
+        ``` 
+
+!!! Question "Formulas and equations assistance"
+
+    ??? Success "Step-by-step instructions"
+    
+        === "Prompt"
+        
+        ```
+        Find the derivative of f(x) = 3x^3 + 2x^2 + 1
+        ``` 
+    
+    ??? Success "Concepts clarification"
+     
+        === "Prompt"
+           
+        ```
+        Clarify the concept for the equation: Find the derivative of f(x) = 3x^3 + 2x^2 + 1
+        ```
+    
+!!! Question "Language learning"
+    
+    ??? Success "Vocabulary building"
+    
+        === "Prompt"
+            
+        ```
+        What does 'aimer' mean in French and what is the antonym?
+        ```
+    
+    ??? Success "Conversation practice"
+    
+        === "Prompt"
+        
+        ```
+        Engage me in a conversation in French (I'm a beginner)
+        ```
 
 ***
 
