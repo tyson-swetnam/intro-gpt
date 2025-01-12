@@ -47,6 +47,10 @@ An examination of the generative AI landscape, as of today.
 
 Includes an overview of Large Language Models within the greater AI ecosystem, ethics of AI, and future directions. 
 
+## [:material-run-fast: Ethics of AI](ethics.md)
+
+An overview of the history of AI, ethical concerns, and international declarations and principles on AI.
+
 ## [:material-run-fast: Prompt Engineering](prompts.md)
 
 Next, we will cover the basics of Prompt Engineering for daily productivity, as well as in academic teaching and research

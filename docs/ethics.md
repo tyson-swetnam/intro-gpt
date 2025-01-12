@@ -16,13 +16,13 @@
 
 In 1956 a small group of scientists gathered at [Dartmouth](https://home.dartmouth.edu/about/artificial-intelligence-ai-coined-dartmouth){target=_blank} for a [Summer Research Project on Artificial Intelligence](https://spectrum.ieee.org/dartmouth-ai-workshop){target=_blank}. A new field of science had begun. 
 
-For the last 70 years, Artificial Intelligence has lived mostly in the minds of science fiction writers and a small group of industry researchers and academics, who have worked to create the digital infrastructure needed for [Artificial General Intelligence (AGI)(:simple-wikipedia:)](https://en.wikipedia.org/wiki/Artificial_general_intelligence){target=_blank}. 
+Over the next 70 years, Artificial Intelligence existed mostly in the minds of science fiction writers and a small group of industry researchers and academics who worked toward creating the digital infrastructure needed for [Artificial General Intelligence (AGI)(:simple-wikipedia:)](https://en.wikipedia.org/wiki/Artificial_general_intelligence){target=_blank}. 
 
-??? Quote ":robot: I, Robot"
+??? Quote "I, Robot :robot:"
 
     [Author Isaac Asimov](https://en.wikipedia.org/wiki/Isaac_Asimov){target=_blank} wrote a series of popular science fiction novels in the 1950's through the 1980's. His work continues to be adapted into [television series](https://www.rottentomatoes.com/tv/foundation){target=_blank} and [movies](https://www.rottentomatoes.com/m/i_robot){target=_blank}. In his novels, Asimov developed "Three Laws of Robotics" which described how artificial intelligence interacted with humanity in his fictional universe. 
 
-    !!! Quote "Three Laws of Robotics"
+    !!! Quote "The Three Laws"
 
         **1. A robot may not injure a human being or, through inaction, allow a human being to come to harm.**
         
@@ -36,13 +36,7 @@ For the last 70 years, Artificial Intelligence has lived mostly in the minds of 
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/qJwHbEugKqg?si=5vHRhTGFNrwBvLlB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-As our conception of intelligence shifts [(Mitchell 2024)](https://doi.org/10.1126/science.adq9356){target=_blank} in reaction to ChatGPT and its competitors, new standards of Turing Tests have been proposed. In "A Unified Framework of Five Principles for AI in Society" [(Floridi & Cowls 2019)](https://doi.org/10.1162%2F99608f92.8cd550d1){target=_blank} core principles for ethical AI are introduced (Table 1).
-
-#### **Table 1: Floridi & Cowls (2019) Five principles for AI in Society**
-
-| Beneficiance | Non-Maleficence | Autonomy | Justice | Explicability |
-|--------------|-----------------|----------|---------|---------------|
-| Promoting Well-Being, Preserving Dignity, and Sustaining the Planet | Privacy, Security and ‘Capability Caution’ | The Power to Decide (to Decide) | Promoting Prosperity, Preserving Solidarity, Avoiding Unfairness | Enabling the Other Principles through Intelligibility and Accountability | 
+As our conception of intelligence shifts [(Mitchell 2024)](https://doi.org/10.1126/science.adq9356){target=_blank}, mostly in reaction to the release of ChatGPT and its myriad of competitors, new standards of the "Turing Test" have been proposed. 
 
 ??? Quote "The Imitation Game :brain:"
 
@@ -52,38 +46,46 @@ As our conception of intelligence shifts [(Mitchell 2024)](https://doi.org/10.11
 
     !!! Warning "The Turing Trap"
 
-        The [Turing Trap is a term coined by Stanford University professor Erik Brynjolfsson](https://www.brookings.edu/events/the-turing-trap-a-conversation-with-erik-brynjolfsson-on-the-promise-and-peril-of-human-like-ai/){target=_blank} to describe the idea that focusing too much on developing human-like artificial intelligence (HLAI) can be detrimental: 
+        The **Turing Trap** is a term coined by Stanford University professor [Erik Brynjolfsson](https://www.brookings.edu/events/the-turing-trap-a-conversation-with-erik-brynjolfsson-on-the-promise-and-peril-of-human-like-ai/){target=_blank} to describe the idea that focusing too much on developing human-like artificial intelligence (HLAI) can be detrimental. 
+        
+        Brynjolfsson argues that the real potential of AI lies in its ability to augment human abilities, rather than replacing them. He suggests that we should work on challenges that are easy for machines and hard for humans, rather than the other way around. 
         
         **Automation can replace humans**
 
         HLAI can replace humans in the workplace, which can lead to: 
         
-        **Lower wages** 
+        * **Lower wages** 
         
-        As machines become better substitutes for human labor, wages can be driven down.
+            As machines become better substitutes for human labor, wages can be driven down.
 
-        **Loss of economic and political power** 
+        * **Loss of economic and political power** 
         
-        Workers can lose economic and political bargaining power, and become increasingly dependent on those who control the technology.
+            Workers can lose economic and political bargaining power, and become increasingly dependent on those who control the technology.
 
-        **Decision-making processes incentivize automation**
+        * **Decision-making processes incentivize automation**
         
-        Companies may choose to automate tasks to do the same thing faster and cheaper.
+            Companies may choose to automate tasks to do the same thing faster and cheaper.
 
-        **Misaligned incentives**
+        * **Misaligned incentives**
 
-        The risks of the Turing Trap are increased by the misaligned incentives of technologists, businesspeople, and policy-makers. 
-        The Turing Trap: Why Pursuing Human-Like AI is Misguided ...
-        Brynjolfsson argues that the real potential of AI lies in its ability to augment human abilities, rather than replacing them. He suggests that we should work on challenges that are easy for machines and hard for humans, rather than the other way around.
+            The risks of the Turing Trap are increased by the misaligned incentives of technologists, businesspeople, and policy-makers. 
+        
 
         ??? Danger ":point_up: this text was created by an :simple-googlegemini: AI!"
 
-            Since 2024, Google is using ["AI Overview"](https://www.google.com/search?q=what+is+the+turing+trap&oq=what+is+the+turing+trap&gs_lcrp){target=_blank} in its popular search engine for subscribing users. 
+            Google began using ["AI Overview"](https://www.google.com/search?q=what+is+the+turing+trap&oq=what+is+the+turing+trap&gs_lcrp){target=_blank} in its popular search engine for subscribing users in 2024. 
 
+In "A Unified Framework of Five Principles for AI in Society" [(Floridi & Cowls 2019)](https://doi.org/10.1162%2F99608f92.8cd550d1){target=_blank} core principles for ethical AI are introduced (Table 1).
 
-The first modern milestone around the [Ethics of Artificial Intelligence (:simple-wikipedia:)](https://en.wikipedia.org/wiki/Ethics_of_artificial_intelligence){target=_blank} occurred in Pacific Grove, California in 2017 (Table 2). The Asilomar AI Principles were signed by AI researchers, ethicists, and thought leaders. By 2021, UNESCO had created their own recommendations on AI, focused on human rights and sustainable development.
+#### **Table 1: Floridi & Cowls (2019) Five principles for AI in Society**
 
-#### **Table 2: Most well-known AI agreements**
+| Beneficiance | Non-Maleficence | Autonomy | Justice | Explicability |
+|--------------|-----------------|----------|---------|---------------|
+| Promoting Well-Being, Preserving Dignity, and Sustaining the Planet | Privacy, Security and ‘Capability Caution’ | The Power to Decide (to Decide) | Promoting Prosperity, Preserving Solidarity, Avoiding Unfairness | Enabling the Other Principles through Intelligibility and Accountability | 
+
+A milestone :octicons-milestone-24: in the [Ethics of Artificial Intelligence (:simple-wikipedia:)](https://en.wikipedia.org/wiki/Ethics_of_artificial_intelligence){target=_blank} occurred in January 2017 in Pacific Grove, California at the historic Asilomar Hotel and Conference Grounds [(Table 2)](#table-2-international-ai-agreements). There the Asilomar AI Principles were signed by leading AI researchers, ethicists, and thought leaders. By 2021, UNESCO had created their own recommendations on AI, focused on human rights and sustainable development.
+
+#### **Table 2: International AI agreements**
 
 | Agreement | Date | Signatories | Description | Source |
 |-----------|------|-------------|-------------|--------|
@@ -93,9 +95,11 @@ The first modern milestone around the [Ethics of Artificial Intelligence (:simpl
 | **G20 AI Principles** | June 9, 2019 | G20 member countries | A commitment to human-centered AI, building upon the OECD AI Principles, emphasizing inclusivity, transparency, and accountability. | [G20 Japan 2019](https://www.g20-insights.org/policy_briefs/g20-japan-ai-principles/) |
 | **UNESCO Recommendation on the Ethics of Artificial Intelligence** | November 2021 | UNESCO member states | A global framework to ensure that digital transformations promote human rights and contribute to the achievement of the Sustainable Development Goals. | [UNESCO](https://en.unesco.org/artificial-intelligence/ethics) |
 
-In response to the rapid rise of generative AI, new agreements on the application of AI for military use, safety, and on its adoption in business and industry were signed (Table 3).
+In response to the rapid rise of generative AI, specifically GPTs, new agreements on the application of AI for military use, safety, and on its adoption in business and industry were recently signed (Table 3).
 
-#### **Table 3: Most recently signed agreements**
+<script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/3940_RC01/embed_loader.js"></script> <script type="text/javascript"> trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"GPT","geo":"","time":"2022-01-01 2025-01-12"}],"category":0,"property":""}, {"exploreQuery":"date=2022-01-01%202025-01-12&q=GPT&hl=en","guestPath":"https://trends.google.com:443/trends/embed/"}); </script>
+
+#### **Table 3: Declarations on AI**
 
 | Agreement | Date | Signatories | Description | Source |
 |-----------|------|-------------|-------------|--------|
@@ -135,24 +139,27 @@ Figure credit: :fontawesome-brands-creative-commons-by: [ChatGPT and Artificial 
 
 ## Recent Controversy
 
- The consequence of GPTs explosion into the public space has resulted in many cases of mis-use and illegal applications. 
+Current AI models are overwhelmingly based on European and North American historical literature and language. Over half of the [content on the internet (:simple-wikipedia:)](https://en.wikipedia.org/wiki/Languages_used_on_the_Internet) is written in English. This creates a [Eurocentric bias](https://www.historica.org/blog/the-impact-of-eurocentric-bias-in-ai-driven-historical-research) in AI training data, resulting in an erasure of global culture, experience, and language. Such [asymmetries need to be addressed](https://www.orfonline.org/expert-speak/global-perspectives-on-ai-bias-addressing-cultural-asymmetries-and-ethical-implications), but there is at present a lack economic incentives for large tech companies and organizations (see [The Imitation Game :brain:](#history) above). 
 
-There are [deep ethical concerns about the use of AI](https://www.sciencefriday.com/segments/ai-open-letter-chatgpt-ethics/){target=_blank} like GPT and LLMs, particularly concerning their training data. [A Class Action lawsuit: GitHub CoPilot was trained on private repositories](https://githubcopilotlitigation.com/){target=_blank}
+Negative consequences of GPTs explosion into the public space are its mis-use as well as its adoption for illegal activity. 
+
+* [A lawyer submits a legal brief written by ChatGPT and is caught](https://www.nytimes.com/2023/05/27/nyregion/avianca-airline-lawsuit-chatgpt.html){target=_blank}
+
+* [Prompt Injection Attacks](https://www.wired.com/story/chatgpt-prompt-injection-attack-security/){target=_blank}
+
+There are [deep ethical concerns about the use of AI](https://www.sciencefriday.com/segments/ai-open-letter-chatgpt-ethics/){target=_blank} like GPT and LLMs, particularly concerning their training data. 
+
+* [A Class Action lawsuit: GitHub CoPilot was trained on private repositories](https://githubcopilotlitigation.com/){target=_blank}
+
+AI companies also effectively steal designs, visual art, and music styles to train their private models. 
+
+* [MidJourney and Dall-E using trademarked imagery and art](https://www.artnews.com/art-in-america/features/midjourney-ai-art-image-generators-lawsuit-1234665579/){target=_blank}
 
 ChatGPT has effectively gamified higher education and is being used to spread disinformation and hate speech. 
 
-[College students using ChatGPT](https://ethicspolicy.unc.edu/news/2023/04/17/the-ethics-of-college-students-using-chatgpt/){target=_blank}
+* [College students using ChatGPT](https://ethicspolicy.unc.edu/news/2023/04/17/the-ethics-of-college-students-using-chatgpt/){target=_blank}
 
-[Combating Academic Dishonesty (6-part series)](https://academictech.uchicago.edu/2023/01/23/combating-academic-dishonesty-part-6-chatgpt-ai-and-academic-integrity/){target=_blank}
-
-AI companies also effectively steal designs, visual art, and music styles to train their private models: [MidJourney and Dall-E using trademarked imagery and art](https://www.artnews.com/art-in-america/features/midjourney-ai-art-image-generators-lawsuit-1234665579/){target=_blank}
-
-[European Union's AI Act](https://artificialintelligenceact.eu/){target=_blank}
-
-[A lawyer submits a legal brief written by ChatGPT and is caught](https://www.nytimes.com/2023/05/27/nyregion/avianca-airline-lawsuit-chatgpt.html){target=_blank}
-
-[Prompt Injection Attacks](https://www.wired.com/story/chatgpt-prompt-injection-attack-security/){target=_blank}
-
+* [Combating Academic Dishonesty (6-part series)](https://academictech.uchicago.edu/2023/01/23/combating-academic-dishonesty-part-6-chatgpt-ai-and-academic-integrity/){target=_blank}
 
 ## Recent Literature
 
@@ -180,7 +187,7 @@ Here are some recent papers that discuss the ethical concerns surrounding AI:
 
 ## Assessment
 
-??? Question "Explain the difference between "Ethics of AI" and "Ethical AI"
+??? Question "Can you explain the difference between "Ethics of AI" and "Ethical AI?"
 
     Hint: Refer to how [Siau and Wang (2020)](#ethics-of-artificial-intelligence) define each term
 
@@ -198,9 +205,15 @@ Here are some recent papers that discuss the ethical concerns surrounding AI:
 
         Asmiov emphasizes preventing harm to humans and how that concept informs current AI safety practices.
 
-??? Question "Name at least one major agreement on AI Ethics"
+??? Question "True or False: The Turing Trap suggests that efforts to make AI more human-like will empower workers' economic and political power."
 
-    Hint: See [Table 2](#table-2-most-well-known-ai-agreements)
+    ??? Failure "False"
+
+        The Turing Trap warns against replacing humans with AI, and that AI could be used to drive down wages and to a loss of economic and political power. 
+
+??? Question "Name at least one major declaration or agreement on AI Ethics"
+
+    Hint: See [Table 2](#table-2-international-ai-agreements)
 
     ??? Success "International Agreements"
              
@@ -219,13 +232,6 @@ Here are some recent papers that discuss the ethical concerns surrounding AI:
         * OECD AI Principles
 
         * Toronto Declaration
-
-
-??? Question "True or False: The Turing Trap suggests that efforts to make AI more human-like will empower workers' economic and political power."
-
-    ??? Failure "False"
-
-        The Turing Trap warns against replacing humans with AI, and that AI could be used to drive down wages and to a loss of economic and political power. 
 
 ??? Question "True or False: It is okay to use a GPT to write a research proposal on a topic you have no experience in?"
 
