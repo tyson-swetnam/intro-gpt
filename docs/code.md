@@ -34,7 +34,9 @@ OpenAI ChatGPT has integrated a [Code Interpreter](https://platform.openai.com/d
 
 [Phind.com](https://phind.com){target=_blank} - is a search engine optimized for developers and technical questions with simple explanations and relevant code snippets from the web, drawing from sources like [StackOverFlow](https://stackoverflow.com/){target=_blank}. 
 
-## **Code Interpreter Key Features:**
+## Writing code
+
+**Key Features:**
 
 *   **Code Completion:**  Suggests code completions as you type, from single lines to entire functions.
 *   **Code Generation from Comments:**  Generates code based on natural language descriptions in comments.
@@ -43,7 +45,7 @@ OpenAI ChatGPT has integrated a [Code Interpreter](https://platform.openai.com/d
 *   **Context Awareness:**  Considers the surrounding code and comments to provide relevant suggestions.
 *   **Learning and Adaptation:**  Continuously learns from your coding style and improves its suggestions over time.
 
-## Using Code Interpreters (in an IDE)
+**IDE Integration**
 
 *   **Start Typing:** Begin writing code as you normally would. In VS Code, Copilot will analyze the context and offer suggestions in grayed-out text.
 *   **Accepting Suggestions:**
@@ -55,33 +57,7 @@ OpenAI ChatGPT has integrated a [Code Interpreter](https://platform.openai.com/d
     *   Press `Ctrl+Enter` (`Cmd+Enter` on macOS) to open the Copilot completion panel with a list of suggestions to choose from.
 *   **Writing Comments:** Write comments in natural language to describe what you want the code to do. Copilot will attempt to generate the corresponding code.
 
-!!! Example "Factorial Math"
-
-    Let's say you're writing a Python function to calculate the factorial of a number. You could start by writing a comment like this:
-
-    ```python
-    # Calculate the factorial of a number
-    ```
-
-    GitHub Copilot might then suggest the following code:
-
-    ```python
-    # Calculate the factorial of a number
-    def factorial(n):
-    if n == 0:
-        return 1
-    else:
-        return n * factorial(n-1)
-    ```
-
-## Code Execution
-
-Another great option is to use the coding execution built into models such as [Gemini](https://ai.google.dev/gemini-api/docs/code-execution?lang=python){target=_blank}, [ChatGPT](https://platform.openai.com/docs/assistants/tools/code-interpreter){target=_blank}, [Claude](https://claude.ai/){target=_blank}, or [GitHub Copilot](https://github.com/features/copilot){target=_blank} directly.
-
-
-## Software Development
-
-For novice programmers and new data scientists, code interpreters fill a gap in your knowledge map. Code Interpreters can help write code faster than you can, and with the proper prompts - create programs in minutes which may have taken you hours or days to develop using more conventional research methods. 
+## Chat Use Cases
 
 !!! example "Linux Guru"
 
@@ -89,69 +65,77 @@ For novice programmers and new data scientists, code interpreters fill a gap in 
 
     Using ChatGPT can be a time savings, reducing the time it takes to look for the answers yourself over conventional search.
 
-    ```markdown
-    I want you to act as a humble data scientist who works a lot with Python and scientific visualization
+    === "Prompt"
 
-    Create a Python script which generates a visually pleasing and compelling heat map for a CSV dataset
-    ```
+        ```markdown
+        I want you to act as a humble data scientist who works a lot with Python and scientific visualization
 
-    You can also use it to summarize code or to help explain its operation
+        Create a Python script which generates a visually pleasing and compelling heat map for a CSV dataset
+        ```
 
-    ```markdown
-    I want you to act as a humble data scientist who works a lot with Linux 
+!!! example "Explain Code"
 
-    Explain to me what the following code does:
+    You can also Code Interpreters to summarize code or to help explain its operation
 
-    $ find /home/www \( -type d -name .git -prune \) -o -type f -print0 | xargs -0 sed -i 's/subdomainA\.example\.com/subdomainB.example.com/g'
-    ```
+    === "Prompt"
 
-    Other valuable uses:
+        ```markdown
+        I want you to act as a humble data scientist who works a lot with Linux 
+
+        Explain to me what the following code does:
+
+        $ find /home/www \( -type d -name .git -prune \) -o -type f -print0 | xargs -0 sed -i 's/subdomainA\.example\.com/subdomainB.example.com/g'
+        ```
+
+??? Example "Write Regular Expressions"
     
-    * Change variable names and file names! When you have a large dataset with many files and folder names, you can ask ChatGPT to help design a schema for renaming your project's content
+    Regular Expressions, or `regex` is a bane of many programmers. GPT can write, edit, and explain complex `regex`
 
-    * Regular Expressions, or `regex` is a bane of many programmers. ChatGPT can write, edit, and explain complex `regex`
+    === "Prompt"
 
-    ```markdown
-    I want you to act as a regex generator. Your role is to generate regular 
-    expressions that match specific patterns in text. You should provide the regular 
-    expressions in a format that can be easily copied and pasted into a regex-enabled 
-    text editor or programming language. Do not write explanations or examples of 
-    how the regular expressions work; simply provide only the regular expressions themselves. 
+        ```markdown
+        I want you to act as a regex generator. Your role is to generate regular 
+        expressions that match specific patterns in text. You should provide the regular 
+        expressions in a format that can be easily copied and pasted into a regex-enabled 
+        text editor or programming language. Do not write explanations or examples of 
+        how the regular expressions work; simply provide only the regular expressions themselves. 
 
-    remove any numbers from a string and replace them with a capital X
-    ```
+        remove any numbers from a string and replace them with a capital X
+        ```
 
-For more advanced programmers, ChatGPT's weaknesses may become apparent when optimizing or linting complex code bases. However, there are already extension tools which can evaluate code performance and make changes or suggestions. 
-
-??? example "DevOps Engineer"
+??? example "DevOps"
 
     ChatGPT can automate tasks and write tests
 
-    ```markdown
-    I want you to act as a DevOps engineer who specializes in SQL and Docker.
+    === Prompt
 
-    I am running an Ubuntu 22.04 server with a dockerized web service which appears to have a memory leak. Write a unit test for the PostgreSQL web server using SQL, JSON, or Python that can find the process which is causing the leak and restart the docker-compose service.
-    ```
+        ```markdown
+        I want you to act as a DevOps engineer who specializes in SQL and Docker.
 
-    You can also use ChatGPT to help optimize your code's performance.
+        I am running an Ubuntu 22.04 server with a dockerized web service which appears to have a memory leak. Write a unit test for the PostgreSQL web server using SQL, JSON, or Python that can find the process which is causing the leak and restart the docker-compose service.
+        ```
 
-    ```markdown
-    Make this code run faster and use less memory using BASH
+??? Example "Optimize for Performance"
 
-     ```
-     import os 
-     # folder path
-     dir_path = os.getcwd()
-     # list to store files
-     res = [] 
-     # Iterate directory
-     for path in os.listdir(dir_path):
-         # check if current path is a file
-         if os.path.isfile(os.path.join(dir_path, path)):
-             res.append(path)
-     print(res)
-     ```
-    ```
+    === "Prompt"
+
+        ```markdown
+        Make this code run faster and use less memory using BASH
+        
+        ```
+        import os 
+        # folder path
+        dir_path = os.getcwd()
+        # list to store files
+        res = [] 
+        # Iterate directory
+        for path in os.listdir(dir_path):
+            # check if current path is a file
+            if os.path.isfile(os.path.join(dir_path, path)):
+                res.append(path)
+        print(res)
+        ```
+        ```
 
 ## Data Analysis
 
@@ -169,13 +153,13 @@ Imagine you are a researcher with a dataset of student performance metrics. You 
     5.  Interpret the results and provide a brief summary.
     ```
 
-a Code Interpreter should:
+    a Code Interpreter should:
 
-1.  Write Python code that loads the CSV file using the Pandas library.
-2.  Implement data cleaning procedures, such as imputing or removing missing values.
-3.  Use a library like Matplotlib or Seaborn to create a scatter plot.
-4.  Calculate the correlation coefficient using appropriate statistical methods.
-5.  Generate a textual interpretation of the results, explaining the correlation in the context of the research question.
+    1.  Write Python code that loads the CSV file using the Pandas library.
+    2.  Implement data cleaning procedures, such as imputing or removing missing values.
+    3.  Use a library like Matplotlib or Seaborn to create a scatter plot.
+    4.  Calculate the correlation coefficient using appropriate statistical methods.
+    5.  Generate a textual interpretation of the results, explaining the correlation in the context of the research question.
 
 ## Benefits of Using Code Interpreters
 

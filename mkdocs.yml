@@ -36,6 +36,7 @@ nav:
     - AI for Research: research.md
     - Agentic AI: agentic.md
     - RAG: rag.md
+    - Code Execution: execution.md
     - OpenAI API: openai.md
     - HuggingFace: huggingface.md
     - Gradio Apps: gradio.md
