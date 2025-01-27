@@ -7,7 +7,7 @@
 
 ### Date 
 
-Februrary 13 13:00 AM - 17:00 PM Arizona Time
+February 13 13:00 PM - 17:00 PM Arizona Time
 
 ### Location 
 
