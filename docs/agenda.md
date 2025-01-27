@@ -7,15 +7,15 @@
 
 ### Date 
 
-TBA 09:00 AM - 16:00 PM Pacific Daylight Time
+Februrary 13 13:00 AM - 17:00 PM Arizona Time
 
 ### Location 
 
-**[TBA](https://maps.app.goo.gl/inT43RrY73w84Tzz7){target=_blank}  Classroom # TBA**
+**[ENR2]([https://maps.app.goo.gl/inT43RrY73w84Tzz7](https://maps.app.goo.gl/REC4668PBTebodvZ7)){target=_blank}  Classroom # TBA**
 
 No food or drinks inside the classrooms, please.
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3374.760767611586!2d-110.94968017435951!3d32.23760742389371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86d671a883fe0cfb%3A0xe159a4ee267fc6f8!2sBIO5%20Institute!5e0!3m2!1sen!2sus!4v1734803710834!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4363.8946343465805!2d-110.95787922435979!3d32.228558473897685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86d67101744a05dd%3A0xd83a65c45dc91119!2sEnvironment%20and%20Natural%20Resources%202%20Building!5e1!3m2!1sen!2sus!4v1738001244625!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 #### Instructors(s): 
 
