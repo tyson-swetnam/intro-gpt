@@ -187,7 +187,7 @@ Here are some recent papers that discuss the ethical concerns surrounding AI:
 
 ## Assessment
 
-??? Question "Can you explain the difference between "Ethics of AI" and "Ethical AI?"
+??? Question "Can you explain the difference between "Ethics of AI" and "Ethical AI?""
 
     Hint: Refer to how [Siau and Wang (2020)](#ethics-of-artificial-intelligence) define each term
 
