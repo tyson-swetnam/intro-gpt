@@ -2,6 +2,14 @@
 
 This guide provides information on text mining resources
 
+## AI Taxonomy
+
+- **[NIST Artificial Intelligence Risk Management Framework](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf){target=_blank}**:  refers to an AI system as an engineered or machine-based system that can, for a given set of objectives, generate outputs such as predictions, recommendations, or decisions influencing real or virtual environments. AI systems are designed to operate with varying levels of autonomy.
+- 
+- **[NIST Trustworthy and Responsible AI :fontawesome-solid-file-pdf:](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.200-1.pdf){target=_blank}**:  aims to provide a flexible means of classifying how an AI system contributes to an outcome. The taxonomy sets forward 16 AI use “activities” which are independent of AI techniques and domains. Tasks are combinations of one or more AI use activities.
+
+- **[Generalist Repository Ecosystem Initiative (GREI) AI Taxonomy](https://zenodo.org/records/14201006){target=_blank}**: funded by the NIH, developed an AI taxonomy tailored to data repository roles to guide AI integration across repository management. It categorizes the roles into stages, including acquisition, validation, organization, enhancement, analysis, sharing, and user support, providing a structured framework for implementing AI in repository workflows.
+
 ## Text Data Sources
 
 - **[Constellate](https://constellate.org/){target=_blank}**: Constellate is the text analytics service from ITHAKA (JSTOR and Portico). It is a platform for teaching, learning, and performing text analysis using archival repositories of scholarly and primary source content. 
