@@ -32,7 +32,9 @@ Attempting to modify coursework to avoid assessment techniques where GPTs excel 
 
 "**Instead of engaging in a cheating arms race, why not embrace AI?**"
 
-Proponents of integrating AI into educational curricula [(:simple-newyorktimes:)](https://www.nytimes.com/2023/01/12/technology/chatgpt-schools-teachers.html){target=_blank} argue that by adapting and integrating GPTs into the curriculum, we also develop a modern workforce who are empowered by AI assistants.
+Proponents of integrating AI into educational curricula [(:simple-newyorktimes:)](https://www.nytimes.com/2023/01/12/technology/chatgpt-schools-teachers.html){target=_blank} argue that by adapting and integrating GPTs into the curriculum, we also develop a modern workforce who are empowered by AI assistants. 
+
+[Cain (2023)](https://link.springer.com/article/10.1007/s11528-023-00896-0){target=_blank} explores ways in which prompt engineering can be brought into the classroom and "transition [students] from passive recipients to active co-creators of their learning experiences."
 
 
 ??? Tip "Pro vs Cons of AI in Economics Classrooms"
