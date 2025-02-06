@@ -155,6 +155,10 @@ markdown_extensions:
 
 extra_css:
   - stylesheets/extra.css
+  - chatbot_widget.css
+
+extra_javascript:
+  - chatbot_widget.js
  
 plugins:
     - blog:
