@@ -13,10 +13,10 @@ document.addEventListener('DOMContentLoaded', function () {
         <div id="chat-header">
             <span>GPT-101 Chatbot</span>
             <div class="header-buttons">
-            <button id="expand-button" class="header-button">⛶</button>  <!-- Expand icon -->
-            <button id="popout-button" class="header-button">⧉</button>   <!-- Popout Icon-->
-            <button id="chat-close" class="header-button">×</button>
-  </div>
+                <button id="expand-button" class="header-button">⛶</button>  <!-- Expand icon -->
+                <button id="popout-button" class="header-button">⧉</button>   <!-- Popout icon -->
+                <button id="chat-close" class="header-button">×</button>
+            </div>
         </div>
         <div id="chat-body">
             <iframe 
@@ -30,18 +30,16 @@ document.addEventListener('DOMContentLoaded', function () {
     `;
     document.body.appendChild(chatContainer);
 
-    // Add event listener for iframe messages
+    // Event listener for iframe messages (if the iframe sends any)
     window.addEventListener('message', function(event) {
-        // Verify the origin of the message
         if (event.origin === 'https://chat-qa.cyverse.org/intro-gpt/') {
             if (event.data.type === 'link') {
-                // Open link in new tab
                 window.open(event.data.url, '_blank', 'noopener,noreferrer');
             }
         }
     });
 
-    // Show or hide the chatbot window
+    // Toggle the chat window when the chat icon is clicked
     chatIcon.addEventListener('click', () => {
         chatContainer.style.display = chatContainer.style.display === 'block' ? 'none' : 'block';
     });
@@ -51,45 +49,41 @@ document.addEventListener('DOMContentLoaded', function () {
         chatContainer.style.display = 'none';
     });
 
-    document.addEventListener('DOMContentLoaded', function() {
-        const chatContainer = document.getElementById('chat-container');
-        const expandButton = document.getElementById('expand-button');
-        const popoutButton = document.getElementById('popout-button');
+    // Expand the chat window
+    const expandButton = document.getElementById('expand-button');
+    expandButton.addEventListener('click', function() {
+        chatContainer.classList.toggle('expanded');
+    });
       
-        expandButton.addEventListener('click', function() {
-          chatContainer.classList.toggle('expanded');
-        });
-      
-        popoutButton.addEventListener('click', function() {
-          // Implement popout functionality here
-          const chatContent = document.getElementById('chat-container').innerHTML;
-          const newWindow = window.open('', '_blank', 'width=500,height=600');
-          newWindow.document.write(`
+    // Popout the chat window
+    const popoutButton = document.getElementById('popout-button');
+    popoutButton.addEventListener('click', function() {
+        // Option A: Open only the React app in a new tab:
+        //window.open('https://chat-qa.cyverse.org/intro-gpt/', '_blank', 'noopener,noreferrer');
+
+        // Option B: Pop out the entire widget:
+        const chatContent = chatContainer.outerHTML;
+        const newWindow = window.open('https://chat-qa.cyverse.org/intro-gpt/', '_blank', 'width=800,height=600');
+        newWindow.document.write(`
             <html>
+                <base href="https://chat-qa.cyverse.org/intro-gpt/">
             <head>
-            <title>CyVerse Chatbot Popout</title>
-            <style>
-              body { margin: 0; }
-              /* Include your chatbot_widget.css styles here, or link to the stylesheet */
-            </style>
+                <title>CyVerse Chatbot Popout</title>
             </head>
             <body>
-              <div id="chat-container">${chatContent}</div>
+                ${chatContent}
             </body>
             </html>
-          `);
-          newWindow.document.close();
-      
-          // Optionally, close the original chat window
-          // chatContainer.style.display = 'none';
-        });
-      });
+        `);
+        newWindow.document.close();
+        // Optionally, hide the original chat window:
+        // chatContainer.style.display = 'none';
+    });
 
-    // Add event listener to handle links inside the iframe
+    // Attempt to add event listeners to links inside the iframe (subject to cross-origin restrictions)
     const chatFrame = document.getElementById('chat-frame');
     chatFrame.onload = function() {
         try {
-            // Add click event listeners to all links in the iframe
             const iframeLinks = chatFrame.contentDocument.getElementsByTagName('a');
             Array.from(iframeLinks).forEach(link => {
                 link.setAttribute('target', '_blank');
