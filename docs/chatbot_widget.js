@@ -68,11 +68,31 @@ document.addEventListener('DOMContentLoaded', function () {
             <html>
                 <base href="https://chat-qa.cyverse.org/intro-gpt/">
             <head>
-                <title>CyVerse Chatbot Popout</title>
-            </head>
-            <body>
-                ${chatContent}
-            </body>
+            <title>CyVerse Chatbot Popout</title>
+            <link rel="stylesheet" type="text/css" href="chatbot_widget.css">
+            <style>
+                /* Override the chat container styles for full-window display */
+                #chat-container {
+                    position: relative !important;
+                    bottom: auto !important;
+                    right: auto !important;
+                    width: 100% !important;
+                    height: 100% !important;
+                    max-width: none !important;
+                    max-height: none !important;
+                    border-radius: 0 !important;
+                    box-shadow: none !important;
+                    display: block !important;
+                }
+                body { 
+                    margin: 0; 
+                    overflow: hidden;
+                }
+            </style>
+        </head>
+        <body>
+            ${chatContent}
+        </body>
             </html>
         `);
         newWindow.document.close();
