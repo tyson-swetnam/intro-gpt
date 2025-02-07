@@ -55,49 +55,55 @@ document.addEventListener('DOMContentLoaded', function () {
         chatContainer.classList.toggle('expanded');
     });
       
-    // Popout the chat window
+    // Popout the chat window using a Blob URL to avoid about:blank and ensure proper sizing on mobile
     const popoutButton = document.getElementById('popout-button');
     popoutButton.addEventListener('click', function() {
-        // Option A: Open only the React app in a new tab:
-        //window.open('https://chat-qa.cyverse.org/intro-gpt/', '_blank', 'noopener,noreferrer');
-
-        // Option B: Pop out the entire widget:
+        // Clone the entire chat container element as outerHTML
         const chatContent = chatContainer.outerHTML;
-        const newWindow = window.open('https://chat-qa.cyverse.org/intro-gpt/', '_blank', 'width=800,height=600');
-        newWindow.document.write(`
+        // Build the full HTML for the popout window, including viewport meta tag and inline CSS overrides
+        const html = `
             <html>
-                <base href="https://chat-qa.cyverse.org/intro-gpt/">
-            <head>
-            <title>CyVerse Chatbot Popout</title>
-            <link rel="stylesheet" type="text/css" href="chatbot_widget.css">
-            <style>
-                /* Override the chat container styles for full-window display */
-                #chat-container {
-                    position: relative !important;
-                    bottom: auto !important;
-                    right: auto !important;
-                    width: 100% !important;
-                    height: 100% !important;
-                    max-width: none !important;
-                    max-height: none !important;
-                    border-radius: 0 !important;
-                    box-shadow: none !important;
-                    display: block !important;
-                }
-                body { 
-                    margin: 0; 
-                    overflow: hidden;
-                }
-            </style>
-        </head>
-        <body>
-            ${chatContent}
-        </body>
+                <head>
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>CyVerse Chatbot Popout</title>
+                    <link rel="stylesheet" type="text/css" href="chatbot_widget.css">
+                    <style>
+                        /* Override the chat container styles for full-window display */
+                        #chat-container {
+                            position: relative !important;
+                            bottom: auto !important;
+                            right: auto !important;
+                            width: 100% !important;
+                            height: 100% !important;
+                            max-width: none !important;
+                            max-height: none !important;
+                            border-radius: 0 !important;
+                            box-shadow: none !important;
+                            display: block !important;
+                        }
+                        body { 
+                            margin: 0; 
+                            overflow: hidden;
+                        }
+                    </style>
+                </head>
+                <body>
+                    ${chatContent}
+                </body>
             </html>
-        `);
-        newWindow.document.close();
-        // Optionally, hide the original chat window:
-        // chatContainer.style.display = 'none';
+        `;
+        // Create a Blob from the HTML string
+        const blob = new Blob([html], { type: 'text/html' });
+        // Generate a Blob URL from the Blob
+        const url = URL.createObjectURL(blob);
+        // Set default popout dimensions
+        let popWidth = 800, popHeight = 600;
+        // If on mobile, set the dimensions to the full device viewport size
+        if (/Mobi|Android/i.test(navigator.userAgent)) {
+            popWidth = window.innerWidth;
+            popHeight = window.innerHeight;
+        }
+        window.open(url, '_blank', `width=${popWidth},height=${popHeight}`);
     });
 
     // Attempt to add event listeners to links inside the iframe (subject to cross-origin restrictions)
