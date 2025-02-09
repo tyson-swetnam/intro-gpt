@@ -4,14 +4,15 @@
 
 ![banner](assets/banner3_ai.png){width=1000}
 
+[Registration Link](https://events.trellis.arizona.edu/en/f44lNu67/chatgpt-for-academics-5a3U6R3C2c7/overview){target=_blank}
 
 ### Date 
 
-February 13 13:00 PM - 17:00 PM Arizona Time
+February 13 09:00 AM - 13:00 PM Arizona Time
 
 ### Location 
 
-**[ENR2]([https://maps.app.goo.gl/inT43RrY73w84Tzz7](https://maps.app.goo.gl/REC4668PBTebodvZ7)){target=_blank}  Classroom # TBA**
+**[ENR2](https://maps.app.goo.gl/REC4668PBTebodvZ7){target=_blank}  Classroom #N595**
 
 No food or drinks inside the classrooms, please.
 
