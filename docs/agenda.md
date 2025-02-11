@@ -51,7 +51,7 @@ This website follows the [FAIR](https://www.go-fair.org/fair-principles/){target
 | 11:30 | [Session 4b Tutoring](tutoring.md) | Tyson | |  
 | 11:50 | Break | | |
 | 12:00 | [Session 4a: Notebook LM](code.md) | Jeff | |
-| 12:30 | [Session 4b: Code Interpreters (optional)](code.md) | Tyson | | 
+| 12:30 | [Session 4b: Code Interpreters](code.md) | Tyson | | 
 | 13:00 | Conclude |  |  |
 
 
