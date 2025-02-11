@@ -35,6 +35,7 @@ nav:
   - Research:
     - AI for Research: research.md
     - Agentic AI: agentic.md
+    - NotebookLM: notebooklm.md
     - RAG: rag.md
     - Code Execution: execution.md
     - OpenAI API: openai.md
