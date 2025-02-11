@@ -6,6 +6,58 @@ GPTs excel at scientific research, but become specialized rapidly depending upon
 
 When deployed privately into secure data enclaves, GPTs can be used with sensitive and secure data (e.g., FERPA, HIPAA, or CUI) without the risk of data breaches or interception over internet traffic. 
 
+| Generative AI | Predictive AI |
+|---------------|---------------|
+| **Generative Adversarial Networks (GANs)** | **Linear Regression** |
+| **Variational Autoencoders (VAEs)** | **Logistic Regression** |
+| **Generative Pretrained Transformers (GPTs)** | **Decision Trees** |
+| **Diffusion Models** | **Random Forest** |
+| **Autoregressive Models** | **Support Vector Machines (SVMs)** |
+
+**Generative AI and Academic Research**
+
+Generative AI has revolutionized academic research by enabling the creation of synthetic data, accelerating drug discovery, and aiding in the development of new materials. 
+
+* **Synthetic Data Generation:** GANs can create realistic synthetic datasets, addressing privacy concerns and data scarcity.
+* **Drug Discovery:** Generative models can design novel drug molecules with desired properties.
+* **Material Science:** AI-powered generative design can optimize material properties for specific applications.
+
+**Predictive AI and Climate Modeling**
+
+Predictive AI plays a crucial role in climate modeling by analyzing historical data to forecast future climate patterns.
+
+* **Climate Change Prediction:** Machine learning models can predict temperature changes, sea-level rise, and extreme weather events.
+* **Climate Impact Assessment:** AI-powered tools can assess the impact of climate change on ecosystems and human societies.
+
+**Predictive AI and Protein Folding**
+
+Predictive AI has made significant strides in protein folding, a fundamental challenge in biology.
+
+* **Protein Structure Prediction:** Deep learning models like AlphaFold can accurately predict protein structures from amino acid sequences.
+* **Drug Design:** Understanding protein structures enables the design of targeted drugs.
+
+**Generative AI and Language Models**
+
+Generative AI, particularly GPTs, has significantly advanced Natural Language Processing (NLP). These models are trained on massive amounts of text data and can generate human-quality text, translate languages, write different kinds of creative content, and answer your questions in an informative way.
+
+**Generative AI and Retrieval Augmented Generation**
+
+Retrieval Augmented Generation (RAG) combines the strengths of generative AI and information retrieval. It allows models to access and incorporate relevant information from external sources, improving the quality and factual accuracy of generated text.
+
+**Predictive AI and Machine Learning**
+
+Predictive AI is a subset of machine learning that focuses on forecasting future trends and outcomes. It leverages statistical techniques and algorithms to analyze historical data and make predictions.
+
+**Predictive AI and Transformers**
+
+Transformers, a type of neural network architecture, have revolutionized predictive AI. They are particularly effective in tasks like time series forecasting, natural language processing, and computer vision.
+
+**Predictive AI, Stable Diffusion, and Generative AI**
+
+While Stable Diffusion is a powerful generative AI model, it is not directly related to predictive AI. Generative AI, on the other hand, can be used to generate synthetic data for training predictive models, enhancing their performance and robustness.
+
+## Workshop Lessons
+
 Specific to this workshop, we focus on code interpreters and code execution using GPTs, but we will also touch upon the creation and deployment of custom AI applications and how to use commercial and open source GPTs for each.
 
 In a future workshop we will cover the deployment of secure private GPTs and LLMs in data enclaves 

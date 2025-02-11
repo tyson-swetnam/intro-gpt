@@ -14,6 +14,10 @@ RAG databases allow you to host your own private data
 
 Open Source projects like [Weaviate](https://weaviate.io/developers/weaviate) or [Pinecone](https://docs.pinecone.io/guides/get-started/overview) allow you to self-host private data.
 
+Table: Popular RAG database software:
+
+
+
 ### Embeddings
 
 Text passages (or other data, like images) are transformed into numerical representations known as “embeddings.” These embeddings capture semantic meaning, so similar concepts end up being close together in vector space.
@@ -50,5 +54,41 @@ A vector database stores embeddings efficiently, often using specialized data st
 
 ### 
 
-## NotebookLM
+## Google NotebookLM
 
+[Google NotebookLM](https://notebooklm.google/){target=_blank} is a notebook style GPT designed to help you better understand and work with your own data and information. NotebookLM can summarize documents, answer questions, brainstorm ideas, all based on your uploaded files or shared Google Drive.
+
+**Use NotebookLM for:**
+
+  * **Knowledge Synthesis:**  Quickly grasp the core concepts of dense documents.
+  * **Information Extraction:**  Find specific details and answers within your notes.
+  * **Creative Exploration:**  Generate new ideas and connections from your sources.
+
+**1. General Productivity:**
+
+  * **Meeting Preparation:** Upload meeting agendas, pre-reads, and background documents. NotebookLM can summarize key discussion points, identify action items, and prepare you for productive meetings.
+  * **Document Management:**  Process lengthy reports, articles, or legal documents efficiently. Get instant summaries, extract key arguments, and quickly locate specific information without tedious reading.
+  * **Content Creation:**  Use NotebookLM to analyze research materials, synthesize information from multiple sources, and brainstorm outlines for articles, presentations, or reports.
+  * **Personal Knowledge Base:**  Upload notes, articles, and documents on topics you're learning about.  NotebookLM can help you connect ideas, identify knowledge gaps, and deepen your understanding over time.
+
+**2. Teaching in Classrooms:**
+
+  * **Curriculum Planning:**  Upload syllabi, learning objectives, and resource materials. NotebookLM can help teachers identify key themes, suggest connections between topics, and generate lesson plan ideas.
+  * **Assessment Design:**  Analyze past exams, rubrics, and student work samples. NotebookLM can help teachers identify areas for improvement in assessment design and generate new question types.
+  * **Providing Personalized Feedback:**  Teachers can upload student essays or assignments and use NotebookLM to identify common areas of strength and weakness, enabling more targeted and efficient feedback.
+  * **Creating Learning Resources:**  Quickly generate summaries of complex texts, create quizzes based on uploaded materials, and develop study guides for students.
+
+**3. Learning in Classrooms:**
+
+  * **Understanding Complex Materials:**  Students can upload lecture notes, textbook chapters, or research articles. NotebookLM can help them summarize key concepts, identify areas of confusion, and formulate questions for clarification.
+  * **Active Reading and Note-Taking:**  Engage more deeply with reading materials by using NotebookLM to ask questions, extract key arguments, and make connections between different sources.
+  * **Research and Project Work:**  Students can upload research papers, articles, and data sets. NotebookLM can assist in literature reviews, data analysis, and brainstorming project ideas.
+  * **Collaborative Learning:**  Students can share notebooks and work together to analyze materials, synthesize information, and prepare for group projects or discussions.
+
+**4. Research:**
+
+  * **Literature Reviews:**  Upload research papers, articles, and conference proceedings. NotebookLM can quickly identify key themes, summarize findings, and highlight gaps in the existing literature, significantly speeding up the literature review process.
+  * **Data Analysis:**  Analyze qualitative data like interview transcripts or open-ended survey responses by identifying patterns, themes, and key quotes.
+  * **Hypothesis Generation:**  Explore connections between different research sources and brainstorm new research questions or hypotheses based on synthesized knowledge.
+  * **Grant Proposal Writing:**  Organize background research, synthesize relevant literature, and identify key arguments to strengthen grant proposals.
+  * **Staying Up-to-Date:** Researchers can continuously upload new publications in their field and use NotebookLM to stay informed about the latest advancements and emerging trends.

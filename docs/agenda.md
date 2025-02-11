@@ -41,7 +41,7 @@ This website follows the [FAIR](https://www.go-fair.org/fair-principles/){target
 | :fontawesome-solid-hourglass-half: | Lessons | Instructor | Link |
 |------------------------------------|---------|------------|------|
 | 09:00 | Introductions & [Code of Conduct](#code-of-conduct) | Tyson | |
-| 09:10 | [Session 1: The Landscape](ai_landscape.md) | Enrique & Tyson | [presentation](https://docs.google.com/presentation/d/1PzPafN5Yznf8jdgpquPAaN0TmYC9WJwvPxM_I2LPwFo/edit?usp=sharing){target=_blank} |
+| 09:10 | [Session 1: The AI Landscape](ai_landscape.md) | Tyson | [presentation](https://docs.google.com/presentation/d/1PzPafN5Yznf8jdgpquPAaN0TmYC9WJwvPxM_I2LPwFo/edit?usp=sharing){target=_blank} |
 | 09:30| [Session 2: What is GPT](chatgpt.md)? | Enrique & Carlos | 
 | 10:00 | Break |  |
 | 10:10 | [Session 3: Prompt Engineering](daily-productivity.md) | Megh & Michele |
