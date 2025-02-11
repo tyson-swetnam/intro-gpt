@@ -40,20 +40,20 @@ This website follows the [FAIR](https://www.go-fair.org/fair-principles/){target
 
 | :fontawesome-solid-hourglass-half: | Lessons | Instructor | Link |
 |------------------------------------|---------|------------|------|
-| 09:00 | Introductions & [Code of Conduct](#code-of-conduct) | Tyson | |
-| 09:10 | [Session 1: The AI Landscape](ai_landscape.md) | Tyson | [presentation](https://docs.google.com/presentation/d/1PzPafN5Yznf8jdgpquPAaN0TmYC9WJwvPxM_I2LPwFo/edit?usp=sharing){target=_blank} |
-| 09:30| [Session 2: What is GPT](chatgpt.md)? | Enrique & Carlos | 
-| 10:00 | Break |  |
-| 10:10 | [Session 3: Prompt Engineering](daily-productivity.md) | Megh & Michele |
-| 11:00 | Lunch |  |  
-| 12:00 | [Session 4: Code Interpreters](code.md) | Megh & Jeff | 
-| 12:30 | [Session 5: CoPilot](copilot.md) | Tyson |
-| 13:00 | Break |  
-| 13:10 | [Session 6: Education](education.md) | Jeff |
-| 13:30 | [Session 7: Teaching](teaching.md) | Michele |
-| 14:00 | [Session 8: Tutoring](tutoring.md) | Carlos  |
-| 15:00 | [Session 9: Research](research.md) | Tyson |
- 
+| 08:30 | Arrival: Account Creation & Wifi checks |  | All | |
+| 09:00 | Introductions & [Code of Conduct](agenda.md#code-of-conduct) | Tyson |  [presentation](https://docs.google.com/presentation/d/1PzPafN5Yznf8jdgpquPAaN0TmYC9WJwvPxM_I2LPwFo/edit?usp=sharing){target=_blank} |
+| 09:10 | [Session 1a: AI Landscape](ai_landscape.md) | Carlos | |
+| 09:30| [Session 1b: Basics of Writing Prompts](chatgpt.md) | Enrique | 
+| 9:50 | Break |  |
+| 10:00 | [Session 3: General Productivity](daily-productivity.md) | Michele & Megh |
+| 10:50 | Break |  |  
+| 11:00 | [Session 4a: Teaching](teaching.md) | Tyson | |
+| 11:30 | [Session 4b Tutoring](tutoring.md) | Tyson | |  
+| 11:50 | Break | | |
+| 12:00 | [Session 4a: Notebook LM](code.md) | Jeff | |
+| 12:30 | [Session 4b: Code Interpreters (optional)](code.md) | Tyson | | 
+| 13:00 | Conclude |  |  |
+
 
 ## Prerequisites
 
