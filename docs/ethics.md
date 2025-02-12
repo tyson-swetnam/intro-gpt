@@ -139,7 +139,18 @@ Figure credit: :fontawesome-brands-creative-commons-by: [ChatGPT and Artificial 
 
 ## Recent Controversy
 
+[:scales: Master list of current lawsuits against AI companies](https://chatgptiseatingtheworld.com/2024/08/27/master-list-of-lawsuits-v-ai-chatgpt-openai-microsoft-meta-midjourney-other-ai-cos/){target=_blank}
+
 Current AI models are overwhelmingly based on European and North American historical literature and language. Over half of the [content on the internet (:simple-wikipedia:)](https://en.wikipedia.org/wiki/Languages_used_on_the_Internet) is written in English. This creates a [Eurocentric bias](https://www.historica.org/blog/the-impact-of-eurocentric-bias-in-ai-driven-historical-research) in AI training data, resulting in an erasure of global culture, experience, and language. Such [asymmetries need to be addressed](https://www.orfonline.org/expert-speak/global-perspectives-on-ai-bias-addressing-cultural-asymmetries-and-ethical-implications), but there is at present a lack economic incentives for large tech companies and organizations (see [The Imitation Game :brain:](#history) above). 
+
+
+!!! Danger "The :ox: :poop: Bullshit Machines"
+
+    Professors Carl T. Bergstrom and Jevin D. West teach a course at University of Washington titled "Calling Bullshit", they have written an e-book on GPTs called:
+
+    ["Modern-Day Oracles or Bullshit Machines?"](https://thebullshitmachines.com/table-of-contents/index.html){target=_blanks}
+
+    Their website provides online lesson vignettes and materials for instructors.
 
 Negative consequences of GPTs explosion into the public space are its mis-use as well as its adoption for illegal activity. 
 
