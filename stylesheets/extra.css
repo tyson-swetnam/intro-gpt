@@ -1,0 +1,23 @@
+[data-md-color-scheme="home"] {
+    --md-primary-fg-color:        #EE0F0F;
+    --md-primary-fg-color--light: #ECB7B7;
+    --md-primary-fg-color--dark:  #90030C;
+  }
+  
+  .announcement {
+    position: relative;
+    padding: 15px;
+    background-color: none;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
