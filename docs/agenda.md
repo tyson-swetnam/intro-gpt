@@ -42,8 +42,8 @@ This website follows the [FAIR](https://www.go-fair.org/fair-principles/){target
 |------------------------------------|---------|------------|------|
 | 08:30 | Arrival: Account Creation & Wifi checks |  | All | |
 | 09:00 | Introductions & [Code of Conduct](agenda.md#code-of-conduct) | Tyson |  [presentation](https://docs.google.com/presentation/d/1PzPafN5Yznf8jdgpquPAaN0TmYC9WJwvPxM_I2LPwFo/edit?usp=sharing){target=_blank} |
-| 09:10 | [Session 1: AI Landscape](ai_landscape.md) | Carlos | |
-| 09:30| [Session 2: Basics of Writing Prompts](chatgpt.md) | Enrique | 
+| 09:10 | [Session 1: AI Landscape](ai_landscape.md) | Carlos | [presentation](https://docs.google.com/presentation/d/1B8YOy5H0O1WGNXq3AeoSl3Kz5WzHaboI5hBM5tphoz0/edit#slide=id.p){target=_blank} |
+| 09:30| [Session 2: Basics of Writing Prompts](chatgpt.md) | Tyson | 
 | 9:50 | Break |  |
 | 10:00 | [Session 3: General Productivity](daily-productivity.md) | Michele & Megh |
 | 10:50 | Break |  |  
