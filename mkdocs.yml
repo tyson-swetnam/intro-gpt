@@ -43,6 +43,7 @@ nav:
     - HuggingFace: huggingface.md
     - Gradio Apps: gradio.md
     - Text Mining: text_mining.md
+    - Vibe Coding: vibe.md
 
 # Configuration
 
