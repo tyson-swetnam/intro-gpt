@@ -35,13 +35,14 @@ nav:
   - Research:
     - AI for Research: research.md
     - Agentic AI: agentic.md
+    - MCP: mcp.md
     - NotebookLM: notebooklm.md
     - Ollama: ollama.md
     - RAG: rag.md
     - Code Execution: execution.md
     - OpenAI API: openai.md
     - HuggingFace: huggingface.md
-    - Gradio Apps: gradio.md
+    - Gradio: gradio.md
     - Text Mining: text_mining.md
     - Vibe Coding: vibe.md
 
