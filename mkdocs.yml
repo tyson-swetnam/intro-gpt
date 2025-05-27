@@ -1,6 +1,6 @@
 site_name: 'GPT 101'
 site_description: 'Documentation for Prompt Engineering 101 Workshop'
-site_author: 'University of Arizona Institute for Computation & Data-enabled Insight'
+site_author: 'University of Arizona'
 site_url: https://tyson-swetnam.github.io/intro-gpt
 
 # Repository
@@ -8,7 +8,10 @@ repo_name: intro-gpt
 repo_url: https://github.com/tyson-swetnam/intro-gpt
 edit_uri: edit/main/docs/
 # Copyright
-copyright: 'Copyright &copy; 2025 University of Arizona Institute for Computation & Data-enabled Insight'
+copyright: 'Copyright &copy; 2025 University of Arizona'
+
+not_in_nav: |
+  /tutorials/**/*.md
 
 # Page tree
 nav:
