@@ -1,21 +1,36 @@
-# Ethics of Artificial Intelligence
+# Ethical & Legal Considerations
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 
-## [:material-run-fast: Ethical and Legal Considerations](legal.md)
+## Foundations of the Ethical principles for AI
 
-## [:material-run-fast: Transparency & Accountability](transparency.md)
+This lesson focuses on the ethical principles that ground AI in a legal landscape.
 
-## [:material-run-fast: Bias & Discrimination](bias.md)
+In "A Unified Framework of Five Principles for AI in Society" [(Floridi & Cowls 2019)](https://doi.org/10.1162%2F99608f92.8cd550d1){target=_blank} core principles for ethical AI are introduced (Table 1).
+    
+#### **Table 1: Floridi & Cowls (2019) Five principles for AI in Society**
+    
+| Beneficiance | Non-Maleficence | Autonomy | Justice | Explicability |
+|--------------|-----------------|----------|---------|---------------|
+| Promoting Well-Being, Preserving Dignity, and Sustaining the Planet | Privacy, Security and ‘Capability Caution’ | The Power to Decide (to Decide) | Promoting Prosperity, Preserving Solidarity, Avoiding Unfairness | Enabling the Other Principles through Intelligibility and Accountability |  Core Values & Guiding Principles
 
-## History
+### UNESCO
 
-In 1956 a small group of scientists gathered at [Dartmouth](https://home.dartmouth.edu/about/artificial-intelligence-ai-coined-dartmouth){target=_blank} for a [Summer Research Project on Artificial Intelligence](https://spectrum.ieee.org/dartmouth-ai-workshop){target=_blank}. A new field of science had begun. 
 
-Over the next 70 years, Artificial Intelligence existed mostly in the minds of science fiction writers and a small group of industry researchers and academics who worked toward creating the digital infrastructure needed for [Artificial General Intelligence (AGI)(:simple-wikipedia:)](https://en.wikipedia.org/wiki/Artificial_general_intelligence){target=_blank}. 
+### WHO
+
+!!! Tip "Ethics of AI _or_ Ethical AI"
+
+    [Siau and Wang 2020](https://doi.org/10.4018/JDM.2020040105) delineate **"Ethics of AI"** and **"Ethical AI"** as
+
+    **Ethics of AI:** studies the ethical principals, rules, guidelines, policies, and regulations related to AI.
+
+    while
+
+    **Ethical AI:** is AI that performs or behaves _ethically_. 
 
 ??? Quote "I, Robot :robot:"
-
+    
     [Author Isaac Asimov](https://en.wikipedia.org/wiki/Isaac_Asimov){target=_blank} wrote a series of popular science fiction novels in the 1950's through the 1980's. His work continues to be adapted into [television series](https://www.rottentomatoes.com/tv/foundation){target=_blank} and [movies](https://www.rottentomatoes.com/m/i_robot){target=_blank}. In his novels, Asimov developed "Three Laws of Robotics" which described how artificial intelligence interacted with humanity in his fictional universe. 
 
     !!! Quote "The Three Laws"
@@ -33,9 +48,9 @@ Over the next 70 years, Artificial Intelligence existed mostly in the minds of s
     <iframe width="560" height="315" src="https://www.youtube.com/embed/qJwHbEugKqg?si=5vHRhTGFNrwBvLlB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 As our conception of intelligence shifts [(Mitchell 2024)](https://doi.org/10.1126/science.adq9356){target=_blank}, mostly in reaction to the release of ChatGPT and its myriad of competitors, new standards of the "Turing Test" have been proposed. 
-
+    
 ??? Quote "The Imitation Game :brain:"
-
+    
     **"Can Machines Think?" -- [Alan Turing, 1950](https://doi.org/10.1093/mind/LIX.236.433){target=_blank}**
 
     [Alan Turing](https://en.wikipedia.org/wiki/Alan_Turing){target=_blank} the father of all modern computing, proposed a test for intelligence in a computer, requiring that a human being should be unable to distinguish the machine from another human being by using the replies to questions put to both.
@@ -71,16 +86,12 @@ As our conception of intelligence shifts [(Mitchell 2024)](https://doi.org/10.11
 
             Google began using ["AI Overview"](https://www.google.com/search?q=what+is+the+turing+trap&oq=what+is+the+turing+trap&gs_lcrp){target=_blank} in its popular search engine for subscribing users in 2024. 
 
-In "A Unified Framework of Five Principles for AI in Society" [(Floridi & Cowls 2019)](https://doi.org/10.1162%2F99608f92.8cd550d1){target=_blank} core principles for ethical AI are introduced (Table 1).
-
-#### **Table 1: Floridi & Cowls (2019) Five principles for AI in Society**
-
-| Beneficiance | Non-Maleficence | Autonomy | Justice | Explicability |
-|--------------|-----------------|----------|---------|---------------|
-| Promoting Well-Being, Preserving Dignity, and Sustaining the Planet | Privacy, Security and ‘Capability Caution’ | The Power to Decide (to Decide) | Promoting Prosperity, Preserving Solidarity, Avoiding Unfairness | Enabling the Other Principles through Intelligibility and Accountability | 
-
-A milestone :octicons-milestone-24: in the [Ethics of Artificial Intelligence (:simple-wikipedia:)](https://en.wikipedia.org/wiki/Ethics_of_artificial_intelligence){target=_blank} occurred in January 2017 in Pacific Grove, California at the historic Asilomar Hotel and Conference Grounds [(Table 2)](#table-2-international-ai-agreements). There the Asilomar AI Principles were signed by leading AI researchers, ethicists, and thought leaders. By 2021, UNESCO had created their own recommendations on AI, focused on human rights and sustainable development.
-
+    
+    
+A milestone :octicons-milestone-24: in the [Ethics of Artificial Intelligence (:simple-wikipedia:)](https://en.wikipedia.org/wiki/Ethics_of_artificial_intelligence){target=_blank} occurred in January 2017 in Pacific Grove, California at the historic Asilomar Hotel and Conference Grounds [(Table 2)](#table-2-international-ai-agreements). There the Asilomar AI Principles were signed by leading AI researchers, ethicists, and thought leaders. 
+    
+By 2021, UNESCO had created their own recommendations on AI, focused on human rights and sustainable development.
+    
 #### **Table 2: International AI agreements**
 
 | Agreement | Date | Signatories | Description | Source |
@@ -93,7 +104,6 @@ A milestone :octicons-milestone-24: in the [Ethics of Artificial Intelligence (:
 
 In response to the rapid rise of generative AI, specifically GPTs, new agreements on the application of AI for military use, safety, and on its adoption in business and industry were recently signed (Table 3).
 
-<script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/3940_RC01/embed_loader.js"></script> <script type="text/javascript"> trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"GPT","geo":"","time":"2022-01-01 2025-01-12"}],"category":0,"property":""}, {"exploreQuery":"date=2022-01-01%202025-01-12&q=GPT&hl=en","guestPath":"https://trends.google.com:443/trends/embed/"}); </script>
 
 #### **Table 3: Declarations on AI**
 
@@ -132,24 +142,24 @@ graph TB
 Figure credit: :fontawesome-brands-creative-commons-by: [ChatGPT and Artificial Intelligence in Education, UNESCO 2023 :fontawesome-regular-file-pdf:](https://www.iesalc.unesco.org/wp-content/uploads/2023/04/ChatGPT-and-Artificial-Intelligence-in-higher-education-Quick-Start-guide_EN_FINAL.pdf){target=_blank}
 
 </br></br>
-
+    
 ## Recent Controversy
-
+    
 [:scales: Master list of current lawsuits against AI companies](https://chatgptiseatingtheworld.com/2024/08/27/master-list-of-lawsuits-v-ai-chatgpt-openai-microsoft-meta-midjourney-other-ai-cos/){target=_blank}
 
 Current AI models are overwhelmingly based on European and North American historical literature and language. Over half of the [content on the internet (:simple-wikipedia:)](https://en.wikipedia.org/wiki/Languages_used_on_the_Internet) is written in English. This creates a [Eurocentric bias](https://www.historica.org/blog/the-impact-of-eurocentric-bias-in-ai-driven-historical-research) in AI training data, resulting in an erasure of global culture, experience, and language. Such [asymmetries need to be addressed](https://www.orfonline.org/expert-speak/global-perspectives-on-ai-bias-addressing-cultural-asymmetries-and-ethical-implications), but there is at present a lack economic incentives for large tech companies and organizations (see [The Imitation Game :brain:](#history) above). 
 
 
 !!! Danger "The :ox: :poop: Bullshit Machines"
-
+    
     Professors Carl T. Bergstrom and Jevin D. West teach a course at University of Washington titled "Calling Bullshit", they have written an e-book on GPTs called:
 
     ["Modern-Day Oracles or Bullshit Machines?"](https://thebullshitmachines.com/table-of-contents/index.html){target=_blanks}
 
     Their website provides online lesson vignettes and materials for instructors.
-
+    
 Negative consequences of GPTs explosion into the public space are its mis-use as well as its adoption for illegal activity. 
-
+    
 * [A lawyer submits a legal brief written by ChatGPT and is caught](https://www.nytimes.com/2023/05/27/nyregion/avianca-airline-lawsuit-chatgpt.html){target=_blank}
 
 * [Prompt Injection Attacks](https://www.wired.com/story/chatgpt-prompt-injection-attack-security/){target=_blank}
@@ -191,59 +201,4 @@ Here are some recent papers that discuss the ethical concerns surrounding AI:
 *   **"Ethics of Artificial Intelligence"** (2020) - S. Matthew Liao [https://doi.org/10.1093/oso/9780190905033.001.0001](https://doi.org/10.1093/oso/9780190905033.001.0001){target=_blank}
 
     *   This is a book that provides a comprehensive overview of the ethical issues related to AI.
-
-## Assessment
-
-??? Question "Can you explain the difference between "Ethics of AI" and "Ethical AI?""
-
-    Hint: Refer to how [Siau and Wang (2020)](#ethics-of-artificial-intelligence) define each term
-
-    ??? Success "Ethics of AI"
-
-        * **Ethics of AI** refers to principles and regulations
-
-    ??? Success "Ethical AI"
-
-        * **Ethical AI** focuses on how AI behaves
-
-??? Question "How does Asimov's Three Laws of Robotics relate to modern ethical concerns of AI?"
-
-    ??? Success "Do no harm"
-
-        Asmiov emphasizes preventing harm to humans and how that concept informs current AI safety practices.
-
-??? Question "True or False: The Turing Trap suggests that efforts to make AI more human-like will empower workers' economic and political power."
-
-    ??? Failure "False"
-
-        The Turing Trap warns against replacing humans with AI, and that AI could be used to drive down wages and to a loss of economic and political power. 
-
-??? Question "Name at least one major declaration or agreement on AI Ethics"
-
-    Hint: See [Table 2](#table-2-international-ai-agreements)
-
-    ??? Success "International Agreements"
-             
-        * Council of Europe Framework Convention on Artificial Intelligence and human rights
-
-        * Political Declaration on Responsible Military Use of Artificial Intelligence and Autonomy
-
-        * G20 AI Principles
     
-    ??? Success "Principles and Ethics"
-
-        * Asilomar AI Principles
-
-        * UNESCO Recommendation on the Ethics of Artificial Intelligence
-
-        * OECD AI Principles
-
-        * Toronto Declaration
-
-??? Question "True or False: It is okay to use a GPT to write a research proposal on a topic you have no experience in?"
-
-    Hint: Review ["Using AI Ethically"](#using-ai-ethically)
-
-    ??? Failure "False"
-
-        If you do not have the ability to verify output truthfully or accurately, it is not safe to use a GPT for research.

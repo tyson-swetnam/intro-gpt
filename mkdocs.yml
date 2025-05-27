@@ -16,7 +16,6 @@ nav:
     - Welcome: index.md
     - Agenda: agenda.md
     - Landscape: ai_landscape.md
-    - Ethics: ethics.md
   - Setup:
     - ChatGPT: chatgpt.md
     - Microsoft Copilot: microsoft.md
@@ -45,6 +44,11 @@ nav:
     - Gradio: gradio.md
     - Text Mining: text_mining.md
     - Vibe Coding: vibe.md
+  - Ethics: 
+    - Overview: ethics.md
+    - Bias: bias.md
+    - Legal: legal.md
+    - Transparency: transparency.md
 
 # Configuration
 
@@ -165,19 +169,6 @@ extra_javascript:
   - chatbot_widget.js
  
 plugins:
-    - blog:
-        blog_dir: ./blog
-        post_date_format: full
-        archive: false
-        archive_name: archive
-        archive_url_format: "archive/{date}"
-        archive_date_format: MMMM yyyy
-        archive_toc: true
-        post_url_format: "{date}/{slug}"
-    - social:
-        cards_layout_options:
-          background_color: blue # Change background color
-          background_image: null # Remove background image
-    - search
-    - mkdocstrings
-    - git-revision-date
+  - mkdocstrings
+  - mkdocs-jupyter
+
