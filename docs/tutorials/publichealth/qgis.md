@@ -1,12 +1,18 @@
-# Geospatial data analysis for Public Health
+# talking to geospatial data
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 
-## Setup your environment
+## Setup your local work environment
 
 ### :simple-claude: Claude Desktop (:material-microsoft-windows: Windows, :material-apple: Mac OS only)
 
 [:simple-claude: https://claude.ai/download](https://claude.ai/download){target=_blank}
+
+### FileSystem MCP
+
+Suggest the Node version unless you are familiar with Docker. 
+
+[https://modelcontextprotocol.io/quickstart/user](https://modelcontextprotocol.io/quickstart/user){target=_blank}
 
 #### :simple-claude: Anthropic API Account
 

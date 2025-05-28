@@ -1,0 +1,38 @@
+name: mkdocs-material
+channels:
+  - conda-forge
+dependencies:
+  - bump2version
+  - coverage
+  - flake8
+  - grip
+  - ipykernel
+  - livereload
+  - nbconvert>=7
+  - pip
+  - sphinx
+  - tox
+  - twine
+  - watchdog
+  - wheel
+  - mkdocstrings
+  - jinja2~=3.1
+  - markdown~=3.2
+  - mkdocs~=1.6
+  - pygments~=2.16
+  - pymdown-extensions~=10.2
+  - requests>=2.26
+  - cairosvg
+  - pip:
+    - babel~=2.10
+    - colorama~=0.4
+    - paginate~=0.5
+    - backrefs~=5.7.post1
+    - requests~=2.26
+    - mkdocstrings-crystal
+    - mkdocs-jupyter
+    - mkdocs-material
+    - mkdocs-material-extensions~=1.3   
+    - mkdocstrings-python-legacy
+    - mkdocs-git-revision-date-localized-plugin
+    - mkdocs-pdf-export-plugin

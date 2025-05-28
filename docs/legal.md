@@ -107,11 +107,29 @@ In response to the rapid rise of generative AI, specifically GPTs, new agreement
 
 | Agreement | Date | Signatories | Description | Source |
 |-----------|------|-------------|-------------|--------|
-| **Political Declaration on Responsible Military Use of Artificial Intelligence and Autonomy** | February 16, 2023 | United States and 50 other countries | A declaration outlining principles for the responsible use of AI and autonomy in military applications. | [U.S. Department of State](https://www.state.gov/political-declaration-on-responsible-military-use-of-artificial-intelligence-and-autonomy/) |
-| **International Network of AI Safety Institutes** | May 2024 | United Kingdom, United States, Japan, France, Germany, Italy, Singapore, South Korea, Australia, Canada, European Union | A network formed to evaluate and ensure the safety of advanced AI models through international collaboration. | [The Independent](https://www.independent.co.uk/news/uk/politics/rishi-sunak-china-eric-schmidt-bletchley-park-united-states-b2548783.html) |
-| **AI Safety Agreement between the UK and US** | June 2024 | United Kingdom, United States | An agreement to collaborate on testing advanced AI models to ensure safety and manage risks. | [BBC News](https://www.bbc.com/news/technology-68675654) |
-| **Framework Convention on Artificial Intelligence** | September 5, 2024 | United States, United Kingdom, European Union, Andorra, Georgia, Iceland, Norway, Republic of Moldova, San Marino, Israel | The first legally binding international treaty on AI, aiming to ensure AI activities are consistent with human rights, democracy, and the rule of law. | [Council of Europe](https://www.coe.int/en/web/artificial-intelligence/the-framework-convention-on-artificial-intelligence) |
-| **AI Alliance Network** | December 11, 2024 | Russia, BRICS countries (Brazil, China, India, South Africa), Serbia, Indonesia, and others | An initiative to develop AI collaboratively, focusing on joint research, regulation, and commercialization of AI products among member countries. | [Reuters](https://www.reuters.com/technology/artificial-intelligence/russia-teams-up-with-brics-create-ai-alliance-putin-says-2024-12-11/) |
+| **Political Declaration on Responsible Military Use of Artificial Intelligence and Autonomy** | February 16, 2023 | United States and 50 other countries | A declaration outlining principles for the responsible use of AI and autonomy in military applications. | [U.S. Department of State](https://www.state.gov/political-declaration-on-responsible-military-use-of-artificial-intelligence-and-autonomy/){target=_blank} |
+| **International Network of AI Safety Institutes** | May 2024 | United Kingdom, United States, Japan, France, Germany, Italy, Singapore, South Korea, Australia, Canada, European Union | A network formed to evaluate and ensure the safety of advanced AI models through international collaboration. | [The Independent](https://www.independent.co.uk/news/uk/politics/rishi-sunak-china-eric-schmidt-bletchley-park-united-states-b2548783.html){target=_blank} |
+| **AI Safety Agreement between the UK and US** | June 2024 | United Kingdom, United States | An agreement to collaborate on testing advanced AI models to ensure safety and manage risks. | [BBC News](https://www.bbc.com/news/technology-68675654){target=_blank} |
+| **Framework Convention on Artificial Intelligence** | September 5, 2024 | United States, United Kingdom, European Union, Andorra, Georgia, Iceland, Norway, Republic of Moldova, San Marino, Israel | The first legally binding international treaty on AI, aiming to ensure AI activities are consistent with human rights, democracy, and the rule of law. | [Council of Europe](https://www.coe.int/en/web/artificial-intelligence/the-framework-convention-on-artificial-intelligence){target=_blank} |
+| **AI Alliance Network** | December 11, 2024 | Russia, BRICS countries (Brazil, China, India, South Africa), Serbia, Indonesia, and others | An initiative to develop AI collaboratively, focusing on joint research, regulation, and commercialization of AI products among member countries. | [Reuters](https://www.reuters.com/technology/artificial-intelligence/russia-teams-up-with-brics-create-ai-alliance-putin-says-2024-12-11/){target=_blank} |
+
+## Current Legislation
+
+[National Conference of State Legislatures (NCSL) Artificial Intelligence 2025 Legislation](https://www.ncsl.org/technology-and-communication/artificial-intelligence-2025-legislation){target=_blank}
+
+
+!!! Tip "2025 Executive Orders"
+
+    [REMOVING BARRIERS TO AMERICAN LEADERSHIP IN ARTIFICIAL INTELLIGENCE, January 23, 2025](https://www.whitehouse.gov/presidential-actions/2025/01/removing-barriers-to-american-leadership-in-artificial-intelligence/){target=_blank}
+
+    * [Fact Sheet: Eliminating Barriers for Federal Artificial Intelligence Use and Procurement, April 7, 2025](https://www.whitehouse.gov/fact-sheets/2025/04/fact-sheet-eliminating-barriers-for-federal-artificial-intelligence-use-and-procurement/)
+
+    [ADVANCING ARTIFICIAL INTELLIGENCE EDUCATION FOR AMERICAN YOUTH](https://www.whitehouse.gov/presidential-actions/2025/04/advancing-artificial-intelligence-education-for-american-youth/){target=_blank}
+
+    [Restoring Gold Standard Science, May 23, 2025](https://www.whitehouse.gov/presidential-actions/2025/05/restoring-gold-standard-science/){target=_blank}
+
+    * [Fact Sheet: President Donald J. Trump is Restoring Gold Standard Science in America](https://www.whitehouse.gov/fact-sheets/2025/05/fact-sheet-president-donald-j-trump-deploys-advanced-nuclear-reactor-technologies-for-national-security/){target=_blank}
+
 
 ??? Question "What are we talking about here: Ethics of AI or Ethical AI? How are they different?"
 

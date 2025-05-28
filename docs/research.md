@@ -1,3 +1,5 @@
+# Overview
+
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 
 ## Introduction
@@ -8,11 +10,11 @@ When deployed privately into secure data enclaves, GPTs can be used with sensiti
 
 | Generative AI | Predictive AI |
 |---------------|---------------|
-| **Generative Adversarial Networks (GANs)** | **Linear Regression** |
-| **Variational Autoencoders (VAEs)** | **Logistic Regression** |
-| **Generative Pretrained Transformers (GPTs)** | **Decision Trees** |
-| **Diffusion Models** | **Random Forest** |
-| **Autoregressive Models** | **Support Vector Machines (SVMs)** |
+| Generative Adversarial Networks (GANs) | Linear Regression |
+| Variational Autoencoders (VAEs) | Logistic Regression |
+| Generative Pretrained Transformers (GPTs) | Decision Trees |
+| Diffusion Models | Random Forest |
+| Autoregressive Models | Support Vector Machines (SVMs) |
 
 **Generative AI and Academic Research**
 

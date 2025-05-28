@@ -30,13 +30,14 @@ nav:
     - General Productivity: daily-productivity.md
     - Code Interpretation: code.md
   - Education:
-    - AI in the Classroom: education.md
+    - Overview: education.md
     - Teaching with AI: teaching.md
     - AI Tutoring: tutoring.md
     - Admissions & Recruiting: admissions.md
   - Research:
-    - AI for Research: research.md
+    - Overview: research.md
     - Agentic AI: agentic.md
+    - Jupyter AI: jupyter.md
     - MCP: mcp.md
     - NotebookLM: notebooklm.md
     - Ollama: ollama.md
@@ -45,6 +46,7 @@ nav:
     - OpenAI API: openai.md
     - HuggingFace: huggingface.md
     - Gradio: gradio.md
+    - Posit (RStudio): posit.md
     - Text Mining: text_mining.md
     - Vibe Coding: vibe.md
   - Ethics: 
