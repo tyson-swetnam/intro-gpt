@@ -62,8 +62,8 @@ theme:
   static_templates:
     - 404.html
   # Don't include MkDocs' JavaScript
-  include_search_page: false
-  search_index_only: true
+  include_search_page: true
+  search_index_only: false
   # Default values, taken from mkdocs_theme.yml
   language: en
   palette:
@@ -95,6 +95,9 @@ theme:
     - navigation.tabs.sticky
     - navigation.indexes
     - navigation.top
+    - search.highlight
+    - search.share
+    - search.suggest
     - content.code.copy
     - content.code.prettify
     - content.tooltips
@@ -174,4 +177,5 @@ extra_javascript:
 plugins:
   - mkdocstrings
   - mkdocs-jupyter
+  - search
 

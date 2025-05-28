@@ -6,6 +6,75 @@
 
 This lesson focuses on the ethical principles that ground AI in a legal landscape.
 
+### Science Fiction or a Philosophical Theory?
+
+In the early 1950's [Alan Turing](https://en.wikipedia.org/wiki/Alan_Turing){target=_blank} the father of all modern computing, proposed a test for intelligence in a computer, requiring that a human being should be unable to distinguish the machine from another human being by using the replies to questions put to both.
+
+!!! Quote "The Imitation Game :brain:"
+    
+    **"Can Machines Think?" -- [Alan Turing, 1950](https://doi.org/10.1093/mind/LIX.236.433){target=_blank}**
+
+    ??? Question "The Turing Test Today"
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/_2NijXqBESI?si=EAF4rMEKbLj4mtPi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/-IUUCTiIIkc?si=frNBEBmL4FSUItdu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
+    
+
+[Author Isaac Asimov](https://en.wikipedia.org/wiki/Isaac_Asimov){target=_blank} wrote a series of popular science fiction novels in the 1950's through the 1980's. His work continues to be adapted into [television series](https://www.rottentomatoes.com/tv/foundation){target=_blank} and [movies](https://www.rottentomatoes.com/m/i_robot){target=_blank}. In his novels, Asimov developed **Three Laws of Robotics** which described how artificial intelligence interacted with humanity in his fictional universe. 
+
+!!! Quote "The Three Laws :robot:"  
+
+    **1. A robot may not injure a human being or, through inaction, allow a human being to come to harm.**
+      
+    **2. A robot must obey the orders given it by human beings except where such orders would conflict with the First Law.**
+        
+    **3. A robot must protect its own existence as long as such protection does not conflict with the First or Second Law.**
+
+    Asimov later wrote of a 'zeroth' law which superceded the first three laws,
+
+    **0. A robot may not injure humanity or, through inaction, allow humanity to come to harm.**
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/qJwHbEugKqg?si=5vHRhTGFNrwBvLlB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Asimov's Laws are difficult to interpret in a real-world setting and he himself spent most of his novels describing creative and unexpected ways in which the Laws are twisted. Their basis as a legal framework is untenable, but does represent a moral and ethical starting point from which we can think about AI and the legal rights of non-biological beings.  
+
+As our conception of intelligence shifts [(Mitchell 2024)](https://doi.org/10.1126/science.adq9356){target=_blank}, mostly in reaction to the release of ChatGPT and its myriad of competitors, new standards of the **Turing Test** have been proposed. 
+
+The **Turing Trap** is a term coined by Stanford University professor [Erik Brynjolfsson](https://www.brookings.edu/events/the-turing-trap-a-conversation-with-erik-brynjolfsson-on-the-promise-and-peril-of-human-like-ai/){target=_blank} to describe the idea that focusing too much on developing human-like artificial intelligence (HLAI) can be detrimental. 
+    
+Brynjolfsson argues that the real potential of AI lies in its ability to augment human abilities, rather than replacing them. He suggests that we should work on challenges that are easy for machines and hard for humans, rather than the other way around. 
+    
+!!! Warning "The Turing Trap"
+
+   
+    
+    **Automation can replace humans**
+    
+    HLAI can replace humans in the workplace, which can lead to: 
+    
+    * **Lower wages** 
+    
+        As machines become better substitutes for human labor, wages can be driven down.
+    
+    * **Loss of economic and political power** 
+    
+        Workers can lose economic and political bargaining power, and become increasingly dependent on those who control the technology.
+    
+    * **Decision-making processes incentivize automation**
+    
+        Companies may choose to automate tasks to do the same thing faster and cheaper.
+ 
+    * **Misaligned incentives**
+     
+        The risks of the Turing Trap are increased by the misaligned incentives of technologists, businesspeople, and policy-makers. 
+    
+    ??? Danger ":point_up: even this text was written by an :simple-googlegemini: AI!"
+     
+            Google began using ["AI Overview"](https://www.google.com/search?q=what+is+the+turing+trap&oq=what+is+the+turing+trap&gs_lcrp){target=_blank} in its popular search engine for subscribing users in 2024. 
+ 
+## Ethical AI
+
 In "A Unified Framework of Five Principles for AI in Society" [(Floridi & Cowls 2019)](https://doi.org/10.1162%2F99608f92.8cd550d1){target=_blank} core principles for ethical AI are introduced (Table 1).
     
 #### **Table 1: Floridi & Cowls (2019) Five principles for AI in Society**
@@ -14,80 +83,8 @@ In "A Unified Framework of Five Principles for AI in Society" [(Floridi & Cowls 
 |--------------|-----------------|----------|---------|---------------|
 | Promoting Well-Being, Preserving Dignity, and Sustaining the Planet | Privacy, Security and ‘Capability Caution’ | The Power to Decide (to Decide) | Promoting Prosperity, Preserving Solidarity, Avoiding Unfairness | Enabling the Other Principles through Intelligibility and Accountability |  Core Values & Guiding Principles
 
-### UNESCO
+## International Agreements on AI
 
-
-### WHO
-
-!!! Tip "Ethics of AI _or_ Ethical AI"
-
-    [Siau and Wang 2020](https://doi.org/10.4018/JDM.2020040105) delineate **"Ethics of AI"** and **"Ethical AI"** as
-
-    **Ethics of AI:** studies the ethical principals, rules, guidelines, policies, and regulations related to AI.
-
-    while
-
-    **Ethical AI:** is AI that performs or behaves _ethically_. 
-
-??? Quote "I, Robot :robot:"
-    
-    [Author Isaac Asimov](https://en.wikipedia.org/wiki/Isaac_Asimov){target=_blank} wrote a series of popular science fiction novels in the 1950's through the 1980's. His work continues to be adapted into [television series](https://www.rottentomatoes.com/tv/foundation){target=_blank} and [movies](https://www.rottentomatoes.com/m/i_robot){target=_blank}. In his novels, Asimov developed "Three Laws of Robotics" which described how artificial intelligence interacted with humanity in his fictional universe. 
-
-    !!! Quote "The Three Laws"
-
-        **1. A robot may not injure a human being or, through inaction, allow a human being to come to harm.**
-        
-        **2. A robot must obey the orders given it by human beings except where such orders would conflict with the First Law.**
-        
-        **3. A robot must protect its own existence as long as such protection does not conflict with the First or Second Law.**
-
-        Asimov later wrote of a 'zeroth' law which superceded the first three laws,
-
-        **0. A robot may not injure humanity or, through inaction, allow humanity to come to harm.**
-
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/qJwHbEugKqg?si=5vHRhTGFNrwBvLlB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-As our conception of intelligence shifts [(Mitchell 2024)](https://doi.org/10.1126/science.adq9356){target=_blank}, mostly in reaction to the release of ChatGPT and its myriad of competitors, new standards of the "Turing Test" have been proposed. 
-    
-??? Quote "The Imitation Game :brain:"
-    
-    **"Can Machines Think?" -- [Alan Turing, 1950](https://doi.org/10.1093/mind/LIX.236.433){target=_blank}**
-
-    [Alan Turing](https://en.wikipedia.org/wiki/Alan_Turing){target=_blank} the father of all modern computing, proposed a test for intelligence in a computer, requiring that a human being should be unable to distinguish the machine from another human being by using the replies to questions put to both.
-
-    !!! Warning "The Turing Trap"
-
-        The **Turing Trap** is a term coined by Stanford University professor [Erik Brynjolfsson](https://www.brookings.edu/events/the-turing-trap-a-conversation-with-erik-brynjolfsson-on-the-promise-and-peril-of-human-like-ai/){target=_blank} to describe the idea that focusing too much on developing human-like artificial intelligence (HLAI) can be detrimental. 
-        
-        Brynjolfsson argues that the real potential of AI lies in its ability to augment human abilities, rather than replacing them. He suggests that we should work on challenges that are easy for machines and hard for humans, rather than the other way around. 
-        
-        **Automation can replace humans**
-
-        HLAI can replace humans in the workplace, which can lead to: 
-        
-        * **Lower wages** 
-        
-            As machines become better substitutes for human labor, wages can be driven down.
-
-        * **Loss of economic and political power** 
-        
-            Workers can lose economic and political bargaining power, and become increasingly dependent on those who control the technology.
-
-        * **Decision-making processes incentivize automation**
-        
-            Companies may choose to automate tasks to do the same thing faster and cheaper.
-
-        * **Misaligned incentives**
-
-            The risks of the Turing Trap are increased by the misaligned incentives of technologists, businesspeople, and policy-makers. 
-        
-
-        ??? Danger ":point_up: this text was created by an :simple-googlegemini: AI!"
-
-            Google began using ["AI Overview"](https://www.google.com/search?q=what+is+the+turing+trap&oq=what+is+the+turing+trap&gs_lcrp){target=_blank} in its popular search engine for subscribing users in 2024. 
-
-    
-    
 A milestone :octicons-milestone-24: in the [Ethics of Artificial Intelligence (:simple-wikipedia:)](https://en.wikipedia.org/wiki/Ethics_of_artificial_intelligence){target=_blank} occurred in January 2017 in Pacific Grove, California at the historic Asilomar Hotel and Conference Grounds [(Table 2)](#table-2-international-ai-agreements). There the Asilomar AI Principles were signed by leading AI researchers, ethicists, and thought leaders. 
     
 By 2021, UNESCO had created their own recommendations on AI, focused on human rights and sustainable development.
@@ -96,14 +93,15 @@ By 2021, UNESCO had created their own recommendations on AI, focused on human ri
 
 | Agreement | Date | Signatories | Description | Source |
 |-----------|------|-------------|-------------|--------|
-| **Asilomar AI Principles** | January 2017 | AI researchers, ethicists, and thought leaders | A set of 23 principles designed to guide the development of beneficial AI, covering research, ethics, and long-term issues. | [Future of Life Institute](https://futureoflife.org/open-letter/ai-principles/) |
-| **Toronto Declaration** | May 16, 2018 | Amnesty International, Access Now, Human Rights Watch, Wikimedia Foundation, and others | A declaration advocating for the protection of the rights to equality and non-discrimination in machine learning systems. | [Toronto Declaration](https://www.torontodeclaration.org/) |
-| **OECD AI Principles** | May 22, 2019 | OECD member countries and others | Principles to promote AI that is innovative and trustworthy and that respects human rights and democratic values. | [OECD](https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0449) |
-| **G20 AI Principles** | June 9, 2019 | G20 member countries | A commitment to human-centered AI, building upon the OECD AI Principles, emphasizing inclusivity, transparency, and accountability. | [G20 Japan 2019](https://www.g20-insights.org/policy_briefs/g20-japan-ai-principles/) |
-| **UNESCO Recommendation on the Ethics of Artificial Intelligence** | November 2021 | UNESCO member states | A global framework to ensure that digital transformations promote human rights and contribute to the achievement of the Sustainable Development Goals. | [UNESCO](https://en.unesco.org/artificial-intelligence/ethics) |
+| **Asilomar AI Principles** | January 2017 | AI researchers, ethicists, and thought leaders | A set of 23 principles designed to guide the development of beneficial AI, covering research, ethics, and long-term issues. | [Future of Life Institute](https://futureoflife.org/open-letter/ai-principles/){target=_blank} |
+| **Toronto Declaration** | May 16, 2018 | Amnesty International, Access Now, Human Rights Watch, Wikimedia Foundation, and others | A declaration advocating for the protection of the rights to equality and non-discrimination in machine learning systems. | [Toronto Declaration](https://www.torontodeclaration.org/){target=_blank} |
+| **OECD AI Principles** | May 22, 2019 | OECD member countries and others | Principles to promote AI that is innovative and trustworthy and that respects human rights and democratic values. | [OECD](https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0449){target=_blank} |
+| **G20 AI Principles** | June 9, 2019 | G20 member countries | A commitment to human-centered AI, building upon the OECD AI Principles, emphasizing inclusivity, transparency, and accountability. | [G20 Japan 2019](https://www.g20-insights.org/policy_briefs/g20-japan-ai-principles/){target=_blank} |
+| **WHO Ethics and governance of artificial intelligence for health** | June 2021 | WHO Ministries of Health members | A guidance on  eighteen months of deliberation amongst experts from Ministries of Health | [WHO](https://www.who.int/publications/i/item/9789240029200){target=_blank} |
+| **UNESCO Recommendation on the Ethics of Artificial Intelligence** | November 2021 | UNESCO member states | A global framework to ensure that digital transformations promote human rights and contribute to the achievement of the Sustainable Development Goals. | [UNESCO](https://en.unesco.org/artificial-intelligence/ethics){target=_blank} |
+| **European Union Artificial Intelligence Act** | July 2024 | EU member countries | Classifies risk, obligations, legal, and general purpose AI laws | [EU AI Act](https://artificialintelligenceact.eu/){target=_blank} |
 
 In response to the rapid rise of generative AI, specifically GPTs, new agreements on the application of AI for military use, safety, and on its adoption in business and industry were recently signed (Table 3).
-
 
 #### **Table 3: Declarations on AI**
 
@@ -115,7 +113,17 @@ In response to the rapid rise of generative AI, specifically GPTs, new agreement
 | **Framework Convention on Artificial Intelligence** | September 5, 2024 | United States, United Kingdom, European Union, Andorra, Georgia, Iceland, Norway, Republic of Moldova, San Marino, Israel | The first legally binding international treaty on AI, aiming to ensure AI activities are consistent with human rights, democracy, and the rule of law. | [Council of Europe](https://www.coe.int/en/web/artificial-intelligence/the-framework-convention-on-artificial-intelligence) |
 | **AI Alliance Network** | December 11, 2024 | Russia, BRICS countries (Brazil, China, India, South Africa), Serbia, Indonesia, and others | An initiative to develop AI collaboratively, focusing on joint research, regulation, and commercialization of AI products among member countries. | [Reuters](https://www.reuters.com/technology/artificial-intelligence/russia-teams-up-with-brics-create-ai-alliance-putin-says-2024-12-11/) |
 
-## Using AI ethically
+??? Question "What are we talking about here: Ethics of AI or Ethical AI? How are they different?"
+
+    !!! Answer "They are not the same thing"
+    
+        [Siau and Wang 2020](https://doi.org/10.4018/JDM.2020040105){target=_blank} delineate **"Ethics of AI"** and **"Ethical AI"** as
+
+        **Ethics of AI:** studies the ethical principals, rules, guidelines, policies, and regulations related to AI.
+
+        **Ethical AI:** is AI that performs or behaves _ethically_. 
+
+## AI Ethics
 
 As consumers of GPTs and other AI platforms, we must consider in what ways can we use AI both effectively, and ethically.
 

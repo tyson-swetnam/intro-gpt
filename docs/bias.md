@@ -8,11 +8,11 @@ This lesson addresses the critical challenges of bias in AI. We will briefly exp
 
 !!! Info "Definitions"
 
-    **AI Bias** - occurs when an AI system produces systematically predujiced or unfair results (outputs). Erroneous assumptions made during the development of the model, or biases in the data upon which it was trained are potential sources
+    **AI Bias** - occurs when an AI system produces systematically prejudiced or unfair results (outputs). Erroneous assumptions made during the development of the model, or biases in the data upon which it was trained are both potential sources.
 
-    **Algorithmic Discrimination** occurs when an the use of an AI results in the unfair or illegal treatment of individuals or groups based on a protected characteristic (age, disability, race, religion, sex, or socioeconomic status)
+    **Algorithmic Discrimination** occurs when an the use of an AI results in the unfair or illegal treatment of individuals or groups based on a protected characteristic (age, disability, race, religion, sex, or socioeconomic status).
 
-    **Fairness** includes metrics around equalized error rates across groups and parity of outcomes across groups 
+    **Fairness** includes metrics around equalized error rates across groups and parity of outcomes across groups. 
 
 ## Sources of Bias
 
@@ -41,3 +41,31 @@ This lesson addresses the critical challenges of bias in AI. We will briefly exp
 * **Empathy Bias** - inability to incorporate nuanced human experiences, emotions, or subjective elements into a quantitative model
 
 **Synthetic Bias** - when models based on biased training data are used to generate synthetic datasets, they perpetuate their bias into the new trained model
+
+## Bias prevention strategies
+
+### Data-centric approaches 
+
+Can help to ensure data are representative, high quality, and contain the diversity of the study system:
+
+**Collection** - curate datasets accurately to represent all relevant groups and populations.
+
+**Quality** - identify and address issues within data sets, including compatibility problems, gaps within populations, and underrepresentation in historical data. 
+ 
+**Balancing** - under-sample majority and over-sample minority groups, use synthetic data generation to capture under-represented samples
+
+**Labeling** - consistent, annotated, with masks for irrelevant factors, sensitive and secure
+
+**Continuous** - data are updated throughout the entire lifecycle of their use, not just a single collection phase.
+
+### Algorithmic Techniques
+
+Technical tools can help to identify bias in models:
+
+**Bias Detection** - [specialized software tools](https://dialzara.com/blog/10-top-tools-for-ethical-ai-development-2024/) designed to flag, measure, and analyze biases.
+
+**Fairness Metrics** - equalized odds, demographic parity, counterfactual fairness
+
+**Algorithmic Adjustments** - pre-processing (adjusting training data), in-process (modifying algorithm), or post-processing (adjust outputs)
+
+**Explainable AI (XAI)** - undestant which inputs are driving model decisions, reveal hidden biases or reliance on spurious factors
