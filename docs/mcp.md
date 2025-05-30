@@ -25,18 +25,21 @@ MCP typically operates on a client-server model and defines the rules for how co
 ```mermaid
 flowchart LR
     subgraph "Your Computer"
-        Host["Claude Desktop\nVS Code"]
+        Host["VS Code"]
         S1["MCP Weaviate"]
         S2["MCP GitHub"]
         S3["MCP iRODS"]
+        S4["MCP Fetch"]
         Host <-->|"MCP Protocol"| S1
         Host <-->|"MCP Protocol"| S2
         Host <-->|"MCP Protocol"| S3
-        S1 <--> D1[("Constellate\nJSON")]
-        S2 <--> D2[("Git\nCode Repository")]
+        Host <-->|"MCP Protocol"| S4
+        S1 <--> D1[("Constellate JSON")]
+        S2 <--> D2[("Git Code Repository")]
     end
     subgraph "Internet"
-        S3 <-->|"Web APIs"| D3[("CyVerse\nData Store")]
+        S3 <-->|"Web APIs"| D3[("Data Store")]
+        S4 <-->|"Web APIs"| D4[("Website")]
     end
 ```
 

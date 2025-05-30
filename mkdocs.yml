@@ -10,8 +10,8 @@ edit_uri: edit/main/docs/
 # Copyright
 copyright: 'Copyright &copy; 2025 University of Arizona'
 
-not_in_nav: |
-  /tutorials/**/*.md
+#not_in_nav: |
+#  /tutorials/**/*.md
 
 # Page tree
 nav:
@@ -54,7 +54,9 @@ nav:
     - Bias: bias.md
     - Legal: legal.md
     - Transparency: transparency.md
-
+  - Tutorials:
+    - Public Health: tutorials/publichealth/casestudy.md
+    - Map making: tutorials/publichealth/qgis.md
 # Configuration
 
 theme:
