@@ -24,6 +24,8 @@ Transparency is a cornerstone of developing trust, specifically when AI is invol
 
 [**NIST AI Risk Management Framework (AI RMF)**](https://www.nist.gov/itl/ai-risk-management-framework){target=_blank} has developed a framework to better manage risks to individuals, organizations, and society associated with AI.
 
+[**Organization for Economic Cooperation and Development (OECD) AI Principles**](https://oecd.ai/en/ai-principles){target=_blank} promote use of AI that is innovative and trustworthy and that respects human rights and democratic values.
+
 [**World Health Organization (WHO)**](https://www.who.int/news/item/18-01-2024-who-releases-ai-ethics-and-governance-guidance-for-large-multi-modal-models){target=_blank} has released AI Ethics and governance guidelines for large multi-modal models 
 
 [**EU AI Act**](https://artificialintelligenceact.eu/) is comprehensive legislation that includes oversight of AI with a six year (2031) implementation timeline, which is already underway.
