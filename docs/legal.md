@@ -69,9 +69,11 @@ Brynjolfsson argues that the real potential of AI lies in its ability to augment
      
         The risks of the Turing Trap are increased by the misaligned incentives of technologists, businesspeople, and policy-makers. 
     
-    ??? Danger ":point_up: even this text was written by an :simple-googlegemini: AI!"
-     
-            Google began using ["AI Overview"](https://www.google.com/search?q=what+is+the+turing+trap&oq=what+is+the+turing+trap&gs_lcrp){target=_blank} in its popular search engine for subscribing users in 2024. 
+    ??? Danger ":point_up: this text was written by :simple-googlegemini: AI and then reviewed by a human. Do you still trust it?"
+
+        [Researchers have found](https://doi.org/10.1016/j.obhdp.2025.104405){target=_blank} disclosing the use of AI makes people [trust you less](https://theconversation.com/being-honest-about-using-ai-at-work-makes-people-trust-you-less-research-finds-253590){target=_blank}.
+
+
  
 ## Ethical AI
 
@@ -122,7 +124,10 @@ In response to the rapid rise of generative AI, specifically GPTs, new agreement
 
     [REMOVING BARRIERS TO AMERICAN LEADERSHIP IN ARTIFICIAL INTELLIGENCE, January 23, 2025](https://www.whitehouse.gov/presidential-actions/2025/01/removing-barriers-to-american-leadership-in-artificial-intelligence/){target=_blank}
 
-    * [Fact Sheet: Eliminating Barriers for Federal Artificial Intelligence Use and Procurement, April 7, 2025](https://www.whitehouse.gov/fact-sheets/2025/04/fact-sheet-eliminating-barriers-for-federal-artificial-intelligence-use-and-procurement/)
+    * [OMB Accelerating Federal Use of AI through Innovation, Governance, and Public Trust](https://www.whitehouse.gov/wp-content/uploads/2025/02/M-25-21-Accelerating-Federal-Use-of-AI-through-Innovation-Governance-and-Public-Trust.pdf){target=_blank}
+
+    * [Fact Sheet: Eliminating Barriers for Federal Artificial Intelligence Use and Procurement, April 7, 2025](https://www.whitehouse.gov/fact-sheets/2025/04/fact-sheet-eliminating-barriers-for-federal-artificial-intelligence-use-and-procurement/){target=_blank}
+
 
     [ADVANCING ARTIFICIAL INTELLIGENCE EDUCATION FOR AMERICAN YOUTH](https://www.whitehouse.gov/presidential-actions/2025/04/advancing-artificial-intelligence-education-for-american-youth/){target=_blank}
 

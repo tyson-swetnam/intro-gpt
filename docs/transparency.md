@@ -16,11 +16,9 @@ Transparency is a cornerstone of developing trust, specifically when AI is invol
 
     * [UNESCO's "Transparency and Explainability"](https://www.unesco.org/en/legal-affairs/recommendation-ethics-artificial-intelligence#:~:text=The%20transparency%20and%20explainability%20of,liability%20regimes%20to%20work%20effectively){target=_blank} is a core ethical principle, deeming it essential for the ethical deployment and trustworthy adoption of XAI technologies.
 
-??? Danger "Black Boxes :material-box-shadow:"
-
-    Many AI models are based on complex architectures that operate as "black boxes" meaning that their internal decision space is opaque or not comprehensible by human observers. This lack of comprehension results in acountability problems, specifically for their use in applications like health care or medical decisions.
-
 ## Establishing Accountability
+
+[**Coalition for Health AI (CHAI)**](https://chai.org/){target=_blank} advances the responsible development, deployment, and oversight of AI in healthcare
 
 [**NIST AI Risk Management Framework (AI RMF)**](https://www.nist.gov/itl/ai-risk-management-framework){target=_blank} has developed a framework to better manage risks to individuals, organizations, and society associated with AI.
 
@@ -41,3 +39,18 @@ Transparency is a cornerstone of developing trust, specifically when AI is invol
 **Record-keeping / Logs** - traceability and auditability require detailed records of the AI system's operation and user actions. Audit rails provide invaluable resources for incident investigation, understanding system responses, and demonstrating compliance. 
 
 ## Transparency
+
+??? Danger "Black Box Problem :material-box-shadow:"
+
+    Many AI models are based on complex architectures that operate as "black boxes" meaning that their internal decision space is opaque or not comprehensible by human observers. This lack of comprehension results in acountability problems, specifically for their use in applications like health care or medical decisions.
+
+Strategies for mitigating risk and cultivating responsible, transparent, and explainable AI
+
+* Promoting data diversity and bias mitigation
+
+* Strengthening data security and privacy-preserving AI
+
+* Fostering human-in-the-loop approaches w/ continuous oversight
+
+* Enhancing Transparency and XAI
+

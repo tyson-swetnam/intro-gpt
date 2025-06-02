@@ -56,7 +56,7 @@ nav:
     - Transparency: transparency.md
   - Tutorials:
     - Public Health: tutorials/publichealth/casestudy.md
-    - Map making: tutorials/publichealth/qgis.md
+    - Map making: tutorials/publichealth/gis.md
 # Configuration
 
 theme:

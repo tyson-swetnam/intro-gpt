@@ -2,12 +2,6 @@
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 
-## [:material-scale-balance: Ethical and Legal Considerations](legal.md)
-
-## [:material-mirror: Transparency & Accountability](transparency.md)
-
-## [:simple-weightsandbiases: Bias & Discrimination](bias.md)
-
 ## History
 
 In 1956 a small group of scientists gathered at [Dartmouth](https://home.dartmouth.edu/about/artificial-intelligence-ai-coined-dartmouth){target=_blank} for a [Summer Research Project on Artificial Intelligence](https://spectrum.ieee.org/dartmouth-ai-workshop){target=_blank}. 
@@ -27,37 +21,11 @@ Over the next 70 years, Artificial Intelligence persisted mainly in [the minds o
 
 As consumers of GPTs and other AI platforms, we must consider in what ways can we use AI both effectively, and ethically.
 
-**When can you use a GPT for research and education?**
+## [:material-scale-balance: Ethical and Legal Considerations](legal.md)
 
-``` mermaid
-graph TB
-  A((Start)) --> B("Does it matter if the outputs are true?");
-  B -->| No | F("Safe to use GPT");
-  B -->| Yes | C("Do you have the ability to verify output truth and accuracy?");
-  C -->| Yes | D("Understand legal and moral responsibility of your errors?");
-  C -->| No | E("Unsafe to use GPT");
-  D -->| Yes | F("Safe to use GPT");
-  D -->| No | E("Unsafe to use GPT");
+## [:material-mirror: Transparency & Accountability](transparency.md)
 
-  style A fill:#2ECC71,stroke:#fff,stroke-width:2px,color:#fff
-  style B fill:#F7DC6F,stroke:#fff,stroke-width:2px,color:#000
-  style C fill:#F7DC6F,stroke:#fff,stroke-width:2px,color:#000
-  style D fill:#F7DC6F,stroke:#fff,stroke-width:2px,color:#000
-  style E fill:#C0392B,stroke:#fff,stroke-width:2px,color:#fff
-  style F fill:#2ECC71,stroke:#fff,stroke-width:2px,color:#fff
-```
-
-Figure credit: :fontawesome-brands-creative-commons-by: [ChatGPT and Artificial Intelligence in Education, UNESCO 2023 :fontawesome-regular-file-pdf:](https://www.iesalc.unesco.org/wp-content/uploads/2023/04/ChatGPT-and-Artificial-Intelligence-in-higher-education-Quick-Start-guide_EN_FINAL.pdf){target=_blank}
-
-</br></br>
-
-!!! Danger "The :ox: :poop: Bullshit Machines"
-
-    Professors Carl T. Bergstrom and Jevin D. West teach a course at University of Washington titled "Calling Bullshit", they have written an e-book on GPTs called:
-
-    ["Modern-Day Oracles or Bullshit Machines?"](https://thebullshitmachines.com/table-of-contents/index.html){target=_blanks}
-
-    Their website provides online lesson vignettes and materials for instructors.
+## [:simple-weightsandbiases: Bias & Discrimination](bias.md)
 
 
 ## Assessment

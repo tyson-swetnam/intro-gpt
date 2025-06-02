@@ -118,3 +118,4 @@ flowchart LR
 * **Your Tools:** Think about the applications you use daily. How could MCP enhance your workflow with them if an AI could understand and interact with their context?
 
 This workshop provides a foundational understanding of Model Context Protocol. As AI continues to weave itself into the fabric of our digital tools, protocols like MCP will be instrumental in shaping a more intelligent, responsive, and collaborative future.
+
