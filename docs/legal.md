@@ -46,8 +46,6 @@ The **Turing Trap** is a term coined by Stanford University professor [Erik Bryn
 Brynjolfsson argues that the real potential of AI lies in its ability to augment human abilities, rather than replacing them. He suggests that we should work on challenges that are easy for machines and hard for humans, rather than the other way around. 
     
 !!! Warning "The Turing Trap"
-
-   
     
     **Automation can replace humans**
     
@@ -84,6 +82,10 @@ In "A Unified Framework of Five Principles for AI in Society" [(Floridi & Cowls 
 | Beneficiance | Non-Maleficence | Autonomy | Justice | Explicability |
 |--------------|-----------------|----------|---------|---------------|
 | Promoting Well-Being, Preserving Dignity, and Sustaining the Planet | Privacy, Security and ‘Capability Caution’ | The Power to Decide (to Decide) | Promoting Prosperity, Preserving Solidarity, Avoiding Unfairness | Enabling the Other Principles through Intelligibility and Accountability |  Core Values & Guiding Principles
+
+[Poli et al (2025) Unraveling the Ethical Conundrum of Artificial Intelligence: A Synthesis of Literature and Case Studies](https://link.springer.com/article/10.1007/s41133-024-00077-5){target=_blank}
+
+[Hagendorff (2020) The Ethics of AI Ethics](https://doi.org/10.1007/s11023-020-09517-8){target=_blank}
 
 ## International Agreements on AI
 
