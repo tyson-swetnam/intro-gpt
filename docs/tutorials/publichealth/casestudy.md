@@ -16,6 +16,14 @@ Robust AI infrastructure to allow for more seamless integration into public heal
 
 ## Case Studies end Examples
 
+#### Awesome Lists
+
+[![Awesome](https://awesome.re/badge.svg)](https://github.com/sindresorhus/awesome?tab=readme-ov-file#health-and-social-science){target=_blank}
+
+[ Awesome Healthcare](https://github.com/kakoni/awesome-healthcare#readme){target=_blank}
+
+[ Awesome Healthcare Datasets](https://github.com/geniusrise/awesome-healthcare-datasets){target=_blank}
+
 ### Diagnostics
 
 AI has great promise for enhancing diagnostic capabilities, but have exhibited [biases on race and ethnicity](https://www.nytimes.com/2021/03/15/technology/artificial-intelligence-google-bias.html){target=_blank}. There are calls to address these biases in big data and AI for health care by taking an [open science approach](https://pmc.ncbi.nlm.nih.gov/articles/PMC8515002/){target=_blank}
@@ -23,7 +31,6 @@ AI has great promise for enhancing diagnostic capabilities, but have exhibited [
 * AI-enabled pulse oximeters overstate blood oxygen saturation in individuals with darker skin, [exacerbating racial bias](https://www.aclu.org/news/privacy-technology/algorithms-in-health-care-may-worsen-medical-racism){target=_blank}
 
 * AI techniques for detecting skin cancer have lower accuracy on dark skin.
-
 
 ### Disease Surveillance & Prediction
 
