@@ -10,65 +10,77 @@
     
     Image Credit: [Yang et al. :simple-arxiv:](https://arxiv.org/abs/2304.13712){target=_blank} (While this image depicts the state of LLMs in 2023, it effectively illustrates the foundational models and their evolution)
 
-## View the [:octicons-trophy-24: HuggingFace :simple-huggingface: Arena LLM Leaderboard](https://huggingface.co/spaces/lmarena-ai/chatbot-arena-leaderboard){target=_blank}
+## View the [:octicons-trophy-24: HuggingFace :simple-huggingface: Arena LLM Leaderboard](https://lmarena.ai/leaderboard){target=_blank}
 
 <iframe
-	src="https://lmarena-ai-chatbot-arena-leaderboard.hf.space"
+	src="https://lmarena.ai/leaderboard"
 	frameborder="0"
 	width="850"
 	height="450"
 ></iframe>
 
-## Table: Prices of Services (last checked 12/2024)
+## Table: Prices of Services (last checked 06/2025)
 
 | **LLM Service**  | **Plan** | **Price (per month)** | **Details**  |
 | :--------------- | :------- | :-------------------- | :----------- |
-| [**ChatGPT**](https://chat.openai.com/auth/login){target=_blank} | Free | $0 | Access to GPT-3.5 model. Limited availability during peak times. |
-| | Plus | $20   | Access to o1, GPT-4, priority access, faster responses. 50 msgs/3hrs on GPT-4, more on GPT-3.5 |
-| | Pro | $200 | Access to o1, GPT-4, higher priority  access, faster responses. | |
-| [**ChatGPT Enterprise**](https://openai.com/enterprise){target=_blank} | Enterprise | Contact Sales  | Enhanced security, privacy, admin controls, and higher usage limits. Minimum 150 users |
-| [**OpenAI Platform API**](https://platform.openai.com/signup){target=_blank} | Pay-As-You-Go | Varies | **o1:** $15.00/1M input tokens <br> **GPT-4 Turbo:** $0.01/1K input tokens, $0.03/1K output tokens. <br> **GPT-4:** $0.03/1K input, $0.06/1K output (8K context), $0.06/1k input, $0.12/1K output (32K) <br> **GPT-3.5 Turbo:** $0.0005/1K input, $0.0015/1K output |
-| [**Google Gemini**](https://gemini.google.com/){target=_blank} | Free | Free | Access to Gemini Pro. Limited availability. |
-| | Google One AI Premium | $19.99  | Access to Gemini Advanced, 2TB storage, and other Google One benefits. |
-| | Gemini Education | $18 | Access to Gemini Advanced |
-| | Gemini Education Plus | $27 | Access to Gemini Advanced | 
-| | Notebook LM | Part of Gemini subscription | Access to Gemini Advanced |
-| [**Vertex AI Gemini API**](https://cloud.google.com/vertex-ai/docs/generative-ai/pricing){target=_blank} | Pay-As-You-Go | Varies | **Gemini 1.0 Pro:** $0.00025/1K input characters, $0.0005/1K output characters, $0.002/image input. <br> **Gemini 1.5 Pro:** $0.00125/1K input characters, $0.00375/1K output characters. |
-| [**Grok by xAI**](https://grok.x.ai/){target=_blank} | Basic (Via X Premium)| $8 | Access to Grok via X Premium subscription, also includes ad-free access to X.|
-| | Premium+ (Via X Premium+) | $16 | Includes all Basic features, plus largest reply boost and access to full suite of X Premium tools. |
-| [**Midjourney**](https://www.midjourney.com/account/){target=_blank} | Basic | $10 | ~200 image generations/month (3.3 hrs fast GPU time). |
-| | Standard | $30 | 15 hrs fast GPU time/month, unlimited relaxed GPU time. |
-| | Pro | $60 | 30 hrs fast GPU time/month, unlimited relaxed GPU time, stealth mode. |
-| | Mega | $120 | 60 hrs fast GPU time/month, unlimited relaxed GPU time, stealth mode. |
-| [**DALL·E 3**](https://openai.com/dall-e-3){target=_blank} | Via ChatGPT Plus  | Included in ChatGPT Plus   | Available for image generation within ChatGPT Plus.  |
-| [**DALL-E API**](https://openai.com/dall-e-3){target=_blank} | Pay-as-you-go | Varies | **DALL-E 3:** Standard quality $0.040/image, HD quality $0.080/image. <br> **DALL-E 2:** $0.020/image (1024x1024), $0.018/image (512x512), $0.016/image (256x256). |
-| [**OpenAI Sora**](https://sora.com/onboarding){target=_blank} | Research Preview | Not yet released |  Not yet available to the public. Currently in a red teaming phase. |
-| [**Anthropic Claude**](https://www.anthropic.com/pricing){target=_blank} | Claude 3 Haiku | $0.25/1K input, $1.25/1K output | Entry-level model with 200K context window. |
-| | Claude 3 Sonnet | $3/1K input, $15/1K output  | Mid-tier model with enhanced capabilities, 200K context window. |
-| | Claude 3 Opus | $15/1K input, $75/1K output | Advanced model comparable to GPT-4, 200K context window. |
-| [**Mistral AI**](https://mistral.ai/technology/#pricing){target=_blank} | Mistral Small | $2/1M input, $6/1M output | Suitable for lightweight tasks. |
-|  | Mistral Medium | $2.7/1M input, $8.1/1M output | Balanced performance for general use. |
-| | Mistral Large | $8/1M input, $24/1M output | High-performance model for complex tasks. |
-| [**Microsoft Copilot**](https://copilot.microsoft.com/){target=_blank} | Free | Free | Access to basic Copilot features, web grounding, GPT-4, and DALL-E 3 |
-| | Pro | $20/user | Priority access to GPT-4 and GPT-4 Turbo, faster performance, 100 boosts/day with DALL-E 3 |
-| [**Microsoft 365 Copilot**](https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products-b){target=_blank} | Add-on | $30/user | AI-powered assistance integrated with Microsoft 365 apps. Requires a Microsoft 365 Business Standard, Business Premium, E3, or E5 license. |
-| [**GitHub Copilot**](https://github.com/features/copilot){target=_blank} | Individual | $10 | AI coding assistant for developers. |
-| | Business | $19/user | Includes team-based collaboration features. |
-| | Enterprise | $39/user | Includes organization-wide policy management and enhanced security features. |
-| [**Ollama**](https://ollama.com/download){target=_blank} | Local Install | Free | Run large language models locally. Requires a compatible GPU and technical setup. |
-| [**Meta Llama 3**](https://llama.meta.com/llama3/){target=_blank} | Open Source | Free | Open-source foundation models for research and commercial use. Requires technical setup for local hosting. |
-| [**Replit Ghostwriter**](https://replit.com/pricing){target=_blank} | Included in Replit Core | $20 | AI assistant for coding and debugging, integrated into the Replit IDE. Includes all other Replit Core features. |
-| [**Jasper AI**](https://www.jasper.ai/pricing){target=_blank} | Creator | $49 | Writing assistant with templates and AI tools for individuals.|
-| | Teams | $125 | Advanced writing, commands, and longer outputs for small teams.| | Business | Contact Sales | Custom pricing for larger organizations with advanced needs. |
-| [**Character AI**](https://beta.character.ai/){target=_blank} | c.ai+ | $9.99 | Conversational AI for entertainment and character interactions. Plus features include priority access, faster responses, and early access to new features. |
-| [**Perplexity AI**](https://www.perplexity.ai/){target=_blank} | Pro  | $20  | AI-powered search assistant with enhanced query capabilities, unlimited file uploads, and access to various models.                                  |
-| [**Amazon Bedrock**](https://aws.amazon.com/bedrock/pricing/){target=_blank} | On-Demand | Varies | Pay-as-you-go pricing for various foundation models, including those from Anthropic, Cohere, Meta, Mistral AI, and Amazon. |
-| [**Azure AI Foundry**](https://ai.azure.com/){target=_blank} | On-Demand | Varies | Pay-as-you-go pricing for various foundation models, including those from Anthropic, Meta, Mistral AI, and OpenAI |
-| [**Google Vertex AI**](https://cloud.google.com/vertex-ai){target=_blank} | On-Demand | Varies | Pay-as-you-go pricing for various foundation models, powered by Gemini with 160+ other foundation models |
-| [**You.com**](https://you.com/pro){target=_blank} | YouPro | $20 | Access to latest AI models, personalized AI with memory, advanced AI writing tools. |
-| [**Poe by Quora**](https://poe.com/){target=_blank} | Monthly | $19.99 | Access to various chatbots, including GPT-4, Claude, and others. Limited messages on some models. |
-|                                                        | Yearly | $199.99 | Annual subscription with access to all chatbots. Limited messages on some models. |
-| [**Continue.dev**](https://continue.dev/) | Open Source | Free | Open-source autopilot for software development. VS Code and JetBrains extension. Integrates with any LLM. |
+| [**Anthropic Claude**](https://www.anthropic.com/pricing){target=_blank} | Free | $0 | Access to Claude 3 Sonnet with usage limits |
+| | Pro | $20 | 5x more usage, access to Claude 3 Opus and Haiku, priority access |
+| | Team | $25/user (min 5) | Everything in Pro plus central billing, team collaboration features |
+| [**Claude API**](https://www.anthropic.com/api){target=_blank} | Pay-As-You-Go | Varies | **Claude 3.7 Sonnet:** $3/1M input, $15/1M output <br> **Claude 4 Opus:** $15/1M input, $75/1M output <br> **Claude 3.5 Haiku:** $0.25/1M input, $1.25/1M output |
+| [**Google Gemini**](https://gemini.google.com/){target=_blank} | Free | $0 | Access to Gemini Pro with usage limits |
+| | Gemini Advanced | $19.99 | Access to Gemini Ultra 1.0, 2TB storage, integration with Google Workspace |
+| | Gemini Business | $20/user | Access to Gemini in Workspace apps (Docs, Sheets, Slides, Meet) |
+| | Gemini Enterprise | $30/user | Advanced features, enhanced security, admin controls |
+| [**Vertex AI Gemini API**](https://cloud.google.com/vertex-ai/docs/generative-ai/pricing){target=_blank} | Pay-As-You-Go | Varies | **Gemini 1.5 Flash:** $0.075/1M input, $0.30/1M output <br> **Gemini 1.5 Pro:** $1.25/1M input, $5.00/1M output <br> **Gemini 2.5 Pro (128k):** $3.50/1M input, $10.50/1M output |
+| [**OpenAI ChatGPT**](https://chat.openai.com/){target=_blank} | Free | $0 | Access to GPT-4o mini with usage limits |
+| | Plus | $20 | Access to GPT-4+, DALL-E 3, advanced data analysis |
+| | Pro | $200 | Unlimited access to o1, o4-mini, GPT-4.5, and Advanced Voice |
+| | Team | $25/user | Everything in Plus with higher limits, admin console, team workspace |
+| | Enterprise | Contact Sales | Unlimited high-speed GPT-4+ models, extended context windows, enterprise security |
+| [**OpenAI API**](https://platform.openai.com/){target=_blank} | Pay-As-You-Go | Varies | **GPT-4o:** $5/1M input, $15/1M output <br> **GPT-4 Turbo:** $10/1M input, $30/1M output <br> **GPT-4:** $30/1M input, $60/1M output <br> **GPT-3.5 Turbo:** $0.50/1M input, $1.50/1M output |
+| [**Perplexity AI**](https://www.perplexity.ai/){target=_blank} | Free | $0 | Limited searches with Perplexity model |
+| | Pro | $20 | Unlimited Pro searches, file uploads, API access, choice of models (GPT-4, Claude, Gemini) |
+| | Enterprise | Contact Sales | Team management, enhanced security, SSO, dedicated support |
+| [**Microsoft Copilot**](https://copilot.microsoft.com/){target=_blank} | Free | $0 | Access to GPT-4, limited image generation with DALL-E 3 |
+| | Pro | $20/user | Priority access, faster performance, 100 boosts/day with DALL-E 3 |
+| [**Microsoft 365 Copilot**](https://www.microsoft.com/microsoft-365/copilot){target=_blank} | Business | $30/user | AI in Word, Excel, PowerPoint, Outlook, Teams. Requires M365 license |
+| [**GitHub Copilot**](https://github.com/features/copilot){target=_blank} | Individual | $10 | AI pair programming in VS Code, Visual Studio, Neovim, JetBrains |
+| | Business | $19/user | Everything in Individual plus organization management |
+| | Enterprise | $39/user | Everything in Business plus security vulnerability filtering, IP indemnity |
+| [**Mistral AI**](https://mistral.ai/){target=_blank} | La Plateforme | Varies | **Mistral 7B:** $0.25/1M tokens <br> **Mixtral 8x7B:** $0.70/1M tokens <br> **Mistral Small:** $2/1M input, $6/1M output <br> **Mistral Large:** $8/1M input, $24/1M output |
+| [**Cohere**](https://cohere.com/){target=_blank} | Free Trial | $0 | Limited API calls for testing |
+| | Production | Varies | **Command:** $1/1M input, $2/1M output <br> **Command Light:** $0.30/1M tokens <br> **Embed:** $0.10/1M tokens |
+| [**Midjourney**](https://www.midjourney.com/){target=_blank} | Basic | $10 | ~200 image generations/month |
+| | Standard | $30 | 15 hrs fast GPU time, unlimited relaxed |
+| | Pro | $60 | 30 hrs fast GPU time, stealth mode |
+| | Mega | $120 | 60 hrs fast GPU time, stealth mode |
+| [**DALL-E 3**](https://openai.com/dall-e-3){target=_blank} | Via ChatGPT Plus | Included | Image generation within ChatGPT |
+| | API | Varies | Standard: $0.040/image, HD: $0.080/image |
+| [**Stable Diffusion**](https://stability.ai/){target=_blank} | DreamStudio | $10 | 1000 credits (~5000 images) |
+| | API | Varies | $0.002 per image (512x512) |
+| [**Grok by xAI**](https://x.com/i/grok){target=_blank} | X Premium | $8 | Access via X (Twitter) Premium |
+| | X Premium+ | $16 | Priority access, higher limits |
+| [**Character AI**](https://character.ai/){target=_blank} | Free | $0 | Limited features and queue priority |
+| | c.ai+ | $9.99 | Priority access, faster responses, exclusive features |
+| [**Replicate**](https://replicate.com/){target=_blank} | Pay-As-You-Go | Varies | Run open-source models, pricing per second of compute |
+| [**Hugging Face**](https://huggingface.co/){target=_blank} | Free | $0 | Community models and datasets |
+| | Pro | $9 | Advanced features, private repos |
+| | Enterprise | Contact Sales | Dedicated support, SLAs, security features |
+| [**Amazon Bedrock**](https://aws.amazon.com/bedrock/){target=_blank} | On-Demand | Varies | Access to Claude, Llama 2, Stable Diffusion, and more |
+| [**Google Vertex AI**](https://cloud.google.com/vertex-ai){target=_blank} | On-Demand | Varies | 130+ foundation models including Gemini, Claude, Llama |
+| [**Azure AI Studio**](https://ai.azure.com/){target=_blank} | On-Demand | Varies | Access to GPT-4, Claude, Llama, Mistral, and more |
+| [**Meta Llama**](https://llama.meta.com/){target=_blank} | Open Source | Free | Llama 2 and Llama 3 models for download |
+| [**Ollama**](https://ollama.com/){target=_blank} | Local Install | Free | Run LLMs locally on your hardware |
+| [**LM Studio**](https://lmstudio.ai/){target=_blank} | Local Install | Free | Desktop app for running LLMs locally |
+| [**Jan.ai**](https://jan.ai/){target=_blank} | Local Install | Free | Open-source ChatGPT alternative, runs locally |
+| [**Continue.dev**](https://continue.dev/) | Open Source | Free | Open-source autopilot for VS Code and JetBrains |
+| [**Poe by Quora**](https://poe.com/){target=_blank} | Monthly | $19.99 | Access to various chatbots including GPT-4, Claude |
+|                                                        | Yearly | $199.99 | Annual subscription with all chatbot access |
+| [**You.com**](https://you.com/pro){target=_blank} | YouPro | $20 | Latest AI models, personalized AI with memory |
+| [**Jasper AI**](https://www.jasper.ai/pricing){target=_blank} | Creator | $49 | Writing assistant with templates |
+| | Teams | $125 | Advanced features for small teams |
+| | Business | Contact Sales | Custom pricing for organizations |
+| [**Replit AI**](https://replit.com/pricing){target=_blank} | Core | $20 | AI coding assistant integrated in Replit IDE |
 
 **Notes:**
 
@@ -84,41 +96,86 @@
    
 3.  **Poe by Quora:**  A platform that gives you access to various chatbots (like GPT-4, Claude, etc.) through a single subscription.
 
-!!! Info "Stable Diffusion Image and Video"
+!!! Info "Image and Video Generation Models"
 
-    **Stable Diffusion 3**
+    ## **Image Generation Models**
 
-    [Stable Diffusion 3](https://stability.ai/stable-diffusion-3){target=_blank} is the latest iteration of the popular open-source text-to-image model developed by [Stability AI](https://stability.ai/){target=_blank}. It builds upon the advancements of previous versions, offering improved image quality, more accurate adherence to prompts, and enhanced capabilities for generating complex scenes and details.
+    **Stable Diffusion 3.5**
 
-    Stable Diffusion models are available via [HuggingFace](https://huggingface.co/stabilityai){target=_blank}, [GitHub](https://github.com/Stability-AI/StableDiffusion3){target=_blank} and through various APIs and user interfaces.
+    [Stable Diffusion 3.5](https://stability.ai/stable-diffusion-3-5){target=_blank} is the latest iteration from [Stability AI](https://stability.ai/){target=_blank}, featuring multiple model sizes:
+    - **SD3.5 Large (8B)**: High-quality generation with advanced prompt adherence
+    - **SD3.5 Medium (2.5B)**: Balanced performance and quality
+    - **SD3.5 Large Turbo**: Optimized for speed with 4-8 step generation
 
-    Diffusion models have two modes, forward and reverse. Forward diffusion adds random noise until the image is lost. Reverse diffusion uses Markov Chains to recover data from a Gaussian distribution, thereby gradually removing noise.
+    Models are available via [HuggingFace](https://huggingface.co/stabilityai){target=_blank}, [GitHub](https://github.com/Stability-AI/StableDiffusion){target=_blank}, and various APIs.
 
-    Stable Diffusion relies upon [Latent Diffusion Model (LDM) :simple-arxiv:](https://arxiv.org/abs/2112.10752){target=_blank}
+    **FLUX Models**
 
-    **Other Notable Image Generation Models**
+    [FLUX](https://blackforestlabs.ai/){target=_blank} by Black Forest Labs (creators of Stable Diffusion) offers state-of-the-art diffusion models:
+    - **FLUX.1 [pro]**: Top-tier model for commercial use
+    - **FLUX.1 [dev]**: Open-weight model for non-commercial use
+    - **FLUX.1 [schnell]**: Fast local generation model
 
-    *   [DALL·E 3](https://openai.com/dall-e-3){target=_blank} (OpenAI) is known for its photorealistic image generation and ability to understand complex prompts. It's integrated into ChatGPT Plus and available through an API.
-    *   [Midjourney v6](https://www.midjourney.com/){target=_blank} is highly regarded for its artistic and stylized image generation. It's accessible through a Discord interface and requires a subscription.
-    *   [Imagen 2](https://deepmind.google/technologies/imagen-2/){target=_blank} (Google): Not directly accessible to the public, but notable for its photorealistic text-to-image generation capabilities.
-    *   [Adobe Firefly](https://www.adobe.com/products/firefly.html){target=_blank} is integrated into the Adobe Creative Cloud suite of applications and is geared toward enterprise creative workflows.
+    **Other Leading Image Generation Models**
 
-    **Video Generation Models**
+    *   [DALL·E 3](https://openai.com/dall-e-3){target=_blank} (OpenAI): Photorealistic generation with excellent prompt understanding, integrated into ChatGPT Plus
+    *   [Midjourney v6.1](https://www.midjourney.com/){target=_blank}: Industry-leading artistic and stylized generation via Discord
+    *   [Imagen 3](https://deepmind.google/technologies/imagen-3/){target=_blank} (Google): Advanced text-to-image with excellent photorealism, available in ImageFX
+    *   [Adobe Firefly 3](https://www.adobe.com/products/firefly.html){target=_blank}: Enterprise-focused with commercial-safe training data
+    *   [Ideogram 2.0](https://ideogram.ai/){target=_blank}: Excellent text rendering capabilities within images
+    *   [Leonardo.AI](https://leonardo.ai/){target=_blank}: Real-time canvas generation with fine-tuned models
 
-    *   [Sora](https://openai.com/sora){target=_blank} (OpenAI) has generated significant excitement for its ability to create realistic and imaginative videos from text prompts. It is currently available on a limited basis.
-    *   [Runway Gen-2](https://runwayml.com/){target=_blank} allows for text-to-video, image-to-video, and video-to-video editing. It's popular among video creators for its accessibility and range of features.
-    *   [Pika Labs](https://www.pika.art/){target=_blank} is an additional option that allows for text-to-video generation and editing.
-    *   [Stable Video Diffusion](https://stability.ai/news/introducing-stable-video-diffusion-generating-videos-from-images-with-svd-and-svd-xt){target=_blank} is an image-to-video diffusion model that allows users to generate short video clips based on a still image input.
+    ## **Video Generation Models**
 
-    **Image and Video Segmentation**
+    **Google Veo 3**
 
-    [Segment Anything (Meta)](https://segment-anything.com/){target=_blank}, [Kirillov et al. :simple-arxiv:](https://doi.org/10.48550/arXiv.2304.02643){target=_blank}, is a powerful image segmentation technology that allows you to isolate objects within images with high precision.
+    [Veo 3](https://deepmind.google/models/veo/){target=_blank} represents Google's latest advancement in video generation:
+    - Generates up to 4K resolution videos
+    - Includes voices and sound effects
+    - Improved understanding of real-world physics and human movement
+    - Better camera control and cinematic effects
+    - Available through Google Labs and VideoFX
 
-    **Emerging Trends in Image and Video Analysis**
+    **OpenAI Sora**
 
-    *   **Multimodal Integration:** Combining image/video analysis with other modalities (text, audio) for a more holistic understanding of content.
-    *   **3D Scene Generation:**  Generating 3D models and environments from images and videos.
-    *   **Real-time Analysis:**  Performing image and video analysis in real-time for applications like augmented reality and live video processing.
+    [Sora](https://openai.com/sora){target=_blank} (OpenAI) features:
+    - Up to 1-minute video generation at 1080p
+    - Advanced physics simulation and 3D consistency
+    - Available to ChatGPT Plus and Pro subscribers
+    - Turbo mode for faster generation
+
+    **Other Notable Video Generation Models**
+
+    *   [Runway Gen-3 Alpha](https://runwayml.com/){target=_blank}: Professional-grade with advanced motion control
+    *   [Pika 2.0](https://pika.art/){target=_blank}: Scene editing and sound effects generation
+    *   [Stable Video Diffusion 2](https://stability.ai/stable-video){target=_blank}: Open-source image-to-video model
+    *   [Meta Movie Gen](https://ai.meta.com/research/movie-gen/){target=_blank}: High-quality video with synchronized audio (research preview)
+    *   [Kling 1.5](https://klingai.com/){target=_blank}: Chinese model with impressive motion quality
+    *   [HeyGen](https://www.heygen.com/){target=_blank}: Specialized in AI avatar video generation
+    *   [Synthesia](https://www.synthesia.io/){target=_blank}: Enterprise-focused avatar video platform
+
+    ## **Advanced Capabilities**
+
+    **Image and Video Understanding**
+
+    *   [Segment Anything Model 2 (SAM 2)](https://segment-anything.com/){target=_blank} (Meta): Real-time segmentation for images and videos
+    *   [CLIP](https://openai.com/research/clip){target=_blank} (OpenAI): Vision-language understanding
+    *   [LLaVA](https://llava-vl.github.io/){target=_blank}: Open-source visual instruction tuning
+
+    **3D Generation**
+
+    *   [DreamGaussian](https://dreamgaussian.github.io/){target=_blank}: Text/image to 3D in minutes
+    *   [Meshy](https://www.meshy.ai/){target=_blank}: Text to 3D mesh generation
+    *   [Luma Genie](https://lumalabs.ai/genie){target=_blank}: Text to 3D model generation
+
+    **Emerging Trends**
+
+    *   **Consistency Models**: Faster generation with fewer steps
+    *   **ControlNet Integration**: Precise control over generation
+    *   **Real-time Generation**: Sub-second image creation
+    *   **Multimodal Models**: Unified image, video, and audio generation
+    *   **Neural Radiance Fields (NeRFs)**: 3D scene representation
+    *   **Diffusion Transformers (DiT)**: Next-generation architectures
 
 !!! Info "Glossary"
 
