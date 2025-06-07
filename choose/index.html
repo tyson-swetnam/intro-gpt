@@ -1,0 +1,2544 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentation for Prompt Engineering 101 Workshop">
+      
+      
+        <meta name="author" content="University of Arizona">
+      
+      
+        <link rel="canonical" href="https://tyson-swetnam.github.io/intro-gpt/choose/">
+      
+      
+        <link rel="prev" href="../vibe/">
+      
+      
+        <link rel="next" href="../education/">
+      
+      
+      <link rel="icon" href="../assets/ua.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>Choose a Platform - GPT 101</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,700,700i%7CRegular:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Montserrat";--md-code-font:"Regular"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../chatbot_widget.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-NYETZFD8DN"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-NYETZFD8DN",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-NYETZFD8DN",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#choosing-the-right-gpt" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="GPT 101" class="md-header__button md-logo" aria-label="GPT 101" data-md-component="logo">
+      
+  <img src="../assets/ua.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            GPT 101
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Choose a Platform
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="home" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/tyson-swetnam/intro-gpt" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    intro-gpt
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href=".." class="md-tabs__link">
+          
+  
+  
+    
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../chatgpt/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Setup
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../prompts/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Prompt Engineering
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../education/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Education
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../research/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Research
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../ethics/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Ethics
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../tutorials/publichealth/casestudy/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Tutorials
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="GPT 101" class="md-nav__button md-logo" aria-label="GPT 101" data-md-component="logo">
+      
+  <img src="../assets/ua.png" alt="logo">
+
+    </a>
+    GPT 101
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/tyson-swetnam/intro-gpt" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    intro-gpt
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href=".." class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Home
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../agenda/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Agenda
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ai_landscape/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Landscape
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Setup
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Setup
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chatgpt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ChatGPT
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../microsoft/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Microsoft Copilot
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gemini/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Gemini
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../claude/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Claude
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../copilot/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    GitHub Copilot
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Prompt Engineering
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Prompt Engineering
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../prompts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Writing Prompts
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../daily-productivity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    General Productivity
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../code/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Code Interpretation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vibe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Vibe Coding
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Choose a Platform
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Choose a Platform
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#choosing-the-right-gpt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Choosing the right GPT
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Choosing the right GPT">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#best-for-chat" class="md-nav__link">
+    <span class="md-ellipsis">
+      Best for Chat
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#best-for-research" class="md-nav__link">
+    <span class="md-ellipsis">
+      Best for Research
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#best-for-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Best for Code
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#best-for-imagevideo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Best for Image/Video
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Education
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Education
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../education/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../teaching/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Teaching with AI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutoring/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AI Tutoring
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../admissions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Admissions & Recruiting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Research
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Research
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../research/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../agentic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Agentic AI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../jupyter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Jupyter AI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mcp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    MCP
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooklm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    NotebookLM
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ollama/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ollama
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rag/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    RAG
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../execution/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Code Execution
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../openai/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    OpenAI API
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../huggingface/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    HuggingFace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gradio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Gradio
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../posit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Posit (RStudio)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../text_mining/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Text Mining
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Ethics
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Ethics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ethics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Bias
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../legal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Legal
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../transparency/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Transparency
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Tutorials
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Tutorials
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorials/publichealth/casestudy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Public Health
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorials/publichealth/gis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Map making
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#choosing-the-right-gpt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Choosing the right GPT
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Choosing the right GPT">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#best-for-chat" class="md-nav__link">
+    <span class="md-ellipsis">
+      Best for Chat
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#best-for-research" class="md-nav__link">
+    <span class="md-ellipsis">
+      Best for Research
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#best-for-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Best for Code
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#best-for-imagevideo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Best for Image/Video
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+  <h1>Choose a Platform</h1>
+
+<h2 id="choosing-the-right-gpt">Choosing the right GPT<a class="headerlink" href="#choosing-the-right-gpt" title="Permanent link">&para;</a></h2>
+<p>Below are tables that rank the most popular GPTs by popularity from most to least, within each activity type for Chat, Research, Code, and Image/Videos.</p>
+<h3 id="best-for-chat">Best for Chat<a class="headerlink" href="#best-for-chat" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th><strong>Platform</strong></th>
+<th><strong>Strength</strong></th>
+<th><strong>Weakness</strong></th>
+<th><strong>Cost</strong></th>
+<th><strong>Interface</strong></th>
+<th><strong>Docs</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>ChatGPT (OpenAI)</strong></td>
+<td>- Strong reasoning  <br/>- Integrates with other apps (plugins) <br/>- Multi-turn conversation</td>
+<td>- Limited file uploads (depending on plan/plugins) <br/>- Occasionally behind newest research releases</td>
+<td><strong>Free</strong>, $20/mo (Plus), $42+/mo (Enterprise)</td>
+<td><a href="https://chat.openai.com/" target="_blank"><strong>ChatGPT</strong></a></td>
+<td><a href="https://platform.openai.com/docs/" target="_blank"><strong>OpenAI Docs</strong></a></td>
+</tr>
+<tr>
+<td><strong>Claude 4 (Anthropic)</strong></td>
+<td>- Fast, coherent dialogue <br/>- Good at creative text generation</td>
+<td>- Sometimes less accurate with fact-based queries <br/>- Limited third-party integrations</td>
+<td><strong>Free</strong>, $10–$50+/mo (various tiers)</td>
+<td><a href="https://www.anthropic.com/claude-3-family" target="_blank"><strong>Claude Chat</strong></a></td>
+<td><a href="https://docs.anthropic.com/en/docs/welcome" target="_blank"><strong>Anthropic Docs</strong></a></td>
+</tr>
+<tr>
+<td><strong>Gemini (Google)</strong></td>
+<td>- Multimodal (images + text) <br/>- Strong search integration (Google)</td>
+<td>- Some features only in Beta <br/>- Pricing unclear in early versions</td>
+<td><strong>Free</strong>, Pro Tiers TBA</td>
+<td><a href="https://ai.google.dev/models/gemini" target="_blank"><strong>Gemini</strong></a></td>
+<td><a href="https://ai.google.dev/gemini-api/docs" target="_blank"><strong>Gemini Docs</strong></a></td>
+</tr>
+<tr>
+<td><strong>DeepSeek (Open Source)</strong></td>
+<td>- Focuses on chat + search integration <br/>- Local &amp; open source solutions</td>
+<td>- Smaller dev community <br/>- May require self-hosting</td>
+<td><strong>Free</strong> (Open Source)</td>
+<td><a href="https://chat.deepseek.com/" target="_blank"><strong>DeepSeek Chat</strong></a></td>
+<td><a href="https://api-docs.deepseek.com/" target="_blank"><strong>DeepSeek Docs</strong></a></td>
+</tr>
+<tr>
+<td><strong>Microsoft 365 Copilot</strong></td>
+<td>- Built on ChatGPT plus Microsoft Graph <br/>- Deep MS Office/Outlook integration</td>
+<td>- Typically behind latest ChatGPT features <br/>- Enterprise pricing can be high</td>
+<td>$30/mo (add-on for Microsoft 365 E3/E5)</td>
+<td><a href="https://copilot.microsoft.com/" target="_blank"><strong>Copilot</strong></a></td>
+<td><a href="https://www.microsoft.com/en-us/ai" target="_blank"><strong>Copilot Docs</strong></a></td>
+</tr>
+<tr>
+<td><strong>Grok (xAI)</strong></td>
+<td>- Multimodal: text, images, basic computer vision <br/>- Emerging technology</td>
+<td>- Currently in limited release <br/>- Ecosystem still growing</td>
+<td><strong>Free</strong>, future subscription TBA</td>
+<td><a href="https://x.ai/grok" target="_blank"><strong>Grok</strong></a></td>
+<td><a href="https://docs.x.ai/docs/overview" target="_blank"><strong>xAI Docs</strong></a></td>
+</tr>
+<tr>
+<td><strong>HuggingFace Chat</strong></td>
+<td>- Large variety of community-contributed models <br/>- Multimodal options</td>
+<td>- Quality varies by model <br/>- Some advanced features behind paid tiers or require GPU credits</td>
+<td><strong>Free</strong>, Pay-as-you-go GPU</td>
+<td><a href="https://huggingface.co/chat/" target="_blank"><strong>HF Chat</strong></a></td>
+<td><a href="https://huggingface.co/docs" target="_blank"><strong>HF Docs</strong></a></td>
+</tr>
+<tr>
+<td><strong>Jasper</strong></td>
+<td>- Focus on marketing copy, blog posts <br/>- Easy content workflows</td>
+<td>- Less technical depth <br/>- Pricier than some for similar text output</td>
+<td>Starting at $39/mo</td>
+<td><a href="https://www.jasper.ai/" target="_blank"><strong>Jasper Chat</strong></a></td>
+<td><a href="https://developers.jasper.ai/docs/getting-started-1" target="_blank"><strong>Jasper Docs</strong></a></td>
+</tr>
+<tr>
+<td><strong>Perplexity</strong></td>
+<td>- Combined chat + search <br/>- Large reference library</td>
+<td>- Subscription required for advanced features <br/>- Not as flexible as GPT-4 plugins</td>
+<td><strong>Free</strong>, Subscription tier $20+/mo</td>
+<td><a href="https://www.perplexity.ai/" target="_blank"><strong>Perplexity Chat</strong></a></td>
+<td><a href="https://docs.perplexity.ai/home" target="_blank"><strong>Perplexity Docs</strong></a></td>
+</tr>
+<tr>
+<td><strong>NotebookLM (Google)</strong></td>
+<td>- RAG (Retrieval-Augmented Generation) <br/>- Integrates with Google Drive</td>
+<td>- Still in beta <br/>- Occasional slow responses</td>
+<td><strong>Free</strong>, future subscription TBA</td>
+<td><a href="https://notebooklm.google.com/" target="_blank"><strong>NotebookLM</strong></a></td>
+<td><a href="https://support.google.com/notebooklm?sjid=1094920587730113510-NC#topic=14287611" target="_blank"><strong>NotebookLM Docs</strong></a></td>
+</tr>
+<tr>
+<td><strong>Vicuna 13B</strong></td>
+<td>- Open-source model fine-tuned from LLaMA <br/>- Strong for casual chat</td>
+<td>- Limited knowledge, smaller than GPT-4 <br/>- Quality can depend on hosting</td>
+<td><strong>Free</strong> (self-host) or free demos</td>
+<td><a href="https://chat.lmsys.org/" target="_blank"><strong>Vicuna Demo</strong></a></td>
+<td><a href="https://github.com/lm-sys/FastChat" target="_blank"><strong>Vicuna GitHub</strong></a></td>
+</tr>
+<tr>
+<td><strong>Pi (Inflection AI)</strong></td>
+<td>- Empathetic style, personal conversation <br/>- Smooth chat experience</td>
+<td>- Less robust for complex tasks <br/>- No coding support</td>
+<td><strong>Free</strong> (personal use)</td>
+<td><a href="https://pi.ai" target="_blank"><strong>Pi</strong></a></td>
+<td>N/A</td>
+</tr>
+<tr>
+<td><strong>Poe (Quora)</strong></td>
+<td>- Aggregates multiple models (GPT-4, Claude, etc.) <br/>- Single subscription for multiple AI bots</td>
+<td>- Limited advanced features beyond aggregation <br/>- Usage caps on free tier</td>
+<td>$19.99/mo</td>
+<td><a href="https://poe.com/" target="_blank"><strong>Poe</strong></a></td>
+<td><a href="https://help.poe.com/" target="_blank"><strong>Poe Docs</strong></a></td>
+</tr>
+<tr>
+<td><strong>Mistral AI</strong></td>
+<td>- Open-source European LLMs <br/>- Multilingual focus, smaller model sizes</td>
+<td>- Newer offering <br/>- Some advanced features still in dev</td>
+<td><strong>Free</strong> (open source) or enterprise</td>
+<td><a href="https://mistral.ai/" target="_blank"><strong>Mistral</strong></a></td>
+<td><a href="https://docs.mistral.ai/" target="_blank"><strong>Mistral Docs</strong></a></td>
+</tr>
+<tr>
+<td><strong>Latimer</strong></td>
+<td>- Focus on diverse voices <br/>- Inclusive perspective</td>
+<td>- Smaller user base <br/>- Specialized training set</td>
+<td><strong>Free</strong> (basic) or subscription tiers</td>
+<td><a href="https://app.latimer.ai/" target="_blank"><strong>Latimer</strong></a></td>
+<td>N/A</td>
+</tr>
+<tr>
+<td><strong>Meta AI (Llama)</strong></td>
+<td>- Open source for research/commercial <br/>- Large dev community</td>
+<td>- May require significant GPU resources <br/>- Some versions less robust vs. GPT-4</td>
+<td><strong>Free</strong> (self-host) or enterprise</td>
+<td><a href="https://www.llama.com/" target="_blank"><strong>Llama</strong></a></td>
+<td><a href="https://github.com/facebookresearch/llama" target="_blank"><strong>Meta GitHub</strong></a></td>
+</tr>
+<tr>
+<td><strong>Apple Intelligence</strong></td>
+<td>- Deep Siri/iOS integration <br/>- Privacy-oriented design</td>
+<td>- Limited on non-Apple devices <br/>- Closed ecosystem</td>
+<td>Included on Apple devices</td>
+<td><a href="https://www.apple.com/apple-intelligence/" target="_blank"><strong>Apple Intelligence</strong></a></td>
+<td>N/A</td>
+</tr>
+<tr>
+<td><strong>Amazon Titan</strong></td>
+<td>- Part of AWS ecosystem <br/>- Integrates with Amazon Bedrock</td>
+<td>- Primarily enterprise usage <br/>- Not widely accessible for individuals</td>
+<td>Pay-per-use on Bedrock</td>
+<td><a href="https://aws.amazon.com/bedrock/titan/" target="_blank"><strong>Titan</strong></a></td>
+<td><a href="https://docs.aws.amazon.com/bedrock/index.html" target="_blank"><strong>AWS Docs</strong></a></td>
+</tr>
+<tr>
+<td><strong>Amazon Bedrock</strong></td>
+<td>- Unified API for multiple foundation models <br/>- Enterprise security &amp; scaling</td>
+<td>- Must have AWS account <br/>- Cost can add up for high usage</td>
+<td>Pay-per-use (AWS)</td>
+<td><a href="https://aws.amazon.com/bedrock/" target="_blank"><strong>Bedrock</strong></a></td>
+<td><a href="https://docs.aws.amazon.com/bedrock/index.html" target="_blank"><strong>Bedrock Docs</strong></a></td>
+</tr>
+<tr>
+<td><strong>Azure OpenAI Service</strong></td>
+<td>- Secure enterprise environment for GPT <br/>- Tight Azure cloud integration</td>
+<td>- Requires Azure subscription <br/>- Usage cost can be high</td>
+<td>Pay-per-use (Azure)</td>
+<td><a href="https://azure.microsoft.com/en-us/products/ai-services/openai-service" target="_blank"><strong>Azure OpenAI</strong></a></td>
+<td><a href="https://learn.microsoft.com/en-us/azure/cognitive-services/openai/" target="_blank"><strong>Azure Docs</strong></a></td>
+</tr>
+<tr>
+<td><strong>Merlin AI</strong></td>
+<td>- Multifunction: text, image, code <br/>- Summaries, chat, quiz creation</td>
+<td>- Some features behind paywall <br/>- Web-based aggregator style</td>
+<td>Free plan, paid tiers</td>
+<td><a href="https://www.getmerlin.in/" target="_blank"><strong>Merlin</strong></a></td>
+<td>N/A</td>
+</tr>
+<tr>
+<td><strong>Starling-7B</strong></td>
+<td>- Uses AI feedback (RLHF) <br/>- Open-source from UC Berkeley group</td>
+<td>- Smaller model <br/>- Less context capacity vs. GPT-4</td>
+<td><strong>Free</strong> (open source)</td>
+<td><a href="https://starling.cs.berkeley.edu/" target="_blank"><strong>Starling</strong></a></td>
+<td><a href="https://huggingface.co/berkeley-nest" target="_blank"><strong>Starling GitHub</strong></a></td>
+</tr>
+<tr>
+<td><strong>Amplify GenAI</strong></td>
+<td>- Open source platform (Vanderbilt) <br/>- Connect various model providers</td>
+<td>- Requires AWS + model usage fees <br/>- Self-deployment for institutions</td>
+<td>AWS usage + model costs</td>
+<td><a href="https://www.amplifygenai.org/" target="_blank"><strong>Amplify GenAI</strong></a></td>
+<td>N/A</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="best-for-research">Best for Research<a class="headerlink" href="#best-for-research" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th><strong>Platform</strong></th>
+<th><strong>Strength</strong></th>
+<th><strong>Weakness</strong></th>
+<th><strong>Cost</strong></th>
+<th><strong>Interface</strong></th>
+<th><strong>Docs</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Perplexity</strong></td>
+<td>- Large archive, direct references <br/>- Web search integration</td>
+<td>- Must subscribe for advanced features <br/>- Not as “creative” as GPT-like models</td>
+<td><strong>Free</strong>, Subscription: $20+/mo</td>
+<td><a href="https://www.perplexity.ai/" target="_blank"><strong>Perplexity Chat</strong></a></td>
+<td><a href="https://docs.perplexity.ai/home" target="_blank"><strong>Perplexity Docs</strong></a></td>
+</tr>
+<tr>
+<td><strong>ChatGPT 4o</strong></td>
+<td>- Strong general-purpose reasoning <br/>- Code, language, knowledge tasks</td>
+<td>- Subscription needed</td>
+<td>$20/mo (Plus)</td>
+<td><a href="https://chatgpt.com" target="_blank"><strong>ChatGPT Chat</strong></a></td>
+<td><a href="https://platform.openai.com/docs/" target="_blank"><strong>OpenAI Docs</strong></a></td>
+</tr>
+<tr>
+<td><strong>Gemini 1.5 Pro (Deep Research mode)</strong></td>
+<td>- In-depth chain-of-thought <br/>- Multimodal research capabilities</td>
+<td>- Early product, can be slow <br/>- Pricing not fully public</td>
+<td><strong>Free</strong> (Beta), Pro Tiers TBA</td>
+<td><a href="https://ai.google.dev/models/gemini" target="_blank"><strong>Gemini</strong></a></td>
+<td><a href="https://ai.google.dev/gemini-api/docs" target="_blank"><strong>Gemini Docs</strong></a></td>
+</tr>
+<tr>
+<td><strong>ScholarAI</strong></td>
+<td>- Large academic archive integration <br/>- Focus on literature reviews</td>
+<td>- Limited reasoning beyond domain texts <br/>- Requires GPT-4 or Plus-based backend</td>
+<td>$20–$40/mo (addon to GPT-4)</td>
+<td><em>(No dedicated UI link; typically custom UI)</em></td>
+<td><em>(Depends on GPT-4 / ScholarAI custom docs)</em></td>
+</tr>
+<tr>
+<td><strong>Scholar GPT</strong></td>
+<td>- Similar to ScholarAI; academic focus <br/>- Pulls from major journal databases</td>
+<td>- Must have ChatGPT Plus <br/>- Reliability depends on subscription backend</td>
+<td>$20/mo (Plus required)</td>
+<td><em>(No dedicated UI link; typically custom)</em></td>
+<td><em>(Leverages GPT-4 docs)</em></td>
+</tr>
+<tr>
+<td><strong>Semantic Scholar</strong></td>
+<td>- Comprehensive academic metadata <br/>- Free to use</td>
+<td>- Not truly an LLM-based chat <br/>- Lacks advanced generative capabilities</td>
+<td><strong>Free</strong></td>
+<td><a href="https://www.semanticscholar.org/" target="_blank"><strong>Semantic Scholar</strong></a></td>
+<td><a href="https://api.semanticscholar.org/corpus/" target="_blank"><strong>Semantic Scholar API</strong></a></td>
+</tr>
+<tr>
+<td><strong>Elicit</strong></td>
+<td>- AI-assisted literature reviews <br/> - Streamlines academic search</td>
+<td>- Limited coverage for some fields <br/> - No real-time chat</td>
+<td><strong>Free</strong>, Subscription: $10/mo, $42/mo</td>
+<td><a href="https://elicit.org/" target="_blank"><strong>Elicit</strong></a></td>
+<td><em>(No official API docs publicly listed)</em></td>
+</tr>
+<tr>
+<td><strong>Consensus</strong></td>
+<td>- Aggregates academic findings <br/> - Summarizes papers via AI</td>
+<td>- May have limited domain depth <br/> - Emerging platform</td>
+<td><strong>Free</strong>, Subscription: $8-9/mo</td>
+<td><a href="https://consensus.app/" target="_blank"><strong>Consensus</strong></a></td>
+<td><em>(No official API docs publicly listed)</em></td>
+</tr>
+<tr>
+<td><strong>Scite</strong></td>
+<td>- Large academic archive integration <br/>- Focus on literature reviews</td>
+<td>- Limited coverage for some fields <br/> - No real-time chat</td>
+<td><strong>Free</strong>, Subscription: $20/mo</td>
+<td><a href="https://scite.ai/" target="_blank"><strong>Scite</strong></a></td>
+<td><a href="https://api.scite.ai/docs" target="_blank"><strong>Scite AI Docs</strong></a></td>
+</tr>
+<tr>
+<td><strong>Ai2 OpenScholar</strong></td>
+<td>- Answers scientific queries from ~45M open-access papers <br/>- Citation-backed responses</td>
+<td>- Focused on open-access content <br/>- New &amp; still evolving</td>
+<td><strong>Free</strong></td>
+<td><a href="https://allenai.org/blog/openscholar" target="_blank"><strong>OpenScholar</strong></a></td>
+<td><a href="https://github.com/AkariAsai/OpenScholar" target="_blank"><strong>GitHub</strong></a></td>
+</tr>
+<tr>
+<td><strong>Polymathic AI</strong></td>
+<td>- Aims at scientific tasks and numerical datasets <br/>- Potential for domain-specific fine-tuning</td>
+<td>- Still in development <br/>- Limited availability</td>
+<td><strong>Free</strong> (open source, in dev)</td>
+<td><a href="https://polymathic-ai.org/" target="_blank"><strong>Polymathic AI</strong></a></td>
+<td>N/A</td>
+</tr>
+<tr>
+<td><strong>SearchGPT (OpenAI)</strong></td>
+<td>- Prototype real-time internet search <br/>- Prominent citation linking</td>
+<td>- Waitlist only <br/>- Unclear final pricing</td>
+<td>TBD</td>
+<td><a href="https://openai.com/index/searchgpt-prototype/" target="_blank"><strong>SearchGPT</strong></a></td>
+<td>N/A</td>
+</tr>
+<tr>
+<td><strong>You.com</strong></td>
+<td>- Search engine + multi-model chat <br/>- Customizable “AI Agents”</td>
+<td>- Requires paid subscription for advanced features <br/>- Not as robust as GPT-4 in some tasks</td>
+<td><strong>Free</strong> or paid plans</td>
+<td><a href="https://you.com/" target="_blank"><strong>YouChat</strong></a></td>
+<td><a href="https://you.com/support" target="_blank"><strong>You.com Docs</strong></a></td>
+</tr>
+<tr>
+<td><strong>OpenResearcher</strong></td>
+<td>- Retrieves from internet + arXiv <br/>- Citation-based conversation for science topics</td>
+<td>- Focused on specific STEM queries <br/>- Early-stage tool</td>
+<td><strong>Free</strong>, open source</td>
+<td><a href="https://arxiv.org/abs/2408.06941" target="_blank"><strong>OpenResearcher</strong></a></td>
+<td><a href="https://github.com/GAIR-NLP/OpenResearcher" target="_blank"><strong>GitHub</strong></a></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="best-for-code">Best for Code<a class="headerlink" href="#best-for-code" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th><strong>Platform</strong></th>
+<th><strong>Strength</strong></th>
+<th><strong>Weakness</strong></th>
+<th><strong>Cost</strong></th>
+<th><strong>Interface</strong></th>
+<th><strong>Docs</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>GitHub Copilot</strong></td>
+<td>- Seamless code autocompletion <br/>- Integrates with VS Code, JetBrains, etc.</td>
+<td>- Limited context window <br/>- Some framework-specific gaps</td>
+<td>$10/mo (Individual), $19/mo (Business)</td>
+<td><a href="https://github.com/features/copilot" target="_blank"><strong>GitHub Copilot</strong></a></td>
+<td><a href="https://docs.github.com/en/copilot" target="_blank"><strong>Copilot Docs</strong></a></td>
+</tr>
+<tr>
+<td><strong>ChatGPT Code Interpreter</strong></td>
+<td>- Interactive code execution in a sandbox <br/>- Good for data analysis, transformations</td>
+<td>- Must have GPT-4 subscription <br/>- No direct local environment access</td>
+<td>$20/mo (Plus)</td>
+<td><a href="https://chat.openai.com/" target="_blank"><strong>ChatGPT</strong></a></td>
+<td><a href="https://platform.openai.com/docs/guides/code" target="_blank"><strong>OpenAI Docs</strong></a></td>
+</tr>
+<tr>
+<td><strong>Gemini 2.0</strong></td>
+<td>- Focus on code + text synergy <br/>- Potential for deep chain-of-thought</td>
+<td>- Still early, can be slow with large code bases <br/>- Pricing not fully disclosed</td>
+<td><strong>Free</strong> (Beta), Pro Tiers TBA</td>
+<td><a href="https://ai.google.dev/models/gemini" target="_blank"><strong>Gemini</strong></a></td>
+<td><a href="https://ai.google.dev/gemini-api/docs" target="_blank"><strong>Gemini Docs</strong></a></td>
+</tr>
+<tr>
+<td><strong>Continue.dev</strong></td>
+<td>- Open-source local code interpreter <br/>- Extensible with plugins</td>
+<td>- Requires technical setup <br/>- Smaller dev community</td>
+<td><strong>Free</strong> (Open Source)</td>
+<td><a href="https://continue.dev/" target="_blank"><strong>Continue.dev</strong></a></td>
+<td><a href="https://continue.dev/docs/" target="_blank"><strong>Continue.dev Docs</strong></a></td>
+</tr>
+<tr>
+<td><strong>Codeium</strong></td>
+<td>- Free AI-powered autocomplete <br/>- Supports multiple IDEs</td>
+<td>- Less advanced than Copilot on edge cases <br/>- Limited large-language reasoning</td>
+<td><strong>Free</strong></td>
+<td><a href="https://www.codeium.com/" target="_blank"><strong>Codeium</strong></a></td>
+<td><a href="https://docs.codeium.com/" target="_blank"><strong>Codeium Docs</strong></a></td>
+</tr>
+<tr>
+<td><strong>Phind</strong></td>
+<td>- Code search + AI chat combined</td>
+<td>- Smaller community <br/>- Some advanced features behind paid tiers</td>
+<td><strong>Free</strong>, Paid tiers TBA</td>
+<td><a href="https://www.phind.com/" target="_blank"><strong>Phind</strong></a></td>
+<td><a href="https://help.phind.com/hc/en-us" target="_blank"><strong>Phind Docs</strong></a></td>
+</tr>
+<tr>
+<td><strong>Replit AI</strong></td>
+<td>- Cloud-based dev + AI code generator <br/>- Multiple languages, strong Python/JS support</td>
+<td>- Usage-based pricing for higher-end features <br/>- Emphasis on web IDE only</td>
+<td>Free tier, Pro from $7+/mo</td>
+<td><a href="https://replit.com/ai" target="_blank"><strong>Replit AI</strong></a></td>
+<td><a href="https://docs.replit.com/" target="_blank"><strong>Replit Docs</strong></a></td>
+</tr>
+<tr>
+<td><strong>StarCoder</strong></td>
+<td>- Open-source code LLM from BigCode <br/>- Broad language coverage</td>
+<td>- May lag behind GPT-4/Copilot for advanced logic <br/>- Typically self-host or huggingface model usage</td>
+<td><strong>Free</strong> (open source)</td>
+<td><a href="https://huggingface.co/bigcode" target="_blank"><strong>StarCoder</strong></a></td>
+<td><a href="https://www.bigcode-project.org/" target="_blank"><strong>BigCode</strong></a></td>
+</tr>
+<tr>
+<td><strong>Code Llama (Meta)</strong></td>
+<td>- Specialized for coding tasks <br/>- Multiple variants (Python, Instruct)</td>
+<td>- Less robust than GPT-4 for very complex code <br/>- Requires setup for self-host</td>
+<td><strong>Free</strong> (open source)</td>
+<td><a href="https://ai.meta.com/blog/code-llama-large-language-model-coding/" target="_blank"><strong>Code Llama</strong></a></td>
+<td><a href="https://github.com/facebookresearch/llama" target="_blank"><strong>Meta Llama</strong></a></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="best-for-imagevideo">Best for Image/Video<a class="headerlink" href="#best-for-imagevideo" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th><strong>Platform</strong></th>
+<th><strong>Strength</strong></th>
+<th><strong>Weakness</strong></th>
+<th><strong>Cost</strong></th>
+<th><strong>Interface</strong></th>
+<th><strong>Docs</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Midjourney v6</strong></td>
+<td>- Generally highest-quality AI images <br/>- Rich feature set via Discord commands</td>
+<td>- Requires Discord usage <br/>- More expensive for casual users</td>
+<td>$10–$60/mo (various tiers)</td>
+<td><a href="https://www.midjourney.com/" target="_blank"><strong>Midjourney</strong></a></td>
+<td><a href="https://docs.midjourney.com/" target="_blank"><strong>Midjourney Docs</strong></a></td>
+</tr>
+<tr>
+<td><strong>DALL·E 3 (OpenAI)</strong></td>
+<td>- Conveniently integrated in ChatGPT <br/>- Good for quick generation, concept art</td>
+<td>- Not always photorealistic <br/>- Requires ChatGPT Plus or API usage</td>
+<td>$20/mo (ChatGPT Plus) or pay-per-use API</td>
+<td><a href="https://openai.com/dall-e-3" target="_blank"><strong>DALL·E 3</strong></a></td>
+<td><a href="https://platform.openai.com/docs/guides/images" target="_blank"><strong>DALL·E Docs</strong></a></td>
+</tr>
+<tr>
+<td><strong>Stable Diffusion 3</strong></td>
+<td>- Fully open source <br/>- Highly customizable (fine-tuning)</td>
+<td>- Requires GPU resources <br/>- Results vary without parameter tuning</td>
+<td><strong>Free</strong> (Open Source), or API services</td>
+<td><a href="https://stability.ai/" target="_blank"><strong>Stability AI</strong></a></td>
+<td><a href="https://arxiv.org/abs/2303.14686" target="_blank"><strong>SD3 Paper</strong></a></td>
+</tr>
+<tr>
+<td><strong>Adobe Firefly</strong></td>
+<td>- Easy to use for designers <br/>- Integration with Adobe apps (Photoshop, Illustrator)</td>
+<td>- Requires Adobe subscription <br/>- Not as flexible for coding or specialized prompts</td>
+<td>Included w/ Adobe CC or $4.99–$9.99 add-on</td>
+<td><a href="https://www.adobe.com/products/firefly.html" target="_blank"><strong>Firefly</strong></a></td>
+<td><a href="https://developer.adobe.com/firefly-services/docs/guides/" target="_blank"><strong>Firefly Docs</strong></a></td>
+</tr>
+<tr>
+<td><strong>Sora (OpenAI)</strong></td>
+<td>- Computer Vision (video) generation <br/>- Experimental “world simulator” approach</td>
+<td>- Limited early access <br/>- High compute demands</td>
+<td><strong>Limited Access</strong>, likely enterprise only</td>
+<td><a href="https://openai.com/sora" target="_blank"><strong>Sora</strong></a></td>
+<td><a href="https://openai.com/research/video-generation-models-as-world-simulators" target="_blank"><strong>Sora Report</strong></a></td>
+</tr>
+<tr>
+<td><strong>Runway ML</strong></td>
+<td>- Advanced generative video tools <br/>- Browser-based video editor and image gen</td>
+<td>- Higher-res outputs require paid plans <br/>- Can be slow on large projects</td>
+<td>Free tier, paid from $15+/mo</td>
+<td><a href="https://runwayml.com/" target="_blank"><strong>Runway</strong></a></td>
+<td><a href="https://docs.runwayml.com/" target="_blank"><strong>Runway Docs</strong></a></td>
+</tr>
+<tr>
+<td><strong>Imagine with Meta</strong></td>
+<td>- Text-to-image via Emu model <br/>- Free and evolving toolset</td>
+<td>- Factual/historical inaccuracies reported <br/>- Still experimental</td>
+<td><strong>Free</strong></td>
+<td><a href="https://www.meta.ai/" target="_blank"><strong>Imagine</strong></a></td>
+<td>N/A</td>
+</tr>
+<tr>
+<td><strong>Craiyon</strong></td>
+<td>- Simple web UI <br/>- Free usage for low-res images</td>
+<td>- Quality less advanced than Midjourney or DALL·E <br/>- Ads on free tier</td>
+<td><strong>Free</strong> or subscription</td>
+<td><a href="https://www.craiyon.com/" target="_blank"><strong>Craiyon</strong></a></td>
+<td>N/A</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<p class="admonition-title">About the Table</p>
+<ul>
+<li><strong>ChatGPT</strong> is still the dominant chat platform as of late 2024, having recently released <a href="https://openai.com/o1/" target="_blank">model o1</a> and announcing <a href="https://www.youtube.com/watch?v=SKBG1sqdyIU" target="_blank">model o3</a></li>
+<li><strong>LLaMA 3:</strong> Meta's LLaMA 3 is a significant open-source model that is highly competitive and driving innovation.</li>
+<li><strong>Gemini:</strong> Google's Gemini (formerly Bard) is rapidly evolving and positioned as a strong competitor to ChatGPT, particularly in multimodal capabilities.</li>
+<li><strong>Copilot:</strong> Microsoft's Copilot (integrating OpenAI's technology) has become ubiquitous, especially for productivity and search.</li>
+<li><strong>Claude 3:</strong> Anthropic's Claude 3 is gaining popularity due to its strong performance on reasoning tasks and commitment to AI safety.</li>
+<li><strong>Sora:</strong> Although it is not yet fully accessible, OpenAI's text-to-video model has the potential to be a major innovation.</li>
+<li><strong>Grok:</strong> is powered by <em>what might be</em> the largest super computer in the world, xAI's Collossus </li>
+<li><strong>Image Generation:</strong> DALL-E 3, Stable Diffusion 3, and Midjourney v6 are leading the way in image generation, each with its strengths (photorealism, open-source nature, artistic style).</li>
+<li><strong>GitHub Copilot:</strong> Remains a dominant force in code generation and is increasingly integrated into developers' workflows.</li>
+</ul>
+</div>
+<p><strong>Tip:</strong> If you’re evaluating GPT or generative AI options, consider <strong>security</strong> (e.g., on-prem vs. cloud), <strong>fine-tuning capabilities</strong>, and <strong>API limits</strong> in addition to monthly cost and raw model quality.</p>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 University of Arizona
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://orcid.org/0000-0002-6639-7181" target="_blank" rel="noopener" title="orcid.org" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M294.75 188.19h-45.92V342h47.47c67.62 0 83.12-51.34 83.12-76.91 0-41.64-26.54-76.9-84.67-76.9M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8m-80.79 360.76h-29.84v-207.5h29.84zm-14.92-231.14a19.57 19.57 0 1 1 19.57-19.57 19.64 19.64 0 0 1-19.57 19.57M300 369h-81V161.26h80.6c76.73 0 110.44 54.83 110.44 103.85C410 318.39 368.38 369 300 369"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://scholar.google.com/citations?user=nanIeAYAAAAJ&hl=en" target="_blank" rel="noopener" title="scholar.google.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.242 13.769 0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269M12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/tyson-swetnam/" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/tswetnam" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/tyson-swetnam" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5m282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://hub.docker.com/u/tswetnam" target="_blank" rel="noopener" title="hub.docker.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M349.9 236.3h-66.1v-59.4h66.1zm0-204.3h-66.1v60.7h66.1zm78.2 144.8H362v59.4h66.1zm-156.3-72.1h-66.1v60.1h66.1zm78.1 0h-66.1v60.1h66.1zm276.8 100c-14.4-9.7-47.6-13.2-73.1-8.4-3.3-24-16.7-44.9-41.1-63.7l-14-9.3-9.3 14c-18.4 27.8-23.4 73.6-3.7 103.8-8.7 4.7-25.8 11.1-48.4 10.7H2.4c-8.7 50.8 5.8 116.8 44 162.1 37.1 43.9 92.7 66.2 165.4 66.2 157.4 0 273.9-72.5 328.4-204.2 21.4.4 67.6.1 91.3-45.2 1.5-2.5 6.6-13.2 8.5-17.1zm-511.1-27.9h-66v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1zm78.1 0h-66.1v59.4h66.1zm-78.1-72.1h-66.1v60.1h66.1z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.youtube.com/channel/UC5xPt9KZHccC0ehMNEkINzQ" target="_blank" rel="noopener" title="www.youtube.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305m-317.51 213.508V175.185l142.739 81.205z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "navigation.top", "search.highlight", "search.share", "search.suggest", "content.code.copy", "content.code.prettify", "content.tooltips"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+        <script src="../chatbot_widget.js"></script>
+      
+    
+  </body>
+</html>
