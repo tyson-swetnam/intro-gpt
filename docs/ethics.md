@@ -15,7 +15,7 @@ A new field of Science had begun.
 <figcaption><a href="https://spectrum.ieee.org/dartmouth-ai-workshop" target="_blank" rel="noopener noreferrer">Dartmouth Summer Research Project on Artificial Intelligence, 1956. Credit: IEEE Spectrum, The Minsky Family</a></figcaption>
 </figure>
 
-Over the next 70 years, Artificial Intelligence persisted mainly in [the minds of science fiction writers](legal.md#science-fiction-or-philosophical-theory) and the small group of industry researchers and academics who continued to work toward creating the digital infrastructure needed for Artificial Intelligence to bloom, and to one day achieve the ultimate goal of [Artificial General Intelligence (AGI)(:simple-wikipedia:)](https://en.wikipedia.org/wiki/Artificial_general_intelligence){target=_blank}. 
+Over the next 70 years, Artificial Intelligence persisted mainly in [the minds of science fiction writers](legal.md) and the small group of industry researchers and academics who continued to work toward creating the digital infrastructure needed for Artificial Intelligence to bloom, and to one day achieve the ultimate goal of [Artificial General Intelligence (AGI)(:simple-wikipedia:)](https://en.wikipedia.org/wiki/Artificial_general_intelligence){target=_blank}. 
 
 ## Using AI ethically
 
@@ -55,8 +55,6 @@ As consumers of GPTs and other AI platforms, we must consider in what ways can w
         The Turing Trap warns against replacing humans with AI, and that AI could be used to drive down wages and to a loss of economic and political power. 
 
 ??? Question "Name at least one major declaration or agreement on AI Ethics"
-
-    Hint: See [Table 2](#table-2-international-ai-agreements)
 
     ??? Success "International Agreements"
              

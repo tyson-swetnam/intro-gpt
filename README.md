@@ -1,19 +1,39 @@
-# intro2llms
+# Generative AI & Prompt Engineering Workshop
 
-Introduction to AI prompt engineering
+A workshop on generative AI and Prompt Engineering for academic research and education.
 
-[![Publish docs via GitHub](https://github.com/tyson-swetnam/intro-gpt/actions/workflows/main.yml/badge.svg)](https://github.com/tyson-swetnam/intro-gpt/actions/workflows/main.yml)
+## Authors/Contributors
 
-Built using [MkDocs](https://www.mkdocs.org/) with [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) 
+*   [Your Name](https://github.com/your-username)
 
-# Build instructions
+## License
 
+This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+
+## Setup & Installation
+
+To view the website locally, you will need to have Python and `pip` installed.
+
+1.  Clone the repository:
+    ```bash
+    git clone https://github.com/your-username/intro-gpt.git
+    ```
+2.  Navigate to the project directory:
+    ```bash
+    cd intro-gpt
+    ```
+3.  Install the dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+## Usage
+
+To start the local development server, run the following command:
+
+```bash
+mkdocs serve
 ```
-git clone https://github.com/tyson-swetnam/intro-gpt
 
-cd intro-gpt
+Open your web browser and navigate to `http://127.0.0.1:8000` to view the website.
 
-pip install -r requirements.txt
-
-python3 -m mkdocs serve
-```

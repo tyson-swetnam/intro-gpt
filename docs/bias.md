@@ -68,4 +68,66 @@ Technical tools can help to identify bias in models:
 
 **Algorithmic Adjustments** - pre-processing (adjusting training data), in-process (modifying algorithm), or post-processing (adjust outputs)
 
-**Explainable AI (XAI)** - undestant which inputs are driving model decisions, reveal hidden biases or reliance on spurious factors
+**Explainable AI (XAI)** - understand which inputs are driving model decisions, reveal hidden biases or reliance on spurious factors
+
+## Assessment
+
+??? question "True or False: AI bias only originates from the data used to train the model."
+
+    !!! failure "False"
+
+        AI bias can originate from the data, the algorithm, and human decisions during the development process.
+
+??? question "Which of the following is an example of 'Selection Bias'?"
+
+    A. An algorithm that prioritizes majority groups over minority groups.
+
+    B. A dataset for a skin cancer detection model that predominantly features images of light-skinned individuals.
+
+    C. Subjective judgments from data labelers influencing the data.
+
+    D. Using a model trained on data from one hospital in a different country.
+
+    ??? success "Answer"
+        
+        **B. A dataset for a skin cancer detection model that predominantly features images of light-skinned individuals.**
+        
+        Selection bias occurs when the training data are not representative of the whole population.
+
+??? question "What is the primary purpose of 'Explainable AI (XAI)' in bias mitigation?"
+
+    A. To generate synthetic data for underrepresented groups.
+
+    B. To understand which inputs are driving model decisions, potentially revealing hidden biases.
+
+    C. To ensure the model's predictions are always 100% accurate.
+
+    D. To make the model run faster on new hardware.
+
+    ??? success "Answer"
+
+        **B: To understand which inputs are driving model decisions, potentially revealing hidden biases.**
+        
+        XAI helps to make the model's decision-making process transparent, which is crucial for identifying and addressing bias.
+
+??? question "True or False: 'Algorithmic Discrimination' is when an AI model makes a simple mistake."
+
+    !!! failure "False"
+
+        Algorithmic Discrimination is when the use of an AI results in the unfair or illegal treatment of individuals or groups based on a protected characteristic.
+
+??? question "Which of these is NOT a data-centric approach to bias prevention?"
+
+    A. Curating datasets to accurately represent all relevant groups.
+
+    B. Over-sampling minority groups.
+
+    C. Modifying the algorithm during the training process.
+
+    D. Ensuring data labels are consistent and annotated.
+
+    ??? success "Answer"
+        
+        **C: Modifying the algorithm during the training process.**
+
+        This is an algorithmic technique, not a data-centric approach.

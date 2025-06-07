@@ -1,377 +1,370 @@
-# Writing Prompts
+# Prompt Engineering
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 
 ![banner](assets/dailyprod-banner.png){width=1000}
 
-??? Question "How does a GPT Work?"
+## Introduction to Prompt Engineering
 
-    !!! Success "Transformers"
+**Prompt Engineering** is a technique of crafting effective instructions using AI large language models. With modern AI-powered tools like Claude Desktop, ChatGPT, Gemini, and NotebookLM offering capabilities to upload documents, search the web, and process multiple file types, mastering prompt engineering has become essential for productive AI interactions.
 
-        GPTs use a type of neural network known as a "transformer". Transformers convert prompts into smaller units called 'tokens' which are then encoded based on position in the prompt (how the model understands the words). The transformer focuses attention on the relevant parts of each sequence of tokens to find relationships. These are fed forward and refined before the model begins to 'decode' or respond to the prompt by predicting the next word, one token at a time. 
+!!! info "What You'll Learn"
+    - **Fundamentals**: How AI models process and respond to prompts
+    - **Modern Features**: Leveraging document uploads, web search, and multi-modal inputs
+    - **Best Practices**: Structured approaches to writing effective prompts
+    - **Advanced Techniques**: Context management, chaining, and custom instructions
 
-        The sequence of transformer operations are: _tokenization, attention, decoding, and text generation_. 
+## Understanding Modern AI Capabilities
 
-    !!! Success "Natural Language" 
-    
-        GPT's models use natural language prompts to elicit contextual responses. [Current models](https://openai.com/index/learning-to-reason-with-llms/){target=_blank} are beginning to 'reason' in their responses. 
+### Core Features of Today's AI Tools
 
-        GPTs can respond to either langauge (prose) or computer code. 
+Modern AI assistants have evolved beyond simple text chat:
 
-        Other LLM models (like [Sora](https://openai.com/sora/){target=_blank} or [MidJourney](https://www.midjourney.com/){target=_blank}) produce videos or images based on text and image prompts.
+| Feature | :simple-claude: Claude | :simple-openai: ChatGPT | :simple-googlegemini: Gemini | NotebookLM | :material-microsoft: CoPilot |
+|---------|--------|---------|--------|------------|---------|
+| **Document Upload** | PDFs, text, code | PDFs, images, data | PDFs, images, GDrive | PDFs, Google Docs | PDFs, OneDrive |
+| **Web Search** | Via MCP | Yes | Yes | Yes | Yes |
+| **Context Window (tokens)** | 200K | 128K| 2M | Document-based | 128K |
+| **File Analysis** | Yes | Yes | Yes | Deep analysis | Yes |
+| **Code Execution** | Yes (MCP) | Yes | Yes | No | Yes |
 
-    !!! Success ":octicons-markdown-16: MarkDown Syntax"
+### How AI Models Process Your Input
 
-        GPTs use a syntax called [MarkDown :octicons-markdown-16:](https://www.markdownguide.org/){target=_blank}. MarkDown is human readable plain text that uses special characters for formatting. 
+!!! info "The Processing Pipeline"
+    1. **Tokenization**: Your prompt is broken into smaller units (tokens)
+    2. **Context Assembly**: Uploaded documents and conversation history are included
+    3. **Attention Mechanism**: The model identifies relevant information
+    4. **Generation**: Response is produced token by token
+    5. **Formatting**: Output is structured according to your specifications
 
-        This website, for example, is written using MarkDown syntax ([MkDocs-Material](https://squidfunk.github.io/mkdocs-material/){target=_blank}) and converted to HTML using Python. 
+## Getting Started: Basic Prompt Structure
 
+### The Foundation: Clear Instructions
 
-    !!! Success "Prompts"
+Start with simple, direct prompts before advancing to complex techniques:
 
-        GPT chats ask for a text or audio message to begin a conversation. These messages are called "Prompts". 
+```markdown
+# Basic Prompt
+"Summarize this research paper in 3 bullet points"
+```
 
-        Begin a conversation with a specific type of prompt. Such a prompt can be called a "primer" and can also include a "Custom Instruction" or "System Instructions" for establishing the tone or style for the model to follow.
+```markdown
+# Better Prompt
+"As a research scientist, summarize the key findings from this paper 
+in 3 bullet points, focusing on methodology and results"
+```
 
-        This will help narrow the potential range of responses and improve results to subsequent prompts. 
+```markdown
+# Best Prompt
+"You are a research scientist reviewing papers for a journal. 
+Summarize the attached PDF in 3 bullet points that cover:
+1. Research question and hypothesis
+2. Methodology and sample size
+3. Key findings and limitations
+Format as a bullet list with sub-points for clarity."
+```
 
-## **Priming**
+### Working with Documents
 
-GPTs do better when provided with "prompt primers".
+Modern AI tools excel at document analysis. Here's how to maximize their potential:
 
-Zero-shot unconditioned prompts are likely to return the least specific responses. 
+!!! success "Document Upload Best Practices"
+    - **Specify the document**: "In the attached PDF..." or "Based on the uploaded spreadsheet..."
+    - **Direct attention**: "Focus on Section 3.2 of the document"
+    - **Request specific outputs**: "Create a table comparing the methods described in chapters 2 and 5"
+    - **Combine multiple sources**: "Compare the findings in these three papers"
 
-Responses are more likely to be useful when multiple specific output types are defined.
+#### Example: Multi-Document Analysis
 
-| Types of Priming | Example |
-|------------------|---------|
-| **Zero** (Shot) | "Write five examples of assessments for watershed health." |
-| **Single** | "Write five examples of assessments for watershed health. Here is one example: Geomorphology" |
-| **Multiple** | "Write five examples of assessments for watershed health related to geomorphology, water quality, and species diversity." |
+```markdown
+I've uploaded three research papers on climate change. Please:
 
+1. Create a comparison table with columns for:
+   - Paper title and authors
+   - Methodology
+   - Key findings
+   - Limitations
 
-??? Question "How long can or should a prompt be?"
+2. Identify common themes across all papers
 
-    !!! Success "Tokens"
+3. Highlight any contradictory findings
 
-        The length of a prompt is measured in ["tokens"](https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them){target=_blank} or [n-grams](https://en.wikipedia.org/wiki/N-gram){target=_blank}. 
-        
-        A token can represent an individual character, a word, or a subword depending on the specific tokenization approach. A rough estimate for the average number of words in English language per token is `0.75`. 
+Format the response with clear headers and use markdown tables.
+```
 
-        A default size 2,048 token prompt is equivalent to about ~1,536 words or 3-6 pages of text, and a 32,768 token prompt would be ~24,576 words or 50-100 pages of text.
+## The CRAFT Framework
 
-        Currently, ChatGPT GPT-4o allows up to 16,383 tokens per prompt, Gemini 2.0 Flash Thinking Experimental can take up to 32,768 tokens. Gemini 1.5 Pro allows up to 2,000,000 tokens! 
-    
-    !!! Success "Document retrieval & RAG"
+For consistent, high-quality results, use the [CRAFT framework](https://www.geeky-gadgets.com/craft-prompt-framework/){target=_blank}:
 
-        Other techniques for ingesting text include "Retrieval Augmented Generation" or RAG, which allows you to add text from PDFs, HTML, or other well known text formats, like MarkDown or JSON. These RAG implementations are available using ChatGPT 4o, Gemini and [NotebookLM](https://notebooklm.google.com){target=_blank} or through other services like [Weaviate](https://weaviate.io/developers/weaviate){target=_blank} where you can host your own vector database.
+### **Context**
 
-
-??? Tip "Customizing Your Responses"
-
-    ChatGPT offers [**Custom Instructions**](https://help.openai.com/en/articles/8096356-custom-instructions-for-chatgpt){target=_blank} for more personalized responses. 
-
-    **What would you like ChatGPT to know about you to provide better responses?**
-
-    !!! Success "**Thought starters**"
-
-        * Where are you based?
-        * What do you do for work?
-        * What are your hobbies or interests?
-        * What subjects are you interested in?
-        * What are some goals that you have?
-
-    !!! Info "My prompt"
-
-        ```markdown
-        I work at a Research 1 University with Research Software Engineers, Data Scientists,
-        Data Science Educators, and domain researchers working in research computing. 
-
-        I am a Professor of geoinformatics with a background in high performance computing,
-        Docker, Kubernetes, scientific software, infrastructure as code, and cloud computing.
-
-        I am interested in generative and predictive artificial intelligence and machine
-        learning, containerized workflows, open science, and reproducible research. I am
-        working on digital twins, precision health care, scientific and educational data
-        commons, data curation, and synthesis science research for earth, life, and space
-        sciences.
-
-        I can talk comfortably about scientific software,  computing architectures, software
-        design patterns, and modern scientific research with artificial intelligence. 
-
-        I have a goal of educating the research community on open science techniques,
-        reproducible research, the FAIR and CARE and TRUST data principles.
-        ```
-
-
-    **How would you like ChatGPT to respond?**
-
-    !!! Success "**Thought starters**"
-
-        * How formal or casual should ChatGPT be?
-        * How long or short should responses generally be?
-        * How do you want to be addressed?
-        * Should ChatGPT have opinions on topics or remain neutral?
-
-    !!! Info "My prompt"
-    
-        ```
-        I would like for ChatGPT to provide collegiality and formal responses to my queries.
-
-        When I prompt about editing draft text for documentation and scientific writing I
-        want the text to be edited for clarity, accessibility, and readability for specific
-        audiences which I will specify. If I don't specify them, ask me what type of
-        readership to edit for.
-
-        Ask how long a response should be if I do not specify. When I am asking specifically
-        for outlines or ideas about a new document without a source URL or PDF, ask me if I
-        want the outline to be brief or maximized to the longest possible length response.
-
-        When re-writing one document into a new document, try to keep the length the same. 
-        If the document is too long for a single response, respond with as much of the first
-        part as possible and ask whether you should continue in subsequent prompts.
-
-        When I prompt you about computer code or algorithms, I want you to maximize the
-        number of lines of code and comments in the response, do not waste tokens on
-        explaining the text other than as brief comments in the code blocks.  
-        I will most frequently ask for Python, Markdown, YAML, JavaScript, JSON, 
-        GeoJSON, HTML, and R languages. 
-
-        I want to be addressed as Professor.
-                
-        ChatGPT should remain neutral unless it has a factual correction to a prompt.
-        ```
-
-
-___
-
-## **Prompt Structure: ROLE + TASK + FORMAT**
-
-Prompt responses are improved by giving the Chatbot a multi-shot opportunity at answering your request. 
-
-| Role | Task | Format |
-|:-----|------|--------|
-| **Act as [\[ROLE\]](#role)** | **Create a [\[TASK\]](#tasks)** | ... **show as [\[FORMAT\]](#format)** |
-
-A complete prompt should specify the role in which the chatbot responds, what its task is, and the format of how its outputs should be returned. 
-
-A second step to the initial prompt is to [link or chain](#linked-prompts) your subsequent prompts. 
-
-This lesson only covers ChatGPT, Gemini, and Claude type responses, but the same prompt techniques can be used in other LLMs, like NotebookLM, MidJourney, or Sora.
-
-??? Tip ":simple-awesomelists: Awesome List: Prompts"
-
-    There is an ever changing meta-list of :simple-awesomelists: Awesome lists curated around ChatGPT plugins and extensions.
-
-    **[Prompts.chat](https://prompts.chat/){target=_blank}** has over 116K :star: stars on GitHub!
-
-      * [:simple-github: :simple-awesomelists:   ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts){target=_blank}
-
-      * [:simple-github: search: `chatgpt+awesome`](https://github.com/search?q=awesome-chatgpt+&type=repositories&s=stars&o=desc){target=_blank}
+Provide background information and set the scene
 
 ### **Role**
+Define who the AI should act as
 
-Set the role for the GPT to play during your session. 
-
-"I want you to act as ..." will establish what type of conversation you are planning to have. 
-
-| Examples of Role |
-|---------------|
-| **Project Manager**  |
-| **Copywriter / Editor**  |
-| **Paper Reviewer** |
-| **Teacher / Mentor / Advisor** |
-| **Student / Learner / Participant** |
-| **Software Engineer**  |
-| **DevOps Engineer**  |
-| **Linux Terminal**  |
-| **Python Interpreter** |
-| **Web Browser** |
-
-### **Tasks**
-
-Prompts which return informative responses to questions like "What is ..." or "How does ..."
-
-Because of ChatGPT's proclivity at making up information, using it without a way of validating the authenticity of its responses makes it less trustworthy than regular search engines. 
-
-| Types of Task | 
-|---------------|
-| **Scientific Article** | 
-| **Essay** |
-| **Blog Post** |
-| **Outline** |
-| **Email** | 
-| **Cover Letter** |
-| **Recipe** |
-| **Tutorial** |
-| **Lesson Plan** | 
-| **Jupyter Notebook** |
-| **Configuration** |
-| **Code** |
-| **Software Script** |
+### **Action**
+Specify exactly what you want done
 
 ### **Format**
+Describe how the output should be structured
 
-By default ChatGPT outputs MarkDown syntax text. It can also output software code, and soon images, video, music and sounds.
+### **Tone**
+Indicate the style and voice to use
 
-| Formats to output |
-|-------------------|
-| **MarkDown** (emojis!) |
-| **List** |
-| **Table** |
-| **HTML** |
-| **CSS** |
-| **Regular Expression** |
-| **CSV / TXT** |
-| **JSON** |
-| **Rich Text** |
-| **Gantt Chart** |
-| **Word Cloud** |
-| **Graphs** |
-| **Spreadsheets** |
+#### CRAFT Example
 
-___
+```markdown
+Context: I'm preparing a grant proposal for NSF funding on AI in education
 
-## **Linked Prompts**
+Role: Act as an experienced grant writer and education researcher
 
-Follow-up your prompts sequentially.
+Action: Review my draft introduction and suggest improvements
 
-Responses to prompts may not return the exact details or information that you are after the first time. Follow-up by rephrasing your prompts more carefully and continuing with iterative prompting can build upon your priors.
+Format: Provide feedback as tracked changes with explanations
 
-"Chain prompting" or "Linked Prompting" brings multiple prompts together.
+Tone: Professional, constructive, and encouraging
+```
 
-| Linked Prompting | Examples |
-|------------------|----------|
-| **Priming** | "I want you to act as an eminent hydrologist from CUASHI. Provide me with a list of the ten most important topics in hydrology over the last decade focused around research in the global south, working with indigenous communities, and traditional ecological knowledge systems." |
-| **Summarizing** | "Based on the list you just created, summarize the most pressing financial challenges faced by indigenous communities in the Global South, versus indigenous communities in North America, in less than 50 words." |
+## Advanced Techniques
 
+### 1. Custom Instructions and System Prompts
 
-!!! Tip "**General Prompt Traits**"
+Modern AI platforms allow you to set persistent instructions:
 
-    !!! Success "Strategies"
-            
-        Keep these W's in mind when writing prompts
+!!! example "'Custom Instructions' or 'System Instructions'"
 
-        | W's | Reasons |
-        |----|---------|
-        | Who | do you want ChatGPT to role-play: an engineer, an editor, a teacher, or a student? |
-        | What | is the specific context of your prompts? |
-        | When | is the specific time period of interest? Specify if so. |
-        | Where | is the geographic region or conceptual area? |
-        | In what way | do you want ChatGPT to respond: in a programming language, code, text-to-image? |
+    Platforms like Gemini and Claude allow you to add "Custom Instructions" or "System Instructions" as prior prompts, which act as a global rule to subsequent prompt chaining.
 
-        **Syntax**
+    For example:
 
-        Use [MarkDown syntax](https://www.markdownguide.org/basic-syntax/){target=_blank} in your prompts.
+    ```markdown
+    # Project Context
+    I'm a data scientist working on machine learning projects.
+    Always provide Python code examples using scikit-learn and pandas.
+    Include docstrings and type hints in all code.
+    
+    # Response Preferences
+    - Be concise but thorough
+    - Explain complex concepts with analogies
+    - Always cite sources when making factual claims
+    ```
 
-        For code examples use single backtick ` or triple ``` for block quotes when adding your own code to your prompts.
+### 2. Leveraging Web Search
 
-        **Context**
+Most featured GPTs now feature a web browse or search engine capability.
 
-        Develop a clear context around which you are seeking responses. Types of prompt help to establish the context of the responses you will recieve. 
+Enabling search allows the GPT to use document retrieval on websites and PDFs when reasoning out its response.
 
-        **Precision**
+```markdown
+Search for the latest research on the public health benefits of vaccination published in 2024. 
 
-        Keep your prompts precise and use clear language. Constrain the topic areas for which you wish your repsonses to be drawn from.
+Focus on:
+- Papers from top conferences (AHA, ASPPH, NRHA, ICFMDP)
+- mRNA
+- Bird Flu and COVID
 
-        **Simplicity** 
+Summarize the top 5 papers with links to the originals.
 
-        Break down your prompts into simple tasks which do not contain too many complex tasks or ones that require rationalization. 
+```
 
-??? Danger "Indirect Prompt Injection and Malware"
+### 3. Multi-Modal Prompting
 
-    One of the risks of allowing LLMs and GPTs to access our personal documents and email clients involves the use of malware and malicious attacks.
+Combine different input types for richer interactions:
 
-    [Indirect prompt injection](https://www.wired.com/story/chatgpt-prompt-injection-attack-security/){target=_blank}
+```markdown
+I've uploaded:
+1. A screenshot of my dashboard
+2. The underlying data in CSV format
+3. Our brand guidelines PDF
 
-## Software Development
+Create a redesigned dashboard that:
+- Improves data visualization based on best practices
+- Adheres to our brand colors and fonts
+- Highlights the KPIs mentioned in the data dictionary
+```
 
-ChatGPT is trained on langauges, including software language. Use ChatGPT as your new paired-programming AI assistant. 
+### 4. Prompt Chaining
 
-:material-run-fast: Go to our lesson on [:octicons-copilot-48: GitHub CoPilot](code.md)
+Build complex outputs through sequential prompts:
 
-For novice programmers, ChatGPT likely fills a long unfilled hole in your knowledge map. It can write code faster than you can, and with the proper prompts, create programs in minutes which may have taken you hours or days. 
+!!! tip "Effective Chaining Strategy"
+    1. **Start broad**: "Outline a research paper on sustainable AI"
+    2. **Zoom in**: "Expand section 3 on energy-efficient training methods"
+    3. **Refine**: "Add citations and make the tone more academic"
+    4. **Polish**: "Format according to IEEE standards"
 
-## Word Processing
+### 5. Using Examples (Few-Shot Learning)
 
-**Outlining**
+Provide examples to guide the AI's output:
 
-GPTs accel at writing outlines, helping get beyond the blank page problem.
+```markdown
+I need to classify customer feedback. Here are examples:
 
-**Editing**
+"The product arrived damaged" → Category: Shipping Issue
+"Can't log into my account" → Category: Technical Support
+"Love the new features!" → Category: Positive Feedback
 
-Proof-reading, removing passive voice, rewording for clarity and readability are all potential features that can be prompted from ChatGPT.
+Now classify these:
+1. "The app keeps crashing on startup"
+2. "Best purchase I've made this year"
+3. "Package was left in the rain"
+```
 
-When establishing the role of the responses, consider 
+## Practical Applications
 
-**Summarizing**
+### Research and Analysis
 
-When small or large groups are working together to synthesize discussions around scientific research, they often maintain the discussion topics in large sets of notes with many contributions.
+```markdown
+Analyze the attached dataset (CSV) and:
+1. Identify statistical patterns and outliers
+2. Create visualizations for the top 3 insights
+3. Write a methods section describing the analysis
+4. Suggest additional analyses based on the data
 
-Use GPT to summaries a day or a week's worth of notes. Include the schedule or agenda and ask GPT to summarize whether the agenda met the topics of interest, or even suggest directions which went unexplored. 
+Use pandas profiling techniques and create matplotlib visualizations.
+Include code that I can run locally.
+```
 
-**Translation**
+### Writing and Editing
 
-GPT can be used for translating languages, and for specifying regional dialect translation. 
+```markdown
+I've uploaded my draft manuscript. Please:
 
-Althought it was not specifically designed for language translation, it does a relatively good job at most major languages to English.
+1. Check for consistency in terminology throughout
+2. Ensure all figures are referenced in the text
+3. Verify the citation format matches APA 7th edition
+4. Highlight any unclear passages
+5. Suggest improvements for flow between sections
 
-For English as a Second Language (ESL) speakers, GPT utility in writing more formal or professional text is likely of high value. 
+Provide a tracked-changes version and a summary of major edits.
+```
 
-## :simple-openai: Tuning
+### Code Development
 
-In some GPTs conventional command line arguments can be included.
+```markdown
+Based on the uploaded requirements document:
 
-For example, Linux command line flags in your ChatGPT prompts, can include:
+1. Create a Python class structure for the described system
+2. Include comprehensive docstrings and type hints
+3. Add unit tests for each method
+4. Create a README with installation and usage instructions
+5. Follow PEP 8 style guidelines
 
-| Parameter name |	Use | 	Description |
-| :--: | :--: | :-- |
-| Answers |	`-a` or `--answers` |	Specifies the number of output answers (default is 1) |
-| Category |	`-c` or `--category` |	Specifies the category of prompt (coding, creative, factual, fun, general, music, news, science, sports and writing) |
-| Format |	`-f` or `--format` |	Specifies the format of output ("html", "markdown", "plain text", other) |
-| Language |	`-l` or `--language` |	Specifies the required language of output |
-| Size | 	`-s` or `--size`  |	Specifies the maximum number of characters in the output |
-| Temperature |	`-t` or `--temperature`	| Control the creativity of output. The higher the temperature will result in more creative output (maybe less coherent). The temperature can be any value between 0 and 1 (default may be 0.5) |
+Use modern Python features (3.10+) and include error handling.
+```
 
-## Assessment
+## Common Pitfalls and Solutions
 
-??? Question "How long can a prompt be?"
+### Pitfall 1: Vague Instructions
 
-    !!! Success "Well, it depends"
+❌ **Poor**: "Make this better"
 
-        A good rule of thumb, depending on the platform, is at most 1,500 words or 3-5 pages of text. 
+✅ **Better**: "Improve this abstract by making it more concise (under 250 words), adding keywords, and ensuring it follows the journal's structure: background, methods, results, conclusions"
+
+### Pitfall 2: Information Overload
+
+❌ **Poor**: Uploading 50 documents without guidance
+
+✅ **Better**: "Focus on documents 1-3 which contain the methodology. Ignore the appendices."
+
+### Pitfall 3: Assuming Knowledge
+
+❌ **Poor**: "Fix the usual issues"
+
+✅ **Better**: "Check for: passive voice, sentences over 25 words, undefined acronyms, and missing Oxford commas"
+
+### Pitfall 4: No Output Format
+
+❌ **Poor**: "Summarize this"
+
+✅ **Better**: "Create an executive summary with: 
+- 3-sentence overview
+- 5 key points as bullets
+- 1 paragraph on implications
+- Formatted with markdown headers"
+
+## Quick Reference Card
+
+!!! success "Prompt Engineering Checklist"
+    - [ ] **Clear objective**: What do you want to achieve?
+    - [ ] **Context provided**: Background information included?
+    - [ ] **Role defined**: Who should the AI act as?
+    - [ ] **Specific action**: Exact task described?
+    - [ ] **Output format**: Structure specified?
+    - [ ] **Examples given**: For complex tasks?
+    - [ ] **Constraints noted**: Length, style, or content limits?
+    - [ ] **Documents referenced**: If using uploads?
+    - [ ] **Follow-up planned**: For iterative improvement?
+
+## Assessment Questions
+
+??? question "How do modern AI tools handle uploaded documents?"
+    
+    !!! success "Answer"
+
+        Modern AI tools process uploaded documents by:
+
+        - Converting them to text (OCR for images/PDFs)
+
+        - Adding them to the context window
+
+        - Allowing specific references ("In section 2.3...")
+
+        - Enabling cross-document analysis
         
-        For larger, newer GPTs the length of a prompt may be up to 100 pages.
+        - Maintaining document structure awareness
 
-??? Question "True or False: ChatGPT and Gemini have access to the web by default"
+??? question "What's the most important element of an effective prompt?"
+    
+    !!! success "Answer"
 
-    !!! Failure "False"
 
-        Not all Chatbots can access the internet by default.
+        **Clarity of instruction** is paramount. The AI needs to understand:
 
-        Some chatbots advanced features allow search of the internet for more recent materials that are outside of the training dates for their foundation model.
+        - What you want done (action)
 
-        Services like [Perplexity.ai](https://perplexity.ai){target=_blank} are targeted toward search. 
+        - How you want it done (format)
+
+        - Why you want it done (context)
         
-        [Google Search](https://google.com){target=_blank} now includes AI summaries for some queries by default. 
-       
+        Without clear instructions, even the most advanced AI will produce suboptimal results.
 
-??? Question "Short, concise, prompts are better than long meandering prompts?"
+??? question "How can you ensure consistent outputs across multiple sessions?"
+    
+    !!! success "Answer"
 
-    !!! Success "it depends"
+        1. **Use custom instructions** (ChatGPT, Claude) or system prompts
 
-        Prompts should be specific, but they do not necessarily need to be concise.
+        2. **Create templates** for common tasks
 
-        Zero-shot prompts are less likely to return an accurate response than one where you prime the model, establishing a role, a task, and the format of the result you are looking for.
+        3. **Save successful prompts** for reuse
 
-        Chained or linked prompting can also build a more specific response which relates to what you're looking for. 
+        4. **Use platform features** like GPTs or Projects
 
-??? Question "True or False: GPTs produce factually incorrect information"
+        5. **Include examples** in your prompts
 
-    !!! Success "True"
+        6. **Specify exact formats** with templates
 
-        GPTs have the tendency to generate factually incorrect information, along with details that appear to be factually correct.
+??? question "True or False: Longer prompts always produce better results"
+    
+    !!! failure "False"
+        Prompt quality matters more than length. A well-structured, concise prompt often outperforms a lengthy, unfocused one. However, providing sufficient context and clear instructions is important. Aim for:
 
-        If you do not have the ability to discern the truth of a response, relying upon GPTs to generate legal, health, or scientific content is to be avoided. 
+        - **Completeness** over brevity
 
-        Using GPTs to produce content which will be used in decision making for health, research, or government is unethical and may be illegal.
+        - **Clarity** over complexity
+
+        - **Structure** over stream-of-consciousness
+
+## Further Resources
+
+- [:simple-claude: Anthropic's Prompt Engineering Guide](https://docs.anthropic.com/claude/docs/prompt-engineering){target=_blank}
+
+- [:simple-openai: OpenAI's Best Practices](https://platform.openai.com/docs/guides/prompt-engineering){target=_blank}
+
+- [:simple-googlegemini: Google's Gemini Prompting Strategies](https://ai.google.dev/gemini-api/docs/prompting-strategies){target=_blank}
+
+- [:simple-github: Awesome ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts){target=_blank}
+
+- [Learn Prompting Online Courses](https://learnprompting.org/){target=_blank}

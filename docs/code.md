@@ -1,195 +1,105 @@
-# Code Interpreters
+# Understanding Code Generation with LLMs
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 
-## Popular Code Interpreters 
+## Introduction: From Generation to Execution
 
-### :octicons-copilot-48: GitHub Copilot
+Large Language Models (LLMs) have fundamentally changed how we write and interact with code. Beyond simply generating code snippets, modern AI tools can now **execute** code, analyze data, and produce results in real-time. This capability manifests in two primary forms: **Code Interpreters** that operate in secure, sandboxed environments, and **Code Execution Frameworks** that integrate directly into your local development environment.
 
-[GitHub Copilot](https://code.visualstudio.com/docs/copilot/overview){target=_blank} is an AI pair programmer that helps you write code faster and with less work. It draws context from comments and code to suggest individual lines and whole functions instantly. GitHub Copilot is powered by a generative AI model developed by GitHub, OpenAI, and Microsoft.
+This lesson explores both paradigms, highlighting the most popular tools and setting the stage for the next lesson on "[Vibe Coding](vibe.md)," where we'll dive deep into hands-on, AI-assisted development in your own editor.
 
-[GitHub Copilot VS Code Extension](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot){target=_blank}
+---
 
-### Continue.dev
+## 1. Code Interpreters: Your Sandboxed AI Analyst
 
-[Continue.dev](https://www.continue.dev/){target=_blank} is an open-source AI code assistant that integrates seamlessly with Visual Studio Code. It provides intelligent code completions, refactoring suggestions, and documentation generation to help you write code more efficiently.
+A Code Interpreter is a tool, typically within a chat-based interface, that can write and execute code in a secure, isolated environment. You provide instructions and data in natural language, and the AI handles the coding, execution, and interpretation of results. This is ideal for data analysis, visualization, file conversions, and solving math problems without needing to set up a local programming environment.
 
-[Continue VS Code Extension](https://marketplace.visualstudio.com/items?itemName=Continue.continue){target=_blank}
+### Recommended
 
-### Codeium
+#### :simple-google: Google Gemini
+Google's [Gemini](https://gemini.google.com/){target=_blank} platform integrates powerful code interpretation capabilities directly within its chat interface. You can upload files, ask it to perform complex data analysis, generate visualizations, and solve programming problems. Its integration with the broader Google ecosystem makes it a versatile tool for researchers and developers.
 
-[Codeium](https://codeium.com/){target=_blank} is a free AI-powered code completion tool that supports over 20 programming languages. It offers a Visual Studio Code extension that provides features such as intelligent code completions, inline suggestions, and documentation generation. 
+#### :simple-anthropic: Anthropic's Claude
+[Claude](https://claude.ai/){target=_blank} also offers robust Code Interpreter functionality. Users can upload various document types, including spreadsheets and code files, and interact with Claude to have it write and execute Python code in a secure environment. This is particularly useful for tasks like statistical analysis, data cleaning, and generating plots without writing any code yourself.
 
-[Codeium VS Code Extension](https://marketplace.visualstudio.com/items?itemName=Codeium.codeium){target=_blank}
+!!! example "Data Analysis with a Code Interpreter"
 
-### :simple-openai: ChatGPT Code Interpreter
-
-OpenAI ChatGPT has integrated a [Code Interpreter](https://platform.openai.com/docs/assistants/tools/code-interpreter){target=_blank} into its Assistants API. Code Interpreter can also be accessed from [Azure AI](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/code-interpreter?tabs=python){target=_blank}.
-
-### Azure AI Copilot
-
-[Azure AI App Templates](https://azure.github.io/ai-app-templates/){tareget=_blank} 
-
-### Programmer Q/A
-
-[Phind.com](https://phind.com){target=_blank} - is a search engine optimized for developers and technical questions with simple explanations and relevant code snippets from the web, drawing from sources like [StackOverFlow](https://stackoverflow.com/){target=_blank}. 
-
-## Writing code
-
-**Key Features:**
-
-*   **Code Completion:**  Suggests code completions as you type, from single lines to entire functions.
-*   **Code Generation from Comments:**  Generates code based on natural language descriptions in comments.
-*   **Multiple Language Support:** Works with a wide range of programming languages, including Python, JavaScript, TypeScript, Ruby, Go, Java, C++, C#, and more.
-*   **IDE Integration:** Integrates seamlessly with popular IDEs like Visual Studio Code, Neovim, JetBrains IDEs, and more.
-*   **Context Awareness:**  Considers the surrounding code and comments to provide relevant suggestions.
-*   **Learning and Adaptation:**  Continuously learns from your coding style and improves its suggestions over time.
-
-**IDE Integration**
-
-*   **Start Typing:** Begin writing code as you normally would. In VS Code, Copilot will analyze the context and offer suggestions in grayed-out text.
-*   **Accepting Suggestions:**
-    *   **Tab:** Press `Tab` to accept the entire suggestion.
-    *   **Partial Acceptance:** Use `Ctrl+Right Arrow` (`Cmd+Right Arrow` on macOS) to accept the next word of a suggestion.
-    *   **Cycle through suggestions:** Press `Alt+]` or `Alt+[` (`Option+]` or `Option+[` on macOS) to view other suggestions from Copilot.
-*   **Ignoring Suggestions:** Simply keep typing to ignore a suggestion.
-*   **Triggering Suggestions Manually:**
-    *   Press `Ctrl+Enter` (`Cmd+Enter` on macOS) to open the Copilot completion panel with a list of suggestions to choose from.
-*   **Writing Comments:** Write comments in natural language to describe what you want the code to do. Copilot will attempt to generate the corresponding code.
-
-## Chat Use Cases
-
-!!! example "Linux Guru"
-
-    ChatGPT is trained on common data science languages, like Python, Julia, and R. Use ChatGPT to help develop basic code or to explain and debug code you're trying to write. 
-
-    Using ChatGPT can be a time savings, reducing the time it takes to look for the answers yourself over conventional search.
-
-    === "Prompt"
-
-        ```markdown
-        I want you to act as a humble data scientist who works a lot with Python and scientific visualization
-
-        Create a Python script which generates a visually pleasing and compelling heat map for a CSV dataset
-        ```
-
-!!! example "Explain Code"
-
-    You can also Code Interpreters to summarize code or to help explain its operation
-
-    === "Prompt"
-
-        ```markdown
-        I want you to act as a humble data scientist who works a lot with Linux 
-
-        Explain to me what the following code does:
-
-        $ find /home/www \( -type d -name .git -prune \) -o -type f -print0 | xargs -0 sed -i 's/subdomainA\.example\.com/subdomainB.example.com/g'
-        ```
-
-??? Example "Write Regular Expressions"
-    
-    Regular Expressions, or `regex` is a bane of many programmers. GPT can write, edit, and explain complex `regex`
-
-    === "Prompt"
-
-        ```markdown
-        I want you to act as a regex generator. Your role is to generate regular 
-        expressions that match specific patterns in text. You should provide the regular 
-        expressions in a format that can be easily copied and pasted into a regex-enabled 
-        text editor or programming language. Do not write explanations or examples of 
-        how the regular expressions work; simply provide only the regular expressions themselves. 
-
-        remove any numbers from a string and replace them with a capital X
-        ```
-
-??? example "DevOps"
-
-    ChatGPT can automate tasks and write tests
-
-    === Prompt
-
-        ```markdown
-        I want you to act as a DevOps engineer who specializes in SQL and Docker.
-
-        I am running an Ubuntu 22.04 server with a dockerized web service which appears to have a memory leak. Write a unit test for the PostgreSQL web server using SQL, JSON, or Python that can find the process which is causing the leak and restart the docker-compose service.
-        ```
-
-??? Example "Optimize for Performance"
-
-    === "Prompt"
-
-        ```markdown
-        Make this code run faster and use less memory using BASH
-        
-        ```
-        import os 
-        # folder path
-        dir_path = os.getcwd()
-        # list to store files
-        res = [] 
-        # Iterate directory
-        for path in os.listdir(dir_path):
-            # check if current path is a file
-            if os.path.isfile(os.path.join(dir_path, path)):
-                res.append(path)
-        print(res)
-        ```
-        ```
-
-## Data Analysis
-
-Imagine you are a researcher with a dataset of student performance metrics. You want to understand the correlation between study hours and exam scores. You could use a Code Interpreter as follows:
-
-??? example "Data Analysis with Code Interpreter"
+    Imagine you are a researcher with a dataset of student performance metrics. You could upload a CSV to Gemini or Claude and prompt:
 
     ```
-    Analyze the attached CSV file 'student_data.csv'.
+    Analyze the CSV https://raw.githubusercontent.com/allisonhorst/palmerpenguins/main/inst/extdata/penguins.csv
     
     1.  Load the dataset into a Pandas DataFrame.
     2.  Clean the data by handling any missing values.
-    3.  Generate a scatter plot to visualize the relationship between 'study_hours' and 'exam_scores'.
+    3.  Generate a scatter plot to visualize the relationship between key variables.
     4.  Calculate the Pearson correlation coefficient between these two variables.
     5.  Interpret the results and provide a brief summary.
     ```
 
-    a Code Interpreter should:
+    The Code Interpreter would then write and run Python code to perform these steps, showing you the code, the output, and the final analysis.
 
-    1.  Write Python code that loads the CSV file using the Pandas library.
-    2.  Implement data cleaning procedures, such as imputing or removing missing values.
-    3.  Use a library like Matplotlib or Seaborn to create a scatter plot.
-    4.  Calculate the correlation coefficient using appropriate statistical methods.
-    5.  Generate a textual interpretation of the results, explaining the correlation in the context of the research question.
+---
 
-## Benefits of Using Code Interpreters
+## 2. Code Execution Frameworks: Your AI Pair Programmer
 
-*   **Accessibility:** Enables researchers without extensive programming skills to perform complex data analyses.
-*   **Efficiency:** Automates the coding process, saving time and reducing the potential for manual coding errors.
-*   **Reproducibility:** Provides a clear record of the analysis steps, enhancing the reproducibility of research findings.
-*   **Iterative Analysis:** Allows for quick iteration through different analysis approaches, facilitating exploratory data analysis.
+While sandboxed interpreters are powerful, many developers want AI assistance directly within their Integrated Development Environment (IDE). Code Execution Frameworks are tools (often VS Code extensions) that connect to an LLM to provide in-editor code generation, editing, and even direct execution of code on your local machine.
 
-!!! warning "**Limitations**"
-    While Code Interpreters are powerful tools, they should be used with an understanding of their limitations. The generated code should be reviewed for correctness and appropriateness, especially in the context of complex or nuanced analyses. Researchers should also be aware of potential biases in data and interpretations.
+These tools form the foundation of [**Vibe Coding**](vibe.md), a fluid, conversational approach to development where the AI acts as a true pair programmer.
 
-!!! Success "**Effective Use**"
+### Recommended
 
-    *   **Write Clear Comments:** Well-written comments that clearly describe the intent of your code will significantly improve the quality of Copilot's suggestions.
-    *   **Break Down Complex Tasks:** For complex functions, break down the logic into smaller steps using comments. This helps Copilot understand the structure and generate more accurate code.
-    *   **Iterate and Refine:** Don't be afraid to reject suggestions and try different approaches. Copilot is a tool to assist you, not replace your own coding skills.
-    *   **Review and Test:** Always review and test the code generated by Copilot to ensure it meets your requirements and doesn't contain errors.
-    *   **Provide Feedback:** Use the feedback features within your IDE to rate suggestions. This helps improve Copilot over time.
-    *   **Disable/Enable as Needed:** If you find Copilot distracting or unhelpful for a particular task, you can temporarily disable it in your IDE settings.
+These tools bridge the gap between simple code completion and full-fledged AI-driven development.
 
-!!! Tip "**Ethical Considerations**"
+#### :simple-google: Gemini Pro (Console)
 
-    *   **Code Originality:** While Copilot is trained on a massive dataset of public code, it's important to be aware of potential issues related to code originality and licensing. Always review the generated code and ensure it complies with applicable licenses.
-    *   **Security:** Be cautious when using Copilot to generate code that handles sensitive data or interacts with external systems. Review the code carefully for potential security vulnerabilities.
-    *   **Bias:** Like any AI model, Copilot can reflect biases present in the training data. Be mindful of potential biases in the generated code and strive to write inclusive and unbiased code.
+Gemini's capabilities extend into development workflows through various integrations. For instance, the [Gemini AI Studio](https://aistudio.google.com/app/prompts/new_chat){target=_blank} acts as a coding companion, while extensions for VS Code allow developers to leverage its power for code generation, debugging, and more, directly in their editor.
 
-## Further Resources
+#### :simple-openai: OpenAI Playground & Console
+The [OpenAI Playground](https://platform.openai.com/playground){target=_blank} provides a console-like environment where developers can experiment with models, fine-tune prompts, and generate code. While not a full IDE integration, it's a powerful tool for prototyping and developing specific code functions that can then be moved into a project.
 
-*   **GitHub Copilot Website:** [https://github.com/features/copilot](https://github.com/features/copilot){target=_blank}
-*   **GitHub Copilot Documentation:** [https://docs.github.com/en/copilot](https://docs.github.com/en/copilot){target=_blank}
-*   **GitHub Copilot Community Forum:** [https://github.com/orgs/community/discussions/categories/copilot](https://github.com/orgs/community/discussions/categories/copilot){target=_blank}
+!!! success "Run Code Interpreters locally"
 
+    While console-based tools are useful, the real power of AI-assisted development comes from direct IDE integration. Tools like **Claude Desktop** and VS Code extensions such as **Cline** provide this deep integration, and they are the central focus of our next lesson on **Vibe Coding**, where we will explore how to turn your editor into a dynamic, collaborative coding environment.
 
+---
+
+## 3. Best Practices & Ethical Considerations
+
+Whether using a sandboxed interpreter or a local framework, the same principles apply for effective and responsible use.
+
+*   **Write Clear Prompts & Comments:** The quality of your input dictates the quality of the output. Describe your intent clearly. For code, well-written comments act as a direct guide for the AI.
+*   **Break Down Complex Tasks:** Don't ask the AI to build an entire application in one go. Decompose the problem into smaller, manageable steps.
+*   **Review, Test, and Verify:** **Never trust generated code blindly.** Always review it for correctness, security vulnerabilities, and adherence to best practices. Run tests to ensure it works as expected.
+*   **Be Aware of Bias and Originality:** AI models are trained on vast amounts of public code and data, which may contain biases or licensed code. Be mindful of potential security flaws, biases in output, and intellectual property rights.
+
+!!! warning "The Power and Peril of Local Execution"
+    Code Execution Frameworks that run on your machine have access to your files and network. This is incredibly powerful but carries inherent risks. The next lesson on **Vibe Coding** will cover these security considerations in more detail.
+
+---
+
+## Assessment
+
+??? question "What is the primary difference between a sandboxed Code Interpreter (like in ChatGPT) and a Code Execution Framework (like GitHub Copilot in VS Code)?"
+    
+    ??? success "Answer"
+        A sandboxed Code Interpreter runs code in a secure, isolated environment provided by the service, disconnected from your local machine. A Code Execution Framework integrates into your local IDE and can read, modify, and execute files directly on your computer.
+
+??? question "True or False: Code generated by an AI assistant is guaranteed to be secure and free of errors."
+
+    ??? failure "False"
+        AI-generated code can contain bugs, security vulnerabilities, and biases from its training data. It is crucial to always review, test, and validate any code before using it in a production environment.
+
+??? question "Which of the following tasks is best suited for a sandboxed Code Interpreter?"
+
+    1. Refactoring a large, existing codebase in your project.
+    2. Quickly analyzing a CSV file you upload to generate a plot.
+    3. Building and running a web server on your local machine.
+    4. Continuously providing autocompletions as you type in your IDE.
+
+    ??? success "Correct Answer: 2"
+        Sandboxed interpreters excel at self-contained tasks involving data you can upload, like analyzing a file. The other tasks are better suited for AI tools integrated directly into a local IDE.
+
+??? question "True or False: Using an open-source Code Execution Framework like Continue.dev allows you to use locally-run LLMs (e.g., via Ollama) instead of relying on cloud-based APIs."
+
+    ??? success "True"
+        One of the key advantages of many open-source tools is flexibility. They often allow you to connect to various LLM backends, including models running on your own hardware, giving you more control over privacy and cost.

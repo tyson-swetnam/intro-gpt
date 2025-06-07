@@ -1,4 +1,4 @@
-# Geospatial Analysis in Public Health
+# Vibe coding a Public Health Map
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 
@@ -290,8 +290,43 @@ Report the commit URL on success.
 
 ---
 
+### Step 9 – One Shot Prompt
+
+Now, try a new chat session and let's push everything through at once to see how it turns out:
+
+```text
+The goal for this project is to create a story map that tells the story of 1850's the cholera outbreak in London. We will use HTML, JS, CSS, and Python for the code. 
+
+
+First task,
+
+1. Download https://geodacenter.github.io/data-and-lab/data/snow.zip into a new folder called `data/`  
+2. Unzip the .zip file in place, then delete the .zip  
+3. Write a short summary in MarkDown of the steps to this in the `data/` folder.
+
+Second task,
+
+4. In the unzipped dataset, locate every *.geojson file.  
+5. Move the .geojson files into a new `map/` folder. Ignore the data in the __MACOSX folder. Ignore all other file types.
+
+Third task,
+
+6. Summarize accompanying PDFs in the `data/` folder and save the summaries in a new MarkDown file.
+
+Final task,
+
+6. Build a scrolling story telling map. Using Leaflet, HTML, CSS, and JavaScript, create a `map/snow_storymap.html` which will read the GeoJSON files we got earlier.
+
+Requirements:
+  • The HTML must scroll like a Story Map that is effective both on mobile and desktop
+  • the layers should appear when scrolled over and disappear when they are scrolled past
+  • Use the summarized text to explain the relevance and meaning of each data set in the context of the larger story
+  • Use chloropleth colors for presence or absence of observations, such as 'deaths' and 'deathdens' for deaths and death density
+  • add the death count to polygons as labels, but to the not point layers
+```
+
 ### Next Steps
 
-• Experiment with alternative datasets (CDC SVI, Tiger/Line, etc.)  
-• Swap in **QGISMCP** to automate desktop GIS steps.  
-• Deploy the map via GitHub Pages or Netlify.
+• Modify the prompts to use **QGISMCP** and build the layers there.
+
+• Deploy the code and map via GitHub Pages.

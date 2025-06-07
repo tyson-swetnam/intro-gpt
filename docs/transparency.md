@@ -40,17 +40,79 @@ Transparency is a cornerstone of developing trust, specifically when AI is invol
 
 ## Transparency
 
-??? Danger "Black Box Problem :material-box-shadow:"
+??? Danger "The Black Box Problem :material-box-shadow:"
 
-    Many AI models are based on complex architectures that operate as "black boxes" meaning that their internal decision space is opaque or not comprehensible by human observers. This lack of comprehension results in acountability problems, specifically for their use in applications like health care or medical decisions.
+    Many AI models rely on complex architectures that function as "black boxes," where their internal decision-making processes are opaque and not easily understood by human observers. This lack of transparency creates significant accountability challenges, especially in high-stakes fields like healthcare.
 
-Strategies for mitigating risk and cultivating responsible, transparent, and explainable AI
+    A real-world example is the case of AI-enabled pulse oximeters, which were found to overstate blood oxygen saturation in individuals with darker skin. This flaw, rooted in biased training data, highlights how a lack of transparency can hide life-threatening biases within a medical device, leading to unequal care. ([Read more at the ACLU](https://www.aclu.org/news/privacy-technology/algorithms-in-health-care-may-worsen-medical-racism){target=_blank})
 
-* Promoting data diversity and bias mitigation
+### Strategies for Mitigation
 
-* Strengthening data security and privacy-preserving AI
+To counter the black box problem and foster responsible AI, several strategies are essential:
 
-* Fostering human-in-the-loop approaches w/ continuous oversight
+*   **Promoting Data Diversity and Bias Mitigation:** Actively working to ensure training datasets are representative of the entire population to prevent algorithmic bias. This includes collecting more diverse data and using techniques to identify and correct biases in models.
+*   **Strengthening Data Security and Privacy:** Implementing robust security measures and privacy-preserving techniques (like federated learning or differential privacy) to protect sensitive data used by AI systems.
+*   **Fostering Human-in-the-Loop (HITL) Approaches:** Integrating human expertise and oversight into AI workflows. This ensures that critical decisions are validated by experts and allows for continuous monitoring and correction of AI behavior.
+*   **Enhancing Transparency and Explainable AI (XAI):** Developing and deploying XAI methods that can provide clear explanations for how a model arrived at a specific decision. This is crucial for building trust and enabling meaningful audits. For example, the open science movement advocates for making data and models used in health research publicly available to allow for independent verification and scrutiny. ([Learn about Open Science in AI for Health](https://pmc.ncbi.nlm.nih.gov/articles/PMC8515002/){target=_blank})
 
-* Enhancing Transparency and XAI
+## Assessment
 
+??? question "True or False: The 'black box' problem refers to the physical appearance of AI hardware."
+
+    !!! failure "False"
+
+        The "black box" problem describes the difficulty in understanding the internal decision-making processes of complex AI models.
+
+??? question "Which of the following is NOT a core component of AI transparency?"
+
+    A. Access to the data a system was trained upon
+
+    B. The speed of the algorithm's computation
+
+    C. Explanation of how a model arrives at its decisions
+
+    D. List of safeguards in place to mitigate bias
+
+    ??? success "Answer"
+        
+        B. The speed of the algorithm's computation 
+        
+        While computational speed is a performance metric, it is not a core component of transparency, which focuses on openness, data, and decision-making logic.
+
+??? question "What is the primary goal of Explainable AI (XAI)?"
+
+    A. To make AI models run faster
+
+    B. To describe the steps an AI model takes to reach a result
+
+    C. To replace human oversight entirely
+
+    D. To secure AI systems from cyberattacks
+
+    ??? success "Answer"
+
+        **B: To describe the steps an AI model takes to reach a result**
+        
+        XAI focuses on making the decision-making process of an AI model understandable to humans.
+
+??? question "True or False: The EU AI Act is a set of voluntary guidelines for companies to consider."
+
+    !!! failure "False"
+
+        The EU AI Act is comprehensive legislation with a formal implementation timeline, making it a mandatory legal framework for AI governance in the European Union.
+
+??? question "Which organization developed the AI Risk Management Framework (AI RMF) to manage risks associated with AI?"
+
+    A. World Health Organization (WHO)
+
+    B. Coalition for Health AI (CHAI)
+
+    C. National Institute of Standards and Technology (NIST)
+
+    D. Organization for Economic Cooperation and Development (OECD)
+
+    ??? success "Answer"
+        
+        C: National Institute of Standards and Technology (NIST)
+
+        NIST is responsible for the AI Risk Management Framework.

@@ -29,6 +29,8 @@ nav:
     - Writing Prompts: prompts.md
     - General Productivity: daily-productivity.md
     - Code Interpretation: code.md
+    - Vibe Coding: vibe.md
+    - Choose a Platform: choose.md
   - Education:
     - Overview: education.md
     - Teaching with AI: teaching.md
@@ -48,7 +50,7 @@ nav:
     - Gradio: gradio.md
     - Posit (RStudio): posit.md
     - Text Mining: text_mining.md
-    - Vibe Coding: vibe.md
+
   - Ethics: 
     - Overview: ethics.md
     - Bias: bias.md

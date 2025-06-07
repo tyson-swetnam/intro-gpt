@@ -2,6 +2,8 @@
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 
+![visitors](https://visitor-badge.lithub.cc/badge?page_id=tyson-swetnam.intro-gpt&left_color=black&right_color=green)
+
 ![banner](assets/banner3_ai.png){width=1000}
 
 ## [:material-run-fast: Workshop Agenda](agenda.md)
