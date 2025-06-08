@@ -1,5 +1,7 @@
 # Google NotebookLM
 
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+
 ![banner](assets/notebooklm_logo.png){width=300}
 
 [Google NotebookLM](https://notebooklm.google/){target=_blank} is an AI tool specifically designed for research, writing, and education. What makes it unique amongst all the chatbots out in the world, is that the tool is restricted to only the resources you give it. This puts guardrails on your conversations and prevents the chatbot from presenting information with unknown sources. **If you want to work directly with just the sources you trust, NotebookLM is a great choice.** 

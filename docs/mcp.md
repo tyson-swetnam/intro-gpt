@@ -1,5 +1,7 @@
 # Model Context Protocol (MCP) 
 
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+
 ## What is Model Context Protocol (MCP)? 
 
 [**Model Context Protocol (MCP)**](https://modelcontextprotocol.io/introduction){target=_blank} is a standardized communication framework designed to allow Large Language Models (LLMs) and other AI tools to access and understand the **context** of what a user is currently working on within various applications.

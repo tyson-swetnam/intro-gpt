@@ -20,17 +20,17 @@ nav:
     - Agenda: agenda.md
     - Landscape: ai_landscape.md
   - Setup:
-    - ChatGPT: chatgpt.md
-    - Microsoft Copilot: microsoft.md
-    - Gemini: gemini.md
     - Claude: claude.md
-    - GitHub Copilot: copilot.md
+    - Gemini: gemini.md
+    - OpenAI: chatgpt.md
+    - Copilot: microsoft.md
+    - GitHub: copilot.md
   - Prompt Engineering: 
     - Writing Prompts: prompts.md
     - General Productivity: daily-productivity.md
-    - Code Interpretation: code.md
+    - Code Interpreters: code.md
     - Vibe Coding: vibe.md
-    - Choose a Platform: choose.md
+    - Choosing a Platform: choose.md
   - Education:
     - Overview: education.md
     - Teaching with AI: teaching.md

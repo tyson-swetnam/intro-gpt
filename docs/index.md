@@ -31,15 +31,15 @@ Generative AI are now deeply integrated into how we work, conduct research, teac
 
 !!! example "Account Setup Instructions"
 
-    [:material-run-fast: :simple-openai: ChatGPT](chatgpt.md)
+    [:material-run-fast: :simple-anthropic: Claude](claude.md)
 
     [:material-run-fast: :simple-google: Gemini](gemini.md)
+
+    [:material-run-fast: :simple-openai: ChatGPT](chatgpt.md)
 
     [:material-run-fast: :material-microsoft: Microsoft Copilot](microsoft.md)
 
     [:material-run-fast: :simple-githubcopilot: GitHub Copilot](copilot.md)
-
-    [:material-run-fast: :simple-anthropic: Claude](claude.md)
 
     [:material-run-fast: :hugging: HuggingFace](huggingface.md)
 

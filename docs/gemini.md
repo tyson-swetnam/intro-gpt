@@ -1,4 +1,4 @@
-# :simple-google: Google Gemini
+# :simple-googlegemini: Google Gemini
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 
@@ -47,4 +47,31 @@ While Google initially launched Bard as its conversational AI, it has since been
 *   [**Google Search:**](https://google.com){target=_blank} Enhancing search results with AI-generated summaries and insights.
 *   [**Google Workspace:**](https://workspace.google.com/solutions/ai/){target=_blank} AI features to Google Docs, Sheets, Slides, Gmail, and Meet. (Similar to [Microsoft's Copilot](https://copilot.microsoft.com/){target=_blank} integration with Office 365).
 *   **Android:** [Gemini Nano](https://deepmind.google/technologies/gemini/nano/){target=_blank} will power on-device AI features in Android devices.
-   
+
+!!! tip "Setting up your Gemini API Key"
+
+    To use the Gemini API in your own applications, you'll need an API key. This key is linked to a Google Cloud project. Here’s how to set one up:
+
+    1.  **Go to the Google Cloud Console:**
+        *   Open your web browser and navigate to [console.cloud.google.com](https://console.cloud.google.com/){target=_blank}.
+        *   Sign in with your Google Account.
+
+    2.  **Create or Select a Google Cloud Project:**
+        *   At the top of the page, click the project selector dropdown menu (it might show an existing project name).
+        *   In the "Select a project" window that appears, click **"New Project"**.
+        *   Give your project a descriptive name (e.g., `gemini-api-project`) and click **"Create"**.
+
+    3.  **Enable the Gemini API:**
+        *   Once your project is created and selected, use the navigation menu (&#9776;) on the left to go to **"APIs & Services"** > **"Enabled APIs & services"**.
+        *   Click on **"+ ENABLE APIS AND SERVICES"**.
+        *   In the search bar, type `Gemini API` and press Enter.
+        *   Select the **"Gemini API"** from the search results (it may also be listed as "Generative Language API").
+        *   Click the **"Enable"** button. It might take a few moments to complete.
+
+    4.  **Get Your API Key from Google AI Studio:**
+        *   Now, go to [aistudio.google.com](https://aistudio.google.com){target=_blank}.
+        *   Click on **"Get API key"** in the top left corner.
+        *   A new window will open. Click on **"Create API key in new project"** or select the project you created earlier.
+        *   Your new API key will be generated and displayed. **Copy this key and store it securely.** You will need it to make calls to the Gemini API.
+
+    Your API key is now ready to use! Remember to keep it confidential and not expose it in client-side code or public repositories.
