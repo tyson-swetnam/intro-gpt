@@ -171,6 +171,7 @@ AI-powered tools can assist healthcare providers in making more informed decisio
 
 **Positive Examples:**
 
+* **Oncology Screening:** [Development and validation of an autonomous artificial intelligence agent for clinical decision-making in oncology](https://www.nature.com/articles/s43018-025-00991-6){target=_blank}
 * **Diabetic Retinopathy Detection:** AI systems like [LumineticScore](https://www.digitaldiagnostics.com/products/eye-disease/lumineticscore/){target=_blank} can analyze retinal images to detect diabetic retinopathy, a leading cause of blindness, enabling early intervention and treatment, particularly in areas with limited access to specialists.
 * **Drug Discovery:** Language models like [Google's TxGemma](https://developers.googleblog.com/en/introducing-txgemma-open-models-improving-therapeutics-development/){target=_blank} are being developed to accelerate drug discovery by understanding and predicting the properties of therapeutic compounds.
 * **Diagnostic Conversations:** Research systems like [Google's AMIE](https://research.google/blog/amie-a-research-ai-system-for-diagnostic-medical-reasoning-and-conversations/){target=_blank} are exploring the potential for AI to conduct diagnostic conversations and improve medical reasoning. ([Read more](https://doi.org/10.48550/arXiv.2401.05654){target=_blank})
