@@ -291,70 +291,128 @@ Qwen's Apache 2.0 licensed models (40M+ downloads on HuggingFace) can be run **o
 
 !!! Info "Image and Video Generation Models"
 
-    ## **Image Generation Models**
+    ## **Image Generation Models (2025)**
 
-    **Stable Diffusion 3.5**
+    **Stable Diffusion 3.5** (October 2024)
 
-    [Stable Diffusion 3.5](https://stability.ai/stable-diffusion-3-5){target=_blank} is the latest iteration from [Stability AI](https://stability.ai/){target=_blank}, featuring multiple model sizes:
-    - **SD3.5 Large (8B)**: High-quality generation with advanced prompt adherence
-    - **SD3.5 Medium (2.5B)**: Balanced performance and quality
-    - **SD3.5 Large Turbo**: Optimized for speed with 4-8 step generation
+    [Stable Diffusion 3.5](https://stability.ai/stable-diffusion-3-5){target=_blank} from [Stability AI](https://stability.ai/){target=_blank} features:
+    - **SD3.5 Large (8.1B)**: High-quality 1MP generation with advanced prompt adherence
+    - **SD3.5 Medium (2.5B)**: Balanced performance for consumer hardware (0.25-2MP)
+    - **SD3.5 Large Turbo**: Optimized for speed with 4-step generation
+    - **Open Source**: Free for non-commercial and commercial use under $1M revenue
+    - **Platforms**: [HuggingFace](https://huggingface.co/stabilityai){target=_blank}, [GitHub](https://github.com/Stability-AI/StableDiffusion){target=_blank}, Replicate, Fireworks AI
 
-    Models are available via [HuggingFace](https://huggingface.co/stabilityai){target=_blank}, [GitHub](https://github.com/Stability-AI/StableDiffusion){target=_blank}, and various APIs.
+    **FLUX Models** (Black Forest Labs)
 
-    **FLUX Models**
+    [FLUX](https://bfl.ai/){target=_blank} by Black Forest Labs offers cutting-edge diffusion models:
+    - **FLUX.1 Kontext** (May 2025): Combines text+image prompts, state-of-the-art in-context generation and editing
+    - **FLUX 1.1 Pro Ultra**: Latest professional variant with enhanced quality
+    - **FLUX.1 Krea Dev** (July 2025): Better performance, varied aesthetics, improved realism
+    - **FLUX.1 Schnell**: Apache-licensed open-source for fast local generation (12B parameters)
+    - **FLUX.1 Tools** (November 2024): Fill, Depth, Canny, Redux for advanced control
+    - **Architecture**: 12B parameter rectified flow transformer
+    - **Platforms**: API access, [BFL Playground](https://bfl.ai/){target=_blank}, Azure AI Foundry
 
-    [FLUX](https://blackforestlabs.ai/){target=_blank} by Black Forest Labs (creators of Stable Diffusion) offers state-of-the-art diffusion models:
-    - **FLUX.1 [pro]**: Top-tier model for commercial use
-    - **FLUX.1 [dev]**: Open-weight model for non-commercial use
-    - **FLUX.1 [schnell]**: Fast local generation model
+    **GPT-4o Image Generation** (OpenAI)
 
-    **Other Leading Image Generation Models**
+    [GPT-4o Image](https://openai.com/index/introducing-4o-image-generation/){target=_blank} (March 2025):
+    - **Model**: gpt-image-1 (replaces DALL-E 3)
+    - **Resolution**: Up to 4096×4096 pixels (4K)
+    - **Features**: Native integration in GPT-4o, reliable text rendering, multi-turn refinement, image transformation
+    - **Access**: ChatGPT (Free/Plus/Pro), [OpenAI API](https://platform.openai.com/){target=_blank}
+    - **Safety**: C2PA metadata watermarking on all images
 
-    *   [DALL·E 3](https://openai.com/dall-e-3){target=_blank} (OpenAI): Photorealistic generation with excellent prompt understanding, integrated into ChatGPT Plus
-    *   [Midjourney v6.1](https://www.midjourney.com/){target=_blank}: Industry-leading artistic and stylized generation via Discord
-    *   [Imagen 3](https://deepmind.google/technologies/imagen-3/){target=_blank} (Google): Advanced text-to-image with excellent photorealism, available in ImageFX
-    *   [Adobe Firefly 3](https://www.adobe.com/products/firefly.html){target=_blank}: Enterprise-focused with commercial-safe training data
-    *   [Ideogram 2.0](https://ideogram.ai/){target=_blank}: Excellent text rendering capabilities within images
-    *   [Leonardo.AI](https://leonardo.ai/){target=_blank}: Real-time canvas generation with fine-tuned models
+    **Midjourney V7** (April 2025)
 
-    ## **Video Generation Models**
+    [Midjourney](https://www.midjourney.com/){target=_blank} latest features:
+    - **V7**: Current default (since June 2025) with stunning text precision, richer textures, improved bodies/hands
+    - **Draft Mode**: 10x speed at half the cost
+    - **Personalization**: First model with personalization enabled by default
+    - **V8**: In development with "significant differences" and innovative features
+    - **Video**: Coming soon (in final sprint stage)
+    - **Platform**: Discord-based, [Web Interface](https://www.midjourney.com/){target=_blank}
 
-    **Google Veo 3**
+    **Google Imagen 4** (May 2025)
 
-    [Veo 3](https://deepmind.google/models/veo/){target=_blank} represents Google's latest advancement in video generation:
-    
-    - Generates up to 4K resolution videos
-    
-    - Includes voices and sound effects
-    
-    - Improved understanding of real-world physics and human movement
-    
-    - Better camera control and cinematic effects
-    
-    - Available through Google Labs and VideoFX
+    [Imagen 4](https://deepmind.google/models/imagen/){target=_blank} and Imagen 4 Ultra:
+    - **Resolution**: Up to 2K resolution
+    - **Speed**: 10x faster mode available
+    - **Features**: Enhanced photo-realism, improved text rendering, advanced typography, diverse art styles
+    - **Safety**: SynthID watermarking, content filtering
+    - **Access**: [Gemini API](https://aistudio.google.com/){target=_blank}, Google AI Studio, Google Labs
 
-    **OpenAI Sora**
+    **Adobe Firefly Image Model 4** (April 2025)
 
-    [Sora](https://openai.com/sora){target=_blank} (OpenAI) features:
+    [Firefly 4](https://firefly.adobe.com/){target=_blank} and Firefly 4 Ultra:
+    - **Resolution**: Up to 2K with lifelike quality
+    - **Features**: Exceptional precision, camera control, structure/style references
+    - **Commercial-Safe**: Training data with indemnification for enterprise
+    - **Integration**: Photoshop, Illustrator, InDesign, [API access](https://firefly.adobe.com/){target=_blank}
+    - **Firefly Video Model**: New modality (April 2025)
 
-    - Up to 1-minute video generation at 1080p
-    
-    - Advanced physics simulation and 3D consistency
-    
-    - Available to ChatGPT Plus and Pro subscribers
-    
-    - Turbo mode for faster generation
+    **Breakthrough New Models (2024-2025)**
 
-    **Other Notable Video Generation Models**
+    *   [**Reve Image 1.0**](https://preview.reve.art/){target=_blank} (March 2025): #1 on Artificial Analysis Arena, best-in-class prompt adherence and typography
+    *   [**Recraft V3**](https://www.recraft.ai/){target=_blank} (October 2024): #1 on HuggingFace leaderboard at launch, first with vector art generation and extended text
+    *   [**HiDream-I1**](https://hidream.org/){target=_blank} (April 2025): 17B parameters, open-source (MIT), sparse transformer architecture
+    *   [**Ideogram 3.0**](https://ideogram.ai/){target=_blank} (2025): Enhanced realism, style reference (3 images), superior text rendering
+    *   [**Leonardo Lucid Origin**](https://leonardo.ai/){target=_blank} (2025): Most versatile model, accurate text rendering, full HD renders
 
-    *   [Runway Gen-3 Alpha](https://runwayml.com/){target=_blank}: Professional-grade with advanced motion control
-    *   [Pika 2.0](https://pika.art/){target=_blank}: Scene editing and sound effects generation
-    *   [Stable Video Diffusion 2](https://stability.ai/stable-video){target=_blank}: Open-source image-to-video model
-    *   [Meta Movie Gen](https://ai.meta.com/research/movie-gen/){target=_blank}: High-quality video with synchronized audio (research preview)
-    *   [Kling 1.5](https://klingai.com/){target=_blank}: Chinese model with impressive motion quality
-    *   [HeyGen](https://www.heygen.com/){target=_blank}: Specialized in AI avatar video generation
-    *   [Synthesia](https://www.synthesia.io/){target=_blank}: Enterprise-focused avatar video platform
+    ## **Video Generation Models (2025)**
+
+    **OpenAI Sora 2** (September 2025)
+
+    [Sora 2](https://openai.com/sora){target=_blank} latest features:
+    - **Native Audio**: Synchronized dialogue, music, and sound effects
+    - **Resolution**: Up to 1080p, duration up to 20 seconds
+    - **Physics**: Superior simulation (basketball rebounds, water buoyancy, gymnastics)
+    - **Cameo Feature**: Insert user likenesses with consent
+    - **Pricing**: Plus plan (50 videos/month at 480p), Pro plan (10x more usage, higher resolutions)
+    - **Access**: ChatGPT Plus/Pro, iOS app (US/Canada, invite-only)
+
+    **Google Veo 3** (May 2025)
+
+    [Veo 3](https://deepmind.google/models/veo/){target=_blank} represents Google's latest advancement:
+    - **Resolution**: Up to 4K, 8-second videos
+    - **Native Audio**: Dialogue, sound effects, ambient noise
+    - **Features**: Best-in-class physics, realism, prompt adherence, advanced character/camera controls
+    - **Access**: [Flow (Google Labs)](https://deepmind.google/models/veo/){target=_blank}, Gemini app (AI Pro subscribers), Google AI Studio, Gemini API, Vertex AI
+    - **Limits**: 3 videos/day for paying subscribers
+    - **Rollout**: 159+ countries (July 2025)
+
+    **Runway Gen-4** (March 2025)
+
+    [Runway Gen-4](https://runwayml.com/){target=_blank} features:
+    - **World Consistency**: Characters, locations, objects consistent across scenes
+    - **Visual References**: Image + text prompt (no fine-tuning required)
+    - **Duration**: 5 or 10 seconds
+    - **Gen-4 Turbo**: Faster generation at lower cost
+    - **Access**: [app.runwayml.com](https://app.runwayml.com/){target=_blank}
+
+    **Meta Movie Gen** (2025 Release Planned)
+
+    [Movie Gen](https://ai.meta.com/research/movie-gen/){target=_blank} research features:
+    - **Models**: 30B video, 13B audio
+    - **Resolution**: 1080p HD, up to 16 seconds at 16 fps
+    - **Audio**: Up to 45 seconds with synchronized sound
+    - **Features**: Four capabilities (video generation, personalized video, precise editing, audio generation)
+    - **Status**: Research phase, Instagram integration planned 2025
+    - **Partnership**: Blumhouse Productions
+
+    **Leading Commercial Video Platforms**
+
+    *   [**Pika 2.2**](https://pika.art/){target=_blank} (February 2025): Pikaframes keyframe system, 10-second videos, 1080p, Pikatwists dramatic endings
+    *   [**Kling AI 2.5 Turbo**](https://klingai.com/){target=_blank} (September 2025): Enhanced prompt adherence, superior high-motion scenes, 1080p, 30% cost reduction
+    *   [**Luma Ray3**](https://lumalabs.ai/dream-machine){target=_blank} (September 2025): Draft mode, HDR/EXR support, deep reasoning, fast generation
+    *   [**HeyGen**](https://www.heygen.com/){target=_blank} (2025): Avatar IV with hyper-realistic avatars, 140+ languages, Veo 3 integration, 60%+ Fortune 100 adoption
+    *   [**Synthesia 3.0**](https://www.synthesia.io/){target=_blank} (2025): Express-2 avatars, AI dubbing (32 languages), video agents, $2.1B valuation
+    *   [**Hedra Character-3**](https://www.hedra.com/){target=_blank} (April 2025): Omnimodal model, 4K @ 60fps, 90-second videos, full-body animation with speech
+
+    **Open-Source Video Models**
+
+    *   [**Hunyuan Video**](https://aivideo.hunyuan.tencent.com/){target=_blank} (Tencent): 13B+ parameters, largest open-source model, video-to-audio module, GitHub/HuggingFace
+    *   [**Stable Video 4D 2.0**](https://stability.ai/stable-video){target=_blank} (May 2025): Enhanced 4D generation, 48 frames (12×4 views), 576×576, GitHub available
+    *   [**Mochi 1**](https://www.genmo.ai/){target=_blank} (Genmo): 10B parameters, Apache 2.0 license, 30fps, 5.4 seconds (HD version pending)
 
     ## **Advanced Capabilities**
 
