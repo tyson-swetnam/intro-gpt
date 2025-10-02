@@ -117,6 +117,37 @@ This section provides a snapshot of some of the most influential models and plat
 | | Business | Contact Sales | Custom pricing for organizations |
 | [**Replit AI**](https://replit.com/pricing){target=_blank} | Core | $20 | AI coding assistant integrated in Replit IDE |
 
+---
+
+## Agentic Browsers (AI-Powered Web Browsers)
+
+| **Browser**  | **Plan** | **Price (per month)** | **Details**  |
+| :----------- | :------- | :-------------------- | :----------- |
+| [**Perplexity Comet**](https://www.perplexity.ai/comet){target=_blank} | [Free](https://comet.perplexity.ai/){target=_blank} | $0 | AI-powered browser with sidecar assistant, Perplexity AI search, tab management, content summarization |
+| | Perplexity Max | $200 | Background Assistant for multi-tasking, autonomous task execution (booking flights, sending emails), mission control dashboard |
+| [**Dia Browser**](https://www.diabrowser.com){target=_blank} | [Free Beta](https://browserco.typeform.com/to/i6CycxSu){target=_blank} | $0 (Invite-only) | AI-first browser, URL bar = AI chat, tab conversations, Skills system, browsing history context (opt-in) <br> **macOS 14+ M1+ only** |
+| | [Dia Pro](https://www.diabrowser.com){target=_blank} | $20 | Unlimited AI chat and Skills, multi-step reasoning, task automation <br> **Acquired by Atlassian ($610M)** |
+| [**Fellou**](https://fellou.ai){target=_blank} | [Free](https://fellou.ai/pricing){target=_blank} | $0 | 1,000 Sparks (~4 tasks), Deep Search, autonomous web actions, Shadow Workspace for background tasks |
+| | [Plus](https://fellou.ai/pricing){target=_blank} | $19 | 2,000 Sparks (~8 tasks), 3 scheduled tasks, priority support |
+| | [Pro](https://fellou.ai/pricing){target=_blank} | $39.90 | 5,000 Sparks (~20 tasks), 5 scheduled tasks, Image/Code/Music agents |
+| | [Ultra](https://fellou.ai/pricing){target=_blank} | $199.90 | Unlimited Sparks, unlimited scheduled/concurrent tasks, exclusive support |
+| [**Opera Neon**](https://www.operaneon.com/){target=_blank} | [Subscription](https://www.operaneon.com/){target=_blank} | $19.99 (Waitlist) | Neon Do (autonomous browsing), Neon Make (AI creation), Cards system, Tasks workspaces, local processing |
+| [**Genspark AI Browser**](https://www.genspark.ai){target=_blank} | [Free](https://www.genspark.ai/pricing){target=_blank} | $0 | 100 credits daily, Super Agent Everywhere, Autopilot Mode, 700+ MCP tool integrations |
+| | [Plus](https://www.genspark.ai/pricing){target=_blank} | $24.99 | 10,000 credits monthly, priority AI agent access, top-tier models, AI Slides/Sheets/Docs |
+| | [Pro](https://www.genspark.ai/pricing){target=_blank} | $249.99 | 125,000 credits monthly, full Super Agent access, phone calls, video generation |
+| [**Microsoft Edge Copilot Mode**](https://www.microsoft.com/edge){target=_blank} | [Free (Experimental)](https://www.microsoft.com/en-us/edge/features/copilot){target=_blank} | $0 | Cross-tab awareness, task automation, in-page assistance, browser history/credentials access <br> **Windows/Mac, opt-in** |
+| [**Opera One + Aria**](https://www.opera.com/features/aria){target=_blank} | [Free](https://www.opera.com/){target=_blank} | $0 | Free AI assistant, real-time web access, page context mode, image generation, tab commands, local AI models <br> **No account required** |
+| [**Brave + Leo AI**](https://brave.com/leo/){target=_blank} | [Free](https://brave.com/){target=_blank} | $0 | Privacy-first AI, Llama 3.1 8B, Mixtral, Claude Haiku, Qwen, content awareness, zero data retention |
+| | Leo Premium | Varies | Claude Sonnet 4, DeepSeek R1 reasoning models, Bring Your Own Model (BYOM) |
+
+**Notes on Agentic Browsers:**
+
+*   **True Agentic Capabilities:** Comet, Fellou, Opera Neon, Dia, and Genspark can autonomously perform multi-step tasks (booking, purchasing, form filling)
+*   **AI-Enhanced:** Microsoft Edge Copilot Mode, Opera One, and Brave Leo provide AI assistance but with less autonomous action
+*   **Platform Availability:** Most are Chromium-based; Dia is macOS only (M1+); Others support Windows/Mac/Linux
+*   **Privacy Considerations:** Check each browser's data policies - some use cloud AI, others offer local processing
+*   **Coming Soon:** OpenAI browser expected late 2025 with ChatGPT integration and Operator agent
+
 **Notes:**
 
 *   Token pricing for API access can be complex. Refer to each provider's pricing page for the most accurate and up-to-date details.
@@ -363,40 +394,63 @@ Qwen's Apache 2.0 licensed models (40M+ downloads on HuggingFace) can be run **o
     **OpenAI Sora 2** (September 2025)
 
     [Sora 2](https://openai.com/sora){target=_blank} latest features:
+
     - **Native Audio**: Synchronized dialogue, music, and sound effects
+    
     - **Resolution**: Up to 1080p, duration up to 20 seconds
+    
     - **Physics**: Superior simulation (basketball rebounds, water buoyancy, gymnastics)
+    
     - **Cameo Feature**: Insert user likenesses with consent
+    
     - **Pricing**: Plus plan (50 videos/month at 480p), Pro plan (10x more usage, higher resolutions)
+    
     - **Access**: ChatGPT Plus/Pro, iOS app (US/Canada, invite-only)
 
     **Google Veo 3** (May 2025)
 
     [Veo 3](https://deepmind.google/models/veo/){target=_blank} represents Google's latest advancement:
+    
     - **Resolution**: Up to 4K, 8-second videos
+    
     - **Native Audio**: Dialogue, sound effects, ambient noise
+    
     - **Features**: Best-in-class physics, realism, prompt adherence, advanced character/camera controls
+    
     - **Access**: [Flow (Google Labs)](https://deepmind.google/models/veo/){target=_blank}, Gemini app (AI Pro subscribers), Google AI Studio, Gemini API, Vertex AI
+    
     - **Limits**: 3 videos/day for paying subscribers
+    
     - **Rollout**: 159+ countries (July 2025)
 
     **Runway Gen-4** (March 2025)
 
     [Runway Gen-4](https://runwayml.com/){target=_blank} features:
+    
     - **World Consistency**: Characters, locations, objects consistent across scenes
+    
     - **Visual References**: Image + text prompt (no fine-tuning required)
+    
     - **Duration**: 5 or 10 seconds
+    
     - **Gen-4 Turbo**: Faster generation at lower cost
+    
     - **Access**: [app.runwayml.com](https://app.runwayml.com/){target=_blank}
 
     **Meta Movie Gen** (2025 Release Planned)
 
     [Movie Gen](https://ai.meta.com/research/movie-gen/){target=_blank} research features:
+    
     - **Models**: 30B video, 13B audio
+    
     - **Resolution**: 1080p HD, up to 16 seconds at 16 fps
+    
     - **Audio**: Up to 45 seconds with synchronized sound
+    
     - **Features**: Four capabilities (video generation, personalized video, precise editing, audio generation)
+    
     - **Status**: Research phase, Instagram integration planned 2025
+    
     - **Partnership**: Blumhouse Productions
 
     **Leading Commercial Video Platforms**
