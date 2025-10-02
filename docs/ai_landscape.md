@@ -2,15 +2,27 @@
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 
-!!! info "A Glance at the Generative AI Landscape (2024-2025)"
+### A Glance at the Generative AI Landscape 
 
-    The field of Generative AI is rapidly evolving. This section provides a snapshot of some of the most influential models and platforms as of early 2024, with a look towards what we might expect in 2025.
-
-    [![tree](assets/tree.jpeg){width=800}](https://arxiv.org/abs/2304.13712){target=_blank}
+[![tree](assets/tree.jpeg){width=800}](https://arxiv.org/abs/2304.13712){target=_blank}
     
-    Image Credit: [Yang et al. :simple-arxiv:](https://arxiv.org/abs/2304.13712){target=_blank} (While this image depicts the state of LLMs in 2023, it effectively illustrates the foundational models and their evolution)
+Image Credit: [Yang et al. :simple-arxiv:](https://arxiv.org/abs/2304.13712){target=_blank} (While this image depicts the state of LLMs in 2023, it effectively illustrates the foundational models and their evolution)
 
-## View the [:octicons-trophy-24: HuggingFace :simple-huggingface: Arena LLM Leaderboard](https://lmarena.ai/leaderboard){target=_blank}
+The field of Generative AI is rapidly evolving. 
+
+This section provides a snapshot of some of the most influential models and platforms as of 2025.
+
+[Matt Turck's MAD Landscape](https://mad.firstmark.com/){target=_blank}
+
+<iframe
+    src="https://mad.firstmark.com/"
+    frameborder="0"
+    width="800"
+    height="400"
+></iframe>
+
+
+## [HuggingFace :simple-huggingface: Arena LLM Leaderboard :octicons-trophy-24:](https://lmarena.ai/leaderboard){target=_blank}
 
 <iframe
 	src="https://lmarena.ai/leaderboard"
@@ -19,37 +31,54 @@
 	height="450"
 ></iframe>
 
-## Table: Prices of Services (last checked 06/2025)
+## Table: Prices of Services (last checked 10/2025)
 
 | **LLM Service**  | **Plan** | **Price (per month)** | **Details**  |
 | :--------------- | :------- | :-------------------- | :----------- |
-| [**Anthropic Claude**](https://www.anthropic.com/pricing){target=_blank} | Free | $0 | Access to Claude 3 Sonnet with usage limits |
-| | Pro | $20 | 5x more usage, access to Claude 3 Opus and Haiku, priority access |
-| | Team | $25/user (min 5) | Everything in Pro plus central billing, team collaboration features |
-| [**Claude API**](https://www.anthropic.com/api){target=_blank} | Pay-As-You-Go | Varies | **Claude 3.7 Sonnet:** $3/1M input, $15/1M output <br> **Claude 4 Opus:** $15/1M input, $75/1M output <br> **Claude 3.5 Haiku:** $0.25/1M input, $1.25/1M output |
-| [**Google Gemini**](https://gemini.google.com/){target=_blank} | Free | $0 | Access to Gemini Pro with usage limits |
-| | Gemini Advanced | $19.99 | Access to Gemini Ultra 1.0, 2TB storage, integration with Google Workspace |
-| | Gemini Business | $20/user | Access to Gemini in Workspace apps (Docs, Sheets, Slides, Meet) |
-| | Gemini Enterprise | $30/user | Advanced features, enhanced security, admin controls |
-| [**Vertex AI Gemini API**](https://cloud.google.com/vertex-ai/docs/generative-ai/pricing){target=_blank} | Pay-As-You-Go | Varies | **Gemini 1.5 Flash:** $0.075/1M input, $0.30/1M output <br> **Gemini 1.5 Pro:** $1.25/1M input, $5.00/1M output <br> **Gemini 2.5 Pro (128k):** $3.50/1M input, $10.50/1M output |
-| [**OpenAI ChatGPT**](https://chat.openai.com/){target=_blank} | Free | $0 | Access to GPT-4o mini with usage limits |
-| | Plus | $20 | Access to GPT-4+, DALL-E 3, advanced data analysis |
-| | Pro | $200 | Unlimited access to o1, o4-mini, GPT-4.5, and Advanced Voice |
-| | Team | $25/user | Everything in Plus with higher limits, admin console, team workspace |
-| | Enterprise | Contact Sales | Unlimited high-speed GPT-4+ models, extended context windows, enterprise security |
-| [**OpenAI API**](https://platform.openai.com/){target=_blank} | Pay-As-You-Go | Varies | **GPT-4o:** $5/1M input, $15/1M output <br> **GPT-4 Turbo:** $10/1M input, $30/1M output <br> **GPT-4:** $30/1M input, $60/1M output <br> **GPT-3.5 Turbo:** $0.50/1M input, $1.50/1M output |
-| [**Perplexity AI**](https://www.perplexity.ai/){target=_blank} | Free | $0 | Limited searches with Perplexity model |
-| | Pro | $20 | Unlimited Pro searches, file uploads, API access, choice of models (GPT-4, Claude, Gemini) |
-| | Enterprise | Contact Sales | Team management, enhanced security, SSO, dedicated support |
-| [**Microsoft Copilot**](https://copilot.microsoft.com/){target=_blank} | Free | $0 | Access to GPT-4, limited image generation with DALL-E 3 |
-| | Pro | $20/user | Priority access, faster performance, 100 boosts/day with DALL-E 3 |
-| [**Microsoft 365 Copilot**](https://www.microsoft.com/microsoft-365/copilot){target=_blank} | Business | $30/user | AI in Word, Excel, PowerPoint, Outlook, Teams. Requires M365 license |
-| [**GitHub Copilot**](https://github.com/features/copilot){target=_blank} | Individual | $10 | AI pair programming in VS Code, Visual Studio, Neovim, JetBrains |
-| | Business | $19/user | Everything in Individual plus organization management |
-| | Enterprise | $39/user | Everything in Business plus security vulnerability filtering, IP indemnity |
-| [**Mistral AI**](https://mistral.ai/){target=_blank} | La Plateforme | Varies | **Mistral 7B:** $0.25/1M tokens <br> **Mixtral 8x7B:** $0.70/1M tokens <br> **Mistral Small:** $2/1M input, $6/1M output <br> **Mistral Large:** $8/1M input, $24/1M output |
-| [**Cohere**](https://cohere.com/){target=_blank} | Free Trial | $0 | Limited API calls for testing |
-| | Production | Varies | **Command:** $1/1M input, $2/1M output <br> **Command Light:** $0.30/1M tokens <br> **Embed:** $0.10/1M tokens |
+| [**Anthropic Claude**](https://www.anthropic.com/pricing){target=_blank} | [Free](https://claude.ai/){target=_blank} | $0 | Basic Claude access with limited daily use |
+| | [Pro](https://claude.ai/upgrade/pro){target=_blank} | $20 | More usage, Claude Code terminal access, unlimited projects, Research access |
+| | [Max](https://claude.com/pricing/max){target=_blank} | $100 | Priority access, substantially higher usage, enhanced features |
+| | Max Pro | $200 | Highest tier with maximum usage limits and priority access to newest models |
+| | [Team](https://claude.com/pricing/team){target=_blank} | $30/month or $25/month (annual) | Central billing, administration, collaboration features (minimum 5 members) |
+| | [Enterprise](https://claude.com/contact-sales){target=_blank} | Contact Sales | Enhanced context window, SSO, role-based access, audit logs, compliance API |
+| [**Claude API**](https://console.anthropic.com/){target=_blank} | Pay-As-You-Go | Varies | **Claude Sonnet 4.5:** $3/1M input, $15/1M output (200K context) <br> **Claude Opus 4.1:** $15/1M input, $75/1M output <br> **Claude Haiku 3.5:** $0.80/1M input, $4/1M output <br> Batch processing: 50% discount, Prompt caching available (75-90% savings) |
+| [**Claude Code**](https://www.anthropic.com/claude-code){target=_blank} | Included in Pro+ | $20+ | Terminal-based AI coding assistant included with Pro, Max, Max Pro subscriptions <br> Web Search: $10/1,000 searches, Code Execution: $0.05/hour per container |
+| [**Google AI**](https://gemini.google.com/){target=_blank} | [Free](https://gemini.google.com/){target=_blank} | $0 | Unlimited Gemini 2.5 Flash, limited Gemini 2.5 Pro, 32K context window |
+| | [Google AI Pro](https://one.google.com/ai){target=_blank} | $19.99 | Expanded access to Gemini 2.5 Pro (100 queries/day), 1M context window, 2TB storage, NotebookLM <br> **[Free for university students for 1 year](https://gemini.google/students/){target=_blank}** |
+| | [Google AI Ultra](https://one.google.com/ai){target=_blank} | $249.99 | Highest access to Gemini 2.5 Pro, exclusive access to Gemini 2.5 Deep Think, Veo 3 video generation, YouTube Premium, 30TB storage |
+| [**Gemini API**](https://aistudio.google.com/){target=_blank} | [Pay-As-You-Go](https://ai.google.dev/gemini-api/docs/pricing){target=_blank} | Varies | **Gemini 2.5 Flash:** $0.30/1M input, $2.50/1M output <br> **Gemini 2.5 Pro:** $1.25/1M input (≤200K), $10/1M output (≤200K) <br> **Gemini 2.5 Flash-Lite:** $0.10/1M input, $0.40/1M output <br> Batch processing: 50% discount |
+| [**OpenAI ChatGPT**](https://chatgpt.com/){target=_blank} | [Free](https://chatgpt.com/){target=_blank} | $0 | Limited access to GPT-5 (10 messages every 5 hours), then GPT-5-mini |
+| | [Plus](https://chatgpt.com/pricing){target=_blank} | $20 | Higher message limits to GPT-5, unlimited GPT-5-mini, access to o3-mini, o1 models |
+| | [Pro](https://openai.com/index/introducing-chatgpt-pro/){target=_blank} | $200 | Unlimited GPT-5 access, GPT-5 Pro with advanced reasoning, extended context windows |
+| | [Team](https://chatgpt.com/pricing){target=_blank} | $25/user (annual) or $30/user (monthly) | All Plus features with higher message caps, team workspace, data excluded from training |
+| | [Enterprise](https://openai.com/chatgpt/enterprise/){target=_blank} | Contact Sales | Unlimited high-speed models, extended context windows, enterprise security |
+| [**OpenAI API**](https://platform.openai.com/){target=_blank} | [Pay-As-You-Go](https://platform.openai.com/pricing){target=_blank} | Varies | **GPT-5:** $1.25/1M input, $10/1M output (272K-400K context) <br> **GPT-5-mini:** $0.25/1M input, $2/1M output <br> **GPT-5-nano:** $0.05/1M input, $0.40/1M output <br> **GPT-4o:** $2.50/1M input, $10/1M output <br> **o3-mini:** $1.10/1M input, $4.40/1M output |
+| [**Perplexity AI**](https://www.perplexity.ai/){target=_blank} | [Free](https://www.perplexity.ai/){target=_blank} | $0 | Unlimited quick searches, 5 Pro searches/day, 5 follow-up questions every 4 hours |
+| | [Pro](https://www.perplexity.ai/settings){target=_blank} | $20/month or $200/year | 300+ Pro searches/day, access to advanced AI models, file uploads |
+| | [Education Pro](https://www.perplexity.ai/students){target=_blank} | $4.99/month | All Pro features with student/faculty verification <br> **1 month free trial** |
+| | [Max](https://www.perplexity.ai/settings){target=_blank} | $200/month or $2,000/year | Unlimited Labs usage, access to top-tier models (OpenAI o3-pro, Claude Opus 4) |
+| | [Enterprise Pro](https://www.perplexity.ai/enterprise/pricing){target=_blank} | $40/user/month or $400/user/year | Admin tools, collaboration features, domain verification, SCIM provisioning |
+| [**Microsoft Copilot**](https://copilot.microsoft.com/){target=_blank} | [Free](https://copilot.microsoft.com/){target=_blank} | $0 | GPT-4o-powered chat, 15 image generation boosts/day |
+| [**Microsoft 365 Premium**](https://www.microsoft.com/microsoft-365/premium){target=_blank} | [Premium](https://www.microsoft.com/en-us/microsoft-365-copilot/pricing/individuals){target=_blank} | $19.99 | Full M365 suite + Copilot in all apps, 1TB storage, extended AI usage limits, 40 image generations |
+| [**Microsoft 365 Copilot**](https://www.microsoft.com/microsoft-365/copilot){target=_blank} | [Business/Enterprise](https://www.microsoft.com/en-us/microsoft-365-copilot/pricing){target=_blank} | $30/user | AI in Word, Excel, PowerPoint, Outlook, Teams. Requires existing M365 license ($12.50-$57/user) |
+| | Consumption-based | $0.01 per message | Pay-per-use alternative to monthly subscription (30 messages for proprietary files, 25 per agent action) |
+| [**GitHub Copilot**](https://github.com/features/copilot){target=_blank} | [Free](https://github.com/copilot){target=_blank} | $0 | Up to 2,000 code completions/month, 50 premium requests/month <br> **Free for students, teachers, open source maintainers** |
+| | [Pro](https://github.com/github-copilot/pro){target=_blank} | $10/month or $100/year | Unlimited code completions, 300 premium requests/month, access to Copilot coding agent |
+| | [Pro+](https://github.com/github-copilot/pro-plus){target=_blank} | $39/month or $390/year | 1,500 premium requests/month, full access to all models, GitHub Spark, compute resources |
+| | [Business](https://github.com/github-copilot/purchase?priority=business){target=_blank} | $19/user/month | 300 premium requests/user, user management, usage metrics, team collaboration |
+| | [Enterprise](https://github.com/github-copilot/purchase?priority=enterprise){target=_blank} | $39/user/month | 1,000 premium requests/user, all AI models, advanced customization, enterprise features |
+| [**Mistral AI**](https://mistral.ai/){target=_blank} | [Le Chat Free](https://chat.mistral.ai/){target=_blank} | $0 | Basic AI assistant with limited messages |
+| | [Le Chat Pro](https://chat.mistral.ai/){target=_blank} | $14.99 | Up to 6x more messages, 150 flash answers/day, 5x web searches, 1,000 memories, 15GB libraries |
+| | [Le Chat Team](https://chat.mistral.ai/){target=_blank} | $24.99/user or $299.88/user/year | 200 flash answers/day, 30GB libraries/user, domain verification, SCIM provisioning |
+| | [La Plateforme API](https://console.mistral.ai/){target=_blank} | Varies | **Mistral Medium 3:** $0.40/1M input, $2.00/1M output <br> **Mistral Nemo:** $0.30/1M tokens <br> **Mistral Large 2:** $3/1M input, $9/1M output <br> **Codestral:** $1/1M input, $3/1M output |
+| [**Cohere**](https://cohere.com/){target=_blank} | [Free Trial](https://dashboard.cohere.com/welcome/login){target=_blank} | $0 | Limited API calls for testing |
+| | [Production](https://cohere.com/pricing){target=_blank} | Varies | **Command R 03-2024:** $0.50/1M input, $1.50/1M output <br> **Command R+ 08-2024:** $2.50/1M input, $10/1M output <br> **Command-light:** $0.30/1M input, $0.60/1M output <br> **Aya Expanse (8B & 32B):** $0.50/1M input, $1.50/1M output |
+| | [Education Program](https://cohere.com/research/scholars-program){target=_blank} | Contact | AI access for students and educators (pricing not publicly disclosed) |
+| [**DeepSeek**](https://www.deepseek.com/){target=_blank} | [DeepSeek Chat API](https://platform.deepseek.com/){target=_blank} | Pay-As-You-Go | **DeepSeek Chat:** \$0.57/1M input, \$1.68/1M output <br> **DeepSeek Reasoner (R1):** \$0.57/1M input, \$1.68/1M output <br> 128K context window <br> **~200x cheaper than GPT-4 Turbo** <br> ⚠️ **NOT ALLOWED for US-based researchers** - See restrictions below |
+| | [Open Source](https://github.com/deepseek-ai){target=_blank} | Free | Free to download and deploy locally. Training cost: \$294,000 (peer-reviewed in Nature) <br> ⚠️ Self-hosted use requires institutional IT/security approval |
+| [**Qwen (Alibaba)**](https://qwen.ai/){target=_blank} | [Qwen Chat](https://chat.qwen.ai/){target=_blank} | Free | Free web interface powered by Qwen-Max <br> ⚠️ **NOT RECOMMENDED for US-based researchers** - Chinese company, data sovereignty concerns |
+| | [Qwen API](https://www.alibabacloud.com/help/en/model-studio/models){target=_blank} | Pay-As-You-Go | **Qwen-Flash:** \$0.05/1M input, \$0.40/1M output <br> **Qwen3-Coder:** \$0.22/1M input, \$0.95/1M output <br> **Qwen-Max:** \$1.60/1M input, \$6.40/1M output <br> 1M context window, 90-day free trial (1M tokens) |
+| | [Open Source](https://github.com/QwenLM){target=_blank} | Free | Apache 2.0 license, 40M+ downloads. Sizes: 0.6B-235B parameters <br> ⚠️ Self-hosted use requires institutional IT/security approval |
 | [**Midjourney**](https://www.midjourney.com/){target=_blank} | Basic | $10 | ~200 image generations/month |
 | | Standard | $30 | 15 hrs fast GPU time, unlimited relaxed |
 | | Pro | $60 | 30 hrs fast GPU time, stealth mode |
@@ -62,7 +91,13 @@
 | | X Premium+ | $16 | Priority access, higher limits |
 | [**Character AI**](https://character.ai/){target=_blank} | Free | $0 | Limited features and queue priority |
 | | c.ai+ | $9.99 | Priority access, faster responses, exclusive features |
-| [**Replicate**](https://replicate.com/){target=_blank} | Pay-As-You-Go | Varies | Run open-source models, pricing per second of compute |
+| [**Together AI**](https://www.together.ai/){target=_blank} | [Serverless Inference](https://www.together.ai/pricing){target=_blank} | Pay-As-You-Go | **Text & Vision Models:** $0.02-$3.50/1M tokens <br> **Image Models:** $0.0027-$0.08/megapixel <br> **Embedding Models:** $0.01-$0.08/1M tokens |
+| | [GPU Clusters](https://www.together.ai/pricing#instant-clusters){target=_blank} | Pay-As-You-Go | **Instant Clusters:** $1.76-$5.50/GPU hour <br> **Reserved Clusters:** Starting at $1.30/GPU hour |
+| | [Fine-Tuning](https://www.together.ai/pricing#fine-tuning){target=_blank} | Pay-As-You-Go | **LoRA Fine-Tuning (≤16B params):** Starting at $0.48 <br> **Full Fine-Tuning (70-100B params):** Up to $3.20 |
+| [**Groq**](https://groq.com/){target=_blank} | [Free Tier](https://console.groq.com/){target=_blank} | $0 | Available for getting started |
+| | [Developer Tier](https://groq.com/pricing){target=_blank} | Pay-As-You-Go | Up to 10x more rate limits than free tier. **Batch Processing:** 50% cost discount (through April 2025) |
+| | [Enterprise](https://groq.com/enterprise-access){target=_blank} | Contact Sales | Custom solutions for large organizations |
+| [**Replicate**](https://replicate.com/){target=_blank} | Pay-As-You-Go | Varies | **CPU:** $0.36/hour <br> **Nvidia T4 GPU:** $0.81/hour (public), $1.98/hour (private) <br> **8x H100 GPU:** $43.92/hour <br> Run open-source models with per-second billing |
 | [**Hugging Face**](https://huggingface.co/){target=_blank} | Free | $0 | Community models and datasets |
 | | Pro | $9 | Advanced features, private repos |
 | | Enterprise | Contact Sales | Dedicated support, SLAs, security features |
@@ -87,6 +122,120 @@
 *   Token pricing for API access can be complex. Refer to each provider's pricing page for the most accurate and up-to-date details.
 *   "Contact Sales" typically indicates that pricing is customized based on usage, features, and the specific needs of the customer.
 *   Many services offer free trials or limited free tiers, allowing you to test them out before committing to a paid plan.
+
+---
+
+## ⚠️ Important Restrictions for US-Based Researchers
+
+### **DeepSeek AI - Federal and State Restrictions**
+
+**PAID CLOUD SERVICE NOT ALLOWED:**
+
+DeepSeek's paid API and cloud services are **prohibited** for US-based researchers at many institutions due to:
+
+**Federal Restrictions:**
+- [**H.R. 1121**](https://www.congress.gov/bill/119th-congress/house-bill/1121){target=_blank} - "No DeepSeek on Government Devices Act" (Introduced Feb 2025)
+- [**House Select Committee Report**](https://selectcommitteeontheccp.house.gov/media/reports/deepseek-unmasked-exposing-ccps-latest-tool-spying-stealing-and-subverting-us-export){target=_blank} - "DeepSeek Unmasked: Exposing the CCP's Latest Tool For Spying, Stealing, and Subverting U.S. Export Control Restrictions"
+- **Federal Agency Bans:** NASA, U.S. Navy, Department of Defense (DOD), Department of Commerce have banned DeepSeek
+- **Owned by High-Flyer** (Chinese company with CCP control)
+- **Data stored in China** and accessible to Chinese government
+- **Content manipulation** to align with CCP propaganda
+
+**State-Level Bans:**
+- [**Texas**](https://gov.texas.gov/news/post/governor-abbott-announces-ban-on-chinese-ai-social-media-apps){target=_blank} (Jan 31, 2025), [**Virginia**](https://www.governor.virginia.gov/newsroom/news-releases/2025/february/name-1040839-en.html){target=_blank} (Feb 11, 2025), [**New York**](https://www.governor.ny.gov/news/governor-hochul-issues-statewide-ban-deepseek-artificial-intelligence-government-devices-and){target=_blank} (Feb 10, 2025)
+- Additional states: Iowa, South Dakota, Kansas, Tennessee, North Carolina, Nebraska, Arkansas, North Dakota, Oklahoma, Alabama, Georgia
+
+**University Bans:**
+- All Virginia public universities ([George Mason](https://its.gmu.edu/bulletins/deepseek-ai-ban-on-university-devices-and-networks/){target=_blank}, [UVA](https://www.cavalierdaily.com/article/2025/02/in-compliance-with-youngkin-order-university-bans-use-of-deepseek-ai-on-networks){target=_blank}, [Virginia Tech](https://news.vt.edu/notices/2025/02/it-deepseek-restriction-executive-order.html){target=_blank}, [William & Mary](https://www.wm.edu/offices/it/announcements/deepseek-ai-no-longer-permitted-on-wm-wireless-network-devices.php){target=_blank}, [JMU](https://www.jmu.edu/news/computing/2025/02-12-deepseek-executive-order.shtml){target=_blank})
+- North Dakota University System
+
+**SELF-HOSTED OPEN-SOURCE MAY BE PERMITTED:**
+
+Open-source DeepSeek models can be downloaded and run **on-premises**, but researchers MUST:
+- ✅ Check with institutional IT and security teams first
+- ✅ Ensure compliance with federal grant requirements (NSF, DOD, DOE)
+- ✅ Never upload sensitive, proprietary, or controlled data
+- ✅ Document usage for research security compliance
+
+---
+
+### **Qwen (Alibaba) - Data Sovereignty Concerns**
+
+**NOT SPECIFICALLY BANNED, BUT NOT RECOMMENDED:**
+
+Qwen is **not subject to specific federal bans** like DeepSeek, but has serious concerns for US researchers:
+
+**Key Issues:**
+- **Owned by Alibaba** (Chinese company subject to CCP control)
+- **Data stored in China** under Chinese data sovereignty laws
+- **No GDPR compliance** or EU data protection representative
+- **Potential surveillance** under Chinese national security laws
+- **Congressional scrutiny** (Senators urged sanctions in 2023, not yet implemented)
+
+**Regulatory Framework:**
+- [**NSF Research Security**](https://www.nsf.gov/notices/important/important-notice-no-149-updates-nsf-research-security/in149){target=_blank} - Requires disclosure of foreign support and affiliations
+- [**Treasury Outbound Investment Restrictions**](https://home.treasury.gov/news/press-releases/jy2687){target=_blank} - Limits US investments in Chinese AI companies (affects funding, not use)
+- **No Entity List designation** (as of Oct 2025)
+
+**SELF-HOSTED OPEN-SOURCE MAY BE PERMITTED:**
+
+Qwen's Apache 2.0 licensed models (40M+ downloads on HuggingFace) can be run **on-premises**, but researchers MUST:
+- ✅ Check with institutional IT and security teams first
+- ✅ Verify compliance with federal grant terms
+- ✅ Avoid uploading to Chinese cloud services
+- ✅ Document AI tool usage in research security plans
+
+---
+
+### **Recommendations for Researchers**
+
+**✅ SAFE FOR RESEARCH (US-based alternatives):**
+- OpenAI (ChatGPT, GPT-5 API) - US company
+- Anthropic (Claude) - US company
+- Google (Gemini) - US company
+- Microsoft (Copilot) - US company
+- Mistral AI - French company (EU-based)
+- Cohere - Canadian company
+
+**⚠️ USE WITH EXTREME CAUTION (Chinese companies):**
+- DeepSeek - **BANNED at many institutions**
+- Qwen - Not banned, but data sovereignty concerns
+- Check institutional policies BEFORE use
+
+**✅ SELF-HOSTED OPEN-SOURCE (May be acceptable):**
+- Meta Llama (US company, Apache 2.0)
+- DeepSeek open-source (with institutional approval)
+- Qwen open-source (with institutional approval)
+- Mistral open-source (EU company, Apache 2.0)
+
+**ALWAYS:**
+1. Check your institution's AI usage policy
+2. Review federal grant terms (NSF, NIH, DOD, DOE)
+3. Consult with IT security and research compliance offices
+4. Never share sensitive, proprietary, or controlled data with foreign AI services
+5. Document all AI tool usage for research security requirements
+
+**Best Options for Students & Educators:**
+
+*   **Free/Low-Cost Options:**
+    *   **DeepSeek** - Most affordable API at \$0.57/\$1.68 per 1M tokens (~200x cheaper than GPT-4 Turbo), open-source option available
+    *   **Meta Llama** - Completely free open-source models (Llama 4 Scout & Maverick available for download)
+    *   **GitHub Copilot** - Free for students, teachers, and open source maintainers
+    *   **Perplexity Education Pro** - \$4.99/month with student/faculty verification (1 month free trial)
+    *   **Google AI Pro** - Free for university students for 1 year (\$19.99/month value)
+    *   **HuggingFace** - Free community access to models and datasets, \$2/month free credits for Pro users
+    *   **Ollama, LM Studio, Jan.ai** - Run LLMs locally on your hardware for free
+
+*   **Best Value Paid Options:**
+    *   **Mistral Le Chat Pro** - \$14.99/month (cheaper than competitors, strong performance)
+    *   **OpenAI GPT-4o-mini API** - \$0.15/\$0.60 per 1M tokens (60%+ cheaper than GPT-3.5 Turbo)
+    *   **Gemini 2.5 Flash-Lite** - \$0.10/\$0.40 per 1M tokens (most economical for high-volume simple tasks)
+    *   **Claude Haiku 3.5 API** - \$0.80/\$4 per 1M tokens (balanced cost and capability)
+
+*   **Educational Programs Available:**
+    *   **Cohere Education Program** - Contact for student/educator access
+    *   **Google AI Pro** - 1 year free for university students
+    *   **Perplexity Education Pro** - $4.99/month with verification
 
 **Additional Chatbot and LLM Services:**
 
