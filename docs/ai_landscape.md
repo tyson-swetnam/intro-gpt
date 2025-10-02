@@ -376,52 +376,116 @@ Qwen's Apache 2.0 licensed models (40M+ downloads on HuggingFace) can be run **o
 
     [:simple-nvidia: NVIDIA's Data Science Glossary](https://www.nvidia.com/en-us/glossary){target=_blank}
 
-    **Agentic AI:** uses sophisticated reasoning and iterative planning to autonomously solve complex, multi-step problems.
+    **Agentic AI:**
+    Uses sophisticated reasoning and iterative planning to autonomously solve complex, multi-step problems. Agentic systems can break down tasks, use tools, and make decisions to achieve goals with minimal human intervention.
 
-    **Anthropic:**  
+    **Anthropic:**
     A research organization emphasizing AI safety and governance. Known for **Claude**, a large language model (LLM) with advanced reasoning and robust safety features.
 
-    **ChatGPT:**  
-    OpenAI’s general-purpose LLM, renowned for its conversational strengths, versatility, and ability to adapt to varied tasks through effective prompt engineering.
+    **API (Application Programming Interface):**
+    A set of protocols and tools that allow different software applications to communicate. In AI, APIs enable developers to integrate LLM capabilities into their applications programmatically.
 
-    **Claude:**  
-    Anthropic’s LLM, recognized for its interpretability, strong reasoning capabilities, and rigorous safety considerations.
+    **Attention Mechanism:**
+    A neural network technique that allows models to focus on relevant parts of input data when processing information. The foundation of transformer architectures used in modern LLMs.
 
-    **Copilot (GitHub, Microsoft):**  
+    **Chain-of-Thought (CoT):**
+    A prompting technique that encourages AI models to break down complex problems into intermediate reasoning steps, improving accuracy on tasks requiring logic and multi-step reasoning.
+
+    **ChatGPT:**
+    OpenAI's general-purpose LLM, renowned for its conversational strengths, versatility, and ability to adapt to varied tasks through effective prompt engineering.
+
+    **Claude:**
+    Anthropic's LLM, recognized for its interpretability, strong reasoning capabilities, and rigorous safety considerations.
+
+    **Context Window:**
+    The maximum amount of text (measured in tokens) that an LLM can process at once, including both the input prompt and generated output. Modern models range from 8K to over 1M tokens.
+
+    **Copilot (GitHub, Microsoft):**
     An AI-driven developer assistant offering code suggestions, debugging support, and efficiency improvements, leveraging generative AI to boost productivity.
 
-    **Embeddings:**  
+    **Diffusion Models:**
+    A class of generative models that create images by iteratively denoising random noise. Used in systems like Stable Diffusion, DALL-E, and Midjourney for text-to-image generation.
+
+    **Embeddings:**
     Numerical vector representations of data (e.g., text, images, audio) that capture semantic meaning and relationships. Useful for search, clustering, recommendation, and more.
 
-    **Foundation Models:**  
+    **Few-Shot Learning:**
+    The ability of an AI model to learn new tasks from just a few examples provided in the prompt, without requiring additional training or fine-tuning.
+
+    **Fine-Tuning:**
+    The process of further training a pre-trained model on a specific dataset or task to specialize its capabilities for particular use cases or domains.
+
+    **Foundation Models:**
     Large-scale deep learning models (e.g., LLMs, vision models, multimodal models) trained on massive datasets. They serve as a base or "foundation" for a wide range of downstream tasks, enabling transfer learning and rapid adaptation.
 
-    **Gemini:**  
-    Google’s family of multimodal foundation models, capable of understanding and generating text, images, and other data types, reflecting Google’s advancements in AI research.
+    **Gemini:**
+    Google's family of multimodal foundation models, capable of understanding and generating text, images, and other data types, reflecting Google's advancements in AI research.
 
-    **GitHub:**  
+    **Generative AI (GenAI):**
+    AI systems capable of creating new content—text, images, code, audio, video—based on patterns learned from training data. Includes LLMs, image generators, and multimodal models.
+
+    **GitHub:**
     A leading platform for version control and software collaboration. Now integrated with AI tools like GitHub Copilot for enhanced code development workflows.
 
-    **HuggingFace:**  
+    **Hallucination:**
+    When an AI model generates false, nonsensical, or unfaithful information presented as fact. A key challenge in LLM reliability, especially for factual or specialized domains.
+
+    **HuggingFace:**
     A hub and community for open-source AI models, datasets, and applications. Widely used in the natural language processing (NLP) community for model sharing and development.
 
-    **Large Language Models (LLMs):**  
+    **Inference:**
+    The process of using a trained AI model to make predictions or generate outputs. In LLMs, this refers to generating text responses from prompts.
+
+    **Large Language Models (LLMs):**
     A subset of foundation models trained on extensive text corpora, enabling them to generate human-like text, summarize information, reason about topics, and perform a variety of NLP tasks. Examples include **GPT**, **Claude**, and **Gemini**.
 
-    **Parameters:**  
-    The trainable values within a neural network, updated during the training process to minimize loss and define the model’s learned behavior.
+    **LoRA (Low-Rank Adaptation):**
+    An efficient fine-tuning technique that modifies only a small subset of model parameters, reducing computational costs while maintaining performance for specialized tasks.
 
-    **Prompt Engineering:**  
+    **MCP (Model Context Protocol):**
+    A standardized protocol for connecting AI assistants to external data sources and tools. Enables LLMs to access databases, APIs, and live information while maintaining security and privacy.
+
+    **Mixture of Experts (MoE):**
+    A neural network architecture that uses multiple specialized sub-models (experts) and activates only relevant ones for each input, improving efficiency and scalability in large models.
+
+    **Multimodal Models:**
+    AI systems that can process and generate multiple types of data (text, images, audio, video) in combination. Examples include GPT-4 with vision, Gemini, and Claude with image understanding.
+
+    **Parameters:**
+    The trainable values within a neural network, updated during the training process to minimize loss and define the model's learned behavior. Model size is often described by parameter count (e.g., 7B, 70B parameters).
+
+    **Prompt Engineering:**
     The practice of crafting, refining, and optimizing instructions (prompts) given to AI models in order to guide their outputs toward desired results.
 
-    **Stable Diffusion:**  
+    **Quantization:**
+    A technique that reduces the precision of model weights (e.g., from 16-bit to 4-bit) to decrease memory usage and computational requirements, enabling deployment on resource-constrained devices.
+
+    **RAG (Retrieval-Augmented Generation):**
+    A technique that enhances LLM responses by retrieving relevant information from external knowledge bases or documents before generating answers, reducing hallucinations and improving factual accuracy.
+
+    **RLHF (Reinforcement Learning from Human Feedback):**
+    A training method that uses human preferences to fine-tune AI models, improving their alignment with human values and desired behaviors. Used extensively in ChatGPT and Claude development.
+
+    **Stable Diffusion:**
     A family of open-source latent-diffusion-based models used for generating high-quality images from text or other forms of input (e.g., sketches).
 
-    **Token:**  
-    A fundamental unit of text—often a word, subword, or character—that LLMs process when understanding or generating language.
+    **System Prompt:**
+    Initial instructions given to an AI model that define its role, behavior, constraints, and capabilities for a conversation or task. Often invisible to end users but shapes all responses.
 
-    **Weights:**  
+    **Temperature:**
+    A parameter controlling randomness in AI-generated outputs. Lower temperatures (0.0-0.3) produce more deterministic responses; higher temperatures (0.7-1.0) increase creativity and variability.
+
+    **Token:**
+    A fundamental unit of text—often a word, subword, or character—that LLMs process when understanding or generating language. Pricing and context limits are typically measured in tokens.
+
+    **Transformer:**
+    The neural network architecture that powers modern LLMs, introduced in the paper "Attention is All You Need" (2017). Uses attention mechanisms to process sequences efficiently.
+
+    **Vector Database:**
+    A specialized database optimized for storing and querying high-dimensional embedding vectors, enabling fast semantic search and similarity matching for RAG applications.
+
+    **Weights:**
     Numerical parameters within a neural network that determine the strength of connections between neurons or nodes.
 
-    **Zero-shot Learning:**  
+    **Zero-shot Learning:**
     The capability of an AI model to perform tasks it has never been explicitly trained on, often made possible by large-scale pretraining on diverse datasets.
