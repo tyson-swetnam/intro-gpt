@@ -134,27 +134,41 @@ This section provides a snapshot of some of the most influential models and plat
 DeepSeek's paid API and cloud services are **prohibited** for US-based researchers at many institutions due to:
 
 **Federal Restrictions:**
+
 - [**H.R. 1121**](https://www.congress.gov/bill/119th-congress/house-bill/1121){target=_blank} - "No DeepSeek on Government Devices Act" (Introduced Feb 2025)
+
 - [**House Select Committee Report**](https://selectcommitteeontheccp.house.gov/media/reports/deepseek-unmasked-exposing-ccps-latest-tool-spying-stealing-and-subverting-us-export){target=_blank} - "DeepSeek Unmasked: Exposing the CCP's Latest Tool For Spying, Stealing, and Subverting U.S. Export Control Restrictions"
+
 - **Federal Agency Bans:** NASA, U.S. Navy, Department of Defense (DOD), Department of Commerce have banned DeepSeek
+
 - **Owned by High-Flyer** (Chinese company with CCP control)
+
 - **Data stored in China** and accessible to Chinese government
+
 - **Content manipulation** to align with CCP propaganda
 
 **State-Level Bans:**
+
 - [**Texas**](https://gov.texas.gov/news/post/governor-abbott-announces-ban-on-chinese-ai-social-media-apps){target=_blank} (Jan 31, 2025), [**Virginia**](https://www.governor.virginia.gov/newsroom/news-releases/2025/february/name-1040839-en.html){target=_blank} (Feb 11, 2025), [**New York**](https://www.governor.ny.gov/news/governor-hochul-issues-statewide-ban-deepseek-artificial-intelligence-government-devices-and){target=_blank} (Feb 10, 2025)
+
 - Additional states: Iowa, South Dakota, Kansas, Tennessee, North Carolina, Nebraska, Arkansas, North Dakota, Oklahoma, Alabama, Georgia
 
 **University Bans:**
+
 - All Virginia public universities ([George Mason](https://its.gmu.edu/bulletins/deepseek-ai-ban-on-university-devices-and-networks/){target=_blank}, [UVA](https://www.cavalierdaily.com/article/2025/02/in-compliance-with-youngkin-order-university-bans-use-of-deepseek-ai-on-networks){target=_blank}, [Virginia Tech](https://news.vt.edu/notices/2025/02/it-deepseek-restriction-executive-order.html){target=_blank}, [William & Mary](https://www.wm.edu/offices/it/announcements/deepseek-ai-no-longer-permitted-on-wm-wireless-network-devices.php){target=_blank}, [JMU](https://www.jmu.edu/news/computing/2025/02-12-deepseek-executive-order.shtml){target=_blank})
+
 - North Dakota University System
 
 **SELF-HOSTED OPEN-SOURCE MAY BE PERMITTED:**
 
 Open-source DeepSeek models can be downloaded and run **on-premises**, but researchers MUST:
+
 - ✅ Check with institutional IT and security teams first
+
 - ✅ Ensure compliance with federal grant requirements (NSF, DOD, DOE)
+
 - ✅ Never upload sensitive, proprietary, or controlled data
+
 - ✅ Document usage for research security compliance
 
 ---
@@ -166,23 +180,35 @@ Open-source DeepSeek models can be downloaded and run **on-premises**, but resea
 Qwen is **not subject to specific federal bans** like DeepSeek, but has serious concerns for US researchers:
 
 **Key Issues:**
+
 - **Owned by Alibaba** (Chinese company subject to CCP control)
+
 - **Data stored in China** under Chinese data sovereignty laws
+
 - **No GDPR compliance** or EU data protection representative
+
 - **Potential surveillance** under Chinese national security laws
+
 - **Congressional scrutiny** (Senators urged sanctions in 2023, not yet implemented)
 
 **Regulatory Framework:**
+
 - [**NSF Research Security**](https://www.nsf.gov/notices/important/important-notice-no-149-updates-nsf-research-security/in149){target=_blank} - Requires disclosure of foreign support and affiliations
+
 - [**Treasury Outbound Investment Restrictions**](https://home.treasury.gov/news/press-releases/jy2687){target=_blank} - Limits US investments in Chinese AI companies (affects funding, not use)
+
 - **No Entity List designation** (as of Oct 2025)
 
 **SELF-HOSTED OPEN-SOURCE MAY BE PERMITTED:**
 
 Qwen's Apache 2.0 licensed models (40M+ downloads on HuggingFace) can be run **on-premises**, but researchers MUST:
+
 - ✅ Check with institutional IT and security teams first
+
 - ✅ Verify compliance with federal grant terms
+
 - ✅ Avoid uploading to Chinese cloud services
+
 - ✅ Document AI tool usage in research security plans
 
 ---
