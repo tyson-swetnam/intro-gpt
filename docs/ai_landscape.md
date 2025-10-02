@@ -323,18 +323,27 @@ Qwen's Apache 2.0 licensed models (40M+ downloads on HuggingFace) can be run **o
     **Google Veo 3**
 
     [Veo 3](https://deepmind.google/models/veo/){target=_blank} represents Google's latest advancement in video generation:
+    
     - Generates up to 4K resolution videos
+    
     - Includes voices and sound effects
+    
     - Improved understanding of real-world physics and human movement
+    
     - Better camera control and cinematic effects
+    
     - Available through Google Labs and VideoFX
 
     **OpenAI Sora**
 
     [Sora](https://openai.com/sora){target=_blank} (OpenAI) features:
+
     - Up to 1-minute video generation at 1080p
+    
     - Advanced physics simulation and 3D consistency
+    
     - Available to ChatGPT Plus and Pro subscribers
+    
     - Turbo mode for faster generation
 
     **Other Notable Video Generation Models**
