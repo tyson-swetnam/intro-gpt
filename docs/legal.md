@@ -106,6 +106,7 @@ By 2021, UNESCO had created their own recommendations on AI, focused on human ri
 | [**WHO Ethics and governance of artificial intelligence for health**](https://www.who.int/publications/i/item/9789240029200){target=_blank} | June 2021 | WHO Ministries of Health members | A guidance on  eighteen months of deliberation amongst experts from Ministries of Health | 
 | [**UNESCO Recommendation on the Ethics of Artificial Intelligence**](https://en.unesco.org/artificial-intelligence/ethics){target=_blank} | November 2021 | UNESCO member states | A global framework to ensure that digital transformations promote human rights and contribute to the achievement of the Sustainable Development Goals. | 
 | [**European Union Artificial Intelligence Act**](https://artificialintelligenceact.eu/){target=_blank} | July 2024 | EU member countries | Classifies risk, obligations, legal, and general purpose AI laws | 
+| [**UN Resolution A/RES/79/325**](https://docs.un.org/en/A/RES/79/325){target=_blank} | August 2025 | United Nations Resolution | Created the Scientific Panel on AI (like the IPCC for AI) |
 
 In response to the rapid rise of generative AI, specifically GPTs, new agreements on the application of AI for military use, safety, and on its adoption in business and industry were recently signed (Table 3).
 
