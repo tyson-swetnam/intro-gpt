@@ -14,14 +14,16 @@ This guide provides information on text mining resources
 
 ## Text Data Sources
 
-- **[Constellate](https://constellate.org/){target=_blank}**: Constellate is the text analytics service from ITHAKA (JSTOR and Portico). It is a platform for teaching, learning, and performing text analysis using archival repositories of scholarly and primary source content. 
+- **[Constellate](https://constellate.org/){target=_blank}**: Constellate was the text analytics service from ITHAKA (JSTOR and Portico). It was a platform for teaching, learning, and performing text analysis using archival repositories of scholarly and primary source content. Constellate was sunset in June 2025.
 
-    *Access Note*: Please create a free account with your @arizona.edu email address to obtain full functionality of the platform.
+    *Access Note*: create a free account with your @arizona.edu email address to obtain full functionality of the platform.
 
 - **[Dimensions Plus API](https://www.dimensions.ai/){target=_blank}**: Dimensions Plus includes grants, publications, citations, alternative metrics, clinical trials, patents, and policy documents. Must register with NetID and Password and email support@dimensions.ai to enable API access. 
 
 - **[Elsevier API](https://dev.elsevier.com/){target=_blank}**: Elsevier's API program allows you to integrate content and data from Elsevier products into your own website and applications. APIs are free for the products Arizona subscribes to: Scopus, Engineering Village, and subscribed journals in Science Direct. 
 
+- **[Scopus Search](https://www.scopus.com/pages/home#basic){target=_blank}**: Scopus search API includes basic, advanced, and AI powered queries of the Scopus literature archive.
+  
 - **[IEEE API Portal](https://developer.ieee.org/){target=_blank}**: API portal for IEEE. 
 
 - **[JSTOR for Data Research](https://www.jstor.org/dfr/){target=_blank}**: Data for Research (DfR) provides datasets of content on JSTOR for use in research and teaching. Researchers may use DfR to define and submit their desired dataset to be automatically processed. Data available through the service includes metadata, n-grams, and word counts for most articles and book chapters, and for all research reports and pamphlets on JSTOR. Datasets are produced at no cost to researchers and may include data for up to 25,000 documents. 
