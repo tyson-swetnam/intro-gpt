@@ -1,0 +1,3565 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentation for Prompt Engineering 101 Workshop">
+      
+      
+        <meta name="author" content="University of Arizona">
+      
+      
+        <link rel="canonical" href="https://tyson-swetnam.github.io/intro-gpt/ai_landscape/">
+      
+      
+        <link rel="prev" href="../agenda/">
+      
+      
+        <link rel="next" href="../claude/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/ua.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Landscape - GPT 101</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,700,700i%7CRegular:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Montserrat";--md-code-font:"Regular"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../chatbot_widget.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-NYETZFD8DN"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-NYETZFD8DN",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-NYETZFD8DN",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#the-landscape" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="GPT 101" class="md-header__button md-logo" aria-label="GPT 101" data-md-component="logo">
+      
+  <img src="../assets/ua.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            GPT 101
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Landscape
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="home" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/tyson-swetnam/intro-gpt" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    intro-gpt
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href=".." class="md-tabs__link">
+          
+  
+  
+    
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../claude/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Setup
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../prompts/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Prompt Engineering
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../education/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Education
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../research/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Research
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../ethics/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Ethics
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../tutorials/publichealth/casestudy/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Tutorials
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="GPT 101" class="md-nav__button md-logo" aria-label="GPT 101" data-md-component="logo">
+      
+  <img src="../assets/ua.png" alt="logo">
+
+    </a>
+    GPT 101
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/tyson-swetnam/intro-gpt" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    intro-gpt
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href=".." class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Home
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../agenda/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Agenda
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Landscape
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Landscape
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#a-glance-at-the-generative-ai-landscape" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A Glance at the Generative AI Landscape
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#huggingface-arena-llm-leaderboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HuggingFace Arena LLM Leaderboard
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#table-prices-of-services-last-checked-102025" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Table: Prices of Services (last checked 10/2025)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#agentic-browsers-ai-powered-web-browsers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Agentic Browsers (AI-Powered Web Browsers)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#important-restrictions-for-us-based-researchers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚠️ Important Restrictions for US-Based Researchers
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⚠️ Important Restrictions for US-Based Researchers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deepseek-ai-federal-and-state-restrictions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DeepSeek AI - Federal and State Restrictions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#qwen-alibaba-data-sovereignty-concerns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Qwen (Alibaba) - Data Sovereignty Concerns
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recommendations-for-researchers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recommendations for Researchers
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#image-generation-models-2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Image Generation Models (2025)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#video-generation-models-2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Video Generation Models (2025)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-capabilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Advanced Capabilities
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Setup
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Setup
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../claude/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Claude
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gemini/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gemini
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chatgpt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OpenAI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../microsoft/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Copilot
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../copilot/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GitHub
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Prompt Engineering
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Prompt Engineering
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../prompts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Writing Prompts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../daily-productivity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    General Productivity
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../code/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Code Interpreters
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vibe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vibe Coding
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../choose/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Choosing a Platform
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Education
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Education
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../education/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../teaching/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Teaching with AI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutoring/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Tutoring
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../admissions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Admissions & Recruiting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Research
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Research
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../research/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../agentic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Agentic AI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../jupyter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jupyter AI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mcp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MCP
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooklm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NotebookLM
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ollama/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ollama
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rag/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RAG
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../execution/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Code Execution
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../openai/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OpenAI API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../huggingface/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    HuggingFace
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gradio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gradio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../posit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Posit (RStudio)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../text_mining/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Text Mining
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ethics
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Ethics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ethics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bias
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../legal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Legal
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../transparency/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Transparency
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tutorials
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tutorials
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorials/publichealth/casestudy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Public Health
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorials/publichealth/gis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Map making
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#a-glance-at-the-generative-ai-landscape" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A Glance at the Generative AI Landscape
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#huggingface-arena-llm-leaderboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HuggingFace Arena LLM Leaderboard
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#table-prices-of-services-last-checked-102025" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Table: Prices of Services (last checked 10/2025)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#agentic-browsers-ai-powered-web-browsers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Agentic Browsers (AI-Powered Web Browsers)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#important-restrictions-for-us-based-researchers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚠️ Important Restrictions for US-Based Researchers
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⚠️ Important Restrictions for US-Based Researchers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deepseek-ai-federal-and-state-restrictions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DeepSeek AI - Federal and State Restrictions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#qwen-alibaba-data-sovereignty-concerns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Qwen (Alibaba) - Data Sovereignty Concerns
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recommendations-for-researchers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recommendations for Researchers
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#image-generation-models-2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Image Generation Models (2025)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#video-generation-models-2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Video Generation Models (2025)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-capabilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Advanced Capabilities
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="the-landscape">The Landscape<a class="headerlink" href="#the-landscape" title="Permanent link">&para;</a></h1>
+<p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+<h3 id="a-glance-at-the-generative-ai-landscape">A Glance at the Generative AI Landscape<a class="headerlink" href="#a-glance-at-the-generative-ai-landscape" title="Permanent link">&para;</a></h3>
+<p><a href="https://arxiv.org/abs/2304.13712" target="_blank"><img alt="tree" src="../assets/tree.jpeg" width="800" /></a></p>
+<p>Image Credit: <a href="https://arxiv.org/abs/2304.13712" target="_blank">Yang et al. <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3.842 0a1 1 0 0 0-.922.608c-.153.369-.044.627.294 1.111l6.919 8.36-1.023 1.106a1.04 1.04 0 0 0 .003 1.423l1.23 1.313-5.44 6.444c-.28.3-.453.823-.297 1.199a1.025 1.025 0 0 0 .959.635.91.91 0 0 0 .689-.34l5.783-6.126 7.49 8.005a.85.85 0 0 0 .684.26.96.96 0 0 0 .877-.615c.158-.377-.017-.75-.306-1.14L13.73 13.9l1.064-1.13a.963.963 0 0 0 .009-1.316L4.633.464S4.26.01 3.867 0zm0 .272h.017c.218.005.487.272.564.364l.005.006.005.005 10.17 10.99a.69.69 0 0 1-.008.946l-1.066 1.133-1.498-1.772-8.6-10.39c-.328-.472-.352-.619-.26-.841a.73.73 0 0 1 .671-.44Zm14.341 1.57a.88.88 0 0 0-.655.242l-5.696 6.158 1.694 1.832 5.309-6.514c.325-.433.479-.66.325-1.029a1.12 1.12 0 0 0-.977-.689zm-7.655 12.282 1.318 1.414-5.786 6.13a.65.65 0 0 1-.496.26.75.75 0 0 1-.706-.467c-.112-.269.036-.687.244-.909l.005-.005.005-.006z"/></svg></span></a> (While this image depicts the state of LLMs in 2023, it effectively illustrates the foundational models and their evolution)</p>
+<p>The field of Generative AI is rapidly evolving. </p>
+<p>This section provides a snapshot of some of the most influential models and platforms as of 2025.</p>
+<p><a href="https://mad.firstmark.com/" target="_blank">Matt Turck's MAD Landscape</a></p>
+<p><iframe
+    src="https://mad.firstmark.com/"
+    frameborder="0"
+    width="800"
+    height="400"
+></iframe>
+</p>
+<h2 id="huggingface-arena-llm-leaderboard"><a href="https://lmarena.ai/leaderboard" target="_blank">HuggingFace <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.025 1.13c-5.77 0-10.449 4.647-10.449 10.378 0 1.112.178 2.181.503 3.185.064-.222.203-.444.416-.577a.96.96 0 0 1 .524-.15c.293 0 .584.124.84.284.278.173.48.408.71.694.226.282.458.611.684.951v-.014c.017-.324.106-.622.264-.874s.403-.487.762-.543c.3-.047.596.06.787.203s.31.313.4.467c.15.257.212.468.233.542.01.026.653 1.552 1.657 2.54.616.605 1.01 1.223 1.082 1.912.055.537-.096 1.059-.38 1.572.637.121 1.294.187 1.967.187.657 0 1.298-.063 1.921-.178-.287-.517-.44-1.041-.384-1.581.07-.69.465-1.307 1.081-1.913 1.004-.987 1.647-2.513 1.657-2.539.021-.074.083-.285.233-.542.09-.154.208-.323.4-.467a1.08 1.08 0 0 1 .787-.203c.359.056.604.29.762.543s.247.55.265.874v.015c.225-.34.457-.67.683-.952.23-.286.432-.52.71-.694.257-.16.547-.284.84-.285a.97.97 0 0 1 .524.151c.228.143.373.388.43.625l.006.04a10.3 10.3 0 0 0 .534-3.273c0-5.731-4.678-10.378-10.449-10.378M8.327 6.583a1.5 1.5 0 0 1 .713.174 1.487 1.487 0 0 1 .617 2.013c-.183.343-.762-.214-1.102-.094-.38.134-.532.914-.917.71a1.487 1.487 0 0 1 .69-2.803m7.486 0a1.487 1.487 0 0 1 .689 2.803c-.385.204-.536-.576-.916-.71-.34-.12-.92.437-1.103.094a1.487 1.487 0 0 1 .617-2.013 1.5 1.5 0 0 1 .713-.174m-10.68 1.55a.96.96 0 1 1 0 1.921.96.96 0 0 1 0-1.92m13.838 0a.96.96 0 1 1 0 1.92.96.96 0 0 1 0-1.92M8.489 11.458c.588.01 1.965 1.157 3.572 1.164 1.607-.007 2.984-1.155 3.572-1.164.196-.003.305.12.305.454 0 .886-.424 2.328-1.563 3.202-.22-.756-1.396-1.366-1.63-1.32q-.011.001-.02.006l-.044.026-.01.008-.03.024q-.018.017-.035.036l-.032.04a1 1 0 0 0-.058.09l-.014.025q-.049.088-.11.19a1 1 0 0 1-.083.116 1.2 1.2 0 0 1-.173.18q-.035.029-.075.058a1.3 1.3 0 0 1-.251-.243 1 1 0 0 1-.076-.107c-.124-.193-.177-.363-.337-.444-.034-.016-.104-.008-.2.022q-.094.03-.216.087-.06.028-.125.063l-.13.074q-.067.04-.136.086a3 3 0 0 0-.135.096 3 3 0 0 0-.26.219 2 2 0 0 0-.12.121 2 2 0 0 0-.106.128l-.002.002a2 2 0 0 0-.09.132l-.001.001a1.2 1.2 0 0 0-.105.212q-.013.036-.024.073c-1.139-.875-1.563-2.317-1.563-3.203 0-.334.109-.457.305-.454m.836 10.354c.824-1.19.766-2.082-.365-3.194-1.13-1.112-1.789-2.738-1.789-2.738s-.246-.945-.806-.858-.97 1.499.202 2.362c1.173.864-.233 1.45-.685.64-.45-.812-1.683-2.896-2.322-3.295s-1.089-.175-.938.647 2.822 2.813 2.562 3.244-1.176-.506-1.176-.506-2.866-2.567-3.49-1.898.473 1.23 2.037 2.16c1.564.932 1.686 1.178 1.464 1.53s-3.675-2.511-4-1.297c-.323 1.214 3.524 1.567 3.287 2.405-.238.839-2.71-1.587-3.216-.642-.506.946 3.49 2.056 3.522 2.064 1.29.33 4.568 1.028 5.713-.624m5.349 0c-.824-1.19-.766-2.082.365-3.194 1.13-1.112 1.789-2.738 1.789-2.738s.246-.945.806-.858.97 1.499-.202 2.362c-1.173.864.233 1.45.685.64.451-.812 1.683-2.896 2.322-3.295s1.089-.175.938.647-2.822 2.813-2.562 3.244 1.176-.506 1.176-.506 2.866-2.567 3.49-1.898-.473 1.23-2.037 2.16c-1.564.932-1.686 1.178-1.464 1.53s3.675-2.511 4-1.297c.323 1.214-3.524 1.567-3.287 2.405.238.839 2.71-1.587 3.216-.642.506.946-3.49 2.056-3.522 2.064-1.29.33-4.568 1.028-5.713-.624"/></svg></span> Arena LLM Leaderboard <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.09 10.121A5.25 5.25 0 0 1 1 5V3.75C1 2.784 1.784 2 2.75 2h2.364c.236-.586.81-1 1.48-1h10.812c.67 0 1.244.414 1.48 1h2.489c.966 0 1.75.784 1.75 1.75V5a5.25 5.25 0 0 1-4.219 5.149 7.01 7.01 0 0 1-4.644 5.478l.231 3.003.034.031c.079.065.303.203.836.282.838.124 1.637.81 1.637 1.807v.75h2.25a.75.75 0 0 1 0 1.5H4.75a.75.75 0 0 1 0-1.5H7v-.75c0-.996.8-1.683 1.637-1.807.533-.08.757-.217.836-.282l.034-.031.231-3.003A7.01 7.01 0 0 1 5.09 10.12ZM6.5 2.594V9a5.5 5.5 0 1 0 11 0V2.594a.094.094 0 0 0-.094-.094H6.594a.094.094 0 0 0-.094.094m4.717 13.363-.215 2.793-.001.021-.003.043a1 1 0 0 1-.022.147c-.05.237-.194.567-.553.86-.348.286-.853.5-1.566.605a.48.48 0 0 0-.274.136.26.26 0 0 0-.083.188v.75h7v-.75a.26.26 0 0 0-.083-.188.48.48 0 0 0-.274-.136c-.713-.105-1.218-.32-1.567-.604-.358-.294-.502-.624-.552-.86a1 1 0 0 1-.025-.19l-.001-.022-.215-2.793a7 7 0 0 1-1.566 0M19 8.578A3.75 3.75 0 0 0 21.625 5V3.75a.25.25 0 0 0-.25-.25H19ZM5 3.5H2.75a.25.25 0 0 0-.25.25V5A3.75 3.75 0 0 0 5 8.537Z"/></svg></span></a><a class="headerlink" href="#huggingface-arena-llm-leaderboard" title="Permanent link">&para;</a></h2>
+<p><iframe
+    src="https://lmarena.ai/leaderboard"
+    frameborder="0"
+    width="850"
+    height="450"
+></iframe>
+</p>
+<h2 id="table-prices-of-services-last-checked-102025">Table: Prices of Services (last checked 10/2025)<a class="headerlink" href="#table-prices-of-services-last-checked-102025" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>LLM Service</strong></th>
+<th style="text-align: left;"><strong>Plan</strong></th>
+<th style="text-align: left;"><strong>Price (per month)</strong></th>
+<th style="text-align: left;"><strong>Details</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="https://www.anthropic.com/pricing" target="_blank"><strong>Anthropic Claude</strong></a></td>
+<td style="text-align: left;"><a href="https://claude.ai/" target="_blank">Free</a></td>
+<td style="text-align: left;">$0</td>
+<td style="text-align: left;">Basic Claude access with limited daily use</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://claude.ai/upgrade/pro" target="_blank">Pro</a></td>
+<td style="text-align: left;">$20</td>
+<td style="text-align: left;">More usage, Claude Code terminal access, unlimited projects, Research access</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://claude.com/pricing/max" target="_blank">Max</a></td>
+<td style="text-align: left;">$100</td>
+<td style="text-align: left;">Priority access, substantially higher usage, enhanced features</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Max Pro</td>
+<td style="text-align: left;">$200</td>
+<td style="text-align: left;">Highest tier with maximum usage limits and priority access to newest models</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://claude.com/pricing/team" target="_blank">Team</a></td>
+<td style="text-align: left;">$30/month or $25/month (annual)</td>
+<td style="text-align: left;">Central billing, administration, collaboration features (minimum 5 members)</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://claude.com/contact-sales" target="_blank">Enterprise</a></td>
+<td style="text-align: left;">Contact Sales</td>
+<td style="text-align: left;">Enhanced context window, SSO, role-based access, audit logs, compliance API</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://console.anthropic.com/" target="_blank"><strong>Claude API</strong></a></td>
+<td style="text-align: left;">Pay-As-You-Go</td>
+<td style="text-align: left;">Varies</td>
+<td style="text-align: left;"><strong>Claude Sonnet 4.5:</strong> $3/1M input, $15/1M output (200K context) <br> <strong>Claude Opus 4.1:</strong> $15/1M input, $75/1M output <br> <strong>Claude Haiku 3.5:</strong> $0.80/1M input, $4/1M output <br> Batch processing: 50% discount, Prompt caching available (75-90% savings)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://www.anthropic.com/claude-code" target="_blank"><strong>Claude Code</strong></a></td>
+<td style="text-align: left;">Included in Pro+</td>
+<td style="text-align: left;">$20+</td>
+<td style="text-align: left;">Terminal-based AI coding assistant included with Pro, Max, Max Pro subscriptions <br> Web Search: $10/1,000 searches, Code Execution: $0.05/hour per container</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://gemini.google.com/" target="_blank"><strong>Google AI</strong></a></td>
+<td style="text-align: left;"><a href="https://gemini.google.com/" target="_blank">Free</a></td>
+<td style="text-align: left;">$0</td>
+<td style="text-align: left;">Unlimited Gemini 2.5 Flash, limited Gemini 2.5 Pro, 32K context window</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://one.google.com/ai" target="_blank">Google AI Pro</a></td>
+<td style="text-align: left;">$19.99</td>
+<td style="text-align: left;">Expanded access to Gemini 2.5 Pro (100 queries/day), 1M context window, 2TB storage, NotebookLM <br> <strong><a href="https://gemini.google/students/" target="_blank">Free for university students for 1 year</a></strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://one.google.com/ai" target="_blank">Google AI Ultra</a></td>
+<td style="text-align: left;">$249.99</td>
+<td style="text-align: left;">Highest access to Gemini 2.5 Pro, exclusive access to Gemini 2.5 Deep Think, Veo 3 video generation, YouTube Premium, 30TB storage</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://aistudio.google.com/" target="_blank"><strong>Gemini API</strong></a></td>
+<td style="text-align: left;"><a href="https://ai.google.dev/gemini-api/docs/pricing" target="_blank">Pay-As-You-Go</a></td>
+<td style="text-align: left;">Varies</td>
+<td style="text-align: left;"><strong>Gemini 2.5 Flash:</strong> $0.30/1M input, $2.50/1M output <br> <strong>Gemini 2.5 Pro:</strong> $1.25/1M input (≤200K), $10/1M output (≤200K) <br> <strong>Gemini 2.5 Flash-Lite:</strong> $0.10/1M input, $0.40/1M output <br> Batch processing: 50% discount</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://chatgpt.com/" target="_blank"><strong>OpenAI ChatGPT</strong></a></td>
+<td style="text-align: left;"><a href="https://chatgpt.com/" target="_blank">Free</a></td>
+<td style="text-align: left;">$0</td>
+<td style="text-align: left;">Limited access to GPT-5 (10 messages every 5 hours), then GPT-5-mini</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://chatgpt.com/pricing" target="_blank">Plus</a></td>
+<td style="text-align: left;">$20</td>
+<td style="text-align: left;">Higher message limits to GPT-5, unlimited GPT-5-mini, access to o3-mini, o1 models</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://openai.com/index/introducing-chatgpt-pro/" target="_blank">Pro</a></td>
+<td style="text-align: left;">$200</td>
+<td style="text-align: left;">Unlimited GPT-5 access, GPT-5 Pro with advanced reasoning, extended context windows</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://chatgpt.com/pricing" target="_blank">Team</a></td>
+<td style="text-align: left;">$25/user (annual) or $30/user (monthly)</td>
+<td style="text-align: left;">All Plus features with higher message caps, team workspace, data excluded from training</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://openai.com/chatgpt/enterprise/" target="_blank">Enterprise</a></td>
+<td style="text-align: left;">Contact Sales</td>
+<td style="text-align: left;">Unlimited high-speed models, extended context windows, enterprise security</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://platform.openai.com/" target="_blank"><strong>OpenAI API</strong></a></td>
+<td style="text-align: left;"><a href="https://platform.openai.com/pricing" target="_blank">Pay-As-You-Go</a></td>
+<td style="text-align: left;">Varies</td>
+<td style="text-align: left;"><strong>GPT-5:</strong> $1.25/1M input, $10/1M output (272K-400K context) <br> <strong>GPT-5-mini:</strong> $0.25/1M input, $2/1M output <br> <strong>GPT-5-nano:</strong> $0.05/1M input, $0.40/1M output <br> <strong>GPT-4o:</strong> $2.50/1M input, $10/1M output <br> <strong>o3-mini:</strong> $1.10/1M input, $4.40/1M output</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://www.perplexity.ai/" target="_blank"><strong>Perplexity AI</strong></a></td>
+<td style="text-align: left;"><a href="https://www.perplexity.ai/" target="_blank">Free</a></td>
+<td style="text-align: left;">$0</td>
+<td style="text-align: left;">Unlimited quick searches, 5 Pro searches/day, 5 follow-up questions every 4 hours</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://www.perplexity.ai/settings" target="_blank">Pro</a></td>
+<td style="text-align: left;">$20/month or $200/year</td>
+<td style="text-align: left;">300+ Pro searches/day, access to advanced AI models, file uploads</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://www.perplexity.ai/students" target="_blank">Education Pro</a></td>
+<td style="text-align: left;">$4.99/month</td>
+<td style="text-align: left;">All Pro features with student/faculty verification <br> <strong>1 month free trial</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://www.perplexity.ai/settings" target="_blank">Max</a></td>
+<td style="text-align: left;">$200/month or $2,000/year</td>
+<td style="text-align: left;">Unlimited Labs usage, access to top-tier models (OpenAI o3-pro, Claude Opus 4)</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://www.perplexity.ai/enterprise/pricing" target="_blank">Enterprise Pro</a></td>
+<td style="text-align: left;">$40/user/month or $400/user/year</td>
+<td style="text-align: left;">Admin tools, collaboration features, domain verification, SCIM provisioning</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://copilot.microsoft.com/" target="_blank"><strong>Microsoft Copilot</strong></a></td>
+<td style="text-align: left;"><a href="https://copilot.microsoft.com/" target="_blank">Free</a></td>
+<td style="text-align: left;">$0</td>
+<td style="text-align: left;">GPT-4o-powered chat, 15 image generation boosts/day</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://www.microsoft.com/microsoft-365/premium" target="_blank"><strong>Microsoft 365 Premium</strong></a></td>
+<td style="text-align: left;"><a href="https://www.microsoft.com/en-us/microsoft-365-copilot/pricing/individuals" target="_blank">Premium</a></td>
+<td style="text-align: left;">$19.99</td>
+<td style="text-align: left;">Full M365 suite + Copilot in all apps, 1TB storage, extended AI usage limits, 40 image generations</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://www.microsoft.com/microsoft-365/copilot" target="_blank"><strong>Microsoft 365 Copilot</strong></a></td>
+<td style="text-align: left;"><a href="https://www.microsoft.com/en-us/microsoft-365-copilot/pricing" target="_blank">Business/Enterprise</a></td>
+<td style="text-align: left;">$30/user</td>
+<td style="text-align: left;">AI in Word, Excel, PowerPoint, Outlook, Teams. Requires existing M365 license (<span class="arithmatex">\(12.50-\)</span>57/user)</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Consumption-based</td>
+<td style="text-align: left;">$0.01 per message</td>
+<td style="text-align: left;">Pay-per-use alternative to monthly subscription (30 messages for proprietary files, 25 per agent action)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/features/copilot" target="_blank"><strong>GitHub Copilot</strong></a></td>
+<td style="text-align: left;"><a href="https://github.com/copilot" target="_blank">Free</a></td>
+<td style="text-align: left;">$0</td>
+<td style="text-align: left;">Up to 2,000 code completions/month, 50 premium requests/month <br> <strong>Free for students, teachers, open source maintainers</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://github.com/github-copilot/pro" target="_blank">Pro</a></td>
+<td style="text-align: left;">$10/month or $100/year</td>
+<td style="text-align: left;">Unlimited code completions, 300 premium requests/month, access to Copilot coding agent</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://github.com/github-copilot/pro-plus" target="_blank">Pro+</a></td>
+<td style="text-align: left;">$39/month or $390/year</td>
+<td style="text-align: left;">1,500 premium requests/month, full access to all models, GitHub Spark, compute resources</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://github.com/github-copilot/purchase?priority=business" target="_blank">Business</a></td>
+<td style="text-align: left;">$19/user/month</td>
+<td style="text-align: left;">300 premium requests/user, user management, usage metrics, team collaboration</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://github.com/github-copilot/purchase?priority=enterprise" target="_blank">Enterprise</a></td>
+<td style="text-align: left;">$39/user/month</td>
+<td style="text-align: left;">1,000 premium requests/user, all AI models, advanced customization, enterprise features</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://mistral.ai/" target="_blank"><strong>Mistral AI</strong></a></td>
+<td style="text-align: left;"><a href="https://chat.mistral.ai/" target="_blank">Le Chat Free</a></td>
+<td style="text-align: left;">$0</td>
+<td style="text-align: left;">Basic AI assistant with limited messages</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://chat.mistral.ai/" target="_blank">Le Chat Pro</a></td>
+<td style="text-align: left;">$14.99</td>
+<td style="text-align: left;">Up to 6x more messages, 150 flash answers/day, 5x web searches, 1,000 memories, 15GB libraries</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://chat.mistral.ai/" target="_blank">Le Chat Team</a></td>
+<td style="text-align: left;">$24.99/user or $299.88/user/year</td>
+<td style="text-align: left;">200 flash answers/day, 30GB libraries/user, domain verification, SCIM provisioning</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://console.mistral.ai/" target="_blank">La Plateforme API</a></td>
+<td style="text-align: left;">Varies</td>
+<td style="text-align: left;"><strong>Mistral Medium 3:</strong> $0.40/1M input, $2.00/1M output <br> <strong>Mistral Nemo:</strong> $0.30/1M tokens <br> <strong>Mistral Large 2:</strong> $3/1M input, $9/1M output <br> <strong>Codestral:</strong> $1/1M input, $3/1M output</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://cohere.com/" target="_blank"><strong>Cohere</strong></a></td>
+<td style="text-align: left;"><a href="https://dashboard.cohere.com/welcome/login" target="_blank">Free Trial</a></td>
+<td style="text-align: left;">$0</td>
+<td style="text-align: left;">Limited API calls for testing</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://cohere.com/pricing" target="_blank">Production</a></td>
+<td style="text-align: left;">Varies</td>
+<td style="text-align: left;"><strong>Command R 03-2024:</strong> $0.50/1M input, $1.50/1M output <br> <strong>Command R+ 08-2024:</strong> $2.50/1M input, $10/1M output <br> <strong>Command-light:</strong> $0.30/1M input, $0.60/1M output <br> <strong>Aya Expanse (8B &amp; 32B):</strong> $0.50/1M input, $1.50/1M output</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://cohere.com/research/scholars-program" target="_blank">Education Program</a></td>
+<td style="text-align: left;">Contact</td>
+<td style="text-align: left;">AI access for students and educators (pricing not publicly disclosed)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://www.deepseek.com/" target="_blank"><strong>DeepSeek</strong></a></td>
+<td style="text-align: left;"><a href="https://platform.deepseek.com/" target="_blank">DeepSeek Chat API</a></td>
+<td style="text-align: left;">Pay-As-You-Go</td>
+<td style="text-align: left;"><strong>DeepSeek Chat:</strong> $0.57/1M input, $1.68/1M output <br> <strong>DeepSeek Reasoner (R1):</strong> $0.57/1M input, $1.68/1M output <br> 128K context window <br> <strong>~200x cheaper than GPT-4 Turbo</strong> <br> ⚠️ <strong>NOT ALLOWED for US-based researchers</strong> - See restrictions below</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://github.com/deepseek-ai" target="_blank">Open Source</a></td>
+<td style="text-align: left;">Free</td>
+<td style="text-align: left;">Free to download and deploy locally. Training cost: $294,000 (peer-reviewed in Nature) <br> ⚠️ Self-hosted use requires institutional IT/security approval</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://qwen.ai/" target="_blank"><strong>Qwen (Alibaba)</strong></a></td>
+<td style="text-align: left;"><a href="https://chat.qwen.ai/" target="_blank">Qwen Chat</a></td>
+<td style="text-align: left;">Free</td>
+<td style="text-align: left;">Free web interface powered by Qwen-Max <br> ⚠️ <strong>NOT RECOMMENDED for US-based researchers</strong> - Chinese company, data sovereignty concerns</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://www.alibabacloud.com/help/en/model-studio/models" target="_blank">Qwen API</a></td>
+<td style="text-align: left;">Pay-As-You-Go</td>
+<td style="text-align: left;"><strong>Qwen-Flash:</strong> $0.05/1M input, $0.40/1M output <br> <strong>Qwen3-Coder:</strong> $0.22/1M input, $0.95/1M output <br> <strong>Qwen-Max:</strong> $1.60/1M input, $6.40/1M output <br> 1M context window, 90-day free trial (1M tokens)</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://github.com/QwenLM" target="_blank">Open Source</a></td>
+<td style="text-align: left;">Free</td>
+<td style="text-align: left;">Apache 2.0 license, 40M+ downloads. Sizes: 0.6B-235B parameters <br> ⚠️ Self-hosted use requires institutional IT/security approval</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://www.midjourney.com/" target="_blank"><strong>Midjourney</strong></a></td>
+<td style="text-align: left;">Basic</td>
+<td style="text-align: left;">$10</td>
+<td style="text-align: left;">~200 image generations/month</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Standard</td>
+<td style="text-align: left;">$30</td>
+<td style="text-align: left;">15 hrs fast GPU time, unlimited relaxed</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Pro</td>
+<td style="text-align: left;">$60</td>
+<td style="text-align: left;">30 hrs fast GPU time, stealth mode</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Mega</td>
+<td style="text-align: left;">$120</td>
+<td style="text-align: left;">60 hrs fast GPU time, stealth mode</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://openai.com/dall-e-3" target="_blank"><strong>DALL-E 3</strong></a></td>
+<td style="text-align: left;">Via ChatGPT Plus</td>
+<td style="text-align: left;">Included</td>
+<td style="text-align: left;">Image generation within ChatGPT</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">API</td>
+<td style="text-align: left;">Varies</td>
+<td style="text-align: left;">Standard: $0.040/image, HD: $0.080/image</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://stability.ai/" target="_blank"><strong>Stable Diffusion</strong></a></td>
+<td style="text-align: left;">DreamStudio</td>
+<td style="text-align: left;">$10</td>
+<td style="text-align: left;">1000 credits (~5000 images)</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">API</td>
+<td style="text-align: left;">Varies</td>
+<td style="text-align: left;">$0.002 per image (512x512)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://x.com/i/grok" target="_blank"><strong>Grok by xAI</strong></a></td>
+<td style="text-align: left;">X Premium</td>
+<td style="text-align: left;">$8</td>
+<td style="text-align: left;">Access via X (Twitter) Premium</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">X Premium+</td>
+<td style="text-align: left;">$16</td>
+<td style="text-align: left;">Priority access, higher limits</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://character.ai/" target="_blank"><strong>Character AI</strong></a></td>
+<td style="text-align: left;">Free</td>
+<td style="text-align: left;">$0</td>
+<td style="text-align: left;">Limited features and queue priority</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">c.ai+</td>
+<td style="text-align: left;">$9.99</td>
+<td style="text-align: left;">Priority access, faster responses, exclusive features</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://www.together.ai/" target="_blank"><strong>Together AI</strong></a></td>
+<td style="text-align: left;"><a href="https://www.together.ai/pricing" target="_blank">Serverless Inference</a></td>
+<td style="text-align: left;">Pay-As-You-Go</td>
+<td style="text-align: left;"><strong>Text &amp; Vision Models:</strong> <span class="arithmatex">\(0.02-\)</span>3.50/1M tokens <br> <strong>Image Models:</strong> <span class="arithmatex">\(0.0027-\)</span>0.08/megapixel <br> <strong>Embedding Models:</strong> <span class="arithmatex">\(0.01-\)</span>0.08/1M tokens</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://www.together.ai/pricing#instant-clusters" target="_blank">GPU Clusters</a></td>
+<td style="text-align: left;">Pay-As-You-Go</td>
+<td style="text-align: left;"><strong>Instant Clusters:</strong> <span class="arithmatex">\(1.76-\)</span>5.50/GPU hour <br> <strong>Reserved Clusters:</strong> Starting at $1.30/GPU hour</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://www.together.ai/pricing#fine-tuning" target="_blank">Fine-Tuning</a></td>
+<td style="text-align: left;">Pay-As-You-Go</td>
+<td style="text-align: left;"><strong>LoRA Fine-Tuning (≤16B params):</strong> Starting at $0.48 <br> <strong>Full Fine-Tuning (70-100B params):</strong> Up to $3.20</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://groq.com/" target="_blank"><strong>Groq</strong></a></td>
+<td style="text-align: left;"><a href="https://console.groq.com/" target="_blank">Free Tier</a></td>
+<td style="text-align: left;">$0</td>
+<td style="text-align: left;">Available for getting started</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://groq.com/pricing" target="_blank">Developer Tier</a></td>
+<td style="text-align: left;">Pay-As-You-Go</td>
+<td style="text-align: left;">Up to 10x more rate limits than free tier. <strong>Batch Processing:</strong> 50% cost discount (through April 2025)</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://groq.com/enterprise-access" target="_blank">Enterprise</a></td>
+<td style="text-align: left;">Contact Sales</td>
+<td style="text-align: left;">Custom solutions for large organizations</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://replicate.com/" target="_blank"><strong>Replicate</strong></a></td>
+<td style="text-align: left;">Pay-As-You-Go</td>
+<td style="text-align: left;">Varies</td>
+<td style="text-align: left;"><strong>CPU:</strong> $0.36/hour <br> <strong>Nvidia T4 GPU:</strong> $0.81/hour (public), $1.98/hour (private) <br> <strong>8x H100 GPU:</strong> $43.92/hour <br> Run open-source models with per-second billing</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://huggingface.co/" target="_blank"><strong>Hugging Face</strong></a></td>
+<td style="text-align: left;">Free</td>
+<td style="text-align: left;">$0</td>
+<td style="text-align: left;">Community models and datasets</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Pro</td>
+<td style="text-align: left;">$9</td>
+<td style="text-align: left;">Advanced features, private repos</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Enterprise</td>
+<td style="text-align: left;">Contact Sales</td>
+<td style="text-align: left;">Dedicated support, SLAs, security features</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://aws.amazon.com/bedrock/" target="_blank"><strong>Amazon Bedrock</strong></a></td>
+<td style="text-align: left;">On-Demand</td>
+<td style="text-align: left;">Varies</td>
+<td style="text-align: left;">Access to Claude, Llama 2, Stable Diffusion, and more</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://cloud.google.com/vertex-ai" target="_blank"><strong>Google Vertex AI</strong></a></td>
+<td style="text-align: left;">On-Demand</td>
+<td style="text-align: left;">Varies</td>
+<td style="text-align: left;">130+ foundation models including Gemini, Claude, Llama</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://ai.azure.com/" target="_blank"><strong>Azure AI Studio</strong></a></td>
+<td style="text-align: left;">On-Demand</td>
+<td style="text-align: left;">Varies</td>
+<td style="text-align: left;">Access to GPT-4, Claude, Llama, Mistral, and more</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://llama.meta.com/" target="_blank"><strong>Meta Llama</strong></a></td>
+<td style="text-align: left;">Open Source</td>
+<td style="text-align: left;">Free</td>
+<td style="text-align: left;">Llama 2 and Llama 3 models for download</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://ollama.com/" target="_blank"><strong>Ollama</strong></a></td>
+<td style="text-align: left;">Local Install</td>
+<td style="text-align: left;">Free</td>
+<td style="text-align: left;">Run LLMs locally on your hardware</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://lmstudio.ai/" target="_blank"><strong>LM Studio</strong></a></td>
+<td style="text-align: left;">Local Install</td>
+<td style="text-align: left;">Free</td>
+<td style="text-align: left;">Desktop app for running LLMs locally</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://jan.ai/" target="_blank"><strong>Jan.ai</strong></a></td>
+<td style="text-align: left;">Local Install</td>
+<td style="text-align: left;">Free</td>
+<td style="text-align: left;">Open-source ChatGPT alternative, runs locally</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://continue.dev/"><strong>Continue.dev</strong></a></td>
+<td style="text-align: left;">Open Source</td>
+<td style="text-align: left;">Free</td>
+<td style="text-align: left;">Open-source autopilot for VS Code and JetBrains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://poe.com/" target="_blank"><strong>Poe by Quora</strong></a></td>
+<td style="text-align: left;">Monthly</td>
+<td style="text-align: left;">$19.99</td>
+<td style="text-align: left;">Access to various chatbots including GPT-4, Claude</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Yearly</td>
+<td style="text-align: left;">$199.99</td>
+<td style="text-align: left;">Annual subscription with all chatbot access</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://you.com/pro" target="_blank"><strong>You.com</strong></a></td>
+<td style="text-align: left;">YouPro</td>
+<td style="text-align: left;">$20</td>
+<td style="text-align: left;">Latest AI models, personalized AI with memory</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://www.jasper.ai/pricing" target="_blank"><strong>Jasper AI</strong></a></td>
+<td style="text-align: left;">Creator</td>
+<td style="text-align: left;">$49</td>
+<td style="text-align: left;">Writing assistant with templates</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Teams</td>
+<td style="text-align: left;">$125</td>
+<td style="text-align: left;">Advanced features for small teams</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Business</td>
+<td style="text-align: left;">Contact Sales</td>
+<td style="text-align: left;">Custom pricing for organizations</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://replit.com/pricing" target="_blank"><strong>Replit AI</strong></a></td>
+<td style="text-align: left;">Core</td>
+<td style="text-align: left;">$20</td>
+<td style="text-align: left;">AI coding assistant integrated in Replit IDE</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="agentic-browsers-ai-powered-web-browsers">Agentic Browsers (AI-Powered Web Browsers)<a class="headerlink" href="#agentic-browsers-ai-powered-web-browsers" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Browser</strong></th>
+<th style="text-align: left;"><strong>Plan</strong></th>
+<th style="text-align: left;"><strong>Price (per month)</strong></th>
+<th style="text-align: left;"><strong>Details</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="https://www.perplexity.ai/comet" target="_blank"><strong>Perplexity Comet</strong></a></td>
+<td style="text-align: left;"><a href="https://comet.perplexity.ai/" target="_blank">Free</a></td>
+<td style="text-align: left;">$0</td>
+<td style="text-align: left;">AI-powered browser with sidecar assistant, Perplexity AI search, tab management, content summarization</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Perplexity Max</td>
+<td style="text-align: left;">$200</td>
+<td style="text-align: left;">Background Assistant for multi-tasking, autonomous task execution (booking flights, sending emails), mission control dashboard</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://www.diabrowser.com" target="_blank"><strong>Dia Browser</strong></a></td>
+<td style="text-align: left;"><a href="https://browserco.typeform.com/to/i6CycxSu" target="_blank">Free Beta</a></td>
+<td style="text-align: left;">$0 (Invite-only)</td>
+<td style="text-align: left;">AI-first browser, URL bar = AI chat, tab conversations, Skills system, browsing history context (opt-in) <br> <strong>macOS 14+ M1+ only</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://www.diabrowser.com" target="_blank">Dia Pro</a></td>
+<td style="text-align: left;">$20</td>
+<td style="text-align: left;">Unlimited AI chat and Skills, multi-step reasoning, task automation <br> <strong>Acquired by Atlassian ($610M)</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://fellou.ai" target="_blank"><strong>Fellou</strong></a></td>
+<td style="text-align: left;"><a href="https://fellou.ai/pricing" target="_blank">Free</a></td>
+<td style="text-align: left;">$0</td>
+<td style="text-align: left;">1,000 Sparks (~4 tasks), Deep Search, autonomous web actions, Shadow Workspace for background tasks</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://fellou.ai/pricing" target="_blank">Plus</a></td>
+<td style="text-align: left;">$19</td>
+<td style="text-align: left;">2,000 Sparks (~8 tasks), 3 scheduled tasks, priority support</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://fellou.ai/pricing" target="_blank">Pro</a></td>
+<td style="text-align: left;">$39.90</td>
+<td style="text-align: left;">5,000 Sparks (~20 tasks), 5 scheduled tasks, Image/Code/Music agents</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://fellou.ai/pricing" target="_blank">Ultra</a></td>
+<td style="text-align: left;">$199.90</td>
+<td style="text-align: left;">Unlimited Sparks, unlimited scheduled/concurrent tasks, exclusive support</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://www.operaneon.com/" target="_blank"><strong>Opera Neon</strong></a></td>
+<td style="text-align: left;"><a href="https://www.operaneon.com/" target="_blank">Subscription</a></td>
+<td style="text-align: left;">$19.99 (Waitlist)</td>
+<td style="text-align: left;">Neon Do (autonomous browsing), Neon Make (AI creation), Cards system, Tasks workspaces, local processing</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://www.genspark.ai" target="_blank"><strong>Genspark AI Browser</strong></a></td>
+<td style="text-align: left;"><a href="https://www.genspark.ai/pricing" target="_blank">Free</a></td>
+<td style="text-align: left;">$0</td>
+<td style="text-align: left;">100 credits daily, Super Agent Everywhere, Autopilot Mode, 700+ MCP tool integrations</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://www.genspark.ai/pricing" target="_blank">Plus</a></td>
+<td style="text-align: left;">$24.99</td>
+<td style="text-align: left;">10,000 credits monthly, priority AI agent access, top-tier models, AI Slides/Sheets/Docs</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://www.genspark.ai/pricing" target="_blank">Pro</a></td>
+<td style="text-align: left;">$249.99</td>
+<td style="text-align: left;">125,000 credits monthly, full Super Agent access, phone calls, video generation</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://www.microsoft.com/edge" target="_blank"><strong>Microsoft Edge Copilot Mode</strong></a></td>
+<td style="text-align: left;"><a href="https://www.microsoft.com/en-us/edge/features/copilot" target="_blank">Free (Experimental)</a></td>
+<td style="text-align: left;">$0</td>
+<td style="text-align: left;">Cross-tab awareness, task automation, in-page assistance, browser history/credentials access <br> <strong>Windows/Mac, opt-in</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://www.opera.com/features/aria" target="_blank"><strong>Opera One + Aria</strong></a></td>
+<td style="text-align: left;"><a href="https://www.opera.com/" target="_blank">Free</a></td>
+<td style="text-align: left;">$0</td>
+<td style="text-align: left;">Free AI assistant, real-time web access, page context mode, image generation, tab commands, local AI models <br> <strong>No account required</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://brave.com/leo/" target="_blank"><strong>Brave + Leo AI</strong></a></td>
+<td style="text-align: left;"><a href="https://brave.com/" target="_blank">Free</a></td>
+<td style="text-align: left;">$0</td>
+<td style="text-align: left;">Privacy-first AI, Llama 3.1 8B, Mixtral, Claude Haiku, Qwen, content awareness, zero data retention</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Leo Premium</td>
+<td style="text-align: left;">Varies</td>
+<td style="text-align: left;">Claude Sonnet 4, DeepSeek R1 reasoning models, Bring Your Own Model (BYOM)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Notes on Agentic Browsers:</strong></p>
+<ul>
+<li><strong>True Agentic Capabilities:</strong> Comet, Fellou, Opera Neon, Dia, and Genspark can autonomously perform multi-step tasks (booking, purchasing, form filling)</li>
+<li><strong>AI-Enhanced:</strong> Microsoft Edge Copilot Mode, Opera One, and Brave Leo provide AI assistance but with less autonomous action</li>
+<li><strong>Platform Availability:</strong> Most are Chromium-based; Dia is macOS only (M1+); Others support Windows/Mac/Linux</li>
+<li><strong>Privacy Considerations:</strong> Check each browser's data policies - some use cloud AI, others offer local processing</li>
+<li><strong>Coming Soon:</strong> OpenAI browser expected late 2025 with ChatGPT integration and Operator agent</li>
+</ul>
+<p><strong>Notes:</strong></p>
+<ul>
+<li>Token pricing for API access can be complex. Refer to each provider's pricing page for the most accurate and up-to-date details.</li>
+<li>"Contact Sales" typically indicates that pricing is customized based on usage, features, and the specific needs of the customer.</li>
+<li>Many services offer free trials or limited free tiers, allowing you to test them out before committing to a paid plan.</li>
+</ul>
+<hr />
+<h2 id="important-restrictions-for-us-based-researchers">⚠️ Important Restrictions for US-Based Researchers<a class="headerlink" href="#important-restrictions-for-us-based-researchers" title="Permanent link">&para;</a></h2>
+<h3 id="deepseek-ai-federal-and-state-restrictions"><strong>DeepSeek AI - Federal and State Restrictions</strong><a class="headerlink" href="#deepseek-ai-federal-and-state-restrictions" title="Permanent link">&para;</a></h3>
+<p><strong>PAID CLOUD SERVICE NOT ALLOWED:</strong></p>
+<p>DeepSeek's paid API and cloud services are <strong>prohibited</strong> for US-based researchers at many institutions due to:</p>
+<p><strong>Federal Restrictions:</strong></p>
+<ul>
+<li>
+<p><a href="https://www.congress.gov/bill/119th-congress/house-bill/1121" target="_blank"><strong>H.R. 1121</strong></a> - "No DeepSeek on Government Devices Act" (Introduced Feb 2025)</p>
+</li>
+<li>
+<p><a href="https://selectcommitteeontheccp.house.gov/media/reports/deepseek-unmasked-exposing-ccps-latest-tool-spying-stealing-and-subverting-us-export" target="_blank"><strong>House Select Committee Report</strong></a> - "DeepSeek Unmasked: Exposing the CCP's Latest Tool For Spying, Stealing, and Subverting U.S. Export Control Restrictions"</p>
+</li>
+<li>
+<p><strong>Federal Agency Bans:</strong> NASA, U.S. Navy, Department of Defense (DOD), Department of Commerce have banned DeepSeek</p>
+</li>
+<li>
+<p><strong>Owned by High-Flyer</strong> (Chinese company with CCP control)</p>
+</li>
+<li>
+<p><strong>Data stored in China</strong> and accessible to Chinese government</p>
+</li>
+<li>
+<p><strong>Content manipulation</strong> to align with CCP propaganda</p>
+</li>
+</ul>
+<p><strong>State-Level Bans:</strong></p>
+<ul>
+<li>
+<p><a href="https://gov.texas.gov/news/post/governor-abbott-announces-ban-on-chinese-ai-social-media-apps" target="_blank"><strong>Texas</strong></a> (Jan 31, 2025), <a href="https://www.governor.virginia.gov/newsroom/news-releases/2025/february/name-1040839-en.html" target="_blank"><strong>Virginia</strong></a> (Feb 11, 2025), <a href="https://www.governor.ny.gov/news/governor-hochul-issues-statewide-ban-deepseek-artificial-intelligence-government-devices-and" target="_blank"><strong>New York</strong></a> (Feb 10, 2025)</p>
+</li>
+<li>
+<p>Additional states: Iowa, South Dakota, Kansas, Tennessee, North Carolina, Nebraska, Arkansas, North Dakota, Oklahoma, Alabama, Georgia</p>
+</li>
+</ul>
+<p><strong>University Bans:</strong></p>
+<ul>
+<li>
+<p>All Virginia public universities (<a href="https://its.gmu.edu/bulletins/deepseek-ai-ban-on-university-devices-and-networks/" target="_blank">George Mason</a>, <a href="https://www.cavalierdaily.com/article/2025/02/in-compliance-with-youngkin-order-university-bans-use-of-deepseek-ai-on-networks" target="_blank">UVA</a>, <a href="https://news.vt.edu/notices/2025/02/it-deepseek-restriction-executive-order.html" target="_blank">Virginia Tech</a>, <a href="https://www.wm.edu/offices/it/announcements/deepseek-ai-no-longer-permitted-on-wm-wireless-network-devices.php" target="_blank">William &amp; Mary</a>, <a href="https://www.jmu.edu/news/computing/2025/02-12-deepseek-executive-order.shtml" target="_blank">JMU</a>)</p>
+</li>
+<li>
+<p>North Dakota University System</p>
+</li>
+</ul>
+<p><strong>SELF-HOSTED OPEN-SOURCE MAY BE PERMITTED:</strong></p>
+<p>Open-source DeepSeek models can be downloaded and run <strong>on-premises</strong>, but researchers MUST:</p>
+<ul>
+<li>
+<p>✅ Check with institutional IT and security teams first</p>
+</li>
+<li>
+<p>✅ Ensure compliance with federal grant requirements (NSF, DOD, DOE)</p>
+</li>
+<li>
+<p>✅ Never upload sensitive, proprietary, or controlled data</p>
+</li>
+<li>
+<p>✅ Document usage for research security compliance</p>
+</li>
+</ul>
+<hr />
+<h3 id="qwen-alibaba-data-sovereignty-concerns"><strong>Qwen (Alibaba) - Data Sovereignty Concerns</strong><a class="headerlink" href="#qwen-alibaba-data-sovereignty-concerns" title="Permanent link">&para;</a></h3>
+<p><strong>NOT SPECIFICALLY BANNED, BUT NOT RECOMMENDED:</strong></p>
+<p>Qwen is <strong>not subject to specific federal bans</strong> like DeepSeek, but has serious concerns for US researchers:</p>
+<p><strong>Key Issues:</strong></p>
+<ul>
+<li>
+<p><strong>Owned by Alibaba</strong> (Chinese company subject to CCP control)</p>
+</li>
+<li>
+<p><strong>Data stored in China</strong> under Chinese data sovereignty laws</p>
+</li>
+<li>
+<p><strong>No GDPR compliance</strong> or EU data protection representative</p>
+</li>
+<li>
+<p><strong>Potential surveillance</strong> under Chinese national security laws</p>
+</li>
+<li>
+<p><strong>Congressional scrutiny</strong> (Senators urged sanctions in 2023, not yet implemented)</p>
+</li>
+</ul>
+<p><strong>Regulatory Framework:</strong></p>
+<ul>
+<li>
+<p><a href="https://www.nsf.gov/notices/important/important-notice-no-149-updates-nsf-research-security/in149" target="_blank"><strong>NSF Research Security</strong></a> - Requires disclosure of foreign support and affiliations</p>
+</li>
+<li>
+<p><a href="https://home.treasury.gov/news/press-releases/jy2687" target="_blank"><strong>Treasury Outbound Investment Restrictions</strong></a> - Limits US investments in Chinese AI companies (affects funding, not use)</p>
+</li>
+<li>
+<p><strong>No Entity List designation</strong> (as of Oct 2025)</p>
+</li>
+</ul>
+<p><strong>SELF-HOSTED OPEN-SOURCE MAY BE PERMITTED:</strong></p>
+<p>Qwen's Apache 2.0 licensed models (40M+ downloads on HuggingFace) can be run <strong>on-premises</strong>, but researchers MUST:</p>
+<ul>
+<li>
+<p>✅ Check with institutional IT and security teams first</p>
+</li>
+<li>
+<p>✅ Verify compliance with federal grant terms</p>
+</li>
+<li>
+<p>✅ Avoid uploading to Chinese cloud services</p>
+</li>
+<li>
+<p>✅ Document AI tool usage in research security plans</p>
+</li>
+</ul>
+<hr />
+<h3 id="recommendations-for-researchers"><strong>Recommendations for Researchers</strong><a class="headerlink" href="#recommendations-for-researchers" title="Permanent link">&para;</a></h3>
+<p><strong>✅ SAFE FOR RESEARCH (US-based alternatives):</strong></p>
+<ul>
+<li>
+<p>OpenAI (ChatGPT, GPT-5 API) - US company</p>
+</li>
+<li>
+<p>Anthropic (Claude) - US company</p>
+</li>
+<li>
+<p>Google (Gemini) - US company</p>
+</li>
+<li>
+<p>Microsoft (Copilot) - US company</p>
+</li>
+<li>
+<p>Mistral AI - French company (EU-based)</p>
+</li>
+<li>
+<p>Cohere - Canadian company</p>
+</li>
+</ul>
+<p><strong>⚠️ USE WITH EXTREME CAUTION (Chinese companies):</strong></p>
+<ul>
+<li>
+<p>DeepSeek - <strong>BANNED at many institutions</strong></p>
+</li>
+<li>
+<p>Qwen - Not banned, but data sovereignty concerns</p>
+</li>
+<li>
+<p>Check institutional policies BEFORE use</p>
+</li>
+</ul>
+<p><strong>✅ SELF-HOSTED OPEN-SOURCE (May be acceptable):</strong></p>
+<ul>
+<li>
+<p>Meta Llama (US company, Apache 2.0)</p>
+</li>
+<li>
+<p>DeepSeek open-source (with institutional approval)</p>
+</li>
+<li>
+<p>Qwen open-source (with institutional approval)</p>
+</li>
+<li>
+<p>Mistral open-source (EU company, Apache 2.0)</p>
+</li>
+</ul>
+<p><strong>ALWAYS:</strong></p>
+<ol>
+<li>
+<p>Check your institution's AI usage policy</p>
+</li>
+<li>
+<p>Review federal grant terms (NSF, NIH, DOD, DOE)</p>
+</li>
+<li>
+<p>Consult with IT security and research compliance offices</p>
+</li>
+<li>
+<p>Never share sensitive, proprietary, or controlled data with foreign AI services</p>
+</li>
+<li>
+<p>Document all AI tool usage for research security requirements</p>
+</li>
+</ol>
+<p><strong>Best Options for Students &amp; Educators:</strong></p>
+<ul>
+<li>
+<p><strong>Free/Low-Cost Options:</strong></p>
+<ul>
+<li><strong>DeepSeek</strong> - Most affordable API at $0.57/$1.68 per 1M tokens (~200x cheaper than GPT-4 Turbo), open-source option available</li>
+<li><strong>Meta Llama</strong> - Completely free open-source models (Llama 4 Scout &amp; Maverick available for download)</li>
+<li><strong>GitHub Copilot</strong> - Free for students, teachers, and open source maintainers</li>
+<li><strong>Perplexity Education Pro</strong> - $4.99/month with student/faculty verification (1 month free trial)</li>
+<li><strong>Google AI Pro</strong> - Free for university students for 1 year ($19.99/month value)</li>
+<li><strong>HuggingFace</strong> - Free community access to models and datasets, $2/month free credits for Pro users</li>
+<li><strong>Ollama, LM Studio, Jan.ai</strong> - Run LLMs locally on your hardware for free</li>
+</ul>
+</li>
+<li>
+<p><strong>Best Value Paid Options:</strong></p>
+<ul>
+<li><strong>Mistral Le Chat Pro</strong> - $14.99/month (cheaper than competitors, strong performance)</li>
+<li><strong>OpenAI GPT-4o-mini API</strong> - $0.15/$0.60 per 1M tokens (60%+ cheaper than GPT-3.5 Turbo)</li>
+<li><strong>Gemini 2.5 Flash-Lite</strong> - $0.10/$0.40 per 1M tokens (most economical for high-volume simple tasks)</li>
+<li><strong>Claude Haiku 3.5 API</strong> - $0.80/$4 per 1M tokens (balanced cost and capability)</li>
+</ul>
+</li>
+<li>
+<p><strong>Educational Programs Available:</strong></p>
+<ul>
+<li><strong>Cohere Education Program</strong> - Contact for student/educator access</li>
+<li><strong>Google AI Pro</strong> - 1 year free for university students</li>
+<li><strong>Perplexity Education Pro</strong> - $4.99/month with verification</li>
+</ul>
+</li>
+</ul>
+<p><strong>Additional Chatbot and LLM Services:</strong></p>
+<ol>
+<li>
+<p><strong>Amazon Bedrock, Azure AI Foundry, Google Vertex:</strong> Provide access to various foundation models but each run on a respective cloud service provider's hardware. Ideal for companies and institutions already running their infrastructure on commercial cloud services. </p>
+</li>
+<li>
+<p><strong>You.com:</strong> Offers a pro plan with access to latest AI models, personalized AI with memory and advanced AI writing tools.</p>
+</li>
+<li>
+<p><strong>Poe by Quora:</strong>  A platform that gives you access to various chatbots (like GPT-4, Claude, etc.) through a single subscription.</p>
+</li>
+</ol>
+<div class="admonition info">
+<p class="admonition-title">Image and Video Generation Models</p>
+<h2 id="image-generation-models-2025"><strong>Image Generation Models (2025)</strong><a class="headerlink" href="#image-generation-models-2025" title="Permanent link">&para;</a></h2>
+<p><strong>Stable Diffusion 3.5</strong> (October 2024)</p>
+<p><a href="https://stability.ai/stable-diffusion-3-5" target="_blank">Stable Diffusion 3.5</a> from <a href="https://stability.ai/" target="_blank">Stability AI</a> features:
+- <strong>SD3.5 Large (8.1B)</strong>: High-quality 1MP generation with advanced prompt adherence
+- <strong>SD3.5 Medium (2.5B)</strong>: Balanced performance for consumer hardware (0.25-2MP)
+- <strong>SD3.5 Large Turbo</strong>: Optimized for speed with 4-step generation
+- <strong>Open Source</strong>: Free for non-commercial and commercial use under $1M revenue
+- <strong>Platforms</strong>: <a href="https://huggingface.co/stabilityai" target="_blank">HuggingFace</a>, <a href="https://github.com/Stability-AI/StableDiffusion" target="_blank">GitHub</a>, Replicate, Fireworks AI</p>
+<p><strong>FLUX Models</strong> (Black Forest Labs)</p>
+<p><a href="https://bfl.ai/" target="_blank">FLUX</a> by Black Forest Labs offers cutting-edge diffusion models:
+- <strong>FLUX.1 Kontext</strong> (May 2025): Combines text+image prompts, state-of-the-art in-context generation and editing
+- <strong>FLUX 1.1 Pro Ultra</strong>: Latest professional variant with enhanced quality
+- <strong>FLUX.1 Krea Dev</strong> (July 2025): Better performance, varied aesthetics, improved realism
+- <strong>FLUX.1 Schnell</strong>: Apache-licensed open-source for fast local generation (12B parameters)
+- <strong>FLUX.1 Tools</strong> (November 2024): Fill, Depth, Canny, Redux for advanced control
+- <strong>Architecture</strong>: 12B parameter rectified flow transformer
+- <strong>Platforms</strong>: API access, <a href="https://bfl.ai/" target="_blank">BFL Playground</a>, Azure AI Foundry</p>
+<p><strong>GPT-4o Image Generation</strong> (OpenAI)</p>
+<p><a href="https://openai.com/index/introducing-4o-image-generation/" target="_blank">GPT-4o Image</a> (March 2025):
+- <strong>Model</strong>: gpt-image-1 (replaces DALL-E 3)
+- <strong>Resolution</strong>: Up to 4096×4096 pixels (4K)
+- <strong>Features</strong>: Native integration in GPT-4o, reliable text rendering, multi-turn refinement, image transformation
+- <strong>Access</strong>: ChatGPT (Free/Plus/Pro), <a href="https://platform.openai.com/" target="_blank">OpenAI API</a>
+- <strong>Safety</strong>: C2PA metadata watermarking on all images</p>
+<p><strong>Midjourney V7</strong> (April 2025)</p>
+<p><a href="https://www.midjourney.com/" target="_blank">Midjourney</a> latest features:
+- <strong>V7</strong>: Current default (since June 2025) with stunning text precision, richer textures, improved bodies/hands
+- <strong>Draft Mode</strong>: 10x speed at half the cost
+- <strong>Personalization</strong>: First model with personalization enabled by default
+- <strong>V8</strong>: In development with "significant differences" and innovative features
+- <strong>Video</strong>: Coming soon (in final sprint stage)
+- <strong>Platform</strong>: Discord-based, <a href="https://www.midjourney.com/" target="_blank">Web Interface</a></p>
+<p><strong>Google Imagen 4</strong> (May 2025)</p>
+<p><a href="https://deepmind.google/models/imagen/" target="_blank">Imagen 4</a> and Imagen 4 Ultra:
+- <strong>Resolution</strong>: Up to 2K resolution
+- <strong>Speed</strong>: 10x faster mode available
+- <strong>Features</strong>: Enhanced photo-realism, improved text rendering, advanced typography, diverse art styles
+- <strong>Safety</strong>: SynthID watermarking, content filtering
+- <strong>Access</strong>: <a href="https://aistudio.google.com/" target="_blank">Gemini API</a>, Google AI Studio, Google Labs</p>
+<p><strong>Adobe Firefly Image Model 4</strong> (April 2025)</p>
+<p><a href="https://firefly.adobe.com/" target="_blank">Firefly 4</a> and Firefly 4 Ultra:
+- <strong>Resolution</strong>: Up to 2K with lifelike quality
+- <strong>Features</strong>: Exceptional precision, camera control, structure/style references
+- <strong>Commercial-Safe</strong>: Training data with indemnification for enterprise
+- <strong>Integration</strong>: Photoshop, Illustrator, InDesign, <a href="https://firefly.adobe.com/" target="_blank">API access</a>
+- <strong>Firefly Video Model</strong>: New modality (April 2025)</p>
+<p><strong>Breakthrough New Models (2024-2025)</strong></p>
+<ul>
+<li><a href="https://preview.reve.art/" target="_blank"><strong>Reve Image 1.0</strong></a> (March 2025): #1 on Artificial Analysis Arena, best-in-class prompt adherence and typography</li>
+<li><a href="https://www.recraft.ai/" target="_blank"><strong>Recraft V3</strong></a> (October 2024): #1 on HuggingFace leaderboard at launch, first with vector art generation and extended text</li>
+<li><a href="https://hidream.org/" target="_blank"><strong>HiDream-I1</strong></a> (April 2025): 17B parameters, open-source (MIT), sparse transformer architecture</li>
+<li><a href="https://ideogram.ai/" target="_blank"><strong>Ideogram 3.0</strong></a> (2025): Enhanced realism, style reference (3 images), superior text rendering</li>
+<li><a href="https://leonardo.ai/" target="_blank"><strong>Leonardo Lucid Origin</strong></a> (2025): Most versatile model, accurate text rendering, full HD renders</li>
+</ul>
+<h2 id="video-generation-models-2025"><strong>Video Generation Models (2025)</strong><a class="headerlink" href="#video-generation-models-2025" title="Permanent link">&para;</a></h2>
+<p><strong>OpenAI Sora 2</strong> (September 2025)</p>
+<p><a href="https://openai.com/sora" target="_blank">Sora 2</a> latest features:</p>
+<ul>
+<li>
+<p><strong>Native Audio</strong>: Synchronized dialogue, music, and sound effects</p>
+</li>
+<li>
+<p><strong>Resolution</strong>: Up to 1080p, duration up to 20 seconds</p>
+</li>
+<li>
+<p><strong>Physics</strong>: Superior simulation (basketball rebounds, water buoyancy, gymnastics)</p>
+</li>
+<li>
+<p><strong>Cameo Feature</strong>: Insert user likenesses with consent</p>
+</li>
+<li>
+<p><strong>Pricing</strong>: Plus plan (50 videos/month at 480p), Pro plan (10x more usage, higher resolutions)</p>
+</li>
+<li>
+<p><strong>Access</strong>: ChatGPT Plus/Pro, iOS app (US/Canada, invite-only)</p>
+</li>
+</ul>
+<p><strong>Google Veo 3</strong> (May 2025)</p>
+<p><a href="https://deepmind.google/models/veo/" target="_blank">Veo 3</a> represents Google's latest advancement:</p>
+<ul>
+<li>
+<p><strong>Resolution</strong>: Up to 4K, 8-second videos</p>
+</li>
+<li>
+<p><strong>Native Audio</strong>: Dialogue, sound effects, ambient noise</p>
+</li>
+<li>
+<p><strong>Features</strong>: Best-in-class physics, realism, prompt adherence, advanced character/camera controls</p>
+</li>
+<li>
+<p><strong>Access</strong>: <a href="https://deepmind.google/models/veo/" target="_blank">Flow (Google Labs)</a>, Gemini app (AI Pro subscribers), Google AI Studio, Gemini API, Vertex AI</p>
+</li>
+<li>
+<p><strong>Limits</strong>: 3 videos/day for paying subscribers</p>
+</li>
+<li>
+<p><strong>Rollout</strong>: 159+ countries (July 2025)</p>
+</li>
+</ul>
+<p><strong>Runway Gen-4</strong> (March 2025)</p>
+<p><a href="https://runwayml.com/" target="_blank">Runway Gen-4</a> features:</p>
+<ul>
+<li>
+<p><strong>World Consistency</strong>: Characters, locations, objects consistent across scenes</p>
+</li>
+<li>
+<p><strong>Visual References</strong>: Image + text prompt (no fine-tuning required)</p>
+</li>
+<li>
+<p><strong>Duration</strong>: 5 or 10 seconds</p>
+</li>
+<li>
+<p><strong>Gen-4 Turbo</strong>: Faster generation at lower cost</p>
+</li>
+<li>
+<p><strong>Access</strong>: <a href="https://app.runwayml.com/" target="_blank">app.runwayml.com</a></p>
+</li>
+</ul>
+<p><strong>Meta Movie Gen</strong> (2025 Release Planned)</p>
+<p><a href="https://ai.meta.com/research/movie-gen/" target="_blank">Movie Gen</a> research features:</p>
+<ul>
+<li>
+<p><strong>Models</strong>: 30B video, 13B audio</p>
+</li>
+<li>
+<p><strong>Resolution</strong>: 1080p HD, up to 16 seconds at 16 fps</p>
+</li>
+<li>
+<p><strong>Audio</strong>: Up to 45 seconds with synchronized sound</p>
+</li>
+<li>
+<p><strong>Features</strong>: Four capabilities (video generation, personalized video, precise editing, audio generation)</p>
+</li>
+<li>
+<p><strong>Status</strong>: Research phase, Instagram integration planned 2025</p>
+</li>
+<li>
+<p><strong>Partnership</strong>: Blumhouse Productions</p>
+</li>
+</ul>
+<p><strong>Leading Commercial Video Platforms</strong></p>
+<ul>
+<li><a href="https://pika.art/" target="_blank"><strong>Pika 2.2</strong></a> (February 2025): Pikaframes keyframe system, 10-second videos, 1080p, Pikatwists dramatic endings</li>
+<li><a href="https://klingai.com/" target="_blank"><strong>Kling AI 2.5 Turbo</strong></a> (September 2025): Enhanced prompt adherence, superior high-motion scenes, 1080p, 30% cost reduction</li>
+<li><a href="https://lumalabs.ai/dream-machine" target="_blank"><strong>Luma Ray3</strong></a> (September 2025): Draft mode, HDR/EXR support, deep reasoning, fast generation</li>
+<li><a href="https://www.heygen.com/" target="_blank"><strong>HeyGen</strong></a> (2025): Avatar IV with hyper-realistic avatars, 140+ languages, Veo 3 integration, 60%+ Fortune 100 adoption</li>
+<li><a href="https://www.synthesia.io/" target="_blank"><strong>Synthesia 3.0</strong></a> (2025): Express-2 avatars, AI dubbing (32 languages), video agents, $2.1B valuation</li>
+<li><a href="https://www.hedra.com/" target="_blank"><strong>Hedra Character-3</strong></a> (April 2025): Omnimodal model, 4K @ 60fps, 90-second videos, full-body animation with speech</li>
+</ul>
+<p><strong>Open-Source Video Models</strong></p>
+<ul>
+<li><a href="https://aivideo.hunyuan.tencent.com/" target="_blank"><strong>Hunyuan Video</strong></a> (Tencent): 13B+ parameters, largest open-source model, video-to-audio module, GitHub/HuggingFace</li>
+<li><a href="https://stability.ai/stable-video" target="_blank"><strong>Stable Video 4D 2.0</strong></a> (May 2025): Enhanced 4D generation, 48 frames (12×4 views), 576×576, GitHub available</li>
+<li><a href="https://www.genmo.ai/" target="_blank"><strong>Mochi 1</strong></a> (Genmo): 10B parameters, Apache 2.0 license, 30fps, 5.4 seconds (HD version pending)</li>
+</ul>
+<h2 id="advanced-capabilities"><strong>Advanced Capabilities</strong><a class="headerlink" href="#advanced-capabilities" title="Permanent link">&para;</a></h2>
+<p><strong>Image and Video Understanding</strong></p>
+<ul>
+<li><a href="https://segment-anything.com/" target="_blank">Segment Anything Model 2 (SAM 2)</a> (Meta): Real-time segmentation for images and videos</li>
+<li><a href="https://openai.com/research/clip" target="_blank">CLIP</a> (OpenAI): Vision-language understanding</li>
+<li><a href="https://llava-vl.github.io/" target="_blank">LLaVA</a>: Open-source visual instruction tuning</li>
+</ul>
+<p><strong>3D Generation</strong></p>
+<ul>
+<li><a href="https://dreamgaussian.github.io/" target="_blank">DreamGaussian</a>: Text/image to 3D in minutes</li>
+<li><a href="https://www.meshy.ai/" target="_blank">Meshy</a>: Text to 3D mesh generation</li>
+<li><a href="https://lumalabs.ai/genie" target="_blank">Luma Genie</a>: Text to 3D model generation</li>
+</ul>
+<p><strong>Emerging Trends</strong></p>
+<ul>
+<li><strong>Consistency Models</strong>: Faster generation with fewer steps</li>
+<li><strong>ControlNet Integration</strong>: Precise control over generation</li>
+<li><strong>Real-time Generation</strong>: Sub-second image creation</li>
+<li><strong>Multimodal Models</strong>: Unified image, video, and audio generation</li>
+<li><strong>Neural Radiance Fields (NeRFs)</strong>: 3D scene representation</li>
+<li><strong>Diffusion Transformers (DiT)</strong>: Next-generation architectures</li>
+</ul>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Glossary</p>
+<p><a href="https://developers.google.com/machine-learning/glossary" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053z"/></svg></span> Google's Machine Learning Glossary</a></p>
+<p><a href="https://www.nvidia.com/en-us/glossary" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.948 8.798v-1.43a7 7 0 0 1 .424-.018c3.922-.124 6.493 3.374 6.493 3.374s-2.774 3.851-5.75 3.851a3.7 3.7 0 0 1-1.158-.185v-4.346c1.528.185 1.837.857 2.747 2.385l2.04-1.714s-1.492-1.952-4-1.952a6 6 0 0 0-.796.035m0-4.735v2.138l.424-.027c5.45-.185 9.01 4.47 9.01 4.47s-4.08 4.964-8.33 4.964a6.5 6.5 0 0 1-1.095-.097v1.325c.3.035.61.062.91.062 3.957 0 6.82-2.023 9.593-4.408.459.371 2.34 1.263 2.73 1.652-2.633 2.208-8.772 3.984-12.253 3.984-.335 0-.653-.018-.971-.053v1.864H24V4.063zm0 10.326v1.131c-3.657-.654-4.673-4.46-4.673-4.46s1.758-1.944 4.673-2.262v1.237H8.94c-1.528-.186-2.73 1.245-2.73 1.245s.68 2.412 2.739 3.11M2.456 10.9s2.164-3.197 6.5-3.533V6.201C4.153 6.59 0 10.653 0 10.653s2.35 6.802 8.948 7.42v-1.237c-4.84-.6-6.492-5.936-6.492-5.936"/></svg></span> NVIDIA's Data Science Glossary</a></p>
+<p><strong>Agentic AI:</strong>
+Uses sophisticated reasoning and iterative planning to autonomously solve complex, multi-step problems. Agentic systems can break down tasks, use tools, and make decisions to achieve goals with minimal human intervention.</p>
+<p><strong>Anthropic:</strong>
+A research organization emphasizing AI safety and governance. Known for <strong>Claude</strong>, a large language model (LLM) with advanced reasoning and robust safety features.</p>
+<p><strong>API (Application Programming Interface):</strong>
+A set of protocols and tools that allow different software applications to communicate. In AI, APIs enable developers to integrate LLM capabilities into their applications programmatically.</p>
+<p><strong>Attention Mechanism:</strong>
+A neural network technique that allows models to focus on relevant parts of input data when processing information. The foundation of transformer architectures used in modern LLMs.</p>
+<p><strong>Chain-of-Thought (CoT):</strong>
+A prompting technique that encourages AI models to break down complex problems into intermediate reasoning steps, improving accuracy on tasks requiring logic and multi-step reasoning.</p>
+<p><strong>ChatGPT:</strong>
+OpenAI's general-purpose LLM, renowned for its conversational strengths, versatility, and ability to adapt to varied tasks through effective prompt engineering.</p>
+<p><strong>Claude:</strong>
+Anthropic's LLM, recognized for its interpretability, strong reasoning capabilities, and rigorous safety considerations.</p>
+<p><strong>Context Window:</strong>
+The maximum amount of text (measured in tokens) that an LLM can process at once, including both the input prompt and generated output. Modern models range from 8K to over 1M tokens.</p>
+<p><strong>Copilot (GitHub, Microsoft):</strong>
+An AI-driven developer assistant offering code suggestions, debugging support, and efficiency improvements, leveraging generative AI to boost productivity.</p>
+<p><strong>Diffusion Models:</strong>
+A class of generative models that create images by iteratively denoising random noise. Used in systems like Stable Diffusion, DALL-E, and Midjourney for text-to-image generation.</p>
+<p><strong>Embeddings:</strong>
+Numerical vector representations of data (e.g., text, images, audio) that capture semantic meaning and relationships. Useful for search, clustering, recommendation, and more.</p>
+<p><strong>Few-Shot Learning:</strong>
+The ability of an AI model to learn new tasks from just a few examples provided in the prompt, without requiring additional training or fine-tuning.</p>
+<p><strong>Fine-Tuning:</strong>
+The process of further training a pre-trained model on a specific dataset or task to specialize its capabilities for particular use cases or domains.</p>
+<p><strong>Foundation Models:</strong>
+Large-scale deep learning models (e.g., LLMs, vision models, multimodal models) trained on massive datasets. They serve as a base or "foundation" for a wide range of downstream tasks, enabling transfer learning and rapid adaptation.</p>
+<p><strong>Gemini:</strong>
+Google's family of multimodal foundation models, capable of understanding and generating text, images, and other data types, reflecting Google's advancements in AI research.</p>
+<p><strong>Generative AI (GenAI):</strong>
+AI systems capable of creating new content—text, images, code, audio, video—based on patterns learned from training data. Includes LLMs, image generators, and multimodal models.</p>
+<p><strong>GitHub:</strong>
+A leading platform for version control and software collaboration. Now integrated with AI tools like GitHub Copilot for enhanced code development workflows.</p>
+<p><strong>Hallucination:</strong>
+When an AI model generates false, nonsensical, or unfaithful information presented as fact. A key challenge in LLM reliability, especially for factual or specialized domains.</p>
+<p><strong>HuggingFace:</strong>
+A hub and community for open-source AI models, datasets, and applications. Widely used in the natural language processing (NLP) community for model sharing and development.</p>
+<p><strong>Inference:</strong>
+The process of using a trained AI model to make predictions or generate outputs. In LLMs, this refers to generating text responses from prompts.</p>
+<p><strong>Large Language Models (LLMs):</strong>
+A subset of foundation models trained on extensive text corpora, enabling them to generate human-like text, summarize information, reason about topics, and perform a variety of NLP tasks. Examples include <strong>GPT</strong>, <strong>Claude</strong>, and <strong>Gemini</strong>.</p>
+<p><strong>LoRA (Low-Rank Adaptation):</strong>
+An efficient fine-tuning technique that modifies only a small subset of model parameters, reducing computational costs while maintaining performance for specialized tasks.</p>
+<p><strong>MCP (Model Context Protocol):</strong>
+A standardized protocol for connecting AI assistants to external data sources and tools. Enables LLMs to access databases, APIs, and live information while maintaining security and privacy.</p>
+<p><strong>Mixture of Experts (MoE):</strong>
+A neural network architecture that uses multiple specialized sub-models (experts) and activates only relevant ones for each input, improving efficiency and scalability in large models.</p>
+<p><strong>Multimodal Models:</strong>
+AI systems that can process and generate multiple types of data (text, images, audio, video) in combination. Examples include GPT-4 with vision, Gemini, and Claude with image understanding.</p>
+<p><strong>Parameters:</strong>
+The trainable values within a neural network, updated during the training process to minimize loss and define the model's learned behavior. Model size is often described by parameter count (e.g., 7B, 70B parameters).</p>
+<p><strong>Prompt Engineering:</strong>
+The practice of crafting, refining, and optimizing instructions (prompts) given to AI models in order to guide their outputs toward desired results.</p>
+<p><strong>Quantization:</strong>
+A technique that reduces the precision of model weights (e.g., from 16-bit to 4-bit) to decrease memory usage and computational requirements, enabling deployment on resource-constrained devices.</p>
+<p><strong>RAG (Retrieval-Augmented Generation):</strong>
+A technique that enhances LLM responses by retrieving relevant information from external knowledge bases or documents before generating answers, reducing hallucinations and improving factual accuracy.</p>
+<p><strong>RLHF (Reinforcement Learning from Human Feedback):</strong>
+A training method that uses human preferences to fine-tune AI models, improving their alignment with human values and desired behaviors. Used extensively in ChatGPT and Claude development.</p>
+<p><strong>Stable Diffusion:</strong>
+A family of open-source latent-diffusion-based models used for generating high-quality images from text or other forms of input (e.g., sketches).</p>
+<p><strong>System Prompt:</strong>
+Initial instructions given to an AI model that define its role, behavior, constraints, and capabilities for a conversation or task. Often invisible to end users but shapes all responses.</p>
+<p><strong>Temperature:</strong>
+A parameter controlling randomness in AI-generated outputs. Lower temperatures (0.0-0.3) produce more deterministic responses; higher temperatures (0.7-1.0) increase creativity and variability.</p>
+<p><strong>Token:</strong>
+A fundamental unit of text—often a word, subword, or character—that LLMs process when understanding or generating language. Pricing and context limits are typically measured in tokens.</p>
+<p><strong>Transformer:</strong>
+The neural network architecture that powers modern LLMs, introduced in the paper "Attention is All You Need" (2017). Uses attention mechanisms to process sequences efficiently.</p>
+<p><strong>Vector Database:</strong>
+A specialized database optimized for storing and querying high-dimensional embedding vectors, enabling fast semantic search and similarity matching for RAG applications.</p>
+<p><strong>Weights:</strong>
+Numerical parameters within a neural network that determine the strength of connections between neurons or nodes.</p>
+<p><strong>Zero-shot Learning:</strong>
+The capability of an AI model to perform tasks it has never been explicitly trained on, often made possible by large-scale pretraining on diverse datasets.</p>
+</div>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 University of Arizona
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://orcid.org/0000-0002-6639-7181" target="_blank" rel="noopener" title="orcid.org" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M294.7 188.2h-45.9V342h47.5c67.6 0 83.1-51.3 83.1-76.9 0-41.6-26.5-76.9-84.7-76.9M256 8a248 248 0 1 0 0 496 248 248 0 1 0 0-496m-80.8 360.8h-29.8V161.3h29.8zM160.3 98.5a19.6 19.6 0 1 1 0 39.2 19.6 19.6 0 1 1 0-39.2M300 369h-81V161.3h80.6c76.7 0 110.4 54.8 110.4 103.9 0 53.3-41.7 103.9-110 103.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://scholar.google.com/citations?user=nanIeAYAAAAJ&hl=en" target="_blank" rel="noopener" title="scholar.google.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.242 13.769 0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269M12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/tyson-swetnam/" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/tswetnam" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M459.4 151.7c.3 4.5.3 9.1.3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53C87.4 130.8 165 172.4 252.1 176.9c-1.6-7.8-2.6-15.9-2.6-24C249.5 95.1 296.3 48 354.4 48c30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/tyson-swetnam" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://hub.docker.com/u/tswetnam" target="_blank" rel="noopener" title="hub.docker.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M349.9 236.3h-66.1v-59.4h66.1zm0-204.3h-66.1v60.7h66.1zm78.2 144.8H362v59.4h66.1zm-156.3-72.1h-66.1v60.1h66.1zm78.1 0h-66.1v60.1h66.1zm276.8 100c-14.4-9.7-47.6-13.2-73.1-8.4-3.3-24-16.7-44.9-41.1-63.7l-14-9.3-9.3 14c-18.4 27.8-23.4 73.6-3.7 103.8-8.7 4.7-25.8 11.1-48.4 10.7H2.4c-8.7 50.8 5.8 116.8 44 162.1 37.1 43.9 92.7 66.2 165.4 66.2 157.4 0 273.9-72.5 328.4-204.2 21.4.4 67.6.1 91.3-45.2 1.5-2.5 6.6-13.2 8.5-17.1zm-511.1-27.9h-66v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1zm78.1 0h-66.1v59.4h66.1zm-78.1-72.1h-66.1v60.1h66.1z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.youtube.com/channel/UC5xPt9KZHccC0ehMNEkINzQ" target="_blank" rel="noopener" title="www.youtube.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M549.7 124.1c-6.2-23.7-24.8-42.3-48.3-48.6C458.9 64 288.1 64 288.1 64S117.3 64 74.7 75.5c-23.5 6.3-42 24.9-48.3 48.6C15 167 15 256.4 15 256.4s0 89.4 11.4 132.3c6.3 23.6 24.8 41.5 48.3 47.8C117.3 448 288.1 448 288.1 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zM232.2 337.6V175.2l142.7 81.2z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "navigation.top", "search.highlight", "search.share", "search.suggest", "content.code.copy", "content.code.prettify", "content.tooltips"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../chatbot_widget.js"></script>
+      
+    
+  </body>
+</html>

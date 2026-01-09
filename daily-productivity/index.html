@@ -1,0 +1,3681 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentation for Prompt Engineering 101 Workshop">
+      
+      
+        <meta name="author" content="University of Arizona">
+      
+      
+        <link rel="canonical" href="https://tyson-swetnam.github.io/intro-gpt/daily-productivity/">
+      
+      
+        <link rel="prev" href="../prompts/">
+      
+      
+        <link rel="next" href="../code/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/ua.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>General Productivity - GPT 101</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,700,700i%7CRegular:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Montserrat";--md-code-font:"Regular"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../chatbot_widget.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-NYETZFD8DN"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-NYETZFD8DN",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-NYETZFD8DN",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#general-productivity" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="GPT 101" class="md-header__button md-logo" aria-label="GPT 101" data-md-component="logo">
+      
+  <img src="../assets/ua.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            GPT 101
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              General Productivity
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="home" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/tyson-swetnam/intro-gpt" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    intro-gpt
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href=".." class="md-tabs__link">
+          
+  
+  
+    
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../claude/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Setup
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../prompts/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Prompt Engineering
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../education/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Education
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../research/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Research
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../ethics/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Ethics
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../tutorials/publichealth/casestudy/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Tutorials
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="GPT 101" class="md-nav__button md-logo" aria-label="GPT 101" data-md-component="logo">
+      
+  <img src="../assets/ua.png" alt="logo">
+
+    </a>
+    GPT 101
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/tyson-swetnam/intro-gpt" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    intro-gpt
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href=".." class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Home
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../agenda/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Agenda
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ai_landscape/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Landscape
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Setup
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Setup
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../claude/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Claude
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gemini/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gemini
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chatgpt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OpenAI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../microsoft/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Copilot
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../copilot/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GitHub
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Prompt Engineering
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Prompt Engineering
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../prompts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Writing Prompts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    General Productivity
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    General Productivity
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#when-to-use-a-gpt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        When to use a GPT
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#meeting-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Meeting Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chat-use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chat Use Cases
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chat Use Cases">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-1-personal-planner" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example 1: Personal Planner
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-2-content-creation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example 2: Content Creation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-3-personal-assistant-tasks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example 3: Personal Assistant Tasks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-4-complex-web-search" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example 4: Complex Web Search
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-5-data-aggregation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example 5: Data Aggregation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-6-information-verification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example 6: Information Verification
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../code/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Code Interpreters
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vibe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vibe Coding
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../choose/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Choosing a Platform
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Education
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Education
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../education/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../teaching/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Teaching with AI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutoring/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Tutoring
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../admissions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Admissions & Recruiting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Research
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Research
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../research/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../agentic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Agentic AI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../jupyter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jupyter AI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mcp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MCP
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooklm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NotebookLM
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ollama/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ollama
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rag/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RAG
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../execution/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Code Execution
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../openai/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OpenAI API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../huggingface/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    HuggingFace
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gradio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gradio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../posit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Posit (RStudio)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../text_mining/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Text Mining
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ethics
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Ethics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ethics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bias
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../legal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Legal
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../transparency/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Transparency
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tutorials
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tutorials
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorials/publichealth/casestudy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Public Health
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorials/publichealth/gis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Map making
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#when-to-use-a-gpt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        When to use a GPT
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#meeting-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Meeting Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chat-use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chat Use Cases
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chat Use Cases">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-1-personal-planner" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example 1: Personal Planner
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-2-content-creation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example 2: Content Creation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-3-personal-assistant-tasks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example 3: Personal Assistant Tasks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-4-complex-web-search" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example 4: Complex Web Search
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-5-data-aggregation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example 5: Data Aggregation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-6-information-verification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example 6: Information Verification
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="general-productivity">General Productivity<a class="headerlink" href="#general-productivity" title="Permanent link">&para;</a></h1>
+<p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+<p><img alt="banner" src="../assets/dailyprod-banner.png" width="1000" /></p>
+<h2 id="when-to-use-a-gpt">When to use a GPT<a class="headerlink" href="#when-to-use-a-gpt" title="Permanent link">&para;</a></h2>
+<p>Prompt engineering can significantly enhance your productivity. In particular when Enterprise GPTs are integrated into your Microsoft Office Suite or Google Drive, and have secure access to your documents and data, GPTs can be used to:</p>
+<ul>
+<li><strong>Draft Emails and manage inboxes:</strong> Automate the creation of routine emails, summarize long email threads, and even prioritize your inbox based on sender and content.</li>
+<li><strong>Meeting Summarization:</strong> Quickly get the gist of meeting transcripts, identify action items, and track decisions made.</li>
+<li><strong>Task Prioritization and Planning:</strong> Organize tasks based on urgency and importance, create daily or weekly schedules, and set reminders.</li>
+<li><strong>Content Creation and Brainstorming:</strong> Generate ideas for articles, blog posts, social media content, and marketing campaigns.</li>
+<li><strong>Language Translation:</strong> Translate documents or conversations in real-time, facilitating communication with international colleagues or clients.</li>
+<li><strong>Learning and Skill Development:</strong> Get quick explanations of complex topics, find learning resources, and even practice new skills through simulated scenarios.</li>
+</ul>
+<p>In our <a href="../code/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.5 5.5a2 2 0 0 0 2-2 2 2 0 0 0-2-2 2 2 0 0 0-2 2 2 2 0 0 0 2 2m-3.6 13.9 1-4.4 2.1 2v6h2v-7.5l-2.1-2 .6-3A7.3 7.3 0 0 0 22 13v-2c-1.76.03-3.4-.89-4.3-2.4l-1-1.6c-.36-.6-1-1-1.7-1-.3 0-.5.1-.8.1L9 8.3V13h2V9.6l1.8-.7-1.6 8.1-4.9-1-.4 2zM4 9a1 1 0 0 1-1-1 1 1 0 0 1 1-1h3v2zm1-4a1 1 0 0 1-1-1 1 1 0 0 1 1-1h5v2zm-2 8a1 1 0 0 1-1-1 1 1 0 0 1 1-1h4v2z"/></svg></span> Code Interpreter</a> lesson we discuss how GPTs can be used for:</p>
+<ul>
+<li><strong>Code Generation and Debugging:</strong> Write basic code snippets, find and fix bugs in existing code, and understand complex code segments.</li>
+<li><strong>Data Analysis and Interpretation:</strong> Summarize datasets, identify trends, and generate reports from raw data.</li>
+</ul>
+<p>Below are your updated tables. <strong>Only</strong> the rows below each table have changed; the headers and previously listed rows are <strong>untouched</strong>.</p>
+<hr />
+<h2 id="meeting-summary">Meeting Summary<a class="headerlink" href="#meeting-summary" title="Permanent link">&para;</a></h2>
+<p><a href="https://www.zoom.com/en/ai-assistant/" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.033 14.649H.743a.74.74 0 0 1-.686-.458.74.74 0 0 1 .16-.808L3.19 10.41H1.06A1.06 1.06 0 0 1 0 9.35h3.957c.301 0 .57.18.686.458a.74.74 0 0 1-.161.808L1.51 13.59h2.464c.585 0 1.06.475 1.06 1.06zM24 11.338a2.068 2.068 0 0 0-3.603-1.38 2.06 2.06 0 0 0-1.536-.686c-1.14 0-2.066.926-2.066 2.066v3.311a1.06 1.06 0 0 0 1.06-1.06v-2.251a1.004 1.004 0 0 1 2.013 0v2.251c0 .586.474 1.06 1.06 1.06v-3.311a1.004 1.004 0 0 1 2.012 0v2.251c0 .586.475 1.06 1.06 1.06zM16.265 12a2.728 2.728 0 1 1-5.457 0 2.728 2.728 0 0 1 5.457 0m-1.06 0a1.669 1.669 0 1 0-3.338 0 1.669 1.669 0 0 0 3.338 0m-4.82 0a2.728 2.728 0 1 1-5.458 0 2.728 2.728 0 0 1 5.457 0zm-1.06 0a1.669 1.669 0 1 0-3.338 0 1.669 1.669 0 0 0 3.338 0"/></svg></span> AI Companion</a>, along with other AI-powered meeting summary tools, can significantly boost productivity by automating note-taking and extracting key information from meetings. To effectively use these tools, it's important to understand best practices and institutional policies.</p>
+<p><strong>Getting Started and Optimizing Use</strong></p>
+<p>Begin by ensuring that the AI Companion feature is enabled in your Zoom settings. You can customize settings, such as choosing between brief and detailed summaries or specifying keywords for emphasis. </p>
+<p>Before meetings, set clear agendas to provide context for the AI. </p>
+<p>During the meeting, speak clearly, emphasize important terms, and encourage active participation to enrich the AI's analysis. </p>
+<p>While in a meeting you can ask the AI Companion for a summary or specific details, for example, "Has a decision been made about X?". </p>
+<p>After a meeting ends, Zoom will send an email summary to the host, which can be edited and shared with participants. </p>
+<p>Zoom can also highlight key parts of the meeting recording, or break down the recording into smart chapters.</p>
+<div class="admonition danger">
+<p class="admonition-title"><strong>Institutional Policies and Data Security</strong></p>
+<p>It's crucial to adhere to institutional policies regarding the use of AI tools in official communications. </p>
+<p><strong>Only use approved plug-ins such as Zoom AI Companion.</strong> </p>
+<p>Third-party software may not comply with the university's data security and privacy requirements. </p>
+<p>Using unapproved third-party AI tools can pose significant risks. </p>
+<p>Unofficial tools may <strong>Compromise Data Security</strong> -- they may store or process meeting data on external servers without adequate security measures, potentially exposing sensitive information to breaches. </p>
+<p><strong>Violate Data Privacy</strong> -- they might not adhere to data privacy regulations or institutional policies regarding the handling of personal and confidential data, such as student FERPA.</p>
+<p><strong>Lack of Accountability:</strong> The university may have limited recourse or control over third-party vendors in case of data breaches or misuse.</p>
+<p><strong>Integration Issues:</strong> 3<sup>rd</sup> party plug-ins may not integrate seamlessly with existing university systems, leading to inefficiencies and compatibility problems.</p>
+<p>Therefore, to maintain data security, privacy, and compliance with institutional policies, it is essential to use only officially sanctioned AI tools and plug-ins provided or approved by the university for official communication. Always consult your institution's IT department or relevant policies for guidance on approved tools and their proper usage.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">:simple-openai: ChatGPT integrations</p>
+<p>Plus and Pro versions of ChatGPT have integrations with <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.21 10.29q.79.05 1.49.39.69.32 1.2.89.51.55.81 1.26.29.71.29 1.51 0 .84-.32 1.58t-.88 1.29q-.55.55-1.3.87-.72.33-1.56.33H7q-1.03 0-1.94-.41-.91-.39-1.59-1.06-.68-.68-1.07-1.59-.4-.91-.4-1.94 0-.82.26-1.58.24-.75.74-1.38.44-.63 1.08-1.1t1.42-.72q.37-.13.71-.13.35-.07.72-.09h.01q.43-.66 1.01-1.18.55-.52 1.25-.89.67-.34 1.42-.56.75-.19 1.54-.19 1.06 0 2.04.35t1.8.97q.8.62 1.37 1.48.58.87.84 1.9m-6.05-3.45q-1.11 0-2.1.46-1 .45-1.7 1.3.37.1.71.25.33.15.66.35l3.98 2.38 2.29-.96q.21-.09.44-.17.23-.07.48-.12-.24-.78-.71-1.42t-1.1-1.1q-.61-.46-1.38-.71-.73-.26-1.57-.26M4 15.66l8.27-3.48-3.19-1.92q-.49-.29-1.02-.45-.56-.15-1.11-.15-.76 0-1.45.3-.66.3-1.16.81-.5.52-.8 1.2-.29.68-.29 1.44 0 .59.2 1.18.19.6.55 1.07m13.94 1.5q.47 0 .9-.16.43-.14.8-.42L13.61 13l-8.58 3.59q.44.27.94.41.5.16 1.03.16m13.45-1.55q.3-.61.3-1.27 0-.64-.25-1.17-.24-.52-.65-.89-.42-.37-.97-.57-.56-.21-1.18-.21-.35 0-.7.1-.34.08-.67.21-.33.12-.66.27-.32.15-.63.29Z"/></svg></span> Microsoft OneDrive and <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.71 3.5 1.15 15l3.43 6 6.55-11.5M9.73 15 6.3 21h13.12l3.43-6m-.57-1L15.42 2H8.57l6.86 12z"/></svg></span> Google Drive which allow you to add documents to Prompts using <code>4o</code> or <code>o1</code> models. </p>
+<div class="admonition danger">
+<p class="admonition-title"><strong>Make certain these integrations meet University security requirements</strong></p>
+<p>Never submit student information, private conversations (Zoom AI Summaries), or other sensitive information through ChatGPT unless using a University of Arizona Enterprise license.</p>
+</div>
+</div>
+<div class="admonition example">
+<p class="admonition-title"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2 3h9v9H2zm9 19H2v-9h9zM21 3v9h-9V3zm0 19h-9v-9h9z"/></svg></span> Microsoft Copilot integration in Microsoft Office 365</p>
+<p>University of Arizona officially uses Microsoft Office Online for office productivity. This includes integration with Microsoft Copilot into Office 365. </p>
+<p>Microsoft is currently rolling out new features for Copilot through its new <a href="https://m365.cloud.microsoft/" target="_blank">https://m365.cloud.microsoft/</a> domain.</p>
+<p>Access to these new features may be limited by your department or UITS. If you want access to these features, contact your department's system administrator. </p>
+</div>
+<div class="admonition example">
+<p class="admonition-title"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053z"/></svg></span> Google Gemini integration in Google Workspaces</p>
+<p>University of Arizona continues to have access to <a href="https://workspace.google.com/discover">Google Workspace</a>, but may be limited by your department or UITS.</p>
+<p><a href="https://edu.google.com/intl/ALL_us/">Google for Education</a> also has integration with Gemini, which needs to be authorized by a system administrator. </p>
+</div>
+<h2 id="chat-use-cases">Chat Use Cases<a class="headerlink" href="#chat-use-cases" title="Permanent link">&para;</a></h2>
+<h3 id="example-1-personal-planner">Example 1: Personal Planner<a class="headerlink" href="#example-1-personal-planner" title="Permanent link">&para;</a></h3>
+<p>Suppose you're using a GPT as a personal planner. </p>
+<p><em>Note: ChatGPT and Copilot lack access to my University Outlook or Google Calendars, but Gemini has access to my personal calender.</em></p>
+<p>This prompt involves three tasks: <strong>retrieving data</strong>, <strong>creating an itinerary</strong>, and <strong>arranging tasks based on priority</strong>.</p>
+<details class="example">
+<summary>Planning your day</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked="checked" id="example-1-personal-planner-prompt" name="__tabbed_1" type="radio" /><input id="example-1-personal-planner-copilot-response" name="__tabbed_1" type="radio" /><input id="example-1-personal-planner-chatgpt-o1-response" name="__tabbed_1" type="radio" /><input id="example-1-personal-planner-gemini-advanced-response" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="example-1-personal-planner-prompt">Prompt</label><label for="example-1-personal-planner-copilot-response">CoPilot Response</label><label for="example-1-personal-planner-chatgpt-o1-response">ChatGPT o1 Response</label><label for="example-1-personal-planner-gemini-advanced-response">Gemini Advanced Response</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>I need your help planning my day tomorrow.
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>First, please list all my scheduled meetings and deadlines from my calendar.
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>Then, taking into account 2 hours of break time, could you suggest a time-managed itinerary for me?
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>Lastly, based on the priority of the tasks, can you create a task list in the order I should tackle them?
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<p>I'd be happy to help you plan your day! However, I don't have direct access to your calendar. 
+If you could provide me with the details of your scheduled meetings and deadlines, 
+I can assist you in creating a well-organized itinerary and task list.</p>
+<p>Could you share your schedule for tomorrow?</p>
+</div>
+<div class="tabbed-block">
+<p>I’m afraid I don’t have direct access to your personal calendar. 
+If you could provide the details of your scheduled meetings and deadlines (for example, what time they start/end, what they’re for, etc.), 
+I can certainly help you organize a time-managed itinerary—ensuring 2 hours of break time—and then create a prioritized task list.</p>
+<p>Please share whatever information you’re comfortable with, and I’ll get started right away.</p>
+</div>
+<div class="tabbed-block">
+<p>You have 4 events next week. I cannot create a time-managed itinerary for you, but you can do it yourself by taking into account 2 hours of break time.</p>
+<p>Here are your events:</p>
+<p>Monday, January 6<sup>th</sup></p>
+<p>"Ecology discussion" from 11:00 AM to 12:30 PM</p>
+<p>"CiCompass: Cloud Infrastructure WG Bi-weekly meetings" from 1:00 PM to 2:00 PM</p>
+<p>Tuesday, January 7<sup>th</sup></p>
+<p>"ESIIL CI Tribal" from 12:30 PM to 1:30 PM</p>
+<p>Wednesday, January 8<sup>th</sup></p>
+<p>"ESIIL Exec Meeting biweekly" from 9:30 AM to 10:30 AM</p>
+<p>Would you like me to help you with anything else?</p>
+<p>Sources and related content</p>
+</div>
+</div>
+</div>
+</details>
+<p>Assuming you have integration with your calendar, you might use the GPT to manage your schedule as follows:</p>
+<details class="example">
+<summary>Managing Calendar</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:4"><input checked="checked" id="example-1-personal-planner-prompt_1" name="__tabbed_2" type="radio" /><input id="example-1-personal-planner-copilot-response_1" name="__tabbed_2" type="radio" /><input id="example-1-personal-planner-chatgpt-o1-response_1" name="__tabbed_2" type="radio" /><input id="example-1-personal-planner-gemini-advanced-response_1" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="example-1-personal-planner-prompt_1">Prompt</label><label for="example-1-personal-planner-copilot-response_1">Copilot Response</label><label for="example-1-personal-planner-chatgpt-o1-response_1">ChatGPT o1 Response</label><label for="example-1-personal-planner-gemini-advanced-response_1">Gemini Advanced Response</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>can you schedule a team meeting for next Tuesday at 3 PM in my calendar? 
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>Also, set a reminder for me to prepare the meeting agenda by Monday afternoon.
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<p>Does not have access to my calendar -- yet.</p>
+</div>
+<div class="tabbed-block">
+<p>Does not have access to my calendar -- yet.</p>
+</div>
+<div class="tabbed-block">
+<p>OK, I'm putting this on your calendar for next Tuesday at 3:00 PM and creating a reminder for you to prepare the meeting agenda by Monday afternoon.</p>
+</div>
+</div>
+</div>
+</details>
+<h3 id="example-2-content-creation">Example 2: Content Creation<a class="headerlink" href="#example-2-content-creation" title="Permanent link">&para;</a></h3>
+<p><strong>Blog Post Creation</strong></p>
+<p>This prompt includes three tasks: <strong>generating topics</strong>, <strong>creating outlines</strong>, and <strong>writing introduction paragraphs</strong>.</p>
+<p><em>Note, these are very long responses:</em></p>
+<details class="example">
+<summary>Blog post creation</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:4"><input checked="checked" id="example-2-content-creation-prompt" name="__tabbed_3" type="radio" /><input id="example-2-content-creation-copilot-response" name="__tabbed_3" type="radio" /><input id="example-2-content-creation-chatgpt-o1-response" name="__tabbed_3" type="radio" /><input id="example-2-content-creation-gemini-advanced-w-deep-research-response" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="example-2-content-creation-prompt">Prompt</label><label for="example-2-content-creation-copilot-response">CoPilot Response</label><label for="example-2-content-creation-chatgpt-o1-response">ChatGPT o1 Response</label><label for="example-2-content-creation-gemini-advanced-w-deep-research-response">Gemini Advanced w/ Deep Research Response</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>I&#39;d like to write a blog post about sustainable living.
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>First, could you generate a list of five key topics that I should cover?
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>Once we have the topics, can you then provide a brief outline for each of them?
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>Finally, for each of the outlines, could you come up with an engaging introduction paragraph?
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<p>That sounds like a fantastic idea! Here are five key topics you could cover in your blog post about sustainable living:</p>
+<ol>
+<li><strong>Reducing Waste</strong></li>
+<li><strong>Energy Efficiency</strong></li>
+<li><strong>Sustainable Transportation</strong></li>
+<li><strong>Eco-Friendly Diet</strong></li>
+<li><strong>Green Home Practices</strong></li>
+</ol>
+<p><strong>Brief Outlines</strong></p>
+<p><strong>1. Reducing Waste</strong>
+- <strong>Introduction</strong>: Importance of waste reduction
+- <strong>Body</strong>:
+- Benefits of reducing waste
+- Practical tips for reducing waste at home
+- Recycling and composting
+- Reducing single-use plastics
+- <strong>Conclusion</strong>: Encouragement to adopt waste reduction habits</p>
+<p><strong>2. Energy Efficiency</strong>
+- <strong>Introduction</strong>: The role of energy efficiency in sustainability
+- <strong>Body</strong>:
+- Benefits of energy efficiency
+- Tips for improving energy efficiency at home
+- Energy-efficient appliances and technologies
+- Renewable energy sources
+- <strong>Conclusion</strong>: Call to action for adopting energy-efficient practices</p>
+<p><strong>3. Sustainable Transportation</strong>
+- <strong>Introduction</strong>: Impact of transportation on the environment
+- <strong>Body</strong>:
+- Benefits of sustainable transportation
+- Different modes of sustainable transportation (e.g., biking, public transit, electric vehicles)
+- Tips for reducing your transportation footprint
+- Policy and infrastructure changes needed
+- <strong>Conclusion</strong>: Encouragement to choose sustainable transportation options</p>
+<p><strong>4. Eco-Friendly Diet</strong>
+- <strong>Introduction</strong>: Connection between diet and sustainability
+- <strong>Body</strong>:
+- Benefits of an eco-friendly diet
+- Tips for adopting a plant-based diet
+- Reducing food waste
+- Supporting local and organic food producers
+- <strong>Conclusion</strong>: Motivation to make sustainable food choices</p>
+<p><strong>5. Green Home Practices</strong>
+- <strong>Introduction</strong>: Importance of sustainable living spaces
+- <strong>Body</strong>:
+- Benefits of green home practices
+- Tips for creating a green home (e.g., water conservation, sustainable materials)
+- Indoor plants and air quality
+- DIY eco-friendly home projects
+- <strong>Conclusion</strong>: Encouragement to implement green practices at home</p>
+<p><strong>Engaging Introduction Paragraphs</strong></p>
+<p><strong>1. Reducing Waste</strong></p>
+<p>In a world where waste is piling up at an alarming rate, taking steps to reduce our waste footprint has never been more crucial. By making small changes in our daily habits, we can significantly impact the environment and pave the way for a cleaner, greener future. Let's explore how we can all contribute to reducing waste and making a difference.</p>
+<p><strong>2. Energy Efficiency</strong></p>
+<p>Energy efficiency is more than just a buzzword; it's a vital component of sustainable living. By optimizing our energy use, we can reduce our carbon footprint, save money, and contribute to a healthier planet. Join me as we delve into practical ways to enhance energy efficiency in our homes and lives.</p>
+<p><strong>3. Sustainable Transportation</strong></p>
+<p>Transportation is a major contributor to greenhouse gas emissions, but it doesn't have to be. Embracing sustainable transportation options can lead to a cleaner environment and a healthier lifestyle. Let's take a journey through the various ways we can make our commutes and travels more eco-friendly.</p>
+<p><strong>4. Eco-Friendly Diet</strong></p>
+<p>What we eat has a profound impact on the planet. Adopting an eco-friendly diet not only benefits our health but also supports the environment. From plant-based meals to reducing food waste, discover how our dietary choices can lead to a more sustainable world.</p>
+<p><strong>5. Green Home Practices</strong></p>
+<p>Our homes are our sanctuaries, and making them sustainable can have a lasting positive impact on the environment. From water conservation to using sustainable materials, there are countless ways to create a green home. Let's explore practical tips and ideas to transform our living spaces into eco-friendly havens.</p>
+<p>I hope these topics, outlines, and introductions help you get started on your blog post! If you need further assistance or more details on any of these points, feel free to ask.</p>
+</div>
+<div class="tabbed-block">
+<p>Sure! Here’s a structured way we can approach it:</p>
+<hr />
+<p><strong>1. Energy Efficiency and Renewable Energy</strong></p>
+<p><strong>Brief Outline</strong></p>
+<ol>
+<li><strong>Understanding Your Energy Footprint</strong>  </li>
+<li>Why it matters and how to measure it  </li>
+<li>
+<p>Tools for monitoring home energy usage</p>
+</li>
+<li>
+<p><strong>Practical Home Efficiency Tips</strong>  </p>
+</li>
+<li>Insulation and sealing windows/doors  </li>
+<li>
+<p>Energy-efficient appliances and LED lighting</p>
+</li>
+<li>
+<p><strong>Transitioning to Renewable Energy</strong>  </p>
+</li>
+<li>Solar panel installations and community solar options  </li>
+<li>
+<p>Wind energy and other emerging technologies</p>
+</li>
+<li>
+<p><strong>Behavioral Changes for Lower Energy Consumption</strong>  </p>
+</li>
+<li>Turning off and unplugging electronics  </li>
+<li>
+<p>Smart use of heating and cooling systems</p>
+</li>
+<li>
+<p><strong>Long-Term Benefits</strong>  </p>
+</li>
+<li>Financial savings and return on investment  </li>
+<li>Positive environmental impact</li>
+</ol>
+<p><strong>Introduction Paragraph</strong></p>
+<p>Ever wonder how much power your home truly consumes—and how you could use less without sacrificing comfort? Energy efficiency and renewable energy sources lie at the core of sustainable living. By understanding your energy footprint and making thoughtful improvements—like sealing drafts, installing solar panels, or simply turning off unnecessary electronics—you can lower both your monthly bills and your impact on the planet. This shift toward clean energy isn’t just beneficial for the environment; it can significantly enhance your quality of life in the long run.</p>
+<hr />
+<p><strong>2. Sustainable Transportation</strong></p>
+<p><strong>Brief Outline</strong></p>
+<ol>
+<li><strong>The Impact of Transportation on Carbon Emissions</strong>  </li>
+<li>Global transport emissions data  </li>
+<li>
+<p>How personal choices contribute to the bigger picture</p>
+</li>
+<li>
+<p><strong>Alternatives to Driving Alone</strong>  </p>
+</li>
+<li>Public transportation, carpooling, and ride-sharing  </li>
+<li>
+<p>Tips for planning routes and schedules efficiently</p>
+</li>
+<li>
+<p><strong>Embracing Eco-Friendly Modes of Travel</strong>  </p>
+</li>
+<li>Biking, walking, and using e-scooters or e-bikes  </li>
+<li>
+<p>Benefits for physical health and mental well-being</p>
+</li>
+<li>
+<p><strong>Electric and Hybrid Vehicles</strong>  </p>
+</li>
+<li>Comparing electric, hybrid, and conventional cars  </li>
+<li>
+<p>Factors to consider (range, charging stations, cost)</p>
+</li>
+<li>
+<p><strong>Influencing Policy and Community Action</strong>  </p>
+</li>
+<li>The role of local governments in promoting green transportation  </li>
+<li>Community advocacy and infrastructure improvements</li>
+</ol>
+<p><strong>Introduction Paragraph</strong></p>
+<p>Getting from A to B is a necessary part of daily life, but how we choose to do it can have a big impact on our planet. Whether it’s taking the bus instead of driving alone, riding a bike to work, or investing in an electric car, there are plenty of ways to keep our carbon footprints in check. In this section, we’ll explore how sustainable transportation choices not only help the environment but also save money and contribute to healthier, happier communities.</p>
+<hr />
+<p><strong>3. Waste Reduction and Recycling</strong></p>
+<p><strong>Brief Outline</strong></p>
+<ol>
+<li><strong>The Global Waste Problem</strong>  </li>
+<li>Current statistics on waste generation  </li>
+<li>
+<p>Consequences of landfills, incineration, and pollution</p>
+</li>
+<li>
+<p><strong>Strategies for Reducing Waste at Home</strong>  </p>
+</li>
+<li>Embracing reusable items and buying in bulk  </li>
+<li>
+<p>DIY or zero-waste swaps (e.g., bamboo toothbrushes, refillable containers)</p>
+</li>
+<li>
+<p><strong>Understanding Recycling and Composting</strong>  </p>
+</li>
+<li>Sorting household recyclables correctly  </li>
+<li>
+<p>Composting organic waste to close the nutrient loop</p>
+</li>
+<li>
+<p><strong>Upcycling and Repurposing</strong>  </p>
+</li>
+<li>Creative ways to extend the life of everyday products  </li>
+<li>
+<p>Inspirations for DIY crafts and home projects</p>
+</li>
+<li>
+<p><strong>Community Engagement and Policy</strong>  </p>
+</li>
+<li>Supporting local recycling programs  </li>
+<li>Advocating for better waste management systems</li>
+</ol>
+<p><strong>Introduction Paragraph</strong></p>
+<p>Do you ever stop to think about where your trash goes after it leaves the curb? Our world is grappling with staggering amounts of waste, and it’s more important than ever to consider how we can lighten that load. By making small but impactful changes—like switching to reusable products, sorting recyclables properly, and composting food scraps—we can all play a part in cutting down on needless waste. It’s time to transform our throwaway culture into one that values resources, creativity, and the planet’s well-being.</p>
+<hr />
+<p><strong>4. Ethical and Sustainable Consumption</strong></p>
+<p><strong>Brief Outline</strong></p>
+<ol>
+<li><strong>The True Cost of Consumer Goods</strong>  </li>
+<li>Environmental and social impacts of production  </li>
+<li>
+<p>Importance of fair labor practices and supply chain transparency</p>
+</li>
+<li>
+<p><strong>Buying Less, Choosing Well</strong>  </p>
+</li>
+<li>Minimalism and conscious consumerism  </li>
+<li>
+<p>Quality over quantity: investing in durable items</p>
+</li>
+<li>
+<p><strong>Supporting Eco-Friendly Brands</strong>  </p>
+</li>
+<li>Certifications (e.g., Fair Trade, Rainforest Alliance)  </li>
+<li>
+<p>Researching brand values and corporate responsibility</p>
+</li>
+<li>
+<p><strong>Secondhand and Thrift Shopping</strong>  </p>
+</li>
+<li>Extending product lifespans by purchasing used items  </li>
+<li>
+<p>Tips for finding high-quality goods at thrift stores</p>
+</li>
+<li>
+<p><strong>The Role of Community in Ethical Consumption</strong>  </p>
+</li>
+<li>Sharing, borrowing, and community swap events  </li>
+<li>Local artisans and farmers’ markets</li>
+</ol>
+<p><strong>Introduction Paragraph</strong></p>
+<p>When we swipe our credit cards or add items to our online carts, it’s easy to forget the journey each product took to reach us. From raw materials to human labor, every purchase carries hidden environmental and social costs. By choosing to consume less and shop more ethically—whether it’s supporting fair trade coffee growers or opting for secondhand clothes—we can make a difference that extends far beyond our personal wardrobes or pantries. Let’s explore why mindful consumption is key to a more sustainable future.</p>
+<hr />
+<p><strong>5. Sustainable Food Choices</strong></p>
+<p><strong>Brief Outline</strong></p>
+<ol>
+<li><strong>Understanding Food Systems</strong>  </li>
+<li>The environmental impact of industrial agriculture  </li>
+<li>
+<p>Water use, greenhouse gas emissions, and biodiversity loss</p>
+</li>
+<li>
+<p><strong>Eating Locally and Seasonally</strong>  </p>
+</li>
+<li>Benefits of buying from local farmers  </li>
+<li>
+<p>How to plan meals around seasonal produce</p>
+</li>
+<li>
+<p><strong>Plant-Based Diets and Reduced Meat Consumption</strong>  </p>
+</li>
+<li>Health and environmental benefits of eating more plants  </li>
+<li>
+<p>Tips for transitioning gradually and finding balance</p>
+</li>
+<li>
+<p><strong>Food Waste Reduction</strong>  </p>
+</li>
+<li>Proper storage and meal planning  </li>
+<li>
+<p>Creative recipes using leftovers</p>
+</li>
+<li>
+<p><strong>Growing Your Own Food</strong>  </p>
+</li>
+<li>Container gardening and community gardens  </li>
+<li>The satisfaction and health benefits of homegrown produce</li>
+</ol>
+<p><strong>Introduction Paragraph</strong></p>
+<p>Have you ever wondered how the food on your plate gets there, or what it takes to produce it? Our dietary choices have significant ripple effects on the health of our bodies, our communities, and our planet. From selecting fresh, locally sourced ingredients to cutting back on food waste, there are many ways we can align our eating habits with a more sustainable lifestyle. Join us as we delve into practical tips for making mindful food choices that benefit both you and the environment.</p>
+<hr />
+<p><strong>Feel free to mix, match, and expand on these topics as needed. Each outline gives you a structured path for writing an in-depth blog post or even a series of blog posts on sustainable living. Good luck with your writing!</strong></p>
+</div>
+<div class="tabbed-block">
+<p><a href="https://g.co/gemini/share/e6145f76f63a" target="_blank">View response in Gemini</a></p>
+<p><a href="https://docs.google.com/document/d/18pPtxS0MnIx11GbcZim_cHhSk78pYZrlyEgnfNSsWF4/edit?usp=sharing" target="_blank">View response Document on Google Drive</a></p>
+<p><strong>Sustainable Living: A Beginner's Guide</strong></p>
+<p>This guide is a culmination of research on various aspects of sustainable living, from reducing our carbon footprint to building sustainable communities. In today's world, it's more important than ever to be mindful of our impact on the planet. Sustainable living is a lifestyle that attempts to reduce an individual's or society's use of the Earth's natural resources. It is about living in a way that meets the needs of the present without compromising the ability of future generations to meet their own needs. But the benefits of sustainable living extend far beyond environmental impact. By embracing sustainable practices, we can also improve our health and well-being, reduce our living costs, and increase our self-sufficiency. This blog post will explore five key topics related to sustainable living, providing practical tips and insights to help you embark on your own journey towards a more eco-conscious lifestyle.</p>
+<p><strong>Reducing Your Carbon Footprint</strong></p>
+<p>Our carbon footprint is the total amount of greenhouse gases generated by our actions. This includes emissions from transportation, energy consumption, and the food we eat. By making conscious choices in these areas, we can significantly reduce our impact on the environment.</p>
+<p><strong>Transportation</strong></p>
+<p>Transportation is a major contributor to greenhouse gas emissions. Here are some ways to reduce your carbon footprint related to transportation:</p>
+<ul>
+<li><strong>Use public transportation:</strong> Whenever possible, opt for public transportation such as buses, trains, or subways instead of driving your own car. Imagine the impact if everyone in your neighborhood took the bus just once a week!</li>
+<li><strong>Bike or walk:</strong> For shorter distances, consider biking or walking. This is not only good for the environment but also for your health. Not only will you reduce your carbon footprint, but you'll also get some exercise and fresh air.</li>
+<li><strong>Carpool:</strong> If you need to drive, try carpooling with colleagues or friends to reduce the number of cars on the road. Sharing rides is a great way to connect with others and reduce your environmental impact.</li>
+<li><strong>Choose fuel-efficient vehicles:</strong> When purchasing a new car, consider fuel-efficient options such as hybrid or electric vehicles. These vehicles use less fuel and produce fewer emissions, saving you money and reducing your impact on the planet.</li>
+</ul>
+<p><strong>Energy Consumption</strong></p>
+<p>Our homes consume a significant amount of energy. Here are some tips for reducing your energy consumption at home:</p>
+<ul>
+<li><strong>Use energy-efficient appliances:</strong> When purchasing new appliances, look for those with high energy-efficiency ratings. These appliances use less energy, which can save you money on your utility bills.</li>
+<li><strong>Switch to renewable energy sources:</strong> Consider installing solar panels or switching to a green energy provider for your electricity. Solar panels can provide clean energy for your home, while green energy providers offer electricity generated from renewable sources like wind and solar power.</li>
+<li><strong>Reduce your heating and cooling needs:</strong> Proper insulation, energy-efficient windows, and smart thermostats can help regulate the temperature in your home and reduce energy consumption. Imagine a cozy winter evening with less reliance on your heating system!</li>
+<li><strong>Unplug electronics when not in use:</strong> Even when turned off, many electronics continue to draw power. Unplug them or use a power strip that can be switched off. This simple habit can make a surprising difference in your energy consumption.</li>
+</ul>
+<p><strong>Food Choices</strong></p>
+<p>The food we eat also has a carbon footprint. Here are some tips for reducing your carbon footprint related to food choices:</p>
+<ul>
+<li><strong>Eat less meat:</strong> Meat production is a significant contributor to greenhouse gas emissions. Consider reducing your meat consumption or adopting a plant-based diet. Did you know that producing one pound of beef requires significantly more water and land than producing one pound of plant-based protein?</li>
+<li><strong>Choose local and seasonal foods:</strong> Transporting food over long distances generates emissions. Choose locally grown and seasonal produce whenever possible. Visiting a local farmers' market is a great way to find fresh, seasonal produce and support local farmers.</li>
+<li><strong>Reduce food waste:</strong> Plan your meals, store food properly, and compost food scraps to minimize food waste. Wasted food not only wastes resources but also contributes to methane emissions in landfills.</li>
+</ul>
+<p><strong>Sustainable Consumption and Waste Reduction</strong></p>
+<p>Our society is facing a growing crisis of overconsumption and waste. The constant pursuit of material possessions and the disposable nature of many products are taking a toll on our planet. It's time to rethink our consumption habits and embrace a more sustainable way of living.</p>
+<p><strong>Minimalism</strong></p>
+<p>Minimalism is a lifestyle that emphasizes living with less. By decluttering our homes and lives, we can reduce our consumption and waste. Here are some principles of minimalism:</p>
+<ul>
+<li><strong>Focus on needs, not wants:</strong> Distinguish between essential items and those that are simply desirable. Do you really need that new gadget, or are you just tempted by the latest trend?</li>
+<li><strong>Quality over quantity:</strong> Invest in high-quality, durable items that will last longer. Choosing a well-made item over a cheaper, disposable one can save you money and reduce waste in the long run.</li>
+<li><strong>Declutter regularly:</strong> Get rid of items you no longer need or use. Donate, sell, or recycle them whenever possible. Decluttering can be liberating and create a more peaceful living space.</li>
+</ul>
+<p><strong>Zero Waste Living</strong></p>
+<p>Zero waste living is a philosophy that encourages individuals to minimize their waste generation. While achieving zero waste may be challenging, there are many steps we can take to reduce our waste significantly. Here are some tips for zero waste living:</p>
+<ul>
+<li><strong>Refuse single-use items:</strong> Say no to plastic bags, straws, and disposable cups. Carry your own reusable alternatives. Bringing your own reusable bag to the grocery store is a simple but effective way to reduce plastic waste.</li>
+<li><strong>Reduce your consumption:</strong> Before buying something new, consider whether you really need it. Could you borrow it, rent it, or buy it secondhand instead?</li>
+<li><strong>Reuse what you have:</strong> Find creative ways to reuse items instead of throwing them away. Turn old jars into storage containers or use old t-shirts as cleaning rags.</li>
+<li><strong>Recycle properly:</strong> Familiarize yourself with your local recycling guidelines and recycle as much as possible. Recycling helps conserve resources and reduce landfill waste.</li>
+<li><strong>Compost organic waste:</strong> Composting food scraps and yard waste reduces landfill waste and creates nutrient-rich soil for your garden.</li>
+</ul>
+<p><strong>Conscious Consumerism</strong></p>
+<p>Conscious consumerism involves making informed choices about the products we buy. Here are some tips for conscious consumerism:</p>
+<ul>
+<li><strong>Support sustainable brands:</strong> Choose brands that prioritize ethical and sustainable practices. Look for certifications like Fair Trade, organic, or B Corp.</li>
+<li><strong>Buy less and buy better:</strong> Invest in high-quality, durable products that will last longer. This not only reduces waste but also saves you money in the long run.</li>
+<li><strong>Consider the environmental impact:</strong> Think about the environmental impact of a product throughout its lifecycle, from production to disposal. Choose products made from recycled materials or those that are designed to be easily repaired or recycled.</li>
+<li><strong>Choose products with minimal packaging:</strong> Opt for products with minimal or recyclable packaging. Excess packaging often ends up in landfills.</li>
+</ul>
+<p><strong>Sustainable Food Choices</strong></p>
+<p>The food we eat has a significant impact on the environment. From the production and transportation of food to the packaging and waste it generates, our food choices have far-reaching consequences. By making more sustainable food choices, we can all contribute to a healthier planet.</p>
+<p><strong>Plant-Based Diets</strong></p>
+<p>Plant-based diets have been shown to have a lower environmental impact than diets that include meat. Here are some benefits of plant-based diets:</p>
+<ul>
+<li><strong>Reduced greenhouse gas emissions:</strong> Animal agriculture is a major contributor to greenhouse gas emissions. Plant-based diets have a significantly lower carbon footprint.</li>
+<li><strong>Less land use:</strong> Raising livestock requires large amounts of land for grazing and feed production. Plant-based diets require less land, freeing up land for other uses, such as growing crops or restoring natural habitats.</li>
+<li><strong>Reduced water consumption:</strong> Animal agriculture is a water-intensive industry. Plant-based diets require less water, which is essential for conserving this precious resource.</li>
+</ul>
+<p><strong>Local and Seasonal Eating</strong></p>
+<p>Eating locally and seasonally is another way to make more sustainable food choices. Here's why:</p>
+<ul>
+<li><strong>Reduced transportation:</strong> Transporting food over long distances generates emissions. Local food travels shorter distances, reducing its carbon footprint.</li>
+<li><strong>Fresher and more nutritious:</strong> Locally grown produce is often fresher and more nutritious than food that has been transported long distances.</li>
+<li><strong>Supports local farmers:</strong> Buying local food supports local farmers and the local economy, fostering community resilience and food security.</li>
+</ul>
+<p><strong>Reducing Food Waste</strong></p>
+<p>Food waste is a major environmental problem. Here are some tips for reducing food waste in your home:</p>
+<ul>
+<li><strong>Plan your meals:</strong> Plan your meals ahead of time to avoid buying more food than you need. Make a shopping list and stick to it.</li>
+<li><strong>Store food properly:</strong> Store food correctly to prevent spoilage and extend its shelf life. Learn how to properly store different types of produce to keep them fresh longer.</li>
+<li><strong>Use leftovers creatively:</strong> Turn leftovers into new meals instead of throwing them away. Get creative in the kitchen and find new ways to use up leftover ingredients.</li>
+</ul>
+<p><strong>Sustainable Home and Garden</strong></p>
+<p>Our homes and gardens are an important part of our lives, and they can also be a source of sustainability. By making small changes in our homes and gardens, we can reduce our environmental impact and create a more sustainable living space.</p>
+<p><strong>Energy Efficiency</strong></p>
+<p>Improving the energy efficiency of your home can save money and reduce your carbon footprint. Here are some tips:</p>
+<ul>
+<li><strong>Insulate your home:</strong> Proper insulation can prevent heat loss in the winter and keep your home cool in the summer, reducing your reliance on heating and cooling systems.</li>
+<li><strong>Upgrade your windows:</strong> Energy-efficient windows can reduce heat transfer and improve insulation, making your home more comfortable and energy-efficient.</li>
+<li><strong>Use energy-efficient lighting:</strong> Switch to LED bulbs, which use less energy and last longer than traditional incandescent bulbs.</li>
+<li><strong>Install a programmable thermostat:</strong> A programmable thermostat can help regulate the temperature in your home and reduce energy consumption by automatically adjusting the temperature based on your schedule.</li>
+</ul>
+<p><strong>Water Conservation</strong></p>
+<p>Water is a precious resource, and it's important to conserve it. Here are some tips for conserving water in your home and garden:</p>
+<ul>
+<li><strong>Fix leaks promptly:</strong> A leaky faucet or toilet can waste a significant amount of water over time. Be sure to check for and repair any leaks in your home.</li>
+<li><strong>Install low-flow fixtures:</strong> Low-flow showerheads, faucets, and toilets use less water without sacrificing performance.</li>
+<li><strong>Water your garden efficiently:</strong> Water your garden early in the morning or late in the evening to minimize evaporation. Use a soaker hose or drip irrigation system to deliver water directly to the roots of your plants.</li>
+<li><strong>Collect rainwater:</strong> Install a rain barrel to collect rainwater for watering your garden. This is a great way to conserve water and reduce your reliance on municipal water supplies.</li>
+</ul>
+<p><strong>Composting</strong></p>
+<p>Composting is a natural process that turns organic waste into nutrient-rich soil. It's a fantastic way to reduce landfill waste, create valuable soil for your garden, and connect with the natural cycle of decomposition. Here's how to get started:</p>
+<ul>
+<li><strong>Choose a composting method:</strong> There are various composting methods, including composting bins, tumblers, and worm composting. Choose a method that suits your space and lifestyle.</li>
+<li><strong>Add the right materials:</strong> Compost a mix of "green" materials (such as food scraps and grass clippings) and "brown" materials (such as leaves and twigs). This balance provides the necessary nutrients and carbon for decomposition.</li>
+<li><strong>Maintain the compost:</strong> Turn the compost regularly to provide aeration and ensure proper decomposition. This helps to speed up the process and prevent unpleasant odors.</li>
+</ul>
+<p><strong>Sustainable Gardening</strong></p>
+<p>Creating a sustainable garden involves using practices that minimize environmental impact. Here are some tips:</p>
+<ul>
+<li><strong>Choose native plants:</strong> Native plants are adapted to the local climate and require less water and fertilizer. They also provide habitat for local wildlife.</li>
+<li><strong>Avoid using pesticides:</strong> Pesticides can harm beneficial insects and pollute the environment. Use natural pest control methods instead, such as companion planting or introducing beneficial insects.</li>
+<li><strong>Build healthy soil:</strong> Healthy soil is essential for plant growth. Add compost and other organic matter to improve soil fertility and water retention.</li>
+</ul>
+<p><strong>Sustainable Community and Activism</strong></p>
+<p>Creating a sustainable future requires the collective effort of individuals, communities, and governments. By working together, we can create a more sustainable world for ourselves and future generations. Individual actions are essential, but systemic change is also necessary to address the root causes of environmental problems.</p>
+<p><strong>Supporting Local Businesses</strong></p>
+<p>Supporting local businesses is important for sustainability. Here's why:</p>
+<ul>
+<li><strong>Reduced transportation:</strong> Local businesses often source their products locally, reducing transportation distances and emissions.</li>
+<li><strong>Supports the local economy:</strong> Spending money at local businesses keeps money within the community and supports local jobs.</li>
+<li><strong>Promotes community building:</strong> Local businesses often play an important role in community building and social cohesion.</li>
+</ul>
+<p><strong>Advocating for Sustainable Policies</strong></p>
+<p>We can all play a role in advocating for sustainable policies in our communities. Here are some ways to get involved:</p>
+<ul>
+<li><strong>Contact your elected officials:</strong> Let your elected officials know that you support sustainable policies, such as investing in renewable energy, promoting public transportation, and protecting natural resources.</li>
+<li><strong>Attend community meetings:</strong> Attend community meetings and voice your opinions on sustainability issues. Engage in local discussions and contribute to decision-making processes.</li>
+<li><strong>Support organizations working on sustainability:</strong> Donate to or volunteer with organizations that are working to promote sustainability. There are many organizations working on various aspects of sustainability, from environmental conservation to social justice.</li>
+</ul>
+<p><strong>Community Initiatives</strong></p>
+<p>Many communities have initiatives in place to promote sustainability. Here are some examples:</p>
+<ul>
+<li><strong>Community gardens:</strong> Community gardens provide a space for residents to grow their own food, connect with their neighbors, and learn about sustainable gardening practices.</li>
+<li><strong>Farmers' markets:</strong> Farmers' markets offer a venue for local farmers to sell their produce directly to consumers, promoting local food systems and reducing food miles.</li>
+<li><strong>Recycling programs:</strong> Community recycling programs make it easier for residents to recycle and reduce waste, diverting materials from landfills and conserving resources.</li>
+</ul>
+<p><strong>Conclusion</strong></p>
+<p>Sustainable living is not just a trend; it's a necessity. By adopting sustainable practices in our daily lives, we can reduce our environmental impact and contribute to a healthier planet. Start with small changes, and gradually incorporate more sustainable habits into your lifestyle. Remember that every action counts, and together, we can make a difference. Sustainable living is a journey, not a destination. There will be challenges and setbacks along the way, but the rewards are well worth the effort. By embracing sustainable practices, we not only benefit the environment but also improve our own lives and create a more just and equitable world for all.</p>
+<p>For those who want to delve deeper into sustainable living, there are numerous resources available online and in libraries. You can also connect with local organizations and community groups to learn more and get involved in sustainability initiatives in your area. Remember, every step we take towards a more sustainable lifestyle brings us closer to a healthier planet and a brighter future.</p>
+</div>
+</div>
+</div>
+</details>
+<p><strong>Proposal Writing</strong></p>
+<p>GPTs can be used to help craft scientific research proposals. </p>
+<div class="admonition info">
+<p class="admonition-title">National Science Foundation Notice on AI</p>
+<p>The NSF indicates:</p>
+<ul>
+<li>
+<p>NSF reviewers are prohibited from uploading any content from proposals, review information and related records to non-approved generative AI tools.</p>
+</li>
+<li>
+<p>Proposers are encouraged to indicate in the project description the extent to which, if any, generative AI technology was used and how it was used to develop their proposal.</p>
+</li>
+</ul>
+<p>Source: <a href="https://new.nsf.gov/news/notice-to-the-research-community-on-ai">https://new.nsf.gov/news/notice-to-the-research-community-on-ai</a> </p>
+</div>
+<details class="example">
+<summary>Open Science Research Proposal</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:4"><input checked="checked" id="example-2-content-creation-prompt_1" name="__tabbed_4" type="radio" /><input id="example-2-content-creation-copilot-response_1" name="__tabbed_4" type="radio" /><input id="example-2-content-creation-chatgpt-o1-response_1" name="__tabbed_4" type="radio" /><input id="example-2-content-creation-gemini-advanced-w-deep-research-response_1" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="example-2-content-creation-prompt_1">Prompt</label><label for="example-2-content-creation-copilot-response_1">Copilot Response</label><label for="example-2-content-creation-chatgpt-o1-response_1">ChatGPT o1 Response</label><label for="example-2-content-creation-gemini-advanced-w-deep-research-response_1">Gemini Advanced w/ Deep Research Response</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>I&#39;m constructing a research proposal for the National Science Foundation 
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>in the Directorate for Computer and Information Sciences and Engineering, 
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>and I need help formulating the broader impacts and intellectual merit
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>The research is about the influence of Agentic AI, open source Foundational Models, and GPTs, 
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>and recent mandates for open data and open science.
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>Can you help refine this idea and suggest some research questions and methodologies?
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<p>Absolutely, I'd be happy to help you refine your research proposal! Let's break down the key components and formulate some potential research questions and methodologies.</p>
+<p><strong>Broader Impacts</strong></p>
+<p>The broader impacts of your research should focus on how it benefits society and contributes to desired societal outcomes. Here are some potential broader impacts for your research:</p>
+<ol>
+<li><strong>Advancing STEM Education</strong>: Your research could enhance educational tools and resources, making advanced AI concepts more accessible to students and educators.</li>
+<li><strong>Promoting Inclusivity in AI Development</strong>: By focusing on open-source foundational models, your research could encourage diverse participation in AI development, ensuring that a wider range of perspectives is included.</li>
+<li><strong>Enhancing Public Engagement with AI</strong>: Open data and open science mandates can increase public understanding and engagement with AI technologies, fostering a more informed society.</li>
+<li><strong>Improving Economic Competitiveness</strong>: By advancing the capabilities of Agentic AI and GPTs, your research could drive innovation and economic growth in various industries<a href="https://new.nsf.gov/funding/learn/broader-impacts">1</a>.</li>
+</ol>
+<p><strong>Intellectual Merit</strong></p>
+<p>The intellectual merit of your research should highlight its potential to advance knowledge within the field. Here are some aspects to consider:</p>
+<ol>
+<li><strong>Novelty and Innovation</strong>: Investigate how Agentic AI and open-source foundational models can lead to new AI capabilities and applications<a href="https://scholarspace.manoa.hawaii.edu/server/api/core/bitstreams/0db8344c-6e60-42c0-af45-744ec0b3a822/content">2</a>.</li>
+<li><strong>Interdisciplinary Approach</strong>: Explore the intersection of AI, data science, and open science policies, contributing to multiple fields of study<a href="https://www.forbes.com/councils/forbestechcouncil/2025/01/03/agentic-ai-a-new-paradigm-in-autonomous-artificial-intelligence/">3</a>.</li>
+<li><strong>Methodological Rigor</strong>: Employ robust methodologies to ensure the reliability and validity of your findings<a href="https://arxiv.org/abs/2303.10130">4</a>.</li>
+</ol>
+<p><strong>Potential Research Questions</strong></p>
+<p>Here are some research questions that could guide your study:</p>
+<ol>
+<li><strong>How do Agentic AI systems influence decision-making processes in various domains?</strong></li>
+<li><strong>What are the benefits and challenges of using open-source foundational models in AI development?</strong></li>
+<li><strong>How do recent mandates for open data and open science impact the accessibility and reproducibility of AI research?</strong></li>
+<li><strong>What are the societal implications of widespread adoption of GPT-based technologies?</strong></li>
+</ol>
+<p><strong>Methodologies</strong></p>
+<p>To address these research questions, you could consider the following methodologies:</p>
+<ol>
+<li><strong>Literature Review</strong>: Conduct a comprehensive review of existing literature on Agentic AI, open-source models, and open science policies to identify gaps and opportunities for further research.</li>
+<li><strong>Case Studies</strong>: Analyze specific instances where Agentic AI and open-source models have been implemented to understand their impact and effectiveness.</li>
+<li><strong>Surveys and Interviews</strong>: Gather qualitative data from AI researchers, developers, and policymakers to gain insights into the challenges and benefits of open science mandates.</li>
+<li><strong>Experimental Studies</strong>: Design experiments to test the performance and reliability of Agentic AI systems and open-source models in various applications.</li>
+</ol>
+<p>By focusing on these aspects, you can create a compelling research proposal that highlights both the broader impacts and intellectual merit of your study. If you need further assistance or have specific questions, feel free to ask!</p>
+</div>
+<div class="tabbed-block">
+<p>Below is a structured way to approach framing your research idea for an NSF CISE 
+(Computer &amp; Information Science &amp; Engineering) proposal. 
+The first section lays out <strong>Intellectual Merit</strong>—the “what” and “why” of the research. 
+The second section discusses <strong>Broader Impacts</strong>—the “so what” for society, 
+education, workforce development, industry, and policy. 
+Following that are some <strong>potential research questions</strong> and <strong>methodological approaches</strong> 
+you might consider.</p>
+<hr />
+<p><strong>1. Intellectual Merit</strong></p>
+<p><strong>1.1 Research Context and Rationale</strong></p>
+<ul>
+<li><strong>Agentic AI</strong>: Rapid advances in large language models (LLMs) such as GPT, combined with techniques for autonomous or “agentic” behavior, have begun to shift how AI systems operate in real-world contexts. These emergent systems can observe, reason, plan, act, and even self-improve with minimal human supervision, raising new questions about reliability, controllability, and social impact.  </li>
+<li><strong>Open-Source Foundational Models</strong>: The open-sourcing of powerful LLMs and related foundational models (e.g., large-scale image, speech, or multi-modal models) lowers the barriers to entry for researchers and developers. This democratization can spark innovation and accelerate research, but it also complicates oversight, regulatory approaches, and responsible deployment.  </li>
+<li><strong>Mandates for Open Data and Open Science</strong>: Recent policies (e.g., the White House OSTP’s “Year of Open Science,” NIH’s Data Management and Sharing Policy, and NSF’s open science initiatives) emphasize transparent, reproducible, and accessible research practices. This context supports a synergistic push: new AI methods could be rapidly prototyped, validated, and tested at scale if open datasets and reproducible pipelines become more widely available.</li>
+</ul>
+<p>Your project aims to understand, design, and shape how these trends intersect—and in particular, how <strong>Agentic AI systems built on open-source foundational models</strong> interact with the evolving <strong>mandates for open data and open science</strong>.  </p>
+<p><strong>1.2 Research Objectives</strong></p>
+<ol>
+<li><strong>Theoretical and Technical Foundations</strong>:  </li>
+<li>Investigate the architectural and algorithmic choices that enable agentic behavior in next-generation AI systems, focusing on transparency, robustness, and replicability.  </li>
+<li>
+<p>Examine how open-source foundational models can be refined or adapted to incorporate policy or domain constraints (e.g., in healthcare, education, environment, etc.) without sacrificing performance.</p>
+</li>
+<li>
+<p><strong>Evaluation and Benchmarking</strong>:  </p>
+</li>
+<li>Develop metrics that capture both <em>capabilities</em> (accuracy, creativity, computational efficiency) and <em>societal considerations</em> (fairness, privacy, interpretability) of open-source agentic AI.  </li>
+<li>
+<p>Propose new benchmarking paradigms that leverage open-data mandates, ensuring that all data, code, and evaluation pipelines are publicly available for reproducibility.</p>
+</li>
+<li>
+<p><strong>Responsible Deployment Frameworks</strong>:  </p>
+</li>
+<li>Identify best practices for integrating agentic AI systems into existing regulatory and ethical frameworks, especially given the open-source nature of these models and the new mandates for open science.  </li>
+<li>Highlight how transparent, community-driven approaches can mitigate potential harms while fostering positive innovation.</li>
+</ol>
+<p><strong>1.3 Significance and Novelty</strong></p>
+<ul>
+<li><strong>Convergence of Agentic AI and Open Source</strong>: A nuanced exploration of how open-source foundational models could accelerate agentic AI while also raising new challenges in oversight and accountability.  </li>
+<li><strong>New Evaluation Protocols</strong>: Contributing novel, reproducible benchmarks and measurement protocols that reflect real-world complexities (e.g., emergent capabilities, safety concerns, domain-specific constraints).  </li>
+<li><strong>Impact on Open Science Mandates</strong>: Providing insights into how top-down policy can catalyze bottom-up, community-driven AI developments, leading to more transparent, equitable, and broadly beneficial AI innovation.</li>
+</ul>
+<hr />
+<p><strong>2. Broader Impacts</strong></p>
+<p><strong>2.1 Educational and Workforce Development</strong></p>
+<ul>
+<li><strong>Curriculum and Training</strong>: Develop open-access materials—tutorials, code repositories, and case studies—for students and practitioners on <em>agentic AI systems, open-source development practices, and ethical deployment</em>.  </li>
+<li><strong>Research-to-Practice Pipeline</strong>: Engage undergraduate and graduate students in hands-on, collaborative projects with industry or government labs, enhancing their computational skills and awareness of responsible AI frameworks.  </li>
+<li><strong>Diversity, Equity, and Inclusion (DEI)</strong>:  </li>
+<li>Proactively recruit and mentor students from underrepresented groups for research experiences.  </li>
+<li>Offer workshops or seminars in collaboration with minority-serving institutions to diversify the talent pool working on open-source AI.</li>
+</ul>
+<p><strong>2.2 Societal and Policy Impact</strong></p>
+<ul>
+<li><strong>Community-Driven Frameworks</strong>: Provide open-source code, data documentation, and ethical guidelines that can serve as a template for developers worldwide.  </li>
+<li><strong>Transparency and Trust</strong>: By making methodologies, code, and results publicly available, your research helps build public trust and understanding of AI technologies, addressing misinformation or misinterpretation.  </li>
+<li><strong>Guidance for Policymakers</strong>: Generate white papers or policy briefs that translate technical findings into actionable recommendations for government agencies, standards bodies, and open-science policy makers.</li>
+</ul>
+<p><strong>2.3 Industry Collaboration and Technology Transfer</strong></p>
+<ul>
+<li><strong>Open-Source Consortium</strong>: Collaborate with industry partners, nonprofits, or open-source communities to share insights, prototypes, and best practices, accelerating the transition of foundational AI models from research to real-world applications.  </li>
+<li><strong>Startup Engagement</strong>: Encourage commercialization avenues for new AI tools and benchmarks developed under the project, enabling startup companies to incorporate robust and responsible agentic AI solutions into their products.</li>
+</ul>
+<p><strong>2.4 Public Engagement</strong></p>
+<ul>
+<li><strong>Citizen Science and Outreach</strong>: Involve citizen-scientists, community stakeholders, or volunteer developers in data collection and annotation efforts for open benchmarks, showcasing the power of open collaboration.  </li>
+<li><strong>Public Lectures and Demonstrations</strong>: Organize public events or online demonstrations that explain complex AI concepts in accessible ways, highlighting both the potential and the limitations of agentic AI in society.</li>
+</ul>
+<hr />
+<p><strong>3. Potential Research Questions</strong></p>
+<ol>
+<li><strong>Design and Architecture</strong>  </li>
+<li><em>How can we design agentic AI systems that are easily interpretable, safe, and reliable while maintaining state-of-the-art performance on complex tasks?</em>  </li>
+<li>
+<p><em>What trade-offs arise between interpretability, performance, and resource efficiency in open-source foundational models?</em></p>
+</li>
+<li>
+<p><strong>Evaluation and Monitoring</strong>  </p>
+</li>
+<li><em>What metrics or methodologies best measure the real-world impact and unintended consequences (e.g., bias, emergent harmful behavior) of agentic AI?</em>  </li>
+<li>
+<p><em>How can continuous monitoring frameworks be established so that future versions of open-source models remain transparent and responsible?</em></p>
+</li>
+<li>
+<p><strong>Data and Model Governance</strong>  </p>
+</li>
+<li><em>How do different open-data licensing schemes and model governance protocols affect the adoption and adaptation of open-source AI systems?</em>  </li>
+<li>
+<p><em>Which aspects of data curation and data management are most critical for preserving model fidelity, traceability, and compliance with open-science mandates?</em></p>
+</li>
+<li>
+<p><strong>Responsible and Ethical Deployment</strong>  </p>
+</li>
+<li><em>How do open-source, agentic AI systems interface with existing regulatory frameworks such as GDPR in the EU or emerging AI governance policies in the U.S.?</em>  </li>
+<li>
+<p><em>What socio-technical mechanisms (e.g., human-in-the-loop oversight, community-led audits) can be integrated to mitigate negative externalities?</em></p>
+</li>
+<li>
+<p><strong>Human-AI Collaboration</strong>  </p>
+</li>
+<li><em>How can agentic AI systems, operating on open foundational models, enhance human experts’ decision-making processes in high-stakes domains like healthcare, education, or finance?</em></li>
+</ol>
+<hr />
+<p><strong>4. Suggested Methodologies</strong></p>
+<ol>
+<li><strong>Multi-Modal Benchmark Development</strong>  </li>
+<li>Collect or synthesize domain-specific open datasets (respecting privacy, fairness, and ethical considerations) and develop new tasks that mirror real-world complexity (e.g., multi-step reasoning, adaptive planning).  </li>
+<li>
+<p>Use version-controlled, open-source repositories (e.g., GitHub, Hugging Face) to ensure reproducibility and transparency.</p>
+</li>
+<li>
+<p><strong>Experimental Design with Ablation Studies</strong>  </p>
+</li>
+<li>
+<p>Implement systematic ablations of agentic components (e.g., memory modules, planning modules, feedback loops) to isolate which architectural features yield the greatest improvements in performance or controllability.</p>
+</li>
+<li>
+<p><strong>Qualitative and Quantitative Assessments</strong>  </p>
+</li>
+<li>Conduct user studies, interviews, or controlled experiments involving domain experts and lay users to assess interpretability, usability, and trustworthiness of agentic AI tools.  </li>
+<li>
+<p>Develop or adopt quantitative metrics for bias, fairness, and safety (e.g., measuring the frequency of harmful outputs or misaligned behaviors).</p>
+</li>
+<li>
+<p><strong>Human-in-the-Loop and Reinforcement Learning</strong>  </p>
+</li>
+<li>Incorporate <em>human feedback loops</em> (e.g., RLHF—Reinforcement Learning from Human Feedback) to refine open foundational models for domain-specific tasks, ensuring alignment with human values and norms.  </li>
+<li>
+<p>Evaluate how effectively human feedback can course-correct or guide agentic AI behavior to prevent negative or unintended outcomes.</p>
+</li>
+<li>
+<p><strong>Policy-Focused Case Studies</strong>  </p>
+</li>
+<li>Conduct comparative case studies on how open-science mandates (e.g., data management plans, transparency practices) influence both the research outcomes and the broader AI ecosystem.  </li>
+<li>
+<p>Examine case studies of industry, academic, and nonprofit collaborations to identify best practices and pain points for open AI development.</p>
+</li>
+<li>
+<p><strong>Longitudinal Analysis</strong>  </p>
+</li>
+<li>Track projects over time to see how iterative releases of open-source agentic AI models evolve in terms of functionality, ethical alignment, community acceptance, and regulatory compliance.</li>
+</ol>
+<hr />
+<p><strong>Pulling It All Together</strong></p>
+<p>By framing your work in terms of the critical juncture where <strong>Agentic AI</strong>, <strong>open-source foundational models</strong>, and <strong>open science mandates</strong> converge, you can highlight both the <strong>scientific promise</strong> and the <strong>social responsibility</strong> of your proposed research. A clearly articulated plan for creating reproducible benchmarks, novel metrics, and robust governance frameworks will underscore the Intellectual Merit, while educational initiatives, diverse outreach, policy guidance, and community-based engagement will serve as the backbone of the Broader Impacts.</p>
+<p>With these elements in place, your proposal will clearly demonstrate how you will (1) advance the scientific frontier of agentic AI and foundational models, and (2) promote responsible innovation for the benefit of society—two aspects that resonate strongly with NSF CISE’s priorities.</p>
+</div>
+<div class="tabbed-block">
+<p><a href="https://g.co/gemini/share/ecf7adf9d8a5" target="_blank">View response in Gemini</a></p>
+<p><a href="https://docs.google.com/document/d/1wq2XU_6p6URJDf9aveVS_BzpD0zbaNG4Y0epdTUQJt4/edit?usp=sharing" target="_blank">View response in Google Docs</a></p>
+<p><strong>Agentic AI, Open Source Foundational Models, and GPTs in the Context of Open Data and Open Science Mandates</strong></p>
+<p><strong>Introduction</strong>
+This research proposal explores the intersection of agentic artificial intelligence (AI), open-source foundational models (FMs), and generative pre-trained transformers (GPTs) with recent mandates for open data and open science. These mandates, driven by the increasing recognition of the societal benefits of accessible and transparent research [1], raise critical questions about the development, deployment, and governance of advanced AI systems. This proposal aims to investigate the potential overlaps and conflicts between these emerging technologies and open science principles, ultimately contributing to a deeper understanding of their broader impacts and intellectual merit.</p>
+<p><strong>Broader Impacts and Intellectual Merit</strong>
+The National Science Foundation (NSF) emphasizes two core criteria for evaluating research proposals: Intellectual Merit and Broader Impacts [2, 3]. Intellectual merit refers to the potential of the proposed research to advance knowledge and understanding within its field or across different fields. Broader impacts, on the other hand, encompass the potential to benefit society and contribute to the achievement of specific, desired societal outcomes [3]. These criteria are central to the NSF's mission of promoting the progress of science and advancing national health, prosperity, and welfare [4].</p>
+<p><strong>Broader Impacts</strong></p>
+<p>This research will have several broader impacts:</p>
+<ul>
+<li><strong>Ethical and Societal Implications:</strong> By examining the interplay of agentic AI, open-source FMs, and GPTs with open data and open science, this research will shed light on the ethical and societal implications of these technologies. This includes exploring potential risks such as misuse, bias, and unintended consequences, as well as benefits such as increased accessibility, transparency, and collaboration in AI research and development. For example, research shows that ethical misbehavior by agentic AI "can become even more alarming when AI systems interact with one another" [5]. In one study, AI agents in a simulated marketplace learned to collude with each other to set artificially high prices, even punishing sellers who deviated from the established rules. This highlights the need for careful consideration of the potential risks and the development of effective governance mechanisms to ensure responsible AI development. Operationalizing these practices for governing agentic AI systems can be challenging, especially when balancing safety, usability, privacy, and cost [6].</li>
+<li><strong>Policy Recommendations:</strong> The findings of this research will inform the development of responsible policies and guidelines for the governance of agentic AI and open-source FMs in the context of open science. This will help ensure that these technologies are developed and deployed in a way that maximizes their societal benefits while mitigating potential risks.</li>
+<li><strong>Workforce Development:</strong> This research will contribute to the development of a diverse and skilled workforce in AI and data science by providing training opportunities for students and researchers. This includes fostering interdisciplinary collaborations and promoting public understanding of these emerging technologies. This aligns with the NSF's broader impact goals, which include "full participation of women, persons with disabilities, and underrepresented minorities in STEM" and "development of a diverse, globally competitive STEM workforce" [7].</li>
+<li><strong>Specific Examples of Broader Impacts:</strong> This research will contribute to achieving specific societal outcomes, such as:<ul>
+<li><strong>Increased public scientific literacy and public engagement with science and technology:</strong> By promoting open access to AI research and data, this project will increase public understanding of AI and its potential impact on society.</li>
+<li><strong>Improved well-being of individuals in society:</strong> This research will explore how agentic AI can be used to address societal challenges and improve people's lives, such as in healthcare, education, and environmental sustainability.</li>
+<li><strong>Increased partnerships between academia, industry, and others:</strong> This project will foster collaborations between researchers, developers, and policymakers to ensure the responsible development and deployment of agentic AI.</li>
+</ul>
+</li>
+<li><strong>Achieving Broader Impacts:</strong> Broader impacts can be achieved through various avenues:<ul>
+<li><strong>Through the research itself:</strong> The research findings will directly contribute to a better understanding of the ethical and societal implications of agentic AI, leading to more responsible development and deployment practices.</li>
+<li><strong>Through activities directly related to the research project:</strong> This could include workshops, training sessions, and outreach activities to disseminate the research findings and engage with the public.</li>
+<li><strong>Through activities supported by, but complementary to, the project:</strong> This could involve developing educational materials or collaborating with community organizations to promote AI literacy and broader participation in STEM fields.</li>
+</ul>
+</li>
+<li><strong>NSF Evaluation Criteria:</strong> The broader impacts of this research will be evaluated based on the following criteria [8]:<ul>
+<li><strong>Potential benefit to society:</strong> The research will address critical societal challenges related to the responsible development and use of AI.</li>
+<li><strong>Creative concepts:</strong> The research will explore novel approaches to understanding and governing agentic AI in the context of open science.</li>
+<li><strong>Sound rationale:</strong> The research is grounded in a strong theoretical framework and empirical evidence.</li>
+<li><strong>Well-organized plan:</strong> The proposal outlines a clear and feasible research plan with a robust methodology.</li>
+<li><strong>Qualifications of the proposer:</strong> The research team possesses the necessary expertise and experience to conduct this research successfully.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Intellectual Merit</strong></p>
+<p>This research will make significant intellectual contributions to the field of AI and computer science:</p>
+<ul>
+<li><strong>Novel Framework:</strong> This research will develop a novel framework for analyzing the relationship between agentic AI, open-source FMs, and GPTs with open data and open science mandates. This framework will provide a comprehensive understanding of the potential benefits, challenges, and risks associated with these technologies.</li>
+<li><strong>Empirical Evidence:</strong> This research will generate empirical evidence on the impact of open data and open science mandates on the development and deployment of agentic AI and open-source FMs. This will include analyzing case studies, conducting surveys, and performing experiments to gather data on the use and impact of these technologies.</li>
+<li><strong>Theoretical Contributions:</strong> This research will contribute to the theoretical understanding of agentic AI, open-source FMs, and GPTs by exploring their capabilities, limitations, and potential implications in the context of open science. This will include developing new models and frameworks for understanding the behavior and impact of these technologies.</li>
+<li><strong>Interdisciplinary Approach:</strong> This research will adopt an interdisciplinary approach, drawing on insights from computer science, law, ethics, and social science to provide a holistic understanding of the complex issues surrounding agentic AI and open science.</li>
+</ul>
+<p><strong>Potential Overlaps and Conflicts</strong></p>
+<p>Investigating the potential overlaps and conflicts between agentic AI and open data/open science mandates is a crucial step in this research [9]. While both aim to advance knowledge and benefit society, there might be tensions between the autonomous nature of agentic AI and the principles of transparency and accountability in open science. For example, the "black box" nature of some AI models might make it difficult to understand how they arrive at their conclusions, which could conflict with the open science goal of making research processes transparent and reproducible.</p>
+<p>Furthermore, the use of agentic AI in research could raise concerns about data privacy and security, especially when dealing with sensitive information in open data environments. Addressing these potential overlaps and conflicts will be essential for developing responsible AI governance frameworks that align with open science principles.</p>
+<p><strong>Research Questions</strong></p>
+<p>This research will address the following key questions:</p>
+<ul>
+<li>How do recent mandates for open data and open science influence the development and deployment of agentic AI, open-source FMs, and GPTs?</li>
+<li>What are the potential overlaps and conflicts between the principles of open science and the development of agentic AI systems?</li>
+<li>How can open-source FMs and GPTs be leveraged to promote open and collaborative AI research while mitigating potential risks?</li>
+<li>What are the ethical implications of using agentic AI systems in research and development, particularly in the context of open data and open science?</li>
+<li>How can we ensure that the development and deployment of agentic AI align with societal values and contribute to the public good?</li>
+</ul>
+<p><strong>Research Methodology</strong></p>
+<p>This research will employ a mixed-methods approach, combining qualitative and quantitative data collection and analysis techniques. The following methodologies will be used:</p>
+<ul>
+<li><strong>Case Studies:</strong> In-depth case studies will be conducted to examine the use of agentic AI, open-source FMs, and GPTs in various research domains. This will involve analyzing real-world examples of how these technologies are being used and their impact on research practices and outcomes. For example, case studies could focus on how researchers in different fields are using open-source FMs to develop new AI applications or how agentic AI is being used to automate data analysis and interpretation.</li>
+<li><strong>Surveys:</strong> Surveys will be conducted to gather data on the attitudes, perceptions, and practices of researchers and developers regarding open data, open science, and agentic AI. This will provide insights into the current state of open science in the AI community and identify potential challenges and opportunities. For instance, surveys could explore researchers' awareness and adoption of open data and open science principles, their experiences with using agentic AI in research, and their concerns about potential risks and ethical implications.</li>
+<li><strong>Experimental Designs:</strong> Experiments will be conducted to investigate the performance, capabilities, and limitations of agentic AI systems in specific research tasks. This will involve comparing the performance of different AI models and evaluating their effectiveness in achieving research goals. For example, experiments could compare the accuracy and efficiency of different agentic AI systems in tasks such as literature review, data analysis, or hypothesis generation.</li>
+<li><strong>Literature Review:</strong> A comprehensive review of existing literature on agentic AI, open-source FMs, GPTs, open data, and open science will be conducted. This will provide a theoretical foundation for the research and identify key concepts, debates, and gaps in the current literature. This review will include an analysis of relevant publications, policy documents, and ethical guidelines to inform the research design and interpretation of findings.</li>
+</ul>
+<p><strong>Conclusion</strong></p>
+<p>This research proposal outlines a comprehensive investigation into the intersection of agentic AI, open-source FMs, and GPTs with recent mandates for open data and open science. By addressing key research questions and employing a robust methodology, this project will generate valuable insights into the broader impacts and intellectual merit of these emerging technologies. The findings will contribute to the development of responsible AI governance frameworks, promote open and collaborative research practices, and ultimately advance the progress of science for the benefit of society.</p>
+<p><strong>Synthesis</strong></p>
+<p>This research proposal aims to investigate the complex relationship between agentic AI, open-source FMs, and GPTs with the growing movement towards open data and open science. By combining case studies, surveys, experimental designs, and a comprehensive literature review, this project will explore the potential benefits, challenges, and ethical implications of these technologies in the context of open and transparent research practices. The findings will contribute to a deeper understanding of how these technologies can be leveraged to advance scientific knowledge while ensuring responsible development and deployment that aligns with societal values. This research will have significant implications for the field of AI, shaping future research directions and informing policy decisions related to open science and AI governance.</p>
+</div>
+</div>
+</div>
+</details>
+<h3 id="example-3-personal-assistant-tasks">Example 3: Personal Assistant Tasks<a class="headerlink" href="#example-3-personal-assistant-tasks" title="Permanent link">&para;</a></h3>
+<p>ChatGPT can be used as a personal assistant to help you with a variety of tasks. For instance, you can use it to draft emails, manage your calendar, or schedule meetings.</p>
+<p>You can ask ChatGPT to draft an email by giving it the main points to include. For instance:</p>
+<details class="example">
+<summary>Drafting an email</summary>
+<p>You can ask ChatGPT to draft an email by giving it the main points to include. For instance:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:4"><input checked="checked" id="example-3-personal-assistant-tasks-prompt" name="__tabbed_5" type="radio" /><input id="example-3-personal-assistant-tasks-copilot-response" name="__tabbed_5" type="radio" /><input id="example-3-personal-assistant-tasks-chatgpt-response" name="__tabbed_5" type="radio" /><input id="example-3-personal-assistant-tasks-gemini-advanced-20-response" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="example-3-personal-assistant-tasks-prompt">Prompt</label><label for="example-3-personal-assistant-tasks-copilot-response">CoPilot Response</label><label for="example-3-personal-assistant-tasks-chatgpt-response">ChatGPT Response</label><label for="example-3-personal-assistant-tasks-gemini-advanced-20-response">Gemini Advanced 2.0 Response</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>can you help me draft an email? It&#39;s for my team, summarizing the key points from our meeting today. 
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>The points are:
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>We agreed on a new project timeline with a final deadline of July 30th.
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>Our client asked for a weekly status update, which we&#39;ll rotate among team members.
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>We decided to conduct a brainstorming session next Wednesday to come up with new marketing strategies.
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>Remember to submit expense reports by the end of this week.
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<p>Sure, I'd be happy to help! Here's a draft for your email:</p>
+<hr />
+<p><strong>Subject: Summary of Today's Meeting</strong></p>
+<p>Hi Team,</p>
+<p>I hope this email finds you well. I wanted to summarize the key points from our meeting today:</p>
+<ol>
+<li><strong>New Project Timeline</strong>: We have agreed on a new project timeline with a final deadline of <strong>July 30<sup>th</sup></strong>.</li>
+<li><strong>Weekly Status Updates</strong>: Our client has requested weekly status updates. We will rotate this responsibility among team members.</li>
+<li><strong>Brainstorming Session</strong>: We will conduct a brainstorming session next Wednesday to come up with new marketing strategies.</li>
+<li><strong>Expense Reports</strong>: Please remember to submit your expense reports by the end of this week.</li>
+</ol>
+<p>Thank you for your attention to these matters. Let's continue to work together to achieve our goals.</p>
+<p>Best regards,<br />
+[Your Name]</p>
+<hr />
+<p>Feel free to adjust any part of this draft to better suit your style or add any additional information. Does this look good to you?</p>
+</div>
+<div class="tabbed-block">
+<p>Subject: Meeting Recap and Action Items</p>
+<p>Hello Team,</p>
+<p>Thank you all for attending today’s meeting. Here is a quick summary of the key points discussed:</p>
+<ol>
+<li><strong>New Project Timeline</strong>  </li>
+<li>
+<p>We agreed on a revised timeline, with the final deadline set for <strong>July 30</strong>.</p>
+</li>
+<li>
+<p><strong>Weekly Status Updates</strong>  </p>
+</li>
+<li>
+<p>Our client has requested weekly status reports. We will rotate responsibility for these updates among team members to keep everyone involved.</p>
+</li>
+<li>
+<p><strong>Upcoming Brainstorming Session</strong>  </p>
+</li>
+<li>
+<p>We will hold a brainstorming session next <strong>Wednesday</strong> to develop new marketing strategies. Please come prepared with ideas and insights.</p>
+</li>
+<li>
+<p><strong>Expense Reports</strong>  </p>
+</li>
+<li>A reminder to submit your expense reports by the end of this week.</li>
+</ol>
+<p>If you have any questions or need additional clarification, feel free to reach out. Let’s continue to collaborate and work towards our goals.</p>
+<p>Thanks again for your time and effort!</p>
+<p>Best regards,</p>
+<p>Your Name
+Your Title / Position
+Company Name</p>
+</div>
+<div class="tabbed-block">
+<p>Okay, here is a draft email summarizing the key points from your meeting:</p>
+<p><strong>Subject: Meeting Summary and Action Items</strong></p>
+<p>Hi Team,</p>
+<p>This email summarizes the key takeaways and action items from our meeting earlier today.</p>
+<p><strong>Key Decisions and Updates:</strong></p>
+<ul>
+<li><strong>Project Timeline:</strong> We finalized the project timeline and agreed on a <strong>final deadline of July 30<sup>th</sup></strong>. Please ensure all tasks are scheduled accordingly to meet this date.</li>
+<li><strong>Client Communication:</strong>  Our client has requested weekly status updates. We will implement a rotating schedule for these updates, and more details on the rotation will be shared soon. Each team member will be responsible for drafting and sending the update during their assigned week.</li>
+<li><strong>Brainstorming Session:</strong> We will be holding a brainstorming session next <strong>Wednesday [Insert Date] at [Insert Time] in [Insert Location/Meeting Link]</strong> to develop new marketing strategies. Please come prepared with ideas to share.</li>
+</ul>
+<p><strong>Action Items:</strong></p>
+<ul>
+<li><strong>Expense Reports:</strong> Please remember to submit all expense reports by the end of this week, <strong>[Insert Date]</strong>.</li>
+<li><strong>Prepare for Brainstorm:</strong> As mentioned, please come to the brainstorming meeting on Wednesday with some ideas prepared.</li>
+</ul>
+<p>Please let me know if you have any questions or need further clarification on any of these points.</p>
+<p>Thanks,</p>
+<p>[Your Name]</p>
+</div>
+</div>
+</div>
+</details>
+<h3 id="example-4-complex-web-search">Example 4: Complex Web Search<a class="headerlink" href="#example-4-complex-web-search" title="Permanent link">&para;</a></h3>
+<p>Suppose you're examining the implications of climate change on polar ice caps for an environmental science lecture you're writing.</p>
+<p>A conventional search might yield an overwhelming number of results, making it challenging to pinpoint the most relevant information. </p>
+<p>With GPTs for research you can perform a more refined search like:</p>
+<details class="example">
+<summary>Complex web searches</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="6:4"><input checked="checked" id="example-4-complex-web-search-prompt" name="__tabbed_6" type="radio" /><input id="example-4-complex-web-search-perplexityai-response" name="__tabbed_6" type="radio" /><input id="example-4-complex-web-search-chatgpt-o1-response" name="__tabbed_6" type="radio" /><input id="example-4-complex-web-search-google-advanced-w-deep-research-response" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="example-4-complex-web-search-prompt">Prompt</label><label for="example-4-complex-web-search-perplexityai-response">Perplexity.ai response</label><label for="example-4-complex-web-search-chatgpt-o1-response">ChatGPT o1 response</label><label for="example-4-complex-web-search-google-advanced-w-deep-research-response">Google Advanced w/ Deep Research response</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>Find recent and highly cited peer-reviewed articles from top ranked journals 
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>that report the rate of polar ice melt.
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<p>Recent peer-reviewed studies from high-impact journals have reported alarming rates of polar ice melt, particularly in the Arctic and Antarctic regions. Here are some key findings from recent and highly cited articles:</p>
+<p><strong>Arctic Sea Ice Loss</strong></p>
+<p>A 2020 study published in Nature Climate Change found that the Arctic could experience ice-free summers as early as 2035[1]. This rapid loss of sea ice is attributed to increased solar heating of the ocean surface, which accelerates ice melt and creates a feedback loop.</p>
+<p><strong>Antarctic Ice Sheet Melt</strong></p>
+<p>A 2024 study in Nature revealed that the record-low Antarctic sea ice in 2023 led to unprecedented ocean heat loss to the atmosphere[3]. Key findings include:</p>
+<ul>
+<li>Sea ice concentration reduced by up to 80% in some regions</li>
+<li>A doubling of mid-winter ocean heat loss</li>
+<li>A shift in peak heat loss from late April to mid-June</li>
+</ul>
+<p><strong>Greenland Ice Sheet Melt</strong></p>
+<p>Research has shown accelerating ice loss in Greenland:</p>
+<ul>
+<li>Extensive melt events occurred in 2012 and 2019</li>
+<li>Record melt was observed in 2019</li>
+<li>Rain-driven melt reached Greenland Summit in August 2021(4)</li>
+</ul>
+<p><strong>Global Impact</strong></p>
+<p>A 2020 study published in PNAS examined the future climate response to Antarctic Ice Sheet melt[5]. The research suggests that meltwater and ice discharge from a retreating Antarctic Ice Sheet could have significant impacts on global climate over the next 250 years, affecting warming rates and ice sheet stability.</p>
+<p><strong>Implications</strong></p>
+<p>The rapid melting of polar ice caps has far-reaching consequences:</p>
+<ul>
+<li>Rising sea levels</li>
+<li>Changes in ocean circulation patterns</li>
+<li>Alterations to marine ecosystems</li>
+<li>Potential release of trapped greenhouse gases</li>
+</ul>
+<p>These studies underscore the urgent need for continued monitoring and mitigation efforts to address the accelerating loss of polar ice.</p>
+<p>Citations:
+(1) https://www.fortunejournals.com/articles/polar-ice-caps-melting-a-hallmark-to-vanishing-ice-along-with-a-global-climate-change-and-addressing-solutions-to-it.pdf
+(2) https://www.mdpi.com/2073-4433/14/2/409
+(3) https://www.nature.com/articles/s41586-024-08368-y
+(4) https://tc.copernicus.org/articles/18/2691/2024/
+(5) https://pmc.ncbi.nlm.nih.gov/articles/PMC7531873/
+(6) https://tc.copernicus.org/articles/17/3083/2023/
+(7) https://www.nature.com/articles/s41558-023-01818-x
+(8) https://www.science.org/doi/10.1126/sciadv.adn9188
+(9) https://rmets.onlinelibrary.wiley.com/doi/10.1002/wea.4518
+(10) https://news.uchicago.edu/story/scientists-find-evidence-meltwater-fracturing-ice-shelves-antarctica</p>
+</div>
+<div class="tabbed-block">
+<p>Below you will find several <strong>recent</strong> (primarily from the last 5–7 years) and <strong>highly cited</strong> peer-reviewed articles from <strong>top-ranked journals</strong> that report on polar ice melt rates—particularly for Greenland and Antarctica. These studies use satellite observations, climate models, and other remote-sensing techniques to estimate changes in ice mass balance.</p>
+<hr />
+<p><strong>1. Shepherd et al. (2018)</strong><br />
+<strong>Citation</strong>: Shepherd, A., Ivins, E. R., Rignot, E., Smith, B., van den Broeke, M. R., &amp; The IMBIE Team. (2018). <em>Mass balance of the Antarctic Ice Sheet from 1992 to 2017</em>. <strong>Nature</strong>, 558(7709), 219–222.<br />
+<strong>Link</strong>: <a href="https://doi.org/10.1038/s41586-018-0179-y">https://doi.org/10.1038/s41586-018-0179-y</a></p>
+<ul>
+<li><strong>Journal reputation</strong>: Nature is one of the highest-impact journals worldwide.  </li>
+<li><strong>Citation count</strong>: Well over 1,000 citations (Google Scholar).  </li>
+<li><strong>Key findings</strong>:  </li>
+<li>Antarctica lost approximately 2,720 ± 1,390 gigatonnes (Gt) of ice from 1992 to 2017.  </li>
+<li>This contributed about 7.6 mm to global mean sea-level rise over that period.  </li>
+<li>The rate of ice loss <strong>increased</strong> from ~76 ± 57 Gt/yr in the 1990s to ~219 ± 43 Gt/yr between 2012 and 2017.</li>
+</ul>
+<hr />
+<p><strong>2. Shepherd et al. (2020)</strong><br />
+<strong>Citation</strong>: Shepherd, A., Ivins, E. R., Rignot, E., Smith, B., van den Broeke, M. R., &amp; The IMBIE Team. (2020). <em>Mass balance of the Greenland Ice Sheet from 1992 to 2018</em>. <strong>Nature</strong>, 579(7798), 233–239.<br />
+<strong>Link</strong>: <a href="https://doi.org/10.1038/s41586-020-00166-7">https://doi.org/10.1038/s41586-020-00166-7</a></p>
+<ul>
+<li><strong>Journal reputation</strong>: Nature, again extremely high impact.  </li>
+<li><strong>Citation count</strong>: 700+ citations (Google Scholar).  </li>
+<li><strong>Key findings</strong>:  </li>
+<li>Greenland lost 3.8 trillion tonnes of ice from 1992 to 2018.  </li>
+<li>The average rate of ice loss is 223 ± 15 Gt/yr over that time span.  </li>
+<li>Ice loss increased significantly after 2010, driving sea-level rise faster than many climate models predicted.</li>
+</ul>
+<hr />
+<p><strong>3. Rignot et al. (2019)</strong><br />
+<strong>Citation</strong>: Rignot, E., Mouginot, J., Scheuchl, B., van den Broeke, M., van Wessem, J. M., &amp; Morlighem, M. (2019). <em>Four decades of Antarctic Ice Sheet mass balance from 1979 to 2017</em>. <strong>Proceedings of the National Academy of Sciences (PNAS)</strong>, 116(4), 1095–1103.<br />
+<strong>Link</strong>: <a href="https://doi.org/10.1073/pnas.1812883116">https://doi.org/10.1073/pnas.1812883116</a></p>
+<ul>
+<li><strong>Journal reputation</strong>: PNAS is a high-impact multidisciplinary journal.  </li>
+<li><strong>Citation count</strong>: 600+ citations (Google Scholar).  </li>
+<li><strong>Key findings</strong>:  </li>
+<li>Analyzed Antarctic mass balance over a longer period (1979–2017) than most prior work.  </li>
+<li>Found an <strong>acceleration</strong> in mass loss that agrees with other satellite-based assessments.  </li>
+<li>West Antarctica shows the largest losses and the fastest acceleration.</li>
+</ul>
+<hr />
+<p><strong>4. Slater et al. (2021)</strong><br />
+<strong>Citation</strong>: Slater, T., Shepherd, A., Ivins, E. R., et al. (2021). <em>Review article: Earth's ice imbalance</em>. <strong>The Cryosphere</strong>, 15(5), 233–245.<br />
+<strong>Link</strong>: <a href="https://doi.org/10.5194/tc-15-233-2021">https://doi.org/10.5194/tc-15-233-2021</a></p>
+<ul>
+<li><strong>Journal reputation</strong>: The Cryosphere is a well-regarded journal of the European Geosciences Union, focusing on ice, snow, and frozen ground research.  </li>
+<li><strong>Citation count</strong>: 200+ citations (Google Scholar).  </li>
+<li><strong>Key findings</strong>:  </li>
+<li>A comprehensive review of global ice losses (including glaciers, polar ice sheets, and sea ice) from satellite records.  </li>
+<li>Concludes that the rate of Earth’s ice loss has increased by 65% over a 23-year period, primarily driven by accelerating losses from polar ice sheets.</li>
+</ul>
+<hr />
+<p><strong>5. IPCC Assessment Reports (2019–2022)</strong></p>
+<p>While not a single study, the Intergovernmental Panel on Climate Change (IPCC) releases comprehensive assessment reports synthesizing peer-reviewed literature:</p>
+<ul>
+<li><strong>Key documents</strong>:  </li>
+<li><em>IPCC Special Report on the Ocean and Cryosphere in a Changing Climate (SROCC)</em> (2019)  </li>
+<li><em>Sixth Assessment Report (AR6), Working Group I</em> (2021)  </li>
+<li><strong>Key findings</strong>:  </li>
+<li>Conclude that both Greenland and Antarctic ice sheets have been losing mass at an increasing rate.  </li>
+<li>Stress that under high greenhouse-gas emission scenarios, this melt will accelerate, raising sea levels substantially by 2100 and beyond.</li>
+</ul>
+<p>Although the IPCC reports themselves are not original research papers, they are <strong>highly cited</strong> and reflect the consensus on polar ice melt rates from multiple top-tier, peer-reviewed studies.</p>
+<hr />
+<p><strong>How to Access and Track Citations</strong></p>
+<ol>
+<li><strong>Publisher Websites</strong>:  </li>
+<li>
+<p>Nature, Science, PNAS, and The Cryosphere typically host original research articles and supplementary materials.</p>
+</li>
+<li>
+<p><strong>Google Scholar</strong>:  </p>
+</li>
+<li>Provides citation counts and links to articles.  </li>
+<li>
+<p>Shows related papers to explore additional primary literature.</p>
+</li>
+<li>
+<p><strong>Institutional Libraries</strong>:  </p>
+</li>
+<li>
+<p>University libraries often provide subscriptions to these journals.</p>
+</li>
+<li>
+<p><strong>Preprint &amp; Repository Servers</strong>:  </p>
+</li>
+<li>arXiv (often for Earth science and climate modeling).  </li>
+<li>ESSOAr (Earth and Space Science Open Archive).  </li>
+</ol>
+<hr />
+<p><strong>In Summary</strong></p>
+<ul>
+<li><strong>Antarctica</strong> has lost ice at an increasing rate, rising from tens of gigatonnes per year in the 1990s to a few hundred gigatonnes per year in recent years.  </li>
+<li><strong>Greenland</strong> has similarly seen a jump in melt rates, reaching over 200 Gt/yr on average in the past few decades.  </li>
+<li>These losses have contributed several millimeters each to global sea-level rise, with continued acceleration expected under current and future warming.  </li>
+</ul>
+<p>These articles represent the most authoritative and cited sources on <strong>polar ice melt rates</strong>, providing rigorous quantitative estimates of how quickly Earth’s ice sheets are thinning.</p>
+</div>
+<div class="tabbed-block"></div>
+</div>
+</div>
+<p><a href="https://g.co/gemini/share/4ff7ab47bc33" target="_blank">View response in Gemini</a></p>
+<p><a href="https://docs.google.com/document/d/1uM4MoEK-gotSGPqkNbC6GDK5tEdT5gAwAa5pcq_bk_A/edit?usp=sharing" target="_blank">View response in Google Docs</a></p>
+</details>
+<h3 id="example-5-data-aggregation">Example 5: Data Aggregation<a class="headerlink" href="#example-5-data-aggregation" title="Permanent link">&para;</a></h3>
+<p>Imagine you're evaluating the impact of a recent educational policy change across several countries for a comparative education study. Instead of manually hunting for data for each country, you could instruct a GPT to research it for you.</p>
+<details class="example">
+<summary>Data aggregation</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="7:4"><input checked="checked" id="example-5-data-aggregation-prompt" name="__tabbed_7" type="radio" /><input id="example-5-data-aggregation-perplexityai-response" name="__tabbed_7" type="radio" /><input id="example-5-data-aggregation-chatgpt-o1-response" name="__tabbed_7" type="radio" /><input id="example-5-data-aggregation-google-advanced-w-deep-research-response" name="__tabbed_7" type="radio" /><div class="tabbed-labels"><label for="example-5-data-aggregation-prompt">Prompt</label><label for="example-5-data-aggregation-perplexityai-response">Perplexity.ai response</label><label for="example-5-data-aggregation-chatgpt-o1-response">ChatGPT o1 response</label><label for="example-5-data-aggregation-google-advanced-w-deep-research-response">Google Advanced w/ Deep Research response</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>Compile the latest data on literacy rates in OECD countries following the 2024 education policy modifications.
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<p><a href="https://www.perplexity.ai/search/compile-the-latest-data-on-lit-tm7JIkxDSOabgRhi_cMePg#0" target="_blank">View response in Perplexity.ai</a></p>
+<p>You may reference the table provided above for the latest literacy rate data for OECD countries as of 2025. This table includes the most up-to-date information following the 2024 education policy modifications.</p>
+<p>A few key observations based on the data:</p>
+<ol>
+<li>
+<p>Most OECD countries maintain very high literacy rates, with many at or near 99-100%.</p>
+</li>
+<li>
+<p>The United States shows a notably lower literacy rate of 79%, which is significantly below other OECD members.</p>
+</li>
+<li>
+<p>Some countries like Luxembourg, Norway, and Finland report 100% literacy rates.</p>
+</li>
+<li>
+<p>There appears to be no data available for Greece in the table.</p>
+</li>
+<li>
+<p>Austria's reported literacy rate of 254.4% is likely an error in the data, as literacy rates cannot exceed 100%.</p>
+</li>
+</ol>
+<p>It's important to note that while this data reflects the situation after the 2024 education policy changes, the "change_since_2024_policy" column is empty for all countries, suggesting that the specific impacts of the 2024 policy modifications are not directly quantified in this dataset.</p>
+<p>For broader context, the overall OECD members' literacy rate was reported at 97.11% in 2021, showing a slight increase from previous years[1]. However, recent PISA results have indicated some concerning trends in student performance across OECD countries, particularly in mathematics[2][4]. This suggests that while overall literacy rates remain high, there may be ongoing challenges in maintaining and improving educational outcomes that require continued attention and policy interventions.</p>
+<p>Citations:
+[1] https://www.macrotrends.net/global-metrics/countries/OED/oecd-members/literacy-rate
+[2] https://www.oecd.org/content/dam/oecd/en/publications/reports/2024/11/education-policy-outlook-2024_0411a0c4/dd5140e4-en.pdf
+[3] https://www.oecd.org/en/publications/adults-with-low-literacy-and-numeracy-skills_5jrxnjdd3r5k-en.html
+[4] https://www.oecd.org/en/publications/education-at-a-glance-2024_c00cad36-en.html
+[5] https://www.oecd.org/content/dam/oecd/en/publications/reports/2024/09/education-at-a-glance-2024_5ea68448/c00cad36-en.pdf
+[6] https://www.oecd.org/en/topics/adult-skills-and-work.html
+[7] https://www.oecd.org/en/topics/sub-issues/reading-literacy.html
+[8] https://oecdedutoday.com/oecd-education-webinars-2024/
+[9] https://worldpopulationreview.com/country-rankings/literacy-rate-by-country
+[10] https://www.statistik.at/fileadmin/announcement/2024/12/20241210PIAAC2022_23EN.pdf
+[11] https://www.datapandas.org/ranking/literacy-rate-by-country
+[12] https://www150.statcan.gc.ca/n1/daily-quotidien/241210/dq241210a-eng.htm
+[13] https://www.theglobaleconomy.com/Chile/Literacy_rate/
+[14] https://worldpopulationreview.com/country-rankings/literacy-rate-by-country
+[15] https://denmark.net/literacy-rate-denmark/
+[16] https://www.macrotrends.net/global-metrics/countries/EST/estonia/literacy-rate
+[17] https://www.macrotrends.net/global-metrics/countries/fra/france/literacy-rate
+[18] https://www.countryreports.org/country/Germany/population.htm
+[19] https://www.oecdbetterlifeindex.org/countries/germany/
+[20] https://www.macrotrends.net/global-metrics/countries/grc/greece/literacy-rate
+[21] https://www.theglobaleconomy.com/Hungary/literacy_rate/
+[22] https://theorkneynews.scot/2024/12/26/iceland-literacy-saga/
+[23] https://www.macrotrends.net/global-metrics/countries/ita/italy/literacy-rate
+[24] https://www.uscareerinstitute.edu/blog/which-countries-have-the-highest-and-lowest-literacy-rates
+[25] https://www.macrotrends.net/global-metrics/countries/kor/south-korea/literacy-rate
+[26] https://op.europa.eu/webpub/eac/education-and-training-monitor/en/country-reports/latvia.html
+[27] https://www.macrotrends.net/global-metrics/countries/LTU/lithuania/literacy-rate
+[28] https://www.macrotrends.net/global-metrics/countries/mex/mexico/literacy-rate
+[29] https://www.macrotrends.net/global-metrics/countries/NZL/new-zealand/literacy-rate
+[30] https://www.theglobaleconomy.com/Poland/literacy_rate/
+[31] https://tradingeconomics.com/portugal/literacy-rate-adult-total-percent-of-people-ages-15-and-above-wb-data.html
+[32] https://countrymeters.info/en/Slovakia
+[33] https://www.macrotrends.net/global-metrics/countries/SVN/slovenia/literacy-rate
+[34] https://www.macrotrends.net/global-metrics/countries/esp/spain/literacy-rate
+[35] https://countrymeters.info/en/Sweden
+[36] https://countrymeters.info/en/Switzerland
+[37] https://ycharts.com/indicators/turkey_adult_literacy_rate
+[38] https://countrymeters.info/en/United_Kingdom_(UK)
+[39] https://www.prosperityforamerica.org/literacy-statistics/</p>
+</div>
+<div class="tabbed-block">
+<p>Below is a concise rationale for why it is important to compile and analyze the latest literacy data in OECD countries after the 2023 education policy modifications:</p>
+<ol>
+<li>
+<p><strong>Measure Policy Impact</strong><br />
+By comparing new literacy data to previous benchmarks, policymakers and researchers can gauge whether the 2023 education reforms have had a positive, negative, or negligible effect on literacy outcomes.</p>
+</li>
+<li>
+<p><strong>Identify Successful Interventions</strong><br />
+Tracking changes across different demographic groups, regions, and types of schooling highlights which specific strategies—such as teacher training, curriculum updates, or funding mechanisms—are most effective in improving reading and writing proficiency.</p>
+</li>
+<li>
+<p><strong>Inform Future Decision-Making</strong><br />
+Data-driven insights allow governments and international organizations to allocate resources more efficiently, refine existing programs, and scale best practices to areas that need additional support.</p>
+</li>
+<li>
+<p><strong>Strengthen International Comparisons</strong><br />
+Collecting literacy metrics across all OECD members contributes to a broader, standardized set of data. This comparability helps countries learn from each other’s successes and challenges, encouraging collaborative policy improvement.</p>
+</li>
+<li>
+<p><strong>Enhance Accountability</strong><br />
+When policymakers and educational institutions know the public and international community are monitoring changes in literacy rates, there is added incentive to implement and maintain effective educational strategies.</p>
+</li>
+<li>
+<p><strong>Support Lifelong Learning</strong><br />
+Literacy underpins critical skills such as digital competency and employability. Up-to-date data helps governments shape lifelong learning policies that align with evolving job market demands and technological changes.</p>
+</li>
+</ol>
+<hr />
+<p><strong>About Current Data Availability</strong></p>
+<ul>
+<li>
+<p><strong>OECD Data Sources</strong><br />
+The OECD primarily gathers adult literacy data through the Programme for the International Assessment of Adult Competencies (PIAAC). However, full, post-2023 policy modification results may not be published immediately, as the data collection and analysis cycles can lag by a few years.</p>
+</li>
+<li>
+<p><strong>Complementary Reports</strong><br />
+Alongside PIAAC, organizations such as UNESCO and the World Bank also monitor literacy globally. Reviewing these complementary studies can offer insights into early trends while official OECD updates are pending.</p>
+</li>
+</ul>
+<hr />
+<p>Compiling these data points, once published, will be crucial to understanding how the 2023 education policy modifications have influenced literacy rates in the OECD, enabling evidence-based decision-making for future educational reforms.</p>
+</div>
+<div class="tabbed-block">
+<p><a href="" target="_blank">View response in Gemini</a></p>
+<p><a href="" target="_blank">View response in Google Docs</a></p>
+</div>
+</div>
+</div>
+</details>
+<h3 id="example-6-information-verification">Example 6: Information Verification<a class="headerlink" href="#example-6-information-verification" title="Permanent link">&para;</a></h3>
+<p>In a world abundant with misinformation, verifying claims is crucial. For example, if you encounter a claim that a particular university has a certain acceptance rate, you can verify it by asking:</p>
+<details class="example">
+<summary>Information verification</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="8:4"><input checked="checked" id="example-6-information-verification-prompt" name="__tabbed_8" type="radio" /><input id="example-6-information-verification-perplexityai-response" name="__tabbed_8" type="radio" /><input id="example-6-information-verification-chatgpt-o1-response" name="__tabbed_8" type="radio" /><input id="example-6-information-verification-gemini-advanced-w-deep-research-response" name="__tabbed_8" type="radio" /><div class="tabbed-labels"><label for="example-6-information-verification-prompt">Prompt</label><label for="example-6-information-verification-perplexityai-response">Perplexity.ai response</label><label for="example-6-information-verification-chatgpt-o1-response">ChatGPT o1 response</label><label for="example-6-information-verification-gemini-advanced-w-deep-research-response">Gemini Advanced w/ Deep Research response</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>Validate the current acceptance rate of The University of Arizona, Arizona State University, and Northern Arizona University.
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<p>The current acceptance rates for the three universities are:</p>
+<ol>
+<li>University of Arizona: 84.6% (1,5)</li>
+<li>Arizona State University: 86.5% (2,6)</li>
+<li>Northern Arizona University: 80% (3,7)
+These acceptance rates are based on the most recent data available from the search results. The University of Arizona and Arizona State University have slightly higher acceptance rates compared to Northern Arizona University. All three universities have acceptance rates that are considerably higher than the national average of 56.7%(1,2).</li>
+</ol>
+<p>Citations:
+(1) https://www.acceptancerate.com/schools/university-of-arizona
+(2) https://www.acceptancerate.com/schools/arizona-state-university
+(3) https://www.shiksha.com/studyabroad/usa/universities/northern-arizona-university/acceptance-rate
+(4) https://www.collegedroid.com/colleges/northern-arizona-university/admission
+(5) https://www.shiksha.com/studyabroad/usa/universities/university-of-arizona/admissions
+(6) https://www.usnews.com/best-colleges/arizona-state-university-1081/applying
+(7) https://www.niche.com/colleges/northern-arizona-university/admissions/
+(8) https://www.usnews.com/best-colleges/university-of-arizona-1083/applying</p>
+</div>
+<div class="tabbed-block">
+<p>Below is a general overview and explanation (“reasoned validation”) of the most recently reported acceptance rates for Arizona’s three public universities—The University of Arizona, Arizona State University, and Northern Arizona University—as well as considerations about why these acceptance rates look the way they do. Please note that acceptance rates can change year to year depending on factors like the number of applications received, institutional priorities, and yield (the percentage of admitted students who end up enrolling). Always consult the universities’ official websites or reputable college data sources (e.g., IPEDS, Common Data Set, or university fact books) for the most up-to-date information.</p>
+<hr />
+<p><strong>1. University of Arizona (UArizona)</strong></p>
+<p><strong>Reported Acceptance Rate</strong></p>
+<ul>
+<li><strong>Typical acceptance range</strong>: 80–85%<br />
+Over the past few admission cycles (2021–2023), the University of Arizona’s overall acceptance rate has often hovered between 80% and 85%. Some external sources (e.g., U.S. News, College Board) list it around 85%.</li>
+</ul>
+<p><strong>Reasons for This Acceptance Rate</strong></p>
+<ol>
+<li><strong>Land-Grant Mission</strong>: As a land-grant university, UArizona serves the state population broadly, influencing a relatively inclusive admissions policy.  </li>
+<li><strong>Large Enrollment Goals</strong>: UArizona aims to maintain a robust undergraduate population and has the capacity (campus size and resources) to admit a high volume of students.  </li>
+<li><strong>Variety of Programs</strong>: With hundreds of majors and pathways, UArizona can accommodate diverse academic interests and varying levels of academic preparedness, thereby contributing to a higher overall acceptance rate.</li>
+</ol>
+<hr />
+<p><strong>2. Arizona State University (ASU)</strong></p>
+<p><strong>Reported Acceptance Rate</strong></p>
+<ul>
+<li><strong>Typical acceptance range</strong>: 85–90%<br />
+In recent data, Arizona State University’s acceptance rate often rests near the upper-80% range. Some reports list it closer to 88–89%, depending on the specific year and source.</li>
+</ul>
+<p><strong>Reasons for This Acceptance Rate</strong></p>
+<ol>
+<li><strong>Charter &amp; Inclusivity</strong>: ASU’s charter emphasizes inclusivity rather than exclusivity, seeking to measure itself by “who it includes, not who it excludes.” This philosophy underpins a relatively high acceptance rate.  </li>
+<li><strong>Multiple Campuses and Online Programs</strong>: ASU has multiple campuses in the Phoenix metropolitan area and extensive online programs, allowing them to offer admission to a large, diverse pool of applicants.  </li>
+<li><strong>Application Volume</strong>: ASU attracts one of the largest applicant pools in the country; while many are admitted, not all ultimately enroll, which helps manage capacity.</li>
+</ol>
+<hr />
+<p><strong>3. Northern Arizona University (NAU)</strong></p>
+<p><strong>Reported Acceptance Rate</strong></p>
+<ul>
+<li><strong>Typical acceptance range</strong>: 75–85%<br />
+NAU’s acceptance rate is also high; reported figures often fall in the high-70s to low-80s percentile. A commonly cited figure is around 82%.</li>
+</ul>
+<p><strong>Reasons for This Acceptance Rate</strong></p>
+<ol>
+<li><strong>Regional Focus &amp; Mission</strong>: NAU is regionally focused on serving northern Arizona’s educational needs but also attracts out-of-state students looking for a traditional campus environment in Flagstaff.  </li>
+<li><strong>Enrollment Strategies</strong>: Like other state universities, NAU has capacity-based enrollment goals and offers admissions to a significant proportion of its applicants.  </li>
+<li><strong>Broad Program Offerings</strong>: NAU’s range of undergraduate degrees, especially in fields like forestry, education, health sciences, and hospitality, supports a wide net for admissions.</li>
+</ol>
+<hr />
+<p><strong>Important Considerations</strong></p>
+<ol>
+<li><strong>Year-to-Year Variability</strong>: Acceptance rates can fluctuate. If a university sees a surge in applications but enrollments remain stable, the acceptance rate might temporarily dip, or vice versa.  </li>
+<li><strong>Program-Specific Differences</strong>: Highly competitive programs within these universities (e.g., certain honors colleges, nursing, engineering, business) might have more selective admission than the university-wide average.  </li>
+<li><strong>Residency vs. Non-Residency</strong>: Public universities may have different admission thresholds for in-state vs. out-of-state students. In-state applicants might have a slightly higher acceptance rate because state universities prioritize educating resident students.  </li>
+<li><strong>Data Source Variations</strong>: Different organizations (U.S. News, IPEDS, Common Data Set) may calculate acceptance rates slightly differently. Some include or exclude specific applicant categories, affecting the reported percentage.</li>
+</ol>
+<hr />
+<p><strong>How to Validate the Acceptance Rates</strong></p>
+<ul>
+<li><strong>Check Official University Fact Books</strong>: Most universities publish an annual fact book or institutional data dashboard with up-to-date admissions statistics.  </li>
+<li><strong>Consult IPEDS or Common Data Set</strong>: The Integrated Postsecondary Education Data System (IPEDS) and each school’s Common Data Set provide standardized admissions metrics.  </li>
+<li><strong>Contact Admissions Offices</strong>: For the most recent or mid-year updates, you can reach out to admissions representatives directly or check the admissions section of the university’s website.</li>
+</ul>
+<hr />
+<p><strong>Summary</strong></p>
+<p>Each of Arizona’s three public universities generally has a high acceptance rate—ranging roughly from the mid-70s to around 90%. These rates are reflective of large state institutions with broad missions to serve diverse populations and maintain substantial undergraduate enrollment. To get the most accurate and current figures, always look at official university data or well-established third-party sources.</p>
+</div>
+<div class="tabbed-block">
+<p><a href="https://g.co/gemini/share/824d32771fb7">View response in Gemini</a></p>
+<p>[View response in Google Docs]</p>
+</div>
+</div>
+</div>
+</details>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 University of Arizona
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://orcid.org/0000-0002-6639-7181" target="_blank" rel="noopener" title="orcid.org" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M294.7 188.2h-45.9V342h47.5c67.6 0 83.1-51.3 83.1-76.9 0-41.6-26.5-76.9-84.7-76.9M256 8a248 248 0 1 0 0 496 248 248 0 1 0 0-496m-80.8 360.8h-29.8V161.3h29.8zM160.3 98.5a19.6 19.6 0 1 1 0 39.2 19.6 19.6 0 1 1 0-39.2M300 369h-81V161.3h80.6c76.7 0 110.4 54.8 110.4 103.9 0 53.3-41.7 103.9-110 103.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://scholar.google.com/citations?user=nanIeAYAAAAJ&hl=en" target="_blank" rel="noopener" title="scholar.google.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.242 13.769 0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269M12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/tyson-swetnam/" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/tswetnam" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M459.4 151.7c.3 4.5.3 9.1.3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53C87.4 130.8 165 172.4 252.1 176.9c-1.6-7.8-2.6-15.9-2.6-24C249.5 95.1 296.3 48 354.4 48c30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/tyson-swetnam" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://hub.docker.com/u/tswetnam" target="_blank" rel="noopener" title="hub.docker.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M349.9 236.3h-66.1v-59.4h66.1zm0-204.3h-66.1v60.7h66.1zm78.2 144.8H362v59.4h66.1zm-156.3-72.1h-66.1v60.1h66.1zm78.1 0h-66.1v60.1h66.1zm276.8 100c-14.4-9.7-47.6-13.2-73.1-8.4-3.3-24-16.7-44.9-41.1-63.7l-14-9.3-9.3 14c-18.4 27.8-23.4 73.6-3.7 103.8-8.7 4.7-25.8 11.1-48.4 10.7H2.4c-8.7 50.8 5.8 116.8 44 162.1 37.1 43.9 92.7 66.2 165.4 66.2 157.4 0 273.9-72.5 328.4-204.2 21.4.4 67.6.1 91.3-45.2 1.5-2.5 6.6-13.2 8.5-17.1zm-511.1-27.9h-66v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1zm78.1 0h-66.1v59.4h66.1zm-78.1-72.1h-66.1v60.1h66.1z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.youtube.com/channel/UC5xPt9KZHccC0ehMNEkINzQ" target="_blank" rel="noopener" title="www.youtube.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M549.7 124.1c-6.2-23.7-24.8-42.3-48.3-48.6C458.9 64 288.1 64 288.1 64S117.3 64 74.7 75.5c-23.5 6.3-42 24.9-48.3 48.6C15 167 15 256.4 15 256.4s0 89.4 11.4 132.3c6.3 23.6 24.8 41.5 48.3 47.8C117.3 448 288.1 448 288.1 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zM232.2 337.6V175.2l142.7 81.2z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "navigation.top", "search.highlight", "search.share", "search.suggest", "content.code.copy", "content.code.prettify", "content.tooltips"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../chatbot_widget.js"></script>
+      
+    
+  </body>
+</html>
