@@ -16,7 +16,7 @@
 
         An important fact to consider though is that [*most* of your students are already making use of AI for their assignments and study.](https://www.gse.harvard.edu/ideas/usable-knowledge/24/09/students-are-using-ai-already-heres-what-they-think-adults-should-know){target=_blank} (ref: [:fontawesome-regular-file-pdf: Source](https://digitalthriving.gse.harvard.edu/wp-content/uploads/2024/06/Teen-and-Young-Adult-Perspectives-on-Generative-AI.pdf){target=_blank} ).
 
-        Read about [:simple-openai: OpenAI Educator Considerations](https://platform.openai.com/docs/chatgpt-education/educator-considerations-for-chatgpt){target=_blank}
+        Read about [:fontawesome-brands-openai: OpenAI Educator Considerations](https://platform.openai.com/docs/chatgpt-education/educator-considerations-for-chatgpt){target=_blank}
 
     ??? Success "Yes, but go ahead and read on"
 

@@ -1,0 +1,221 @@
+# Zensical Configuration for GPT 101 Documentation
+# Migrated from MkDocs Material
+
+[project]
+site_name = "GPT 101"
+site_url = "https://tyson-swetnam.github.io/intro-gpt"
+site_description = "Documentation for Prompt Engineering 101 Workshop"
+site_author = "University of Arizona"
+copyright = "Copyright &copy; 2025 University of Arizona"
+
+docs_dir = "docs"
+site_dir = "site"
+
+extra_css = [
+    "stylesheets/extra.css",
+    "chatbot_widget.css"
+]
+
+extra_javascript = [
+    "chatbot_widget.js"
+]
+
+[project.repo]
+name = "intro-gpt"
+url = "https://github.com/tyson-swetnam/intro-gpt"
+edit_uri = "edit/main/docs/"
+
+[project.theme]
+name = "material"
+language = "en"
+logo = "assets/ua.png"
+favicon = "assets/ua.ico"
+features = [
+    "navigation.instant",
+    "navigation.tracking",
+    "navigation.tabs",
+    "navigation.tabs.sticky",
+    "navigation.indexes",
+    "navigation.top",
+    "search.highlight",
+    "search.share",
+    "search.suggest",
+    "content.code.copy",
+    "content.code.prettify",
+    "content.tooltips"
+]
+
+[project.theme.font]
+text = "Montserrat"
+code = "Regular"
+
+# Color Palette - System preference detection with light/dark toggle
+[[project.theme.palette]]
+media = "(prefers-color-scheme)"
+toggle = { icon = "material/brightness-auto", name = "Switch to light mode" }
+
+# Light mode with custom "home" scheme (UA red branding)
+[[project.theme.palette]]
+media = "(prefers-color-scheme: light)"
+scheme = "home"
+toggle = { icon = "material/brightness-7", name = "Switch to dark mode" }
+
+# Dark mode
+[[project.theme.palette]]
+media = "(prefers-color-scheme: dark)"
+scheme = "slate"
+toggle = { icon = "material/brightness-4", name = "Switch to system preference" }
+
+# Navigation Structure
+[[project.nav]]
+Home = [
+    { Welcome = "index.md" },
+    { Agenda = "agenda.md" },
+    { Landscape = "ai_landscape.md" }
+]
+
+[[project.nav]]
+Setup = [
+    { Claude = "claude.md" },
+    { Gemini = "gemini.md" },
+    { OpenAI = "chatgpt.md" },
+    { Copilot = "microsoft.md" },
+    { GitHub = "copilot.md" }
+]
+
+[[project.nav]]
+"Prompt Engineering" = [
+    { "Writing Prompts" = "prompts.md" },
+    { "General Productivity" = "daily-productivity.md" },
+    { "Code Interpreters" = "code.md" },
+    { "Vibe Coding" = "vibe.md" },
+    { "Choosing a Platform" = "choose.md" }
+]
+
+[[project.nav]]
+Education = [
+    { Overview = "education.md" },
+    { "Teaching with AI" = "teaching.md" },
+    { "AI Tutoring" = "tutoring.md" },
+    { "Admissions & Recruiting" = "admissions.md" }
+]
+
+[[project.nav]]
+Research = [
+    { Overview = "research.md" },
+    { "Agentic AI" = "agentic.md" },
+    { "Jupyter AI" = "jupyter.md" },
+    { MCP = "mcp.md" },
+    { NotebookLM = "notebooklm.md" },
+    { Ollama = "ollama.md" },
+    { RAG = "rag.md" },
+    { "Code Execution" = "execution.md" },
+    { "OpenAI API" = "openai.md" },
+    { HuggingFace = "huggingface.md" },
+    { Gradio = "gradio.md" },
+    { "Posit (RStudio)" = "posit.md" },
+    { "Text Mining" = "text_mining.md" }
+]
+
+[[project.nav]]
+Ethics = [
+    { Overview = "ethics.md" },
+    { Bias = "bias.md" },
+    { Legal = "legal.md" },
+    { Transparency = "transparency.md" }
+]
+
+[[project.nav]]
+Tutorials = [
+    { "Claude Code Workflow" = "claude-code.md" },
+    { "Public Health" = "tutorials/publichealth/casestudy.md" },
+    { "Map making" = "tutorials/publichealth/gis.md" }
+]
+
+# Markdown Extensions Configuration
+[project.markdown_extensions]
+abbr = {}
+admonition = {}
+attr_list = {}
+def_list = {}
+footnotes = {}
+md_in_html = {}
+
+[project.markdown_extensions.toc]
+permalink = true
+
+[project.markdown_extensions.pymdownx]
+caret = {}
+details = {}
+inlinehilite = {}
+keys = {}
+mark = {}
+smartsymbols = {}
+tilde = {}
+
+[project.markdown_extensions.pymdownx.arithmatex]
+generic = true
+
+[project.markdown_extensions.pymdownx.betterem]
+smart_enable = "all"
+
+[project.markdown_extensions.pymdownx.emoji]
+emoji_index = "material.extensions.emoji.twemoji"
+emoji_generator = "material.extensions.emoji.to_svg"
+
+[project.markdown_extensions.pymdownx.highlight]
+anchor_linenums = true
+line_spans = "__span"
+pygments_lang_class = true
+
+[project.markdown_extensions.pymdownx.superfences]
+custom_fences = [
+    { name = "mermaid", class = "mermaid", format = "pymdownx.superfences.fence_code_format" }
+]
+
+[project.markdown_extensions.pymdownx.tabbed]
+alternate_style = true
+combine_header_slug = true
+
+[project.markdown_extensions.pymdownx.tasklist]
+custom_checkbox = true
+
+# Extra Configuration (Social, Analytics, CSS/JS)
+[project.extra]
+
+[[project.extra.social]]
+icon = "fontawesome/brands/orcid"
+link = "https://orcid.org/0000-0002-6639-7181"
+
+[[project.extra.social]]
+icon = "simple/googlescholar"
+link = "https://scholar.google.com/citations?user=nanIeAYAAAAJ&hl=en"
+
+[[project.extra.social]]
+icon = "fontawesome/brands/github"
+link = "https://github.com/tyson-swetnam/"
+
+[[project.extra.social]]
+icon = "fontawesome/brands/twitter"
+link = "https://twitter.com/tswetnam"
+
+[[project.extra.social]]
+icon = "fontawesome/brands/linkedin"
+link = "https://www.linkedin.com/in/tyson-swetnam"
+
+[[project.extra.social]]
+icon = "fontawesome/brands/docker"
+link = "https://hub.docker.com/u/tswetnam"
+
+[[project.extra.social]]
+icon = "fontawesome/brands/youtube"
+link = "https://www.youtube.com/channel/UC5xPt9KZHccC0ehMNEkINzQ"
+
+[project.extra.analytics]
+provider = "google"
+property = "G-NYETZFD8DN"
+
+# Plugins
+[project.plugins]
+mkdocstrings = {}
+search = {}

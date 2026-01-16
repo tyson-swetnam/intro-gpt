@@ -35,7 +35,7 @@ Generative AI are now deeply integrated into how we work, conduct research, teac
 
     [:material-run-fast: :simple-google: Gemini](gemini.md)
 
-    [:material-run-fast: :simple-openai: ChatGPT](chatgpt.md)
+    [:material-run-fast: :fontawesome-brands-openai: ChatGPT](chatgpt.md)
 
     [:material-run-fast: :material-microsoft: Microsoft Copilot](microsoft.md)
 
@@ -106,7 +106,7 @@ A future workshop on advanced uses of AI for scientific research will cover the 
 
     [:material-run-fast: Go to our lesson on :octicons-copilot-48: GitHub Copilot](code.md)
 
-    [:material-run-fast: Go to our lesson on  :simple-openai: the OpenAI API](openai.md)
+    [:material-run-fast: Go to our lesson on  :fontawesome-brands-openai: the OpenAI API](openai.md)
 
     [:material-run-fast: Go to our lesson on the :simple-google: Gemini API](gemini.md)
 

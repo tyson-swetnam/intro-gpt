@@ -9,13 +9,20 @@ jobs:
     name: Deploy docs
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
-          python-version: 3.9
-      - name: run requirements file
-        run:  pip install -r requirements.txt 
-      - name: Deploy docs
-        run: mkdocs gh-deploy --force
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Build site with Zensical
+        run: zensical build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
+          publish_branch: gh-pages

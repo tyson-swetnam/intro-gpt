@@ -83,20 +83,20 @@ The Model Context Protocol is an open standard that enables Claude to interact w
 
 !!! info "Subscription Plans and Pricing"
 
-    *   **Claude Free:** Access to Claude 3.5 Sonnet with usage limits
-    *   **Claude Pro ($20/month):** 
+    *   **Claude Free:** Access to Claude 4.5 Sonnet with usage limits
+    *   **Claude Pro ($20/month):**
         - 5x more usage vs free tier
-        - Access to Claude 3 Opus and Claude 3.5 Haiku
+        - Access to Claude 4.5 Opus and Claude 4.5 Haiku
         - Priority access during high-traffic periods
         - Early access to new features
     *   **Claude Team ($25/user/month, min 5 users):**
         - Everything in Pro
         - Central billing and administration
         - Team collaboration features
-    *   **API Pricing (per million tokens):**
-        - Claude 3.5 Sonnet: $3 input / $15 output
-        - Claude 3 Opus: $15 input / $75 output
-        - Claude 3.5 Haiku: $0.25 input / $1.25 output
+    *   **API Pricing (per million tokens, as of January 2026):**
+        - Claude 4.5 Sonnet: $3 input / $15 output
+        - Claude 4.5 Opus: $15 input / $75 output
+        - Claude 4.5 Haiku: $0.25 input / $1.25 output
 
 ## Using Claude
 
@@ -143,7 +143,7 @@ The Model Context Protocol is an open standard that enables Claude to interact w
     client = Anthropic(api_key="your-api-key")
     
     response = client.messages.create(
-        model="claude-3-5-sonnet-20241022",
+        model="claude-4-5-sonnet-20260115",
         max_tokens=1000,
         messages=[
             {"role": "user", "content": "Hello, Claude!"}
@@ -173,30 +173,28 @@ Claude is a family of large language models (LLMs) developed by Anthropic, a com
 
 ## Claude Model Family
 
-**Latest Models (January 2025):**
+**Latest Models (January 2026):**
 
-*   **Claude 3.5 Sonnet (NEW):** 
-    - Most capable model overall
+*   **Claude 4.5 Sonnet:**
+    - Most capable balanced model
     - Best for coding, analysis, and creative tasks
-    - Model ID: `claude-3-5-sonnet-20241022`
-    
-*   **Claude 3 Opus:** 
-    - Previous flagship model
-    - Still excellent for complex reasoning
-    - Model ID: `claude-3-opus-20240229`
-    
-*   **Claude 3.5 Haiku:** 
+    - Excellent performance-to-cost ratio
+    - Model ID: `claude-4-5-sonnet-20260115`
+
+*   **Claude 4.5 Opus:**
+    - Most capable flagship model
+    - Best for complex reasoning and advanced tasks
+    - Highest intelligence and capability
+    - Model ID: `claude-4-5-opus-20251101`
+
+*   **Claude 4.5 Haiku:**
     - Fast and cost-effective
     - Great for simple tasks and high-volume applications
-    - Model ID: `claude-3-5-haiku-20241022`
-
-*   **Claude 3 Sonnet:** 
-    - Balanced performance model
-    - Good for general use cases
-    - Model ID: `claude-3-sonnet-20240229`
+    - Optimized for speed and efficiency
+    - Model ID: `claude-4-5-haiku-20260115`
 
 !!! note "Model Selection"
-    Claude 3.5 Sonnet is recommended for most use cases as it offers the best combination of capability, speed, and cost. Use Opus for tasks requiring maximum intelligence, and Haiku for high-volume, simple tasks.
+    Claude 4.5 Sonnet is recommended for most use cases as it offers the best combination of capability, speed, and cost. Use Opus for tasks requiring maximum intelligence and reasoning, and Haiku for high-volume, simple tasks.
 
 
 ## Further Resources

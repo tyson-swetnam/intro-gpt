@@ -62,7 +62,7 @@ Zoom can also highlight key parts of the meeting recording, or break down the re
 
     Therefore, to maintain data security, privacy, and compliance with institutional policies, it is essential to use only officially sanctioned AI tools and plug-ins provided or approved by the university for official communication. Always consult your institution's IT department or relevant policies for guidance on approved tools and their proper usage.
 
-!!! Example ":simple-openai: ChatGPT integrations"
+!!! Example ":fontawesome-brands-openai: ChatGPT integrations"
 
     Plus and Pro versions of ChatGPT have integrations with :material-microsoft-onedrive: Microsoft OneDrive and :material-google-drive: Google Drive which allow you to add documents to Prompts using `4o` or `o1` models. 
 

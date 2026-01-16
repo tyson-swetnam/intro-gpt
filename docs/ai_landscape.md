@@ -105,6 +105,7 @@ This section provides a snapshot of some of the most influential models and plat
 | [**Google Vertex AI**](https://cloud.google.com/vertex-ai){target=_blank} | On-Demand | Varies | 130+ foundation models including Gemini, Claude, Llama |
 | [**Azure AI Studio**](https://ai.azure.com/){target=_blank} | On-Demand | Varies | Access to GPT-4, Claude, Llama, Mistral, and more |
 | [**Meta Llama**](https://llama.meta.com/){target=_blank} | Open Source | Free | Llama 2 and Llama 3 models for download |
+| [**Apertus**](https://www.swiss-ai.org/apertus){target=_blank} | [Open Source](https://huggingface.co/swiss-ai){target=_blank} | Free | **Fully open** Swiss LLM: 8B & 70B models, 1,811 languages, 65K context, complete transparency (weights + data + training) <br> **ETH Zurich, EPFL, CSCS** - Permissive license, compliance-first design |
 | [**Ollama**](https://ollama.com/){target=_blank} | Local Install | Free | Run LLMs locally on your hardware |
 | [**LM Studio**](https://lmstudio.ai/){target=_blank} | Local Install | Free | Desktop app for running LLMs locally |
 | [**Jan.ai**](https://jan.ai/){target=_blank} | Local Install | Free | Open-source ChatGPT alternative, runs locally |

@@ -20,7 +20,7 @@
 
 Modern AI assistants have evolved beyond simple text chat:
 
-| Feature | :simple-claude: Claude | :simple-openai: ChatGPT | :simple-googlegemini: Gemini | NotebookLM | :material-microsoft: CoPilot |
+| Feature | :simple-claude: Claude | :fontawesome-brands-openai: ChatGPT | :simple-googlegemini: Gemini | NotebookLM | :material-microsoft: CoPilot |
 |---------|--------|---------|--------|------------|---------|
 | **Document Upload** | PDFs, text, code | PDFs, images, data | PDFs, images, GDrive | PDFs, Google Docs | PDFs, OneDrive |
 | **Web Search** | Via MCP | Yes | Yes | Yes | Yes |
@@ -361,7 +361,7 @@ Use modern Python features (3.10+) and include error handling.
 
 - [:simple-claude: Anthropic's Prompt Engineering Guide](https://docs.anthropic.com/claude/docs/prompt-engineering){target=_blank}
 
-- [:simple-openai: OpenAI's Best Practices](https://platform.openai.com/docs/guides/prompt-engineering){target=_blank}
+- [:fontawesome-brands-openai: OpenAI's Best Practices](https://platform.openai.com/docs/guides/prompt-engineering){target=_blank}
 
 - [:simple-googlegemini: Google's Gemini Prompting Strategies](https://ai.google.dev/gemini-api/docs/prompting-strategies){target=_blank}
 
