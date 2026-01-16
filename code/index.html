@@ -25,18 +25,23 @@
       
       
       <link rel="icon" href="../assets/ua.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+      <meta name="generator" content="zensical-0.0.16">
     
     
       
-        <title>Code Interpreters - GPT 101</title>
+        <title>Understanding Code Generation with LLMs - GPT 101</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      <link rel="stylesheet" href="../assets/stylesheets/modern/main.dfcb43b2.min.css">
+      
+        
+          
+        
+        <link rel="stylesheet" href="../assets/stylesheets/modern/palette.dfe2e883.min.css">
       
       
 
@@ -50,18 +55,16 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,700,700i%7CRegular:400,400i,700,700i&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,700,700i%7CRegular:400,400i,700,700i&display=fallback">
         <style>:root{--md-text-font:"Montserrat";--md-code-font:"Regular"}</style>
       
     
-    
-      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
     
       <link rel="stylesheet" href="../stylesheets/extra.css">
     
       <link rel="stylesheet" href="../chatbot_widget.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,a=__md_scope)=>JSON.parse(t.getItem(a.pathname+"."+e)),__md_set=(e,t,a=localStorage,_=__md_scope)=>{try{a.setItem(_.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
     
       
   
@@ -119,7 +122,7 @@
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-menu" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -131,7 +134,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Code Interpreters
+              Understanding Code Generation with LLMs
             
           </span>
         </div>
@@ -183,62 +186,18 @@
       
         <label class="md-header__button md-icon" for="__search">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
         </label>
-        <div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
-      <label class="md-search__icon md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
-      </label>
-      <nav class="md-search__options" aria-label="Search">
-        
-          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
-            
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
-          </a>
-        
-        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
-        </button>
-      </nav>
-      
-        <div class="md-search__suggest" data-md-component="search-suggest"></div>
-      
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list" role="presentation"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
+        <div class="md-search" data-md-component="search" role="dialog" aria-label="Search">
+  <button type="button" class="md-search__button">
+    Search
+  </button>
 </div>
       
     
-    
-      <div class="md-header__source">
-        <a href="https://github.com/tyson-swetnam/intro-gpt" title="Go to repository" class="md-source" data-md-component="source">
-  <div class="md-source__icon md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
-  </div>
-  <div class="md-source__repository">
-    intro-gpt
-  </div>
-</a>
-      </div>
-    
+    <div class="md-header__source">
+      
+    </div>
   </nav>
   
     
@@ -258,9 +217,6 @@
         <a href=".." class="md-tabs__link">
           
   
-  
-    
-  
   Home
 
         </a>
@@ -279,9 +235,6 @@
       <li class="md-tabs__item">
         <a href="../claude/" class="md-tabs__link">
           
-  
-  
-    
   
   Setup
 
@@ -304,9 +257,6 @@
         <a href="../prompts/" class="md-tabs__link">
           
   
-  
-    
-  
   Prompt Engineering
 
         </a>
@@ -325,9 +275,6 @@
       <li class="md-tabs__item">
         <a href="../education/" class="md-tabs__link">
           
-  
-  
-    
   
   Education
 
@@ -348,9 +295,6 @@
         <a href="../research/" class="md-tabs__link">
           
   
-  
-    
-  
   Research
 
         </a>
@@ -370,9 +314,6 @@
         <a href="../ethics/" class="md-tabs__link">
           
   
-  
-    
-  
   Ethics
 
         </a>
@@ -389,11 +330,8 @@
     
     
       <li class="md-tabs__item">
-        <a href="../tutorials/publichealth/casestudy/" class="md-tabs__link">
+        <a href="../claude-code/" class="md-tabs__link">
           
-  
-  
-    
   
   Tutorials
 
@@ -438,18 +376,6 @@
     </a>
     GPT 101
   </label>
-  
-    <div class="md-nav__source">
-      <a href="https://github.com/tyson-swetnam/intro-gpt" title="Go to repository" class="md-source" data-md-component="source">
-  <div class="md-source__icon md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
-  </div>
-  <div class="md-source__repository">
-    intro-gpt
-  </div>
-</a>
-    </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
     
@@ -970,7 +896,8 @@
       
         
 
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
   
   
   
@@ -979,7 +906,7 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Table of contents
+      On this page
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
@@ -1007,15 +934,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#recommended" class="md-nav__link">
+  <a href="#recommended-platforms" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Recommended
+        Recommended Platforms
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Recommended">
+    <nav class="md-nav" aria-label="Recommended Platforms">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1034,6 +961,28 @@
     <span class="md-ellipsis">
       
         Anthropic's Claude
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#openai-chatgpt-plusteam" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        OpenAI ChatGPT Plus/Team
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#perplexity-pro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Perplexity Pro
       
     </span>
   </a>
@@ -1063,22 +1012,22 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#recommended_1" class="md-nav__link">
+  <a href="#recommended-platforms-tools" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Recommended
+        Recommended Platforms &amp; Tools
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Recommended">
+    <nav class="md-nav" aria-label="Recommended Platforms &amp; Tools">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#gemini-pro-console" class="md-nav__link">
+  <a href="#desktop-ides-standalone-editors" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Gemini Pro (Console)
+        Desktop IDEs &amp; Standalone Editors
       
     </span>
   </a>
@@ -1086,10 +1035,43 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#simple-openai-openai-playground-console" class="md-nav__link">
+  <a href="#vs-code-extensions" class="md-nav__link">
     <span class="md-ellipsis">
       
-        :simple-openai: OpenAI Playground &amp; Console
+        VS Code Extensions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#command-line-interface-cli-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Command Line Interface (CLI) Tools
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#browser-based-development" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Browser-Based Development
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api-console-environments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        API &amp; Console Environments
       
     </span>
   </a>
@@ -1114,6 +1096,200 @@
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="3. Best Practices &amp; Ethical Considerations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#effective-prompting-strategies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Effective Prompting Strategies
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code-review-verification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Code Review &amp; Verification
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#security-considerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Security Considerations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bias-licensing-and-intellectual-property" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bias, Licensing, and Intellectual Property
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#privacy-and-data-handling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Privacy and Data Handling
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accessibility-and-inclusive-development" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Accessibility and Inclusive Development
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#environmental-considerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Environmental Considerations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#continuous-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Continuous Learning
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-choosing-the-right-tool-for-your-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Choosing the Right Tool for Your Workflow
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Choosing the Right Tool for Your Workflow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#decision-framework" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Decision Framework
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#by-use-case" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        By Use Case
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#integration-with-your-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Integration with Your Workflow
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-the-path-forward-vibe-coding-and-beyond" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. The Path Forward: Vibe Coding and Beyond
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. The Path Forward: Vibe Coding and Beyond">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next Steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recommended-learning-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recommended Learning Path
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#staying-current" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Staying Current
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2020,6 +2196,8 @@
       
         
       
+        
+      
     
     
     
@@ -2062,6 +2240,34 @@
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../claude-code/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Claude Code Workflow
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -2139,7 +2345,8 @@
                   <div class="md-sidebar__inner">
                     
 
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
   
   
   
@@ -2148,7 +2355,7 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Table of contents
+      On this page
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
@@ -2176,15 +2383,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#recommended" class="md-nav__link">
+  <a href="#recommended-platforms" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Recommended
+        Recommended Platforms
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Recommended">
+    <nav class="md-nav" aria-label="Recommended Platforms">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2203,6 +2410,28 @@
     <span class="md-ellipsis">
       
         Anthropic's Claude
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#openai-chatgpt-plusteam" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        OpenAI ChatGPT Plus/Team
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#perplexity-pro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Perplexity Pro
       
     </span>
   </a>
@@ -2232,22 +2461,22 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#recommended_1" class="md-nav__link">
+  <a href="#recommended-platforms-tools" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Recommended
+        Recommended Platforms &amp; Tools
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Recommended">
+    <nav class="md-nav" aria-label="Recommended Platforms &amp; Tools">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#gemini-pro-console" class="md-nav__link">
+  <a href="#desktop-ides-standalone-editors" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Gemini Pro (Console)
+        Desktop IDEs &amp; Standalone Editors
       
     </span>
   </a>
@@ -2255,10 +2484,43 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#simple-openai-openai-playground-console" class="md-nav__link">
+  <a href="#vs-code-extensions" class="md-nav__link">
     <span class="md-ellipsis">
       
-        :simple-openai: OpenAI Playground &amp; Console
+        VS Code Extensions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#command-line-interface-cli-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Command Line Interface (CLI) Tools
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#browser-based-development" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Browser-Based Development
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api-console-environments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        API &amp; Console Environments
       
     </span>
   </a>
@@ -2283,6 +2545,200 @@
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="3. Best Practices &amp; Ethical Considerations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#effective-prompting-strategies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Effective Prompting Strategies
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code-review-verification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Code Review &amp; Verification
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#security-considerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Security Considerations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bias-licensing-and-intellectual-property" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bias, Licensing, and Intellectual Property
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#privacy-and-data-handling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Privacy and Data Handling
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accessibility-and-inclusive-development" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Accessibility and Inclusive Development
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#environmental-considerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Environmental Considerations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#continuous-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Continuous Learning
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-choosing-the-right-tool-for-your-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Choosing the Right Tool for Your Workflow
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Choosing the Right Tool for Your Workflow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#decision-framework" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Decision Framework
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#by-use-case" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        By Use Case
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#integration-with-your-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Integration with Your Workflow
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-the-path-forward-vibe-coding-and-beyond" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. The Path Forward: Vibe Coding and Beyond
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. The Path Forward: Vibe Coding and Beyond">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next Steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recommended-learning-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recommended Learning Path
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#staying-current" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Staying Current
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2312,24 +2768,80 @@
                 
                   
 
-
-  
-  
-
-
 <h1 id="understanding-code-generation-with-llms">Understanding Code Generation with LLMs<a class="headerlink" href="#understanding-code-generation-with-llms" title="Permanent link">&para;</a></h1>
 <p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
 <h2 id="introduction-from-generation-to-execution">Introduction: From Generation to Execution<a class="headerlink" href="#introduction-from-generation-to-execution" title="Permanent link">&para;</a></h2>
-<p>Large Language Models (LLMs) have fundamentally changed how we write and interact with code. Beyond simply generating code snippets, modern AI tools can now <strong>execute</strong> code, analyze data, and produce results in real-time. This capability manifests in two primary forms: <strong>Code Interpreters</strong> that operate in secure, sandboxed environments, and <strong>Code Execution Frameworks</strong> that integrate directly into your local development environment.</p>
-<p>This lesson explores both paradigms, highlighting the most popular tools and setting the stage for the next lesson on "<a href="../vibe/">Vibe Coding</a>," where we'll dive deep into hands-on, AI-assisted development in your own editor.</p>
+<p>Large Language Models (LLMs) have fundamentally changed how we write and interact with code. Beyond simply generating code snippets, modern AI tools can now <strong>execute</strong> code, analyze data, and produce results in real-time. This capability manifests in multiple forms:</p>
+<ul>
+<li><strong>Code Interpreters</strong> that operate in secure, sandboxed environments</li>
+<li><strong>Code Execution Frameworks</strong> that integrate directly into your local development environment</li>
+<li><strong>Agentic AI Systems</strong> that can autonomously plan, code, test, and iterate on complex software projects</li>
+</ul>
+<p>This evolution from simple code completion to autonomous coding agents represents a paradigm shift in software development. This lesson explores the spectrum of code generation and execution tools, from sandboxed interpreters to sophisticated <a href="../agentic/">agentic AI systems</a> that leverage <a href="../mcp/">Model Context Protocol (MCP)</a> for deep integration with your development environment.</p>
+<p>This sets the foundation for understanding "<a href="../vibe/">Vibe Coding</a>"—the emerging practice of collaborative, conversational development where AI acts as an autonomous pair programmer within your IDE.</p>
 <hr />
 <h2 id="1-code-interpreters-your-sandboxed-ai-analyst">1. Code Interpreters: Your Sandboxed AI Analyst<a class="headerlink" href="#1-code-interpreters-your-sandboxed-ai-analyst" title="Permanent link">&para;</a></h2>
-<p>A Code Interpreter is a tool, typically within a chat-based interface, that can write and execute code in a secure, isolated environment. You provide instructions and data in natural language, and the AI handles the coding, execution, and interpretation of results. This is ideal for data analysis, visualization, file conversions, and solving math problems without needing to set up a local programming environment.</p>
-<h3 id="recommended">Recommended<a class="headerlink" href="#recommended" title="Permanent link">&para;</a></h3>
+<p>A Code Interpreter is a tool, typically within a chat-based interface, that can write and execute code in a secure, isolated environment. You provide instructions and data in natural language, and the AI handles the coding, execution, and interpretation of results.</p>
+<p><strong>Key Characteristics:</strong></p>
+<ul>
+<li><strong>Sandboxed Execution</strong>: Code runs in an isolated environment with no access to your local files or network</li>
+<li><strong>Data Upload</strong>: Upload datasets, documents, or files for analysis</li>
+<li><strong>Instant Results</strong>: See code execution output, visualizations, and analyses in real-time</li>
+<li><strong>No Setup Required</strong>: No need to install programming languages or libraries locally</li>
+<li><strong>Session-Based</strong>: Work is temporary; files and state typically reset between sessions</li>
+</ul>
+<p><strong>Ideal Use Cases:</strong></p>
+<ul>
+<li><strong>Data Analysis &amp; Visualization</strong>: Process datasets and create charts without writing code</li>
+<li><strong>File Conversions</strong>: Transform file formats (CSV to JSON, image format conversions)</li>
+<li><strong>Mathematical Computations</strong>: Solve complex equations and perform statistical analyses</li>
+<li><strong>Prototyping</strong>: Quickly test algorithms or data processing workflows</li>
+<li><strong>Learning</strong>: Experiment with programming concepts in a safe environment</li>
+</ul>
+<p>Code Interpreters are perfect for exploratory data analysis, one-off computations, and tasks where you want AI assistance without giving it access to your local system. For deeper integration with your development workflow, see <a href="#2-code-execution-frameworks-your-ai-pair-programmer">Code Execution Frameworks</a> and <a href="../vibe/">Vibe Coding</a>.</p>
+<h3 id="recommended-platforms">Recommended Platforms<a class="headerlink" href="#recommended-platforms" title="Permanent link">&para;</a></h3>
 <h4 id="google-gemini"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053z"/></svg></span> Google Gemini<a class="headerlink" href="#google-gemini" title="Permanent link">&para;</a></h4>
-<p>Google's <a href="https://gemini.google.com/" target="_blank">Gemini</a> platform integrates powerful code interpretation capabilities directly within its chat interface. You can upload files, ask it to perform complex data analysis, generate visualizations, and solve programming problems. Its integration with the broader Google ecosystem makes it a versatile tool for researchers and developers.</p>
+<p><strong>Platform</strong>: <a href="https://gemini.google.com/" target="_blank">gemini.google.com</a></p>
+<p>Google's Gemini integrates powerful code interpretation capabilities directly within its chat interface. With its multimodal capabilities, you can:</p>
+<ul>
+<li>Upload files (PDFs, spreadsheets, images) and ask for analysis</li>
+<li>Perform complex data analysis and generate visualizations</li>
+<li>Solve programming problems with step-by-step explanations</li>
+<li>Leverage integration with Google Workspace and Google Cloud Platform</li>
+</ul>
+<p><strong>Best for</strong>: Users in the Google ecosystem, multimodal data analysis, and document processing.</p>
 <h4 id="anthropics-claude"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.304 3.541h-3.672l6.696 16.918H24Zm-10.608 0L0 20.459h3.744l1.37-3.553h7.005l1.369 3.553h3.744L10.536 3.541Zm-.371 10.223L8.616 7.82l2.291 5.945Z"/></svg></span> Anthropic's Claude<a class="headerlink" href="#anthropics-claude" title="Permanent link">&para;</a></h4>
-<p><a href="https://claude.ai/" target="_blank">Claude</a> also offers robust Code Interpreter functionality. Users can upload various document types, including spreadsheets and code files, and interact with Claude to have it write and execute Python code in a secure environment. This is particularly useful for tasks like statistical analysis, data cleaning, and generating plots without writing any code yourself.</p>
+<p><strong>Platform</strong>: <a href="https://claude.ai/" target="_blank">claude.ai</a></p>
+<p>Claude offers robust Code Interpreter functionality through its <strong>Artifacts</strong> feature, which provides a live preview panel for code execution. Key features include:</p>
+<ul>
+<li>Upload documents, spreadsheets, and code files (up to 5 files, 10MB each)</li>
+<li>Write and execute Python code in a secure sandbox</li>
+<li>Create interactive data visualizations and charts</li>
+<li>Generate and iterate on code with real-time execution feedback</li>
+<li>Extended context window (200K tokens) for analyzing large codebases</li>
+</ul>
+<p><strong>Best for</strong>: Statistical analysis, data cleaning, document processing, and iterative code development.</p>
+<h4 id="openai-chatgpt-plusteam"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M196.4 185.8v-48.6c0-4.1 1.5-7.2 5.1-9.2l97.8-56.3c13.3-7.7 29.2-11.3 45.6-11.3 61.4 0 100.4 47.6 100.4 98.3 0 3.6 0 7.7-.5 11.8l-101.5-59.4c-6.1-3.6-12.3-3.6-18.4 0zm228.3 189.4V259c0-7.2-3.1-12.3-9.2-15.9L287 168.4l42-24.1c3.6-2 6.7-2 10.2 0l97.8 56.4c28.2 16.4 47.1 51.2 47.1 85 0 38.9-23 74.8-59.4 89.6zM166.2 272.8l-42-24.6c-3.6-2-5.1-5.1-5.1-9.2V126.4c0-54.8 42-96.3 98.8-96.3 21.5 0 41.5 7.2 58.4 20l-100.9 58.4c-6.1 3.6-9.2 8.7-9.2 15.9v148.5zm90.4 52.2-60.2-33.8v-71.7l60.2-33.8 60.2 33.8v71.7zm38.7 155.7c-21.5 0-41.5-7.2-58.4-20l100.9-58.4c6.1-3.6 9.2-8.7 9.2-15.9V237.9l42.5 24.6c3.6 2 5.1 5.1 5.1 9.2v112.6c0 54.8-42.5 96.3-99.3 96.3zM173.8 366.5l-97.7-56.3C47.9 293.8 29 259 29 225.2c0-39.4 23.6-74.8 59.9-89.6v116.7c0 7.2 3.1 12.3 9.2 15.9l128 74.2-42 24.1c-3.6 2-6.7 2-10.2 0zm-5.6 84c-57.9 0-100.4-43.5-100.4-97.3 0-4.1.5-8.2 1-12.3l100.9 58.4c6.1 3.6 12.3 3.6 18.4 0l128.5-74.2v48.6c0 4.1-1.5 7.2-5.1 9.2l-97.8 56.3c-13.3 7.7-29.2 11.3-45.6 11.3zm127 60.9c62 0 113.7-44 125.4-102.4 57.3-14.9 94.2-68.6 94.2-123.4 0-35.8-15.4-70.7-43-95.7 2.6-10.8 4.1-21.5 4.1-32.3 0-73.2-59.4-128-128-128-13.8 0-27.1 2-40.4 6.7-23-22.5-54.8-36.9-89.6-36.9-62 0-113.7 44-125.4 102.4-57.3 14.8-94.2 68.6-94.2 123.4 0 35.8 15.4 70.7 43 95.7-2.6 10.8-4.1 21.5-4.1 32.3 0 73.2 59.4 128 128 128 13.8 0 27.1-2 40.4-6.7 23 22.5 54.8 36.9 89.6 36.9"/></svg></span> OpenAI ChatGPT Plus/Team<a class="headerlink" href="#openai-chatgpt-plusteam" title="Permanent link">&para;</a></h4>
+<p><strong>Platform</strong>: <a href="https://chat.openai.com" target="_blank">chat.openai.com</a></p>
+<p>ChatGPT's <strong>Advanced Data Analysis</strong> (formerly Code Interpreter) is available to Plus and Team subscribers:</p>
+<ul>
+<li>Upload and analyze data files in various formats</li>
+<li>Generate sophisticated visualizations using matplotlib and seaborn</li>
+<li>Perform file conversions and data transformations</li>
+<li>Solve mathematical problems with symbolic computation</li>
+<li>Create animated visualizations and GIFs</li>
+</ul>
+<p><strong>Best for</strong>: Data science workflows, exploratory data analysis, and creating publication-ready visualizations.</p>
+<h4 id="perplexity-pro"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.33 12.91c.09 1.55-.62 3.04-1.89 3.95l.77 1.49c.23.45.26.98.06 1.45-.19.47-.58.84-1.06 1l-.79.25a1.687 1.687 0 0 1-1.86-.55L14.44 18c-.89-.15-1.73-.53-2.44-1.1-.5.15-1 .23-1.5.23-.88 0-1.76-.27-2.5-.79-.53.16-1.07.23-1.62.22-.79.01-1.57-.15-2.3-.45a4.1 4.1 0 0 1-2.43-3.61c-.08-.72.04-1.45.35-2.11-.29-.75-.32-1.57-.07-2.33C2.3 7.11 3 6.32 3.87 5.82c.58-1.69 2.21-2.82 4-2.7 1.6-1.5 4.05-1.66 5.83-.37.42-.11.86-.17 1.3-.17 1.36-.03 2.65.57 3.5 1.64 2.04.53 3.5 2.35 3.58 4.47.05 1.11-.25 2.2-.86 3.13.07.36.11.72.11 1.09m-5-1.41c.57.07 1.02.5 1.02 1.07a1 1 0 0 1-1 1h-.63c-.32.9-.88 1.69-1.62 2.29.25.09.51.14.77.21 5.13-.07 4.53-3.2 4.53-3.25a2.59 2.59 0 0 0-2.69-2.49 1 1 0 0 1-1-1 1 1 0 0 1 1-1c1.23.03 2.41.49 3.33 1.3.05-.29.08-.59.08-.89-.06-1.24-.62-2.32-2.87-2.53-1.25-2.96-4.4-1.32-4.4-.4-.03.23.21.72.25.75a1 1 0 0 1 1 1c0 .55-.45 1-1 1-.53-.02-1.03-.22-1.43-.56-.48.31-1.03.5-1.6.56-.57.05-1.04-.35-1.07-.9a.97.97 0 0 1 .88-1.1c.16-.02.94-.14.94-.77 0-.66.25-1.29.68-1.79-.92-.25-1.91.08-2.91 1.29C6.75 5 6 5.25 5.45 7.2 4.5 7.67 4 8 3.78 9c1.08-.22 2.19-.13 3.22.25.5.19.78.75.59 1.29-.19.52-.77.78-1.29.59-.73-.32-1.55-.34-2.3-.06-.32.27-.32.83-.32 1.27 0 .74.37 1.43 1 1.83.53.27 1.12.41 1.71.4q-.225-.39-.39-.81a1.038 1.038 0 0 1 1.96-.68c.4 1.14 1.42 1.92 2.62 2.05 1.37-.07 2.59-.88 3.19-2.13.23-1.38 1.34-1.5 2.56-1.5m2 7.47-.62-1.3-.71.16 1 1.25zm-4.65-8.61a1 1 0 0 0-.91-1.03c-.71-.04-1.4.2-1.93.67-.57.58-.87 1.38-.84 2.19a1 1 0 0 0 1 1c.57 0 1-.45 1-1 0-.27.07-.54.23-.76.12-.1.27-.15.43-.15.55.03 1.02-.38 1.02-.92"/></svg></span> Perplexity Pro<a class="headerlink" href="#perplexity-pro" title="Permanent link">&para;</a></h4>
+<p><strong>Platform</strong>: <a href="https://www.perplexity.ai/" target="_blank">perplexity.ai</a></p>
+<p>Perplexity Pro includes code execution capabilities alongside its powerful search features:</p>
+<ul>
+<li>Execute Python code in a sandboxed environment</li>
+<li>Combine web search results with data analysis</li>
+<li>Generate visualizations based on real-time data</li>
+<li>Verify calculations and computations with source citations</li>
+</ul>
+<p><strong>Best for</strong>: Research tasks requiring both web search and data analysis.</p>
 <div class="admonition example">
 <p class="admonition-title">Data Analysis with a Code Interpreter</p>
 <p>Imagine you are a researcher with a dataset of student performance metrics. You could upload a CSV to Gemini or Claude and prompt:</p>
@@ -2345,31 +2857,364 @@
 </div>
 <hr />
 <h2 id="2-code-execution-frameworks-your-ai-pair-programmer">2. Code Execution Frameworks: Your AI Pair Programmer<a class="headerlink" href="#2-code-execution-frameworks-your-ai-pair-programmer" title="Permanent link">&para;</a></h2>
-<p>While sandboxed interpreters are powerful, many developers want AI assistance directly within their Integrated Development Environment (IDE). Code Execution Frameworks are tools (often VS Code extensions) that connect to an LLM to provide in-editor code generation, editing, and even direct execution of code on your local machine.</p>
-<p>These tools form the foundation of <a href="../vibe/"><strong>Vibe Coding</strong></a>, a fluid, conversational approach to development where the AI acts as a true pair programmer.</p>
-<h3 id="recommended_1">Recommended<a class="headerlink" href="#recommended_1" title="Permanent link">&para;</a></h3>
-<p>These tools bridge the gap between simple code completion and full-fledged AI-driven development.</p>
-<h4 id="gemini-pro-console"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053z"/></svg></span> Gemini Pro (Console)<a class="headerlink" href="#gemini-pro-console" title="Permanent link">&para;</a></h4>
-<p>Gemini's capabilities extend into development workflows through various integrations. For instance, the <a href="https://aistudio.google.com/app/prompts/new_chat" target="_blank">Gemini AI Studio</a> acts as a coding companion, while extensions for VS Code allow developers to leverage its power for code generation, debugging, and more, directly in their editor.</p>
-<h4 id="simple-openai-openai-playground-console">:simple-openai: OpenAI Playground &amp; Console<a class="headerlink" href="#simple-openai-openai-playground-console" title="Permanent link">&para;</a></h4>
-<p>The <a href="https://platform.openai.com/playground" target="_blank">OpenAI Playground</a> provides a console-like environment where developers can experiment with models, fine-tune prompts, and generate code. While not a full IDE integration, it's a powerful tool for prototyping and developing specific code functions that can then be moved into a project.</p>
-<div class="admonition success">
-<p class="admonition-title">Run Code Interpreters locally</p>
-<p>While console-based tools are useful, the real power of AI-assisted development comes from direct IDE integration. Tools like <strong>Claude Desktop</strong> and VS Code extensions such as <strong>Cline</strong> provide this deep integration, and they are the central focus of our next lesson on <strong>Vibe Coding</strong>, where we will explore how to turn your editor into a dynamic, collaborative coding environment.</p>
+<p>While sandboxed interpreters are powerful for isolated tasks, the real transformation in software development comes from <strong>Code Execution Frameworks</strong>—tools that integrate AI assistance directly into your Integrated Development Environment (IDE). These frameworks bridge the gap between simple autocomplete and full <a href="../agentic/"><strong>agentic AI systems</strong></a> capable of autonomous development.</p>
+<p><strong>Key Characteristics:</strong></p>
+<ul>
+<li><strong>IDE Integration</strong>: Work directly within VS Code, JetBrains IDEs, or standalone editors</li>
+<li><strong>Local Execution</strong>: Run code on your machine with access to your file system</li>
+<li><strong>Multi-File Awareness</strong>: Understand context across your entire project</li>
+<li><strong>Tool Use</strong>: Execute terminal commands, run tests, interact with Git</li>
+<li><strong>Iterative Development</strong>: Debug, fix errors, and refine code autonomously</li>
+<li><strong>Context Protocol Support</strong>: Leverage <a href="../mcp/">MCP</a> for deep integration with local tools and services</li>
+</ul>
+<p><strong>Evolution of Capabilities:</strong></p>
+<ol>
+<li><strong>Code Completion</strong> (2021-2022): Simple autocomplete and snippet generation</li>
+<li><strong>Code Generation</strong> (2022-2023): Generate functions and classes from descriptions</li>
+<li><strong>Conversational Coding</strong> (2023-2024): Chat-based assistance with code editing</li>
+<li><strong>Agentic Coding</strong> (2024-present): Autonomous multi-file editing, testing, and debugging</li>
+</ol>
+<p>These tools form the foundation of <a href="../vibe/"><strong>Vibe Coding</strong></a>—a fluid, conversational approach to development where AI acts as an autonomous pair programmer, not just a suggestion engine.</p>
+<h3 id="recommended-platforms-tools">Recommended Platforms &amp; Tools<a class="headerlink" href="#recommended-platforms-tools" title="Permanent link">&para;</a></h3>
+<p>The landscape of AI-assisted development tools has exploded, ranging from simple completion tools to sophisticated <a href="../agentic/">agentic systems</a>. Below is a categorized overview; see our comprehensive <a href="../vibe/"><strong>Vibe Coding guide</strong></a> for detailed comparisons and setup instructions.</p>
+<h4 id="desktop-ides-standalone-editors">Desktop IDEs &amp; Standalone Editors<a class="headerlink" href="#desktop-ides-standalone-editors" title="Permanent link">&para;</a></h4>
+<p><strong><a href="../vibe/#cursor"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10.76 8.69a.76.76 0 0 0-.76.76V20.9c0 .42.34.76.76.76.19 0 .35-.06.48-.16l1.91-1.55 1.66 3.62c.13.27.4.43.69.43.11 0 .22 0 .33-.08l2.76-1.28c.38-.18.56-.64.36-1.01L17.28 18l2.41-.45a.9.9 0 0 0 .43-.26c.27-.32.23-.79-.12-1.08l-8.74-7.35-.01.01a.76.76 0 0 0-.49-.18M15 10V8h5v2zm-1.17-5.24 2.83-2.83 1.41 1.41-2.83 2.83zM10 0h2v5h-2zM3.93 14.66l2.83-2.83 1.41 1.41-2.83 2.83zm0-11.32 1.41-1.41 2.83 2.83-1.41 1.41zM7 10H2V8h5z"/></svg></span> Cursor</a></strong>
+<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11"/></svg></span> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 12V6.75l6-1.32v6.48zm17-9v8.75l-10 .15V5.21zM3 13l6 .09v6.81l-6-1.15zm17 .25V22l-10-1.91V13.1z"/></svg></span> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.504 0q-.232 0-.48.021c-4.226.333-3.105 4.807-3.17 6.298-.076 1.092-.3 1.953-1.05 3.02-.885 1.051-2.127 2.75-2.716 4.521-.278.832-.41 1.684-.287 2.489a.4.4 0 0 0-.11.135c-.26.268-.45.6-.663.839-.199.199-.485.267-.797.4-.313.136-.658.269-.864.68-.09.189-.136.394-.132.602 0 .199.027.4.055.536.058.399.116.728.04.97-.249.68-.28 1.145-.106 1.484.174.334.535.47.94.601.81.2 1.91.135 2.774.6.926.466 1.866.67 2.616.47.526-.116.97-.464 1.208-.946.587-.003 1.23-.269 2.26-.334.699-.058 1.574.267 2.577.2.025.134.063.198.114.333l.003.003c.391.778 1.113 1.132 1.884 1.071s1.592-.536 2.257-1.306c.631-.765 1.683-1.084 2.378-1.503.348-.199.629-.469.649-.853.023-.4-.2-.811-.714-1.376v-.097l-.003-.003c-.17-.2-.25-.535-.338-.926-.085-.401-.182-.786-.492-1.046h-.003c-.059-.054-.123-.067-.188-.135a.36.36 0 0 0-.19-.064c.431-1.278.264-2.55-.173-3.694-.533-1.41-1.465-2.638-2.175-3.483-.796-1.005-1.576-1.957-1.56-3.368.026-2.152.236-6.133-3.544-6.139m.529 3.405h.013c.213 0 .396.062.584.198.19.135.33.332.438.533.105.259.158.459.166.724 0-.02.006-.04.006-.06v.105l-.004-.021-.004-.024a1.8 1.8 0 0 1-.15.706.95.95 0 0 1-.213.335 1 1 0 0 0-.088-.042c-.104-.045-.198-.064-.284-.133a1.3 1.3 0 0 0-.22-.066c.05-.06.146-.133.183-.198q.08-.193.088-.402v-.02a1.2 1.2 0 0 0-.061-.4c-.045-.134-.101-.2-.183-.333-.084-.066-.167-.132-.267-.132h-.016c-.093 0-.176.03-.262.132a.8.8 0 0 0-.205.334 1.2 1.2 0 0 0-.09.4v.019q.002.134.02.267c-.193-.067-.438-.135-.607-.202a2 2 0 0 1-.018-.2v-.02a1.8 1.8 0 0 1 .15-.768 1.08 1.08 0 0 1 .43-.533 1 1 0 0 1 .594-.2zm-2.962.059h.036c.142 0 .27.048.399.135.146.129.264.288.344.465.09.199.14.4.153.667v.004c.007.134.006.2-.002.266v.08c-.03.007-.056.018-.083.024-.152.055-.274.135-.393.2q.018-.136.003-.267v-.015c-.012-.133-.04-.2-.082-.333a.6.6 0 0 0-.166-.267.25.25 0 0 0-.183-.064h-.021c-.071.006-.13.04-.186.132a.55.55 0 0 0-.12.27 1 1 0 0 0-.023.33v.015c.012.135.037.2.08.334.046.134.098.2.166.268q.014.014.034.024c-.07.057-.117.07-.176.136a.3.3 0 0 1-.131.068 2.6 2.6 0 0 1-.275-.402 1.8 1.8 0 0 1-.155-.667 1.8 1.8 0 0 1 .08-.668 1.4 1.4 0 0 1 .283-.535c.128-.133.26-.2.418-.2m1.37 1.706c.332 0 .733.065 1.216.399.293.2.523.269 1.052.468h.003c.255.136.405.266.478.399v-.131a.57.57 0 0 1 .016.47c-.123.31-.516.643-1.063.842v.002c-.268.135-.501.333-.775.465-.276.135-.588.292-1.012.267a1.1 1.1 0 0 1-.448-.067 4 4 0 0 1-.322-.198c-.195-.135-.363-.332-.612-.465v-.005h-.005c-.4-.246-.616-.512-.686-.71q-.104-.403.193-.6c.224-.135.38-.271.483-.336.104-.074.143-.102.176-.131h.002v-.003c.169-.202.436-.47.839-.601.139-.036.294-.065.466-.065zm2.8 2.142c.358 1.417 1.196 3.475 1.735 4.473.286.534.855 1.659 1.102 3.024.156-.005.33.018.513.064.646-1.671-.546-3.467-1.089-3.966-.22-.2-.232-.335-.123-.335.59.534 1.365 1.572 1.646 2.757.13.535.16 1.104.021 1.67.067.028.135.06.205.067 1.032.534 1.413.938 1.23 1.537v-.043c-.06-.003-.12 0-.18 0h-.016c.151-.467-.182-.825-1.065-1.224-.915-.4-1.646-.336-1.77.465-.008.043-.013.066-.018.135-.068.023-.139.053-.209.064-.43.268-.662.669-.793 1.187-.13.533-.17 1.156-.205 1.869v.003c-.02.334-.17.838-.319 1.35-1.5 1.072-3.58 1.538-5.348.334a2.7 2.7 0 0 0-.402-.533 1.5 1.5 0 0 0-.275-.333c.182 0 .338-.03.465-.067a.62.62 0 0 0 .314-.334c.108-.267 0-.697-.345-1.163s-.931-.995-1.788-1.521c-.63-.4-.986-.87-1.15-1.396-.165-.534-.143-1.085-.015-1.645.245-1.07.873-2.11 1.274-2.763.107-.065.037.135-.408.974-.396.751-1.14 2.497-.122 3.854a8.1 8.1 0 0 1 .647-2.876c.564-1.278 1.743-3.504 1.836-5.268.048.036.217.135.289.202.218.133.38.333.59.465.21.201.477.335.876.335q.058.005.11.006c.412 0 .73-.134.997-.268.29-.134.52-.334.74-.4h.005c.467-.135.835-.402 1.044-.7zm2.185 8.958c.037.6.343 1.245.882 1.377.588.134 1.434-.333 1.791-.765l.211-.01c.315-.007.577.01.847.268l.003.003c.208.199.305.53.391.876.085.4.154.78.409 1.066.486.527.645.906.636 1.14l.003-.007v.018l-.003-.012c-.015.262-.185.396-.498.595-.63.401-1.746.712-2.457 1.57-.618.737-1.37 1.14-2.036 1.191-.664.053-1.237-.2-1.574-.898l-.005-.003c-.21-.4-.12-1.025.056-1.69.176-.668.428-1.344.463-1.897.037-.714.076-1.335.195-1.814.12-.465.308-.797.641-.984l.045-.022zm-10.814.049h.01q.08 0 .157.014c.376.055.706.333 1.023.752l.91 1.664.003.003c.243.533.754 1.064 1.189 1.637.434.598.77 1.131.729 1.57v.006c-.057.744-.48 1.148-1.125 1.294-.645.135-1.52.002-2.395-.464-.968-.536-2.118-.469-2.857-.602q-.553-.1-.723-.4c-.11-.2-.113-.602.123-1.23v-.004l.002-.003c.117-.334.03-.752-.027-1.118-.055-.401-.083-.71.043-.94.16-.334.396-.4.69-.533.294-.135.64-.202.915-.47h.002v-.002c.256-.268.445-.601.668-.838.19-.201.38-.336.663-.336m7.159-9.074c-.435.201-.945.535-1.488.535-.542 0-.97-.267-1.28-.466-.154-.134-.28-.268-.373-.335-.164-.134-.144-.333-.074-.333.109.016.129.134.199.2.096.066.215.2.36.333.292.2.68.467 1.167.467.485 0 1.053-.267 1.398-.466.195-.135.445-.334.648-.467.156-.136.149-.267.279-.267.128.016.034.134-.147.332a8 8 0 0 1-.69.468zm-1.082-1.583V5.64c-.006-.02.013-.042.029-.05.074-.043.18-.027.26.004.063 0 .16.067.15.135-.006.049-.085.066-.135.066-.055 0-.092-.043-.141-.068-.052-.018-.146-.008-.163-.065m-.551 0c-.02.058-.113.049-.166.066-.047.025-.086.068-.14.068-.05 0-.13-.02-.136-.068-.01-.066.088-.133.15-.133.08-.031.184-.047.259-.005.019.009.036.03.03.05v.02h.003z"/></svg></span></p>
+<p>A popular standalone fork of VS Code with powerful agentic features. Cursor excels at multi-file editing, codebase understanding, and autonomous debugging. Uses a flat-fee pricing model with support for multiple LLM providers.</p>
+<p><strong>Best for</strong>: Developers wanting a turnkey solution with stable, production-ready features.</p>
+<p><strong><a href="../vibe/#windsurf"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 23v-2c-1.41.05-2.78-.1-4-1-1.76 1.25-4.23 1.25-6 0-1.77 1.25-4.24 1.25-6 0-1.22.9-2.59 1.05-4 1v2c1.37.05 2.78-.06 4-.75 1.84 1 4.15 1 6 0 1.85 1 4.16 1 6 0 1.22.69 2.63.8 4 .75m-1.5-11.03V9.95c-1.76.01-3.5-.95-4.32-2.54l-.89-1.55c-.29-.46-.74-.75-1.22-.89L8.5 3.94 5 6.38 6.13 8l2.82-1.9 2.02.33-2.16 1.45C8.21 8.29 7.88 9 8 9.71l.53 3.1C7.12 12.26 3.21 11 3 13.23c.36 2.44 3.07 4.09 5.06 5.59 1.44.47 3-.24 3.94-1.36 1.32 1.7 3.89 2 5.5.54-.47-.42-1-.85-1.5-1.2v-3.85l-3.81-3 2.25-1.51C15.62 10.59 18 12 20.5 11.97M14 14v1.47c0-.04-2.34-1.31-2.19-1.23l-1.08-.54-.42-2.62zm5-10.5c0 1.11-.89 2-2 2s-2-.89-2-2 .9-2 2-2 2 .9 2 2"/></svg></span> Windsurf</a></strong>
+<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11"/></svg></span> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 12V6.75l6-1.32v6.48zm17-9v8.75l-10 .15V5.21zM3 13l6 .09v6.81l-6-1.15zm17 .25V22l-10-1.91V13.1z"/></svg></span> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.504 0q-.232 0-.48.021c-4.226.333-3.105 4.807-3.17 6.298-.076 1.092-.3 1.953-1.05 3.02-.885 1.051-2.127 2.75-2.716 4.521-.278.832-.41 1.684-.287 2.489a.4.4 0 0 0-.11.135c-.26.268-.45.6-.663.839-.199.199-.485.267-.797.4-.313.136-.658.269-.864.68-.09.189-.136.394-.132.602 0 .199.027.4.055.536.058.399.116.728.04.97-.249.68-.28 1.145-.106 1.484.174.334.535.47.94.601.81.2 1.91.135 2.774.6.926.466 1.866.67 2.616.47.526-.116.97-.464 1.208-.946.587-.003 1.23-.269 2.26-.334.699-.058 1.574.267 2.577.2.025.134.063.198.114.333l.003.003c.391.778 1.113 1.132 1.884 1.071s1.592-.536 2.257-1.306c.631-.765 1.683-1.084 2.378-1.503.348-.199.629-.469.649-.853.023-.4-.2-.811-.714-1.376v-.097l-.003-.003c-.17-.2-.25-.535-.338-.926-.085-.401-.182-.786-.492-1.046h-.003c-.059-.054-.123-.067-.188-.135a.36.36 0 0 0-.19-.064c.431-1.278.264-2.55-.173-3.694-.533-1.41-1.465-2.638-2.175-3.483-.796-1.005-1.576-1.957-1.56-3.368.026-2.152.236-6.133-3.544-6.139m.529 3.405h.013c.213 0 .396.062.584.198.19.135.33.332.438.533.105.259.158.459.166.724 0-.02.006-.04.006-.06v.105l-.004-.021-.004-.024a1.8 1.8 0 0 1-.15.706.95.95 0 0 1-.213.335 1 1 0 0 0-.088-.042c-.104-.045-.198-.064-.284-.133a1.3 1.3 0 0 0-.22-.066c.05-.06.146-.133.183-.198q.08-.193.088-.402v-.02a1.2 1.2 0 0 0-.061-.4c-.045-.134-.101-.2-.183-.333-.084-.066-.167-.132-.267-.132h-.016c-.093 0-.176.03-.262.132a.8.8 0 0 0-.205.334 1.2 1.2 0 0 0-.09.4v.019q.002.134.02.267c-.193-.067-.438-.135-.607-.202a2 2 0 0 1-.018-.2v-.02a1.8 1.8 0 0 1 .15-.768 1.08 1.08 0 0 1 .43-.533 1 1 0 0 1 .594-.2zm-2.962.059h.036c.142 0 .27.048.399.135.146.129.264.288.344.465.09.199.14.4.153.667v.004c.007.134.006.2-.002.266v.08c-.03.007-.056.018-.083.024-.152.055-.274.135-.393.2q.018-.136.003-.267v-.015c-.012-.133-.04-.2-.082-.333a.6.6 0 0 0-.166-.267.25.25 0 0 0-.183-.064h-.021c-.071.006-.13.04-.186.132a.55.55 0 0 0-.12.27 1 1 0 0 0-.023.33v.015c.012.135.037.2.08.334.046.134.098.2.166.268q.014.014.034.024c-.07.057-.117.07-.176.136a.3.3 0 0 1-.131.068 2.6 2.6 0 0 1-.275-.402 1.8 1.8 0 0 1-.155-.667 1.8 1.8 0 0 1 .08-.668 1.4 1.4 0 0 1 .283-.535c.128-.133.26-.2.418-.2m1.37 1.706c.332 0 .733.065 1.216.399.293.2.523.269 1.052.468h.003c.255.136.405.266.478.399v-.131a.57.57 0 0 1 .016.47c-.123.31-.516.643-1.063.842v.002c-.268.135-.501.333-.775.465-.276.135-.588.292-1.012.267a1.1 1.1 0 0 1-.448-.067 4 4 0 0 1-.322-.198c-.195-.135-.363-.332-.612-.465v-.005h-.005c-.4-.246-.616-.512-.686-.71q-.104-.403.193-.6c.224-.135.38-.271.483-.336.104-.074.143-.102.176-.131h.002v-.003c.169-.202.436-.47.839-.601.139-.036.294-.065.466-.065zm2.8 2.142c.358 1.417 1.196 3.475 1.735 4.473.286.534.855 1.659 1.102 3.024.156-.005.33.018.513.064.646-1.671-.546-3.467-1.089-3.966-.22-.2-.232-.335-.123-.335.59.534 1.365 1.572 1.646 2.757.13.535.16 1.104.021 1.67.067.028.135.06.205.067 1.032.534 1.413.938 1.23 1.537v-.043c-.06-.003-.12 0-.18 0h-.016c.151-.467-.182-.825-1.065-1.224-.915-.4-1.646-.336-1.77.465-.008.043-.013.066-.018.135-.068.023-.139.053-.209.064-.43.268-.662.669-.793 1.187-.13.533-.17 1.156-.205 1.869v.003c-.02.334-.17.838-.319 1.35-1.5 1.072-3.58 1.538-5.348.334a2.7 2.7 0 0 0-.402-.533 1.5 1.5 0 0 0-.275-.333c.182 0 .338-.03.465-.067a.62.62 0 0 0 .314-.334c.108-.267 0-.697-.345-1.163s-.931-.995-1.788-1.521c-.63-.4-.986-.87-1.15-1.396-.165-.534-.143-1.085-.015-1.645.245-1.07.873-2.11 1.274-2.763.107-.065.037.135-.408.974-.396.751-1.14 2.497-.122 3.854a8.1 8.1 0 0 1 .647-2.876c.564-1.278 1.743-3.504 1.836-5.268.048.036.217.135.289.202.218.133.38.333.59.465.21.201.477.335.876.335q.058.005.11.006c.412 0 .73-.134.997-.268.29-.134.52-.334.74-.4h.005c.467-.135.835-.402 1.044-.7zm2.185 8.958c.037.6.343 1.245.882 1.377.588.134 1.434-.333 1.791-.765l.211-.01c.315-.007.577.01.847.268l.003.003c.208.199.305.53.391.876.085.4.154.78.409 1.066.486.527.645.906.636 1.14l.003-.007v.018l-.003-.012c-.015.262-.185.396-.498.595-.63.401-1.746.712-2.457 1.57-.618.737-1.37 1.14-2.036 1.191-.664.053-1.237-.2-1.574-.898l-.005-.003c-.21-.4-.12-1.025.056-1.69.176-.668.428-1.344.463-1.897.037-.714.076-1.335.195-1.814.12-.465.308-.797.641-.984l.045-.022zm-10.814.049h.01q.08 0 .157.014c.376.055.706.333 1.023.752l.91 1.664.003.003c.243.533.754 1.064 1.189 1.637.434.598.77 1.131.729 1.57v.006c-.057.744-.48 1.148-1.125 1.294-.645.135-1.52.002-2.395-.464-.968-.536-2.118-.469-2.857-.602q-.553-.1-.723-.4c-.11-.2-.113-.602.123-1.23v-.004l.002-.003c.117-.334.03-.752-.027-1.118-.055-.401-.083-.71.043-.94.16-.334.396-.4.69-.533.294-.135.64-.202.915-.47h.002v-.002c.256-.268.445-.601.668-.838.19-.201.38-.336.663-.336m7.159-9.074c-.435.201-.945.535-1.488.535-.542 0-.97-.267-1.28-.466-.154-.134-.28-.268-.373-.335-.164-.134-.144-.333-.074-.333.109.016.129.134.199.2.096.066.215.2.36.333.292.2.68.467 1.167.467.485 0 1.053-.267 1.398-.466.195-.135.445-.334.648-.467.156-.136.149-.267.279-.267.128.016.034.134-.147.332a8 8 0 0 1-.69.468zm-1.082-1.583V5.64c-.006-.02.013-.042.029-.05.074-.043.18-.027.26.004.063 0 .16.067.15.135-.006.049-.085.066-.135.066-.055 0-.092-.043-.141-.068-.052-.018-.146-.008-.163-.065m-.551 0c-.02.058-.113.049-.166.066-.047.025-.086.068-.14.068-.05 0-.13-.02-.136-.068-.01-.066.088-.133.15-.133.08-.031.184-.047.259-.005.019.009.036.03.03.05v.02h.003z"/></svg></span></p>
+<p>Standalone editor focused on "just works" usability with agentic and inline features. Similar capabilities to Cursor with a different UX philosophy.</p>
+<p><strong>Best for</strong>: Developers who prefer Windsurf's interaction model over Cursor's approach.</p>
+<p><strong><a href="https://claude.ai/download"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.304 3.541h-3.672l6.696 16.918H24Zm-10.608 0L0 20.459h3.744l1.37-3.553h7.005l1.369 3.553h3.744L10.536 3.541Zm-.371 10.223L8.616 7.82l2.291 5.945Z"/></svg></span> Claude Desktop</a></strong>
+<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11"/></svg></span> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 12V6.75l6-1.32v6.48zm17-9v8.75l-10 .15V5.21zM3 13l6 .09v6.81l-6-1.15zm17 .25V22l-10-1.91V13.1z"/></svg></span> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.504 0q-.232 0-.48.021c-4.226.333-3.105 4.807-3.17 6.298-.076 1.092-.3 1.953-1.05 3.02-.885 1.051-2.127 2.75-2.716 4.521-.278.832-.41 1.684-.287 2.489a.4.4 0 0 0-.11.135c-.26.268-.45.6-.663.839-.199.199-.485.267-.797.4-.313.136-.658.269-.864.68-.09.189-.136.394-.132.602 0 .199.027.4.055.536.058.399.116.728.04.97-.249.68-.28 1.145-.106 1.484.174.334.535.47.94.601.81.2 1.91.135 2.774.6.926.466 1.866.67 2.616.47.526-.116.97-.464 1.208-.946.587-.003 1.23-.269 2.26-.334.699-.058 1.574.267 2.577.2.025.134.063.198.114.333l.003.003c.391.778 1.113 1.132 1.884 1.071s1.592-.536 2.257-1.306c.631-.765 1.683-1.084 2.378-1.503.348-.199.629-.469.649-.853.023-.4-.2-.811-.714-1.376v-.097l-.003-.003c-.17-.2-.25-.535-.338-.926-.085-.401-.182-.786-.492-1.046h-.003c-.059-.054-.123-.067-.188-.135a.36.36 0 0 0-.19-.064c.431-1.278.264-2.55-.173-3.694-.533-1.41-1.465-2.638-2.175-3.483-.796-1.005-1.576-1.957-1.56-3.368.026-2.152.236-6.133-3.544-6.139m.529 3.405h.013c.213 0 .396.062.584.198.19.135.33.332.438.533.105.259.158.459.166.724 0-.02.006-.04.006-.06v.105l-.004-.021-.004-.024a1.8 1.8 0 0 1-.15.706.95.95 0 0 1-.213.335 1 1 0 0 0-.088-.042c-.104-.045-.198-.064-.284-.133a1.3 1.3 0 0 0-.22-.066c.05-.06.146-.133.183-.198q.08-.193.088-.402v-.02a1.2 1.2 0 0 0-.061-.4c-.045-.134-.101-.2-.183-.333-.084-.066-.167-.132-.267-.132h-.016c-.093 0-.176.03-.262.132a.8.8 0 0 0-.205.334 1.2 1.2 0 0 0-.09.4v.019q.002.134.02.267c-.193-.067-.438-.135-.607-.202a2 2 0 0 1-.018-.2v-.02a1.8 1.8 0 0 1 .15-.768 1.08 1.08 0 0 1 .43-.533 1 1 0 0 1 .594-.2zm-2.962.059h.036c.142 0 .27.048.399.135.146.129.264.288.344.465.09.199.14.4.153.667v.004c.007.134.006.2-.002.266v.08c-.03.007-.056.018-.083.024-.152.055-.274.135-.393.2q.018-.136.003-.267v-.015c-.012-.133-.04-.2-.082-.333a.6.6 0 0 0-.166-.267.25.25 0 0 0-.183-.064h-.021c-.071.006-.13.04-.186.132a.55.55 0 0 0-.12.27 1 1 0 0 0-.023.33v.015c.012.135.037.2.08.334.046.134.098.2.166.268q.014.014.034.024c-.07.057-.117.07-.176.136a.3.3 0 0 1-.131.068 2.6 2.6 0 0 1-.275-.402 1.8 1.8 0 0 1-.155-.667 1.8 1.8 0 0 1 .08-.668 1.4 1.4 0 0 1 .283-.535c.128-.133.26-.2.418-.2m1.37 1.706c.332 0 .733.065 1.216.399.293.2.523.269 1.052.468h.003c.255.136.405.266.478.399v-.131a.57.57 0 0 1 .016.47c-.123.31-.516.643-1.063.842v.002c-.268.135-.501.333-.775.465-.276.135-.588.292-1.012.267a1.1 1.1 0 0 1-.448-.067 4 4 0 0 1-.322-.198c-.195-.135-.363-.332-.612-.465v-.005h-.005c-.4-.246-.616-.512-.686-.71q-.104-.403.193-.6c.224-.135.38-.271.483-.336.104-.074.143-.102.176-.131h.002v-.003c.169-.202.436-.47.839-.601.139-.036.294-.065.466-.065zm2.8 2.142c.358 1.417 1.196 3.475 1.735 4.473.286.534.855 1.659 1.102 3.024.156-.005.33.018.513.064.646-1.671-.546-3.467-1.089-3.966-.22-.2-.232-.335-.123-.335.59.534 1.365 1.572 1.646 2.757.13.535.16 1.104.021 1.67.067.028.135.06.205.067 1.032.534 1.413.938 1.23 1.537v-.043c-.06-.003-.12 0-.18 0h-.016c.151-.467-.182-.825-1.065-1.224-.915-.4-1.646-.336-1.77.465-.008.043-.013.066-.018.135-.068.023-.139.053-.209.064-.43.268-.662.669-.793 1.187-.13.533-.17 1.156-.205 1.869v.003c-.02.334-.17.838-.319 1.35-1.5 1.072-3.58 1.538-5.348.334a2.7 2.7 0 0 0-.402-.533 1.5 1.5 0 0 0-.275-.333c.182 0 .338-.03.465-.067a.62.62 0 0 0 .314-.334c.108-.267 0-.697-.345-1.163s-.931-.995-1.788-1.521c-.63-.4-.986-.87-1.15-1.396-.165-.534-.143-1.085-.015-1.645.245-1.07.873-2.11 1.274-2.763.107-.065.037.135-.408.974-.396.751-1.14 2.497-.122 3.854a8.1 8.1 0 0 1 .647-2.876c.564-1.278 1.743-3.504 1.836-5.268.048.036.217.135.289.202.218.133.38.333.59.465.21.201.477.335.876.335q.058.005.11.006c.412 0 .73-.134.997-.268.29-.134.52-.334.74-.4h.005c.467-.135.835-.402 1.044-.7zm2.185 8.958c.037.6.343 1.245.882 1.377.588.134 1.434-.333 1.791-.765l.211-.01c.315-.007.577.01.847.268l.003.003c.208.199.305.53.391.876.085.4.154.78.409 1.066.486.527.645.906.636 1.14l.003-.007v.018l-.003-.012c-.015.262-.185.396-.498.595-.63.401-1.746.712-2.457 1.57-.618.737-1.37 1.14-2.036 1.191-.664.053-1.237-.2-1.574-.898l-.005-.003c-.21-.4-.12-1.025.056-1.69.176-.668.428-1.344.463-1.897.037-.714.076-1.335.195-1.814.12-.465.308-.797.641-.984l.045-.022zm-10.814.049h.01q.08 0 .157.014c.376.055.706.333 1.023.752l.91 1.664.003.003c.243.533.754 1.064 1.189 1.637.434.598.77 1.131.729 1.57v.006c-.057.744-.48 1.148-1.125 1.294-.645.135-1.52.002-2.395-.464-.968-.536-2.118-.469-2.857-.602q-.553-.1-.723-.4c-.11-.2-.113-.602.123-1.23v-.004l.002-.003c.117-.334.03-.752-.027-1.118-.055-.401-.083-.71.043-.94.16-.334.396-.4.69-.533.294-.135.64-.202.915-.47h.002v-.002c.256-.268.445-.601.668-.838.19-.201.38-.336.663-.336m7.159-9.074c-.435.201-.945.535-1.488.535-.542 0-.97-.267-1.28-.466-.154-.134-.28-.268-.373-.335-.164-.134-.144-.333-.074-.333.109.016.129.134.199.2.096.066.215.2.36.333.292.2.68.467 1.167.467.485 0 1.053-.267 1.398-.466.195-.135.445-.334.648-.467.156-.136.149-.267.279-.267.128.016.034.134-.147.332a8 8 0 0 1-.69.468zm-1.082-1.583V5.64c-.006-.02.013-.042.029-.05.074-.043.18-.027.26.004.063 0 .16.067.15.135-.006.049-.085.066-.135.066-.055 0-.092-.043-.141-.068-.052-.018-.146-.008-.163-.065m-.551 0c-.02.058-.113.049-.166.066-.047.025-.086.068-.14.068-.05 0-.13-.02-.136-.068-.01-.066.088-.133.15-.133.08-.031.184-.047.259-.005.019.009.036.03.03.05v.02h.003z"/></svg></span></p>
+<p>Native desktop application with built-in <a href="../mcp/"><strong>Model Context Protocol (MCP)</strong></a> support. Connect to local filesystem servers, GitHub repositories, databases, and custom tools for context-aware assistance.</p>
+<p><strong>Best for</strong>: Users wanting MCP integration and native OS features without IDE lock-in.</p>
+<h4 id="vs-code-extensions">VS Code Extensions<a class="headerlink" href="#vs-code-extensions" title="Permanent link">&para;</a></h4>
+<p><strong><a href="../vibe/#claude-code-vs-code-extension"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.304 3.541h-3.672l6.696 16.918H24Zm-10.608 0L0 20.459h3.744l1.37-3.553h7.005l1.369 3.553h3.744L10.536 3.541Zm-.371 10.223L8.616 7.82l2.291 5.945Z"/></svg></span> Claude Code</a></strong>
+<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 16.47V7.39l-6 4.54M2.22 9.19a.86.86 0 0 1-.02-1.15l1.2-1.11c.2-.18.69-.26 1.05 0l3.42 2.61 7.93-7.25c.32-.32.87-.45 1.5-.12l4 1.91c.36.21.7.54.7 1.15v13.5c0 .4-.29.83-.6 1l-4.4 2.1c-.32.13-.92.01-1.13-.2l-8.02-7.3-3.4 2.6c-.38.26-.85.19-1.05 0l-1.2-1.1c-.32-.33-.28-.87.05-1.2l3-2.7"/></svg></span></p>
+<p>Official Anthropic VS Code extension featuring multi-file editing, debugging, and terminal integration. Provides agentic coding capabilities directly in VS Code.</p>
+<p><strong>Best for</strong>: VS Code users wanting official Claude integration with strong agentic features.</p>
+<p><strong><a href="../vibe/#cline"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2M7.5 13A2.5 2.5 0 0 0 5 15.5 2.5 2.5 0 0 0 7.5 18a2.5 2.5 0 0 0 2.5-2.5A2.5 2.5 0 0 0 7.5 13m9 0a2.5 2.5 0 0 0-2.5 2.5 2.5 2.5 0 0 0 2.5 2.5 2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5"/></svg></span> Cline</a></strong>
+<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 16.47V7.39l-6 4.54M2.22 9.19a.86.86 0 0 1-.02-1.15l1.2-1.11c.2-.18.69-.26 1.05 0l3.42 2.61 7.93-7.25c.32-.32.87-.45 1.5-.12l4 1.91c.36.21.7.54.7 1.15v13.5c0 .4-.29.83-.6 1l-4.4 2.1c-.32.13-.92.01-1.13-.2l-8.02-7.3-3.4 2.6c-.38.26-.85.19-1.05 0l-1.2-1.1c-.32-.33-.28-.87.05-1.2l3-2.7"/></svg></span> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.41 22h-.19a.46.46 0 0 1-.26-.27l-2.22-5.8c-.09-.24.03-.51.26-.61.71-.26 1.28-.82 1.58-1.49.64-1.43 0-3.1-1.43-3.74s-3.1 0-3.74 1.41c-.3.71-.32 1.5-.05 2.19.3.74.89 1.31 1.64 1.59.24.09.37.36.28.61L9 21.69c-.04.12-.13.22-.25.27-.12.04-.25.04-.36 0C3.24 19.97.67 14.18 2.66 9.03s7.78-7.72 12.93-5.73c2.47.96 4.46 2.85 5.54 5.27a9.9 9.9 0 0 1 .2 7.65c-1.01 2.66-3.1 4.78-5.75 5.78zM12 3.59c-4.97-.13-9.1 3.8-9.23 8.77a9.01 9.01 0 0 0 5.55 8.54l1.89-4.9c-1.83-1-2.52-3.28-1.53-5.11a3.784 3.784 0 0 1 5.11-1.53 3.775 3.775 0 0 1 0 6.64l1.89 4.93a9.11 9.11 0 0 0 4.76-5c1.84-4.62-.4-9.85-5.02-11.7A9.1 9.1 0 0 0 12 3.59"/></svg></span></p>
+<p>Open-source, model-agnostic VS Code extension pioneering "bring your own model" (BYOM). Supports multiple LLM providers including local models via Ollama.</p>
+<p><strong>Best for</strong>: Users wanting flexibility, open-source transparency, and control over model selection.</p>
+<p><strong><a href="../vibe/#roo-code"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.8 6.59 19 7.97v2.07l-1.31 1.57-.38 1.64L16 14l-.5-.88.94-.53.26-1.14.07-.3.7-.84c.18-.21.15-.53-.06-.7a.506.506 0 0 0-.71.06l-.85 1.02-.29 1.24c-.18.03-.36.07-.56.07-.69 0-1.32-.24-1.77-.6-.08 1.3-.5 2.41-1.1 3.03l-1.63 1.76-.54 3.6L8.07 21l-.54-.83 1.51-.98.46-3.27v-.01l.5-1.37c-.53-.46-.92-1.26-1.12-2.24l-.17.31c-.36.64-.71 1.29-1.15 1.95-.45.64-.9 1.34-1.78 1.88-.44.28-1.08.4-1.61.29-.56-.12-1.03-.47-1.31-.84-.55-.76-.71-1.54-.86-2.27l.97-.26c.23.64.53 1.29.91 1.64.38.33.69.26.96 0 .32-.27.63-.85.89-1.45.27-.61.49-1.27.72-1.95.48-1.36.94-2.78 1.75-4.24.42-.72.93-1.47 1.72-2.14C10.7 4.55 11.73 4 13 4s2.7 1.22 3.58 2.34c.42.55 1.29.48 1.64-.13l.92-1.58a.9.9 0 0 1-.35-.23.984.984 0 0 1 0-1.4l1.14 1.13c.03 0 .07-.02.07-.02a1 1 0 0 1 .91.58L22 7l-1 .5z"/></svg></span> Roo Code</a></strong>
+<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 16.47V7.39l-6 4.54M2.22 9.19a.86.86 0 0 1-.02-1.15l1.2-1.11c.2-.18.69-.26 1.05 0l3.42 2.61 7.93-7.25c.32-.32.87-.45 1.5-.12l4 1.91c.36.21.7.54.7 1.15v13.5c0 .4-.29.83-.6 1l-4.4 2.1c-.32.13-.92.01-1.13-.2l-8.02-7.3-3.4 2.6c-.38.26-.85.19-1.05 0l-1.2-1.1c-.32-.33-.28-.87.05-1.2l3-2.7"/></svg></span> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.41 22h-.19a.46.46 0 0 1-.26-.27l-2.22-5.8c-.09-.24.03-.51.26-.61.71-.26 1.28-.82 1.58-1.49.64-1.43 0-3.1-1.43-3.74s-3.1 0-3.74 1.41c-.3.71-.32 1.5-.05 2.19.3.74.89 1.31 1.64 1.59.24.09.37.36.28.61L9 21.69c-.04.12-.13.22-.25.27-.12.04-.25.04-.36 0C3.24 19.97.67 14.18 2.66 9.03s7.78-7.72 12.93-5.73c2.47.96 4.46 2.85 5.54 5.27a9.9 9.9 0 0 1 .2 7.65c-1.01 2.66-3.1 4.78-5.75 5.78zM12 3.59c-4.97-.13-9.1 3.8-9.23 8.77a9.01 9.01 0 0 0 5.55 8.54l1.89-4.9c-1.83-1-2.52-3.28-1.53-5.11a3.784 3.784 0 0 1 5.11-1.53 3.775 3.775 0 0 1 0 6.64l1.89 4.93a9.11 9.11 0 0 0 4.76-5c1.84-4.62-.4-9.85-5.02-11.7A9.1 9.1 0 0 0 12 3.59"/></svg></span></p>
+<p>Fork of Cline focused on rapid feature development and customization. Serves users interested in experimental capabilities.</p>
+<p><strong>Best for</strong>: Early adopters wanting cutting-edge features and customization options.</p>
+<p><strong><a href="../vibe/#github-copilot"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M7.998 15.035c-4.562 0-7.873-2.914-7.998-3.749V9.338c.085-.628.677-1.686 1.588-2.065q.019-.105.036-.218c.029-.183.06-.384.126-.612-.201-.508-.254-1.084-.254-1.656 0-.87.128-1.769.693-2.484.579-.733 1.494-1.124 2.724-1.261 1.206-.134 2.262.034 2.944.765q.075.08.139.165.068-.085.143-.165c.682-.731 1.738-.899 2.944-.765 1.23.137 2.145.528 2.724 1.261.566.715.693 1.614.693 2.484 0 .572-.053 1.148-.254 1.656.066.228.098.429.126.612q.018.113.037.218c.924.385 1.522 1.471 1.591 2.095v1.872c0 .766-3.351 3.795-8.002 3.795m0-1.485c2.28 0 4.584-1.11 5.002-1.433V7.862l-.023-.116c-.49.21-1.075.291-1.727.291-1.146 0-2.059-.327-2.71-.991A3.2 3.2 0 0 1 8 6.303a3.2 3.2 0 0 1-.544.743c-.65.664-1.563.991-2.71.991-.652 0-1.236-.081-1.727-.291l-.023.116v4.255c.419.323 2.722 1.433 5.002 1.433M6.762 2.83c-.193-.206-.637-.413-1.682-.297-1.019.113-1.479.404-1.713.7-.247.312-.369.789-.369 1.554 0 .793.129 1.171.308 1.371.162.181.519.379 1.442.379.853 0 1.339-.235 1.638-.54.315-.322.527-.827.617-1.553.117-.935-.037-1.395-.241-1.614m4.155-.297c-1.044-.116-1.488.091-1.681.297-.204.219-.359.679-.242 1.614.091.726.303 1.231.618 1.553.299.305.784.54 1.638.54.922 0 1.28-.198 1.442-.379.179-.2.308-.578.308-1.371 0-.765-.123-1.242-.37-1.554-.233-.296-.693-.587-1.713-.7"/><path d="M6.25 9.037a.75.75 0 0 1 .75.75v1.501a.75.75 0 0 1-1.5 0V9.787a.75.75 0 0 1 .75-.75m4.25.75v1.501a.75.75 0 0 1-1.5 0V9.787a.75.75 0 0 1 1.5 0"/></svg></span> GitHub Copilot</a></strong>
+<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 16.47V7.39l-6 4.54M2.22 9.19a.86.86 0 0 1-.02-1.15l1.2-1.11c.2-.18.69-.26 1.05 0l3.42 2.61 7.93-7.25c.32-.32.87-.45 1.5-.12l4 1.91c.36.21.7.54.7 1.15v13.5c0 .4-.29.83-.6 1l-4.4 2.1c-.32.13-.92.01-1.13-.2l-8.02-7.3-3.4 2.6c-.38.26-.85.19-1.05 0l-1.2-1.1c-.32-.33-.28-.87.05-1.2l3-2.7"/></svg></span> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M0 11.25c0-.966.784-1.75 1.75-1.75h12.5c.966 0 1.75.784 1.75 1.75v3A1.75 1.75 0 0 1 14.25 16H1.75A1.75 1.75 0 0 1 0 14.25Zm2-9.5C2 .784 2.784 0 3.75 0h8.5C13.216 0 14 .784 14 1.75v5a1.75 1.75 0 0 1-1.75 1.75h-8.5A1.75 1.75 0 0 1 2 6.75Zm1.75-.25a.25.25 0 0 0-.25.25v5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-5a.25.25 0 0 0-.25-.25Zm-2 9.5a.25.25 0 0 0-.25.25v3c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25v-3a.25.25 0 0 0-.25-.25Z"/><path d="M7 12.75a.75.75 0 0 1 .75-.75h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1-.75-.75m-4 0a.75.75 0 0 1 .75-.75h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1-.75-.75"/></svg></span></p>
+<p>Microsoft's AI pair programmer with deep GitHub integration. Provides inline completion, chat assistance, and agentic features through Copilot Workspace.</p>
+<p><strong>Best for</strong>: GitHub-centric workflows and organizations with enterprise GitHub licenses.</p>
+<p><strong><a href="../vibe/#gemini-code-assist"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053z"/></svg></span> Gemini Code Assist</a></strong>
+<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 16.47V7.39l-6 4.54M2.22 9.19a.86.86 0 0 1-.02-1.15l1.2-1.11c.2-.18.69-.26 1.05 0l3.42 2.61 7.93-7.25c.32-.32.87-.45 1.5-.12l4 1.91c.36.21.7.54.7 1.15v13.5c0 .4-.29.83-.6 1l-4.4 2.1c-.32.13-.92.01-1.13-.2l-8.02-7.3-3.4 2.6c-.38.26-.85.19-1.05 0l-1.2-1.1c-.32-.33-.28-.87.05-1.2l3-2.7"/></svg></span></p>
+<p>Google's VS Code extension powered by Gemini models, offering code completion, generation, and chat assistance with Google Cloud integration.</p>
+<p><strong>Best for</strong>: Google Cloud Platform users and those in the Google ecosystem.</p>
+<h4 id="command-line-interface-cli-tools">Command Line Interface (CLI) Tools<a class="headerlink" href="#command-line-interface-cli-tools" title="Permanent link">&para;</a></h4>
+<p><strong><a href="https://docs.anthropic.com/en/docs/claude-code"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.304 3.541h-3.672l6.696 16.918H24Zm-10.608 0L0 20.459h3.744l1.37-3.553h7.005l1.369 3.553h3.744L10.536 3.541Zm-.371 10.223L8.616 7.82l2.291 5.945Z"/></svg></span> Claude Code CLI</a></strong>
+<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.038 4.9 13.461.402a2.86 2.86 0 0 0-2.923.001L2.961 4.9A3.02 3.02 0 0 0 1.5 7.503v8.995c0 1.073.557 2.066 1.462 2.603l7.577 4.497a2.86 2.86 0 0 0 2.922 0l7.577-4.497a3.02 3.02 0 0 0 1.462-2.603V7.503A3.02 3.02 0 0 0 21.038 4.9M15.17 18.946l.013.646c.001.078-.05.167-.111.198l-.383.22c-.061.031-.111-.007-.112-.085l-.007-.635c-.328.136-.66.169-.872.084-.04-.016-.057-.075-.041-.142l.139-.584a.24.24 0 0 1 .069-.121.2.2 0 0 1 .036-.026q.033-.017.062-.006c.229.077.521.041.802-.101.357-.181.596-.545.592-.907-.003-.328-.181-.465-.613-.468-.55.001-1.064-.107-1.072-.917-.007-.667.34-1.361.889-1.8l-.007-.652c-.001-.08.048-.168.111-.2l.37-.236c.061-.031.111.007.112.087l.006.653c.273-.109.511-.138.726-.088.047.012.067.076.048.151l-.144.578a.26.26 0 0 1-.065.116.2.2 0 0 1-.038.028.1.1 0 0 1-.057.009c-.098-.022-.332-.073-.699.113-.385.195-.52.53-.517.778.003.297.155.387.681.396.7.012 1.003.318 1.01 1.023.007.689-.362 1.433-.928 1.888m3.973-1.087c0 .06-.008.116-.058.145l-1.916 1.164c-.05.029-.09.004-.09-.056v-.494c0-.06.037-.093.087-.122l1.887-1.129c.05-.029.09-.004.09.056zm1.316-11.062-7.168 4.427c-.894.523-1.553 1.109-1.553 2.187v8.833c0 .645.26 1.063.66 1.184a2.3 2.3 0 0 1-.398.039c-.42 0-.833-.114-1.197-.33L3.226 18.64a2.5 2.5 0 0 1-1.201-2.142V7.503c0-.881.46-1.702 1.201-2.142L10.803.863a2.34 2.34 0 0 1 2.394 0l7.577 4.498a2.48 2.48 0 0 1 1.164 1.732c-.252-.536-.818-.682-1.479-.296"/></svg></span></p>
+<p>Official Anthropic command-line interface enabling AI-assisted development from the terminal with <a href="../mcp/">MCP server support</a>.</p>
+<p><strong>Best for</strong>: Terminal-first developers and automation workflows.</p>
+<p><strong><a href="https://aider.chat/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="m6.354 8.04-4.773 4.773a.75.75 0 1 0 1.061 1.06L7.945 8.57a.75.75 0 0 0 0-1.06L2.642 2.206a.75.75 0 0 0-1.06 1.061L6.353 8.04ZM8.75 11.5a.75.75 0 0 0 0 1.5h5.5a.75.75 0 0 0 0-1.5z"/></svg></span> Aider</a></strong>
+<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.038 4.9 13.461.402a2.86 2.86 0 0 0-2.923.001L2.961 4.9A3.02 3.02 0 0 0 1.5 7.503v8.995c0 1.073.557 2.066 1.462 2.603l7.577 4.497a2.86 2.86 0 0 0 2.922 0l7.577-4.497a3.02 3.02 0 0 0 1.462-2.603V7.503A3.02 3.02 0 0 0 21.038 4.9M15.17 18.946l.013.646c.001.078-.05.167-.111.198l-.383.22c-.061.031-.111-.007-.112-.085l-.007-.635c-.328.136-.66.169-.872.084-.04-.016-.057-.075-.041-.142l.139-.584a.24.24 0 0 1 .069-.121.2.2 0 0 1 .036-.026q.033-.017.062-.006c.229.077.521.041.802-.101.357-.181.596-.545.592-.907-.003-.328-.181-.465-.613-.468-.55.001-1.064-.107-1.072-.917-.007-.667.34-1.361.889-1.8l-.007-.652c-.001-.08.048-.168.111-.2l.37-.236c.061-.031.111.007.112.087l.006.653c.273-.109.511-.138.726-.088.047.012.067.076.048.151l-.144.578a.26.26 0 0 1-.065.116.2.2 0 0 1-.038.028.1.1 0 0 1-.057.009c-.098-.022-.332-.073-.699.113-.385.195-.52.53-.517.778.003.297.155.387.681.396.7.012 1.003.318 1.01 1.023.007.689-.362 1.433-.928 1.888m3.973-1.087c0 .06-.008.116-.058.145l-1.916 1.164c-.05.029-.09.004-.09-.056v-.494c0-.06.037-.093.087-.122l1.887-1.129c.05-.029.09-.004.09.056zm1.316-11.062-7.168 4.427c-.894.523-1.553 1.109-1.553 2.187v8.833c0 .645.26 1.063.66 1.184a2.3 2.3 0 0 1-.398.039c-.42 0-.833-.114-1.197-.33L3.226 18.64a2.5 2.5 0 0 1-1.201-2.142V7.503c0-.881.46-1.702 1.201-2.142L10.803.863a2.34 2.34 0 0 1 2.394 0l7.577 4.498a2.48 2.48 0 0 1 1.164 1.732c-.252-.536-.818-.682-1.479-.296"/></svg></span> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.41 22h-.19a.46.46 0 0 1-.26-.27l-2.22-5.8c-.09-.24.03-.51.26-.61.71-.26 1.28-.82 1.58-1.49.64-1.43 0-3.1-1.43-3.74s-3.1 0-3.74 1.41c-.3.71-.32 1.5-.05 2.19.3.74.89 1.31 1.64 1.59.24.09.37.36.28.61L9 21.69c-.04.12-.13.22-.25.27-.12.04-.25.04-.36 0C3.24 19.97.67 14.18 2.66 9.03s7.78-7.72 12.93-5.73c2.47.96 4.46 2.85 5.54 5.27a9.9 9.9 0 0 1 .2 7.65c-1.01 2.66-3.1 4.78-5.75 5.78zM12 3.59c-4.97-.13-9.1 3.8-9.23 8.77a9.01 9.01 0 0 0 5.55 8.54l1.89-4.9c-1.83-1-2.52-3.28-1.53-5.11a3.784 3.784 0 0 1 5.11-1.53 3.775 3.775 0 0 1 0 6.64l1.89 4.93a9.11 9.11 0 0 0 4.76-5c1.84-4.62-.4-9.85-5.02-11.7A9.1 9.1 0 0 0 12 3.59"/></svg></span></p>
+<p>Popular open-source command-line tool for AI-driven coding. Works with local or remote LLMs and integrates well with Git workflows.</p>
+<p><strong>Best for</strong>: Developers who prefer command-line workflows and want model flexibility.</p>
+<h4 id="browser-based-development">Browser-Based Development<a class="headerlink" href="#browser-based-development" title="Permanent link">&para;</a></h4>
+<p><strong><a href="https://claude.ai/code"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.304 3.541h-3.672l6.696 16.918H24Zm-10.608 0L0 20.459h3.744l1.37-3.553h7.005l1.369 3.553h3.744L10.536 3.541Zm-.371 10.223L8.616 7.82l2.291 5.945Z"/></svg></span> Claude Code for Web</a></strong>
+<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2m-5.15 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56M14.34 14H9.66c-.1-.66-.16-1.32-.16-2s.06-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2M12 19.96c-.83-1.2-1.5-2.53-1.91-3.96h3.82c-.41 1.43-1.08 2.76-1.91 3.96M8 8H5.08A7.92 7.92 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m-2.92 8H8c.35 1.25.8 2.45 1.4 3.56A8 8 0 0 1 5.08 16m-.82-2C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M18.92 8h-2.95a15.7 15.7 0 0 0-1.38-3.56c1.84.63 3.37 1.9 4.33 3.56M12 2C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2"/></svg></span></p>
+<p>Browser-based version providing AI pair programming through the web with multi-file editing and debugging capabilities.</p>
+<p><strong>Best for</strong>: Quick coding sessions without local installation or Chromebook users.</p>
+<p><strong><a href="https://idx.dev/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.455 8.369c-.538-.748-1.778-2.285-3.681-4.569a447 447 0 0 0-1.884-2.245l-.488-.576-.207-.245-.113-.133-.022-.032-.01-.005L12.57 0l-.609.488a13.34 13.34 0 0 0-3.681 4.64 11.4 11.4 0 0 0-1.043 3.176 12 12 0 0 0-.121.738 11 11 0 0 0-.632-.033l-.059-.003a7.5 7.5 0 0 0-2.28.274l-.317.089-.163.286a9.6 9.6 0 0 0-1.252 4.416 9.53 9.53 0 0 0 1.583 5.625 9.57 9.57 0 0 0 4.42 3.611l.236.095.071.025.003-.001a9.6 9.6 0 0 0 2.941.568q.171.006.342.006a9.5 9.5 0 0 0 3.69-.742l.008.004.313-.145a9.63 9.63 0 0 0 3.927-3.335 9.6 9.6 0 0 0 1.641-5.042c.075-2.161-.643-4.304-2.133-6.371m-7.083 6.695c.328 1.244.264 2.44-.191 3.558-1.135-1.12-1.967-2.352-2.475-3.665-.543-1.404-.87-2.74-.974-3.975.48.157.922.366 1.315.622 1.132.737 1.914 1.902 2.325 3.461zm.207 6.022c.482.368.99.712 1.513 1.028a7.9 7.9 0 0 1-2.369.273 8 8 0 0 1-.373-.022 9 9 0 0 0 1.228-1.279zm1.347-6.431c-.516-1.957-1.527-3.437-3.002-4.398a7.4 7.4 0 0 0-2.194-.95 9 9 0 0 1 .089-.713 11.6 11.6 0 0 1 .91-2.765l.004-.008c.177-.358.376-.719.61-1.105l.092-.152-.003-.001a11.7 11.7 0 0 1 1.942-2.311l.288.341c.672.796 1.304 1.548 1.878 2.237 1.291 1.549 2.966 3.583 3.612 4.48 1.277 1.771 1.893 3.579 1.83 5.375a7.97 7.97 0 0 1-3.995 6.641 15.5 15.5 0 0 1-2.539-1.599c.79-1.575.952-3.28.479-5.072zm-2.575 5.397a7.9 7.9 0 0 1-2.09 1.856 6 6 0 0 1-.243-.093l-.065-.026a7.97 7.97 0 0 1-3.635-3.01 7.94 7.94 0 0 1-1.298-4.653 7.9 7.9 0 0 1 .882-3.379q.476-.105.96-.131l.084-.002q.245-.005.478 0 .341.017.677.07c.073 1.513.445 3.145 1.105 4.852.637 1.644 1.694 3.162 3.144 4.515z"/></svg></span> Firebase IDX</a></strong>
+<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2m-5.15 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56M14.34 14H9.66c-.1-.66-.16-1.32-.16-2s.06-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2M12 19.96c-.83-1.2-1.5-2.53-1.91-3.96h3.82c-.41 1.43-1.08 2.76-1.91 3.96M8 8H5.08A7.92 7.92 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m-2.92 8H8c.35 1.25.8 2.45 1.4 3.56A8 8 0 0 1 5.08 16m-.82-2C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M18.92 8h-2.95a15.7 15.7 0 0 0-1.38-3.56c1.84.63 3.37 1.9 4.33 3.56M12 2C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2"/></svg></span></p>
+<p>Google's cloud-based IDE with built-in Gemini assistance, providing VS Code-like editing experience in the browser.</p>
+<p><strong>Best for</strong>: Cloud-based development with Google Cloud Platform integration.</p>
+<p><strong><a href="https://openwebui.com"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2m-5.15 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56M14.34 14H9.66c-.1-.66-.16-1.32-.16-2s.06-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2M12 19.96c-.83-1.2-1.5-2.53-1.91-3.96h3.82c-.41 1.43-1.08 2.76-1.91 3.96M8 8H5.08A7.92 7.92 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m-2.92 8H8c.35 1.25.8 2.45 1.4 3.56A8 8 0 0 1 5.08 16m-.82-2C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M18.92 8h-2.95a15.7 15.7 0 0 0-1.38-3.56c1.84.63 3.37 1.9 4.33 3.56M12 2C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2"/></svg></span> OpenWebUI</a></strong>
+<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2m-5.15 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56M14.34 14H9.66c-.1-.66-.16-1.32-.16-2s.06-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2M12 19.96c-.83-1.2-1.5-2.53-1.91-3.96h3.82c-.41 1.43-1.08 2.76-1.91 3.96M8 8H5.08A7.92 7.92 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m-2.92 8H8c.35 1.25.8 2.45 1.4 3.56A8 8 0 0 1 5.08 16m-.82-2C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M18.92 8h-2.95a15.7 15.7 0 0 0-1.38-3.56c1.84.63 3.37 1.9 4.33 3.56M12 2C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2"/></svg></span> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.41 22h-.19a.46.46 0 0 1-.26-.27l-2.22-5.8c-.09-.24.03-.51.26-.61.71-.26 1.28-.82 1.58-1.49.64-1.43 0-3.1-1.43-3.74s-3.1 0-3.74 1.41c-.3.71-.32 1.5-.05 2.19.3.74.89 1.31 1.64 1.59.24.09.37.36.28.61L9 21.69c-.04.12-.13.22-.25.27-.12.04-.25.04-.36 0C3.24 19.97.67 14.18 2.66 9.03s7.78-7.72 12.93-5.73c2.47.96 4.46 2.85 5.54 5.27a9.9 9.9 0 0 1 .2 7.65c-1.01 2.66-3.1 4.78-5.75 5.78zM12 3.59c-4.97-.13-9.1 3.8-9.23 8.77a9.01 9.01 0 0 0 5.55 8.54l1.89-4.9c-1.83-1-2.52-3.28-1.53-5.11a3.784 3.784 0 0 1 5.11-1.53 3.775 3.775 0 0 1 0 6.64l1.89 4.93a9.11 9.11 0 0 0 4.76-5c1.84-4.62-.4-9.85-5.02-11.7A9.1 9.1 0 0 0 12 3.59"/></svg></span></p>
+<p>Self-hostable web interface supporting multiple LLM providers with built-in code execution and function calling.</p>
+<p><strong>Best for</strong>: Self-hosting enthusiasts and teams wanting full control over their AI infrastructure.</p>
+<h4 id="api-console-environments">API &amp; Console Environments<a class="headerlink" href="#api-console-environments" title="Permanent link">&para;</a></h4>
+<p><strong><a href="https://aistudio.google.com/app/prompts/new_chat"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053z"/></svg></span> Google AI Studio</a></strong>
+<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2m-5.15 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56M14.34 14H9.66c-.1-.66-.16-1.32-.16-2s.06-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2M12 19.96c-.83-1.2-1.5-2.53-1.91-3.96h3.82c-.41 1.43-1.08 2.76-1.91 3.96M8 8H5.08A7.92 7.92 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m-2.92 8H8c.35 1.25.8 2.45 1.4 3.56A8 8 0 0 1 5.08 16m-.82-2C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M18.92 8h-2.95a15.7 15.7 0 0 0-1.38-3.56c1.84.63 3.37 1.9 4.33 3.56M12 2C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2"/></svg></span></p>
+<p>Browser-based environment for experimenting with Gemini models, prototyping prompts, and generating code snippets.</p>
+<p><strong>Best for</strong>: Prototyping with Gemini models and testing prompt strategies.</p>
+<p><strong><a href="https://platform.openai.com/playground"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M196.4 185.8v-48.6c0-4.1 1.5-7.2 5.1-9.2l97.8-56.3c13.3-7.7 29.2-11.3 45.6-11.3 61.4 0 100.4 47.6 100.4 98.3 0 3.6 0 7.7-.5 11.8l-101.5-59.4c-6.1-3.6-12.3-3.6-18.4 0zm228.3 189.4V259c0-7.2-3.1-12.3-9.2-15.9L287 168.4l42-24.1c3.6-2 6.7-2 10.2 0l97.8 56.4c28.2 16.4 47.1 51.2 47.1 85 0 38.9-23 74.8-59.4 89.6zM166.2 272.8l-42-24.6c-3.6-2-5.1-5.1-5.1-9.2V126.4c0-54.8 42-96.3 98.8-96.3 21.5 0 41.5 7.2 58.4 20l-100.9 58.4c-6.1 3.6-9.2 8.7-9.2 15.9v148.5zm90.4 52.2-60.2-33.8v-71.7l60.2-33.8 60.2 33.8v71.7zm38.7 155.7c-21.5 0-41.5-7.2-58.4-20l100.9-58.4c6.1-3.6 9.2-8.7 9.2-15.9V237.9l42.5 24.6c3.6 2 5.1 5.1 5.1 9.2v112.6c0 54.8-42.5 96.3-99.3 96.3zM173.8 366.5l-97.7-56.3C47.9 293.8 29 259 29 225.2c0-39.4 23.6-74.8 59.9-89.6v116.7c0 7.2 3.1 12.3 9.2 15.9l128 74.2-42 24.1c-3.6 2-6.7 2-10.2 0zm-5.6 84c-57.9 0-100.4-43.5-100.4-97.3 0-4.1.5-8.2 1-12.3l100.9 58.4c6.1 3.6 12.3 3.6 18.4 0l128.5-74.2v48.6c0 4.1-1.5 7.2-5.1 9.2l-97.8 56.3c-13.3 7.7-29.2 11.3-45.6 11.3zm127 60.9c62 0 113.7-44 125.4-102.4 57.3-14.9 94.2-68.6 94.2-123.4 0-35.8-15.4-70.7-43-95.7 2.6-10.8 4.1-21.5 4.1-32.3 0-73.2-59.4-128-128-128-13.8 0-27.1 2-40.4 6.7-23-22.5-54.8-36.9-89.6-36.9-62 0-113.7 44-125.4 102.4-57.3 14.8-94.2 68.6-94.2 123.4 0 35.8 15.4 70.7 43 95.7-2.6 10.8-4.1 21.5-4.1 32.3 0 73.2 59.4 128 128 128 13.8 0 27.1-2 40.4-6.7 23 22.5 54.8 36.9 89.6 36.9"/></svg></span> OpenAI Playground</a></strong>
+<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2m-5.15 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56M14.34 14H9.66c-.1-.66-.16-1.32-.16-2s.06-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2M12 19.96c-.83-1.2-1.5-2.53-1.91-3.96h3.82c-.41 1.43-1.08 2.76-1.91 3.96M8 8H5.08A7.92 7.92 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m-2.92 8H8c.35 1.25.8 2.45 1.4 3.56A8 8 0 0 1 5.08 16m-.82-2C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M18.92 8h-2.95a15.7 15.7 0 0 0-1.38-3.56c1.84.63 3.37 1.9 4.33 3.56M12 2C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2"/></svg></span></p>
+<p>Console environment for experimenting with OpenAI models, fine-tuning prompts, and developing code functions.</p>
+<p><strong>Best for</strong>: API developers prototyping with OpenAI models.</p>
+<div class="admonition tip">
+<p class="admonition-title">From Console to IDE: The Vibe Coding Evolution</p>
+<p>While console-based tools are excellent for prototyping, the real power of AI-assisted development comes from direct IDE integration. Modern tools leverage <a href="../mcp/"><strong>Model Context Protocol (MCP)</strong></a> to access your local environment, enabling <a href="../agentic/"><strong>agentic behaviors</strong></a> like:</p>
+<ul>
+<li>Autonomous multi-file refactoring</li>
+<li>Running tests and fixing failures iteratively</li>
+<li>Executing terminal commands and analyzing output</li>
+<li>Interacting with Git for version control</li>
+<li>Accessing databases and external APIs</li>
+</ul>
+<p>Explore our <a href="../vibe/"><strong>Vibe Coding guide</strong></a> to discover how these tools transform your editor into a collaborative coding environment where AI agents work alongside you.</p>
 </div>
 <hr />
 <h2 id="3-best-practices-ethical-considerations">3. Best Practices &amp; Ethical Considerations<a class="headerlink" href="#3-best-practices-ethical-considerations" title="Permanent link">&para;</a></h2>
-<p>Whether using a sandboxed interpreter or a local framework, the same principles apply for effective and responsible use.</p>
+<p>Whether using a sandboxed interpreter, a code execution framework, or an <a href="../agentic/">agentic AI system</a>, following best practices ensures effective, secure, and responsible use of AI coding tools.</p>
+<h3 id="effective-prompting-strategies">Effective Prompting Strategies<a class="headerlink" href="#effective-prompting-strategies" title="Permanent link">&para;</a></h3>
+<p><strong>Start with Clear Intent</strong>
+- Describe what you want to accomplish, not just how to do it
+- Provide context about your project, language, and frameworks
+- Specify constraints (performance, security, compatibility)</p>
+<p><strong>Break Down Complex Tasks</strong>
+- Don't ask AI to build an entire application in one go
+- Decompose problems into smaller, testable steps
+- Let the AI iterate on solutions rather than attempting everything at once
+- This is especially important for <a href="../agentic/">agentic systems</a> that benefit from clear subtask boundaries</p>
+<p><strong>Provide Rich Context</strong>
+- Share relevant code snippets, error messages, and documentation
+- Use <a href="../mcp/">MCP</a>-enabled tools to automatically provide file and project context
+- Explain your reasoning and decision-making process
+- Include examples of desired output or style</p>
+<h3 id="code-review-verification">Code Review &amp; Verification<a class="headerlink" href="#code-review-verification" title="Permanent link">&para;</a></h3>
+<p><strong>Never Trust Generated Code Blindly</strong>
+- <strong>Always review</strong> for correctness, efficiency, and maintainability
+- <strong>Test thoroughly</strong> with unit tests, integration tests, and edge cases
+- <strong>Check for security vulnerabilities</strong> (SQL injection, XSS, authentication issues)
+- <strong>Verify adherence</strong> to your project's coding standards and best practices</p>
+<p><strong>Understand Before Using</strong>
+- If you don't understand the generated code, ask the AI to explain it
+- Research unfamiliar libraries or patterns before adopting them
+- Consider maintainability—will you be able to debug this code in 6 months?</p>
+<p><strong>Iterative Refinement</strong>
+- Start with a basic implementation and refine iteratively
+- Test at each stage before adding complexity
+- Use the AI to help debug and improve, not just generate initially</p>
+<h3 id="security-considerations">Security Considerations<a class="headerlink" href="#security-considerations" title="Permanent link">&para;</a></h3>
+<div class="admonition danger">
+<p class="admonition-title">Local Execution Risks</p>
+<p><a href="../agentic/">Agentic AI systems</a> and <a href="../vibe/">vibe coding tools</a> that execute on your machine have significant access:</p>
 <ul>
-<li><strong>Write Clear Prompts &amp; Comments:</strong> The quality of your input dictates the quality of the output. Describe your intent clearly. For code, well-written comments act as a direct guide for the AI.</li>
-<li><strong>Break Down Complex Tasks:</strong> Don't ask the AI to build an entire application in one go. Decompose the problem into smaller, manageable steps.</li>
-<li><strong>Review, Test, and Verify:</strong> <strong>Never trust generated code blindly.</strong> Always review it for correctness, security vulnerabilities, and adherence to best practices. Run tests to ensure it works as expected.</li>
-<li><strong>Be Aware of Bias and Originality:</strong> AI models are trained on vast amounts of public code and data, which may contain biases or licensed code. Be mindful of potential security flaws, biases in output, and intellectual property rights.</li>
+<li><strong>File System Access</strong>: Can read, modify, and delete files</li>
+<li><strong>Network Access</strong>: Can make API calls and external connections</li>
+<li><strong>Terminal Access</strong>: Can execute arbitrary shell commands</li>
+<li><strong>Environment Variables</strong>: May access sensitive credentials</li>
 </ul>
-<div class="admonition warning">
-<p class="admonition-title">The Power and Peril of Local Execution</p>
-<p>Code Execution Frameworks that run on your machine have access to your files and network. This is incredibly powerful but carries inherent risks. The next lesson on <strong>Vibe Coding</strong> will cover these security considerations in more detail.</p>
+<p><strong>Security Best Practices:</strong></p>
+<ul>
+<li>Review commands before AI executes them (most tools prompt for approval)</li>
+<li>Use project-specific virtual environments</li>
+<li>Never store secrets in code—use environment variables and secret managers</li>
+<li>Be cautious with <code>sudo</code> or administrator privileges</li>
+<li>Monitor AI actions, especially when learning a new tool</li>
+<li>Follow your institution's security and privacy policies</li>
+<li>Consider using sandboxed development environments for sensitive work</li>
+</ul>
 </div>
+<p><strong>Institutional Policies</strong>
+Many universities and organizations have policies about AI code execution. Check with your IT security team about:</p>
+<ul>
+<li>Approved AI tools and services</li>
+<li>Data classification restrictions</li>
+<li>Code review requirements for AI-generated code</li>
+<li>Network access policies for AI services</li>
+</ul>
+<p>See our <a href="../vibe/">Vibe Coding security warnings</a> for more detailed guidance.</p>
+<h3 id="bias-licensing-and-intellectual-property">Bias, Licensing, and Intellectual Property<a class="headerlink" href="#bias-licensing-and-intellectual-property" title="Permanent link">&para;</a></h3>
+<p><strong>Training Data Considerations</strong>
+- AI models are trained on public code repositories, which may contain:
+  - <strong>Biased implementations</strong> (non-inclusive variable names, accessibility issues)
+  - <strong>Licensed code</strong> that may not be suitable for your use case
+  - <strong>Outdated patterns</strong> or deprecated approaches
+  - <strong>Security vulnerabilities</strong> from historical code</p>
+<p><strong>Best Practices:</strong>
+- Review generated code for inclusive language and accessibility
+- Check license compatibility for suggested libraries
+- Validate that patterns are current and recommended
+- Don't assume AI-generated code is "best practice"</p>
+<p><strong>Intellectual Property</strong>
+- Most AI providers claim no copyright on generated output
+- However, generated code might inadvertently replicate existing licensed code
+- Your organization may have policies about AI-generated code ownership
+- Document when and how AI tools were used in development</p>
+<h3 id="privacy-and-data-handling">Privacy and Data Handling<a class="headerlink" href="#privacy-and-data-handling" title="Permanent link">&para;</a></h3>
+<p><strong>What Data Gets Sent to AI Services?</strong>
+- Your prompts and code snippets
+- File contents (with MCP or when explicitly shared)
+- Error messages and terminal output
+- Project structure and metadata</p>
+<p><strong>Privacy Best Practices:</strong>
+- Don't share sensitive data, credentials, or personal information in prompts
+- Review your organization's data classification policies
+- Use local/self-hosted models for sensitive code when possible
+- Be aware of data retention policies for AI services you use
+- Consider anonymizing data before sharing with AI tools</p>
+<p><strong>Tools with Enhanced Privacy:</strong>
+- <a href="../vibe/#cline">Cline</a> and <a href="../vibe/#roo-code">Roo Code</a>: Can use local models via Ollama
+- <a href="https://aider.chat/">Aider</a>: Supports local LLMs
+- Claude Desktop with <a href="../mcp/">MCP</a>: Data processing happens locally before being sent to API</p>
+<h3 id="accessibility-and-inclusive-development">Accessibility and Inclusive Development<a class="headerlink" href="#accessibility-and-inclusive-development" title="Permanent link">&para;</a></h3>
+<p><strong>Use AI to Improve Accessibility</strong>
+- Ask AI to review code for WCAG compliance
+- Generate accessible alternatives for visual content
+- Check color contrast and screen reader compatibility
+- Implement keyboard navigation</p>
+<p><strong>Avoid Perpetuating Bias</strong>
+- Review generated variable names and comments for inclusive language
+- Ask AI to suggest alternatives if you spot problematic patterns
+- Consider diverse user needs when prompting for UI/UX implementations</p>
+<h3 id="environmental-considerations">Environmental Considerations<a class="headerlink" href="#environmental-considerations" title="Permanent link">&para;</a></h3>
+<p><strong>AI Compute Costs</strong>
+- LLM inference requires significant energy
+- Be mindful of unnecessary requests
+- Use appropriate model sizes (don't use GPT-4 for simple autocomplete)
+- Cache results when possible
+- Consider carbon-aware computing practices</p>
+<h3 id="continuous-learning">Continuous Learning<a class="headerlink" href="#continuous-learning" title="Permanent link">&para;</a></h3>
+<p><strong>Stay Updated</strong>
+- AI coding tools evolve rapidly
+- Follow release notes and changelogs
+- Experiment with new features in safe environments
+- Join communities and share learnings
+- Read our <a href="../vibe/">Vibe Coding guide</a> regularly for updates</p>
+<p><strong>Develop AI Literacy</strong>
+- Understand how LLMs work and their limitations
+- Learn about prompt engineering techniques
+- Recognize when AI is appropriate vs. when human expertise is needed
+- Share knowledge with your team</p>
+<div class="admonition tip">
+<p class="admonition-title">The Human-AI Partnership</p>
+<p>The goal isn't to replace developers with AI—it's to augment human capabilities. The best results come from combining AI's pattern recognition and code generation with human creativity, domain expertise, and critical thinking. Use AI as a powerful tool, but keep your judgment and expertise at the center of development decisions.</p>
+</div>
+<hr />
+<h2 id="4-choosing-the-right-tool-for-your-workflow">4. Choosing the Right Tool for Your Workflow<a class="headerlink" href="#4-choosing-the-right-tool-for-your-workflow" title="Permanent link">&para;</a></h2>
+<p>With dozens of AI coding tools available, selecting the right one depends on your needs, environment, and workflow preferences.</p>
+<h3 id="decision-framework">Decision Framework<a class="headerlink" href="#decision-framework" title="Permanent link">&para;</a></h3>
+<pre class="mermaid"><code>flowchart TD
+    Start[What's your primary use case?] --&gt; DataAnalysis{Data Analysis&lt;br/&gt;One-off Tasks?}
+    Start --&gt; Development{Software&lt;br/&gt;Development?}
+
+    DataAnalysis --&gt;|Yes| Sandboxed[Use Code Interpreters]
+    Sandboxed --&gt; SandboxChoice[Claude, Gemini, ChatGPT Plus]
+
+    Development --&gt;|Yes| IDE{Prefer IDE&lt;br/&gt;Integration?}
+
+    IDE --&gt;|VS Code| VSCodeTools{Open Source&lt;br/&gt;or Official?}
+    VSCodeTools --&gt;|Official| ClaudeCode[Claude Code Extension]
+    VSCodeTools --&gt;|Open Source| ClineRoo[Cline or Roo Code]
+    VSCodeTools --&gt;|Enterprise| Copilot[GitHub Copilot]
+
+    IDE --&gt;|Standalone| Standalone{Budget&lt;br/&gt;Preference?}
+    Standalone --&gt;|Flat Fee| Cursor[Cursor or Windsurf]
+    Standalone --&gt;|Pay-as-you-go| ClaudeDesktop[Claude Desktop + MCP]
+
+    IDE --&gt;|Terminal/CLI| CLI[Claude Code CLI or Aider]
+
+    IDE --&gt;|Browser| Browser[Claude Code Web, Firebase IDX]
+
+    style Sandboxed fill:#e1f5ff
+    style ClaudeCode fill:#c8e6c9
+    style ClineRoo fill:#c8e6c9
+    style Cursor fill:#c8e6c9
+    style CLI fill:#c8e6c9</code></pre>
+<h3 id="by-use-case">By Use Case<a class="headerlink" href="#by-use-case" title="Permanent link">&para;</a></h3>
+<p><strong>Exploratory Data Analysis</strong>
+→ <a href="#1-code-interpreters-your-sandboxed-ai-analyst">Code Interpreters</a>: Claude, Gemini, ChatGPT Plus</p>
+<p><strong>Learning to Code</strong>
+→ <a href="#1-code-interpreters-your-sandboxed-ai-analyst">Code Interpreters</a> or <a href="../vibe/#browser-based-vibe-coding">Browser-Based Tools</a></p>
+<p><strong>Professional Software Development</strong>
+→ <a href="../vibe/">Agentic IDE Tools</a>: Cursor, Windsurf, Claude Code, Cline</p>
+<p><strong>Need MCP Integration</strong>
+→ <a href="../mcp/">Claude Desktop</a> or <a href="https://docs.anthropic.com/en/docs/claude-code">Claude Code CLI</a></p>
+<p><strong>Enterprise/Team Development</strong>
+→ <a href="../vibe/#github-copilot">GitHub Copilot</a> or <a href="../vibe/#cursor">Cursor</a> Team</p>
+<p><strong>Privacy-Sensitive Projects</strong>
+→ <a href="../vibe/#cline">Cline</a> or <a href="https://aider.chat/">Aider</a> with local models</p>
+<p><strong>Multi-Language Projects</strong>
+→ <a href="../vibe/#claude-code-vs-code-extension">Claude Code</a> or <a href="../vibe/#cursor">Cursor</a> (excellent multi-language support)</p>
+<p><strong>Terminal-First Workflow</strong>
+→ <a href="https://aider.chat/">Aider</a> or <a href="https://docs.anthropic.com/en/docs/claude-code">Claude Code CLI</a></p>
+<h3 id="integration-with-your-workflow">Integration with Your Workflow<a class="headerlink" href="#integration-with-your-workflow" title="Permanent link">&para;</a></h3>
+<p><strong>For Researchers:</strong>
+- Start with <a href="#1-code-interpreters-your-sandboxed-ai-analyst">Code Interpreters</a> for data analysis
+- Progress to <a href="../mcp/">Claude Desktop with MCP</a> for accessing research databases
+- Use <a href="../vibe/">Vibe Coding tools</a> for reproducible research code</p>
+<p><strong>For Students:</strong>
+- Begin with <a href="#1-code-interpreters-your-sandboxed-ai-analyst">sandboxed interpreters</a> to learn safely
+- Experiment with <a href="../vibe/#browser-based-vibe-coding">browser-based tools</a> for homework
+- Transition to <a href="../vibe/#vs-code-extensions">IDE extensions</a> as skills develop</p>
+<p><strong>For Professional Developers:</strong>
+- Choose <a href="../vibe/">agentic tools</a> based on your IDE preference
+- Leverage <a href="../mcp/">MCP</a> for project-specific integrations
+- Follow <a href="#security-considerations">security best practices</a> rigorously</p>
+<p><strong>For Teams:</strong>
+- Standardize on <a href="../vibe/#github-copilot">enterprise tools</a> with centralized billing
+- Establish code review processes for AI-generated code
+- Document policies on AI tool usage and data sharing</p>
+<hr />
+<h2 id="5-the-path-forward-vibe-coding-and-beyond">5. The Path Forward: Vibe Coding and Beyond<a class="headerlink" href="#5-the-path-forward-vibe-coding-and-beyond" title="Permanent link">&para;</a></h2>
+<p>This lesson introduced the landscape of AI-powered code generation and execution. You've learned about:</p>
+<ul>
+<li><strong><a href="#1-code-interpreters-your-sandboxed-ai-analyst">Code Interpreters</a></strong> for safe, sandboxed analysis</li>
+<li><strong><a href="#2-code-execution-frameworks-your-ai-pair-programmer">Code Execution Frameworks</a></strong> for IDE integration</li>
+<li><strong><a href="#3-best-practices--ethical-considerations">Best practices</a></strong> for security, privacy, and responsible use</li>
+<li><strong><a href="#4-choosing-the-right-tool-for-your-workflow">Tool selection</a></strong> based on your needs</li>
+</ul>
+<h3 id="next-steps">Next Steps<a class="headerlink" href="#next-steps" title="Permanent link">&para;</a></h3>
+<div class="admonition success">
+<p class="admonition-title">Ready to Start Vibe Coding?</p>
+<p>Now that you understand the foundations, dive deeper into hands-on AI-assisted development:</p>
+<p><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg></span> <a href="../vibe/">Explore Vibe Coding</a></strong>
+Learn how to set up and use modern agentic coding tools in your preferred development environment.</p>
+<p><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg></span> <a href="../mcp/">Understand Model Context Protocol (MCP)</a></strong>
+Discover how MCP enables deep integration between AI and your development tools, enabling sophisticated agentic behaviors.</p>
+<p><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg></span> <a href="../agentic/">Learn About Agentic AI</a></strong>
+Understand the principles behind autonomous AI systems and how they're transforming software development.</p>
+</div>
+<h3 id="recommended-learning-path">Recommended Learning Path<a class="headerlink" href="#recommended-learning-path" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Experiment with Code Interpreters</strong> (30 minutes)</li>
+<li>Try Claude, Gemini, or ChatGPT Plus</li>
+<li>Upload a dataset and perform analysis</li>
+<li>
+<p>Get comfortable with natural language coding</p>
+</li>
+<li>
+<p><strong>Install a Vibe Coding Tool</strong> (1 hour)</p>
+</li>
+<li>Follow our <a href="../vibe/">Vibe Coding setup guide</a></li>
+<li>Start with Claude Code or Cursor</li>
+<li>
+<p>Try basic code generation and editing</p>
+</li>
+<li>
+<p><strong>Explore MCP Integration</strong> (1-2 hours)</p>
+</li>
+<li>Set up <a href="../mcp/">Claude Desktop with MCP</a></li>
+<li>Connect to filesystem and GitHub servers</li>
+<li>
+<p>Experience context-aware assistance</p>
+</li>
+<li>
+<p><strong>Practice Best Practices</strong> (Ongoing)</p>
+</li>
+<li>Review all AI-generated code</li>
+<li>Develop your prompting skills</li>
+<li>
+<p>Learn from successes and failures</p>
+</li>
+<li>
+<p><strong>Build Real Projects</strong> (Weeks to months)</p>
+</li>
+<li>Apply AI assistance to actual work</li>
+<li>Develop your AI collaboration style</li>
+<li>Share learnings with your community</li>
+</ol>
+<h3 id="staying-current">Staying Current<a class="headerlink" href="#staying-current" title="Permanent link">&para;</a></h3>
+<p>The AI coding landscape evolves rapidly. Stay informed:</p>
+<ul>
+<li>Follow tool announcements and changelogs</li>
+<li>Join developer communities (Discord, Reddit, forums)</li>
+<li>Experiment with new features in safe environments</li>
+<li>Read our <a href="../vibe/">Vibe Coding guide</a> for regular updates</li>
+<li>Check <a href="../mcp/">MCP documentation</a> for new server integrations</li>
+</ul>
 <hr />
 <h2 id="assessment">Assessment<a class="headerlink" href="#assessment" title="Permanent link">&para;</a></h2>
 <details class="question">
@@ -2400,12 +3245,54 @@
 </details>
 </details>
 <details class="question">
-<summary>True or False: Using an open-source Code Execution Framework like Continue.dev allows you to use locally-run LLMs (e.g., via Ollama) instead of relying on cloud-based APIs.</summary>
+<summary>True or False: Using an open-source Code Execution Framework like Cline or Aider allows you to use locally-run LLMs (e.g., via Ollama) instead of relying on cloud-based APIs.</summary>
 <details class="success">
 <summary>True</summary>
 <p>One of the key advantages of many open-source tools is flexibility. They often allow you to connect to various LLM backends, including models running on your own hardware, giving you more control over privacy and cost.</p>
 </details>
 </details>
+<details class="question">
+<summary>Which technology enables AI agents to access your local file system, run terminal commands, and interact with external tools?</summary>
+<ol>
+<li>Code Interpreters</li>
+<li>Model Context Protocol (MCP)</li>
+<li>Function calling</li>
+<li>Extended context windows</li>
+</ol>
+<details class="success">
+<summary>Correct Answer: 2</summary>
+<p>Model Context Protocol (MCP) is the standardized communication framework that allows AI agents to interact with local tools, file systems, databases, and external services. While function calling is related, MCP provides the comprehensive protocol for deep integration.</p>
+</details>
+</details>
+<details class="question">
+<summary>What is the main security concern when using agentic AI systems that execute code locally?</summary>
+<details class="success">
+<summary>Answer</summary>
+<p>Agentic AI systems with local execution have access to your file system, network, terminal, and environment variables. They can read, modify, or delete files, execute arbitrary commands, and potentially access sensitive credentials. Always review commands before execution, follow your organization's security policies, and avoid storing secrets in code.</p>
+</details>
+</details>
+<details class="question">
+<summary>Which workflow would be BEST suited for a sandboxed Code Interpreter rather than an agentic IDE tool?</summary>
+<ol>
+<li>Refactoring a large codebase with coordinated changes across multiple files</li>
+<li>Analyzing a CSV dataset you upload to generate statistical plots</li>
+<li>Setting up automated testing and CI/CD for a project</li>
+<li>Debugging a complex application with multiple service dependencies</li>
+</ol>
+<details class="success">
+<summary>Correct Answer: 2</summary>
+<p>Sandboxed Code Interpreters excel at self-contained tasks with uploaded data, like analyzing a dataset. The other tasks require multi-file awareness, local tool integration, and persistent development workflows—all better suited for agentic IDE tools.</p>
+</details>
+</details>
+<details class="question">
+<summary>True or False: AI-generated code should always be considered "best practice" since models are trained on vast amounts of code from expert developers.</summary>
+<details class="failure">
+<summary>False</summary>
+<p>AI models are trained on public code repositories that may contain outdated patterns, security vulnerabilities, biased implementations, and code that violates best practices. Always review AI-generated code critically, test thoroughly, and verify it meets current standards and your specific requirements.</p>
+</details>
+</details>
+
+
 
 
 
@@ -2430,7 +3317,7 @@
         
           <button type="button" class="md-top md-icon" data-md-component="top" hidden>
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-circle-arrow-up" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16 12-4-4-4 4M12 16V8"/></svg>
   Back to top
 </button>
         
@@ -2448,8 +3335,8 @@
   
   
     Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-      Material for MkDocs
+    <a href="https://zensical.org/" target="_blank" rel="noopener">
+      Zensical
     </a>
   
 </div>
@@ -2465,7 +3352,7 @@
       
     
     <a href="https://orcid.org/0000-0002-6639-7181" target="_blank" rel="noopener" title="orcid.org" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M294.7 188.2h-45.9V342h47.5c67.6 0 83.1-51.3 83.1-76.9 0-41.6-26.5-76.9-84.7-76.9M256 8a248 248 0 1 0 0 496 248 248 0 1 0 0-496m-80.8 360.8h-29.8V161.3h29.8zM160.3 98.5a19.6 19.6 0 1 1 0 39.2 19.6 19.6 0 1 1 0-39.2M300 369h-81V161.3h80.6c76.7 0 110.4 54.8 110.4 103.9 0 53.3-41.7 103.9-110 103.9z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M294.7 188.2h-45.9V342h47.5c67.6 0 83.1-51.3 83.1-76.9 0-41.6-26.5-76.9-84.7-76.9M256 8a248 248 0 1 0 0 496 248 248 0 1 0 0-496m-80.8 360.8h-29.8V161.3h29.8zM160.3 98.5a19.6 19.6 0 1 1 0 39.2 19.6 19.6 0 1 1 0-39.2M300 369h-81V161.3h80.6c76.7 0 110.4 54.8 110.4 103.9 0 53.3-41.7 103.9-110 103.9z"/></svg>
     </a>
   
     
@@ -2487,7 +3374,7 @@
       
     
     <a href="https://github.com/tyson-swetnam/" target="_blank" rel="noopener" title="github.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
     </a>
   
     
@@ -2498,7 +3385,7 @@
       
     
     <a href="https://twitter.com/tswetnam" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M459.4 151.7c.3 4.5.3 9.1.3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53C87.4 130.8 165 172.4 252.1 176.9c-1.6-7.8-2.6-15.9-2.6-24C249.5 95.1 296.3 48 354.4 48c30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M459.4 151.7c.3 4.5.3 9.1.3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53C87.4 130.8 165 172.4 252.1 176.9c-1.6-7.8-2.6-15.9-2.6-24C249.5 95.1 296.3 48 354.4 48c30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3"/></svg>
     </a>
   
     
@@ -2509,7 +3396,7 @@
       
     
     <a href="https://www.linkedin.com/in/tyson-swetnam" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
     </a>
   
     
@@ -2520,7 +3407,7 @@
       
     
     <a href="https://hub.docker.com/u/tswetnam" target="_blank" rel="noopener" title="hub.docker.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M349.9 236.3h-66.1v-59.4h66.1zm0-204.3h-66.1v60.7h66.1zm78.2 144.8H362v59.4h66.1zm-156.3-72.1h-66.1v60.1h66.1zm78.1 0h-66.1v60.1h66.1zm276.8 100c-14.4-9.7-47.6-13.2-73.1-8.4-3.3-24-16.7-44.9-41.1-63.7l-14-9.3-9.3 14c-18.4 27.8-23.4 73.6-3.7 103.8-8.7 4.7-25.8 11.1-48.4 10.7H2.4c-8.7 50.8 5.8 116.8 44 162.1 37.1 43.9 92.7 66.2 165.4 66.2 157.4 0 273.9-72.5 328.4-204.2 21.4.4 67.6.1 91.3-45.2 1.5-2.5 6.6-13.2 8.5-17.1zm-511.1-27.9h-66v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1zm78.1 0h-66.1v59.4h66.1zm-78.1-72.1h-66.1v60.1h66.1z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M349.9 236.3h-66.1v-59.4h66.1zm0-204.3h-66.1v60.7h66.1zm78.2 144.8H362v59.4h66.1zm-156.3-72.1h-66.1v60.1h66.1zm78.1 0h-66.1v60.1h66.1zm276.8 100c-14.4-9.7-47.6-13.2-73.1-8.4-3.3-24-16.7-44.9-41.1-63.7l-14-9.3-9.3 14c-18.4 27.8-23.4 73.6-3.7 103.8-8.7 4.7-25.8 11.1-48.4 10.7H2.4c-8.7 50.8 5.8 116.8 44 162.1 37.1 43.9 92.7 66.2 165.4 66.2 157.4 0 273.9-72.5 328.4-204.2 21.4.4 67.6.1 91.3-45.2 1.5-2.5 6.6-13.2 8.5-17.1zm-511.1-27.9h-66v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1zm78.1 0h-66.1v59.4h66.1zm-78.1-72.1h-66.1v60.1h66.1z"/></svg>
     </a>
   
     
@@ -2531,7 +3418,7 @@
       
     
     <a href="https://www.youtube.com/channel/UC5xPt9KZHccC0ehMNEkINzQ" target="_blank" rel="noopener" title="www.youtube.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M549.7 124.1c-6.2-23.7-24.8-42.3-48.3-48.6C458.9 64 288.1 64 288.1 64S117.3 64 74.7 75.5c-23.5 6.3-42 24.9-48.3 48.6C15 167 15 256.4 15 256.4s0 89.4 11.4 132.3c6.3 23.6 24.8 41.5 48.3 47.8C117.3 448 288.1 448 288.1 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zM232.2 337.6V175.2l142.7 81.2z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M549.7 124.1c-6.2-23.7-24.8-42.3-48.3-48.6C458.9 64 288.1 64 288.1 64S117.3 64 74.7 75.5c-23.5 6.3-42 24.9-48.3 48.6C15 167 15 256.4 15 256.4s0 89.4 11.4 132.3c6.3 23.6 24.8 41.5 48.3 47.8C117.3 448 288.1 448 288.1 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zM232.2 337.6V175.2l142.7 81.2z"/></svg>
     </a>
   
 </div>
@@ -2549,10 +3436,11 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "navigation.top", "search.highlight", "search.share", "search.suggest", "content.code.copy", "content.code.prettify", "content.tooltips"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      
+      <script id="__config" type="application/json">{"annotate":null,"base":"..","features":["navigation.instant","navigation.tracking","navigation.tabs","navigation.tabs.sticky","navigation.indexes","navigation.top","search.highlight","search.share","search.suggest","content.code.copy","content.code.prettify","content.tooltips"],"search":"../assets/javascripts/workers/search.e2d2d235.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
     
     
-      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../assets/javascripts/bundle.8ffeb9c9.min.js"></script>
       
         <script src="../chatbot_widget.js"></script>
       
