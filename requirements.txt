@@ -1,6 +1,9 @@
 # Core Zensical - Next-generation static site generator
 zensical
 
+# Material for MkDocs - Required for theme and emoji extensions
+mkdocs-material
+
 # mkdocstrings support (preliminary in Zensical)
 mkdocstrings
 mkdocstrings-python
