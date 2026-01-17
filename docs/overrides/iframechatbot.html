@@ -5,58 +5,141 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chatbot</title>
     <style>
-        /* Add your CSS here */
+        /* Refined Academic Authority Design - Inline Styles */
+        :root {
+            --ua-red-primary: #EE0F0F;
+            --ua-red-dark: #C50D0D;
+            --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.08), 0 4px 6px rgba(0, 0, 0, 0.07);
+            --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.09), 0 8px 10px rgba(0, 0, 0, 0.08);
+            --shadow-red-glow: 0 4px 12px rgba(238, 15, 15, 0.15), 0 2px 4px rgba(238, 15, 15, 0.1);
+            --shadow-red-strong: 0 8px 20px rgba(238, 15, 15, 0.25), 0 4px 8px rgba(238, 15, 15, 0.15);
+        }
+
         .chat-icon {
             position: fixed;
             bottom: 20px;
             right: 20px;
-            width: 50px;
-            height: 50px;
-            background-color: #0085C3;
+            width: 58px;
+            height: 58px;
+            background: linear-gradient(135deg, #ffffff 0%, #fafafa 100%);
+            border: 1px solid rgba(0, 0, 0, 0.08);
             border-radius: 50%;
             display: flex;
             justify-content: center;
             align-items: center;
-            color: white;
-            font-size: 24px;
+            color: #333;
+            font-size: 28px;
             cursor: pointer;
             z-index: 1000;
+            box-shadow: var(--shadow-lg);
+            transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1),
+                        box-shadow 350ms cubic-bezier(0.4, 0, 0.2, 1),
+                        border-color 350ms cubic-bezier(0.4, 0, 0.2, 1);
+            user-select: none;
+        }
+
+        .chat-icon:hover {
+            transform: translateY(-4px) scale(1.05);
+            box-shadow: var(--shadow-red-glow), var(--shadow-xl);
+            border-color: var(--ua-red-primary);
         }
 
         .chat-popup {
             display: none;
             position: fixed;
-            bottom: 80px;
+            bottom: 88px;
             right: 20px;
-            width: 350px;
-            height: 500px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 380px;
+            height: 550px;
+            box-shadow: var(--shadow-xl);
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            border-radius: 12px;
             z-index: 1000;
-            background-color: #FFFFFF; /* Add this line */
+            background-color: #ffffff;
+            overflow: hidden;
         }
 
         .chat-popup iframe {
             width: 100%;
             height: 100%;
             border: none;
-            border-radius: 5%;
+            border-radius: 12px;
         }
 
         .chat-popup .close-btn {
             position: absolute;
-            top: 1px;
-            right: 1px;
-            background-color: red;
+            top: 8px;
+            right: 8px;
+            background: linear-gradient(135deg, #EE0F0F 0%, #C50D0D 100%);
             color: white;
             border: none;
-            border-radius: 50%;
-            width: 25px;
-            height: 25px;
+            border-radius: 8px;
+            width: 28px;
+            height: 28px;
+            font-size: 16px;
+            font-weight: 300;
             display: flex;
             justify-content: center;
             align-items: center;
             cursor: pointer;
             z-index: 1001;
+            transition: transform 200ms cubic-bezier(0.4, 0, 0.2, 1),
+                        box-shadow 200ms cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .chat-popup .close-btn:hover {
+            transform: rotate(90deg) scale(1.1);
+            box-shadow: var(--shadow-red-glow);
+        }
+
+        .chat-popup .close-btn:active {
+            transform: rotate(90deg) scale(0.95);
+        }
+
+        /* Dark Mode Support */
+        @media (prefers-color-scheme: dark) {
+            .chat-icon {
+                background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+                border-color: rgba(255, 255, 255, 0.1);
+                box-shadow: var(--shadow-red-glow), var(--shadow-lg);
+                color: #eee;
+            }
+
+            .chat-icon:hover {
+                border-color: var(--ua-red-primary);
+                box-shadow: var(--shadow-red-strong), var(--shadow-xl);
+            }
+
+            .chat-popup {
+                background: #000000;
+                box-shadow: 0 0 40px rgba(238, 15, 15, 0.08), var(--shadow-xl);
+                border-color: rgba(255, 255, 255, 0.05);
+            }
+
+            .chat-popup iframe {
+                background: #0a0a0a;
+            }
+
+            .chat-popup .close-btn {
+                background: linear-gradient(135deg, #B30C0C 0%, #8A0909 100%);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 480px) {
+            .chat-popup {
+                width: 90vw;
+                height: 75vh;
+                bottom: 78px;
+                right: 5vw;
+            }
+
+            .chat-icon {
+                width: 54px;
+                height: 54px;
+                font-size: 24px;
+            }
         }
     </style>
 </head>
@@ -65,7 +148,7 @@
 <div class="chat-icon" id="chatIcon">💬</div>
 <div class="chat-popup" id="chatPopup">
     <button class="close-btn" id="closeBtn">x</button>
-    <iframe src="https://chat-qa.cyverse.org/intro-gpt/" class="custom-iframe"></iframe>
+    <iframe src="https://cyversegpt.cyverse.org/intro-gpt" class="custom-iframe"></iframe>
 </div>
 
 <script>

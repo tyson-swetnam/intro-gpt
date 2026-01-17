@@ -4,13 +4,15 @@
 
 ## Claude Code
 
-This tutorial will guide you through setting up and using **Claude Code**—Anthropic's AI-powered development tool.
+This tutorial will guide you through setting up and using **Claude Code**, Anthropic's AI-powered development tool.
 
-Claude Code acts as an intelligent pair programmer that understands context, writes code, creates documentation, and helps you build better software faster.
+Claude Code acts as a pair programmer that understands context, writes code, creates documentation, and helps you create software faster.
 
 !!! Tip "What You'll Learn"
 
-    This tutorial covers both the **Claude Code CLI** (command-line interface) and the **Claude Code VS Code Extension**. We'll highlight the differences and help you choose the right tool for your workflow.
+    This tutorial covers both the **Claude Code CLI** (command-line interface) and the **Claude Code VS Code Extension**. 
+    
+    We'll highlight the differences and help you choose the right tool for your workflow.
 
     By the end of this tutorial, you'll be able to:
 
@@ -37,12 +39,24 @@ Claude Code acts as an intelligent pair programmer that understands context, wri
     
     :material-lightbulb-on-10: Willingness to experiment and learn!
 
+??? Question "Are there other CLI :simple-gnubash: Code Assistants?"
+
+    Claude Code is not the only CLI tool for AI-assisted development. 
+    
+    Other popular options include:
+     
+    - [**:material-google: Google Gemini CLI**](https://geminicli.com/){:target="_blank"}
+    - [**:fontawesome-brands-openai: ChatGPT Codex**](https://chat.openai.com/codex){:target="_blank"}
+    - [**:simple-opensourceinitiative: OpenCode.ai**](https://opencode.ai){:target="_blank"}
+    - [**:simple-gnubash: aider.chat**](https://aider.chat){:target="_blank"}
 
 ---
 
 ## 1. What is Claude Code?
 
-**Claude Code** is an AI-powered development assistant built by Anthropic that integrates directly into your development workflow. Unlike simple code completion tools, Claude Code is an [**agentic AI system**](agentic.md) capable of:
+**Claude Code** is an AI-powered development assistant built by Anthropic that integrates directly into your development workflow.
+
+Unlike simple code completion tools, Claude Code is an [**agentic AI system**](agentic.md) capable of:
 
 - **Understanding entire codebases** through contextual analysis
 - **Writing and editing code** across multiple files simultaneously
@@ -52,86 +66,40 @@ Claude Code acts as an intelligent pair programmer that understands context, wri
 - **Creating tests** based on your implementation
 - **Refactoring** code while maintaining functionality
 
-Claude Code represents the evolution of AI-assisted development—moving beyond autocomplete to truly collaborative coding experiences often called [**"vibe coding"**](vibe.md).
+Claude Code represents the evolution of AI-assisted development—moving beyond autocomplete to truly collaborative coding experiences often called [**"Vibe Coding"**](vibe.md).
 
-### CLI vs VS Code Extension: Which Should You Use?
+??? Question "CLI vs VS Code Extension: Which Should You Use?"
 
-Claude Code comes in two primary forms, each suited to different workflows:
+    Claude Code comes in two primary forms, each suited to different workflows?
 
-| Feature | Claude Code CLI | Claude Code VS Code Extension |
-|---------|----------------|------------------------------|
-| **Platform** | :simple-gnubash: Terminal/Command Line | :material-microsoft-visual-studio-code: VS Code Editor |
-| **Installation** | :simple-gnubash: `npm install -g @anthropic-ai/claude-code` | VS Code Extensions Marketplace |
-| **Interface** | Text-based conversations in terminal | Integrated chat panel + inline edits |
-| **File Editing** | Creates/modifies files via CLI commands | Direct in-editor modifications |
-| **Context Awareness** | Full project directory access | VS Code workspace integration |
-| **Terminal Integration** | Native terminal environment | VS Code integrated terminal |
-| **Best For** | Terminal-first developers, automation, CI/CD | VS Code users, visual development, GUI preferences |
-| **Keyboard Shortcuts** | Standard terminal shortcuts | VS Code keybindings + custom shortcuts |
-| **MCP Support** | Yes, via configuration | Yes, via configuration |
-| **Multi-Project** | Switch directories manually | Workspace support |
+    | Feature | Claude Code CLI | Claude Code VS Code Extension |
+    |---------|----------------|------------------------------|
+    | **Platform** | :simple-gnubash: Terminal/Command Line | :material-microsoft-visual-studio-code: VS Code Editor |
+    | **Installation** | :simple-gnubash: `npm install -g @anthropic-ai/claude` | VS Code Extensions Marketplace |
+    | **Interface** | Text-based conversations in terminal | Integrated chat panel + inline edits |
+    | **File Editing** | Creates/modifies files via CLI commands | Direct in-editor modifications |
+    | **Context Awareness** | Full project directory access | VS Code workspace integration |
+    | **Terminal Integration** | Native terminal environment | VS Code integrated terminal |
+    | **Best For** | Terminal-first developers, automation, CI/CD | VS Code users, visual development, GUI preferences |
+    | **Keyboard Shortcuts** | Standard terminal shortcuts | VS Code keybindings + custom shortcuts |
+    | **MCP Support** | Yes, via configuration | Yes, via configuration |
+    | **Multi-Project** | Switch directories manually | Workspace support |
 
-??? tip "Recommendation: Start with Your Comfort Zone"
-    If you're primarily a terminal user who lives in vim, emacs, or tmux, start with the **CLI**. If you spend most of your time in VS Code, start with the **Extension**. You can always use both!
-
-### Key Capabilities
-
-Both versions of Claude Code share these powerful capabilities:
-
-**Context Understanding**
-- Reads and analyzes your entire project structure
-- Understands dependencies, frameworks, and patterns
-- Maintains conversation context across sessions
-- Integrates with [Model Context Protocol (MCP)](mcp.md) for extended capabilities
-
-**Code Generation & Editing**
-- Generates new files, functions, and modules
-- Refactors existing code across multiple files
-- Applies consistent coding styles and patterns
-- Suggests optimizations and improvements
-
-**Tool Integration**
-- Executes terminal commands (with your approval)
-- Runs tests and interprets results
-- Interacts with Git for version control
-- Connects to external APIs and databases via MCP
-
-**Customization**
-- Create custom agents for specialized tasks
-- Define slash commands for repeated workflows
-- Configure behavior and preferences
-- Integrate with your existing tools
-
-### How Claude Code Differs from Other Tools
-
-Compared to other AI coding assistants:
-
-- **vs. GitHub Copilot**: More conversational, can edit multiple files, stronger at architectural changes
-- **vs. Cursor**: Official Anthropic tool, different pricing model, native MCP support
-- **vs. ChatGPT/Claude Web**: Direct file system access, runs locally, part of development workflow
-- **vs. Cline/Roo Code**: Official Anthropic tool, integrated experience, ongoing support
-
-For a detailed comparison of all vibe coding tools, see our [**Vibe Coding Guide**](vibe.md).
-
-### Integration with the AI Ecosystem
-
-Claude Code is part of a broader AI development ecosystem:
-
-- **Model Context Protocol (MCP)**: Enables Claude Code to connect to databases, APIs, and external services—see our [MCP Documentation](mcp.md)
-- **Agentic AI**: Claude Code employs agentic patterns for autonomous problem-solving—learn more in [Agentic AI](agentic.md)
-- **Code Interpreters**: Can execute code in sandboxed environments—covered in [Code Generation with LLMs](code.md)
+    !!! Answer "Recommendation: Start with Your Comfort Zone"
+        
+        If you're primarily a terminal user who lives in vim, emacs, or tmux, start with the **CLI**. 
+        
+        If you spend most of your time in VS Code, start with the **Extension**. You can always use both!
 
 ---
 
 ## 2. Prerequisites & Account Setup
 
-Before installing Claude Code, you need access to Claude's API. There are two main approaches.
-
 ### 2.1 Account Options
 
-#### Option 1: Claude Pro/Team Subscription
+#### Option 1: Claude.ai
 
-**Claude Pro** ($20/month) or **Claude Team** ($25/user/month, minimum 5 users) subscriptions include:
+**Claude** (\$20/month), **Claude Pro** (\$100/month), **Claude Pro Max** (\$200/month) 
 
 - Access to Claude Code CLI and VS Code Extension
 - Extended usage limits (5x more than free tier)
@@ -139,7 +107,7 @@ Before installing Claude Code, you need access to Claude's API. There are two ma
 - Access to all Claude models (Sonnet, Opus, Haiku)
 - Early access to new features
 
-**Best for**: Individual developers, small teams, and frequent users
+**Best for**: Individual developers and frequent users
 
 **Sign up**: [claude.ai](https://claude.ai){target=_blank}
 
@@ -152,7 +120,7 @@ For programmatic access and integration:
 - **API key management**: Generate keys in console dashboard
 - **Usage tracking**: Monitor consumption in real-time
 
-**Best for**: Developers who want fine-grained control, batch processing, or integration with other tools
+**Best for**: Teams, developers who want fine-grained control, batch processing, or integration with other tools
 
 !!! info "API Pricing (January 2026)"
     Per million tokens:
@@ -173,21 +141,9 @@ For programmatic access and integration:
 
     See [Security Best Practices](#83-security-privacy) for more details.
 
-#### Comparison: Subscription vs API Key
-
-| Aspect | Pro/Team Subscription | API Key |
-|--------|----------------------|---------|
-| **Billing** | Flat monthly rate | Usage-based (per token) |
-| **Predictability** | Fixed cost | Variable cost |
-| **Usage Limits** | Session-based limits | Token-based limits |
-| **Best For** | Regular development work | Automation, batch jobs, experimentation |
-| **Administration** | Individual or team billing | Developer console management |
-
 ### 2.2 System Requirements
 
 #### Operating System
-
-Claude Code supports:
 
 - :material-apple: **macOS** 10.15 (Catalina) or later
 - :material-microsoft-windows: **Windows** 10/11 (with WSL2 recommended for CLI)
@@ -196,46 +152,53 @@ Claude Code supports:
 #### Required Software
 
 **Node.js and npm** (for CLI installation):
+
 - Node.js v16.0.0 or later
 - npm v7.0.0 or later
 - Check versions: `node --version && npm --version`
 - Install from [nodejs.org](https://nodejs.org){target=_blank}
 
 **Git**:
+
 - Git v2.20.0 or later
 - Check version: `git --version`
 - Install from [git-scm.com](https://git-scm.com){target=_blank}
 
-**For VS Code Extension**:
-- Visual Studio Code v1.75.0 or later
-- Download from [code.visualstudio.com](https://code.visualstudio.com){target=_blank}
+**VS Code (or clone)**:
+
+- Visual Studio Code v1.75.0 or later: [code.visualstudio.com](https://code.visualstudio.com){target=_blank}
+- Posit Positron: [posit.com](https://posit.com){target=_blank}
+- Google Antigravity: [antigravity.google](https://antigravity.google){target=_blank}
 
 #### AI Sandbox Environments (Optional)
 
 For isolated, secure, or team-based development environments, Claude Code works in:
 
 **Docker Containers**
+
 - Run Claude Code in isolated containers
 - Useful for reproducible environments
 - See [Docker Documentation](https://docs.docker.com){target=_blank} for setup
 
 **Virtual Machines**
+
 - Full OS isolation for security-sensitive work
 - Supports all major VM platforms (VirtualBox, VMware, Hyper-V)
 - Good for institutional policies requiring sandboxes
 
 **Jupyter Lab**
+
 - Integrate Claude Code into notebook workflows
 - See our [Jupyter AI Guide](jupyter.md) for details
 - Useful for data science and research contexts
 
 **Cloud Development Environments**
-- GitHub Codespaces
-- GitPod
-- Cloud9 (AWS)
-- Replit
 
-??? info "When to Use Sandboxes"
+- CyVerse: [cyverse.org](https://cyverse.org){target=_blank}
+- Jetstream-2: [jetstream-cloud.org](https://jetstream-cloud.org){target=_blank}
+
+??? info "When to Use AISandboxes"
+
     Consider sandbox environments if you:
 
     - Work with sensitive or proprietary code
@@ -257,16 +220,15 @@ This section covers installing both the Claude Code CLI and the VS Code Extensio
 Open your terminal and run:
 
 ```bash
-# Install Claude Code globally via npm
-npm install -g @anthropic-ai/claude-code
-
-# Verify installation
-claude-code --version
+curl -fsSL https://claude.ai/install.sh | bash
+claude --version
 ```
+
 
 Expected output:
+
 ```
-claude-code version 1.x.x
+2.1.9 (Claude Code)
 ```
 
 #### Installation on Windows
@@ -277,16 +239,16 @@ Windows Subsystem for Linux provides the best experience:
 
 ```bash
 # In WSL2 terminal
-npm install -g @anthropic-ai/claude-code
-claude-code --version
+curl -fsSL https://claude.ai/install.sh | bash
+claude --version
 ```
 
 **Option 2: PowerShell/Command Prompt**
 
 ```powershell
 # In PowerShell or CMD
-npm install -g @anthropic-ai/claude-code
-claude-code --version
+curl -fsSL https://claude.ai/install.cmd -o install.cmd && install.cmd && del install.cmd
+claude --version
 ```
 
 #### Authentication Setup
@@ -294,8 +256,78 @@ claude-code --version
 After installation, authenticate with your Claude account:
 
 ```bash
-# Start authentication flow
-claude-code auth login
+claude
+```
+
+Claude will start with a welcome graphic and ask you to select a color palette
+
+```bash
+Welcome to Claude Code v2.1.9                                                                   
+…………………………………………………………………………………………………………………………………………………………                                      
+                                                                                                
+     *                                       █████▓▓░                                           
+                                 *         ███▓░     ░░                                         
+            ░░░░░░                        ███▓░                                                 
+    ░░░   ░░░░░░░░░░                      ███▓░                                                 
+   ░░░░░░░░░░░░░░░░░░░    *                ██▓░░      ▓                                         
+                                             ░▓▓███▓▓░                                          
+ *                                 ░░░░                                                         
+                                 ░░░░░░░░                                                       
+                               ░░░░░░░░░░░░░░░░                                                 
+       █████████                                        *                                       
+      ██▄█████▄██                        *                                                      
+       █████████      *                                                                         
+…………………█ █   █ █………………………………………………………………………………………………………………                                      
+                                                                                                
+ Let's get started.                                                                             
+                                                                                                
+ Choose the text style that looks best with your terminal                                       
+ To change this later, run /theme                                                               
+                                                                                                
+ ❯ 1. Dark mode ✔                                                                               
+   2. Light mode                                                                                
+   3. Dark mode (colorblind-friendly)                                                           
+   4. Light mode (colorblind-friendly)                                                          
+   5. Dark mode (ANSI colors only)                                                              
+   6. Light mode (ANSI colors only)                                                             
+                                                                                                
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+ 1  function greet() {                                                                          
+ 2 -  console.log("Hello, World!");                                                             
+ 2 +  console.log("Hello, Claude!");                                                            
+ 3  }                                                                                           
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+```
+
+Next, you will need to authenticate in one of two ways:
+
+```bash
+Welcome to Claude Code v2.1.9                                                                   
+…………………………………………………………………………………………………………………………………………………………                                      
+                                                                                                
+     *                                       █████▓▓░                                           
+                                 *         ███▓░     ░░                                         
+            ░░░░░░                        ███▓░                                                 
+    ░░░   ░░░░░░░░░░                      ███▓░                                                 
+   ░░░░░░░░░░░░░░░░░░░    *                ██▓░░      ▓                                         
+                                             ░▓▓███▓▓░                                          
+ *                                 ░░░░                                                         
+                                 ░░░░░░░░                                                       
+                               ░░░░░░░░░░░░░░░░                                                 
+       █████████                                        *                                       
+      ██▄█████▄██                        *                                                      
+       █████████      *                                                                         
+…………………█ █   █ █………………………………………………………………………………………………………………                                      
+                                                                                                
+                                                                                                
+ Claude Code can be used with your Claude subscription or billed based on API usage through your
+  Console account.                                                                              
+                                                                                                
+ Select login method:                                                                           
+                                                                                                
+ ❯ 1. Claude account with subscription · Pro, Max, Team, or Enterprise                          
+                                                                                                
+   2. Anthropic Console account · API usage billing              
 ```
 
 This will:
@@ -309,9 +341,6 @@ This will:
 ```bash
 # Set API key via environment variable
 export ANTHROPIC_API_KEY="your-api-key-here"
-
-# Or use config file
-claude-code auth set-key
 ```
 
 !!! tip "Environment Variables"
@@ -323,37 +352,54 @@ claude-code auth set-key
 
     Then reload: `source ~/.zshrc`
 
-#### Basic Configuration
+#### Basic Configurations
 
-Configure Claude Code preferences:
+Configure Claude Code preferences using slash commands
 
-```bash
-# Set default model
-claude-code config set model claude-4-5-sonnet-20260115
-
-# Set default editor
-claude-code config set editor code  # or vim, nano, etc.
-
-# View current configuration
-claude-code config list
-```
-
-#### Verification
-
-Test your installation:
+In Claude, type the `/model` command:
 
 ```bash
-# Run a simple command
-claude-code --help
-
-# Test authentication
-claude-code auth status
-
-# Quick test conversation
-claude-code chat "Hello, Claude!"
+ ▐▛███▜▌   Claude Code v2.1.9                                                                   
+▝▜█████▛▘  Sonnet 4.5 (1M context) · Claude Max                                                 
+  ▘▘ ▝▝    ~/github/intro-gpt                                                                   
+                                                                                                
+────────────────────────────────────────────────────────────────────────────────────────────────
+❯ /model                                                                                        
+────────────────────────────────────────────────────────────────────────────────────────────────
+  /model                  Set the AI model for Claude Code                                      
+  /status                 Show Claude Code status including version, model, account, API conn…  
+  /vim                    Toggle between Vim and Normal editing modes                           
+  /plan                   Enable plan mode or view the current session plan           
 ```
 
-### 3.2 Claude Code VS Code Extension
+Hit :material-keyboard-return: `return` or :material-keyboard-return: `enter` key on your keyboard to enter the new menu
+
+Select a model from the list:
+
+```bash
+ ▐▛███▜▌   Claude Code v2.1.9                                                                   
+▝▜█████▛▘  Sonnet 4.5 (1M context) · Claude Max                                                 
+  ▘▘ ▝▝    ~/github/intro-gpt                                                                   
+────────────────────────────────────────────────────────────────────────────────────────────────
+ Select model                                                                                   
+ Switch between Claude models. Applies to this session and future Claude Code sessions. For     
+ other/previous model names, specify with --model.                                              
+                                                                                                
+   1. Default (recommended)  Opus 4.5 · Most capable for complex work                           
+   2. Sonnet                 Sonnet 4.5 · Best for everyday tasks                               
+ ❯ 3. Sonnet (1M context) ✔  Sonnet 4.5 with 1M context · Uses rate limits faster               
+   4. Haiku                  Haiku 4.5 · Fastest for quick answers    
+```
+
+In general, the default `Sonnet 4.5` model should be most useful (both efficient and accurate) for coding tasks.
+
+Use the `Opus 4.5` model when creating complex plans or for analysing a new codebase
+
+Use `Sonnet 4.5 1M` for large projects (this is actually the most expensive model)
+
+Use `Haiku 4.5` for faster outputs that don't require complexity (Haiku is still excellent for writing code, and is the least expensive model).
+
+### 3.2 VS Code Extension
 
 #### Installing from Marketplace
 
@@ -376,7 +422,7 @@ claude-code chat "Hello, Claude!"
 #### Alternative: Command Line Installation
 
 ```bash
-code --install-extension anthropic.claude-code
+code --install-extension anthropic.claude
 ```
 
 #### Initial Setup Wizard
@@ -407,21 +453,6 @@ After installation, the setup wizard will guide you through:
 1. Click "Sign in with Claude" in extension
 2. Authorize in browser
 3. Return to VS Code
-
-**For API key users:**
-
-1. Open VS Code settings (`Cmd/Ctrl + ,`)
-2. Search for "Claude Code"
-3. Enter API key in settings
-
-Or set via settings.json:
-
-```json
-{
-  "claude-code.apiKey": "your-api-key-here",
-  "claude-code.defaultModel": "claude-4-5-sonnet-20260115"
-}
-```
 
 #### Extension Settings Overview
 
@@ -527,9 +558,173 @@ Expected output:
 ✓ Git operations for github.com configured to use https protocol
 ```
 
-#### Basic gh Commands Reference
+#### Your First Conversational Git Experience
 
-Common commands you'll use with Claude Code:
+Now that you've installed `gh` CLI and authenticated with GitHub, here's the exciting part: **you don't need to memorize Git commands anymore**. 
+
+Instead of typing manual commands, you can have natural conversations with Claude Code about what you want to accomplish, and Claude handles the Git operations for you.
+
+**The Paradigm Shift:**
+
+Traditional Git requires remembering specific commands, flags, and syntax. 
+
+With Claude Code, you simply describe what you want in plain English, and Claude translates your intent into the appropriate Git operations.
+
+**Traditional Git vs. Conversational Git:**
+
+| **Traditional Workflow** | **Claude Code Conversation** |
+|-------------------------|------------------------------|
+| `git status`<br>`git add .`<br>`git commit -m "message"`<br>`git push` | **You:** "Commit and push my changes"<br>**Claude:** [Checks status, stages files, creates commit, pushes] |
+| `git status`<br>(manually review changes)<br>`git diff file.py` | **You:** "What's the current state of my repository?"<br>**Claude:** [Runs git status, summarizes changes clearly] |
+| `git add .`<br>`git commit -m "fix: update config"`<br>(hope the message is good enough) | **You:** "Add all my files and commit with a good message"<br>**Claude:** [Analyzes changes, creates descriptive commit message] |
+| `gh pr create --title "..." --body "..."`<br>(write PR description from scratch) | **You:** "Create a pull request"<br>**Claude:** [Analyzes commits, drafts PR with summary and test plan] |
+
+**Essential Conversational Git Patterns:**
+
+Here are realistic dialogues showing how Claude Code handles common Git workflows. Notice how you can ask in natural language, and Claude explains what it's doing:
+
+**Example 1: Checking Repository Status**
+
+**You:** What's the current state of my repository?
+
+**Claude:** Let me check...
+
+[Runs `git status`]
+
+Your repository is on branch `main` and it's up to date with `origin/main`.
+
+You have:
+- 3 untracked files: `src/app.py`, `requirements.txt`, and `README.md`
+- No staged or unstaged changes to tracked files
+
+Would you like to add these files and commit them?
+
+---
+
+**Alternative natural phrasings:**
+
+- "Check my git status"
+- "What files have I changed?"
+- "Show me what's in my repo"
+- "Did I modify anything?"
+
+---
+
+**Example 2: Adding and Committing Files**
+
+**You:** Add all my files and commit them with a good message
+
+**Claude:** I'll help you commit these changes. Let me check what we're committing...
+
+[Runs `git status`]
+
+I see 3 new files:
+- `src/app.py` - A Flask application setup
+- `requirements.txt` - Python dependencies
+- `README.md` - Project documentation
+
+[Runs `git add .`]
+
+[Runs `git commit -m "feat: initial project setup with Flask app
+
+- Add Flask application skeleton
+- Add project dependencies
+- Add initial documentation"`]
+
+✓ Changes committed! Would you like to push to the remote repository?
+
+---
+
+**Alternative natural phrasings:**
+- "Commit my changes"
+- "Save all my work to git"
+- "Make a commit with a descriptive message"
+- "Stage and commit everything"
+
+!!! tip "Claude Analyzes Before Acting"
+
+    Notice how Claude first checks what files are being committed and provides context. This helps you understand what's happening and catch any mistakes before they're committed.
+
+---
+
+**Example 3: Pushing to Remote**
+
+**You:** Push my changes to GitHub
+
+**Claude:** I'll push your commits to the remote repository.
+
+[Runs `git push`]
+
+✓ Successfully pushed to origin/main!
+
+Your changes are now on GitHub at: https://github.com/username/repo
+
+---
+
+**Alternative natural phrasings:**
+
+- "Push to remote"
+- "Upload my commits to GitHub"
+- "Send my changes to GitHub"
+- "Sync with GitHub"
+
+---
+
+**Example 4: Creating a Pull Request**
+
+**You:** Create a pull request for my changes
+
+**Claude:** I'll create a PR for you. Let me analyze your changes...
+
+[Runs `git diff main`]
+
+[Runs `gh pr create --title "feat: Add Flask application" --body "## Summary
+
+- Initial Flask application setup
+- Added project dependencies
+- Created documentation
+
+---
+
+**Alternative natural phrasings:**
+
+- "Make a PR"
+- "Open a pull request"
+- "Submit for review"
+- "Create PR from my branch"
+
+!!! example "Try It Yourself"
+
+    The best way to learn is by doing. Once you've created your first project in Section 4, come back and try these conversations. You'll be amazed at how natural it feels!
+
+---
+
+**What You Just Experienced:**
+
+With Claude Code, Git operations become conversational:
+
+✓ **Natural language** instead of command memorization
+✓ **Context awareness** - Claude understands your project state
+✓ **Smart defaults** - Claude writes good commit messages and PR descriptions
+✓ **Safety checks** - Claude shows you what it's doing before making changes
+✓ **Flexibility** - Ask in whatever way feels natural to you
+
+!!! info "Advanced Git Workflows"
+
+    This section covered the essential Git workflow (status, add, commit, push, PR) that beginners need. For advanced operations like branching strategies, rebasing, stashing, handling merge conflicts, and collaborative workflows, see [Section 8.2: Git Integration Patterns](#82-git-integration-patterns).
+
+---
+
+#### Quick Command Reference
+
+!!! info "Claude Can Run These For You"
+    You don't need to memorize or manually type these commands! Claude Code can execute all of these through natural conversation (as shown above). This reference is useful for:
+
+    - **Understanding what Claude does** behind the scenes
+    - **Manual use** when Claude Code isn't running
+    - **Scripts and automation** that don't need AI assistance
+
+Common `gh` and `git` commands for reference:
 
 ```bash
 # Create a repository
@@ -569,196 +764,356 @@ echo "Node: $(node --version)"
 echo "npm: $(npm --version)"
 echo "Git: $(git --version)"
 echo "GitHub CLI: $(gh --version)"
-echo "Claude Code: $(claude-code --version)"
+echo "Claude Code: $(claude --version)"
 ```
 
 All commands should return version numbers without errors.
 
 !!! success "Installation Complete!"
-    You now have all the tools needed to start using Claude Code. In the next section, we'll create your first project and start coding with Claude!
+
+    You've installed Claude Code, authenticated with GitHub, and learned how conversational Git works. In the next section, we'll create your first project and put these skills into practice!
 
 ---
 
 ## 4. Creating Your First Project
 
-Now that you have Claude Code and the GitHub CLI installed, let's create a project and start working with Claude.
+Now that you have Claude Code set up and understand conversational Git, let's create your first project using natural conversation. No need to memorize `gh` commands—just tell Claude what you want to build!
 
-### 4.1 Setting Up a New Repository
-
-We'll use the `gh` CLI to create a GitHub repository and clone it locally.
-
-#### Creating a Repository
+First, create a new folder in the CLI and change directory into it
 
 ```bash
-# Create a new public repository and clone it
-gh repo create my-first-claude-project --public --clone
-
-# Or for a private repository
-gh repo create my-private-project --private --clone
-
-# Navigate into the directory
-cd my-first-claude-project
+mkdir review-paper
+cd review-paper
 ```
 
-This command:
+### 4.1 Starting Claude Code
 
-1. Creates a repository on GitHub
-2. Initializes it with a README
-3. Clones it to your local machine
-4. Sets up the remote origin
-
-??? tip "Repository Options"
-    Additional options for `gh repo create`:
-
-    ```bash
-    # Add description
-    gh repo create my-project --public --clone \
-      --description "My awesome Claude Code project"
-
-    # Add .gitignore template
-    gh repo create my-project --public --clone \
-      --gitignore Python
-
-    # Add license
-    gh repo create my-project --public --clone \
-      --license mit
-
-    # Combine options
-    gh repo create my-project --public --clone \
-      --description "Python web app" \
-      --gitignore Python \
-      --license apache-2.0
-    ```
-
-#### Alternative: Clone Existing Repository
-
-If you already have a repository:
-
-```bash
-# Clone a repository
-gh repo clone username/repository-name
-
-# Navigate into it
-cd repository-name
-```
-
-#### Verify Directory Structure
-
-Check what was created:
-
-```bash
-# List files (including hidden)
-ls -la
-
-# Expected output:
-# .
-# ..
-# .git/
-# README.md
-```
-
-The `.git` directory indicates this is a Git repository.
-
-### 4.2 Starting Claude Code
-
-Now let's start Claude Code in your project directory.
+Before activating the local folder as a git repository, let's start Claude Code inside the new empty directory.
 
 #### CLI: Starting a Session
 
-Navigate to your project and start Claude Code:
+Start Claude Code:
 
 ```bash
-# Make sure you're in the project directory
-cd /path/to/my-first-claude-project
-
-# Start Claude Code
-claude-code
+# Start Claude Code from any directory
+claude
 ```
 
 You'll see Claude Code's interactive prompt:
 
 ```
-Claude Code v1.x.x
-Connected to claude-4-5-sonnet-20260115
-
-Ready to help! Type your message or '/help' for available commands.
-
-You:
+(base) ➜  review-paper claude
+                                                                                                
+────────────────────────────────────────────────────────────────────────────────────────────────
+ Do you trust the files in this folder?                                                         
+                                                                                                
+ /Users/tswetnam/review-paper                                                                   
+                                                                                                
+ Claude Code may read, write, or execute files contained in this directory. This can pose       
+ security risks, so only use files from trusted sources.                                        
+                                                                                                
+ Learn more                                                                                     
+                                                                                                
+ ❯ 1. Yes, proceed                                                                              
+   2. No, exit                                                                                  
+                                                                                                
+ Enter to confirm · Esc to cancel                    
 ```
 
-#### VS Code Extension: Opening Workspace
+Click :material-keyboard-return: `1. Yes, proceed` at this point if you are in the correct folder. 
 
-1. **Open VS Code in your project directory:**
+!!! tip "Pro Tip"
+
+    You can start Claude Code from any directory. 
+    
+    Claude can navigate the file system, create directories, and set up projects wherever you need them!
+
+### 4.2 Creating a New Repository (Conversational)
+
+Now comes the exciting part: creating your first GitHub repository through conversation with Claude. 
+
+No manual commands needed!
+
+#### Example: Creating a Brand New Project
+
+**You:** 
 
 ```bash
-code /path/to/my-first-claude-project
+❯ set up this folder as a git repository, include all of the common files for a data            
+  science project that uses Python  
 ```
 
-2. **Open Claude Code panel:**
-   - Click Claude Code icon in sidebar
-   - Or use Command Palette: `Cmd/Ctrl + Shift + P` → "Claude Code: Chat"
-
-3. **Start a conversation:**
-   - Type your message in the chat input
-   - Press Enter to send
-
-#### Initial Interface Walkthrough
-
-Let's understand the Claude Code interface:
-
-```mermaid
-flowchart TB
-    Start[You open Claude Code] --> Interface{Interface Type}
-
-    Interface -->|CLI| CLI[Terminal Interface]
-    Interface -->|VS Code| VSC[VS Code Panel]
-
-    CLI --> CLI1[Chat input/output]
-    CLI --> CLI2[Command history]
-    CLI --> CLI3[File changes shown inline]
-
-    VSC --> VSC1[Chat panel on side]
-    VSC --> VSC2[Inline code suggestions]
-    VSC --> VSC3[Diff viewer for changes]
-    VSC --> VSC4[Integrated terminal]
-
-    style CLI fill:#e1f5ff
-    style VSC fill:#e1f5ff
-```
-
-**CLI Interface Components:**
-
-- **Chat Area**: Your messages and Claude's responses
-- **Command Prompt**: Where you type (indicated by `You:`)
-- **Status Bar**: Shows current model and connection status
-- **File Changes**: Displays diffs when files are modified
-
-**VS Code Extension Components:**
-
-- **Chat Panel**: Conversation history and input (sidebar or panel)
-- **Inline Suggestions**: Code completions and edits in editor
-- **Diff Viewer**: Compare changes before accepting
-- **Status Bar**: Model indicator and settings (bottom of VS Code)
-- **Commands**: Access via Command Palette (`Cmd/Ctrl + Shift + P`)
-
-#### First Conversation
-
-Test Claude Code with a simple request:
-
-**CLI:**
+**Claude:** 
 
 ```bash
-You: Hello! Can you help me understand this repository?
+
+⏺ I'll help you set up this folder as a git repository with common files for a Python data      
+  science project. Let me plan this out.                                                        
+                                                                                                
+⏺ Bash(git init)                                                                                
+  ⎿  Running…                                                                                   
+                                                                                                
+  Todos · ctrl+t to hide todos                                                                  
+  ☐ Initialize git repository                                                                   
+  ☐ Create Python .gitignore file                                                               
+  ☐ Create README.md with project template                                                      
+  ☐ Create requirements.txt file                                                                
+  ☐ Create standard directory structure                                                         
+  ☐ Create initial git commit                                                                   
+                                                                                                
+────────────────────────────────────────────────────────────────────────────────────────────────
+ Bash command                                                                                   
+                                                                                                
+   git init                                                                                     
+   Initialize git repository                                                                    
+                                                                                                
+ Do you want to proceed?                                                                        
+ ❯ 1. Yes                                                                                       
+   2. Yes, and don't ask again for git init commands in /Users/tswetnam/review-paper            
+   3. No                                                                                        
+                                                                                                
+ Esc to cancel · Tab to add additional instructions   
 ```
 
-**VS Code:**
+Say `Yes`
 
-Type in chat panel:
-```
-Hello! Can you help me understand this repository?
+```bash
+                                                                                                
+⏺ Bash(git init)                                                                                
+  ⎿  Initialized empty Git repository in /Users/tswetnam/review-paper/.git/                     
+     hint: Using 'master' as the name for the initial branch. This default branch name          
+     hint: is subject to change. To configure the initial branch name to use in all             
+     … +8 lines (ctrl+o to expand)                                                              
+                                                                                                
+⏺ Write(.gitignore)                                                                             
+  ⎿  Wrote 187 lines to .gitignore                                                              
+      1 # Byte-compiled / optimized / DLL files                                                 
+      2 __pycache__/                                                                            
+      3 *.py[cod]                                                                               
+      4 *$py.class                                                                              
+      5 # C extensions                                                                          
+      6 *.so                                                                                    
+      7 # Distribution / packaging                                                              
+      8 .Python                                                                                 
+     … +177 lines (ctrl+o to expand)                                                            
+                                                                                                
+⏺ Write(README.md)                                                                              
+                                                                                                
+  Todos · ctrl+t to hide todos                                                                  
+  ☒ Initialize git repository                                                                   
+  ☒ Create Python .gitignore file                                                               
+  ☐ Create README.md with project template                                                      
+  ☐ Create requirements.txt file                                                                
+  ☐ Create standard directory structure                                                         
+  ☐ Create initial git commit                                                                   
+                                                                                                
+────────────────────────────────────────────────────────────────────────────────────────────────
+ Create file README.md                                                                          
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+   1 # Review Paper                                                                             
+   2                                                                                            
+   3 ## Project Description                                                                     
+   4                                                                                            
+   5 A brief description of your review paper project.                                          
+   6                                                                                            
+   7 ## Project Structure                                                                       
+   8                                                                                            
+   9 ```                                                                                        
+  10 review-paper/                                                                              
+  11 ├── data/                                                                                  
+  12 │   ├── raw/              # Original, immutable data                                       
+  13 │   ├── interim/          # Intermediate transformed data                                  
+  14 │   ├── processed/        # Final data sets for modeling                                   
+  15 │   └── external/         # Data from third party sources                                  
+  16 ├── notebooks/            # Jupyter notebooks for exploration                              
+  17 ├── src/                  # Source code for this project                                   
+  18 │   ├── __init__.py                                                                        
+  19 │   ├── data/            # Scripts to download or generate data                            
+  20 │   ├── features/        # Scripts to turn raw data into features                          
+  21 │   ├── models/          # Scripts to train models and make predictions                    
+  22 │   └── visualization/   # Scripts to create visualizations                                
+  23 ├── models/              # Trained and serialized models                                   
+  24 ├── reports/             # Generated analysis as HTML, PDF, LaTeX, etc.                    
+  25 │   └── figures/         # Generated graphics and figures                                  
+  26 ├── tests/               # Unit tests                                                      
+  27 ├── requirements.txt     # Python dependencies                                             
+  28 ├── .gitignore                                                                             
+  29 └── README.md                                                                              
+  30 ```                                                                                        
+  31                                                                                            
+  32 ## Setup                                                                                   
+  33                                                                                            
+  34 ### Prerequisites                                                                          
+  35                                                                                            
+  36 - Python 3.8 or higher                                                                     
+  37 - pip or conda                                                                             
+  38                                                                                            
+  39 ### Installation                                                                           
+  40                                                                                            
+  41 1. Clone this repository                                                                   
+  42 ```bash                                                                                    
+  43 git clone <repository-url>                                                                 
+  44 cd review-paper                                                                            
+  45 ```                                                                                        
+  46                                                                                            
+  47 2. Create a virtual environment                                                            
+  48 ```bash                                                                                    
+  49 python -m venv venv                                                                        
+  50 source venv/bin/activate  # On Windows: venv\Scripts\activate                              
+  51 ```                                                                                        
+  52                                                                                            
+  53 3. Install dependencies                                                                    
+  54 ```bash                                                                                    
+  55 pip install -r requirements.txt                                                            
+  56 ```                                                                                        
+  57                                                                                            
+  58 ## Usage                                                                                   
+  59                                                                                            
+  60 Describe how to use your project here.                                                     
+  61                                                                                            
+  62 ## Data                                                                                    
+  63                                                                                            
+  64 Describe your data sources and how to obtain them.                                         
+  65                                                                                            
+  66 ## Results                                                                                 
+  67                                                                                            
+  68 Summarize key findings and results.                                                        
+  69                                                                                            
+  70 ## Contributing                                                                            
+  71                                                                                            
+  72 If this is a collaborative project, describe how others can contribute.                    
+  73                                                                                            
+  74 ## License                                                                                 
+  75                                                                                            
+  76 Specify your license here.                                                                 
+  77                                                                                            
+  78 ## Contact                                                                                 
+  79                                                                                            
+  80 Your contact information or project maintainer details.                                    
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+ Do you want to create README.md?                                                               
+ ❯ 1. Yes                                                                                       
+   2. Yes, allow all edits during this session (shift+tab)                                      
+   3. No                                                                                        
+                                                                                                
+ Esc to cancel · Tab to add additional instructions      
+
 ```
 
-Claude will respond, analyzing the directory structure and asking what you'd like to do next.
+Continue to accept Claude's questions until the tasks are complete.
+
+!!! tip "Claude Understands Context"
+
+    Notice how Claude:
+
+    - Inferred you wanted a **public** repository (common for learning projects)
+    - Automatically added a **Python .gitignore** (you mentioned Python)
+    - Added a **license** (good practice for public repos)
+    - **Cloned it locally** and navigated into the directory
+    - **Asked follow-up questions** to understand next steps
+
+    You can always be more specific: "Create a **private** repo" or "Don't add a license yet"
+
+Claude will continue to execute on the plan until it completes:
+
+```                                                                                    
+⏺ Write(.gitignore)                                                                             
+  ⎿  Wrote 187 lines to .gitignore                                                              
+      1 # Byte-compiled / optimized / DLL files                                                 
+      2 __pycache__/                                                                            
+      3 *.py[cod]                                                                               
+      4 *$py.class                                                                              
+      5 # C extensions                                                                          
+      6 *.so                                                                                    
+      7 # Distribution / packaging                                                              
+      8 .Python                                                                                 
+     … +177 lines (ctrl+o to expand)                                                            
+                                                                                                
+⏺ Write(README.md)                                                                              
+  ⎿  Wrote 81 lines to README.md                                                                
+      1 # Review Paper                                                                          
+      2 ## Project Description                                                                  
+      3 A brief description of your review paper project.                                       
+      4 ## Project Structure                                                                    
+      5 ```                                                                                     
+      6 review-paper/                                                                           
+     … +71 lines (ctrl+o to expand)                                                             
+                                                                                                
+⏺ Write(requirements.txt)                                                                       
+  ⎿  Wrote 35 lines to requirements.txt                                                         
+      1 # Core data science libraries                                                           
+      2 numpy>=1.24.0                                                                           
+      3 pandas>=2.0.0                                                                           
+      4 scipy>=1.10.0                                                                           
+      5 # Visualization                                                                         
+      6 matplotlib>=3.7.0                                                                       
+      7 seaborn>=0.12.0                                                                         
+      8 plotly>=5.14.0                                                                          
+     … +25 lines (ctrl+o to expand)                                                             
+                                                                                                
+⏺ Bash(mkdir -p data/raw data/interim data/processed data/external notebooks src/data           
+      src/features src/models src/visualization models reports/figures tests && touch d…)       
+  ⎿  (No content)                                                                               
+                                                                                                
+⏺ Bash(git add . && git commit -m "Initial commit: Set up Python data science project           
+      structure…)                                                                               
+  ⎿ [master (root-commit) 0e41ecd] Initial commit: Set up Python data science project struc     
+    ture                                                                                        
+     14 files changed, 300 insertions(+)                                                        
+    … +14 lines (ctrl+o to expand)                                                              
+                                                                                                
+                                                                                                
+⏺ Done! I've successfully set up your folder as a git repository with a complete Python data    
+  science project structure. Here's what was created:                                           
+                                                                                                
+  Core Files:                                                                                   
+  - .gitignore - Comprehensive Python and data science exclusions                               
+  - README.md - Project template with structure documentation                                   
+  - requirements.txt - Common data science libraries (numpy, pandas, scikit-learn, jupyter,     
+  matplotlib, etc.)                                                                             
+                                                                                                
+  Directory Structure:                                                                          
+  review-paper/                                                                                 
+  ├── data/                                                                                     
+  │   ├── raw/              # For original data                                                 
+  │   ├── interim/          # For intermediate data                                             
+  │   ├── processed/        # For final datasets                                                
+  │   └── external/         # For third-party data                                              
+  ├── notebooks/            # For Jupyter notebooks                                             
+  ├── src/                  # Source code modules                                               
+  │   ├── data/                                                                                 
+  │   ├── features/                                                                             
+  │   ├── models/                                                                               
+  │   └── visualization/                                                                        
+  ├── models/               # For saved models                                                  
+  ├── reports/                                                                                  
+  │   └── figures/         # For generated visualizations                                       
+  └── tests/               # For unit tests                                                     
+                                                                                                
+  All changes have been committed to git. You can start working by:                             
+  1. Creating a virtual environment: python -m venv venv                                        
+  2. Activating it: source venv/bin/activate                                                    
+  3. Installing dependencies: pip install -r requirements.txt                                   
+                                                                                                
+✻ Baked for 1m 32s   
+```
+
+
+!!! success "What You Just Experienced"
+
+    In this conversation, Claude:
+
+    ✓ **Created a complete project structure** from a simple request
+
+    ✓ **Wrote actual code** (Python project with folders)
+    
+    ✓ **Set up environment** (virtual environment and dependencies)
+    
+    ✓ **Committed changes** with a well-formatted message
+    
+    ✓ **Pushed to GitHub** to save your work
+
+    All through natural conversation—no manual commands needed!
 
 ---
 
@@ -782,17 +1137,8 @@ Use this approach when you have an established project with existing code.
 
 The `/init` command tells Claude to comprehensively analyze your codebase:
 
-**CLI:**
-
 ```bash
 You: /init
-```
-
-**VS Code:**
-
-Type in chat:
-```
-/init
 ```
 
 #### What Claude Analyzes
@@ -832,36 +1178,69 @@ When you run `/init`, Claude Code:
 Here's what Claude might report after analyzing a Python web application:
 
 ```
-I've analyzed your codebase. Here's what I found:
-
-**Project Structure:**
-- Python Flask web application
-- Backend API in `src/api/`
-- Frontend templates in `templates/`
-- Database models in `src/models/`
-- Tests in `tests/`
-
-**Key Technologies:**
-- Flask 2.3.2 web framework
-- SQLAlchemy ORM
-- PostgreSQL database
-- pytest for testing
-- Docker for containerization
-
-**Architecture:**
-- MVC pattern with blueprints
-- RESTful API design
-- Token-based authentication (JWT)
-- Database migrations with Alembic
-
-**Entry Point:** `src/app.py`
-
-**Notable Patterns:**
-- Factory pattern for app creation
-- Repository pattern for data access
-- Dependency injection for services
-
-What would you like me to help with?
+                                                                                                
+⏺ I'll analyze the codebase and create a CLAUDE.md file with relevant guidance for future       
+  instances.                                                                                    
+                                                                                                
+⏺ Bash(find . -type f -name "*.py" -o -name "*.ipynb" -o -name "*.md" -o -name "*.txt" -o -name 
+      "*.yml" -o -name "*.yaml" -o -name "*.json" | grep -v ".git" | head -20)                  
+  ⎿  ./requirements.txt                                                                         
+     ./README.md                                                                                
+     ./src/visualization/__init__.py                                                            
+     … +4 lines (ctrl+o to expand)                                                              
+                                                                                                
+⏺ Bash(ls -la)                                                                                  
+  ⎿  total 24                                                                                   
+     drwxr-xr-x@  12 tswetnam  staff   384 Jan 16 15:45 .                                       
+     drwxr-xr-x+ 199 tswetnam  staff  6368 Jan 16 15:55 ..                                      
+     … +10 lines (ctrl+o to expand)                                                             
+                                                                                                
+⏺ Read(README.md)                                                                               
+  ⎿  Read 81 lines                                                                              
+                                                                                                
+⏺ Read(requirements.txt)                                                                        
+  ⎿  Read 35 lines                                                                              
+                                                                                                
+⏺ Bash(test -f .cursorrules && cat .cursorrules || test -d .cursor/rules && ls -la .cursor/rules
+       || echo "No cursor rules found")                                                         
+  ⎿  No cursor rules found                                                                      
+                                                                                                
+⏺ Bash(test -f .github/copilot-instructions.md && cat .github/copilot-instructions.md || echo   
+      "No copilot instructions found")                                                          
+  ⎿  No copilot instructions found                                                              
+                                                                                                
+⏺ Now I'll create the CLAUDE.md file with relevant guidance for this Python data science        
+  project.                                                                                      
+                                                                                                
+⏺ Write(CLAUDE.md)                                                                              
+  ⎿  Wrote 103 lines to CLAUDE.md                                                               
+      1 # CLAUDE.md                                                                             
+      2 This file provides guidance to Claude Code (claude.ai/code) when working with cod       
+        e in this repository.                                                                   
+      3 ## Project Overview                                                                     
+      4 This is a Python data science project for a review paper, following a standard da       
+        ta science project structure with separation between raw data, processed data, so       
+        urce code, notebooks, and outputs.                                                      
+      5 ## Environment Setup                                                                    
+     … +93 lines (ctrl+o to expand)                                                             
+                                                                                                
+⏺ I've created a CLAUDE.md file for this repository. The file includes:                         
+                                                                                                
+  1. Environment setup commands - How to create a virtual environment and install dependencies  
+  2. Testing commands - How to run all tests, tests with coverage, single test files, and       
+  specific tests                                                                                
+  3. Code quality commands - How to use Black for formatting and flake8 for linting             
+  4. Architecture overview - The Cookiecutter Data Science structure pattern with explanations  
+  of each directory's purpose                                                                   
+  5. Data flow pattern - The intended workflow from raw data through processing to final outputs
+  6. Key dependencies - Categorized list of main libraries used                                 
+                                                                                                
+  The file focuses on the practical commands needed for development and the high-level          
+  architectural patterns that aren't immediately obvious from the directory structure alone.    
+  Future instances of Claude Code will be able to use this to understand how to work effectively
+   in this codebase.                                                                            
+                                                                                                
+✻ Baked for 55s     
 ```
 
 #### Best Practices for Large Projects
@@ -903,12 +1282,14 @@ Visual representations help with complex systems.
 **5. Incremental Exploration**
 
 Don't try to understand everything at once. Start with:
+
 - Entry points and main flows
 - Core business logic
 - Critical paths
 - Then expand to utilities and helpers
 
 ??? warning "Context Window Limits"
+
     Claude has a large context window (200K tokens ≈ 150,000 words), but extremely large codebases might exceed this. If you encounter limits:
 
     - Focus on specific directories
@@ -939,17 +1320,20 @@ You: I want to create a new Python CLI tool that helps developers manage their d
 Claude will engage in a conversation to understand:
 
 1. **Project Requirements**
+
    - What problem are you solving?
    - Who are the users?
    - What features are essential?
 
 2. **Technical Decisions**
+
    - Programming language and version
    - Frameworks or libraries
    - Architecture approach
    - Testing strategy
 
 3. **Project Structure**
+
    - Directory organization
    - File naming conventions
    - Module breakdown
@@ -958,16 +1342,18 @@ Claude will engage in a conversation to understand:
 #### Example Planning Conversation
 
 **You:**
+
 ```
 I want to create a task management CLI app in Python that stores tasks in a local SQLite database. It should support adding, listing, completing, and deleting tasks.
 ```
 
 **Claude:**
-```
+
+```bash
 Great! Let's plan this project. Here's what I'm thinking:
 
 **Project Structure:**
-```
+
 task-manager/
 ├── .gitignore
 ├── README.md
@@ -993,6 +1379,7 @@ task-manager/
 ```
 
 **Technology Stack:**
+
 - Python 3.9+
 - Click for CLI framework (better than argparse for this use case)
 - SQLite3 (built-in)
@@ -1000,6 +1387,7 @@ task-manager/
 - Rich for beautiful terminal output (optional but nice)
 
 **Features:**
+
 1. `task add "Task description"` - Add new task
 2. `task list [--all|--completed|--pending]` - List tasks
 3. `task complete <id>` - Mark task as done
@@ -1080,7 +1468,7 @@ pip install -r requirements.txt
 # Run tests
 pytest
 ```
-```
+
 
 **2. LICENSE**
 
@@ -1341,11 +1729,11 @@ Some configurations require explicit registration:
 
 ```bash
 # CLI
-claude-code agents add .claude/agents/docs-writer.yaml
+claude agents add .claude/agents/docs-writer.yaml
 
 # Or in VS Code settings.json
 {
-  "claude-code.agents": [
+  "claude.agents": [
     ".claude/agents/docs-writer.yaml"
   ]
 }
@@ -1904,7 +2292,7 @@ cd /path/to/your-project
 
 ```bash
 # CLI
-claude-code
+claude
 
 # VS Code
 code . # Opens VS Code, then open Claude panel
@@ -2122,9 +2510,10 @@ Generate comprehensive PR descriptions:
 
 ```bash
 You: Generate a pull request description for my authentication feature
-
-Claude:
 ```
+
+Claude will generate:
+
 ```markdown
 ## Pull Request: Add OAuth2 Authentication
 
@@ -2169,7 +2558,6 @@ Requires new environment variables:
 - `OAUTH_GOOGLE_CLIENT_SECRET`
 - `OAUTH_GITHUB_CLIENT_ID`
 - `OAUTH_GITHUB_CLIENT_SECRET`
-```
 ```
 
 #### Code Review with Claude
@@ -2494,7 +2882,7 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Install Claude Code
-RUN npm install -g @anthropic-ai/claude-code
+RUN npm install -g @anthropic-ai/claude
 
 # Install GitHub CLI
 RUN curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | \
@@ -2524,10 +2912,10 @@ docker run -it \
   claude-dev
 
 # Inside container
-claude-code --version
+claude --version
 gh auth login
 cd /workspace
-claude-code
+claude
 ```
 
 For comprehensive Docker guides, see the [official Docker documentation](https://docs.docker.com){target=_blank}.
@@ -2540,7 +2928,7 @@ Common issues and their solutions.
 
 ### Installation Problems
 
-**Issue**: `npm install -g @anthropic-ai/claude-code` fails
+**Issue**: `npm install -g @anthropic-ai/claude` fails
 
 **Solutions**:
 
@@ -2561,7 +2949,7 @@ Common issues and their solutions.
 
 3. **Try without global:**
    ```bash
-   npx @anthropic-ai/claude-code --version
+   npx @anthropic-ai/claude --version
    ```
 
 4. **Permissions issue:**
@@ -2586,8 +2974,8 @@ Common issues and their solutions.
 
 3. **Reinstall extension:**
    ```bash
-   code --uninstall-extension anthropic.claude-code
-   code --install-extension anthropic.claude-code
+   code --uninstall-extension anthropic.claude
+   code --install-extension anthropic.claude
    ```
 
 ### Authentication Errors
@@ -2604,11 +2992,11 @@ Common issues and their solutions.
 2. **Re-authenticate:**
    ```bash
    # CLI
-   claude-code auth logout
-   claude-code auth login
+   claude auth logout
+   claude auth login
 
    # Check status
-   claude-code auth status
+   claude auth status
    ```
 
 3. **Check API key format:**
@@ -2654,10 +3042,10 @@ Common issues and their solutions.
 4. **Reinstall clean:**
    ```bash
    # Remove extension completely
-   rm -rf ~/.vscode/extensions/anthropic.claude-code-*
+   rm -rf ~/.vscode/extensions/anthropic.claude-*
 
    # Reinstall
-   code --install-extension anthropic.claude-code
+   code --install-extension anthropic.claude
    ```
 
 ### Performance Issues
@@ -2750,7 +3138,7 @@ Common issues and their solutions.
 If you're still stuck:
 
 1. **Check official documentation:**
-   - [docs.anthropic.com/claude-code](https://docs.anthropic.com/en/docs/claude-code){target=_blank}
+   - [docs.anthropic.com/claude](https://docs.anthropic.com/en/docs/claude){target=_blank}
 
 2. **Search GitHub issues:**
    - Known issues and solutions
@@ -2758,7 +3146,7 @@ If you're still stuck:
 
 3. **Community resources:**
    - [Anthropic Discord](https://discord.gg/anthropic){target=_blank}
-   - Stack Overflow (tag: claude-code)
+   - Stack Overflow (tag: claude)
    - Reddit r/ClaudeAI
 
 4. **Contact support:**
@@ -2845,8 +3233,8 @@ Organize work by project:
 
 ```bash
 # CLI
-claude-code project create my-app
-claude-code project switch my-app
+claude project create my-app
+claude project switch my-app
 
 # Each project maintains separate:
 # - Conversation history
@@ -2870,6 +3258,7 @@ still works.
 ```
 
 Claude will:
+
 1. Find all occurrences
 2. Show proposed changes
 3. Apply consistently
@@ -2887,6 +3276,7 @@ service boundaries.
 ```
 
 Then iteratively:
+
 ```bash
 1. Identify services
 2. Define interfaces
@@ -2918,13 +3308,13 @@ jobs:
           node-version: '18'
 
       - name: Install Claude Code
-        run: npm install -g @anthropic-ai/claude-code
+        run: npm install -g @anthropic-ai/claude
 
       - name: Run Code Review
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
-          claude-code review \
+          claude review \
             --files $(git diff --name-only origin/main) \
             --output review.md
 
@@ -2972,24 +3362,29 @@ ln -s ~/.claude-agents/commands .claude/commands
 Establish team standards for AI-assisted development:
 
 ```markdown
+
 ## Team Guidelines for Claude Code
 
 ### Required Reviews
+
 - All AI-generated code must be reviewed by a human
 - Security-sensitive code requires additional security review
 - Database migrations require team lead approval
 
 ### Documentation
+
 - Add "Generated with Claude Code" to commit messages for AI-generated code
 - Document significant AI assistance in PR descriptions
 - Explain any non-obvious AI suggestions
 
 ### Testing
+
 - All AI-generated code must have tests
 - Tests should be human-written or thoroughly reviewed
 - Aim for 80%+ coverage on new code
 
 ### Security
+
 - Never commit API keys or secrets
 - Run security scanners on AI-generated code
 - Review authentication/authorization logic manually
@@ -3006,30 +3401,35 @@ Congratulations! You now have a comprehensive understanding of Claude Code and h
 Explore these related topics to deepen your understanding:
 
 **[:material-cursor-default-click: Vibe Coding](vibe.md)**
+
 - Compare Claude Code with other AI coding tools
 - Understand the vibe coding landscape
 - Choose the right tool for different scenarios
 - Security considerations for AI-assisted development
 
 **[:simple-anthropic: Model Context Protocol (MCP)](mcp.md)**
+
 - Connect Claude Code to databases, APIs, and external services
 - Set up MCP servers for enhanced capabilities
 - Build custom integrations
 - Leverage context-aware assistance
 
 **[:material-robot: Agentic AI](agentic.md)**
+
 - Understand the principles behind agentic systems
 - Learn about autonomous AI behaviors
 - Explore advanced agent patterns
 - See how agents transform software development
 
 **[:material-code-braces: Code Interpreters](code.md)**
+
 - Understand code execution fundamentals
 - Compare sandboxed vs local execution
 - Security and privacy considerations
 - Best practices for AI-generated code
 
 **[:simple-jupyter: Jupyter AI](jupyter.md)**
+
 - Integrate Claude with Jupyter notebooks
 - Data science workflows with AI assistance
 - Interactive development patterns
@@ -3038,18 +3438,20 @@ Explore these related topics to deepen your understanding:
 ### Official Resources
 
 **Documentation:**
+
 - [Anthropic Documentation](https://docs.anthropic.com){target=_blank}
-- [Claude Code Official Docs](https://docs.anthropic.com/en/docs/claude-code){target=_blank}
+- [Claude Code Official Docs](https://docs.anthropic.com/en/docs/claude){target=_blank}
 - [API Reference](https://docs.anthropic.com/en/api){target=_blank}
 - [Model Context Protocol](https://modelcontextprotocol.io){target=_blank}
 
 **Community:**
+
 - [Anthropic Discord](https://discord.gg/anthropic){target=_blank} - Active community, get help, share projects
 - [GitHub Discussions](https://github.com/anthropics/anthropic-sdk-python/discussions){target=_blank} - Technical discussions
 - [Anthropic Cookbook](https://github.com/anthropics/anthropic-cookbook){target=_blank} - Code examples and tutorials
 
 **Social Media:**
-- [@AnthropicAI on Twitter](https://twitter.com/AnthropicAI){target=_blank}
+
 - [Anthropic Blog](https://www.anthropic.com/news){target=_blank}
 - [Research Papers](https://www.anthropic.com/research){target=_blank}
 
@@ -3057,31 +3459,35 @@ Explore these related topics to deepen your understanding:
 
 Check out these example projects to see Claude Code in action:
 
-- [Claude Code Starter Templates](https://github.com/anthropics/claude-code-starters){target=_blank}
+- [Claude Code Starter Templates](https://github.com/anthropics/claude-starters){target=_blank}
 - [Anthropic Cookbook Examples](https://github.com/anthropics/anthropic-cookbook){target=_blank}
 - [Community Projects Showcase](https://discord.gg/anthropic){target=_blank} (Discord #showcase channel)
 
 ### Continuing Your Learning Journey
 
 **Week 1-2: Foundation**
+
 - Complete this tutorial's exercises
 - Create a simple project with Claude Code
 - Practice using agents and slash commands
 - Join the Discord community
 
 **Week 3-4: Intermediate**
+
 - Contribute to an open-source project using Claude Code
 - Create custom agents for your workflow
 - Set up MCP servers for your tools
 - Explore integration with CI/CD
 
 **Month 2: Advanced**
+
 - Build a complex multi-service application
 - Create team-shared agent libraries
 - Develop custom MCP servers
 - Contribute back to the community
 
 **Ongoing:**
+
 - Follow Anthropic's blog for updates
 - Experiment with new Claude models
 - Share your experiences and learnings
@@ -3093,24 +3499,27 @@ Claude Code and AI development tools evolve rapidly:
 
 - Subscribe to [Anthropic Newsletter](https://www.anthropic.com){target=_blank}
 - Watch for Claude Code release notes
-- Follow the #claude-code channel on Discord
+- Follow the #claude channel on Discord
 - Check this documentation for updates
 
 ### Getting Involved
 
 **Share Your Experience:**
+
 - Write blog posts about your Claude Code workflow
 - Create video tutorials
 - Share agents and commands on GitHub
 - Help others on Discord
 
 **Provide Feedback:**
+
 - Report bugs and issues
 - Suggest new features
 - Share use cases and success stories
 - Contribute to documentation
 
 **Build Extensions:**
+
 - Create MCP servers for popular tools
 - Develop Claude Code plugins
 - Share agent configurations

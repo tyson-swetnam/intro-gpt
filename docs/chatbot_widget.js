@@ -6,6 +6,12 @@ document.addEventListener('DOMContentLoaded', function () {
     chatIcon.innerHTML = `<img src="./assets/verde.png" alt="Chat Icon">`;
     document.body.appendChild(chatIcon);
 
+    // First-load pulse animation
+    setTimeout(() => {
+        chatIcon.classList.add('first-load');
+        setTimeout(() => chatIcon.classList.remove('first-load'), 6000);
+    }, 1000);
+
     // Create the chat window container
     const chatContainer = document.createElement('div');
     chatContainer.id = 'chat-container';
@@ -20,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
         </div>
         <div id="chat-body">
             <iframe 
-                src="https://chat-qa.cyverse.org/intro-gpt/" 
+                src="https://cyversegpt.cyverse.org/intro-gpt" 
                 id="chat-frame" 
                 width="100%" 
                 height="100%"
@@ -30,18 +36,29 @@ document.addEventListener('DOMContentLoaded', function () {
     `;
     document.body.appendChild(chatContainer);
 
+    // Get references to elements
+    const chatBody = document.getElementById('chat-body');
+    const chatFrame = document.getElementById('chat-frame');
+
     // Event listener for iframe messages (if the iframe sends any)
     window.addEventListener('message', function(event) {
-        if (event.origin === 'https://chat-qa.cyverse.org/intro-gpt/') {
+        if (event.origin === 'https://cyversegpt.cyverse.org/intro-gpt') {
             if (event.data.type === 'link') {
                 window.open(event.data.url, '_blank', 'noopener,noreferrer');
             }
         }
     });
 
-    // Toggle the chat window when the chat icon is clicked
+    // Toggle the chat window when the chat icon is clicked with smooth entry animation
     chatIcon.addEventListener('click', () => {
-        chatContainer.style.display = chatContainer.style.display === 'block' ? 'none' : 'block';
+        if (chatContainer.style.display !== 'block') {
+            chatContainer.style.display = 'block';
+            chatContainer.classList.add('entering');
+            chatBody.classList.add('loading');
+            setTimeout(() => chatContainer.classList.remove('entering'), 400);
+        } else {
+            chatContainer.style.display = 'none';
+        }
     });
 
     // Close the chat window
@@ -106,8 +123,12 @@ document.addEventListener('DOMContentLoaded', function () {
         window.open(url, '_blank', `width=${popWidth},height=${popHeight}`);
     });
 
+    // Remove loading state when iframe loads
+    chatFrame.addEventListener('load', () => {
+        chatBody.classList.remove('loading');
+    });
+
     // Attempt to add event listeners to links inside the iframe (subject to cross-origin restrictions)
-    const chatFrame = document.getElementById('chat-frame');
     chatFrame.onload = function() {
         try {
             const iframeLinks = chatFrame.contentDocument.getElementsByTagName('a');
@@ -123,4 +144,11 @@ document.addEventListener('DOMContentLoaded', function () {
             console.log('Note: Cross-origin restrictions prevent direct iframe manipulation');
         }
     };
+
+    // Escape key handler to close chat
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && chatContainer.style.display === 'block') {
+            chatContainer.style.display = 'none';
+        }
+    });
 });
