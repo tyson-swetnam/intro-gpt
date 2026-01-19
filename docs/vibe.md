@@ -62,12 +62,6 @@ A popular standalone fork of VS Code, focused on integrating new models with sta
 
 A next-generation data science IDE built on VS Code, developed by Posit (formerly RStudio), with native support for Python, R, and AI-assisted coding.
 
-#### [:simple-firebase: Firebase IDX](https://idx.dev/){target=_blank}
-
-:material-web: :material-license: :material-api:
-
-Google's cloud-based IDE (formerly Project IDX, now part of Firebase) with built-in AI assistance powered by Gemini, providing a VS Code-like editing experience.
-
 #### [:simple-firebase: Firebase Studio](https://firebase.google.com/products/app-hosting){target=_blank}
 
 :material-web: :material-license: :material-api:
@@ -88,35 +82,40 @@ Standalone editor offering similar agentic and inline features with tiered prici
 
 ### VS Code Extensions
 
-#### [:octicons-copilot-16: GitHub Copilot](https://github.com/features/copilot){target=_blank}
-
-:material-microsoft-visual-studio-code: :octicons-codespaces-16: :material-license: :material-api:
-
-Integrated with VS Code and GitHub CodeSpaces, provides agentic coding with periodic performance fluctuations and tiered pricing.
-
-#### [:material-robot: Cline](https://github.com/cline/cline){target=_blank}
-
-:material-microsoft-visual-studio-code: :material-open-source-initiative: :material-api:
-
-VS Code extension that's open-source and model-agnostic, pioneering features like "bring your own model" (BYOM) and operating on a per-request billing structure.
-
-#### [:material-kangaroo: Roo Code](https://github.com/RooVetGit/Roo-Code){target=_blank}
-
-:material-microsoft-visual-studio-code: :material-open-source-initiative: :material-api:
-
-VS Code extension derived from Cline, prioritizes rapid feature development and customization, serving users interested in experimental capabilities.
-
-#### [:simple-anthropic: Claude Code](https://claude.ai/code){target=_blank}
+#### [:simple-anthropic: Claude Code](https://marketplace.visualstudio.com/items?itemName=anthropic.claude-code){target=_blank}
 
 :material-microsoft-visual-studio-code: :material-license: :material-api:
 
 Official Anthropic VS Code extension providing AI pair programming with Claude 4.5 models, featuring multi-file editing, debugging, and terminal integration.
 
-#### [:simple-google: Gemini Code Assist](https://cloud.google.com/gemini/docs/codeassist/overview){target=_blank}
+#### [:simple-google: Gemini CLI Companion](https://marketplace.visualstudio.com/items?itemName=Google.gemini-cli-vscode-ide-companion){target=_blank}
 
 :material-microsoft-visual-studio-code: :material-license: :material-api:
 
 Google's VS Code extension powered by Gemini models, offering code completion, generation, and chat assistance with Google Cloud integration.
+
+#### [:fontawesome-brands-openai: OpenAI Codex](https://marketplace.visualstudio.com/items?itemName=openai.chatgpt){target=_blank}
+
+:material-microsoft-visual-studio-code: :octicons-codespaces-16: :material-license: :material-api:
+
+Codex is integrated as an extension in VS Code
+
+#### [:octicons-copilot-16: GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot){target=_blank}
+:material-microsoft-visual-studio-code: :octicons-codespaces-16: :material-license: :material-api:
+
+Integrated with VS Code and GitHub CodeSpaces, provides agentic coding with periodic performance fluctuations and tiered pricing.
+
+#### [:material-robot: Cline](https://marketplace.visualstudio.com/items?itemName=saoudrizwan.claude-dev){target=_blank}
+
+:material-microsoft-visual-studio-code: :material-open-source-initiative: :material-api:
+
+VS Code extension that's open-source and model-agnostic, pioneering features like "bring your own model" (BYOM) and operating on a per-request billing structure.
+
+#### [:material-kangaroo: Roo Code](https://marketplace.visualstudio.com/items?itemName=RooVeterinaryInc.roo-cline){target=_blank}
+
+:material-microsoft-visual-studio-code: :material-open-source-initiative: :material-api:
+
+VS Code extension derived from Cline, prioritizes rapid feature development and customization, serving users interested in experimental capabilities.
 
 ### Command Line Interface (CLI) Tools
 
@@ -152,13 +151,7 @@ Open-source CLI tool supporting multiple AI models for code generation, analysis
 
 ### Browser-based Vibe Coding
 
-#### [:simple-anthropic: Claude](https://claude.ai){target=_blank}
-
-:material-web: :material-license: :material-api:
-
-Claude's web interface now includes Artifacts feature for interactive code execution, allowing you to write, run, and iterate on code directly in the browser with real-time preview.
-
-#### [:simple-anthropic: Claude Code for Web](https://claude.ai/code){target=_blank}
+#### [:simple-anthropic: Claude Code](https://claude.ai/code){target=_blank}
 
 :material-web: :material-license: :material-api:
 
