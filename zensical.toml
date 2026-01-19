@@ -97,7 +97,8 @@ Education = [
     { Overview = "education.md" },
     { "Teaching with AI" = "teaching.md" },
     { "AI Tutoring" = "tutoring.md" },
-    { "Admissions & Recruiting" = "admissions.md" }
+    { "Admissions & Recruiting" = "admissions.md" },
+    { "Plagiarism & AI Detection" = "plagiarism.md" }
 ]
 
 [[project.nav]]
