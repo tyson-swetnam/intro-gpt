@@ -801,21 +801,20 @@ Peer tutoring programs can use AI to train student tutors:
 
 ***
 
-### **Table**: Online, AI-driven Educational Platforms
+## Educational AI Platforms
 
-| **Platform** | **Subject Areas** | **Target Audience** | **Pricing** | **Key Features**  |
-| :----------- | :---------------- | :------------------ | :---------- | :---------------- |
-| [**IXL**](https://www.ixl.com/){target=_blank}  | Math, Language Arts, Science, Social Studies, Spanish | Pre-K to 12th Grade | Starts at $9.95/month (single subject), $19.95/month (all subjects) | Personalized learning, adaptive questions, real-time diagnostics, progress tracking, awards, and certificates. Covers a vast range of skills and grade levels. |
-| [**Khan Academy**](https://www.khanacademy.org/){target=_blank} | Math, Science, Economics, Arts & Humanities, Computing, Test Prep (SAT, LSAT, MCAT, etc.) | K-12, College, Adults | Free | Comprehensive video lessons, practice exercises, personalized learning dashboard, progress tracking. Covers a wide array of subjects.                                      |
-| [**Duolingo**](https://www.duolingo.com/){target=_blank} | Languages  | All ages  | Free (with Duolingo Plus subscription for added features) | Gamified language learning, bite-sized lessons, personalized practice, spaced repetition. Focuses on vocabulary, grammar, and pronunciation. |
-| [**Quizlet**](https://quizlet.com/){target=_blank} | Various (User-Generated Content) | All ages | Free (with Quizlet Plus subscription for added features)  | Flashcards, study games, practice tests, and learning tools. Users can create their own study sets or use existing ones. |
-| [**EdX**](https://www.edx.org/){target=_blank} | Various (University-Level Courses) | Adults, Professionals | Free to audit courses, paid certificates and degrees available | Online courses from top universities and institutions worldwide. Offers professional certificates, MicroMasters programs, and online Master's degrees. |
-| [**Coursera**](https://www.coursera.org/){target=_blank} | Various (University-Level Courses) | Adults, Professionals | Free to audit courses, paid certificates and degrees available  | Similar to EdX, offering a vast catalog of online courses from leading universities and organizations. Provides specializations, professional certificates, and online degrees. |
-| [**Google Career Certificates**](https://grow.google/certificates/){target=_blank} | Data Analytics, Cybersecurity, IT Support, Project Management, UX Design, Digital Marketing & E-commerce, AI Essentials | Adults, Career Changers, Professionals | $49/month (via Coursera), 7-day free trial, scholarships available | Industry-recognized certificates designed by Google; no degree required; self-paced completion in 3-6 months; access to Employer Consortium (150+ companies including Deloitte, Target, Verizon); earn up to 12 college credits; career support through CareerCircle. |
-| [**Udemy**](https://www.udemy.com/){target=_blank} | Various (Skills-Based Courses) | Adults, Professionals | Courses priced individually (often discounted)  | Wide range of courses on various topics, including business, technology, personal development, and the arts. |
-| [**MasterClass**](https://www.masterclass.com/){target=_blank} | Various (Expert-Led Courses) | Adults | $120/year (individual), $180/year (duo), $240/year (family)  |  Video lessons taught by renowned experts in their respective fields, covering topics like writing, cooking, acting, music, and more. |
-| [**Codecademy**](https://www.codecademy.com/){target=_blank} | Programming, Data Science, Web Development | Teens, Adults | Free (basic courses), Pro: $239.88/year or $39.99/month | Interactive coding lessons, projects, quizzes, and skill paths. Focuses on practical, hands-on learning for in-demand tech skills. |
-| [**Brilliant**](https://brilliant.org/){target=_blank} | Math, Science, Computer Science | Teens, Adults | $149/year or $24.99/month | Interactive problem-solving courses, focusing on conceptual understanding. |
-| [**Google Classroom**](https://edu.google.com/products/classroom/){target=_blank} | Various, can be used as a platform for any subject | K-12, Higher Education | Free for schools that use Google Workspace for Education | Helps teachers create, distribute, and grade assignments in a paperless way. Integrates with other Google services. |
-| [**Kahoot**](https://kahoot.com/){target=_blank} | Various, can be used to gamify any subject | K-12, Higher Education, Corporate Training | Free (basic), with paid plans for more features | Game-based learning platform that makes it easy to create, share and play learning games or trivia quizzes in minutes. |
-| [**Grammarly**](https://www.grammarly.com/grammar-check){target=_blank} | AI writing tool that helps improve writing style, grammatical errors, and spelling. | K-12, Higher Education, Professionals | Free (basic), with paid plans | | 
+For a comprehensive comparison of AI-powered educational platforms including IXL, Khan Academy, Duolingo, Codecademy, and more, see:
+
+**📚 [Educational AI Platforms Comparison Table](choose.md#educational-ai-platforms)**
+
+The table includes:
+- Subject areas and target audiences
+- Current pricing (verified January 2026)
+- Key features and capabilities
+- Links to all platforms
+
+Popular platforms include:
+- **Free Options:** Khan Academy, Duolingo (basic), Quizlet (basic), Google Classroom
+- **Affordable:** IXL ($9.95-$19.95/mo), Codecademy Pro ($39.99/mo), Brilliant ($24.99/mo)
+- **Career Development:** Google Career Certificates ($49/mo), Coursera, EdX
+- **Language Learning:** Duolingo, with AI-powered conversation practice 

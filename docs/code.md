@@ -341,19 +341,23 @@ See our [Vibe Coding security warnings](vibe.md) for more detailed guidance.
 ### Bias, Licensing, and Intellectual Property
 
 **Training Data Considerations**
-- AI models are trained on public code repositories, which may contain:
+
+AI models are trained on public code repositories, which may contain:
+
   - **Biased implementations** (non-inclusive variable names, accessibility issues)
   - **Licensed code** that may not be suitable for your use case
   - **Outdated patterns** or deprecated approaches
   - **Security vulnerabilities** from historical code
 
 **Best Practices:**
+
 - Review generated code for inclusive language and accessibility
 - Check license compatibility for suggested libraries
 - Validate that patterns are current and recommended
 - Don't assume AI-generated code is "best practice"
 
 **Intellectual Property**
+
 - Most AI providers claim no copyright on generated output
 - However, generated code might inadvertently replicate existing licensed code
 - Your organization may have policies about AI-generated code ownership
@@ -362,12 +366,14 @@ See our [Vibe Coding security warnings](vibe.md) for more detailed guidance.
 ### Privacy and Data Handling
 
 **What Data Gets Sent to AI Services?**
+
 - Your prompts and code snippets
 - File contents (with MCP or when explicitly shared)
 - Error messages and terminal output
 - Project structure and metadata
 
 **Privacy Best Practices:**
+
 - Don't share sensitive data, credentials, or personal information in prompts
 - Review your organization's data classification policies
 - Use local/self-hosted models for sensitive code when possible
@@ -375,19 +381,22 @@ See our [Vibe Coding security warnings](vibe.md) for more detailed guidance.
 - Consider anonymizing data before sharing with AI tools
 
 **Tools with Enhanced Privacy:**
+
 - [Cline](vibe.md#cline) and [Roo Code](vibe.md#roo-code): Can use local models via Ollama
-- [Aider](https://aider.chat/): Supports local LLMs
+- [Aider](https://aider.chat/) and [OpenCode.ai](https://opencode.ai): Supports local LLMs
 - Claude Desktop with [MCP](mcp.md): Data processing happens locally before being sent to API
 
 ### Accessibility and Inclusive Development
 
 **Use AI to Improve Accessibility**
+
 - Ask AI to review code for WCAG compliance
 - Generate accessible alternatives for visual content
 - Check color contrast and screen reader compatibility
 - Implement keyboard navigation
 
 **Avoid Perpetuating Bias**
+
 - Review generated variable names and comments for inclusive language
 - Ask AI to suggest alternatives if you spot problematic patterns
 - Consider diverse user needs when prompting for UI/UX implementations
@@ -395,6 +404,7 @@ See our [Vibe Coding security warnings](vibe.md) for more detailed guidance.
 ### Environmental Considerations
 
 **AI Compute Costs**
+
 - LLM inference requires significant energy
 - Be mindful of unnecessary requests
 - Use appropriate model sizes (don't use GPT-4 for simple autocomplete)
@@ -404,6 +414,7 @@ See our [Vibe Coding security warnings](vibe.md) for more detailed guidance.
 ### Continuous Learning
 
 **Stay Updated**
+
 - AI coding tools evolve rapidly
 - Follow release notes and changelogs
 - Experiment with new features in safe environments
@@ -411,12 +422,14 @@ See our [Vibe Coding security warnings](vibe.md) for more detailed guidance.
 - Read our [Vibe Coding guide](vibe.md) regularly for updates
 
 **Develop AI Literacy**
+
 - Understand how LLMs work and their limitations
 - Learn about prompt engineering techniques
 - Recognize when AI is appropriate vs. when human expertise is needed
 - Share knowledge with your team
 
 !!! tip "The Human-AI Partnership"
+
     The goal isn't to replace developers with AI—it's to augment human capabilities. The best results come from combining AI's pattern recognition and code generation with human creativity, domain expertise, and critical thinking. Use AI as a powerful tool, but keep your judgment and expertise at the center of development decisions.
 
 ---
@@ -427,37 +440,6 @@ With dozens of AI coding tools available, selecting the right one depends on you
 
 ### Decision Framework
 
-```mermaid
-flowchart TD
-    Start[What's your primary use case?] --> DataAnalysis{Data Analysis<br/>One-off Tasks?}
-    Start --> Development{Software<br/>Development?}
-
-    DataAnalysis -->|Yes| Sandboxed[Use Code Interpreters]
-    Sandboxed --> SandboxChoice[Claude, Gemini, ChatGPT Plus]
-
-    Development -->|Yes| IDE{Prefer IDE<br/>Integration?}
-
-    IDE -->|VS Code| VSCodeTools{Open Source<br/>or Official?}
-    VSCodeTools -->|Official| ClaudeCode[Claude Code Extension]
-    VSCodeTools -->|Open Source| ClineRoo[Cline or Roo Code]
-    VSCodeTools -->|Enterprise| Copilot[GitHub Copilot]
-
-    IDE -->|Standalone| Standalone{Budget<br/>Preference?}
-    Standalone -->|Flat Fee| Cursor[Cursor or Windsurf]
-    Standalone -->|Pay-as-you-go| ClaudeDesktop[Claude Desktop + MCP]
-
-    IDE -->|Terminal/CLI| CLI[Claude Code CLI or Aider]
-
-    IDE -->|Browser| Browser[Claude Code Web, Firebase IDX]
-
-    style Sandboxed fill:#e1f5ff
-    style ClaudeCode fill:#c8e6c9
-    style ClineRoo fill:#c8e6c9
-    style Cursor fill:#c8e6c9
-    style CLI fill:#c8e6c9
-```
-
-### By Use Case
 
 **Exploratory Data Analysis**
 → [Code Interpreters](#1-code-interpreters-your-sandboxed-ai-analyst): Claude, Gemini, ChatGPT Plus
@@ -486,21 +468,25 @@ flowchart TD
 ### Integration with Your Workflow
 
 **For Researchers:**
+
 - Start with [Code Interpreters](#1-code-interpreters-your-sandboxed-ai-analyst) for data analysis
 - Progress to [Claude Desktop with MCP](mcp.md) for accessing research databases
 - Use [Vibe Coding tools](vibe.md) for reproducible research code
 
 **For Students:**
+
 - Begin with [sandboxed interpreters](#1-code-interpreters-your-sandboxed-ai-analyst) to learn safely
 - Experiment with [browser-based tools](vibe.md#browser-based-vibe-coding) for homework
 - Transition to [IDE extensions](vibe.md#vs-code-extensions) as skills develop
 
 **For Professional Developers:**
+
 - Choose [agentic tools](vibe.md) based on your IDE preference
 - Leverage [MCP](mcp.md) for project-specific integrations
 - Follow [security best practices](#security-considerations) rigorously
 
 **For Teams:**
+
 - Standardize on [enterprise tools](vibe.md#github-copilot) with centralized billing
 - Establish code review processes for AI-generated code
 - Document policies on AI tool usage and data sharing

@@ -89,7 +89,10 @@ The Model Context Protocol is an open standard that enables Claude to interact w
         - Access to Claude 4.5 Opus and Claude 4.5 Haiku
         - Priority access during high-traffic periods
         - Early access to new features
-    *   **Claude Team ($25/user/month, min 5 users):**
+    *   **Claude Max ($100-200/month):**
+        - Extended usage limits
+        - Priority access to newest models
+    *   **Claude Team ($25-30/user/month, min 5 users):**
         - Everything in Pro
         - Central billing and administration
         - Team collaboration features
@@ -97,6 +100,8 @@ The Model Context Protocol is an open standard that enables Claude to interact w
         - Claude 4.5 Sonnet: $3 input / $15 output
         - Claude 4.5 Opus: $15 input / $75 output
         - Claude 4.5 Haiku: $0.25 input / $1.25 output
+
+    **Compare with other AI platforms:** See [Choosing the Right AI Platform](choose.md) for detailed comparisons with ChatGPT, Gemini, and more.
 
 ## Using Claude
 

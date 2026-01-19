@@ -6,110 +6,180 @@
 
 ![banner](assets/banner3_ai.png){width=1000}
 
-## [:material-run-fast: Workshop Agenda](agenda.md)
+## Welcome
 
-Welcome to our workshop on generative AI and Prompt Engineering for academic research and education.
+Welcome to this **self-paced, asynchronous online workshop** on generative AI and prompt engineering for academic research and education.
 
-Generative AI are now deeply integrated into how we work, conduct research, teach, and learn. This workshop will introduce basic skills to effectively utilize these powerful tools, focusing on the art of crafting "prompts" — the instructions that guide AI models — and exploring how to integrate AI into daily productivity.
+Generative AI tools are now deeply integrated into how we work, conduct research, teach, and learn. This workshop will help you develop the skills to effectively utilize these powerful tools, focusing on the art of crafting "prompts" — the instructions that guide AI models — and exploring how to integrate AI into daily productivity.
 
 !!! Success "Learning Objectives"
 
-    After this workshop, you should be able to:
+    After completing this workshop, you will be able to:
 
-    *   Identify how the workplace and classroom are being impacted by AI.
-    *   Create effective prompts for leading AI models like Gemini, ChatGPT, Copilot, Claude, and others.
-    *   Decide when to integrate AI into your own life and work.
+    *   Understand the current generative AI landscape and how it impacts the workplace and classroom
+    *   Create effective prompts for leading AI platforms including Claude, ChatGPT, Gemini, and Copilot
+    *   Apply AI tools to enhance teaching, research, and daily productivity
+    *   Make informed decisions about when and how to integrate AI into your work
+    *   Navigate ethical considerations and responsible AI use in academic contexts
 
-## [:material-run-fast: Setup](chatgpt.md)
+## [:material-calendar-clock: Workshop Agenda & Learning Paths](agenda.md)
 
-!!! Warning "**Prerequisites**" 
-    
-    **We will be using Professional paid versions of GPTs for this workshop.** 
-    
-    If your department does not provide you with a subscription to a major GPT, or you cannot afford to purchase a monthly subscription, please contact the organizers for details about getting a demo account for the workshop.
+This workshop is organized into **five main modules** with an estimated **8-12 hours** of content. You can complete them in order or skip to sections most relevant to your needs.
 
+| Module | Topic | Time |
+|--------|-------|------|
+| **0** | [Getting Started](agenda.md#module-0-getting-started-30-60-minutes) - AI landscape and orientation | 30-60 min |
+| **1** | [Platform Setup](agenda.md#module-1-platform-setup-1-2-hours) - Claude, ChatGPT, Gemini, Copilot | 1-2 hours |
+| **2** | [Prompt Engineering & Productivity](agenda.md#module-2-prompt-engineering-productivity-2-3-hours) - Core skills and daily use | 2-3 hours |
+| **3** | [AI in Education](agenda.md#module-3-ai-in-education-2-3-hours) - Teaching, tutoring, and academic administration | 2-3 hours |
+| **4** | [AI for Research](agenda.md#module-4-ai-for-research-3-4-hours) - Advanced tools and techniques | 3-4 hours |
+| **5** | [Ethics & Responsible AI](agenda.md#module-5-ethics-responsible-ai-1-2-hours) - Ethical frameworks and considerations | 1-2 hours |
 
-!!! example "Account Setup Instructions"
+[:material-arrow-right: View the full agenda with detailed topics and learning paths](agenda.md){ .md-button .md-button--primary }
 
-    [:material-run-fast: :simple-anthropic: Claude](claude.md)
+## Quick Start
 
-    [:material-run-fast: :simple-google: Gemini](gemini.md)
+!!! example "Choose Your Path"
 
-    [:material-run-fast: :fontawesome-brands-openai: ChatGPT](chatgpt.md)
+    === "Beginners"
 
-    [:material-run-fast: :material-microsoft: Microsoft Copilot](microsoft.md)
+        New to AI? Start here:
 
-    [:material-run-fast: :simple-githubcopilot: GitHub Copilot](copilot.md)
+        1. [:material-compass: AI Landscape Overview](ai_landscape.md) - Understand the AI ecosystem
+        2. [:simple-anthropic: Set up Claude](claude.md) or [:fontawesome-brands-openai: ChatGPT](chatgpt.md) - Get your first AI account
+        3. [:material-pencil: Writing Effective Prompts](prompts.md) - Learn core prompting techniques
+        4. [:material-scale-balance: Ethics Overview](ethics.md) - Understand responsible AI use
 
-    [:material-run-fast: :hugging: HuggingFace](huggingface.md)
+    === "Educators"
 
-## [:material-run-fast: AI Landscape](ai_landscape.md)
+        Focus on teaching applications:
 
-An examination of the generative AI landscape, as of today. 
+        1. [:material-school: Education Overview](education.md) - AI's role in modern education
+        2. [:material-human-male-board: Teaching with AI](teaching.md) - Course design and content creation
+        3. [:material-account-school: AI Tutoring](tutoring.md) - Personalized learning assistance
+        4. [:material-file-document-alert: Plagiarism & Detection](plagiarism.md) - Academic integrity
 
-Includes an overview of Large Language Models within the greater AI ecosystem, ethics of AI, and future directions. 
+    === "Researchers"
 
-## [:material-run-fast: Ethics of AI](ethics.md)
+        Focus on research applications:
 
-An overview of the history of AI, ethical concerns, and international declarations and principles on AI.
+        1. [:material-flask: Research Overview](research.md) - AI in academic research
+        2. [:material-code-braces: Code Interpreters](code.md) - Data analysis and visualization
+        3. [:material-robot: Agentic AI](agentic.md) - Autonomous AI workflows
+        4. [:material-database-search: RAG](rag.md) - Custom knowledge bases
 
-## [:material-run-fast: Prompt Engineering](prompts.md)
+    === "Developers"
 
-Next, we will cover the basics of Prompt Engineering for daily productivity, as well as in academic teaching and research
+        Focus on technical integration:
 
-!!! Info "General Productivity"
+        1. [:simple-githubcopilot: GitHub Copilot](copilot.md) - AI pair programming
+        2. [:material-palette-swatch: Vibe Coding](vibe.md) - AI-assisted development
+        3. [:material-link-variant: Model Context Protocol](mcp.md) - Tool integration
+        4. [:material-api: OpenAI API](openai.md) - Programmatic access
 
-    [:material-run-fast: Go to our lesson on Daily Productivity with AI](daily-productivity.md)
+## Prerequisites
 
-    Generative AI is transforming everyday tasks. Learn how to leverage AI tools to streamline your workflows, enhance your writing, automate tasks, and boost your overall productivity. This section will likely cover:
+:material-check: **A computer** with internet connection
 
-    *   **AI-Powered Writing Assistants:**  Tools integrated into word processors, email clients, and other applications.
-    *   **Smart Summarization and Note-Taking:** Using AI to quickly digest information and generate concise summaries.
-    *   **Automated Task Management:**  Leveraging AI to schedule meetings, set reminders, and manage projects.
+:material-check: **At least one AI platform account** - Free tiers are available for all major platforms:
 
-## [:material-run-fast: Education](education.md)
+   - [:simple-anthropic: Claude](claude.md) - Free or Pro ($20/month)
+   - [:fontawesome-brands-openai: ChatGPT](chatgpt.md) - Free or Plus ($20/month)
+   - [:simple-google: Google Gemini](gemini.md) - Free or Advanced ($20/month)
+   - [:material-microsoft: Microsoft Copilot](microsoft.md) - Free with Microsoft 365
 
-We will discuss strategies for integrating AI into your teaching style, AI use in the classroom, and providing students with the ability to learn from AI as virtual tutors and teaching assistants.
+:material-check: **No prior AI experience required** - This workshop starts with the basics and progresses to advanced topics
 
-!!! Info "Education"
+!!! tip "Platform Recommendations"
 
-    [:material-run-fast: AI in the Classroom](teaching.md)
+    Not sure which platform to choose? See our [Platform Comparison Guide](choose.md) for detailed feature comparisons, pricing, and use-case recommendations.
 
-    [:material-run-fast: Ethics of AI in Education](ethics.md)
+## Workshop Sections
 
-    Explore the transformative potential of AI in education. Learn how to use AI to:
+### [:material-cog: Setup](claude.md)
 
-    *   **Personalize Learning:** Create customized learning experiences for students.
-    *   **Generate Educational Content:** Develop lesson plans, quizzes, and interactive learning materials.
-    *   **Provide Intelligent Tutoring:** Offer students personalized support and feedback.
-    *   **Enhance Accessibility:**  Make learning more inclusive for all students.
+Get started with major AI platforms. Each guide includes account setup, interface overview, and platform-specific tips.
 
-## [:material-run-fast: Research](research.md)
+| Platform | Description |
+|----------|-------------|
+| [:simple-anthropic: Claude](claude.md) | Anthropic's AI with Projects, Artifacts, and MCP support |
+| [:fontawesome-brands-openai: ChatGPT](chatgpt.md) | OpenAI's ChatGPT with GPTs, Canvas, and Advanced Voice |
+| [:simple-google: Gemini](gemini.md) | Google's AI with workspace integration and multimodal capabilities |
+| [:material-microsoft: Microsoft Copilot](microsoft.md) | AI integrated into Microsoft 365 applications |
+| [:simple-githubcopilot: GitHub Copilot](copilot.md) | AI pair programming for developers |
 
-We will briefly touch on the applications of AI for scientific research, primarily through the use of code interpreters and code execution using commercial software.
+### [:material-text-box-edit: Prompt Engineering](prompts.md)
 
+Master the core skills for effective AI interaction.
 
-A future workshop on advanced uses of AI for scientific research will cover the creation and deployment of AI for science gateways and integration of custom, private, GPTs and LLMs for private and secure applications. 
+| Topic | Description |
+|-------|-------------|
+| [:material-pencil: Writing Prompts](prompts.md) | Core techniques: chain-of-thought, few-shot learning, role-based prompting |
+| [:material-briefcase: Daily Productivity](daily-productivity.md) | AI for emails, writing, summarization, and workflow automation |
+| [:material-code-braces: Code Interpreters](code.md) | Data analysis, visualization, and computational tasks |
+| [:material-palette-swatch: Vibe Coding](vibe.md) | AI-assisted software development and prototyping |
+| [:material-compare: Choosing a Platform](choose.md) | Compare features, pricing, and use cases |
 
-!!! Info "Research"
+### [:material-school: Education](education.md)
 
-    [:material-run-fast: Go to our lesson on AI in Research](research.md)
+Explore how AI can enhance teaching, learning, and academic administration.
 
-    Discover how generative AI is accelerating research across disciplines. This section will cover topics such as:
+| Topic | Description |
+|-------|-------------|
+| [:material-book-open: Overview](education.md) | AI's transformative role in modern education |
+| [:material-human-male-board: Teaching with AI](teaching.md) | Course design, content creation, and assessment |
+| [:material-account-school: AI Tutoring](tutoring.md) | Using AI as a personalized learning assistant |
+| [:material-account-group: Admissions & Recruiting](admissions.md) | AI for student recruitment and admissions |
+| [:material-file-document-alert: Plagiarism & Detection](plagiarism.md) | AI detection tools and academic integrity |
 
-    *   **Literature Review and Synthesis:** Using AI to quickly analyze and summarize research papers.
-    *   **Data Analysis and Exploration:** Leveraging AI to identify patterns and insights in complex datasets.
-    *   **Writing:**  Utilizing AI to assist in crafting compelling grant proposals.
-    *   **Code Interpreter and execution:** Using AI tools like GitHub Copilot to streamline the coding process.
+### [:material-flask: Research](research.md)
 
-!!! Example "Tools and Platforms"
+Advanced topics for researchers using AI in their work.
 
-    [:material-run-fast: Go to our lesson on :octicons-copilot-48: GitHub Copilot](code.md)
+| Topic | Description |
+|-------|-------------|
+| [:material-book-open: Overview](research.md) | AI applications in academic research |
+| [:material-robot: Agentic AI](agentic.md) | Autonomous AI agents and workflows |
+| [:material-shield-lock: AI Sandboxes](ai_sandboxes.md) | Safe environments for AI experimentation |
+| [:simple-jupyter: Jupyter AI](jupyter.md) | AI integration in Jupyter notebooks |
+| [:material-link-variant: Model Context Protocol](mcp.md) | Claude's MCP for tool integration |
+| [:simple-google: NotebookLM](notebooklm.md) | Google's AI research assistant |
+| [:material-server: Ollama](ollama.md) | Running LLMs locally |
+| [:material-database-search: RAG](rag.md) | Retrieval Augmented Generation for custom knowledge bases |
+| [:material-api: OpenAI API](openai.md) | Programming with OpenAI's API |
+| [:hugging: HuggingFace](huggingface.md) | Open-source models and datasets |
+| [:hugging: Gradio](gradio.md) | Building AI interfaces |
+| [:material-chart-box: Posit (RStudio)](posit.md) | AI tools for R users |
+| [:material-microsoft-visual-studio-code: VS Code & AI Tools](vscode.md) | AI extensions for VS Code |
+| [:material-text-search: Text Mining](text_mining.md) | AI for text analysis and NLP |
 
-    [:material-run-fast: Go to our lesson on  :fontawesome-brands-openai: the OpenAI API](openai.md)
+### [:material-scale-balance: Ethics](ethics.md)
 
-    [:material-run-fast: Go to our lesson on the :simple-google: Gemini API](gemini.md)
+Critical considerations for responsible AI use in academia.
 
-    [:material-run-fast: Go to our lesson on  :hugging: HuggingFace](huggingface.md)
+| Topic | Description |
+|-------|-------------|
+| [:material-book-open: Overview](ethics.md) | Ethical frameworks and principles for AI use |
+| [:material-scale-unbalanced: Bias](bias.md) | Understanding and mitigating AI bias |
+| [:material-gavel: Legal](legal.md) | Copyright, privacy, and legal considerations |
+| [:material-eye: Transparency](transparency.md) | Disclosing AI use and maintaining integrity |
 
-    [:material-run-fast: Go to our lesson on  :hugging: Gradio UI for Model Deployment](gradio.md)
+### [:material-notebook-edit: Hands-On Tutorials](claude-code.md)
+
+Apply your learning with practical case studies and tutorials.
+
+| Tutorial | Description |
+|----------|-------------|
+| [:simple-anthropic: Claude Code Workflow](claude-code.md) | Complete workflow using Claude Code |
+| [:material-hospital-building: Public Health Case Study](tutorials/publichealth/casestudy.md) | AI for public health research |
+| [:material-map: GIS & Map Making](tutorials/publichealth/gis.md) | Creating maps with AI assistance |
+
+## About This Workshop
+
+This workshop is developed and maintained by the University of Arizona [BIO5 Institute](https://bio5.org/){target=_blank}, [AI2S](https://responsibleai.arizona.edu/ai2s){target=_blank}, & [College of Information Science](https://infosci.arizona.edu){target=_blank}.
+
+This website follows the [FAIR](https://www.go-fair.org/fair-principles/){target=_blank} and [CARE](https://www.gida-global.org/care){target=_blank} data principles and hopes to help further open science.
+
+All materials are freely available and licensed under [Creative Commons Attribution 4.0](http://creativecommons.org/licenses/by/4.0/).
+
+[:material-arrow-right: Get started with the full agenda](agenda.md){ .md-button .md-button--primary }

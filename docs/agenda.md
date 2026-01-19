@@ -1,30 +1,26 @@
-# TBD 2025 Workshop Agenda
+# Self-Paced Online Workshop
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 
 ![banner](assets/banner3_ai.png){width=1000}
 
-[Registration Link](https://events.trellis.arizona.edu/en/f44lNu67/chatgpt-for-academics-5a3U6R3C2c7/overview){target=_blank}
+### Format
 
-### Date 
+This is a **self-paced, asynchronous online workshop** designed to help academics, researchers, and educators learn to effectively use generative AI tools. All materials are freely available online and can be completed at your own pace.
 
-February 13 09:00 AM - 13:00 PM Arizona Time
+### Time Commitment
 
-### Location 
+We recommend dedicating **8-12 hours** to complete the full workshop, though you can work through sections as needed based on your interests and experience level.
 
-**[ENR2](https://maps.app.goo.gl/REC4668PBTebodvZ7){target=_blank}  Classroom #N595**
+#### Creators/Instructors:
 
-No food or drinks inside the classrooms, please.
-
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4363.8946343465805!2d-110.95787922435979!3d32.228558473897685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86d67101744a05dd%3A0xd83a65c45dc91119!2sEnvironment%20and%20Natural%20Resources%202%20Building!5e1!3m2!1sen!2sus!4v1738001244625!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-#### Instructors(s): 
+[Greg Chism PhD](https://gregtchism.com/){target=_blank} [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-5478-2445){target=_blank}
 
 [Michele Cosi](https://cosimichele.github.io/){target=_blank} [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0001-7609-1939){target=_blank}
 
 [Jeffrey K. Gillan PhD](https://www.gillanscience.com/){target=_blank} [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-0731-3048){target=_blank}
 
-[Megh Krishnaswamy](https://meghavarshini.github.io/){target=_blank} [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-0205-9298?lang=en)
+[Megh Krishnaswamy](https://meghavarshini.github.io/){target=_blank} [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-0205-9298?lang=en){target=_blank}
 
 [Carlos Lizárraga-Celaya PhD](https://carloslizarragac.github.io/){target=_blank} [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-0893-4268){target=_blank}
 
@@ -36,32 +32,143 @@ No food or drinks inside the classrooms, please.
 
 This website follows the [FAIR](https://www.go-fair.org/fair-principles/){target=_blank} and [CARE](https://www.gida-global.org/care){target=_blank} data principles and hopes to help further open science. 
 
-## Agenda
+## Learning Path
 
-| :fontawesome-solid-hourglass-half: | Lessons | Instructor | Link |
-|------------------------------------|---------|------------|------|
-| 08:30 | Arrival: Account Creation & Wifi checks |  | All | |
-| 09:00 | Introductions & [Code of Conduct](agenda.md#code-of-conduct) | Tyson |  [presentation](https://docs.google.com/presentation/d/1PzPafN5Yznf8jdgpquPAaN0TmYC9WJwvPxM_I2LPwFo/edit?usp=sharing){target=_blank} |
-| 09:10 | [Session 1: AI Landscape](ai_landscape.md) | Carlos | [presentation](https://docs.google.com/presentation/d/1B8YOy5H0O1WGNXq3AeoSl3Kz5WzHaboI5hBM5tphoz0/edit#slide=id.p){target=_blank} |
-| 09:30| [Session 2: Basics of Writing Prompts](prompts.md) | Tyson | 
-| 9:50 | Break |  |
-| 10:00 | [Session 3: General Productivity](daily-productivity.md) | Michele & Megh |
-| 10:50 | Break |  |  
-| 11:00 | [Session 4a: Teaching](teaching.md) | Tyson | |
-| 11:30 | [Session 4b Tutoring](tutoring.md) | Tyson | |  
-| 11:50 | Break | | |
-| 12:00 | [Session 4a: Notebook LM](code.md) | Jeff | |
-| 12:30 | [Session 4b: Code Interpreters](code.md) | Tyson | | 
-| 13:00 | Conclude |  |  |
+This workshop is organized into five main modules. You can complete them in order or skip to sections most relevant to your needs.
+
+### :material-hand-wave: Module 0: Getting Started (30-60 minutes)
+
+**If participating in an organized workshop, before you begin, please review our [Code of Conduct](#code-of-conduct).**
+
+Start here to understand the AI landscape and set up your accounts.
+
+| Topic | Description | Link |
+|-------|-------------|------|
+| Welcome & Overview | Introduction to the workshop and learning objectives | [Welcome](index.md) |
+| AI Landscape | Understanding generative AI, LLMs, and the current ecosystem | [AI Landscape](ai_landscape.md) |
+| Code of Conduct | Community guidelines and ethical AI use | [Code of Conduct](#code-of-conduct) |
+
+### :material-account-plus: Module 1: Platform Setup (1-2 hours)
+
+Set up accounts and learn the basics of major AI platforms. Choose the platforms most relevant to your work.
+
+| Platform | Description | Link |
+|----------|-------------|------|
+| Claude | Anthropic's Claude AI with MCP support | [Claude Setup](claude.md) |
+| ChatGPT | OpenAI's ChatGPT Plus and API access | [ChatGPT Setup](chatgpt.md) |
+| Gemini | Google's Gemini AI with workspace integration | [Gemini Setup](gemini.md) |
+| Microsoft Copilot | Microsoft 365 Copilot integration | [Copilot Setup](microsoft.md) |
+| GitHub Copilot | AI pair programming for developers | [GitHub Copilot](copilot.md) |
+| Choosing a Platform | Compare features, pricing, and use cases | [Comparison Guide](choose.md) |
+
+### :material-text-box-edit: Module 2: Prompt Engineering & Productivity (2-3 hours)
+
+Learn core skills for effective AI interaction and daily productivity.
+
+| Topic | Description | Link |
+|-------|-------------|------|
+| Writing Effective Prompts | Core techniques for prompt engineering | [Prompt Engineering](prompts.md) |
+| Daily Productivity | AI for emails, writing, research, and workflow | [Daily Productivity](daily-productivity.md) |
+| Code Interpreters | Using AI for data analysis and visualization | [Code Interpreters](code.md) |
+| Vibe Coding | AI-assisted software development | [Vibe Coding](vibe.md) |
+
+### :material-school: Module 3: AI in Education (2-3 hours)
+
+Explore how AI can enhance teaching, learning, and academic administration.
+
+| Topic | Description | Link |
+|-------|-------------|------|
+| Education Overview | AI's role in modern education | [Education Overview](education.md) |
+| Teaching with AI | Course design, content creation, and assessment | [Teaching](teaching.md) |
+| AI Tutoring | Using AI as a personalized learning assistant | [Tutoring](tutoring.md) |
+| Admissions & Recruiting | AI for student recruitment and admissions | [Admissions](admissions.md) |
+| Plagiarism & Detection | Understanding AI detection and academic integrity | [Plagiarism](plagiarism.md) |
+
+### :material-flask: Module 4: AI for Research (3-4 hours)
+
+Advanced topics for researchers using AI in their work.
+
+| Topic | Description | Link |
+|-------|-------------|------|
+| Research Overview | AI applications in academic research | [Research Overview](research.md) |
+| Agentic AI | Autonomous AI agents and workflows | [Agentic AI](agentic.md) |
+| AI Sandboxes | Safe environments for AI experimentation | [AI Sandboxes](ai_sandboxes.md) |
+| Jupyter AI | AI integration in Jupyter notebooks | [Jupyter AI](jupyter.md) |
+| Model Context Protocol | Claude's MCP for tool integration | [MCP](mcp.md) |
+| NotebookLM | Google's AI research assistant | [NotebookLM](notebooklm.md) |
+| Ollama | Running LLMs locally | [Ollama](ollama.md) |
+| RAG (Retrieval Augmented Generation) | Building AI with custom knowledge bases | [RAG](rag.md) |
+| OpenAI API | Programming with OpenAI's API | [OpenAI API](openai.md) |
+| HuggingFace | Open-source models and datasets | [HuggingFace](huggingface.md) |
+| Gradio | Building AI interfaces | [Gradio](gradio.md) |
+| Posit (RStudio) | AI tools for R users | [Posit](posit.md) |
+| VS Code & AI Tools | AI extensions for VS Code | [VS Code](vscode.md) |
+| Text Mining | AI for text analysis and NLP | [Text Mining](text_mining.md) |
+
+### :material-scale-balance: Module 5: Ethics & Responsible AI (1-2 hours)
+
+Critical considerations for responsible AI use in academia.
+
+| Topic | Description | Link |
+|-------|-------------|------|
+| Ethics Overview | Ethical frameworks for AI use | [Ethics Overview](ethics.md) |
+| Bias | Understanding and mitigating AI bias | [Bias](bias.md) |
+| Legal Considerations | Copyright, privacy, and legal issues | [Legal](legal.md) |
+| Transparency | Disclosing AI use and maintaining integrity | [Transparency](transparency.md) |
+
+### :material-notebook-edit: Hands-On Tutorials
+
+Apply your learning with practical case studies and tutorials.
+
+| Tutorial | Description | Link |
+|----------|-------------|------|
+| Claude Code Workflow | Complete workflow using Claude Code | [Claude Code Tutorial](claude-code.md) |
+| Public Health Case Study | AI for public health research | [Public Health](tutorials/publichealth/casestudy.md) |
+| GIS & Map Making | Creating maps with AI assistance | [Map Making](tutorials/publichealth/gis.md) |
+
+### :material-lightbulb: Recommended Learning Paths
+
+**For Beginners:**
+
+1. Module 0: Getting Started
+2. Module 1: Set up 1-2 platforms
+3. Module 2: Focus on Writing Prompts and Daily Productivity
+4. Module 5: Ethics Overview
+
+**For Educators:**
+
+1. Module 0: Getting Started
+2. Module 1: Platform Setup
+3. Module 2: Prompt Engineering
+4. Module 3: Complete Education section
+5. Module 5: Ethics & Responsible AI
+
+**For Researchers:**
+
+1. Module 0: Getting Started
+2. Module 1: Platform Setup
+3. Module 2: Prompt Engineering & Code Interpreters
+4. Module 4: Select relevant research topics
+5. Module 5: Ethics & Responsible AI
+6. Hands-On Tutorials
 
 
 ## Prerequisites
 
-:material-check: a laptop with an active wifi connection
+To get the most out of this workshop, you'll need:
 
-:material-check: A professional [ChatGPT](chatgpt.md), [Google Gemini](gemini.md), [Microsoft Copilot](microsoft.md), or [Claude](claude.md) account. 
+:material-check: **A computer** with internet connection
 
-:material-check: [GitHub](copilot.md) account with free Educational Benefit access to Copilot.  
+:material-check: **At least one AI platform account** - We recommend starting with:
+
+   - [ChatGPT](chatgpt.md) (Free or Plus)
+   - [Claude](claude.md) (Free or Pro)
+   - [Google Gemini](gemini.md) (Free or Advanced)
+   - [Microsoft Copilot](microsoft.md) (with Microsoft 365)
+
+:material-check: **Optional for developers**: [GitHub](copilot.md) account with GitHub Copilot access
+
+:material-check: **No prior AI experience required** - This workshop starts with the basics and progresses to advanced topics  
 
 ## Code of Conduct
 
@@ -77,7 +184,7 @@ personal characteristic.
 
 While participating at an Event, we expect you to:
 
--   Interact with others and use ChatGPT professionally and ethically by
+-   Interact with others and use GPTs professionally and ethically by
     complying with our Policies.
 -   Constructively criticize ideas and processes, not people.
 -   Follow the Golden Rule (treat others as you want to be treated) when
