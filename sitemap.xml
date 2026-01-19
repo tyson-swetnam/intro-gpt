@@ -61,7 +61,7 @@
         <loc>https://tyson-swetnam.github.io/intro-gpt/agentic/</loc>
       </url>
       <url>
-        <loc>https://tyson-swetnam.github.io/intro-gpt/jupyter/</loc>
+        <loc>https://tyson-swetnam.github.io/intro-gpt/ai_sandboxes/</loc>
       </url>
       <url>
         <loc>https://tyson-swetnam.github.io/intro-gpt/mcp/</loc>
@@ -76,19 +76,19 @@
         <loc>https://tyson-swetnam.github.io/intro-gpt/rag/</loc>
       </url>
       <url>
-        <loc>https://tyson-swetnam.github.io/intro-gpt/execution/</loc>
-      </url>
-      <url>
-        <loc>https://tyson-swetnam.github.io/intro-gpt/openai/</loc>
-      </url>
-      <url>
         <loc>https://tyson-swetnam.github.io/intro-gpt/huggingface/</loc>
       </url>
       <url>
         <loc>https://tyson-swetnam.github.io/intro-gpt/gradio/</loc>
       </url>
       <url>
+        <loc>https://tyson-swetnam.github.io/intro-gpt/jupyter/</loc>
+      </url>
+      <url>
         <loc>https://tyson-swetnam.github.io/intro-gpt/posit/</loc>
+      </url>
+      <url>
+        <loc>https://tyson-swetnam.github.io/intro-gpt/vscode/</loc>
       </url>
       <url>
         <loc>https://tyson-swetnam.github.io/intro-gpt/text_mining/</loc>

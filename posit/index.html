@@ -15,17 +15,17 @@
         <link rel="canonical" href="https://tyson-swetnam.github.io/intro-gpt/posit/">
       
       
-        <link rel="prev" href="../gradio/">
+        <link rel="prev" href="../jupyter/">
       
       
-        <link rel="next" href="../text_mining/">
+        <link rel="next" href="../vscode/">
       
       
         
       
       
       <link rel="icon" href="../assets/ua.ico">
-      <meta name="generator" content="zensical-0.0.16">
+      <meta name="generator" content="zensical-0.0.17">
     
     
       
@@ -36,7 +36,7 @@
       
         
       
-      <link rel="stylesheet" href="../assets/stylesheets/modern/main.dfcb43b2.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/modern/main.d4922b3c.min.css">
       
         
           
@@ -1284,14 +1284,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../jupyter/" class="md-nav__link">
+      <a href="../ai_sandboxes/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Jupyter AI
+    AI Sandboxes
   
 
     
@@ -1424,62 +1424,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../execution/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Code Execution
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../openai/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    OpenAI API
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../huggingface/" class="md-nav__link">
         
   
@@ -1533,6 +1477,34 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../jupyter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jupyter AI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -1544,6 +1516,24 @@
       
         
       
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Posit (RStudio)
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -1562,6 +1552,785 @@
 
       </a>
       
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-use-posit-tools-for-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Use Posit Tools for AI?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation-positron-beta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Installation: Positron (Beta)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation: Positron (Beta)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#system-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        System Requirements
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#macos-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        macOS Installation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#windows-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Windows Installation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linux-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Linux Installation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#positron-key-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Positron Key Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation-rstudio-desktop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Installation: RStudio Desktop
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation: RStudio Desktop">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#macos-installation_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        macOS Installation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#windows-installation_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Windows Installation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linux-installation_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Linux Installation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation-rstudio-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Installation: RStudio Server
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation: RStudio Server">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ubuntudebian-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ubuntu/Debian Installation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fedorarhel-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fedora/RHEL Installation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#starting-and-managing-the-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Starting and Managing the Server
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accessing-rstudio-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Accessing RStudio Server
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ellmer-r-package-for-llms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ellmer: R Package for LLMs
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ellmer: R Package for LLMs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Installation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#supported-providers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Supported Providers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#basic-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Basic Usage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-anthropic-claude" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using Anthropic Claude
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#streaming-responses" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Streaming Responses
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#structured-data-extraction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Structured Data Extraction
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tool-calling-function-calling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tool Calling (Function Calling)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chatlas-python-package-for-llms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        chatlas: Python Package for LLMs
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="chatlas: Python Package for LLMs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installation_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Installation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#supported-providers_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Supported Providers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#basic-usage_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Basic Usage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-anthropic-claude_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using Anthropic Claude
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tool-calling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tool Calling
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#structured-data-extraction_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Structured Data Extraction
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parallel-and-batch-processing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parallel and Batch Processing
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api-key-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        API Key Setup
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="API Key Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setting-environment-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Setting Environment Variables
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Setting Environment Variables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#method-1-renviron-file-recommended-for-r" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Method 1: .Renviron File (Recommended for R)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-2-env-file-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Method 2: .env File (Python)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-3-shell-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Method 3: Shell Configuration
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#obtaining-api-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Obtaining API Keys
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verifying-your-setup-r" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Verifying Your Setup (R)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verifying-your-setup-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Verifying Your Setup (Python)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ollama-integration-local-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ollama Integration (Local Models)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ollama Integration (Local Models)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prerequisites
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-ollama-with-ellmer-r" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using Ollama with ellmer (R)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-ollama-with-chatlas-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using Ollama with chatlas (Python)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#complete-ollama-workflow-example-r" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Complete Ollama Workflow Example (R)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#complete-ollama-workflow-example-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Complete Ollama Workflow Example (Python)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recommended-ollama-models-for-rpython-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recommended Ollama Models for R/Python Work
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practical-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Practical Examples
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Practical Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-1-literature-review-assistant-r" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example 1: Literature Review Assistant (R)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-2-statistical-analysis-helper-r" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example 2: Statistical Analysis Helper (R)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-3-code-documentation-generator-r" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example 3: Code Documentation Generator (R)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-4-data-analysis-pipeline-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example 4: Data Analysis Pipeline (Python)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-5-quarto-document-with-ai-r-markdownquarto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example 5: Quarto Document with AI (R Markdown/Quarto)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-r-packages-for-ai-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Other R Packages for AI Integration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Other R Packages for AI Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tidyllm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        tidyllm
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gptstudio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        gptstudio
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chattr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        chattr
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ollamar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ollamar
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Troubleshooting
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Further Resources
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vscode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VS Code & AI Tools
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -1951,6 +2720,745 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-use-posit-tools-for-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Use Posit Tools for AI?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation-positron-beta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Installation: Positron (Beta)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation: Positron (Beta)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#system-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        System Requirements
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#macos-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        macOS Installation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#windows-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Windows Installation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linux-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Linux Installation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#positron-key-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Positron Key Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation-rstudio-desktop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Installation: RStudio Desktop
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation: RStudio Desktop">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#macos-installation_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        macOS Installation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#windows-installation_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Windows Installation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linux-installation_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Linux Installation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation-rstudio-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Installation: RStudio Server
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation: RStudio Server">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ubuntudebian-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ubuntu/Debian Installation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fedorarhel-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fedora/RHEL Installation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#starting-and-managing-the-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Starting and Managing the Server
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accessing-rstudio-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Accessing RStudio Server
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ellmer-r-package-for-llms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ellmer: R Package for LLMs
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ellmer: R Package for LLMs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Installation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#supported-providers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Supported Providers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#basic-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Basic Usage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-anthropic-claude" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using Anthropic Claude
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#streaming-responses" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Streaming Responses
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#structured-data-extraction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Structured Data Extraction
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tool-calling-function-calling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tool Calling (Function Calling)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chatlas-python-package-for-llms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        chatlas: Python Package for LLMs
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="chatlas: Python Package for LLMs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installation_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Installation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#supported-providers_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Supported Providers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#basic-usage_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Basic Usage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-anthropic-claude_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using Anthropic Claude
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tool-calling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tool Calling
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#structured-data-extraction_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Structured Data Extraction
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parallel-and-batch-processing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parallel and Batch Processing
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api-key-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        API Key Setup
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="API Key Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setting-environment-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Setting Environment Variables
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Setting Environment Variables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#method-1-renviron-file-recommended-for-r" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Method 1: .Renviron File (Recommended for R)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-2-env-file-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Method 2: .env File (Python)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-3-shell-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Method 3: Shell Configuration
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#obtaining-api-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Obtaining API Keys
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verifying-your-setup-r" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Verifying Your Setup (R)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verifying-your-setup-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Verifying Your Setup (Python)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ollama-integration-local-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ollama Integration (Local Models)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ollama Integration (Local Models)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prerequisites
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-ollama-with-ellmer-r" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using Ollama with ellmer (R)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-ollama-with-chatlas-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using Ollama with chatlas (Python)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#complete-ollama-workflow-example-r" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Complete Ollama Workflow Example (R)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#complete-ollama-workflow-example-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Complete Ollama Workflow Example (Python)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recommended-ollama-models-for-rpython-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recommended Ollama Models for R/Python Work
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practical-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Practical Examples
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Practical Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-1-literature-review-assistant-r" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example 1: Literature Review Assistant (R)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-2-statistical-analysis-helper-r" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example 2: Statistical Analysis Helper (R)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-3-code-documentation-generator-r" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example 3: Code Documentation Generator (R)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-4-data-analysis-pipeline-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example 4: Data Analysis Pipeline (Python)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-5-quarto-document-with-ai-r-markdownquarto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example 5: Quarto Document with AI (R Markdown/Quarto)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-r-packages-for-ai-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Other R Packages for AI Integration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Other R Packages for AI Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tidyllm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        tidyllm
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gptstudio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        gptstudio
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chattr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        chattr
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ollamar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ollamar
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Troubleshooting
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Further Resources
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1966,15 +3474,1282 @@
 
 <h1 id="posit-rstudio"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 .953v6.393l4.852 2.066-3.27 1.447v2.283l3.215 1.432L0 16.615v6.432l11.918-5.256.082-.035.082.035L24 23.047v-6.432l-4.797-2.04 3.215-1.433v-2.283l-3.27-1.447L24 7.346V.953L12 6.25Zm.879 1.352 10.039 4.431-4.96 2.19L.879 6.763Zm22.242 0v4.458l-5.066 2.162-4.973-2.19 10.04-4.431ZM12 7.209l4.945 2.19-4.95 2.107-4.94-2.108zM5.959 9.885l4.926 2.093-.006.002.006.002-4.979 2.12-3.446-1.529v-1.148zm12.082 0 3.514 1.54v1.15l-3.448 1.526-1.107.487-4.994 2.21L7 14.589l4.994-2.133L17 14.588l1.094-.487-4.973-2.12zM5.906 15.06l5.012 2.215-.066.03-9.973 4.404v-4.512zm12.201 0 5.014 2.137v4.512l-9.959-4.404-.066-.03z"/></svg></span> Posit (RStudio)<a class="headerlink" href="#posit-rstudio" title="Permanent link">&para;</a></h1>
 <p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
-<p>The Posit team has published two LLM chat integrations for RStudio / Positron that work in R and Python</p>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p><a href="https://posit.co/" target="_blank">Posit</a> (formerly RStudio) is a company dedicated to creating open-source data science tools. Their ecosystem includes:</p>
 <ul>
-<li>
-<p><a href="https://ellmer.tidyverse.org/" target="_blank">Ellmer</a></p>
-</li>
-<li>
-<p><a href="https://posit-dev.github.io/chatlas/" target="_blank">Chatlas</a></p>
-</li>
+<li><strong>RStudio Desktop/Server</strong> - The classic IDE for R programming</li>
+<li><strong>Positron</strong> - A next-generation data science IDE built on VS Code</li>
+<li><strong>Quarto</strong> - A scientific publishing system</li>
+<li><strong>Shiny</strong> - Web application framework for R and Python</li>
+<li><strong>tidyverse/tidymodels</strong> - Popular R package collections</li>
 </ul>
+<p>Posit has developed powerful LLM integration packages that work across their IDEs:</p>
+<table>
+<thead>
+<tr>
+<th>Package</th>
+<th>Language</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://ellmer.tidyverse.org/" target="_blank">ellmer</a></td>
+<td>R</td>
+<td>Unified interface for 20+ LLM providers</td>
+</tr>
+<tr>
+<td><a href="https://posit-dev.github.io/chatlas/" target="_blank">chatlas</a></td>
+<td>Python</td>
+<td>LLM chat framework with streaming and tool calling</td>
+</tr>
+</tbody>
+</table>
+<p>These packages allow researchers to integrate AI assistance directly into their data analysis workflows, from interactive exploration to reproducible reports.</p>
+<h2 id="why-use-posit-tools-for-ai">Why Use Posit Tools for AI?<a class="headerlink" href="#why-use-posit-tools-for-ai" title="Permanent link">&para;</a></h2>
+<p><strong>For R Users:</strong></p>
+<ul>
+<li>Native integration with tidyverse workflows</li>
+<li>Seamless use in R Markdown and Quarto documents</li>
+<li>Support for both cloud APIs and local models via Ollama</li>
+<li>Interactive chat within the IDE console</li>
+</ul>
+<p><strong>For Python Users:</strong></p>
+<ul>
+<li>Model-agnostic design for easy provider switching</li>
+<li>Automatic streaming in notebooks and consoles</li>
+<li>Tool calling for agentic capabilities</li>
+<li>Async support for scalable applications</li>
+</ul>
+<p><strong>For Academic Research:</strong></p>
+<ul>
+<li>Reproducible AI-assisted analysis pipelines</li>
+<li>Local model support for sensitive data</li>
+<li>Easy switching between providers for cost optimization</li>
+<li>Integration with Quarto for publishable documents</li>
+</ul>
+<hr />
+<h2 id="installation-positron-beta">Installation: Positron (Beta)<a class="headerlink" href="#installation-positron-beta" title="Permanent link">&para;</a></h2>
+<p><a href="https://github.com/posit-dev/positron" target="_blank">Positron</a> is Posit's next-generation data science IDE. Built on VS Code's foundation, it provides native support for Python, R, and AI-assisted coding with a familiar interface for data scientists.</p>
+<div class="admonition info">
+<p class="admonition-title">Current Version: 2026.01.0-147 (January 2026)</p>
+<p>Positron is in active beta development. While stable for daily use, expect continued improvements and occasional breaking changes.</p>
+</div>
+<h3 id="system-requirements">System Requirements<a class="headerlink" href="#system-requirements" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Platform</th>
+<th>Requirement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Windows</strong></td>
+<td>Windows 10 or 11 (x64)</td>
+</tr>
+<tr>
+<td><strong>macOS</strong></td>
+<td>macOS 11.0+ (Apple Silicon or Intel)</td>
+</tr>
+<tr>
+<td><strong>Linux</strong></td>
+<td>Ubuntu 20+ or RHEL 9</td>
+</tr>
+</tbody>
+</table>
+<h3 id="macos-installation">macOS Installation<a class="headerlink" href="#macos-installation" title="Permanent link">&para;</a></h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Apple Silicon (M1/M2/M3/M4)</label><label for="__tabbed_1_2">Intel Mac</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ol>
+<li>Download <a href="https://positron.posit.co/download" target="_blank">Positron-2026.01.0-147-arm64.dmg</a> (~598 MB)</li>
+<li>Open the downloaded <code>.dmg</code> file</li>
+<li>Drag Positron to your Applications folder</li>
+<li>Launch Positron from Applications</li>
+<li>If prompted about an unidentified developer, go to System Preferences &gt; Security &amp; Privacy and click "Open Anyway"</li>
+</ol>
+</div>
+<div class="tabbed-block">
+<ol>
+<li>Download <a href="https://positron.posit.co/download" target="_blank">Positron-2026.01.0-147-x64.dmg</a> (~601 MB)</li>
+<li>Open the downloaded <code>.dmg</code> file</li>
+<li>Drag Positron to your Applications folder</li>
+<li>Launch Positron from Applications</li>
+</ol>
+</div>
+</div>
+</div>
+<h3 id="windows-installation">Windows Installation<a class="headerlink" href="#windows-installation" title="Permanent link">&para;</a></h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">System-wide (Recommended)</label><label for="__tabbed_2_2">User Installation (No Admin)</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ol>
+<li>Download <a href="https://positron.posit.co/download" target="_blank">Positron-2026.01.0-147-Setup-x64.exe</a> (~315 MB)</li>
+<li>Run the installer with administrator privileges</li>
+<li>Follow the installation wizard prompts</li>
+<li>Launch Positron from the Start menu</li>
+</ol>
+</div>
+<div class="tabbed-block">
+<ol>
+<li>Download <a href="https://positron.posit.co/download" target="_blank">Positron-2026.01.0-147-UserSetup-x64.exe</a> (~315 MB)</li>
+<li>Run the installer (no admin rights needed)</li>
+<li>Follow the installation wizard prompts</li>
+<li>Launch Positron from the Start menu</li>
+</ol>
+</div>
+</div>
+</div>
+<h3 id="linux-installation">Linux Installation<a class="headerlink" href="#linux-installation" title="Permanent link">&para;</a></h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Ubuntu/Debian</label><label for="__tabbed_3_2">Fedora/RHEL/CentOS</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># Download the .deb package (x64)</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>wget<span class="w"> </span>https://github.com/posit-dev/positron/releases/download/2026.01.0-147/Positron-2026.01.0-147-x64.deb
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1"># Install with dpkg</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>sudo<span class="w"> </span>dpkg<span class="w"> </span>-i<span class="w"> </span>Positron-2026.01.0-147-x64.deb
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="c1"># Fix any dependency issues</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>-f
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="c1"># Launch Positron</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>positron
+</span></code></pre></div>
+<p>For ARM64 systems, download <code>Positron-2026.01.0-147-arm64.deb</code> instead.</p>
+</div>
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># Download the .rpm package (x64)</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>wget<span class="w"> </span>https://github.com/posit-dev/positron/releases/download/2026.01.0-147/Positron-2026.01.0-147-x64.rpm
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="c1"># Install with dnf (Fedora/RHEL 8+)</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>Positron-2026.01.0-147-x64.rpm
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="c1"># Or with yum (older systems)</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>sudo<span class="w"> </span>yum<span class="w"> </span>localinstall<span class="w"> </span>Positron-2026.01.0-147-x64.rpm
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="c1"># Launch Positron</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>positron
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<h3 id="positron-key-features">Positron Key Features<a class="headerlink" href="#positron-key-features" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Multi-language Console</strong> - Switch between R and Python in the same session</li>
+<li><strong>Variables Pane</strong> - Inspect data frames, lists, and objects visually</li>
+<li><strong>Data Viewer</strong> - Explore large datasets with filtering and sorting</li>
+<li><strong>Plot Pane</strong> - View and export visualizations</li>
+<li><strong>VS Code Extensions</strong> - Access the full VS Code extension marketplace</li>
+<li><strong>Quarto Integration</strong> - Native support for scientific publishing</li>
+</ul>
+<hr />
+<h2 id="installation-rstudio-desktop">Installation: RStudio Desktop<a class="headerlink" href="#installation-rstudio-desktop" title="Permanent link">&para;</a></h2>
+<p><a href="https://posit.co/download/rstudio-desktop/" target="_blank">RStudio Desktop</a> is the classic, mature IDE for R development used by millions of data scientists and researchers.</p>
+<h3 id="macos-installation_1">macOS Installation<a class="headerlink" href="#macos-installation_1" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Visit <a href="https://posit.co/download/rstudio-desktop/" target="_blank">posit.co/download/rstudio-desktop</a></li>
+<li>Download the macOS installer (<code>.dmg</code>)</li>
+<li>Open the downloaded file</li>
+<li>Drag RStudio to your Applications folder</li>
+<li>Launch RStudio from Applications</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">R Required</p>
+<p>RStudio requires R to be installed. Download R from <a href="https://cran.r-project.org/" target="_blank">CRAN</a> before installing RStudio.</p>
+</div>
+<h3 id="windows-installation_1">Windows Installation<a class="headerlink" href="#windows-installation_1" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Visit <a href="https://posit.co/download/rstudio-desktop/" target="_blank">posit.co/download/rstudio-desktop</a></li>
+<li>Download the Windows installer (<code>.exe</code>)</li>
+<li>Run the installer and follow the prompts</li>
+<li>Launch RStudio from the Start menu</li>
+</ol>
+<h3 id="linux-installation_1">Linux Installation<a class="headerlink" href="#linux-installation_1" title="Permanent link">&para;</a></h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">Ubuntu/Debian</label><label for="__tabbed_4_2">Fedora/RHEL</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># Install R first (if not already installed)</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>update
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>r-base<span class="w"> </span>r-base-dev
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="c1"># Download RStudio (check website for latest version)</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>wget<span class="w"> </span>https://download1.rstudio.org/electron/jammy/amd64/rstudio-2024.12.0-467-amd64.deb
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="c1"># Install RStudio</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>sudo<span class="w"> </span>dpkg<span class="w"> </span>-i<span class="w"> </span>rstudio-2024.12.0-467-amd64.deb
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="c1"># Fix dependencies if needed</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>-f
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># Install R first</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>R
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="c1"># Download RStudio (check website for latest version)</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>wget<span class="w"> </span>https://download1.rstudio.org/electron/rhel9/x86_64/rstudio-2024.12.0-467-x86_64.rpm
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="c1"># Install RStudio</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>rstudio-2024.12.0-467-x86_64.rpm
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<hr />
+<h2 id="installation-rstudio-server">Installation: RStudio Server<a class="headerlink" href="#installation-rstudio-server" title="Permanent link">&para;</a></h2>
+<p><a href="https://posit.co/download/rstudio-server/" target="_blank">RStudio Server</a> provides browser-based access to RStudio, ideal for:</p>
+<ul>
+<li>Shared research computing environments</li>
+<li>HPC cluster access</li>
+<li>Cloud deployments</li>
+<li>Teaching labs</li>
+</ul>
+<h3 id="ubuntudebian-installation">Ubuntu/Debian Installation<a class="headerlink" href="#ubuntudebian-installation" title="Permanent link">&para;</a></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1"># Install R</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>update
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>r-base<span class="w"> </span>r-base-dev
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="c1"># Install RStudio Server dependencies</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>gdebi-core
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="c1"># Download RStudio Server</span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>wget<span class="w"> </span>https://download2.rstudio.org/server/jammy/amd64/rstudio-server-2024.12.0-467-amd64.deb
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="c1"># Install RStudio Server</span>
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>sudo<span class="w"> </span>gdebi<span class="w"> </span>rstudio-server-2024.12.0-467-amd64.deb
+</span></code></pre></div>
+<h3 id="fedorarhel-installation">Fedora/RHEL Installation<a class="headerlink" href="#fedorarhel-installation" title="Permanent link">&para;</a></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1"># Install R</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>R
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="c1"># Download RStudio Server</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>wget<span class="w"> </span>https://download2.rstudio.org/server/rhel9/x86_64/rstudio-server-rhel-2024.12.0-467-x86_64.rpm
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="c1"># Install RStudio Server</span>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>rstudio-server-rhel-2024.12.0-467-x86_64.rpm
+</span></code></pre></div>
+<h3 id="starting-and-managing-the-server">Starting and Managing the Server<a class="headerlink" href="#starting-and-managing-the-server" title="Permanent link">&para;</a></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1"># Start RStudio Server</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>rstudio-server
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="c1"># Enable on boot</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>rstudio-server
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="c1"># Check status</span>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>status<span class="w"> </span>rstudio-server
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="c1"># View logs</span>
+</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>sudo<span class="w"> </span>journalctl<span class="w"> </span>-u<span class="w"> </span>rstudio-server
+</span></code></pre></div>
+<h3 id="accessing-rstudio-server">Accessing RStudio Server<a class="headerlink" href="#accessing-rstudio-server" title="Permanent link">&para;</a></h3>
+<p>After installation, access RStudio Server at:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>http://your-server-ip:8787
+</span></code></pre></div>
+<p>Log in with your Linux system credentials.</p>
+<div class="admonition warning">
+<p class="admonition-title">Security Configuration</p>
+<p>For production deployments, configure:</p>
+<ul>
+<li>SSL/TLS certificates for HTTPS</li>
+<li>Firewall rules to restrict access</li>
+<li>Authentication integration (LDAP, PAM)</li>
+</ul>
+<p>See the <a href="https://docs.posit.co/ide/server-pro/" target="_blank">RStudio Server Admin Guide</a> for details.</p>
+</div>
+<hr />
+<h2 id="ellmer-r-package-for-llms">ellmer: R Package for LLMs<a class="headerlink" href="#ellmer-r-package-for-llms" title="Permanent link">&para;</a></h2>
+<p><a href="https://ellmer.tidyverse.org/" target="_blank">ellmer</a> is Posit's R package that makes it easy to use large language models from R. It provides a unified interface for 20+ providers with support for streaming, tool calling, and structured data extraction.</p>
+<h3 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h3>
+<div class="language-r highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1"># Install from CRAN</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="nf">install.packages</span><span class="p">(</span><span class="s">&quot;ellmer&quot;</span><span class="p">)</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="c1"># Or install development version from GitHub</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="c1"># install.packages(&quot;pak&quot;)</span>
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="n">pak</span><span class="o">::</span><span class="nf">pak</span><span class="p">(</span><span class="s">&quot;tidyverse/ellmer&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<h3 id="supported-providers">Supported Providers<a class="headerlink" href="#supported-providers" title="Permanent link">&para;</a></h3>
+<p>ellmer supports a wide range of LLM providers:</p>
+<table>
+<thead>
+<tr>
+<th>Provider</th>
+<th>Function</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OpenAI</td>
+<td><code>chat_openai()</code></td>
+<td>GPT-4.1, GPT-4o, o3 models</td>
+</tr>
+<tr>
+<td>Anthropic</td>
+<td><code>chat_anthropic()</code></td>
+<td>Claude 4.5 models</td>
+</tr>
+<tr>
+<td>Google</td>
+<td><code>chat_google_gemini()</code></td>
+<td>Gemini models</td>
+</tr>
+<tr>
+<td>Azure OpenAI</td>
+<td><code>chat_azure_openai()</code></td>
+<td>Enterprise Azure deployment</td>
+</tr>
+<tr>
+<td>AWS Bedrock</td>
+<td><code>chat_aws_bedrock()</code></td>
+<td>Multiple models via AWS</td>
+</tr>
+<tr>
+<td>Ollama</td>
+<td><code>chat_ollama()</code></td>
+<td>Local models (free)</td>
+</tr>
+<tr>
+<td>Mistral</td>
+<td><code>chat_mistral()</code></td>
+<td>Mistral models</td>
+</tr>
+<tr>
+<td>Groq</td>
+<td><code>chat_groq()</code></td>
+<td>Fast inference</td>
+</tr>
+<tr>
+<td>DeepSeek</td>
+<td><code>chat_deepseek()</code></td>
+<td>DeepSeek models</td>
+</tr>
+<tr>
+<td>Hugging Face</td>
+<td><code>chat_huggingface()</code></td>
+<td>HF Inference API</td>
+</tr>
+<tr>
+<td>GitHub Models</td>
+<td><code>chat_github()</code></td>
+<td>GitHub model marketplace</td>
+</tr>
+<tr>
+<td>Perplexity</td>
+<td><code>chat_perplexity()</code></td>
+<td>Search-augmented</td>
+</tr>
+<tr>
+<td>OpenRouter</td>
+<td><code>chat_openrouter()</code></td>
+<td>Multi-provider gateway</td>
+</tr>
+</tbody>
+</table>
+<h3 id="basic-usage">Basic Usage<a class="headerlink" href="#basic-usage" title="Permanent link">&para;</a></h3>
+<div class="language-r highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="nf">library</span><span class="p">(</span><span class="n">ellmer</span><span class="p">)</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="c1"># Create a chat with OpenAI</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="n">chat</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">chat_openai</span><span class="p">(</span>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="w">  </span><span class="n">model</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;gpt-4o-mini&quot;</span><span class="p">,</span>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="w">  </span><span class="n">system_prompt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;You are a helpful data science assistant.&quot;</span>
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="p">)</span>
+</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>
+</span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a><span class="c1"># Have a conversation</span>
+</span><span id="__span-9-10"><a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a><span class="n">chat</span><span class="o">$</span><span class="nf">chat</span><span class="p">(</span><span class="s">&quot;What is the tidyverse?&quot;</span><span class="p">)</span>
+</span><span id="__span-9-11"><a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>
+</span><span id="__span-9-12"><a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a><span class="c1"># Continue the conversation (context is retained)</span>
+</span><span id="__span-9-13"><a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a><span class="n">chat</span><span class="o">$</span><span class="nf">chat</span><span class="p">(</span><span class="s">&quot;Which packages are included?&quot;</span><span class="p">)</span>
+</span><span id="__span-9-14"><a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a>
+</span><span id="__span-9-15"><a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a><span class="c1"># View token usage</span>
+</span><span id="__span-9-16"><a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a><span class="n">chat</span><span class="o">$</span><span class="nf">token_usage</span><span class="p">()</span>
+</span></code></pre></div>
+<h3 id="using-anthropic-claude">Using Anthropic Claude<a class="headerlink" href="#using-anthropic-claude" title="Permanent link">&para;</a></h3>
+<div class="language-r highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nf">library</span><span class="p">(</span><span class="n">ellmer</span><span class="p">)</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="c1"># Create a chat with Claude</span>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="n">chat</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">chat_anthropic</span><span class="p">(</span>
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="w">  </span><span class="n">model</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;claude-sonnet-4-5-20250514&quot;</span><span class="p">,</span>
+</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="w">  </span><span class="n">system_prompt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;You are an expert R programmer.&quot;</span>
+</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="p">)</span>
+</span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>
+</span><span id="__span-10-9"><a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a><span class="c1"># Ask about R code</span>
+</span><span id="__span-10-10"><a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a><span class="n">chat</span><span class="o">$</span><span class="nf">chat</span><span class="p">(</span><span class="s">&quot;How do I read a CSV file with readr?&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<h3 id="streaming-responses">Streaming Responses<a class="headerlink" href="#streaming-responses" title="Permanent link">&para;</a></h3>
+<div class="language-r highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="nf">library</span><span class="p">(</span><span class="n">ellmer</span><span class="p">)</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="n">chat</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">chat_openai</span><span class="p">(</span><span class="n">model</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;gpt-4o-mini&quot;</span><span class="p">)</span>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="c1"># Stream the response to the console</span>
+</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="n">chat</span><span class="o">$</span><span class="nf">chat</span><span class="p">(</span><span class="s">&quot;Explain the central limit theorem&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">echo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;all&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<h3 id="structured-data-extraction">Structured Data Extraction<a class="headerlink" href="#structured-data-extraction" title="Permanent link">&para;</a></h3>
+<p>ellmer can extract structured data from text:</p>
+<div class="language-r highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="nf">library</span><span class="p">(</span><span class="n">ellmer</span><span class="p">)</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="c1"># Define the structure you want to extract</span>
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="n">paper_info</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">type_object</span><span class="p">(</span>
+</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="w">  </span><span class="n">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">type_string</span><span class="p">(</span><span class="s">&quot;The paper title&quot;</span><span class="p">),</span>
+</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="w">  </span><span class="n">authors</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">type_array</span><span class="p">(</span><span class="nf">type_string</span><span class="p">(</span><span class="s">&quot;Author names&quot;</span><span class="p">)),</span>
+</span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="w">  </span><span class="n">year</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">type_integer</span><span class="p">(</span><span class="s">&quot;Publication year&quot;</span><span class="p">),</span>
+</span><span id="__span-12-8"><a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a><span class="w">  </span><span class="n">journal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">type_string</span><span class="p">(</span><span class="s">&quot;Journal name&quot;</span><span class="p">)</span>
+</span><span id="__span-12-9"><a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a><span class="p">)</span>
+</span><span id="__span-12-10"><a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a>
+</span><span id="__span-12-11"><a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a><span class="n">chat</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">chat_openai</span><span class="p">(</span><span class="n">model</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;gpt-4o-mini&quot;</span><span class="p">)</span>
+</span><span id="__span-12-12"><a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a>
+</span><span id="__span-12-13"><a id="__codelineno-12-13" name="__codelineno-12-13" href="#__codelineno-12-13"></a><span class="c1"># Extract structured information</span>
+</span><span id="__span-12-14"><a id="__codelineno-12-14" name="__codelineno-12-14" href="#__codelineno-12-14"></a><span class="n">result</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">chat</span><span class="o">$</span><span class="nf">extract_data</span><span class="p">(</span>
+</span><span id="__span-12-15"><a id="__codelineno-12-15" name="__codelineno-12-15" href="#__codelineno-12-15"></a><span class="w">  </span><span class="s">&quot;Smith, J., &amp; Jones, M. (2024). Machine learning in ecology.</span>
+</span><span id="__span-12-16"><a id="__codelineno-12-16" name="__codelineno-12-16" href="#__codelineno-12-16"></a><span class="s">   Nature Ecology &amp; Evolution, 8(3), 234-245.&quot;</span><span class="p">,</span>
+</span><span id="__span-12-17"><a id="__codelineno-12-17" name="__codelineno-12-17" href="#__codelineno-12-17"></a><span class="w">  </span><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">paper_info</span>
+</span><span id="__span-12-18"><a id="__codelineno-12-18" name="__codelineno-12-18" href="#__codelineno-12-18"></a><span class="p">)</span>
+</span><span id="__span-12-19"><a id="__codelineno-12-19" name="__codelineno-12-19" href="#__codelineno-12-19"></a>
+</span><span id="__span-12-20"><a id="__codelineno-12-20" name="__codelineno-12-20" href="#__codelineno-12-20"></a><span class="nf">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+</span><span id="__span-12-21"><a id="__codelineno-12-21" name="__codelineno-12-21" href="#__codelineno-12-21"></a><span class="c1"># $title</span>
+</span><span id="__span-12-22"><a id="__codelineno-12-22" name="__codelineno-12-22" href="#__codelineno-12-22"></a><span class="c1"># [1] &quot;Machine learning in ecology&quot;</span>
+</span><span id="__span-12-23"><a id="__codelineno-12-23" name="__codelineno-12-23" href="#__codelineno-12-23"></a><span class="c1">#</span>
+</span><span id="__span-12-24"><a id="__codelineno-12-24" name="__codelineno-12-24" href="#__codelineno-12-24"></a><span class="c1"># $authors</span>
+</span><span id="__span-12-25"><a id="__codelineno-12-25" name="__codelineno-12-25" href="#__codelineno-12-25"></a><span class="c1"># [1] &quot;Smith, J.&quot; &quot;Jones, M.&quot;</span>
+</span><span id="__span-12-26"><a id="__codelineno-12-26" name="__codelineno-12-26" href="#__codelineno-12-26"></a><span class="c1">#</span>
+</span><span id="__span-12-27"><a id="__codelineno-12-27" name="__codelineno-12-27" href="#__codelineno-12-27"></a><span class="c1"># $year</span>
+</span><span id="__span-12-28"><a id="__codelineno-12-28" name="__codelineno-12-28" href="#__codelineno-12-28"></a><span class="c1"># [1] 2024</span>
+</span><span id="__span-12-29"><a id="__codelineno-12-29" name="__codelineno-12-29" href="#__codelineno-12-29"></a><span class="c1">#</span>
+</span><span id="__span-12-30"><a id="__codelineno-12-30" name="__codelineno-12-30" href="#__codelineno-12-30"></a><span class="c1"># $journal</span>
+</span><span id="__span-12-31"><a id="__codelineno-12-31" name="__codelineno-12-31" href="#__codelineno-12-31"></a><span class="c1"># [1] &quot;Nature Ecology &amp; Evolution&quot;</span>
+</span></code></pre></div>
+<h3 id="tool-calling-function-calling">Tool Calling (Function Calling)<a class="headerlink" href="#tool-calling-function-calling" title="Permanent link">&para;</a></h3>
+<p>Enable the model to call R functions:</p>
+<div class="language-r highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="nf">library</span><span class="p">(</span><span class="n">ellmer</span><span class="p">)</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="c1"># Define a tool</span>
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="n">get_weather</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="kr">function</span><span class="p">(</span><span class="n">city</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="w">  </span><span class="c1"># In practice, this would call a weather API</span>
+</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="w">  </span><span class="nf">paste</span><span class="p">(</span><span class="s">&quot;The weather in&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">city</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;is sunny and 72F&quot;</span><span class="p">)</span>
+</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="p">}</span>
+</span><span id="__span-13-8"><a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>
+</span><span id="__span-13-9"><a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a><span class="n">chat</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">chat_openai</span><span class="p">(</span>
+</span><span id="__span-13-10"><a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a><span class="w">  </span><span class="n">model</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;gpt-4o-mini&quot;</span><span class="p">,</span>
+</span><span id="__span-13-11"><a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a><span class="w">  </span><span class="n">system_prompt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;You help users with weather information.&quot;</span>
+</span><span id="__span-13-12"><a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a><span class="p">)</span>
+</span><span id="__span-13-13"><a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a>
+</span><span id="__span-13-14"><a id="__codelineno-13-14" name="__codelineno-13-14" href="#__codelineno-13-14"></a><span class="c1"># Register the tool</span>
+</span><span id="__span-13-15"><a id="__codelineno-13-15" name="__codelineno-13-15" href="#__codelineno-13-15"></a><span class="n">chat</span><span class="o">$</span><span class="nf">register_tool</span><span class="p">(</span>
+</span><span id="__span-13-16"><a id="__codelineno-13-16" name="__codelineno-13-16" href="#__codelineno-13-16"></a><span class="w">  </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;get_weather&quot;</span><span class="p">,</span>
+</span><span id="__span-13-17"><a id="__codelineno-13-17" name="__codelineno-13-17" href="#__codelineno-13-17"></a><span class="w">  </span><span class="n">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Get the current weather for a city&quot;</span><span class="p">,</span>
+</span><span id="__span-13-18"><a id="__codelineno-13-18" name="__codelineno-13-18" href="#__codelineno-13-18"></a><span class="w">  </span><span class="n">arguments</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span>
+</span><span id="__span-13-19"><a id="__codelineno-13-19" name="__codelineno-13-19" href="#__codelineno-13-19"></a><span class="w">    </span><span class="n">city</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">type_string</span><span class="p">(</span><span class="s">&quot;The city name&quot;</span><span class="p">)</span>
+</span><span id="__span-13-20"><a id="__codelineno-13-20" name="__codelineno-13-20" href="#__codelineno-13-20"></a><span class="w">  </span><span class="p">),</span>
+</span><span id="__span-13-21"><a id="__codelineno-13-21" name="__codelineno-13-21" href="#__codelineno-13-21"></a><span class="w">  </span><span class="n">fn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">get_weather</span>
+</span><span id="__span-13-22"><a id="__codelineno-13-22" name="__codelineno-13-22" href="#__codelineno-13-22"></a><span class="p">)</span>
+</span><span id="__span-13-23"><a id="__codelineno-13-23" name="__codelineno-13-23" href="#__codelineno-13-23"></a>
+</span><span id="__span-13-24"><a id="__codelineno-13-24" name="__codelineno-13-24" href="#__codelineno-13-24"></a><span class="c1"># The model will call the function when appropriate</span>
+</span><span id="__span-13-25"><a id="__codelineno-13-25" name="__codelineno-13-25" href="#__codelineno-13-25"></a><span class="n">chat</span><span class="o">$</span><span class="nf">chat</span><span class="p">(</span><span class="s">&quot;What&#39;s the weather like in Phoenix?&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<hr />
+<h2 id="chatlas-python-package-for-llms">chatlas: Python Package for LLMs<a class="headerlink" href="#chatlas-python-package-for-llms" title="Permanent link">&para;</a></h2>
+<p><a href="https://posit-dev.github.io/chatlas/" target="_blank">chatlas</a> is Posit's Python package for building LLM chat applications. It provides automatic streaming, tool calling, and a model-agnostic design.</p>
+<h3 id="installation_1">Installation<a class="headerlink" href="#installation_1" title="Permanent link">&para;</a></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>pip<span class="w"> </span>install<span class="w"> </span>-U<span class="w"> </span>chatlas
+</span></code></pre></div>
+<h3 id="supported-providers_1">Supported Providers<a class="headerlink" href="#supported-providers_1" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Provider</th>
+<th>Class</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OpenAI</td>
+<td><code>ChatOpenAI</code></td>
+<td>GPT-4.1, GPT-4o models</td>
+</tr>
+<tr>
+<td>Anthropic</td>
+<td><code>ChatAnthropic</code></td>
+<td>Claude 4.5 models</td>
+</tr>
+<tr>
+<td>Google</td>
+<td><code>ChatGoogle</code></td>
+<td>Gemini models</td>
+</tr>
+<tr>
+<td>Azure OpenAI</td>
+<td><code>ChatAzureOpenAI</code></td>
+<td>Enterprise Azure</td>
+</tr>
+<tr>
+<td>AWS Bedrock</td>
+<td><code>ChatBedrockAnthropic</code></td>
+<td>Claude via AWS</td>
+</tr>
+<tr>
+<td>Ollama</td>
+<td><code>ChatOllama</code></td>
+<td>Local models (free)</td>
+</tr>
+<tr>
+<td>Mistral</td>
+<td><code>ChatMistral</code></td>
+<td>Mistral models</td>
+</tr>
+<tr>
+<td>Groq</td>
+<td><code>ChatGroq</code></td>
+<td>Fast inference</td>
+</tr>
+<tr>
+<td>DeepSeek</td>
+<td><code>ChatDeepSeek</code></td>
+<td>DeepSeek models</td>
+</tr>
+<tr>
+<td>Hugging Face</td>
+<td><code>ChatHuggingFace</code></td>
+<td>HF Inference API</td>
+</tr>
+<tr>
+<td>Any Provider</td>
+<td><code>ChatAuto</code></td>
+<td>Auto-detect provider</td>
+</tr>
+</tbody>
+</table>
+<h3 id="basic-usage_1">Basic Usage<a class="headerlink" href="#basic-usage_1" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">chatlas</span><span class="w"> </span><span class="kn">import</span> <span class="n">ChatOpenAI</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="c1"># Create a chat</span>
+</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="n">chat</span> <span class="o">=</span> <span class="n">ChatOpenAI</span><span class="p">(</span>
+</span><span id="__span-15-5"><a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>    <span class="n">model</span><span class="o">=</span><span class="s2">&quot;gpt-4o-mini&quot;</span><span class="p">,</span>
+</span><span id="__span-15-6"><a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a>    <span class="n">system_prompt</span><span class="o">=</span><span class="s2">&quot;You are a helpful data science assistant.&quot;</span>
+</span><span id="__span-15-7"><a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a><span class="p">)</span>
+</span><span id="__span-15-8"><a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a>
+</span><span id="__span-15-9"><a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a><span class="c1"># Have a conversation</span>
+</span><span id="__span-15-10"><a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a><span class="n">chat</span><span class="o">.</span><span class="n">chat</span><span class="p">(</span><span class="s2">&quot;What is pandas in Python?&quot;</span><span class="p">)</span>
+</span><span id="__span-15-11"><a id="__codelineno-15-11" name="__codelineno-15-11" href="#__codelineno-15-11"></a>
+</span><span id="__span-15-12"><a id="__codelineno-15-12" name="__codelineno-15-12" href="#__codelineno-15-12"></a><span class="c1"># Continue the conversation</span>
+</span><span id="__span-15-13"><a id="__codelineno-15-13" name="__codelineno-15-13" href="#__codelineno-15-13"></a><span class="n">chat</span><span class="o">.</span><span class="n">chat</span><span class="p">(</span><span class="s2">&quot;How do I read a CSV file?&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<h3 id="using-anthropic-claude_1">Using Anthropic Claude<a class="headerlink" href="#using-anthropic-claude_1" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">chatlas</span><span class="w"> </span><span class="kn">import</span> <span class="n">ChatAnthropic</span>
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="n">chat</span> <span class="o">=</span> <span class="n">ChatAnthropic</span><span class="p">(</span>
+</span><span id="__span-16-4"><a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>    <span class="n">model</span><span class="o">=</span><span class="s2">&quot;claude-sonnet-4-5-20250514&quot;</span><span class="p">,</span>
+</span><span id="__span-16-5"><a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a>    <span class="n">system_prompt</span><span class="o">=</span><span class="s2">&quot;You are an expert Python programmer.&quot;</span>
+</span><span id="__span-16-6"><a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a><span class="p">)</span>
+</span><span id="__span-16-7"><a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a>
+</span><span id="__span-16-8"><a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a><span class="n">chat</span><span class="o">.</span><span class="n">chat</span><span class="p">(</span><span class="s2">&quot;How do I create a scatter plot with matplotlib?&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<h3 id="tool-calling">Tool Calling<a class="headerlink" href="#tool-calling" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">chatlas</span><span class="w"> </span><span class="kn">import</span> <span class="n">ChatOpenAI</span>
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>
+</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="n">chat</span> <span class="o">=</span> <span class="n">ChatOpenAI</span><span class="p">(</span>
+</span><span id="__span-17-4"><a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a>    <span class="n">model</span><span class="o">=</span><span class="s2">&quot;gpt-4o-mini&quot;</span><span class="p">,</span>
+</span><span id="__span-17-5"><a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a>    <span class="n">system_prompt</span><span class="o">=</span><span class="s2">&quot;You help users with weather information.&quot;</span>
+</span><span id="__span-17-6"><a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a><span class="p">)</span>
+</span><span id="__span-17-7"><a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a>
+</span><span id="__span-17-8"><a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a><span class="c1"># Define a tool as a Python function</span>
+</span><span id="__span-17-9"><a id="__codelineno-17-9" name="__codelineno-17-9" href="#__codelineno-17-9"></a><span class="k">def</span><span class="w"> </span><span class="nf">get_current_weather</span><span class="p">(</span><span class="n">city</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+</span><span id="__span-17-10"><a id="__codelineno-17-10" name="__codelineno-17-10" href="#__codelineno-17-10"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Get the current weather for a city.&quot;&quot;&quot;</span>
+</span><span id="__span-17-11"><a id="__codelineno-17-11" name="__codelineno-17-11" href="#__codelineno-17-11"></a>    <span class="c1"># In practice, call a weather API</span>
+</span><span id="__span-17-12"><a id="__codelineno-17-12" name="__codelineno-17-12" href="#__codelineno-17-12"></a>    <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;The weather in </span><span class="si">{</span><span class="n">city</span><span class="si">}</span><span class="s2"> is sunny and 72F&quot;</span>
+</span><span id="__span-17-13"><a id="__codelineno-17-13" name="__codelineno-17-13" href="#__codelineno-17-13"></a>
+</span><span id="__span-17-14"><a id="__codelineno-17-14" name="__codelineno-17-14" href="#__codelineno-17-14"></a><span class="c1"># Register the tool</span>
+</span><span id="__span-17-15"><a id="__codelineno-17-15" name="__codelineno-17-15" href="#__codelineno-17-15"></a><span class="n">chat</span><span class="o">.</span><span class="n">register_tool</span><span class="p">(</span><span class="n">get_current_weather</span><span class="p">)</span>
+</span><span id="__span-17-16"><a id="__codelineno-17-16" name="__codelineno-17-16" href="#__codelineno-17-16"></a>
+</span><span id="__span-17-17"><a id="__codelineno-17-17" name="__codelineno-17-17" href="#__codelineno-17-17"></a><span class="c1"># The model will call the function when needed</span>
+</span><span id="__span-17-18"><a id="__codelineno-17-18" name="__codelineno-17-18" href="#__codelineno-17-18"></a><span class="n">chat</span><span class="o">.</span><span class="n">chat</span><span class="p">(</span><span class="s2">&quot;What&#39;s the weather in Tucson?&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<h3 id="structured-data-extraction_1">Structured Data Extraction<a class="headerlink" href="#structured-data-extraction_1" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">chatlas</span><span class="w"> </span><span class="kn">import</span> <span class="n">ChatOpenAI</span>
+</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pydantic</span><span class="w"> </span><span class="kn">import</span> <span class="n">BaseModel</span>
+</span><span id="__span-18-3"><a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>
+</span><span id="__span-18-4"><a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a><span class="c1"># Define structure with Pydantic</span>
+</span><span id="__span-18-5"><a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a><span class="k">class</span><span class="w"> </span><span class="nc">PaperInfo</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+</span><span id="__span-18-6"><a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a>    <span class="n">title</span><span class="p">:</span> <span class="nb">str</span>
+</span><span id="__span-18-7"><a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a>    <span class="n">authors</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>
+</span><span id="__span-18-8"><a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a>    <span class="n">year</span><span class="p">:</span> <span class="nb">int</span>
+</span><span id="__span-18-9"><a id="__codelineno-18-9" name="__codelineno-18-9" href="#__codelineno-18-9"></a>    <span class="n">journal</span><span class="p">:</span> <span class="nb">str</span>
+</span><span id="__span-18-10"><a id="__codelineno-18-10" name="__codelineno-18-10" href="#__codelineno-18-10"></a>
+</span><span id="__span-18-11"><a id="__codelineno-18-11" name="__codelineno-18-11" href="#__codelineno-18-11"></a><span class="n">chat</span> <span class="o">=</span> <span class="n">ChatOpenAI</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="s2">&quot;gpt-4o-mini&quot;</span><span class="p">)</span>
+</span><span id="__span-18-12"><a id="__codelineno-18-12" name="__codelineno-18-12" href="#__codelineno-18-12"></a>
+</span><span id="__span-18-13"><a id="__codelineno-18-13" name="__codelineno-18-13" href="#__codelineno-18-13"></a><span class="c1"># Extract structured data</span>
+</span><span id="__span-18-14"><a id="__codelineno-18-14" name="__codelineno-18-14" href="#__codelineno-18-14"></a><span class="n">result</span> <span class="o">=</span> <span class="n">chat</span><span class="o">.</span><span class="n">extract_data</span><span class="p">(</span>
+</span><span id="__span-18-15"><a id="__codelineno-18-15" name="__codelineno-18-15" href="#__codelineno-18-15"></a>    <span class="s2">&quot;Smith, J., &amp; Jones, M. (2024). Machine learning in ecology. &quot;</span>
+</span><span id="__span-18-16"><a id="__codelineno-18-16" name="__codelineno-18-16" href="#__codelineno-18-16"></a>    <span class="s2">&quot;Nature Ecology &amp; Evolution, 8(3), 234-245.&quot;</span><span class="p">,</span>
+</span><span id="__span-18-17"><a id="__codelineno-18-17" name="__codelineno-18-17" href="#__codelineno-18-17"></a>    <span class="n">data_model</span><span class="o">=</span><span class="n">PaperInfo</span>
+</span><span id="__span-18-18"><a id="__codelineno-18-18" name="__codelineno-18-18" href="#__codelineno-18-18"></a><span class="p">)</span>
+</span><span id="__span-18-19"><a id="__codelineno-18-19" name="__codelineno-18-19" href="#__codelineno-18-19"></a>
+</span><span id="__span-18-20"><a id="__codelineno-18-20" name="__codelineno-18-20" href="#__codelineno-18-20"></a><span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+</span><span id="__span-18-21"><a id="__codelineno-18-21" name="__codelineno-18-21" href="#__codelineno-18-21"></a><span class="c1"># title=&#39;Machine learning in ecology&#39; authors=[&#39;Smith, J.&#39;, &#39;Jones, M.&#39;]</span>
+</span><span id="__span-18-22"><a id="__codelineno-18-22" name="__codelineno-18-22" href="#__codelineno-18-22"></a><span class="c1"># year=2024 journal=&#39;Nature Ecology &amp; Evolution&#39;</span>
+</span></code></pre></div>
+<h3 id="parallel-and-batch-processing">Parallel and Batch Processing<a class="headerlink" href="#parallel-and-batch-processing" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">chatlas</span><span class="w"> </span><span class="kn">import</span> <span class="n">ChatOpenAI</span><span class="p">,</span> <span class="n">parallel_chat_text</span>
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>
+</span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="n">chat</span> <span class="o">=</span> <span class="n">ChatOpenAI</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="s2">&quot;gpt-4o-mini&quot;</span><span class="p">)</span>
+</span><span id="__span-19-4"><a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>
+</span><span id="__span-19-5"><a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a><span class="c1"># Process multiple prompts in parallel</span>
+</span><span id="__span-19-6"><a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a><span class="n">prompts</span> <span class="o">=</span> <span class="p">[</span>
+</span><span id="__span-19-7"><a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a>    <span class="s2">&quot;Summarize the scientific method&quot;</span><span class="p">,</span>
+</span><span id="__span-19-8"><a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a>    <span class="s2">&quot;Explain photosynthesis&quot;</span><span class="p">,</span>
+</span><span id="__span-19-9"><a id="__codelineno-19-9" name="__codelineno-19-9" href="#__codelineno-19-9"></a>    <span class="s2">&quot;Describe natural selection&quot;</span>
+</span><span id="__span-19-10"><a id="__codelineno-19-10" name="__codelineno-19-10" href="#__codelineno-19-10"></a><span class="p">]</span>
+</span><span id="__span-19-11"><a id="__codelineno-19-11" name="__codelineno-19-11" href="#__codelineno-19-11"></a>
+</span><span id="__span-19-12"><a id="__codelineno-19-12" name="__codelineno-19-12" href="#__codelineno-19-12"></a><span class="n">results</span> <span class="o">=</span> <span class="n">parallel_chat_text</span><span class="p">(</span><span class="n">chat</span><span class="p">,</span> <span class="n">prompts</span><span class="p">)</span>
+</span><span id="__span-19-13"><a id="__codelineno-19-13" name="__codelineno-19-13" href="#__codelineno-19-13"></a><span class="k">for</span> <span class="n">prompt</span><span class="p">,</span> <span class="n">result</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">prompts</span><span class="p">,</span> <span class="n">results</span><span class="p">):</span>
+</span><span id="__span-19-14"><a id="__codelineno-19-14" name="__codelineno-19-14" href="#__codelineno-19-14"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Q: </span><span class="si">{</span><span class="n">prompt</span><span class="si">}</span><span class="se">\n</span><span class="s2">A: </span><span class="si">{</span><span class="n">result</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<hr />
+<h2 id="api-key-setup">API Key Setup<a class="headerlink" href="#api-key-setup" title="Permanent link">&para;</a></h2>
+<p>Both ellmer and chatlas require API keys for cloud providers. Here's how to set them up securely.</p>
+<h3 id="setting-environment-variables">Setting Environment Variables<a class="headerlink" href="#setting-environment-variables" title="Permanent link">&para;</a></h3>
+<div class="admonition warning">
+<p class="admonition-title">Security Best Practices</p>
+<ul>
+<li>Never commit API keys to version control (Git)</li>
+<li>Never hardcode keys in scripts</li>
+<li>Use environment variables or secure credential management</li>
+<li>Rotate keys periodically</li>
+</ul>
+</div>
+<h4 id="method-1-renviron-file-recommended-for-r">Method 1: .Renviron File (Recommended for R)<a class="headerlink" href="#method-1-renviron-file-recommended-for-r" title="Permanent link">&para;</a></h4>
+<p>Create or edit <code>~/.Renviron</code> in your home directory:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="c1"># OpenAI</span>
+</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a><span class="nv">OPENAI_API_KEY</span><span class="o">=</span>sk-your-openai-key-here
+</span><span id="__span-20-3"><a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>
+</span><span id="__span-20-4"><a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a><span class="c1"># Anthropic</span>
+</span><span id="__span-20-5"><a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a><span class="nv">ANTHROPIC_API_KEY</span><span class="o">=</span>sk-ant-your-anthropic-key-here
+</span><span id="__span-20-6"><a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a>
+</span><span id="__span-20-7"><a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a><span class="c1"># Google</span>
+</span><span id="__span-20-8"><a id="__codelineno-20-8" name="__codelineno-20-8" href="#__codelineno-20-8"></a><span class="nv">GOOGLE_API_KEY</span><span class="o">=</span>your-google-api-key-here
+</span><span id="__span-20-9"><a id="__codelineno-20-9" name="__codelineno-20-9" href="#__codelineno-20-9"></a>
+</span><span id="__span-20-10"><a id="__codelineno-20-10" name="__codelineno-20-10" href="#__codelineno-20-10"></a><span class="c1"># Mistral</span>
+</span><span id="__span-20-11"><a id="__codelineno-20-11" name="__codelineno-20-11" href="#__codelineno-20-11"></a><span class="nv">MISTRAL_API_KEY</span><span class="o">=</span>your-mistral-key-here
+</span><span id="__span-20-12"><a id="__codelineno-20-12" name="__codelineno-20-12" href="#__codelineno-20-12"></a>
+</span><span id="__span-20-13"><a id="__codelineno-20-13" name="__codelineno-20-13" href="#__codelineno-20-13"></a><span class="c1"># Groq</span>
+</span><span id="__span-20-14"><a id="__codelineno-20-14" name="__codelineno-20-14" href="#__codelineno-20-14"></a><span class="nv">GROQ_API_KEY</span><span class="o">=</span>your-groq-key-here
+</span></code></pre></div>
+<p>Restart R/RStudio after editing <code>.Renviron</code>.</p>
+<h4 id="method-2-env-file-python">Method 2: .env File (Python)<a class="headerlink" href="#method-2-env-file-python" title="Permanent link">&para;</a></h4>
+<p>Create a <code>.env</code> file in your project directory:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="nv">OPENAI_API_KEY</span><span class="o">=</span>sk-your-openai-key-here
+</span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a><span class="nv">ANTHROPIC_API_KEY</span><span class="o">=</span>sk-ant-your-anthropic-key-here
+</span><span id="__span-21-3"><a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a><span class="nv">GOOGLE_API_KEY</span><span class="o">=</span>your-google-api-key-here
+</span></code></pre></div>
+<p>Load with <code>python-dotenv</code>:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">dotenv</span><span class="w"> </span><span class="kn">import</span> <span class="n">load_dotenv</span>
+</span><span id="__span-22-2"><a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a><span class="n">load_dotenv</span><span class="p">()</span>
+</span><span id="__span-22-3"><a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a>
+</span><span id="__span-22-4"><a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a><span class="kn">from</span><span class="w"> </span><span class="nn">chatlas</span><span class="w"> </span><span class="kn">import</span> <span class="n">ChatOpenAI</span>
+</span><span id="__span-22-5"><a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a><span class="n">chat</span> <span class="o">=</span> <span class="n">ChatOpenAI</span><span class="p">()</span>  <span class="c1"># Automatically uses OPENAI_API_KEY</span>
+</span></code></pre></div>
+<h4 id="method-3-shell-configuration">Method 3: Shell Configuration<a class="headerlink" href="#method-3-shell-configuration" title="Permanent link">&para;</a></h4>
+<p>Add to <code>~/.bashrc</code>, <code>~/.zshrc</code>, or <code>~/.profile</code>:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">OPENAI_API_KEY</span><span class="o">=</span><span class="s2">&quot;sk-your-openai-key-here&quot;</span>
+</span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a><span class="nb">export</span><span class="w"> </span><span class="nv">ANTHROPIC_API_KEY</span><span class="o">=</span><span class="s2">&quot;sk-ant-your-anthropic-key-here&quot;</span>
+</span></code></pre></div>
+<p>Reload your shell: <code>source ~/.bashrc</code></p>
+<h3 id="obtaining-api-keys">Obtaining API Keys<a class="headerlink" href="#obtaining-api-keys" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Provider</th>
+<th>Where to Get Key</th>
+<th>Pricing</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OpenAI</td>
+<td><a href="https://platform.openai.com/api-keys" target="_blank">platform.openai.com/api-keys</a></td>
+<td>Pay-per-token</td>
+</tr>
+<tr>
+<td>Anthropic</td>
+<td><a href="https://console.anthropic.com/" target="_blank">console.anthropic.com</a></td>
+<td>Pay-per-token</td>
+</tr>
+<tr>
+<td>Google</td>
+<td><a href="https://aistudio.google.com/" target="_blank">aistudio.google.com</a></td>
+<td>Free tier + paid</td>
+</tr>
+<tr>
+<td>Mistral</td>
+<td><a href="https://console.mistral.ai/" target="_blank">console.mistral.ai</a></td>
+<td>Pay-per-token</td>
+</tr>
+<tr>
+<td>Groq</td>
+<td><a href="https://console.groq.com/" target="_blank">console.groq.com</a></td>
+<td>Free tier available</td>
+</tr>
+</tbody>
+</table>
+<h3 id="verifying-your-setup-r">Verifying Your Setup (R)<a class="headerlink" href="#verifying-your-setup-r" title="Permanent link">&para;</a></h3>
+<div class="language-r highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="nf">library</span><span class="p">(</span><span class="n">ellmer</span><span class="p">)</span>
+</span><span id="__span-24-2"><a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>
+</span><span id="__span-24-3"><a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a><span class="c1"># Test OpenAI</span>
+</span><span id="__span-24-4"><a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a><span class="nf">tryCatch</span><span class="p">({</span>
+</span><span id="__span-24-5"><a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a><span class="w">  </span><span class="n">chat</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">chat_openai</span><span class="p">(</span><span class="n">model</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;gpt-4o-mini&quot;</span><span class="p">)</span>
+</span><span id="__span-24-6"><a id="__codelineno-24-6" name="__codelineno-24-6" href="#__codelineno-24-6"></a><span class="w">  </span><span class="n">chat</span><span class="o">$</span><span class="nf">chat</span><span class="p">(</span><span class="s">&quot;Say hello!&quot;</span><span class="p">)</span>
+</span><span id="__span-24-7"><a id="__codelineno-24-7" name="__codelineno-24-7" href="#__codelineno-24-7"></a><span class="w">  </span><span class="nf">message</span><span class="p">(</span><span class="s">&quot;OpenAI API key is working!&quot;</span><span class="p">)</span>
+</span><span id="__span-24-8"><a id="__codelineno-24-8" name="__codelineno-24-8" href="#__codelineno-24-8"></a><span class="p">},</span><span class="w"> </span><span class="n">error</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kr">function</span><span class="p">(</span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-24-9"><a id="__codelineno-24-9" name="__codelineno-24-9" href="#__codelineno-24-9"></a><span class="w">  </span><span class="nf">message</span><span class="p">(</span><span class="s">&quot;OpenAI API key issue: &quot;</span><span class="p">,</span><span class="w"> </span><span class="n">e</span><span class="o">$</span><span class="n">message</span><span class="p">)</span>
+</span><span id="__span-24-10"><a id="__codelineno-24-10" name="__codelineno-24-10" href="#__codelineno-24-10"></a><span class="p">})</span>
+</span><span id="__span-24-11"><a id="__codelineno-24-11" name="__codelineno-24-11" href="#__codelineno-24-11"></a>
+</span><span id="__span-24-12"><a id="__codelineno-24-12" name="__codelineno-24-12" href="#__codelineno-24-12"></a><span class="c1"># Test Anthropic</span>
+</span><span id="__span-24-13"><a id="__codelineno-24-13" name="__codelineno-24-13" href="#__codelineno-24-13"></a><span class="nf">tryCatch</span><span class="p">({</span>
+</span><span id="__span-24-14"><a id="__codelineno-24-14" name="__codelineno-24-14" href="#__codelineno-24-14"></a><span class="w">  </span><span class="n">chat</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">chat_anthropic</span><span class="p">(</span><span class="n">model</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;claude-sonnet-4-5-20250514&quot;</span><span class="p">)</span>
+</span><span id="__span-24-15"><a id="__codelineno-24-15" name="__codelineno-24-15" href="#__codelineno-24-15"></a><span class="w">  </span><span class="n">chat</span><span class="o">$</span><span class="nf">chat</span><span class="p">(</span><span class="s">&quot;Say hello!&quot;</span><span class="p">)</span>
+</span><span id="__span-24-16"><a id="__codelineno-24-16" name="__codelineno-24-16" href="#__codelineno-24-16"></a><span class="w">  </span><span class="nf">message</span><span class="p">(</span><span class="s">&quot;Anthropic API key is working!&quot;</span><span class="p">)</span>
+</span><span id="__span-24-17"><a id="__codelineno-24-17" name="__codelineno-24-17" href="#__codelineno-24-17"></a><span class="p">},</span><span class="w"> </span><span class="n">error</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kr">function</span><span class="p">(</span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-24-18"><a id="__codelineno-24-18" name="__codelineno-24-18" href="#__codelineno-24-18"></a><span class="w">  </span><span class="nf">message</span><span class="p">(</span><span class="s">&quot;Anthropic API key issue: &quot;</span><span class="p">,</span><span class="w"> </span><span class="n">e</span><span class="o">$</span><span class="n">message</span><span class="p">)</span>
+</span><span id="__span-24-19"><a id="__codelineno-24-19" name="__codelineno-24-19" href="#__codelineno-24-19"></a><span class="p">})</span>
+</span></code></pre></div>
+<h3 id="verifying-your-setup-python">Verifying Your Setup (Python)<a class="headerlink" href="#verifying-your-setup-python" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">chatlas</span><span class="w"> </span><span class="kn">import</span> <span class="n">ChatOpenAI</span><span class="p">,</span> <span class="n">ChatAnthropic</span>
+</span><span id="__span-25-2"><a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a>
+</span><span id="__span-25-3"><a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a><span class="c1"># Test OpenAI</span>
+</span><span id="__span-25-4"><a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a><span class="k">try</span><span class="p">:</span>
+</span><span id="__span-25-5"><a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a>    <span class="n">chat</span> <span class="o">=</span> <span class="n">ChatOpenAI</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="s2">&quot;gpt-4o-mini&quot;</span><span class="p">)</span>
+</span><span id="__span-25-6"><a id="__codelineno-25-6" name="__codelineno-25-6" href="#__codelineno-25-6"></a>    <span class="n">chat</span><span class="o">.</span><span class="n">chat</span><span class="p">(</span><span class="s2">&quot;Say hello!&quot;</span><span class="p">)</span>
+</span><span id="__span-25-7"><a id="__codelineno-25-7" name="__codelineno-25-7" href="#__codelineno-25-7"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;OpenAI API key is working!&quot;</span><span class="p">)</span>
+</span><span id="__span-25-8"><a id="__codelineno-25-8" name="__codelineno-25-8" href="#__codelineno-25-8"></a><span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+</span><span id="__span-25-9"><a id="__codelineno-25-9" name="__codelineno-25-9" href="#__codelineno-25-9"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;OpenAI API key issue: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-25-10"><a id="__codelineno-25-10" name="__codelineno-25-10" href="#__codelineno-25-10"></a>
+</span><span id="__span-25-11"><a id="__codelineno-25-11" name="__codelineno-25-11" href="#__codelineno-25-11"></a><span class="c1"># Test Anthropic</span>
+</span><span id="__span-25-12"><a id="__codelineno-25-12" name="__codelineno-25-12" href="#__codelineno-25-12"></a><span class="k">try</span><span class="p">:</span>
+</span><span id="__span-25-13"><a id="__codelineno-25-13" name="__codelineno-25-13" href="#__codelineno-25-13"></a>    <span class="n">chat</span> <span class="o">=</span> <span class="n">ChatAnthropic</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="s2">&quot;claude-sonnet-4-5-20250514&quot;</span><span class="p">)</span>
+</span><span id="__span-25-14"><a id="__codelineno-25-14" name="__codelineno-25-14" href="#__codelineno-25-14"></a>    <span class="n">chat</span><span class="o">.</span><span class="n">chat</span><span class="p">(</span><span class="s2">&quot;Say hello!&quot;</span><span class="p">)</span>
+</span><span id="__span-25-15"><a id="__codelineno-25-15" name="__codelineno-25-15" href="#__codelineno-25-15"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Anthropic API key is working!&quot;</span><span class="p">)</span>
+</span><span id="__span-25-16"><a id="__codelineno-25-16" name="__codelineno-25-16" href="#__codelineno-25-16"></a><span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+</span><span id="__span-25-17"><a id="__codelineno-25-17" name="__codelineno-25-17" href="#__codelineno-25-17"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Anthropic API key issue: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<hr />
+<h2 id="ollama-integration-local-models">Ollama Integration (Local Models)<a class="headerlink" href="#ollama-integration-local-models" title="Permanent link">&para;</a></h2>
+<p>Both ellmer and chatlas support <a href="../ollama/">Ollama</a> for running LLMs locally. This is ideal for:</p>
+<ul>
+<li><strong>Privacy</strong> - Data never leaves your computer</li>
+<li><strong>Cost</strong> - No API charges after initial setup</li>
+<li><strong>Offline access</strong> - Work without internet</li>
+<li><strong>Experimentation</strong> - Unlimited usage for testing</li>
+</ul>
+<h3 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Install Ollama following our <a href="../ollama/">Ollama guide</a></li>
+<li>Download a model:
+   <div class="language-bash highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>ollama<span class="w"> </span>pull<span class="w"> </span>llama3.2
+</span></code></pre></div></li>
+<li>Verify Ollama is running:
+   <div class="language-bash highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>curl<span class="w"> </span>http://localhost:11434/api/tags
+</span></code></pre></div></li>
+</ol>
+<h3 id="using-ollama-with-ellmer-r">Using Ollama with ellmer (R)<a class="headerlink" href="#using-ollama-with-ellmer-r" title="Permanent link">&para;</a></h3>
+<div class="language-r highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="nf">library</span><span class="p">(</span><span class="n">ellmer</span><span class="p">)</span>
+</span><span id="__span-28-2"><a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a>
+</span><span id="__span-28-3"><a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a><span class="c1"># List available Ollama models</span>
+</span><span id="__span-28-4"><a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a><span class="nf">models_ollama</span><span class="p">()</span>
+</span><span id="__span-28-5"><a id="__codelineno-28-5" name="__codelineno-28-5" href="#__codelineno-28-5"></a>
+</span><span id="__span-28-6"><a id="__codelineno-28-6" name="__codelineno-28-6" href="#__codelineno-28-6"></a><span class="c1"># Create a chat with a local model</span>
+</span><span id="__span-28-7"><a id="__codelineno-28-7" name="__codelineno-28-7" href="#__codelineno-28-7"></a><span class="n">chat</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">chat_ollama</span><span class="p">(</span>
+</span><span id="__span-28-8"><a id="__codelineno-28-8" name="__codelineno-28-8" href="#__codelineno-28-8"></a><span class="w">  </span><span class="n">model</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;llama3.2&quot;</span><span class="p">,</span>
+</span><span id="__span-28-9"><a id="__codelineno-28-9" name="__codelineno-28-9" href="#__codelineno-28-9"></a><span class="w">  </span><span class="n">system_prompt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;You are a helpful research assistant.&quot;</span>
+</span><span id="__span-28-10"><a id="__codelineno-28-10" name="__codelineno-28-10" href="#__codelineno-28-10"></a><span class="p">)</span>
+</span><span id="__span-28-11"><a id="__codelineno-28-11" name="__codelineno-28-11" href="#__codelineno-28-11"></a>
+</span><span id="__span-28-12"><a id="__codelineno-28-12" name="__codelineno-28-12" href="#__codelineno-28-12"></a><span class="c1"># Chat with the local model</span>
+</span><span id="__span-28-13"><a id="__codelineno-28-13" name="__codelineno-28-13" href="#__codelineno-28-13"></a><span class="n">chat</span><span class="o">$</span><span class="nf">chat</span><span class="p">(</span><span class="s">&quot;Explain the difference between correlation and causation&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<p><strong>Custom Ollama Server:</strong></p>
+<div class="language-r highlight"><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="c1"># Connect to Ollama on a different host</span>
+</span><span id="__span-29-2"><a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a><span class="n">chat</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">chat_ollama</span><span class="p">(</span>
+</span><span id="__span-29-3"><a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a><span class="w">  </span><span class="n">model</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;llama3.2&quot;</span><span class="p">,</span>
+</span><span id="__span-29-4"><a id="__codelineno-29-4" name="__codelineno-29-4" href="#__codelineno-29-4"></a><span class="w">  </span><span class="n">base_url</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;http://192.168.1.100:11434&quot;</span><span class="w">  </span><span class="c1"># Remote Ollama server</span>
+</span><span id="__span-29-5"><a id="__codelineno-29-5" name="__codelineno-29-5" href="#__codelineno-29-5"></a><span class="p">)</span>
+</span></code></pre></div>
+<p><strong>Available Parameters:</strong></p>
+<div class="language-r highlight"><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a><span class="n">chat</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">chat_ollama</span><span class="p">(</span>
+</span><span id="__span-30-2"><a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a><span class="w">  </span><span class="n">model</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;llama3.2&quot;</span><span class="p">,</span>
+</span><span id="__span-30-3"><a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a><span class="w">  </span><span class="n">system_prompt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;You are a statistics tutor.&quot;</span><span class="p">,</span>
+</span><span id="__span-30-4"><a id="__codelineno-30-4" name="__codelineno-30-4" href="#__codelineno-30-4"></a><span class="w">  </span><span class="n">params</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">params</span><span class="p">(</span>
+</span><span id="__span-30-5"><a id="__codelineno-30-5" name="__codelineno-30-5" href="#__codelineno-30-5"></a><span class="w">    </span><span class="n">temperature</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.7</span><span class="p">,</span><span class="w">  </span><span class="c1"># Creativity (0-2)</span>
+</span><span id="__span-30-6"><a id="__codelineno-30-6" name="__codelineno-30-6" href="#__codelineno-30-6"></a><span class="w">    </span><span class="n">num_ctx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">4096</span><span class="w">      </span><span class="c1"># Context window size</span>
+</span><span id="__span-30-7"><a id="__codelineno-30-7" name="__codelineno-30-7" href="#__codelineno-30-7"></a><span class="w">  </span><span class="p">)</span>
+</span><span id="__span-30-8"><a id="__codelineno-30-8" name="__codelineno-30-8" href="#__codelineno-30-8"></a><span class="p">)</span>
+</span></code></pre></div>
+<h3 id="using-ollama-with-chatlas-python">Using Ollama with chatlas (Python)<a class="headerlink" href="#using-ollama-with-chatlas-python" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-31-1"><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">chatlas</span><span class="w"> </span><span class="kn">import</span> <span class="n">ChatOllama</span>
+</span><span id="__span-31-2"><a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a>
+</span><span id="__span-31-3"><a id="__codelineno-31-3" name="__codelineno-31-3" href="#__codelineno-31-3"></a><span class="c1"># Create a chat with a local model</span>
+</span><span id="__span-31-4"><a id="__codelineno-31-4" name="__codelineno-31-4" href="#__codelineno-31-4"></a><span class="n">chat</span> <span class="o">=</span> <span class="n">ChatOllama</span><span class="p">(</span>
+</span><span id="__span-31-5"><a id="__codelineno-31-5" name="__codelineno-31-5" href="#__codelineno-31-5"></a>    <span class="n">model</span><span class="o">=</span><span class="s2">&quot;llama3.2&quot;</span><span class="p">,</span>
+</span><span id="__span-31-6"><a id="__codelineno-31-6" name="__codelineno-31-6" href="#__codelineno-31-6"></a>    <span class="n">system_prompt</span><span class="o">=</span><span class="s2">&quot;You are a helpful research assistant.&quot;</span>
+</span><span id="__span-31-7"><a id="__codelineno-31-7" name="__codelineno-31-7" href="#__codelineno-31-7"></a><span class="p">)</span>
+</span><span id="__span-31-8"><a id="__codelineno-31-8" name="__codelineno-31-8" href="#__codelineno-31-8"></a>
+</span><span id="__span-31-9"><a id="__codelineno-31-9" name="__codelineno-31-9" href="#__codelineno-31-9"></a><span class="c1"># Chat with the local model</span>
+</span><span id="__span-31-10"><a id="__codelineno-31-10" name="__codelineno-31-10" href="#__codelineno-31-10"></a><span class="n">chat</span><span class="o">.</span><span class="n">chat</span><span class="p">(</span><span class="s2">&quot;What are the assumptions of linear regression?&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<p><strong>Custom Configuration:</strong></p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-32-1"><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">chatlas</span><span class="w"> </span><span class="kn">import</span> <span class="n">ChatOllama</span>
+</span><span id="__span-32-2"><a id="__codelineno-32-2" name="__codelineno-32-2" href="#__codelineno-32-2"></a>
+</span><span id="__span-32-3"><a id="__codelineno-32-3" name="__codelineno-32-3" href="#__codelineno-32-3"></a><span class="n">chat</span> <span class="o">=</span> <span class="n">ChatOllama</span><span class="p">(</span>
+</span><span id="__span-32-4"><a id="__codelineno-32-4" name="__codelineno-32-4" href="#__codelineno-32-4"></a>    <span class="n">model</span><span class="o">=</span><span class="s2">&quot;llama3.2&quot;</span><span class="p">,</span>
+</span><span id="__span-32-5"><a id="__codelineno-32-5" name="__codelineno-32-5" href="#__codelineno-32-5"></a>    <span class="n">base_url</span><span class="o">=</span><span class="s2">&quot;http://localhost:11434&quot;</span><span class="p">,</span>  <span class="c1"># Default</span>
+</span><span id="__span-32-6"><a id="__codelineno-32-6" name="__codelineno-32-6" href="#__codelineno-32-6"></a>    <span class="n">system_prompt</span><span class="o">=</span><span class="s2">&quot;You are an expert statistician.&quot;</span><span class="p">,</span>
+</span><span id="__span-32-7"><a id="__codelineno-32-7" name="__codelineno-32-7" href="#__codelineno-32-7"></a>    <span class="n">temperature</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span>
+</span><span id="__span-32-8"><a id="__codelineno-32-8" name="__codelineno-32-8" href="#__codelineno-32-8"></a>    <span class="n">num_ctx</span><span class="o">=</span><span class="mi">4096</span>
+</span><span id="__span-32-9"><a id="__codelineno-32-9" name="__codelineno-32-9" href="#__codelineno-32-9"></a><span class="p">)</span>
+</span></code></pre></div>
+<h3 id="complete-ollama-workflow-example-r">Complete Ollama Workflow Example (R)<a class="headerlink" href="#complete-ollama-workflow-example-r" title="Permanent link">&para;</a></h3>
+<div class="language-r highlight"><pre><span></span><code><span id="__span-33-1"><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a><span class="nf">library</span><span class="p">(</span><span class="n">ellmer</span><span class="p">)</span>
+</span><span id="__span-33-2"><a id="__codelineno-33-2" name="__codelineno-33-2" href="#__codelineno-33-2"></a><span class="nf">library</span><span class="p">(</span><span class="n">tidyverse</span><span class="p">)</span>
+</span><span id="__span-33-3"><a id="__codelineno-33-3" name="__codelineno-33-3" href="#__codelineno-33-3"></a>
+</span><span id="__span-33-4"><a id="__codelineno-33-4" name="__codelineno-33-4" href="#__codelineno-33-4"></a><span class="c1"># 1. Create an Ollama chat for data analysis assistance</span>
+</span><span id="__span-33-5"><a id="__codelineno-33-5" name="__codelineno-33-5" href="#__codelineno-33-5"></a><span class="n">analyst</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">chat_ollama</span><span class="p">(</span>
+</span><span id="__span-33-6"><a id="__codelineno-33-6" name="__codelineno-33-6" href="#__codelineno-33-6"></a><span class="w">  </span><span class="n">model</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;llama3.2&quot;</span><span class="p">,</span>
+</span><span id="__span-33-7"><a id="__codelineno-33-7" name="__codelineno-33-7" href="#__codelineno-33-7"></a><span class="w">  </span><span class="n">system_prompt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;You are a data analysis expert. Provide R code examples</span>
+</span><span id="__span-33-8"><a id="__codelineno-33-8" name="__codelineno-33-8" href="#__codelineno-33-8"></a><span class="s">                   using tidyverse packages. Be concise and practical.&quot;</span>
+</span><span id="__span-33-9"><a id="__codelineno-33-9" name="__codelineno-33-9" href="#__codelineno-33-9"></a><span class="p">)</span>
+</span><span id="__span-33-10"><a id="__codelineno-33-10" name="__codelineno-33-10" href="#__codelineno-33-10"></a>
+</span><span id="__span-33-11"><a id="__codelineno-33-11" name="__codelineno-33-11" href="#__codelineno-33-11"></a><span class="c1"># 2. Get help with data manipulation</span>
+</span><span id="__span-33-12"><a id="__codelineno-33-12" name="__codelineno-33-12" href="#__codelineno-33-12"></a><span class="n">analyst</span><span class="o">$</span><span class="nf">chat</span><span class="p">(</span><span class="s">&quot;How do I group data by multiple columns and calculate</span>
+</span><span id="__span-33-13"><a id="__codelineno-33-13" name="__codelineno-33-13" href="#__codelineno-33-13"></a><span class="s">              summary statistics in dplyr?&quot;</span><span class="p">)</span>
+</span><span id="__span-33-14"><a id="__codelineno-33-14" name="__codelineno-33-14" href="#__codelineno-33-14"></a>
+</span><span id="__span-33-15"><a id="__codelineno-33-15" name="__codelineno-33-15" href="#__codelineno-33-15"></a><span class="c1"># 3. The model provides code - let&#39;s use it</span>
+</span><span id="__span-33-16"><a id="__codelineno-33-16" name="__codelineno-33-16" href="#__codelineno-33-16"></a><span class="n">mtcars</span><span class="w"> </span><span class="o">%&gt;%</span>
+</span><span id="__span-33-17"><a id="__codelineno-33-17" name="__codelineno-33-17" href="#__codelineno-33-17"></a><span class="w">  </span><span class="nf">group_by</span><span class="p">(</span><span class="n">cyl</span><span class="p">,</span><span class="w"> </span><span class="n">gear</span><span class="p">)</span><span class="w"> </span><span class="o">%&gt;%</span>
+</span><span id="__span-33-18"><a id="__codelineno-33-18" name="__codelineno-33-18" href="#__codelineno-33-18"></a><span class="w">  </span><span class="nf">summarise</span><span class="p">(</span>
+</span><span id="__span-33-19"><a id="__codelineno-33-19" name="__codelineno-33-19" href="#__codelineno-33-19"></a><span class="w">    </span><span class="n">mean_mpg</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">mean</span><span class="p">(</span><span class="n">mpg</span><span class="p">),</span>
+</span><span id="__span-33-20"><a id="__codelineno-33-20" name="__codelineno-33-20" href="#__codelineno-33-20"></a><span class="w">    </span><span class="n">sd_mpg</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">sd</span><span class="p">(</span><span class="n">mpg</span><span class="p">),</span>
+</span><span id="__span-33-21"><a id="__codelineno-33-21" name="__codelineno-33-21" href="#__codelineno-33-21"></a><span class="w">    </span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">n</span><span class="p">(),</span>
+</span><span id="__span-33-22"><a id="__codelineno-33-22" name="__codelineno-33-22" href="#__codelineno-33-22"></a><span class="w">    </span><span class="n">.groups</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;drop&quot;</span>
+</span><span id="__span-33-23"><a id="__codelineno-33-23" name="__codelineno-33-23" href="#__codelineno-33-23"></a><span class="w">  </span><span class="p">)</span>
+</span><span id="__span-33-24"><a id="__codelineno-33-24" name="__codelineno-33-24" href="#__codelineno-33-24"></a>
+</span><span id="__span-33-25"><a id="__codelineno-33-25" name="__codelineno-33-25" href="#__codelineno-33-25"></a><span class="c1"># 4. Ask follow-up questions</span>
+</span><span id="__span-33-26"><a id="__codelineno-33-26" name="__codelineno-33-26" href="#__codelineno-33-26"></a><span class="n">analyst</span><span class="o">$</span><span class="nf">chat</span><span class="p">(</span><span class="s">&quot;How can I visualize this with ggplot2?&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<h3 id="complete-ollama-workflow-example-python">Complete Ollama Workflow Example (Python)<a class="headerlink" href="#complete-ollama-workflow-example-python" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-34-1"><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">chatlas</span><span class="w"> </span><span class="kn">import</span> <span class="n">ChatOllama</span>
+</span><span id="__span-34-2"><a id="__codelineno-34-2" name="__codelineno-34-2" href="#__codelineno-34-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+</span><span id="__span-34-3"><a id="__codelineno-34-3" name="__codelineno-34-3" href="#__codelineno-34-3"></a>
+</span><span id="__span-34-4"><a id="__codelineno-34-4" name="__codelineno-34-4" href="#__codelineno-34-4"></a><span class="c1"># 1. Create an Ollama chat for data analysis</span>
+</span><span id="__span-34-5"><a id="__codelineno-34-5" name="__codelineno-34-5" href="#__codelineno-34-5"></a><span class="n">analyst</span> <span class="o">=</span> <span class="n">ChatOllama</span><span class="p">(</span>
+</span><span id="__span-34-6"><a id="__codelineno-34-6" name="__codelineno-34-6" href="#__codelineno-34-6"></a>    <span class="n">model</span><span class="o">=</span><span class="s2">&quot;llama3.2&quot;</span><span class="p">,</span>
+</span><span id="__span-34-7"><a id="__codelineno-34-7" name="__codelineno-34-7" href="#__codelineno-34-7"></a>    <span class="n">system_prompt</span><span class="o">=</span><span class="s2">&quot;&quot;&quot;You are a data analysis expert. Provide Python code</span>
+</span><span id="__span-34-8"><a id="__codelineno-34-8" name="__codelineno-34-8" href="#__codelineno-34-8"></a><span class="s2">                     examples using pandas and matplotlib. Be concise.&quot;&quot;&quot;</span>
+</span><span id="__span-34-9"><a id="__codelineno-34-9" name="__codelineno-34-9" href="#__codelineno-34-9"></a><span class="p">)</span>
+</span><span id="__span-34-10"><a id="__codelineno-34-10" name="__codelineno-34-10" href="#__codelineno-34-10"></a>
+</span><span id="__span-34-11"><a id="__codelineno-34-11" name="__codelineno-34-11" href="#__codelineno-34-11"></a><span class="c1"># 2. Get help with data manipulation</span>
+</span><span id="__span-34-12"><a id="__codelineno-34-12" name="__codelineno-34-12" href="#__codelineno-34-12"></a><span class="n">analyst</span><span class="o">.</span><span class="n">chat</span><span class="p">(</span><span class="s2">&quot;How do I group data by multiple columns and calculate &quot;</span>
+</span><span id="__span-34-13"><a id="__codelineno-34-13" name="__codelineno-34-13" href="#__codelineno-34-13"></a>             <span class="s2">&quot;summary statistics in pandas?&quot;</span><span class="p">)</span>
+</span><span id="__span-34-14"><a id="__codelineno-34-14" name="__codelineno-34-14" href="#__codelineno-34-14"></a>
+</span><span id="__span-34-15"><a id="__codelineno-34-15" name="__codelineno-34-15" href="#__codelineno-34-15"></a><span class="c1"># 3. Apply the suggested code</span>
+</span><span id="__span-34-16"><a id="__codelineno-34-16" name="__codelineno-34-16" href="#__codelineno-34-16"></a><span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
+</span><span id="__span-34-17"><a id="__codelineno-34-17" name="__codelineno-34-17" href="#__codelineno-34-17"></a><span class="n">df</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">load_dataset</span><span class="p">(</span><span class="s2">&quot;tips&quot;</span><span class="p">)</span>
+</span><span id="__span-34-18"><a id="__codelineno-34-18" name="__codelineno-34-18" href="#__codelineno-34-18"></a>
+</span><span id="__span-34-19"><a id="__codelineno-34-19" name="__codelineno-34-19" href="#__codelineno-34-19"></a><span class="n">summary</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s2">&quot;day&quot;</span><span class="p">,</span> <span class="s2">&quot;time&quot;</span><span class="p">])</span><span class="o">.</span><span class="n">agg</span><span class="p">({</span>
+</span><span id="__span-34-20"><a id="__codelineno-34-20" name="__codelineno-34-20" href="#__codelineno-34-20"></a>    <span class="s2">&quot;total_bill&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;mean&quot;</span><span class="p">,</span> <span class="s2">&quot;std&quot;</span><span class="p">,</span> <span class="s2">&quot;count&quot;</span><span class="p">],</span>
+</span><span id="__span-34-21"><a id="__codelineno-34-21" name="__codelineno-34-21" href="#__codelineno-34-21"></a>    <span class="s2">&quot;tip&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;mean&quot;</span><span class="p">,</span> <span class="s2">&quot;std&quot;</span><span class="p">]</span>
+</span><span id="__span-34-22"><a id="__codelineno-34-22" name="__codelineno-34-22" href="#__codelineno-34-22"></a><span class="p">})</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</span><span id="__span-34-23"><a id="__codelineno-34-23" name="__codelineno-34-23" href="#__codelineno-34-23"></a>
+</span><span id="__span-34-24"><a id="__codelineno-34-24" name="__codelineno-34-24" href="#__codelineno-34-24"></a><span class="nb">print</span><span class="p">(</span><span class="n">summary</span><span class="p">)</span>
+</span><span id="__span-34-25"><a id="__codelineno-34-25" name="__codelineno-34-25" href="#__codelineno-34-25"></a>
+</span><span id="__span-34-26"><a id="__codelineno-34-26" name="__codelineno-34-26" href="#__codelineno-34-26"></a><span class="c1"># 4. Ask follow-up questions</span>
+</span><span id="__span-34-27"><a id="__codelineno-34-27" name="__codelineno-34-27" href="#__codelineno-34-27"></a><span class="n">analyst</span><span class="o">.</span><span class="n">chat</span><span class="p">(</span><span class="s2">&quot;How can I create a grouped bar chart of this summary?&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<h3 id="recommended-ollama-models-for-rpython-work">Recommended Ollama Models for R/Python Work<a class="headerlink" href="#recommended-ollama-models-for-rpython-work" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Size</th>
+<th>Best For</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>llama3.2:3b</code></td>
+<td>~2GB</td>
+<td>Quick responses, basic coding</td>
+</tr>
+<tr>
+<td><code>qwen2.5:7b</code></td>
+<td>~4.5GB</td>
+<td>Reasoning, data analysis</td>
+</tr>
+<tr>
+<td><code>deepseek-coder:6.7b</code></td>
+<td>~4GB</td>
+<td>Code generation</td>
+</tr>
+<tr>
+<td><code>deepseek-r1:8b</code></td>
+<td>~5GB</td>
+<td>Complex reasoning</td>
+</tr>
+<tr>
+<td><code>codellama:13b</code></td>
+<td>~7GB</td>
+<td>Advanced coding</td>
+</tr>
+</tbody>
+</table>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-35-1"><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a><span class="c1"># Download recommended models</span>
+</span><span id="__span-35-2"><a id="__codelineno-35-2" name="__codelineno-35-2" href="#__codelineno-35-2"></a>ollama<span class="w"> </span>pull<span class="w"> </span>llama3.2:3b
+</span><span id="__span-35-3"><a id="__codelineno-35-3" name="__codelineno-35-3" href="#__codelineno-35-3"></a>ollama<span class="w"> </span>pull<span class="w"> </span>qwen2.5:7b
+</span><span id="__span-35-4"><a id="__codelineno-35-4" name="__codelineno-35-4" href="#__codelineno-35-4"></a>ollama<span class="w"> </span>pull<span class="w"> </span>deepseek-coder:6.7b
+</span></code></pre></div>
+<hr />
+<h2 id="practical-examples">Practical Examples<a class="headerlink" href="#practical-examples" title="Permanent link">&para;</a></h2>
+<h3 id="example-1-literature-review-assistant-r">Example 1: Literature Review Assistant (R)<a class="headerlink" href="#example-1-literature-review-assistant-r" title="Permanent link">&para;</a></h3>
+<div class="language-r highlight"><pre><span></span><code><span id="__span-36-1"><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a><span class="nf">library</span><span class="p">(</span><span class="n">ellmer</span><span class="p">)</span>
+</span><span id="__span-36-2"><a id="__codelineno-36-2" name="__codelineno-36-2" href="#__codelineno-36-2"></a><span class="nf">library</span><span class="p">(</span><span class="n">tidyverse</span><span class="p">)</span>
+</span><span id="__span-36-3"><a id="__codelineno-36-3" name="__codelineno-36-3" href="#__codelineno-36-3"></a>
+</span><span id="__span-36-4"><a id="__codelineno-36-4" name="__codelineno-36-4" href="#__codelineno-36-4"></a><span class="c1"># Create a specialized assistant</span>
+</span><span id="__span-36-5"><a id="__codelineno-36-5" name="__codelineno-36-5" href="#__codelineno-36-5"></a><span class="n">lit_review</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">chat_ollama</span><span class="p">(</span>
+</span><span id="__span-36-6"><a id="__codelineno-36-6" name="__codelineno-36-6" href="#__codelineno-36-6"></a><span class="w">  </span><span class="n">model</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;qwen2.5:7b&quot;</span><span class="p">,</span>
+</span><span id="__span-36-7"><a id="__codelineno-36-7" name="__codelineno-36-7" href="#__codelineno-36-7"></a><span class="w">  </span><span class="n">system_prompt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;You are an academic research assistant specializing in</span>
+</span><span id="__span-36-8"><a id="__codelineno-36-8" name="__codelineno-36-8" href="#__codelineno-36-8"></a><span class="s">                   literature reviews. Help researchers:</span>
+</span><span id="__span-36-9"><a id="__codelineno-36-9" name="__codelineno-36-9" href="#__codelineno-36-9"></a><span class="s">                   1. Identify key themes in abstracts</span>
+</span><span id="__span-36-10"><a id="__codelineno-36-10" name="__codelineno-36-10" href="#__codelineno-36-10"></a><span class="s">                   2. Suggest search terms</span>
+</span><span id="__span-36-11"><a id="__codelineno-36-11" name="__codelineno-36-11" href="#__codelineno-36-11"></a><span class="s">                   3. Evaluate methodology descriptions</span>
+</span><span id="__span-36-12"><a id="__codelineno-36-12" name="__codelineno-36-12" href="#__codelineno-36-12"></a><span class="s">                   Be scholarly but accessible.&quot;</span>
+</span><span id="__span-36-13"><a id="__codelineno-36-13" name="__codelineno-36-13" href="#__codelineno-36-13"></a><span class="p">)</span>
+</span><span id="__span-36-14"><a id="__codelineno-36-14" name="__codelineno-36-14" href="#__codelineno-36-14"></a>
+</span><span id="__span-36-15"><a id="__codelineno-36-15" name="__codelineno-36-15" href="#__codelineno-36-15"></a><span class="c1"># Analyze an abstract</span>
+</span><span id="__span-36-16"><a id="__codelineno-36-16" name="__codelineno-36-16" href="#__codelineno-36-16"></a><span class="n">abstract</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">&quot;This study examines the impact of social media use on</span>
+</span><span id="__span-36-17"><a id="__codelineno-36-17" name="__codelineno-36-17" href="#__codelineno-36-17"></a><span class="s">adolescent mental health using a longitudinal design with 5,000 participants</span>
+</span><span id="__span-36-18"><a id="__codelineno-36-18" name="__codelineno-36-18" href="#__codelineno-36-18"></a><span class="s">over 3 years. We found significant associations between daily social media</span>
+</span><span id="__span-36-19"><a id="__codelineno-36-19" name="__codelineno-36-19" href="#__codelineno-36-19"></a><span class="s">time and symptoms of anxiety and depression, with effect sizes varying by</span>
+</span><span id="__span-36-20"><a id="__codelineno-36-20" name="__codelineno-36-20" href="#__codelineno-36-20"></a><span class="s">platform type and usage patterns.&quot;</span>
+</span><span id="__span-36-21"><a id="__codelineno-36-21" name="__codelineno-36-21" href="#__codelineno-36-21"></a>
+</span><span id="__span-36-22"><a id="__codelineno-36-22" name="__codelineno-36-22" href="#__codelineno-36-22"></a><span class="n">lit_review</span><span class="o">$</span><span class="nf">chat</span><span class="p">(</span><span class="nf">paste</span><span class="p">(</span><span class="s">&quot;Analyze this abstract and identify:&quot;</span><span class="p">,</span>
+</span><span id="__span-36-23"><a id="__codelineno-36-23" name="__codelineno-36-23" href="#__codelineno-36-23"></a><span class="w">                      </span><span class="s">&quot;1. Research question&quot;</span><span class="p">,</span>
+</span><span id="__span-36-24"><a id="__codelineno-36-24" name="__codelineno-36-24" href="#__codelineno-36-24"></a><span class="w">                      </span><span class="s">&quot;2. Methodology strengths&quot;</span><span class="p">,</span>
+</span><span id="__span-36-25"><a id="__codelineno-36-25" name="__codelineno-36-25" href="#__codelineno-36-25"></a><span class="w">                      </span><span class="s">&quot;3. Potential limitations&quot;</span><span class="p">,</span>
+</span><span id="__span-36-26"><a id="__codelineno-36-26" name="__codelineno-36-26" href="#__codelineno-36-26"></a><span class="w">                      </span><span class="s">&quot;4. Related search terms for similar studies&quot;</span><span class="p">,</span>
+</span><span id="__span-36-27"><a id="__codelineno-36-27" name="__codelineno-36-27" href="#__codelineno-36-27"></a><span class="w">                      </span><span class="s">&quot;\n\nAbstract:&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">abstract</span><span class="p">))</span>
+</span></code></pre></div>
+<h3 id="example-2-statistical-analysis-helper-r">Example 2: Statistical Analysis Helper (R)<a class="headerlink" href="#example-2-statistical-analysis-helper-r" title="Permanent link">&para;</a></h3>
+<div class="language-r highlight"><pre><span></span><code><span id="__span-37-1"><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a><span class="nf">library</span><span class="p">(</span><span class="n">ellmer</span><span class="p">)</span>
+</span><span id="__span-37-2"><a id="__codelineno-37-2" name="__codelineno-37-2" href="#__codelineno-37-2"></a>
+</span><span id="__span-37-3"><a id="__codelineno-37-3" name="__codelineno-37-3" href="#__codelineno-37-3"></a><span class="c1"># Create a statistics tutor</span>
+</span><span id="__span-37-4"><a id="__codelineno-37-4" name="__codelineno-37-4" href="#__codelineno-37-4"></a><span class="n">stats_help</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">chat_ollama</span><span class="p">(</span>
+</span><span id="__span-37-5"><a id="__codelineno-37-5" name="__codelineno-37-5" href="#__codelineno-37-5"></a><span class="w">  </span><span class="n">model</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;llama3.2&quot;</span><span class="p">,</span>
+</span><span id="__span-37-6"><a id="__codelineno-37-6" name="__codelineno-37-6" href="#__codelineno-37-6"></a><span class="w">  </span><span class="n">system_prompt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;You are a patient statistics tutor for graduate students.</span>
+</span><span id="__span-37-7"><a id="__codelineno-37-7" name="__codelineno-37-7" href="#__codelineno-37-7"></a><span class="s">                   When explaining:</span>
+</span><span id="__span-37-8"><a id="__codelineno-37-8" name="__codelineno-37-8" href="#__codelineno-37-8"></a><span class="s">                   1. Start with intuition before formulas</span>
+</span><span id="__span-37-9"><a id="__codelineno-37-9" name="__codelineno-37-9" href="#__codelineno-37-9"></a><span class="s">                   2. Use concrete examples</span>
+</span><span id="__span-37-10"><a id="__codelineno-37-10" name="__codelineno-37-10" href="#__codelineno-37-10"></a><span class="s">                   3. Show R code for implementation</span>
+</span><span id="__span-37-11"><a id="__codelineno-37-11" name="__codelineno-37-11" href="#__codelineno-37-11"></a><span class="s">                   4. Explain when methods are appropriate&quot;</span>
+</span><span id="__span-37-12"><a id="__codelineno-37-12" name="__codelineno-37-12" href="#__codelineno-37-12"></a><span class="p">)</span>
+</span><span id="__span-37-13"><a id="__codelineno-37-13" name="__codelineno-37-13" href="#__codelineno-37-13"></a>
+</span><span id="__span-37-14"><a id="__codelineno-37-14" name="__codelineno-37-14" href="#__codelineno-37-14"></a><span class="c1"># Get help choosing a statistical test</span>
+</span><span id="__span-37-15"><a id="__codelineno-37-15" name="__codelineno-37-15" href="#__codelineno-37-15"></a><span class="n">stats_help</span><span class="o">$</span><span class="nf">chat</span><span class="p">(</span><span class="s">&quot;I have a dataset with one continuous outcome variable and</span>
+</span><span id="__span-37-16"><a id="__codelineno-37-16" name="__codelineno-37-16" href="#__codelineno-37-16"></a><span class="s">                 two categorical predictors (treatment group with 3 levels,</span>
+</span><span id="__span-37-17"><a id="__codelineno-37-17" name="__codelineno-37-17" href="#__codelineno-37-17"></a><span class="s">                 and gender with 2 levels). I want to understand if there&#39;s</span>
+</span><span id="__span-37-18"><a id="__codelineno-37-18" name="__codelineno-37-18" href="#__codelineno-37-18"></a><span class="s">                 an interaction effect. What test should I use and why?&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<h3 id="example-3-code-documentation-generator-r">Example 3: Code Documentation Generator (R)<a class="headerlink" href="#example-3-code-documentation-generator-r" title="Permanent link">&para;</a></h3>
+<div class="language-r highlight"><pre><span></span><code><span id="__span-38-1"><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a><span class="nf">library</span><span class="p">(</span><span class="n">ellmer</span><span class="p">)</span>
+</span><span id="__span-38-2"><a id="__codelineno-38-2" name="__codelineno-38-2" href="#__codelineno-38-2"></a>
+</span><span id="__span-38-3"><a id="__codelineno-38-3" name="__codelineno-38-3" href="#__codelineno-38-3"></a><span class="c1"># Create a documentation assistant</span>
+</span><span id="__span-38-4"><a id="__codelineno-38-4" name="__codelineno-38-4" href="#__codelineno-38-4"></a><span class="n">doc_helper</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">chat_openai</span><span class="p">(</span>
+</span><span id="__span-38-5"><a id="__codelineno-38-5" name="__codelineno-38-5" href="#__codelineno-38-5"></a><span class="w">  </span><span class="n">model</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;gpt-4o-mini&quot;</span><span class="p">,</span>
+</span><span id="__span-38-6"><a id="__codelineno-38-6" name="__codelineno-38-6" href="#__codelineno-38-6"></a><span class="w">  </span><span class="n">system_prompt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;You are an R documentation expert. When given R code,</span>
+</span><span id="__span-38-7"><a id="__codelineno-38-7" name="__codelineno-38-7" href="#__codelineno-38-7"></a><span class="s">                   generate roxygen2-style documentation including:</span>
+</span><span id="__span-38-8"><a id="__codelineno-38-8" name="__codelineno-38-8" href="#__codelineno-38-8"></a><span class="s">                   @title, @description, @param, @return, @examples&quot;</span>
+</span><span id="__span-38-9"><a id="__codelineno-38-9" name="__codelineno-38-9" href="#__codelineno-38-9"></a><span class="p">)</span>
+</span><span id="__span-38-10"><a id="__codelineno-38-10" name="__codelineno-38-10" href="#__codelineno-38-10"></a>
+</span><span id="__span-38-11"><a id="__codelineno-38-11" name="__codelineno-38-11" href="#__codelineno-38-11"></a><span class="c1"># Generate documentation for a function</span>
+</span><span id="__span-38-12"><a id="__codelineno-38-12" name="__codelineno-38-12" href="#__codelineno-38-12"></a><span class="n">my_function</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">&quot;</span>
+</span><span id="__span-38-13"><a id="__codelineno-38-13" name="__codelineno-38-13" href="#__codelineno-38-13"></a><span class="s">calculate_effect_size &lt;- function(group1, group2, pooled_sd = TRUE) {</span>
+</span><span id="__span-38-14"><a id="__codelineno-38-14" name="__codelineno-38-14" href="#__codelineno-38-14"></a><span class="s">  n1 &lt;- length(group1)</span>
+</span><span id="__span-38-15"><a id="__codelineno-38-15" name="__codelineno-38-15" href="#__codelineno-38-15"></a><span class="s">  n2 &lt;- length(group2)</span>
+</span><span id="__span-38-16"><a id="__codelineno-38-16" name="__codelineno-38-16" href="#__codelineno-38-16"></a><span class="s">  m1 &lt;- mean(group1)</span>
+</span><span id="__span-38-17"><a id="__codelineno-38-17" name="__codelineno-38-17" href="#__codelineno-38-17"></a><span class="s">  m2 &lt;- mean(group2)</span>
+</span><span id="__span-38-18"><a id="__codelineno-38-18" name="__codelineno-38-18" href="#__codelineno-38-18"></a>
+</span><span id="__span-38-19"><a id="__codelineno-38-19" name="__codelineno-38-19" href="#__codelineno-38-19"></a><span class="s">  if (pooled_sd) {</span>
+</span><span id="__span-38-20"><a id="__codelineno-38-20" name="__codelineno-38-20" href="#__codelineno-38-20"></a><span class="s">    s &lt;- sqrt(((n1-1)*var(group1) + (n2-1)*var(group2)) / (n1+n2-2))</span>
+</span><span id="__span-38-21"><a id="__codelineno-38-21" name="__codelineno-38-21" href="#__codelineno-38-21"></a><span class="s">  } else {</span>
+</span><span id="__span-38-22"><a id="__codelineno-38-22" name="__codelineno-38-22" href="#__codelineno-38-22"></a><span class="s">    s &lt;- sd(c(group1, group2))</span>
+</span><span id="__span-38-23"><a id="__codelineno-38-23" name="__codelineno-38-23" href="#__codelineno-38-23"></a><span class="s">  }</span>
+</span><span id="__span-38-24"><a id="__codelineno-38-24" name="__codelineno-38-24" href="#__codelineno-38-24"></a>
+</span><span id="__span-38-25"><a id="__codelineno-38-25" name="__codelineno-38-25" href="#__codelineno-38-25"></a><span class="s">  d &lt;- (m1 - m2) / s</span>
+</span><span id="__span-38-26"><a id="__codelineno-38-26" name="__codelineno-38-26" href="#__codelineno-38-26"></a><span class="s">  return(list(cohens_d = d, n1 = n1, n2 = n2))</span>
+</span><span id="__span-38-27"><a id="__codelineno-38-27" name="__codelineno-38-27" href="#__codelineno-38-27"></a><span class="s">}</span>
+</span><span id="__span-38-28"><a id="__codelineno-38-28" name="__codelineno-38-28" href="#__codelineno-38-28"></a><span class="s">&quot;</span>
+</span><span id="__span-38-29"><a id="__codelineno-38-29" name="__codelineno-38-29" href="#__codelineno-38-29"></a>
+</span><span id="__span-38-30"><a id="__codelineno-38-30" name="__codelineno-38-30" href="#__codelineno-38-30"></a><span class="n">doc_helper</span><span class="o">$</span><span class="nf">chat</span><span class="p">(</span><span class="nf">paste</span><span class="p">(</span><span class="s">&quot;Generate roxygen2 documentation for this R function:\n&quot;</span><span class="p">,</span>
+</span><span id="__span-38-31"><a id="__codelineno-38-31" name="__codelineno-38-31" href="#__codelineno-38-31"></a><span class="w">                      </span><span class="n">my_function</span><span class="p">))</span>
+</span></code></pre></div>
+<h3 id="example-4-data-analysis-pipeline-python">Example 4: Data Analysis Pipeline (Python)<a class="headerlink" href="#example-4-data-analysis-pipeline-python" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-39-1"><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">chatlas</span><span class="w"> </span><span class="kn">import</span> <span class="n">ChatOllama</span>
+</span><span id="__span-39-2"><a id="__codelineno-39-2" name="__codelineno-39-2" href="#__codelineno-39-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+</span><span id="__span-39-3"><a id="__codelineno-39-3" name="__codelineno-39-3" href="#__codelineno-39-3"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+</span><span id="__span-39-4"><a id="__codelineno-39-4" name="__codelineno-39-4" href="#__codelineno-39-4"></a>
+</span><span id="__span-39-5"><a id="__codelineno-39-5" name="__codelineno-39-5" href="#__codelineno-39-5"></a><span class="c1"># Create an analysis assistant</span>
+</span><span id="__span-39-6"><a id="__codelineno-39-6" name="__codelineno-39-6" href="#__codelineno-39-6"></a><span class="n">analyst</span> <span class="o">=</span> <span class="n">ChatOllama</span><span class="p">(</span>
+</span><span id="__span-39-7"><a id="__codelineno-39-7" name="__codelineno-39-7" href="#__codelineno-39-7"></a>    <span class="n">model</span><span class="o">=</span><span class="s2">&quot;llama3.2&quot;</span><span class="p">,</span>
+</span><span id="__span-39-8"><a id="__codelineno-39-8" name="__codelineno-39-8" href="#__codelineno-39-8"></a>    <span class="n">system_prompt</span><span class="o">=</span><span class="s2">&quot;&quot;&quot;You are a data science assistant. When helping with</span>
+</span><span id="__span-39-9"><a id="__codelineno-39-9" name="__codelineno-39-9" href="#__codelineno-39-9"></a><span class="s2">                     analysis:</span>
+</span><span id="__span-39-10"><a id="__codelineno-39-10" name="__codelineno-39-10" href="#__codelineno-39-10"></a><span class="s2">                     1. Explain your reasoning</span>
+</span><span id="__span-39-11"><a id="__codelineno-39-11" name="__codelineno-39-11" href="#__codelineno-39-11"></a><span class="s2">                     2. Provide complete, runnable Python code</span>
+</span><span id="__span-39-12"><a id="__codelineno-39-12" name="__codelineno-39-12" href="#__codelineno-39-12"></a><span class="s2">                     3. Suggest visualizations when appropriate</span>
+</span><span id="__span-39-13"><a id="__codelineno-39-13" name="__codelineno-39-13" href="#__codelineno-39-13"></a><span class="s2">                     4. Note potential issues or assumptions&quot;&quot;&quot;</span>
+</span><span id="__span-39-14"><a id="__codelineno-39-14" name="__codelineno-39-14" href="#__codelineno-39-14"></a><span class="p">)</span>
+</span><span id="__span-39-15"><a id="__codelineno-39-15" name="__codelineno-39-15" href="#__codelineno-39-15"></a>
+</span><span id="__span-39-16"><a id="__codelineno-39-16" name="__codelineno-39-16" href="#__codelineno-39-16"></a><span class="c1"># Load some data</span>
+</span><span id="__span-39-17"><a id="__codelineno-39-17" name="__codelineno-39-17" href="#__codelineno-39-17"></a><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
+</span><span id="__span-39-18"><a id="__codelineno-39-18" name="__codelineno-39-18" href="#__codelineno-39-18"></a><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
+</span><span id="__span-39-19"><a id="__codelineno-39-19" name="__codelineno-39-19" href="#__codelineno-39-19"></a>    <span class="s2">&quot;treatment&quot;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">([</span><span class="s2">&quot;A&quot;</span><span class="p">,</span> <span class="s2">&quot;B&quot;</span><span class="p">,</span> <span class="s2">&quot;C&quot;</span><span class="p">],</span> <span class="mi">100</span><span class="p">),</span>
+</span><span id="__span-39-20"><a id="__codelineno-39-20" name="__codelineno-39-20" href="#__codelineno-39-20"></a>    <span class="s2">&quot;age&quot;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mi">45</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">100</span><span class="p">),</span>
+</span><span id="__span-39-21"><a id="__codelineno-39-21" name="__codelineno-39-21" href="#__codelineno-39-21"></a>    <span class="s2">&quot;outcome&quot;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span> <span class="o">+</span>
+</span><span id="__span-39-22"><a id="__codelineno-39-22" name="__codelineno-39-22" href="#__codelineno-39-22"></a>               <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">([</span><span class="s2">&quot;A&quot;</span><span class="p">,</span> <span class="s2">&quot;B&quot;</span><span class="p">,</span> <span class="s2">&quot;C&quot;</span><span class="p">],</span> <span class="mi">100</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;A&quot;</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+</span><span id="__span-39-23"><a id="__codelineno-39-23" name="__codelineno-39-23" href="#__codelineno-39-23"></a><span class="p">})</span>
+</span><span id="__span-39-24"><a id="__codelineno-39-24" name="__codelineno-39-24" href="#__codelineno-39-24"></a>
+</span><span id="__span-39-25"><a id="__codelineno-39-25" name="__codelineno-39-25" href="#__codelineno-39-25"></a><span class="c1"># Get analysis suggestions</span>
+</span><span id="__span-39-26"><a id="__codelineno-39-26" name="__codelineno-39-26" href="#__codelineno-39-26"></a><span class="n">analyst</span><span class="o">.</span><span class="n">chat</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;&quot;&quot;I have a dataset with these characteristics:</span>
+</span><span id="__span-39-27"><a id="__codelineno-39-27" name="__codelineno-39-27" href="#__codelineno-39-27"></a><span class="si">{</span><span class="n">df</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span><span class="o">.</span><span class="n">to_string</span><span class="p">()</span><span class="si">}</span>
+</span><span id="__span-39-28"><a id="__codelineno-39-28" name="__codelineno-39-28" href="#__codelineno-39-28"></a>
+</span><span id="__span-39-29"><a id="__codelineno-39-29" name="__codelineno-39-29" href="#__codelineno-39-29"></a><span class="s2">Columns: treatment (A/B/C), age (continuous), outcome (continuous)</span>
+</span><span id="__span-39-30"><a id="__codelineno-39-30" name="__codelineno-39-30" href="#__codelineno-39-30"></a>
+</span><span id="__span-39-31"><a id="__codelineno-39-31" name="__codelineno-39-31" href="#__codelineno-39-31"></a><span class="s2">What analysis would you recommend to understand the relationship</span>
+</span><span id="__span-39-32"><a id="__codelineno-39-32" name="__codelineno-39-32" href="#__codelineno-39-32"></a><span class="s2">between treatment and outcome while controlling for age?&quot;&quot;&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<h3 id="example-5-quarto-document-with-ai-r-markdownquarto">Example 5: Quarto Document with AI (R Markdown/Quarto)<a class="headerlink" href="#example-5-quarto-document-with-ai-r-markdownquarto" title="Permanent link">&para;</a></h3>
+<p>Create a Quarto document that uses ellmer for AI-assisted analysis:</p>
+<div class="language-markdown highlight"><pre><span></span><code><span id="__span-40-1"><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a>---
+</span><span id="__span-40-2"><a id="__codelineno-40-2" name="__codelineno-40-2" href="#__codelineno-40-2"></a>title: &quot;AI-Assisted Data Analysis&quot;
+</span><span id="__span-40-3"><a id="__codelineno-40-3" name="__codelineno-40-3" href="#__codelineno-40-3"></a><span class="gu">format: html</span>
+</span><span id="__span-40-4"><a id="__codelineno-40-4" name="__codelineno-40-4" href="#__codelineno-40-4"></a><span class="gu">---</span>
+</span><span id="__span-40-5"><a id="__codelineno-40-5" name="__codelineno-40-5" href="#__codelineno-40-5"></a>
+</span><span id="__span-40-6"><a id="__codelineno-40-6" name="__codelineno-40-6" href="#__codelineno-40-6"></a>```{r setup, include=FALSE}
+</span><span id="__span-40-7"><a id="__codelineno-40-7" name="__codelineno-40-7" href="#__codelineno-40-7"></a>library(ellmer)
+</span><span id="__span-40-8"><a id="__codelineno-40-8" name="__codelineno-40-8" href="#__codelineno-40-8"></a>library(tidyverse)
+</span><span id="__span-40-9"><a id="__codelineno-40-9" name="__codelineno-40-9" href="#__codelineno-40-9"></a>
+</span><span id="__span-40-10"><a id="__codelineno-40-10" name="__codelineno-40-10" href="#__codelineno-40-10"></a><span class="gh"># Use a local model for reproducibility</span>
+</span><span id="__span-40-11"><a id="__codelineno-40-11" name="__codelineno-40-11" href="#__codelineno-40-11"></a>chat &lt;- chat_ollama(model = &quot;llama3.2&quot;)
+</span><span id="__span-40-12"><a id="__codelineno-40-12" name="__codelineno-40-12" href="#__codelineno-40-12"></a><span class="sb">```</span>
+</span><span id="__span-40-13"><a id="__codelineno-40-13" name="__codelineno-40-13" href="#__codelineno-40-13"></a>
+</span><span id="__span-40-14"><a id="__codelineno-40-14" name="__codelineno-40-14" href="#__codelineno-40-14"></a><span class="sb">## Data Overview</span>
+</span><span id="__span-40-15"><a id="__codelineno-40-15" name="__codelineno-40-15" href="#__codelineno-40-15"></a>
+</span><span id="__span-40-16"><a id="__codelineno-40-16" name="__codelineno-40-16" href="#__codelineno-40-16"></a><span class="sb">```{r}</span>
+</span><span id="__span-40-17"><a id="__codelineno-40-17" name="__codelineno-40-17" href="#__codelineno-40-17"></a><span class="sb"># Load and summarize data</span>
+</span><span id="__span-40-18"><a id="__codelineno-40-18" name="__codelineno-40-18" href="#__codelineno-40-18"></a><span class="sb">data(mtcars)</span>
+</span><span id="__span-40-19"><a id="__codelineno-40-19" name="__codelineno-40-19" href="#__codelineno-40-19"></a><span class="sb">summary(mtcars)</span>
+</span><span id="__span-40-20"><a id="__codelineno-40-20" name="__codelineno-40-20" href="#__codelineno-40-20"></a><span class="sb">```</span>
+</span><span id="__span-40-21"><a id="__codelineno-40-21" name="__codelineno-40-21" href="#__codelineno-40-21"></a>
+</span><span id="__span-40-22"><a id="__codelineno-40-22" name="__codelineno-40-22" href="#__codelineno-40-22"></a><span class="gu">## AI-Generated Analysis Suggestions</span>
+</span><span id="__span-40-23"><a id="__codelineno-40-23" name="__codelineno-40-23" href="#__codelineno-40-23"></a>
+</span><span id="__span-40-24"><a id="__codelineno-40-24" name="__codelineno-40-24" href="#__codelineno-40-24"></a>```{r}
+</span><span id="__span-40-25"><a id="__codelineno-40-25" name="__codelineno-40-25" href="#__codelineno-40-25"></a><span class="gh"># Ask the AI for analysis suggestions</span>
+</span><span id="__span-40-26"><a id="__codelineno-40-26" name="__codelineno-40-26" href="#__codelineno-40-26"></a>response &lt;- chat$chat(
+</span><span id="__span-40-27"><a id="__codelineno-40-27" name="__codelineno-40-27" href="#__codelineno-40-27"></a>  paste(&quot;Given a dataset about cars with variables:&quot;,
+</span><span id="__span-40-28"><a id="__codelineno-40-28" name="__codelineno-40-28" href="#__codelineno-40-28"></a>        paste(names(mtcars), collapse = &quot;, &quot;),
+</span><span id="__span-40-29"><a id="__codelineno-40-29" name="__codelineno-40-29" href="#__codelineno-40-29"></a>        &quot;suggest three interesting analyses and visualizations.&quot;),
+</span><span id="__span-40-30"><a id="__codelineno-40-30" name="__codelineno-40-30" href="#__codelineno-40-30"></a>  echo = FALSE
+</span><span id="__span-40-31"><a id="__codelineno-40-31" name="__codelineno-40-31" href="#__codelineno-40-31"></a>)
+</span><span id="__span-40-32"><a id="__codelineno-40-32" name="__codelineno-40-32" href="#__codelineno-40-32"></a><span class="sb">```</span>
+</span><span id="__span-40-33"><a id="__codelineno-40-33" name="__codelineno-40-33" href="#__codelineno-40-33"></a>
+</span><span id="__span-40-34"><a id="__codelineno-40-34" name="__codelineno-40-34" href="#__codelineno-40-34"></a><span class="sb">The AI suggests the following analyses:</span>
+</span><span id="__span-40-35"><a id="__codelineno-40-35" name="__codelineno-40-35" href="#__codelineno-40-35"></a>
+</span><span id="__span-40-36"><a id="__codelineno-40-36" name="__codelineno-40-36" href="#__codelineno-40-36"></a><span class="sb">`r response`</span>
+</span><span id="__span-40-37"><a id="__codelineno-40-37" name="__codelineno-40-37" href="#__codelineno-40-37"></a>
+</span><span id="__span-40-38"><a id="__codelineno-40-38" name="__codelineno-40-38" href="#__codelineno-40-38"></a><span class="sb">## Implementing the Suggestions</span>
+</span><span id="__span-40-39"><a id="__codelineno-40-39" name="__codelineno-40-39" href="#__codelineno-40-39"></a>
+</span><span id="__span-40-40"><a id="__codelineno-40-40" name="__codelineno-40-40" href="#__codelineno-40-40"></a><span class="sb">```{r}</span>
+</span><span id="__span-40-41"><a id="__codelineno-40-41" name="__codelineno-40-41" href="#__codelineno-40-41"></a><span class="sb"># Create a visualization based on AI suggestion</span>
+</span><span id="__span-40-42"><a id="__codelineno-40-42" name="__codelineno-40-42" href="#__codelineno-40-42"></a><span class="sb">ggplot(mtcars, aes(x = wt, y = mpg, color = factor(cyl))) +</span>
+</span><span id="__span-40-43"><a id="__codelineno-40-43" name="__codelineno-40-43" href="#__codelineno-40-43"></a><span class="sb">  geom_point(size = 3) +</span>
+</span><span id="__span-40-44"><a id="__codelineno-40-44" name="__codelineno-40-44" href="#__codelineno-40-44"></a><span class="sb">  geom_smooth(method = &quot;lm&quot;, se = FALSE) +</span>
+</span><span id="__span-40-45"><a id="__codelineno-40-45" name="__codelineno-40-45" href="#__codelineno-40-45"></a><span class="sb">  labs(title = &quot;MPG vs Weight by Cylinder Count&quot;,</span>
+</span><span id="__span-40-46"><a id="__codelineno-40-46" name="__codelineno-40-46" href="#__codelineno-40-46"></a><span class="sb">       x = &quot;Weight (1000 lbs)&quot;,</span>
+</span><span id="__span-40-47"><a id="__codelineno-40-47" name="__codelineno-40-47" href="#__codelineno-40-47"></a><span class="sb">       y = &quot;Miles per Gallon&quot;,</span>
+</span><span id="__span-40-48"><a id="__codelineno-40-48" name="__codelineno-40-48" href="#__codelineno-40-48"></a><span class="sb">       color = &quot;Cylinders&quot;) +</span>
+</span><span id="__span-40-49"><a id="__codelineno-40-49" name="__codelineno-40-49" href="#__codelineno-40-49"></a><span class="sb">  theme_minimal()</span>
+</span><span id="__span-40-50"><a id="__codelineno-40-50" name="__codelineno-40-50" href="#__codelineno-40-50"></a><span class="sb">```</span>
+</span></code></pre></div>
+<hr />
+<h2 id="other-r-packages-for-ai-integration">Other R Packages for AI Integration<a class="headerlink" href="#other-r-packages-for-ai-integration" title="Permanent link">&para;</a></h2>
+<p>Beyond ellmer and chatlas, several other R packages provide AI capabilities:</p>
+<h3 id="tidyllm">tidyllm<a class="headerlink" href="#tidyllm" title="Permanent link">&para;</a></h3>
+<p><a href="https://edubruell.github.io/tidyllm/" target="_blank">tidyllm</a> - Tidy interface for LLMs with piped workflows:</p>
+<div class="language-r highlight"><pre><span></span><code><span id="__span-41-1"><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a><span class="c1"># install.packages(&quot;tidyllm&quot;)</span>
+</span><span id="__span-41-2"><a id="__codelineno-41-2" name="__codelineno-41-2" href="#__codelineno-41-2"></a><span class="nf">library</span><span class="p">(</span><span class="n">tidyllm</span><span class="p">)</span>
+</span><span id="__span-41-3"><a id="__codelineno-41-3" name="__codelineno-41-3" href="#__codelineno-41-3"></a>
+</span><span id="__span-41-4"><a id="__codelineno-41-4" name="__codelineno-41-4" href="#__codelineno-41-4"></a><span class="nf">llm_message</span><span class="p">(</span><span class="s">&quot;Explain linear regression&quot;</span><span class="p">)</span><span class="w"> </span><span class="o">|&gt;</span>
+</span><span id="__span-41-5"><a id="__codelineno-41-5" name="__codelineno-41-5" href="#__codelineno-41-5"></a><span class="w">  </span><span class="nf">openai_chat</span><span class="p">(</span><span class="n">model</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;gpt-4o-mini&quot;</span><span class="p">)</span><span class="w"> </span><span class="o">|&gt;</span>
+</span><span id="__span-41-6"><a id="__codelineno-41-6" name="__codelineno-41-6" href="#__codelineno-41-6"></a><span class="w">  </span><span class="nf">get_reply</span><span class="p">()</span>
+</span></code></pre></div>
+<h3 id="gptstudio">gptstudio<a class="headerlink" href="#gptstudio" title="Permanent link">&para;</a></h3>
+<p><a href="https://michelnivard.github.io/gptstudio/" target="_blank">gptstudio</a> - RStudio addins for AI assistance:</p>
+<div class="language-r highlight"><pre><span></span><code><span id="__span-42-1"><a id="__codelineno-42-1" name="__codelineno-42-1" href="#__codelineno-42-1"></a><span class="c1"># install.packages(&quot;gptstudio&quot;)</span>
+</span><span id="__span-42-2"><a id="__codelineno-42-2" name="__codelineno-42-2" href="#__codelineno-42-2"></a><span class="nf">library</span><span class="p">(</span><span class="n">gptstudio</span><span class="p">)</span>
+</span><span id="__span-42-3"><a id="__codelineno-42-3" name="__codelineno-42-3" href="#__codelineno-42-3"></a>
+</span><span id="__span-42-4"><a id="__codelineno-42-4" name="__codelineno-42-4" href="#__codelineno-42-4"></a><span class="c1"># Provides RStudio addins for:</span>
+</span><span id="__span-42-5"><a id="__codelineno-42-5" name="__codelineno-42-5" href="#__codelineno-42-5"></a><span class="c1"># - Code explanation</span>
+</span><span id="__span-42-6"><a id="__codelineno-42-6" name="__codelineno-42-6" href="#__codelineno-42-6"></a><span class="c1"># - Documentation writing</span>
+</span><span id="__span-42-7"><a id="__codelineno-42-7" name="__codelineno-42-7" href="#__codelineno-42-7"></a><span class="c1"># - Code commenting</span>
+</span><span id="__span-42-8"><a id="__codelineno-42-8" name="__codelineno-42-8" href="#__codelineno-42-8"></a><span class="c1"># - Spelling/grammar checking</span>
+</span></code></pre></div>
+<h3 id="chattr">chattr<a class="headerlink" href="#chattr" title="Permanent link">&para;</a></h3>
+<p><a href="https://mlverse.github.io/chattr/" target="_blank">chattr</a> - Chat interface in RStudio:</p>
+<div class="language-r highlight"><pre><span></span><code><span id="__span-43-1"><a id="__codelineno-43-1" name="__codelineno-43-1" href="#__codelineno-43-1"></a><span class="c1"># install.packages(&quot;chattr&quot;)</span>
+</span><span id="__span-43-2"><a id="__codelineno-43-2" name="__codelineno-43-2" href="#__codelineno-43-2"></a><span class="nf">library</span><span class="p">(</span><span class="n">chattr</span><span class="p">)</span>
+</span><span id="__span-43-3"><a id="__codelineno-43-3" name="__codelineno-43-3" href="#__codelineno-43-3"></a>
+</span><span id="__span-43-4"><a id="__codelineno-43-4" name="__codelineno-43-4" href="#__codelineno-43-4"></a><span class="c1"># Opens an interactive chat pane in RStudio</span>
+</span><span id="__span-43-5"><a id="__codelineno-43-5" name="__codelineno-43-5" href="#__codelineno-43-5"></a><span class="nf">chattr_app</span><span class="p">()</span>
+</span></code></pre></div>
+<h3 id="ollamar">ollamar<a class="headerlink" href="#ollamar" title="Permanent link">&para;</a></h3>
+<p><a href="https://hauselin.github.io/ollama-r/" target="_blank">ollamar</a> - Direct Ollama API access:</p>
+<div class="language-r highlight"><pre><span></span><code><span id="__span-44-1"><a id="__codelineno-44-1" name="__codelineno-44-1" href="#__codelineno-44-1"></a><span class="c1"># install.packages(&quot;ollamar&quot;)</span>
+</span><span id="__span-44-2"><a id="__codelineno-44-2" name="__codelineno-44-2" href="#__codelineno-44-2"></a><span class="nf">library</span><span class="p">(</span><span class="n">ollamar</span><span class="p">)</span>
+</span><span id="__span-44-3"><a id="__codelineno-44-3" name="__codelineno-44-3" href="#__codelineno-44-3"></a>
+</span><span id="__span-44-4"><a id="__codelineno-44-4" name="__codelineno-44-4" href="#__codelineno-44-4"></a><span class="c1"># Low-level Ollama API access</span>
+</span><span id="__span-44-5"><a id="__codelineno-44-5" name="__codelineno-44-5" href="#__codelineno-44-5"></a><span class="nf">list_models</span><span class="p">()</span>
+</span><span id="__span-44-6"><a id="__codelineno-44-6" name="__codelineno-44-6" href="#__codelineno-44-6"></a><span class="nf">generate</span><span class="p">(</span><span class="s">&quot;llama3.2&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Hello!&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<hr />
+<h2 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h2>
+<details class="failure">
+<summary>API Key Not Found</summary>
+<p><strong>Symptoms:</strong> Error messages like "API key not set" or "authentication failed"</p>
+<p><strong>Solutions:</strong></p>
+<ol>
+<li>
+<p>Verify the key is set correctly:
+   <div class="language-r highlight"><pre><span></span><code><span id="__span-45-1"><a id="__codelineno-45-1" name="__codelineno-45-1" href="#__codelineno-45-1"></a><span class="c1"># R</span>
+</span><span id="__span-45-2"><a id="__codelineno-45-2" name="__codelineno-45-2" href="#__codelineno-45-2"></a><span class="nf">Sys.getenv</span><span class="p">(</span><span class="s">&quot;OPENAI_API_KEY&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+   <div class="language-python highlight"><pre><span></span><code><span id="__span-46-1"><a id="__codelineno-46-1" name="__codelineno-46-1" href="#__codelineno-46-1"></a><span class="c1"># Python</span>
+</span><span id="__span-46-2"><a id="__codelineno-46-2" name="__codelineno-46-2" href="#__codelineno-46-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+</span><span id="__span-46-3"><a id="__codelineno-46-3" name="__codelineno-46-3" href="#__codelineno-46-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">&quot;OPENAI_API_KEY&quot;</span><span class="p">))</span>
+</span></code></pre></div></p>
+</li>
+<li>
+<p>Check <code>.Renviron</code> has no spaces around <code>=</code></p>
+</li>
+<li>
+<p>Restart R/RStudio after editing <code>.Renviron</code></p>
+</li>
+<li>
+<p>Ensure the key is valid at the provider's console</p>
+</li>
+</ol>
+</details>
+<details class="failure">
+<summary>Ollama Connection Refused</summary>
+<p><strong>Symptoms:</strong> "Connection refused" or "Could not connect to Ollama"</p>
+<p><strong>Solutions:</strong></p>
+<ol>
+<li>
+<p>Verify Ollama is running:
+   <div class="language-bash highlight"><pre><span></span><code><span id="__span-47-1"><a id="__codelineno-47-1" name="__codelineno-47-1" href="#__codelineno-47-1"></a>curl<span class="w"> </span>http://localhost:11434/api/tags
+</span></code></pre></div></p>
+</li>
+<li>
+<p>Start Ollama if needed:
+   <div class="language-bash highlight"><pre><span></span><code><span id="__span-48-1"><a id="__codelineno-48-1" name="__codelineno-48-1" href="#__codelineno-48-1"></a>ollama<span class="w"> </span>serve
+</span></code></pre></div></p>
+</li>
+<li>
+<p>Check if using the correct base_url:
+   <div class="language-r highlight"><pre><span></span><code><span id="__span-49-1"><a id="__codelineno-49-1" name="__codelineno-49-1" href="#__codelineno-49-1"></a><span class="n">chat</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">chat_ollama</span><span class="p">(</span><span class="n">model</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;llama3.2&quot;</span><span class="p">,</span>
+</span><span id="__span-49-2"><a id="__codelineno-49-2" name="__codelineno-49-2" href="#__codelineno-49-2"></a><span class="w">                   </span><span class="n">base_url</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;http://localhost:11434&quot;</span><span class="p">)</span>
+</span></code></pre></div></p>
+</li>
+</ol>
+</details>
+<details class="failure">
+<summary>Model Not Found</summary>
+<p><strong>Symptoms:</strong> "Model not found" errors</p>
+<p><strong>Solutions:</strong></p>
+<ol>
+<li>
+<p>For Ollama, download the model first:
+   <div class="language-bash highlight"><pre><span></span><code><span id="__span-50-1"><a id="__codelineno-50-1" name="__codelineno-50-1" href="#__codelineno-50-1"></a>ollama<span class="w"> </span>pull<span class="w"> </span>llama3.2
+</span></code></pre></div></p>
+</li>
+<li>
+<p>List available models:
+   <div class="language-r highlight"><pre><span></span><code><span id="__span-51-1"><a id="__codelineno-51-1" name="__codelineno-51-1" href="#__codelineno-51-1"></a><span class="c1"># ellmer</span>
+</span><span id="__span-51-2"><a id="__codelineno-51-2" name="__codelineno-51-2" href="#__codelineno-51-2"></a><span class="nf">models_ollama</span><span class="p">()</span>
+</span></code></pre></div></p>
+</li>
+<li>
+<p>Check exact model name spelling</p>
+</li>
+</ol>
+</details>
+<details class="failure">
+<summary>Out of Memory</summary>
+<p><strong>Symptoms:</strong> R/Python crashes or "out of memory" errors</p>
+<p><strong>Solutions:</strong></p>
+<ol>
+<li>
+<p>Use a smaller model:
+   <div class="language-r highlight"><pre><span></span><code><span id="__span-52-1"><a id="__codelineno-52-1" name="__codelineno-52-1" href="#__codelineno-52-1"></a><span class="n">chat</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">chat_ollama</span><span class="p">(</span><span class="n">model</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;llama3.2:1b&quot;</span><span class="p">)</span><span class="w">  </span><span class="c1"># 1B instead of 3B</span>
+</span></code></pre></div></p>
+</li>
+<li>
+<p>Reduce context window:
+   <div class="language-r highlight"><pre><span></span><code><span id="__span-53-1"><a id="__codelineno-53-1" name="__codelineno-53-1" href="#__codelineno-53-1"></a><span class="n">chat</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">chat_ollama</span><span class="p">(</span><span class="n">model</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;llama3.2&quot;</span><span class="p">,</span>
+</span><span id="__span-53-2"><a id="__codelineno-53-2" name="__codelineno-53-2" href="#__codelineno-53-2"></a><span class="w">                   </span><span class="n">params</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">params</span><span class="p">(</span><span class="n">num_ctx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2048</span><span class="p">))</span>
+</span></code></pre></div></p>
+</li>
+<li>
+<p>Close other applications to free memory</p>
+</li>
+</ol>
+</details>
+<hr />
+<h2 id="further-resources">Further Resources<a class="headerlink" href="#further-resources" title="Permanent link">&para;</a></h2>
+<p><strong>Posit Resources:</strong></p>
+<ul>
+<li><a href="https://posit.co/" target="_blank">Posit Website</a></li>
+<li><a href="https://positron.posit.co/" target="_blank">Positron Downloads</a></li>
+<li><a href="https://posit.co/download/rstudio-desktop/" target="_blank">RStudio Downloads</a></li>
+</ul>
+<p><strong>Package Documentation:</strong></p>
+<ul>
+<li><a href="https://ellmer.tidyverse.org/" target="_blank">ellmer Documentation</a></li>
+<li><a href="https://posit-dev.github.io/chatlas/" target="_blank">chatlas Documentation</a></li>
+</ul>
+<p><strong>Related Workshop Materials:</strong></p>
+<ul>
+<li><a href="../ollama/">Ollama</a> - Running local LLMs</li>
+<li><a href="../huggingface/">Hugging Face</a> - Model hub and downloads</li>
+<li><a href="../jupyter/">Jupyter AI</a> - AI in Jupyter notebooks</li>
+<li><a href="../rag/">RAG</a> - Retrieval-augmented generation</li>
+<li><a href="../vibe/">Vibe Coding</a> - AI-assisted coding IDEs</li>
+</ul>
+<p><strong>Community:</strong></p>
+<ul>
+<li><a href="https://forum.posit.co/" target="_blank">Posit Community Forums</a></li>
+<li><a href="https://github.com/rstudio" target="_blank">RStudio GitHub</a></li>
+<li><a href="https://github.com/posit-dev/positron" target="_blank">Positron GitHub</a></li>
+</ul>
+<hr />
+<div class="admonition tip">
+<p class="admonition-title">Getting Started Recommendation</p>
+<p>If you're new to using LLMs with R or Python:</p>
+<ol>
+<li><strong>Install Positron</strong> for the best integrated experience</li>
+<li><strong>Start with Ollama</strong> to avoid API costs while learning</li>
+<li><strong>Install ellmer (R) or chatlas (Python)</strong> depending on your language</li>
+<li><strong>Download a small model:</strong> <code>ollama pull llama3.2:3b</code></li>
+<li><strong>Try the basic examples</strong> in this guide</li>
+<li><strong>Graduate to cloud APIs</strong> (OpenAI, Anthropic) when you need more capability</li>
+</ol>
+<p>For sensitive research data, Ollama provides complete privacy since all processing happens locally on your machine.</p>
+</div>
 
 
 
@@ -2014,7 +4789,7 @@
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2025 University of Arizona
+      Copyright &copy; 2026 University of Arizona
     </div>
   
   

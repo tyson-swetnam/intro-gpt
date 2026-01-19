@@ -25,7 +25,7 @@
       
       
       <link rel="icon" href="../assets/ua.ico">
-      <meta name="generator" content="zensical-0.0.16">
+      <meta name="generator" content="zensical-0.0.17">
     
     
       
@@ -36,7 +36,7 @@
       
         
       
-      <link rel="stylesheet" href="../assets/stylesheets/modern/main.dfcb43b2.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/modern/main.d4922b3c.min.css">
       
         
           
@@ -1284,14 +1284,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../jupyter/" class="md-nav__link">
+      <a href="../ai_sandboxes/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Jupyter AI
+    AI Sandboxes
   
 
     
@@ -1429,10 +1429,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#install-ollama" class="md-nav__link">
+  <a href="#what-is-ollama" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Install Ollama
+        What is Ollama?
       
     </span>
   </a>
@@ -1440,10 +1440,698 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#run-ollama" class="md-nav__link">
+  <a href="#installation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Run Ollama
+        Installation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#macos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        macOS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linux" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Linux
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Windows
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Docker
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verify-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Verify Installation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#downloading-and-managing-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Downloading and Managing Models
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Downloading and Managing Models">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-model-library" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Model Library
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#downloading-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Downloading Models
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#managing-downloaded-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Managing Downloaded Models
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#model-storage-location" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Model Storage Location
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#running-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Running Models
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Running Models">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#interactive-chat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interactive Chat
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#single-prompt-execution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Single-Prompt Execution
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#model-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Model Parameters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multiline-input" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Multiline Input
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-the-ollama-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using the Ollama API
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Using the Ollama API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#generate-completions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Generate Completions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chat-api-conversational" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chat API (Conversational)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#streaming-responses" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Streaming Responses
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api-endpoints-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        API Endpoints Reference
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Python Integration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Python Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-the-official-ollama-python-library" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using the Official Ollama Python Library
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-with-langchain" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using with LangChain
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-with-requests-direct-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using with Requests (Direct API)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jupyter-notebook-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Jupyter Notebook Integration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Jupyter Notebook Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-notebook-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Basic Notebook Usage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#building-a-research-assistant" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Building a Research Assistant
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-custom-models-with-modelfiles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Creating Custom Models with Modelfiles
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Creating Custom Models with Modelfiles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-modelfile-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Basic Modelfile Structure
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-and-use-the-custom-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Create and Use the Custom Model
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modelfile-commands-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modelfile Commands Reference
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-academic-discipline-specific-assistants" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example: Academic Discipline-Specific Assistants
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gpu-configuration-and-performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GPU Configuration and Performance
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GPU Configuration and Performance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#automatic-gpu-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Automatic GPU Detection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nvidia-gpu-setup-linux" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        NVIDIA GPU Setup (Linux)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#apple-silicon-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Apple Silicon Optimization
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#memory-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Memory Management
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#performance-tuning-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Performance Tuning Parameters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#monitoring-performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Monitoring Performance
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#model-recommendations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Model Recommendations
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Model Recommendations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#by-hardware-capability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        By Hardware Capability
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#by-use-case" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        By Use Case
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integration-with-other-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Integration with Other Tools
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Integration with Other Tools">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#open-webui" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Open WebUI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vs-code-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VS Code Integration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#obsidian-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Obsidian Integration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api-compatible-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        API-Compatible Services
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Troubleshooting
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Troubleshooting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-issues-and-solutions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Issues and Solutions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getting-help" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Getting Help
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#academic-use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Academic Use Cases
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Academic Use Cases">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#literature-review-assistance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Literature Review Assistance
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grant-writing-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Grant Writing Support
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#teaching-assistant" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Teaching Assistant
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-analysis-helper" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Analysis Helper
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Further Resources
       
     </span>
   </a>
@@ -1451,21 +2139,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#talk-to-ollama-in-the-terminal" class="md-nav__link">
+  <a href="#related-workshop-materials" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Talk to Ollama in the Terminal
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#talk-to-ollama-in-a-jupyter-notebook" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Talk to Ollama in a Jupyter Notebook
+        Related Workshop Materials
       
     </span>
   </a>
@@ -1496,62 +2173,6 @@
     
   
     RAG
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../execution/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Code Execution
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../openai/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    OpenAI API
   
 
     
@@ -1628,6 +2249,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../jupyter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jupyter AI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../posit/" class="md-nav__link">
         
   
@@ -1636,6 +2285,34 @@
     
   
     Posit (RStudio)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vscode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VS Code & AI Tools
   
 
     
@@ -2040,10 +2717,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#install-ollama" class="md-nav__link">
+  <a href="#what-is-ollama" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Install Ollama
+        What is Ollama?
       
     </span>
   </a>
@@ -2051,10 +2728,698 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#run-ollama" class="md-nav__link">
+  <a href="#installation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Run Ollama
+        Installation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#macos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        macOS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linux" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Linux
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Windows
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Docker
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verify-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Verify Installation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#downloading-and-managing-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Downloading and Managing Models
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Downloading and Managing Models">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-model-library" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Model Library
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#downloading-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Downloading Models
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#managing-downloaded-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Managing Downloaded Models
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#model-storage-location" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Model Storage Location
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#running-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Running Models
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Running Models">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#interactive-chat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interactive Chat
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#single-prompt-execution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Single-Prompt Execution
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#model-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Model Parameters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multiline-input" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Multiline Input
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-the-ollama-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using the Ollama API
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Using the Ollama API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#generate-completions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Generate Completions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chat-api-conversational" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chat API (Conversational)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#streaming-responses" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Streaming Responses
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api-endpoints-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        API Endpoints Reference
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Python Integration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Python Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-the-official-ollama-python-library" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using the Official Ollama Python Library
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-with-langchain" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using with LangChain
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-with-requests-direct-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using with Requests (Direct API)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jupyter-notebook-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Jupyter Notebook Integration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Jupyter Notebook Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-notebook-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Basic Notebook Usage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#building-a-research-assistant" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Building a Research Assistant
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-custom-models-with-modelfiles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Creating Custom Models with Modelfiles
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Creating Custom Models with Modelfiles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-modelfile-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Basic Modelfile Structure
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-and-use-the-custom-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Create and Use the Custom Model
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modelfile-commands-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modelfile Commands Reference
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-academic-discipline-specific-assistants" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example: Academic Discipline-Specific Assistants
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gpu-configuration-and-performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GPU Configuration and Performance
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GPU Configuration and Performance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#automatic-gpu-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Automatic GPU Detection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nvidia-gpu-setup-linux" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        NVIDIA GPU Setup (Linux)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#apple-silicon-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Apple Silicon Optimization
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#memory-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Memory Management
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#performance-tuning-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Performance Tuning Parameters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#monitoring-performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Monitoring Performance
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#model-recommendations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Model Recommendations
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Model Recommendations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#by-hardware-capability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        By Hardware Capability
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#by-use-case" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        By Use Case
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integration-with-other-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Integration with Other Tools
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Integration with Other Tools">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#open-webui" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Open WebUI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vs-code-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VS Code Integration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#obsidian-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Obsidian Integration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api-compatible-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        API-Compatible Services
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Troubleshooting
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Troubleshooting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-issues-and-solutions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Issues and Solutions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getting-help" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Getting Help
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#academic-use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Academic Use Cases
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Academic Use Cases">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#literature-review-assistance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Literature Review Assistance
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grant-writing-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Grant Writing Support
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#teaching-assistant" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Teaching Assistant
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-analysis-helper" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Analysis Helper
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Further Resources
       
     </span>
   </a>
@@ -2062,21 +3427,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#talk-to-ollama-in-the-terminal" class="md-nav__link">
+  <a href="#related-workshop-materials" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Talk to Ollama in the Terminal
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#talk-to-ollama-in-a-jupyter-notebook" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Talk to Ollama in a Jupyter Notebook
+        Related Workshop Materials
       
     </span>
   </a>
@@ -2099,24 +3453,1350 @@
                   
 
 <h1 id="ollama">Ollama<a class="headerlink" href="#ollama" title="Permanent link">&para;</a></h1>
-<h2 id="install-ollama">Install Ollama<a class="headerlink" href="#install-ollama" title="Permanent link">&para;</a></h2>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>curl -fsSL https://ollama.com/install.sh | sh
+<p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+<h2 id="what-is-ollama">What is Ollama?<a class="headerlink" href="#what-is-ollama" title="Permanent link">&para;</a></h2>
+<p><a href="https://ollama.com/" target="_blank">Ollama</a> is an open-source tool that makes it simple to run large language models (LLMs) locally on your own computer. Think of it as a "Docker for AI models" - it handles all the complexity of downloading, configuring, and running AI models so you can focus on using them.</p>
+<p><strong>Why Run AI Models Locally?</strong></p>
+<table>
+<thead>
+<tr>
+<th>Benefit</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Privacy</strong></td>
+<td>Your data never leaves your computer - ideal for sensitive research, patient data, or proprietary information</td>
+</tr>
+<tr>
+<td><strong>No API Costs</strong></td>
+<td>After initial setup, unlimited usage with no per-token charges</td>
+</tr>
+<tr>
+<td><strong>Offline Access</strong></td>
+<td>Work without internet connectivity once models are downloaded</td>
+</tr>
+<tr>
+<td><strong>Customization</strong></td>
+<td>Fine-tune models, adjust parameters, and create custom configurations</td>
+</tr>
+<tr>
+<td><strong>No Rate Limits</strong></td>
+<td>Generate as much content as your hardware can handle</td>
+</tr>
+<tr>
+<td><strong>Reproducibility</strong></td>
+<td>Lock down specific model versions for reproducible research</td>
+</tr>
+</tbody>
+</table>
+<p><strong>When to Use Ollama vs. Cloud Services:</strong></p>
+<ul>
+<li><strong>Use Ollama</strong> when: privacy is paramount, you have adequate hardware, you need offline access, or you want to experiment freely without cost concerns</li>
+<li><strong>Use Cloud Services</strong> (ChatGPT, Claude, etc.) when: you need the most capable models, lack powerful hardware, or need multimodal capabilities like vision</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Hardware Requirements</p>
+<p>Running local models requires computational resources. As a general guideline:</p>
+<ul>
+<li><strong>Small models (1-3B parameters):</strong> 8GB RAM minimum, runs on most modern laptops</li>
+<li><strong>Medium models (7-8B parameters):</strong> 16GB RAM recommended, GPU acceleration helpful</li>
+<li><strong>Large models (13B+ parameters):</strong> 32GB+ RAM or dedicated GPU with 8GB+ VRAM</li>
+</ul>
+<p>Apple Silicon Macs (M1/M2/M3/M4) are particularly well-suited for local AI due to unified memory architecture.</p>
+</div>
+<h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
+<h3 id="macos">macOS<a class="headerlink" href="#macos" title="Permanent link">&para;</a></h3>
+<p><strong>Option 1: Download the App (Recommended)</strong></p>
+<ol>
+<li>Visit <a href="https://ollama.com/download" target="_blank">ollama.com/download</a></li>
+<li>Download the macOS installer</li>
+<li>Open the downloaded file and drag Ollama to your Applications folder</li>
+<li>Launch Ollama from Applications - it will appear as a llama icon in your menu bar</li>
+<li>The Ollama service now runs in the background</li>
+</ol>
+<p><strong>Option 2: Homebrew</strong></p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>brew<span class="w"> </span>install<span class="w"> </span>ollama
 </span></code></pre></div>
-<h2 id="run-ollama">Run Ollama<a class="headerlink" href="#run-ollama" title="Permanent link">&para;</a></h2>
-<p>Pick a model:</p>
-<p><a href="https://ollama.com/library" target="_blank">https://ollama.com/library</a></p>
-<p>The smallest distilled model:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>ollama run deepseek-r1:1.5b
+<p>After installation, start the Ollama service:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>ollama<span class="w"> </span>serve
 </span></code></pre></div>
-<p>Let's use a bigger model, <code>DeepSeek-R1-Distill-Llama-8B</code> </p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>ollama run deepseek-r1:8b
+<h3 id="linux">Linux<a class="headerlink" href="#linux" title="Permanent link">&para;</a></h3>
+<p><strong>One-Line Install Script:</strong></p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://ollama.com/install.sh<span class="w"> </span><span class="p">|</span><span class="w"> </span>sh
 </span></code></pre></div>
-<h2 id="talk-to-ollama-in-the-terminal">Talk to Ollama in the Terminal<a class="headerlink" href="#talk-to-ollama-in-the-terminal" title="Permanent link">&para;</a></h2>
-<p>Once the program starts running, you can access it from the terminal. </p>
-<h2 id="talk-to-ollama-in-a-jupyter-notebook">Talk to Ollama in a Jupyter Notebook<a class="headerlink" href="#talk-to-ollama-in-a-jupyter-notebook" title="Permanent link">&para;</a></h2>
-<p>Open a Notebook using the Pytorch kernel</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>import ollama
+<p>This script:</p>
+<ul>
+<li>Detects your Linux distribution (Ubuntu, Debian, Fedora, CentOS, Arch, etc.)</li>
+<li>Installs Ollama to <code>/usr/local/bin</code></li>
+<li>Sets up a systemd service for automatic startup</li>
+<li>Configures GPU support if NVIDIA drivers are detected</li>
+</ul>
+<p><strong>Manual Installation (Alternative):</strong></p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># Download the binary</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>curl<span class="w"> </span>-L<span class="w"> </span>https://ollama.com/download/ollama-linux-amd64<span class="w"> </span>-o<span class="w"> </span>ollama
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="c1"># Make it executable</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>chmod<span class="w"> </span>+x<span class="w"> </span>ollama
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="c1"># Move to system path</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>sudo<span class="w"> </span>mv<span class="w"> </span>ollama<span class="w"> </span>/usr/local/bin/
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="c1"># Start the service</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>ollama<span class="w"> </span>serve
 </span></code></pre></div>
+<p><strong>Start Ollama on Boot:</strong></p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1"># Enable the systemd service</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>ollama
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="c1"># Start the service now</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>ollama
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="c1"># Check service status</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>status<span class="w"> </span>ollama
+</span></code></pre></div>
+<h3 id="windows">Windows<a class="headerlink" href="#windows" title="Permanent link">&para;</a></h3>
+<p><strong>Option 1: Windows Installer (Recommended)</strong></p>
+<ol>
+<li>Visit <a href="https://ollama.com/download" target="_blank">ollama.com/download</a></li>
+<li>Download the Windows installer (<code>.exe</code>)</li>
+<li>Run the installer and follow the prompts</li>
+<li>Ollama will start automatically and appear in the system tray</li>
+</ol>
+<p><strong>Option 2: Windows Subsystem for Linux (WSL)</strong></p>
+<p>If you prefer a Linux-like environment on Windows:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1"># First, ensure WSL2 is installed and updated</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>wsl<span class="w"> </span>--install
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="c1"># Then in your WSL terminal:</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://ollama.com/install.sh<span class="w"> </span><span class="p">|</span><span class="w"> </span>sh
+</span></code></pre></div>
+<h3 id="docker">Docker<a class="headerlink" href="#docker" title="Permanent link">&para;</a></h3>
+<p>For containerized deployments or server environments:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1"># Pull and run the Ollama container</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>docker<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span>-v<span class="w"> </span>ollama:/root/.ollama<span class="w"> </span>-p<span class="w"> </span><span class="m">11434</span>:11434<span class="w"> </span>--name<span class="w"> </span>ollama<span class="w"> </span>ollama/ollama
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="c1"># With NVIDIA GPU support</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>docker<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span>--gpus<span class="o">=</span>all<span class="w"> </span>-v<span class="w"> </span>ollama:/root/.ollama<span class="w"> </span>-p<span class="w"> </span><span class="m">11434</span>:11434<span class="w"> </span>--name<span class="w"> </span>ollama<span class="w"> </span>ollama/ollama
+</span></code></pre></div>
+<h3 id="verify-installation">Verify Installation<a class="headerlink" href="#verify-installation" title="Permanent link">&para;</a></h3>
+<p>After installation, verify Ollama is working:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1"># Check Ollama version</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>ollama<span class="w"> </span>--version
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="c1"># List available models (will be empty initially)</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>ollama<span class="w"> </span>list
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="c1"># Test the API endpoint</span>
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>curl<span class="w"> </span>http://localhost:11434/api/tags
+</span></code></pre></div>
+<h2 id="downloading-and-managing-models">Downloading and Managing Models<a class="headerlink" href="#downloading-and-managing-models" title="Permanent link">&para;</a></h2>
+<h3 id="the-model-library">The Model Library<a class="headerlink" href="#the-model-library" title="Permanent link">&para;</a></h3>
+<p>Ollama maintains a curated library of optimized models at <a href="https://ollama.com/library" target="_blank">ollama.com/library</a>. These models are:</p>
+<ul>
+<li>Pre-quantized for efficient memory usage</li>
+<li>Tested for compatibility with Ollama</li>
+<li>Available in multiple size variants</li>
+<li>Automatically configured for optimal performance</li>
+</ul>
+<h3 id="downloading-models">Downloading Models<a class="headerlink" href="#downloading-models" title="Permanent link">&para;</a></h3>
+<p><strong>Basic Download:</strong></p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1"># Download a model (happens automatically when you run it)</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>ollama<span class="w"> </span>pull<span class="w"> </span>llama3.2
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="c1"># Or run directly - it will download if not present</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>ollama<span class="w"> </span>run<span class="w"> </span>llama3.2
+</span></code></pre></div>
+<p><strong>Specify Model Size/Variant:</strong></p>
+<p>Models often come in multiple sizes. Use tags to select:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c1"># Llama 3.2 variants</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>ollama<span class="w"> </span>pull<span class="w"> </span>llama3.2:1b<span class="w">      </span><span class="c1"># 1 billion parameters (~1GB)</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>ollama<span class="w"> </span>pull<span class="w"> </span>llama3.2:3b<span class="w">      </span><span class="c1"># 3 billion parameters (~2GB)</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>ollama<span class="w"> </span>pull<span class="w"> </span>llama3.2<span class="w">         </span><span class="c1"># Default (usually the balanced option)</span>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="c1"># Qwen 2.5 variants</span>
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>ollama<span class="w"> </span>pull<span class="w"> </span>qwen2.5:0.5b<span class="w">     </span><span class="c1"># Tiny - very fast</span>
+</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>ollama<span class="w"> </span>pull<span class="w"> </span>qwen2.5:1.5b<span class="w">     </span><span class="c1"># Small</span>
+</span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>ollama<span class="w"> </span>pull<span class="w"> </span>qwen2.5:3b<span class="w">       </span><span class="c1"># Medium</span>
+</span><span id="__span-9-10"><a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>ollama<span class="w"> </span>pull<span class="w"> </span>qwen2.5:7b<span class="w">       </span><span class="c1"># Large - best quality</span>
+</span><span id="__span-9-11"><a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>ollama<span class="w"> </span>pull<span class="w"> </span>qwen2.5:14b<span class="w">      </span><span class="c1"># Extra large</span>
+</span><span id="__span-9-12"><a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>ollama<span class="w"> </span>pull<span class="w"> </span>qwen2.5:32b<span class="w">      </span><span class="c1"># Very large - requires significant RAM/VRAM</span>
+</span><span id="__span-9-13"><a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a>ollama<span class="w"> </span>pull<span class="w"> </span>qwen2.5:72b<span class="w">      </span><span class="c1"># Massive - requires high-end GPU</span>
+</span><span id="__span-9-14"><a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a>
+</span><span id="__span-9-15"><a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a><span class="c1"># DeepSeek R1 distilled models</span>
+</span><span id="__span-9-16"><a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a>ollama<span class="w"> </span>pull<span class="w"> </span>deepseek-r1:1.5b<span class="w"> </span><span class="c1"># Smallest reasoning model</span>
+</span><span id="__span-9-17"><a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a>ollama<span class="w"> </span>pull<span class="w"> </span>deepseek-r1:7b<span class="w">   </span><span class="c1"># Good balance</span>
+</span><span id="__span-9-18"><a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a>ollama<span class="w"> </span>pull<span class="w"> </span>deepseek-r1:8b<span class="w">   </span><span class="c1"># Llama-based distillation</span>
+</span><span id="__span-9-19"><a id="__codelineno-9-19" name="__codelineno-9-19" href="#__codelineno-9-19"></a>ollama<span class="w"> </span>pull<span class="w"> </span>deepseek-r1:14b<span class="w">  </span><span class="c1"># Higher quality</span>
+</span><span id="__span-9-20"><a id="__codelineno-9-20" name="__codelineno-9-20" href="#__codelineno-9-20"></a>ollama<span class="w"> </span>pull<span class="w"> </span>deepseek-r1:32b<span class="w">  </span><span class="c1"># Best distilled quality</span>
+</span><span id="__span-9-21"><a id="__codelineno-9-21" name="__codelineno-9-21" href="#__codelineno-9-21"></a>ollama<span class="w"> </span>pull<span class="w"> </span>deepseek-r1:70b<span class="w">  </span><span class="c1"># Full-size distillation</span>
+</span></code></pre></div>
+<h3 id="managing-downloaded-models">Managing Downloaded Models<a class="headerlink" href="#managing-downloaded-models" title="Permanent link">&para;</a></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="c1"># List all downloaded models</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>ollama<span class="w"> </span>list
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="c1"># Example output:</span>
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="c1"># NAME              ID              SIZE      MODIFIED</span>
+</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="c1"># llama3.2:latest   a3e4c7e8d9f0    2.0 GB    2 hours ago</span>
+</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="c1"># qwen2.5:7b        b5f6c8d9e0a1    4.4 GB    1 day ago</span>
+</span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a><span class="c1"># deepseek-r1:8b    c7d8e9f0a1b2    4.9 GB    3 days ago</span>
+</span><span id="__span-10-9"><a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>
+</span><span id="__span-10-10"><a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a><span class="c1"># Show detailed information about a model</span>
+</span><span id="__span-10-11"><a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a>ollama<span class="w"> </span>show<span class="w"> </span>llama3.2
+</span><span id="__span-10-12"><a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a>
+</span><span id="__span-10-13"><a id="__codelineno-10-13" name="__codelineno-10-13" href="#__codelineno-10-13"></a><span class="c1"># Delete a model to free disk space</span>
+</span><span id="__span-10-14"><a id="__codelineno-10-14" name="__codelineno-10-14" href="#__codelineno-10-14"></a>ollama<span class="w"> </span>rm<span class="w"> </span>llama3.2:1b
+</span><span id="__span-10-15"><a id="__codelineno-10-15" name="__codelineno-10-15" href="#__codelineno-10-15"></a>
+</span><span id="__span-10-16"><a id="__codelineno-10-16" name="__codelineno-10-16" href="#__codelineno-10-16"></a><span class="c1"># Copy a model (useful for creating variants)</span>
+</span><span id="__span-10-17"><a id="__codelineno-10-17" name="__codelineno-10-17" href="#__codelineno-10-17"></a>ollama<span class="w"> </span>cp<span class="w"> </span>llama3.2<span class="w"> </span>my-llama
+</span></code></pre></div>
+<h3 id="model-storage-location">Model Storage Location<a class="headerlink" href="#model-storage-location" title="Permanent link">&para;</a></h3>
+<p>Models are stored in:</p>
+<ul>
+<li><strong>macOS:</strong> <code>~/.ollama/models</code></li>
+<li><strong>Linux:</strong> <code>~/.ollama/models</code> or <code>/usr/share/ollama/.ollama/models</code></li>
+<li><strong>Windows:</strong> <code>C:\Users\&lt;username&gt;\.ollama\models</code></li>
+</ul>
+<p>To change the storage location, set the <code>OLLAMA_MODELS</code> environment variable:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="c1"># Linux/macOS</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="nb">export</span><span class="w"> </span><span class="nv">OLLAMA_MODELS</span><span class="o">=</span>/path/to/your/models
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="c1"># Windows PowerShell</span>
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="nv">$env</span>:OLLAMA_MODELS<span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;D:\ollama\models&quot;</span>
+</span></code></pre></div>
+<h2 id="running-models">Running Models<a class="headerlink" href="#running-models" title="Permanent link">&para;</a></h2>
+<h3 id="interactive-chat">Interactive Chat<a class="headerlink" href="#interactive-chat" title="Permanent link">&para;</a></h3>
+<p>The simplest way to use Ollama is through interactive chat:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>ollama<span class="w"> </span>run<span class="w"> </span>llama3.2
+</span></code></pre></div>
+<p>This opens an interactive session where you can type prompts and receive responses. Use <code>/bye</code> or Ctrl+C to exit.</p>
+<p><strong>Chat Session Commands:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/bye</code></td>
+<td>Exit the chat session</td>
+</tr>
+<tr>
+<td><code>/clear</code></td>
+<td>Clear conversation history</td>
+</tr>
+<tr>
+<td><code>/set parameter value</code></td>
+<td>Change model parameters</td>
+</tr>
+<tr>
+<td><code>/show info</code></td>
+<td>Display model information</td>
+</tr>
+<tr>
+<td><code>/show license</code></td>
+<td>Show model license</td>
+</tr>
+<tr>
+<td><code>/load &lt;model&gt;</code></td>
+<td>Load a different model</td>
+</tr>
+<tr>
+<td><code>/save &lt;name&gt;</code></td>
+<td>Save current session</td>
+</tr>
+</tbody>
+</table>
+<h3 id="single-prompt-execution">Single-Prompt Execution<a class="headerlink" href="#single-prompt-execution" title="Permanent link">&para;</a></h3>
+<p>For scripting and automation, pass the prompt directly:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="c1"># Single prompt with immediate response</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>ollama<span class="w"> </span>run<span class="w"> </span>llama3.2<span class="w"> </span><span class="s2">&quot;What is photosynthesis?&quot;</span>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="c1"># Pipe input from a file</span>
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>cat<span class="w"> </span>essay.txt<span class="w"> </span><span class="p">|</span><span class="w"> </span>ollama<span class="w"> </span>run<span class="w"> </span>llama3.2<span class="w"> </span><span class="s2">&quot;Summarize this text:&quot;</span>
+</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>
+</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="c1"># Save output to a file</span>
+</span><span id="__span-13-8"><a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>ollama<span class="w"> </span>run<span class="w"> </span>llama3.2<span class="w"> </span><span class="s2">&quot;Write a haiku about machine learning&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>haiku.txt
+</span></code></pre></div>
+<h3 id="model-parameters">Model Parameters<a class="headerlink" href="#model-parameters" title="Permanent link">&para;</a></h3>
+<p>Adjust model behavior with parameters:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="c1"># In interactive mode</span>
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>/set<span class="w"> </span>temperature<span class="w"> </span><span class="m">0</span>.7
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>/set<span class="w"> </span>num_predict<span class="w"> </span><span class="m">500</span>
+</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>
+</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="c1"># Or set when starting</span>
+</span><span id="__span-14-6"><a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>ollama<span class="w"> </span>run<span class="w"> </span>llama3.2<span class="w"> </span>--verbose
+</span></code></pre></div>
+<p><strong>Common Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Default</th>
+<th>Range</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>temperature</code></td>
+<td>Creativity/randomness</td>
+<td>0.8</td>
+<td>0.0-2.0</td>
+</tr>
+<tr>
+<td><code>top_p</code></td>
+<td>Nucleus sampling threshold</td>
+<td>0.9</td>
+<td>0.0-1.0</td>
+</tr>
+<tr>
+<td><code>top_k</code></td>
+<td>Limit vocabulary sampling</td>
+<td>40</td>
+<td>1-100</td>
+</tr>
+<tr>
+<td><code>num_predict</code></td>
+<td>Maximum tokens to generate</td>
+<td>128</td>
+<td>-1 (unlimited) to n</td>
+</tr>
+<tr>
+<td><code>num_ctx</code></td>
+<td>Context window size</td>
+<td>2048</td>
+<td>Model-dependent</td>
+</tr>
+<tr>
+<td><code>repeat_penalty</code></td>
+<td>Penalty for repetition</td>
+<td>1.1</td>
+<td>0.0-2.0</td>
+</tr>
+<tr>
+<td><code>seed</code></td>
+<td>Random seed for reproducibility</td>
+<td>Random</td>
+<td>Any integer</td>
+</tr>
+</tbody>
+</table>
+<h3 id="multiline-input">Multiline Input<a class="headerlink" href="#multiline-input" title="Permanent link">&para;</a></h3>
+<p>For complex prompts, use multiline input:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>ollama<span class="w"> </span>run<span class="w"> </span>llama3.2<span class="w"> </span><span class="s2">&quot;&quot;&quot;</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="s2">You are an expert historian. Please analyze the following event</span>
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="s2">and provide context about its significance:</span>
+</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>
+</span><span id="__span-15-5"><a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a><span class="s2">The signing of the Treaty of Westphalia in 1648.</span>
+</span><span id="__span-15-6"><a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a>
+</span><span id="__span-15-7"><a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a><span class="s2">Include:</span>
+</span><span id="__span-15-8"><a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a><span class="s2">1. Historical context</span>
+</span><span id="__span-15-9"><a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a><span class="s2">2. Key provisions</span>
+</span><span id="__span-15-10"><a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a><span class="s2">3. Long-term impact on international relations</span>
+</span><span id="__span-15-11"><a id="__codelineno-15-11" name="__codelineno-15-11" href="#__codelineno-15-11"></a><span class="s2">&quot;&quot;&quot;</span>
+</span></code></pre></div>
+<h2 id="using-the-ollama-api">Using the Ollama API<a class="headerlink" href="#using-the-ollama-api" title="Permanent link">&para;</a></h2>
+<p>Ollama provides a REST API that enables integration with other applications. The API runs on <code>http://localhost:11434</code> by default.</p>
+<h3 id="generate-completions">Generate Completions<a class="headerlink" href="#generate-completions" title="Permanent link">&para;</a></h3>
+<p><strong>Basic Generation:</strong></p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>curl<span class="w"> </span>http://localhost:11434/api/generate<span class="w"> </span>-d<span class="w"> </span><span class="s1">&#39;{</span>
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="s1">  &quot;model&quot;: &quot;llama3.2&quot;,</span>
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="s1">  &quot;prompt&quot;: &quot;Explain quantum computing in simple terms&quot;,</span>
+</span><span id="__span-16-4"><a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="s1">  &quot;stream&quot;: false</span>
+</span><span id="__span-16-5"><a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="s1">}&#39;</span>
+</span></code></pre></div>
+<p><strong>With Parameters:</strong></p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>curl<span class="w"> </span>http://localhost:11434/api/generate<span class="w"> </span>-d<span class="w"> </span><span class="s1">&#39;{</span>
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="s1">  &quot;model&quot;: &quot;llama3.2&quot;,</span>
+</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="s1">  &quot;prompt&quot;: &quot;Write a creative story about a robot learning to paint&quot;,</span>
+</span><span id="__span-17-4"><a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a><span class="s1">  &quot;stream&quot;: false,</span>
+</span><span id="__span-17-5"><a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a><span class="s1">  &quot;options&quot;: {</span>
+</span><span id="__span-17-6"><a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a><span class="s1">    &quot;temperature&quot;: 0.9,</span>
+</span><span id="__span-17-7"><a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a><span class="s1">    &quot;num_predict&quot;: 500,</span>
+</span><span id="__span-17-8"><a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a><span class="s1">    &quot;top_p&quot;: 0.95</span>
+</span><span id="__span-17-9"><a id="__codelineno-17-9" name="__codelineno-17-9" href="#__codelineno-17-9"></a><span class="s1">  }</span>
+</span><span id="__span-17-10"><a id="__codelineno-17-10" name="__codelineno-17-10" href="#__codelineno-17-10"></a><span class="s1">}&#39;</span>
+</span></code></pre></div>
+<h3 id="chat-api-conversational">Chat API (Conversational)<a class="headerlink" href="#chat-api-conversational" title="Permanent link">&para;</a></h3>
+<p>For multi-turn conversations:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>curl<span class="w"> </span>http://localhost:11434/api/chat<span class="w"> </span>-d<span class="w"> </span><span class="s1">&#39;{</span>
+</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="s1">  &quot;model&quot;: &quot;llama3.2&quot;,</span>
+</span><span id="__span-18-3"><a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="s1">  &quot;messages&quot;: [</span>
+</span><span id="__span-18-4"><a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a><span class="s1">    {&quot;role&quot;: &quot;system&quot;, &quot;content&quot;: &quot;You are a helpful research assistant.&quot;},</span>
+</span><span id="__span-18-5"><a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a><span class="s1">    {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;What are the main causes of climate change?&quot;},</span>
+</span><span id="__span-18-6"><a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a><span class="s1">    {&quot;role&quot;: &quot;assistant&quot;, &quot;content&quot;: &quot;The main causes include greenhouse gas emissions...&quot;},</span>
+</span><span id="__span-18-7"><a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a><span class="s1">    {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;How can individuals help reduce these emissions?&quot;}</span>
+</span><span id="__span-18-8"><a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a><span class="s1">  ],</span>
+</span><span id="__span-18-9"><a id="__codelineno-18-9" name="__codelineno-18-9" href="#__codelineno-18-9"></a><span class="s1">  &quot;stream&quot;: false</span>
+</span><span id="__span-18-10"><a id="__codelineno-18-10" name="__codelineno-18-10" href="#__codelineno-18-10"></a><span class="s1">}&#39;</span>
+</span></code></pre></div>
+<h3 id="streaming-responses">Streaming Responses<a class="headerlink" href="#streaming-responses" title="Permanent link">&para;</a></h3>
+<p>For real-time output, enable streaming:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>curl<span class="w"> </span>http://localhost:11434/api/generate<span class="w"> </span>-d<span class="w"> </span><span class="s1">&#39;{</span>
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="s1">  &quot;model&quot;: &quot;llama3.2&quot;,</span>
+</span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="s1">  &quot;prompt&quot;: &quot;Write a detailed explanation of neural networks&quot;,</span>
+</span><span id="__span-19-4"><a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a><span class="s1">  &quot;stream&quot;: true</span>
+</span><span id="__span-19-5"><a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a><span class="s1">}&#39;</span>
+</span></code></pre></div>
+<p>Each response chunk is a JSON object. Parse them line by line for real-time display.</p>
+<h3 id="api-endpoints-reference">API Endpoints Reference<a class="headerlink" href="#api-endpoints-reference" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Endpoint</th>
+<th>Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/api/generate</code></td>
+<td>POST</td>
+<td>Generate text completion</td>
+</tr>
+<tr>
+<td><code>/api/chat</code></td>
+<td>POST</td>
+<td>Chat with conversation history</td>
+</tr>
+<tr>
+<td><code>/api/tags</code></td>
+<td>GET</td>
+<td>List available models</td>
+</tr>
+<tr>
+<td><code>/api/show</code></td>
+<td>POST</td>
+<td>Show model information</td>
+</tr>
+<tr>
+<td><code>/api/pull</code></td>
+<td>POST</td>
+<td>Download a model</td>
+</tr>
+<tr>
+<td><code>/api/delete</code></td>
+<td>DELETE</td>
+<td>Remove a model</td>
+</tr>
+<tr>
+<td><code>/api/copy</code></td>
+<td>POST</td>
+<td>Copy a model</td>
+</tr>
+<tr>
+<td><code>/api/embeddings</code></td>
+<td>POST</td>
+<td>Generate embeddings</td>
+</tr>
+</tbody>
+</table>
+<h2 id="python-integration">Python Integration<a class="headerlink" href="#python-integration" title="Permanent link">&para;</a></h2>
+<h3 id="using-the-official-ollama-python-library">Using the Official Ollama Python Library<a class="headerlink" href="#using-the-official-ollama-python-library" title="Permanent link">&para;</a></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>pip<span class="w"> </span>install<span class="w"> </span>ollama
+</span></code></pre></div>
+<p><strong>Basic Usage:</strong></p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">ollama</span>
+</span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>
+</span><span id="__span-21-3"><a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a><span class="c1"># Simple generation</span>
+</span><span id="__span-21-4"><a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a><span class="n">response</span> <span class="o">=</span> <span class="n">ollama</span><span class="o">.</span><span class="n">generate</span><span class="p">(</span>
+</span><span id="__span-21-5"><a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a>    <span class="n">model</span><span class="o">=</span><span class="s1">&#39;llama3.2&#39;</span><span class="p">,</span>
+</span><span id="__span-21-6"><a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a>    <span class="n">prompt</span><span class="o">=</span><span class="s1">&#39;What is machine learning?&#39;</span>
+</span><span id="__span-21-7"><a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a><span class="p">)</span>
+</span><span id="__span-21-8"><a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a><span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="p">[</span><span class="s1">&#39;response&#39;</span><span class="p">])</span>
+</span></code></pre></div>
+<p><strong>Chat Conversation:</strong></p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">ollama</span>
+</span><span id="__span-22-2"><a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>
+</span><span id="__span-22-3"><a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a><span class="c1"># Multi-turn chat</span>
+</span><span id="__span-22-4"><a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a><span class="n">messages</span> <span class="o">=</span> <span class="p">[</span>
+</span><span id="__span-22-5"><a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a>    <span class="p">{</span><span class="s1">&#39;role&#39;</span><span class="p">:</span> <span class="s1">&#39;system&#39;</span><span class="p">,</span> <span class="s1">&#39;content&#39;</span><span class="p">:</span> <span class="s1">&#39;You are a helpful coding assistant.&#39;</span><span class="p">},</span>
+</span><span id="__span-22-6"><a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a>    <span class="p">{</span><span class="s1">&#39;role&#39;</span><span class="p">:</span> <span class="s1">&#39;user&#39;</span><span class="p">,</span> <span class="s1">&#39;content&#39;</span><span class="p">:</span> <span class="s1">&#39;Write a Python function to calculate factorial&#39;</span><span class="p">}</span>
+</span><span id="__span-22-7"><a id="__codelineno-22-7" name="__codelineno-22-7" href="#__codelineno-22-7"></a><span class="p">]</span>
+</span><span id="__span-22-8"><a id="__codelineno-22-8" name="__codelineno-22-8" href="#__codelineno-22-8"></a>
+</span><span id="__span-22-9"><a id="__codelineno-22-9" name="__codelineno-22-9" href="#__codelineno-22-9"></a><span class="n">response</span> <span class="o">=</span> <span class="n">ollama</span><span class="o">.</span><span class="n">chat</span><span class="p">(</span>
+</span><span id="__span-22-10"><a id="__codelineno-22-10" name="__codelineno-22-10" href="#__codelineno-22-10"></a>    <span class="n">model</span><span class="o">=</span><span class="s1">&#39;llama3.2&#39;</span><span class="p">,</span>
+</span><span id="__span-22-11"><a id="__codelineno-22-11" name="__codelineno-22-11" href="#__codelineno-22-11"></a>    <span class="n">messages</span><span class="o">=</span><span class="n">messages</span>
+</span><span id="__span-22-12"><a id="__codelineno-22-12" name="__codelineno-22-12" href="#__codelineno-22-12"></a><span class="p">)</span>
+</span><span id="__span-22-13"><a id="__codelineno-22-13" name="__codelineno-22-13" href="#__codelineno-22-13"></a>
+</span><span id="__span-22-14"><a id="__codelineno-22-14" name="__codelineno-22-14" href="#__codelineno-22-14"></a><span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;content&#39;</span><span class="p">])</span>
+</span></code></pre></div>
+<p><strong>Streaming Responses:</strong></p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">ollama</span>
+</span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>
+</span><span id="__span-23-3"><a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a><span class="c1"># Stream responses for better UX</span>
+</span><span id="__span-23-4"><a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a><span class="n">stream</span> <span class="o">=</span> <span class="n">ollama</span><span class="o">.</span><span class="n">chat</span><span class="p">(</span>
+</span><span id="__span-23-5"><a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a>    <span class="n">model</span><span class="o">=</span><span class="s1">&#39;llama3.2&#39;</span><span class="p">,</span>
+</span><span id="__span-23-6"><a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a>    <span class="n">messages</span><span class="o">=</span><span class="p">[{</span><span class="s1">&#39;role&#39;</span><span class="p">:</span> <span class="s1">&#39;user&#39;</span><span class="p">,</span> <span class="s1">&#39;content&#39;</span><span class="p">:</span> <span class="s1">&#39;Explain the water cycle&#39;</span><span class="p">}],</span>
+</span><span id="__span-23-7"><a id="__codelineno-23-7" name="__codelineno-23-7" href="#__codelineno-23-7"></a>    <span class="n">stream</span><span class="o">=</span><span class="kc">True</span>
+</span><span id="__span-23-8"><a id="__codelineno-23-8" name="__codelineno-23-8" href="#__codelineno-23-8"></a><span class="p">)</span>
+</span><span id="__span-23-9"><a id="__codelineno-23-9" name="__codelineno-23-9" href="#__codelineno-23-9"></a>
+</span><span id="__span-23-10"><a id="__codelineno-23-10" name="__codelineno-23-10" href="#__codelineno-23-10"></a><span class="k">for</span> <span class="n">chunk</span> <span class="ow">in</span> <span class="n">stream</span><span class="p">:</span>
+</span><span id="__span-23-11"><a id="__codelineno-23-11" name="__codelineno-23-11" href="#__codelineno-23-11"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">chunk</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;content&#39;</span><span class="p">],</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">flush</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></code></pre></div>
+<p><strong>Generate Embeddings:</strong></p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">ollama</span>
+</span><span id="__span-24-2"><a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>
+</span><span id="__span-24-3"><a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a><span class="c1"># Generate embeddings for semantic search or RAG</span>
+</span><span id="__span-24-4"><a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a><span class="n">embedding</span> <span class="o">=</span> <span class="n">ollama</span><span class="o">.</span><span class="n">embeddings</span><span class="p">(</span>
+</span><span id="__span-24-5"><a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a>    <span class="n">model</span><span class="o">=</span><span class="s1">&#39;nomic-embed-text&#39;</span><span class="p">,</span>  <span class="c1"># or any embedding model</span>
+</span><span id="__span-24-6"><a id="__codelineno-24-6" name="__codelineno-24-6" href="#__codelineno-24-6"></a>    <span class="n">prompt</span><span class="o">=</span><span class="s1">&#39;The quick brown fox jumps over the lazy dog&#39;</span>
+</span><span id="__span-24-7"><a id="__codelineno-24-7" name="__codelineno-24-7" href="#__codelineno-24-7"></a><span class="p">)</span>
+</span><span id="__span-24-8"><a id="__codelineno-24-8" name="__codelineno-24-8" href="#__codelineno-24-8"></a>
+</span><span id="__span-24-9"><a id="__codelineno-24-9" name="__codelineno-24-9" href="#__codelineno-24-9"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Embedding dimension: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">embedding</span><span class="p">[</span><span class="s1">&#39;embedding&#39;</span><span class="p">])</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<h3 id="using-with-langchain">Using with LangChain<a class="headerlink" href="#using-with-langchain" title="Permanent link">&para;</a></h3>
+<p><a href="https://langchain.com/" target="_blank">LangChain</a> provides a powerful framework for building LLM applications:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>pip<span class="w"> </span>install<span class="w"> </span>langchain<span class="w"> </span>langchain-ollama
+</span></code></pre></div>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">langchain_ollama</span><span class="w"> </span><span class="kn">import</span> <span class="n">OllamaLLM</span>
+</span><span id="__span-26-2"><a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a>
+</span><span id="__span-26-3"><a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a><span class="c1"># Initialize the model</span>
+</span><span id="__span-26-4"><a id="__codelineno-26-4" name="__codelineno-26-4" href="#__codelineno-26-4"></a><span class="n">llm</span> <span class="o">=</span> <span class="n">OllamaLLM</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="s2">&quot;llama3.2&quot;</span><span class="p">)</span>
+</span><span id="__span-26-5"><a id="__codelineno-26-5" name="__codelineno-26-5" href="#__codelineno-26-5"></a>
+</span><span id="__span-26-6"><a id="__codelineno-26-6" name="__codelineno-26-6" href="#__codelineno-26-6"></a><span class="c1"># Simple invocation</span>
+</span><span id="__span-26-7"><a id="__codelineno-26-7" name="__codelineno-26-7" href="#__codelineno-26-7"></a><span class="n">response</span> <span class="o">=</span> <span class="n">llm</span><span class="o">.</span><span class="n">invoke</span><span class="p">(</span><span class="s2">&quot;What are the benefits of exercise?&quot;</span><span class="p">)</span>
+</span><span id="__span-26-8"><a id="__codelineno-26-8" name="__codelineno-26-8" href="#__codelineno-26-8"></a><span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
+</span></code></pre></div>
+<p><strong>Chat Model with History:</strong></p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">langchain_ollama</span><span class="w"> </span><span class="kn">import</span> <span class="n">ChatOllama</span>
+</span><span id="__span-27-2"><a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">langchain_core.messages</span><span class="w"> </span><span class="kn">import</span> <span class="n">HumanMessage</span><span class="p">,</span> <span class="n">SystemMessage</span>
+</span><span id="__span-27-3"><a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a>
+</span><span id="__span-27-4"><a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a><span class="n">chat</span> <span class="o">=</span> <span class="n">ChatOllama</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="s2">&quot;llama3.2&quot;</span><span class="p">,</span> <span class="n">temperature</span><span class="o">=</span><span class="mf">0.7</span><span class="p">)</span>
+</span><span id="__span-27-5"><a id="__codelineno-27-5" name="__codelineno-27-5" href="#__codelineno-27-5"></a>
+</span><span id="__span-27-6"><a id="__codelineno-27-6" name="__codelineno-27-6" href="#__codelineno-27-6"></a><span class="n">messages</span> <span class="o">=</span> <span class="p">[</span>
+</span><span id="__span-27-7"><a id="__codelineno-27-7" name="__codelineno-27-7" href="#__codelineno-27-7"></a>    <span class="n">SystemMessage</span><span class="p">(</span><span class="n">content</span><span class="o">=</span><span class="s2">&quot;You are a research assistant specializing in biology.&quot;</span><span class="p">),</span>
+</span><span id="__span-27-8"><a id="__codelineno-27-8" name="__codelineno-27-8" href="#__codelineno-27-8"></a>    <span class="n">HumanMessage</span><span class="p">(</span><span class="n">content</span><span class="o">=</span><span class="s2">&quot;Explain CRISPR gene editing.&quot;</span><span class="p">)</span>
+</span><span id="__span-27-9"><a id="__codelineno-27-9" name="__codelineno-27-9" href="#__codelineno-27-9"></a><span class="p">]</span>
+</span><span id="__span-27-10"><a id="__codelineno-27-10" name="__codelineno-27-10" href="#__codelineno-27-10"></a>
+</span><span id="__span-27-11"><a id="__codelineno-27-11" name="__codelineno-27-11" href="#__codelineno-27-11"></a><span class="n">response</span> <span class="o">=</span> <span class="n">chat</span><span class="o">.</span><span class="n">invoke</span><span class="p">(</span><span class="n">messages</span><span class="p">)</span>
+</span><span id="__span-27-12"><a id="__codelineno-27-12" name="__codelineno-27-12" href="#__codelineno-27-12"></a><span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
+</span></code></pre></div>
+<p><strong>Building a Simple RAG System:</strong></p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">langchain_ollama</span><span class="w"> </span><span class="kn">import</span> <span class="n">OllamaLLM</span><span class="p">,</span> <span class="n">OllamaEmbeddings</span>
+</span><span id="__span-28-2"><a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">langchain_community.vectorstores</span><span class="w"> </span><span class="kn">import</span> <span class="n">Chroma</span>
+</span><span id="__span-28-3"><a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">langchain.text_splitter</span><span class="w"> </span><span class="kn">import</span> <span class="n">RecursiveCharacterTextSplitter</span>
+</span><span id="__span-28-4"><a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a><span class="kn">from</span><span class="w"> </span><span class="nn">langchain_core.prompts</span><span class="w"> </span><span class="kn">import</span> <span class="n">ChatPromptTemplate</span>
+</span><span id="__span-28-5"><a id="__codelineno-28-5" name="__codelineno-28-5" href="#__codelineno-28-5"></a><span class="kn">from</span><span class="w"> </span><span class="nn">langchain_core.runnables</span><span class="w"> </span><span class="kn">import</span> <span class="n">RunnablePassthrough</span>
+</span><span id="__span-28-6"><a id="__codelineno-28-6" name="__codelineno-28-6" href="#__codelineno-28-6"></a>
+</span><span id="__span-28-7"><a id="__codelineno-28-7" name="__codelineno-28-7" href="#__codelineno-28-7"></a><span class="c1"># Initialize components</span>
+</span><span id="__span-28-8"><a id="__codelineno-28-8" name="__codelineno-28-8" href="#__codelineno-28-8"></a><span class="n">llm</span> <span class="o">=</span> <span class="n">OllamaLLM</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="s2">&quot;llama3.2&quot;</span><span class="p">)</span>
+</span><span id="__span-28-9"><a id="__codelineno-28-9" name="__codelineno-28-9" href="#__codelineno-28-9"></a><span class="n">embeddings</span> <span class="o">=</span> <span class="n">OllamaEmbeddings</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="s2">&quot;nomic-embed-text&quot;</span><span class="p">)</span>
+</span><span id="__span-28-10"><a id="__codelineno-28-10" name="__codelineno-28-10" href="#__codelineno-28-10"></a>
+</span><span id="__span-28-11"><a id="__codelineno-28-11" name="__codelineno-28-11" href="#__codelineno-28-11"></a><span class="c1"># Sample documents (in practice, load from files)</span>
+</span><span id="__span-28-12"><a id="__codelineno-28-12" name="__codelineno-28-12" href="#__codelineno-28-12"></a><span class="n">documents</span> <span class="o">=</span> <span class="p">[</span>
+</span><span id="__span-28-13"><a id="__codelineno-28-13" name="__codelineno-28-13" href="#__codelineno-28-13"></a>    <span class="s2">&quot;Machine learning is a subset of artificial intelligence...&quot;</span><span class="p">,</span>
+</span><span id="__span-28-14"><a id="__codelineno-28-14" name="__codelineno-28-14" href="#__codelineno-28-14"></a>    <span class="s2">&quot;Neural networks are inspired by biological neurons...&quot;</span><span class="p">,</span>
+</span><span id="__span-28-15"><a id="__codelineno-28-15" name="__codelineno-28-15" href="#__codelineno-28-15"></a>    <span class="s2">&quot;Deep learning uses multiple layers of neural networks...&quot;</span>
+</span><span id="__span-28-16"><a id="__codelineno-28-16" name="__codelineno-28-16" href="#__codelineno-28-16"></a><span class="p">]</span>
+</span><span id="__span-28-17"><a id="__codelineno-28-17" name="__codelineno-28-17" href="#__codelineno-28-17"></a>
+</span><span id="__span-28-18"><a id="__codelineno-28-18" name="__codelineno-28-18" href="#__codelineno-28-18"></a><span class="c1"># Split documents</span>
+</span><span id="__span-28-19"><a id="__codelineno-28-19" name="__codelineno-28-19" href="#__codelineno-28-19"></a><span class="n">text_splitter</span> <span class="o">=</span> <span class="n">RecursiveCharacterTextSplitter</span><span class="p">(</span><span class="n">chunk_size</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span> <span class="n">chunk_overlap</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
+</span><span id="__span-28-20"><a id="__codelineno-28-20" name="__codelineno-28-20" href="#__codelineno-28-20"></a><span class="n">splits</span> <span class="o">=</span> <span class="n">text_splitter</span><span class="o">.</span><span class="n">create_documents</span><span class="p">(</span><span class="n">documents</span><span class="p">)</span>
+</span><span id="__span-28-21"><a id="__codelineno-28-21" name="__codelineno-28-21" href="#__codelineno-28-21"></a>
+</span><span id="__span-28-22"><a id="__codelineno-28-22" name="__codelineno-28-22" href="#__codelineno-28-22"></a><span class="c1"># Create vector store</span>
+</span><span id="__span-28-23"><a id="__codelineno-28-23" name="__codelineno-28-23" href="#__codelineno-28-23"></a><span class="n">vectorstore</span> <span class="o">=</span> <span class="n">Chroma</span><span class="o">.</span><span class="n">from_documents</span><span class="p">(</span><span class="n">splits</span><span class="p">,</span> <span class="n">embeddings</span><span class="p">)</span>
+</span><span id="__span-28-24"><a id="__codelineno-28-24" name="__codelineno-28-24" href="#__codelineno-28-24"></a><span class="n">retriever</span> <span class="o">=</span> <span class="n">vectorstore</span><span class="o">.</span><span class="n">as_retriever</span><span class="p">()</span>
+</span><span id="__span-28-25"><a id="__codelineno-28-25" name="__codelineno-28-25" href="#__codelineno-28-25"></a>
+</span><span id="__span-28-26"><a id="__codelineno-28-26" name="__codelineno-28-26" href="#__codelineno-28-26"></a><span class="c1"># Create RAG chain</span>
+</span><span id="__span-28-27"><a id="__codelineno-28-27" name="__codelineno-28-27" href="#__codelineno-28-27"></a><span class="n">template</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;Answer based on the context:</span>
+</span><span id="__span-28-28"><a id="__codelineno-28-28" name="__codelineno-28-28" href="#__codelineno-28-28"></a><span class="s2">Context: </span><span class="si">{context}</span>
+</span><span id="__span-28-29"><a id="__codelineno-28-29" name="__codelineno-28-29" href="#__codelineno-28-29"></a><span class="s2">Question: </span><span class="si">{question}</span>
+</span><span id="__span-28-30"><a id="__codelineno-28-30" name="__codelineno-28-30" href="#__codelineno-28-30"></a><span class="s2">Answer:&quot;&quot;&quot;</span>
+</span><span id="__span-28-31"><a id="__codelineno-28-31" name="__codelineno-28-31" href="#__codelineno-28-31"></a>
+</span><span id="__span-28-32"><a id="__codelineno-28-32" name="__codelineno-28-32" href="#__codelineno-28-32"></a><span class="n">prompt</span> <span class="o">=</span> <span class="n">ChatPromptTemplate</span><span class="o">.</span><span class="n">from_template</span><span class="p">(</span><span class="n">template</span><span class="p">)</span>
+</span><span id="__span-28-33"><a id="__codelineno-28-33" name="__codelineno-28-33" href="#__codelineno-28-33"></a>
+</span><span id="__span-28-34"><a id="__codelineno-28-34" name="__codelineno-28-34" href="#__codelineno-28-34"></a><span class="n">rag_chain</span> <span class="o">=</span> <span class="p">(</span>
+</span><span id="__span-28-35"><a id="__codelineno-28-35" name="__codelineno-28-35" href="#__codelineno-28-35"></a>    <span class="p">{</span><span class="s2">&quot;context&quot;</span><span class="p">:</span> <span class="n">retriever</span><span class="p">,</span> <span class="s2">&quot;question&quot;</span><span class="p">:</span> <span class="n">RunnablePassthrough</span><span class="p">()}</span>
+</span><span id="__span-28-36"><a id="__codelineno-28-36" name="__codelineno-28-36" href="#__codelineno-28-36"></a>    <span class="o">|</span> <span class="n">prompt</span>
+</span><span id="__span-28-37"><a id="__codelineno-28-37" name="__codelineno-28-37" href="#__codelineno-28-37"></a>    <span class="o">|</span> <span class="n">llm</span>
+</span><span id="__span-28-38"><a id="__codelineno-28-38" name="__codelineno-28-38" href="#__codelineno-28-38"></a><span class="p">)</span>
+</span><span id="__span-28-39"><a id="__codelineno-28-39" name="__codelineno-28-39" href="#__codelineno-28-39"></a>
+</span><span id="__span-28-40"><a id="__codelineno-28-40" name="__codelineno-28-40" href="#__codelineno-28-40"></a><span class="c1"># Query</span>
+</span><span id="__span-28-41"><a id="__codelineno-28-41" name="__codelineno-28-41" href="#__codelineno-28-41"></a><span class="n">response</span> <span class="o">=</span> <span class="n">rag_chain</span><span class="o">.</span><span class="n">invoke</span><span class="p">(</span><span class="s2">&quot;What is deep learning?&quot;</span><span class="p">)</span>
+</span><span id="__span-28-42"><a id="__codelineno-28-42" name="__codelineno-28-42" href="#__codelineno-28-42"></a><span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
+</span></code></pre></div>
+<p>For more on RAG systems, see our <a href="../rag/">RAG documentation</a>.</p>
+<h3 id="using-with-requests-direct-api">Using with Requests (Direct API)<a class="headerlink" href="#using-with-requests-direct-api" title="Permanent link">&para;</a></h3>
+<p>For simple integrations without additional dependencies:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
+</span><span id="__span-29-2"><a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
+</span><span id="__span-29-3"><a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a>
+</span><span id="__span-29-4"><a id="__codelineno-29-4" name="__codelineno-29-4" href="#__codelineno-29-4"></a><span class="k">def</span><span class="w"> </span><span class="nf">query_ollama</span><span class="p">(</span><span class="n">prompt</span><span class="p">,</span> <span class="n">model</span><span class="o">=</span><span class="s2">&quot;llama3.2&quot;</span><span class="p">,</span> <span class="n">stream</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+</span><span id="__span-29-5"><a id="__codelineno-29-5" name="__codelineno-29-5" href="#__codelineno-29-5"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Simple function to query Ollama API.&quot;&quot;&quot;</span>
+</span><span id="__span-29-6"><a id="__codelineno-29-6" name="__codelineno-29-6" href="#__codelineno-29-6"></a>    <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span>
+</span><span id="__span-29-7"><a id="__codelineno-29-7" name="__codelineno-29-7" href="#__codelineno-29-7"></a>        <span class="s1">&#39;http://localhost:11434/api/generate&#39;</span><span class="p">,</span>
+</span><span id="__span-29-8"><a id="__codelineno-29-8" name="__codelineno-29-8" href="#__codelineno-29-8"></a>        <span class="n">json</span><span class="o">=</span><span class="p">{</span>
+</span><span id="__span-29-9"><a id="__codelineno-29-9" name="__codelineno-29-9" href="#__codelineno-29-9"></a>            <span class="s1">&#39;model&#39;</span><span class="p">:</span> <span class="n">model</span><span class="p">,</span>
+</span><span id="__span-29-10"><a id="__codelineno-29-10" name="__codelineno-29-10" href="#__codelineno-29-10"></a>            <span class="s1">&#39;prompt&#39;</span><span class="p">:</span> <span class="n">prompt</span><span class="p">,</span>
+</span><span id="__span-29-11"><a id="__codelineno-29-11" name="__codelineno-29-11" href="#__codelineno-29-11"></a>            <span class="s1">&#39;stream&#39;</span><span class="p">:</span> <span class="n">stream</span>
+</span><span id="__span-29-12"><a id="__codelineno-29-12" name="__codelineno-29-12" href="#__codelineno-29-12"></a>        <span class="p">}</span>
+</span><span id="__span-29-13"><a id="__codelineno-29-13" name="__codelineno-29-13" href="#__codelineno-29-13"></a>    <span class="p">)</span>
+</span><span id="__span-29-14"><a id="__codelineno-29-14" name="__codelineno-29-14" href="#__codelineno-29-14"></a>
+</span><span id="__span-29-15"><a id="__codelineno-29-15" name="__codelineno-29-15" href="#__codelineno-29-15"></a>    <span class="k">if</span> <span class="n">stream</span><span class="p">:</span>
+</span><span id="__span-29-16"><a id="__codelineno-29-16" name="__codelineno-29-16" href="#__codelineno-29-16"></a>        <span class="c1"># Handle streaming response</span>
+</span><span id="__span-29-17"><a id="__codelineno-29-17" name="__codelineno-29-17" href="#__codelineno-29-17"></a>        <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">response</span><span class="o">.</span><span class="n">iter_lines</span><span class="p">():</span>
+</span><span id="__span-29-18"><a id="__codelineno-29-18" name="__codelineno-29-18" href="#__codelineno-29-18"></a>            <span class="k">if</span> <span class="n">line</span><span class="p">:</span>
+</span><span id="__span-29-19"><a id="__codelineno-29-19" name="__codelineno-29-19" href="#__codelineno-29-19"></a>                <span class="n">chunk</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+</span><span id="__span-29-20"><a id="__codelineno-29-20" name="__codelineno-29-20" href="#__codelineno-29-20"></a>                <span class="k">yield</span> <span class="n">chunk</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;response&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+</span><span id="__span-29-21"><a id="__codelineno-29-21" name="__codelineno-29-21" href="#__codelineno-29-21"></a>    <span class="k">else</span><span class="p">:</span>
+</span><span id="__span-29-22"><a id="__codelineno-29-22" name="__codelineno-29-22" href="#__codelineno-29-22"></a>        <span class="k">return</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()[</span><span class="s1">&#39;response&#39;</span><span class="p">]</span>
+</span><span id="__span-29-23"><a id="__codelineno-29-23" name="__codelineno-29-23" href="#__codelineno-29-23"></a>
+</span><span id="__span-29-24"><a id="__codelineno-29-24" name="__codelineno-29-24" href="#__codelineno-29-24"></a><span class="c1"># Usage</span>
+</span><span id="__span-29-25"><a id="__codelineno-29-25" name="__codelineno-29-25" href="#__codelineno-29-25"></a><span class="n">result</span> <span class="o">=</span> <span class="n">query_ollama</span><span class="p">(</span><span class="s2">&quot;What is the capital of France?&quot;</span><span class="p">)</span>
+</span><span id="__span-29-26"><a id="__codelineno-29-26" name="__codelineno-29-26" href="#__codelineno-29-26"></a><span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+</span><span id="__span-29-27"><a id="__codelineno-29-27" name="__codelineno-29-27" href="#__codelineno-29-27"></a>
+</span><span id="__span-29-28"><a id="__codelineno-29-28" name="__codelineno-29-28" href="#__codelineno-29-28"></a><span class="c1"># Streaming usage</span>
+</span><span id="__span-29-29"><a id="__codelineno-29-29" name="__codelineno-29-29" href="#__codelineno-29-29"></a><span class="k">for</span> <span class="n">chunk</span> <span class="ow">in</span> <span class="n">query_ollama</span><span class="p">(</span><span class="s2">&quot;Tell me a story&quot;</span><span class="p">,</span> <span class="n">stream</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+</span><span id="__span-29-30"><a id="__codelineno-29-30" name="__codelineno-29-30" href="#__codelineno-29-30"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">chunk</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">flush</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></code></pre></div>
+<h2 id="jupyter-notebook-integration">Jupyter Notebook Integration<a class="headerlink" href="#jupyter-notebook-integration" title="Permanent link">&para;</a></h2>
+<p>Ollama integrates seamlessly with Jupyter notebooks for interactive research:</p>
+<h3 id="basic-notebook-usage">Basic Notebook Usage<a class="headerlink" href="#basic-notebook-usage" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a><span class="c1"># Cell 1: Install and import</span>
+</span><span id="__span-30-2"><a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a><span class="err">!</span><span class="n">pip</span> <span class="n">install</span> <span class="n">ollama</span>
+</span><span id="__span-30-3"><a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a>
+</span><span id="__span-30-4"><a id="__codelineno-30-4" name="__codelineno-30-4" href="#__codelineno-30-4"></a><span class="kn">import</span><span class="w"> </span><span class="nn">ollama</span>
+</span><span id="__span-30-5"><a id="__codelineno-30-5" name="__codelineno-30-5" href="#__codelineno-30-5"></a>
+</span><span id="__span-30-6"><a id="__codelineno-30-6" name="__codelineno-30-6" href="#__codelineno-30-6"></a><span class="c1"># Cell 2: List available models</span>
+</span><span id="__span-30-7"><a id="__codelineno-30-7" name="__codelineno-30-7" href="#__codelineno-30-7"></a><span class="n">models</span> <span class="o">=</span> <span class="n">ollama</span><span class="o">.</span><span class="n">list</span><span class="p">()</span>
+</span><span id="__span-30-8"><a id="__codelineno-30-8" name="__codelineno-30-8" href="#__codelineno-30-8"></a><span class="k">for</span> <span class="n">model</span> <span class="ow">in</span> <span class="n">models</span><span class="p">[</span><span class="s1">&#39;models&#39;</span><span class="p">]:</span>
+</span><span id="__span-30-9"><a id="__codelineno-30-9" name="__codelineno-30-9" href="#__codelineno-30-9"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">model</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">model</span><span class="p">[</span><span class="s1">&#39;size&#39;</span><span class="p">]</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">1e9</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> GB&quot;</span><span class="p">)</span>
+</span><span id="__span-30-10"><a id="__codelineno-30-10" name="__codelineno-30-10" href="#__codelineno-30-10"></a>
+</span><span id="__span-30-11"><a id="__codelineno-30-11" name="__codelineno-30-11" href="#__codelineno-30-11"></a><span class="c1"># Cell 3: Interactive chat</span>
+</span><span id="__span-30-12"><a id="__codelineno-30-12" name="__codelineno-30-12" href="#__codelineno-30-12"></a><span class="n">response</span> <span class="o">=</span> <span class="n">ollama</span><span class="o">.</span><span class="n">generate</span><span class="p">(</span>
+</span><span id="__span-30-13"><a id="__codelineno-30-13" name="__codelineno-30-13" href="#__codelineno-30-13"></a>    <span class="n">model</span><span class="o">=</span><span class="s1">&#39;llama3.2&#39;</span><span class="p">,</span>
+</span><span id="__span-30-14"><a id="__codelineno-30-14" name="__codelineno-30-14" href="#__codelineno-30-14"></a>    <span class="n">prompt</span><span class="o">=</span><span class="s1">&#39;Explain the difference between correlation and causation&#39;</span>
+</span><span id="__span-30-15"><a id="__codelineno-30-15" name="__codelineno-30-15" href="#__codelineno-30-15"></a><span class="p">)</span>
+</span><span id="__span-30-16"><a id="__codelineno-30-16" name="__codelineno-30-16" href="#__codelineno-30-16"></a><span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="p">[</span><span class="s1">&#39;response&#39;</span><span class="p">])</span>
+</span></code></pre></div>
+<h3 id="building-a-research-assistant">Building a Research Assistant<a class="headerlink" href="#building-a-research-assistant" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-31-1"><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">ollama</span>
+</span><span id="__span-31-2"><a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a>
+</span><span id="__span-31-3"><a id="__codelineno-31-3" name="__codelineno-31-3" href="#__codelineno-31-3"></a><span class="k">class</span><span class="w"> </span><span class="nc">ResearchAssistant</span><span class="p">:</span>
+</span><span id="__span-31-4"><a id="__codelineno-31-4" name="__codelineno-31-4" href="#__codelineno-31-4"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;A simple research assistant using Ollama.&quot;&quot;&quot;</span>
+</span><span id="__span-31-5"><a id="__codelineno-31-5" name="__codelineno-31-5" href="#__codelineno-31-5"></a>
+</span><span id="__span-31-6"><a id="__codelineno-31-6" name="__codelineno-31-6" href="#__codelineno-31-6"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">model</span><span class="o">=</span><span class="s1">&#39;llama3.2&#39;</span><span class="p">):</span>
+</span><span id="__span-31-7"><a id="__codelineno-31-7" name="__codelineno-31-7" href="#__codelineno-31-7"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">model</span> <span class="o">=</span> <span class="n">model</span>
+</span><span id="__span-31-8"><a id="__codelineno-31-8" name="__codelineno-31-8" href="#__codelineno-31-8"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">conversation</span> <span class="o">=</span> <span class="p">[]</span>
+</span><span id="__span-31-9"><a id="__codelineno-31-9" name="__codelineno-31-9" href="#__codelineno-31-9"></a>
+</span><span id="__span-31-10"><a id="__codelineno-31-10" name="__codelineno-31-10" href="#__codelineno-31-10"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">set_context</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">context</span><span class="p">):</span>
+</span><span id="__span-31-11"><a id="__codelineno-31-11" name="__codelineno-31-11" href="#__codelineno-31-11"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;Set the research context/system prompt.&quot;&quot;&quot;</span>
+</span><span id="__span-31-12"><a id="__codelineno-31-12" name="__codelineno-31-12" href="#__codelineno-31-12"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">conversation</span> <span class="o">=</span> <span class="p">[{</span>
+</span><span id="__span-31-13"><a id="__codelineno-31-13" name="__codelineno-31-13" href="#__codelineno-31-13"></a>            <span class="s1">&#39;role&#39;</span><span class="p">:</span> <span class="s1">&#39;system&#39;</span><span class="p">,</span>
+</span><span id="__span-31-14"><a id="__codelineno-31-14" name="__codelineno-31-14" href="#__codelineno-31-14"></a>            <span class="s1">&#39;content&#39;</span><span class="p">:</span> <span class="n">context</span>
+</span><span id="__span-31-15"><a id="__codelineno-31-15" name="__codelineno-31-15" href="#__codelineno-31-15"></a>        <span class="p">}]</span>
+</span><span id="__span-31-16"><a id="__codelineno-31-16" name="__codelineno-31-16" href="#__codelineno-31-16"></a>
+</span><span id="__span-31-17"><a id="__codelineno-31-17" name="__codelineno-31-17" href="#__codelineno-31-17"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">ask</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">question</span><span class="p">):</span>
+</span><span id="__span-31-18"><a id="__codelineno-31-18" name="__codelineno-31-18" href="#__codelineno-31-18"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;Ask a question and get a response.&quot;&quot;&quot;</span>
+</span><span id="__span-31-19"><a id="__codelineno-31-19" name="__codelineno-31-19" href="#__codelineno-31-19"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">conversation</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+</span><span id="__span-31-20"><a id="__codelineno-31-20" name="__codelineno-31-20" href="#__codelineno-31-20"></a>            <span class="s1">&#39;role&#39;</span><span class="p">:</span> <span class="s1">&#39;user&#39;</span><span class="p">,</span>
+</span><span id="__span-31-21"><a id="__codelineno-31-21" name="__codelineno-31-21" href="#__codelineno-31-21"></a>            <span class="s1">&#39;content&#39;</span><span class="p">:</span> <span class="n">question</span>
+</span><span id="__span-31-22"><a id="__codelineno-31-22" name="__codelineno-31-22" href="#__codelineno-31-22"></a>        <span class="p">})</span>
+</span><span id="__span-31-23"><a id="__codelineno-31-23" name="__codelineno-31-23" href="#__codelineno-31-23"></a>
+</span><span id="__span-31-24"><a id="__codelineno-31-24" name="__codelineno-31-24" href="#__codelineno-31-24"></a>        <span class="n">response</span> <span class="o">=</span> <span class="n">ollama</span><span class="o">.</span><span class="n">chat</span><span class="p">(</span>
+</span><span id="__span-31-25"><a id="__codelineno-31-25" name="__codelineno-31-25" href="#__codelineno-31-25"></a>            <span class="n">model</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="p">,</span>
+</span><span id="__span-31-26"><a id="__codelineno-31-26" name="__codelineno-31-26" href="#__codelineno-31-26"></a>            <span class="n">messages</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">conversation</span>
+</span><span id="__span-31-27"><a id="__codelineno-31-27" name="__codelineno-31-27" href="#__codelineno-31-27"></a>        <span class="p">)</span>
+</span><span id="__span-31-28"><a id="__codelineno-31-28" name="__codelineno-31-28" href="#__codelineno-31-28"></a>
+</span><span id="__span-31-29"><a id="__codelineno-31-29" name="__codelineno-31-29" href="#__codelineno-31-29"></a>        <span class="n">assistant_message</span> <span class="o">=</span> <span class="n">response</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;content&#39;</span><span class="p">]</span>
+</span><span id="__span-31-30"><a id="__codelineno-31-30" name="__codelineno-31-30" href="#__codelineno-31-30"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">conversation</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+</span><span id="__span-31-31"><a id="__codelineno-31-31" name="__codelineno-31-31" href="#__codelineno-31-31"></a>            <span class="s1">&#39;role&#39;</span><span class="p">:</span> <span class="s1">&#39;assistant&#39;</span><span class="p">,</span>
+</span><span id="__span-31-32"><a id="__codelineno-31-32" name="__codelineno-31-32" href="#__codelineno-31-32"></a>            <span class="s1">&#39;content&#39;</span><span class="p">:</span> <span class="n">assistant_message</span>
+</span><span id="__span-31-33"><a id="__codelineno-31-33" name="__codelineno-31-33" href="#__codelineno-31-33"></a>        <span class="p">})</span>
+</span><span id="__span-31-34"><a id="__codelineno-31-34" name="__codelineno-31-34" href="#__codelineno-31-34"></a>
+</span><span id="__span-31-35"><a id="__codelineno-31-35" name="__codelineno-31-35" href="#__codelineno-31-35"></a>        <span class="k">return</span> <span class="n">assistant_message</span>
+</span><span id="__span-31-36"><a id="__codelineno-31-36" name="__codelineno-31-36" href="#__codelineno-31-36"></a>
+</span><span id="__span-31-37"><a id="__codelineno-31-37" name="__codelineno-31-37" href="#__codelineno-31-37"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">summarize_paper</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">abstract</span><span class="p">):</span>
+</span><span id="__span-31-38"><a id="__codelineno-31-38" name="__codelineno-31-38" href="#__codelineno-31-38"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;Summarize a research paper abstract.&quot;&quot;&quot;</span>
+</span><span id="__span-31-39"><a id="__codelineno-31-39" name="__codelineno-31-39" href="#__codelineno-31-39"></a>        <span class="n">prompt</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;&quot;&quot;Please analyze this research abstract and provide:</span>
+</span><span id="__span-31-40"><a id="__codelineno-31-40" name="__codelineno-31-40" href="#__codelineno-31-40"></a><span class="s2">1. Main research question</span>
+</span><span id="__span-31-41"><a id="__codelineno-31-41" name="__codelineno-31-41" href="#__codelineno-31-41"></a><span class="s2">2. Methodology used</span>
+</span><span id="__span-31-42"><a id="__codelineno-31-42" name="__codelineno-31-42" href="#__codelineno-31-42"></a><span class="s2">3. Key findings</span>
+</span><span id="__span-31-43"><a id="__codelineno-31-43" name="__codelineno-31-43" href="#__codelineno-31-43"></a><span class="s2">4. Potential implications</span>
+</span><span id="__span-31-44"><a id="__codelineno-31-44" name="__codelineno-31-44" href="#__codelineno-31-44"></a>
+</span><span id="__span-31-45"><a id="__codelineno-31-45" name="__codelineno-31-45" href="#__codelineno-31-45"></a><span class="s2">Abstract:</span>
+</span><span id="__span-31-46"><a id="__codelineno-31-46" name="__codelineno-31-46" href="#__codelineno-31-46"></a><span class="si">{</span><span class="n">abstract</span><span class="si">}</span><span class="s2">&quot;&quot;&quot;</span>
+</span><span id="__span-31-47"><a id="__codelineno-31-47" name="__codelineno-31-47" href="#__codelineno-31-47"></a>
+</span><span id="__span-31-48"><a id="__codelineno-31-48" name="__codelineno-31-48" href="#__codelineno-31-48"></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">ask</span><span class="p">(</span><span class="n">prompt</span><span class="p">)</span>
+</span><span id="__span-31-49"><a id="__codelineno-31-49" name="__codelineno-31-49" href="#__codelineno-31-49"></a>
+</span><span id="__span-31-50"><a id="__codelineno-31-50" name="__codelineno-31-50" href="#__codelineno-31-50"></a><span class="c1"># Usage in notebook</span>
+</span><span id="__span-31-51"><a id="__codelineno-31-51" name="__codelineno-31-51" href="#__codelineno-31-51"></a><span class="n">assistant</span> <span class="o">=</span> <span class="n">ResearchAssistant</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="s1">&#39;llama3.2&#39;</span><span class="p">)</span>
+</span><span id="__span-31-52"><a id="__codelineno-31-52" name="__codelineno-31-52" href="#__codelineno-31-52"></a><span class="n">assistant</span><span class="o">.</span><span class="n">set_context</span><span class="p">(</span><span class="s2">&quot;You are an expert in computational biology.&quot;</span><span class="p">)</span>
+</span><span id="__span-31-53"><a id="__codelineno-31-53" name="__codelineno-31-53" href="#__codelineno-31-53"></a>
+</span><span id="__span-31-54"><a id="__codelineno-31-54" name="__codelineno-31-54" href="#__codelineno-31-54"></a><span class="n">response</span> <span class="o">=</span> <span class="n">assistant</span><span class="o">.</span><span class="n">ask</span><span class="p">(</span><span class="s2">&quot;What are the latest advances in protein folding prediction?&quot;</span><span class="p">)</span>
+</span><span id="__span-31-55"><a id="__codelineno-31-55" name="__codelineno-31-55" href="#__codelineno-31-55"></a><span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
+</span></code></pre></div>
+<p>For more on Jupyter AI integration, see our <a href="../jupyter/">Jupyter AI documentation</a>.</p>
+<h2 id="creating-custom-models-with-modelfiles">Creating Custom Models with Modelfiles<a class="headerlink" href="#creating-custom-models-with-modelfiles" title="Permanent link">&para;</a></h2>
+<p>Modelfiles allow you to create customized versions of models with specific behaviors, system prompts, or parameters.</p>
+<h3 id="basic-modelfile-structure">Basic Modelfile Structure<a class="headerlink" href="#basic-modelfile-structure" title="Permanent link">&para;</a></h3>
+<p>Create a file called <code>Modelfile</code> (no extension):</p>
+<div class="language-dockerfile highlight"><pre><span></span><code><span id="__span-32-1"><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a><span class="c"># Base model to customize</span>
+</span><span id="__span-32-2"><a id="__codelineno-32-2" name="__codelineno-32-2" href="#__codelineno-32-2"></a><span class="k">FROM</span><span class="w"> </span><span class="s">llama3.2</span>
+</span><span id="__span-32-3"><a id="__codelineno-32-3" name="__codelineno-32-3" href="#__codelineno-32-3"></a>
+</span><span id="__span-32-4"><a id="__codelineno-32-4" name="__codelineno-32-4" href="#__codelineno-32-4"></a><span class="c"># Set model parameters</span>
+</span><span id="__span-32-5"><a id="__codelineno-32-5" name="__codelineno-32-5" href="#__codelineno-32-5"></a>PARAMETER<span class="w"> </span>temperature<span class="w"> </span><span class="m">0</span>.7
+</span><span id="__span-32-6"><a id="__codelineno-32-6" name="__codelineno-32-6" href="#__codelineno-32-6"></a>PARAMETER<span class="w"> </span>num_ctx<span class="w"> </span><span class="m">4096</span>
+</span><span id="__span-32-7"><a id="__codelineno-32-7" name="__codelineno-32-7" href="#__codelineno-32-7"></a>PARAMETER<span class="w"> </span>top_p<span class="w"> </span><span class="m">0</span>.9
+</span><span id="__span-32-8"><a id="__codelineno-32-8" name="__codelineno-32-8" href="#__codelineno-32-8"></a>
+</span><span id="__span-32-9"><a id="__codelineno-32-9" name="__codelineno-32-9" href="#__codelineno-32-9"></a><span class="c"># Set the system prompt</span>
+</span><span id="__span-32-10"><a id="__codelineno-32-10" name="__codelineno-32-10" href="#__codelineno-32-10"></a>SYSTEM<span class="w"> </span><span class="s2">&quot;&quot;&quot;You are a helpful research assistant specializing in academic writing.</span>
+</span><span id="__span-32-11"><a id="__codelineno-32-11" name="__codelineno-32-11" href="#__codelineno-32-11"></a>You<span class="w"> </span><span class="nb">help</span><span class="w"> </span>researchers<span class="w"> </span>improve<span class="w"> </span>their<span class="w"> </span>papers<span class="w"> </span>by:
+</span><span id="__span-32-12"><a id="__codelineno-32-12" name="__codelineno-32-12" href="#__codelineno-32-12"></a>-<span class="w"> </span>Suggesting<span class="w"> </span>clearer<span class="w"> </span>phrasing
+</span><span id="__span-32-13"><a id="__codelineno-32-13" name="__codelineno-32-13" href="#__codelineno-32-13"></a>-<span class="w"> </span>Identifying<span class="w"> </span>logical<span class="w"> </span>gaps
+</span><span id="__span-32-14"><a id="__codelineno-32-14" name="__codelineno-32-14" href="#__codelineno-32-14"></a>-<span class="w"> </span>Recommending<span class="w"> </span>relevant<span class="w"> </span>citations
+</span><span id="__span-32-15"><a id="__codelineno-32-15" name="__codelineno-32-15" href="#__codelineno-32-15"></a>-<span class="w"> </span>Improving<span class="w"> </span>overall<span class="w"> </span>structure
+</span><span id="__span-32-16"><a id="__codelineno-32-16" name="__codelineno-32-16" href="#__codelineno-32-16"></a>
+</span><span id="__span-32-17"><a id="__codelineno-32-17" name="__codelineno-32-17" href="#__codelineno-32-17"></a>Always<span class="w"> </span>be<span class="w"> </span>constructive<span class="w"> </span>and<span class="w"> </span>specific<span class="w"> </span><span class="k">in</span><span class="w"> </span>your<span class="w"> </span>feedback.<span class="s2">&quot;&quot;&quot;</span>
+</span><span id="__span-32-18"><a id="__codelineno-32-18" name="__codelineno-32-18" href="#__codelineno-32-18"></a>
+</span><span id="__span-32-19"><a id="__codelineno-32-19" name="__codelineno-32-19" href="#__codelineno-32-19"></a><span class="c"># Optional: Add custom template</span>
+</span><span id="__span-32-20"><a id="__codelineno-32-20" name="__codelineno-32-20" href="#__codelineno-32-20"></a>TEMPLATE<span class="w"> </span><span class="s2">&quot;&quot;&quot;{{ if .System }}&lt;|system|&gt;</span>
+</span><span id="__span-32-21"><a id="__codelineno-32-21" name="__codelineno-32-21" href="#__codelineno-32-21"></a><span class="o">{{</span><span class="w"> </span>.System<span class="w"> </span><span class="o">}}</span>&lt;<span class="p">|</span>end<span class="p">|</span>&gt;
+</span><span id="__span-32-22"><a id="__codelineno-32-22" name="__codelineno-32-22" href="#__codelineno-32-22"></a><span class="o">{{</span><span class="w"> </span>end<span class="w"> </span><span class="o">}}{{</span><span class="w"> </span><span class="k">if</span><span class="w"> </span>.Prompt<span class="w"> </span><span class="o">}}</span>&lt;<span class="p">|</span>user<span class="p">|</span>&gt;
+</span><span id="__span-32-23"><a id="__codelineno-32-23" name="__codelineno-32-23" href="#__codelineno-32-23"></a><span class="o">{{</span><span class="w"> </span>.Prompt<span class="w"> </span><span class="o">}}</span>&lt;<span class="p">|</span>end<span class="p">|</span>&gt;
+</span><span id="__span-32-24"><a id="__codelineno-32-24" name="__codelineno-32-24" href="#__codelineno-32-24"></a><span class="o">{{</span><span class="w"> </span>end<span class="w"> </span><span class="o">}}</span>&lt;<span class="p">|</span>assistant<span class="p">|</span>&gt;
+</span><span id="__span-32-25"><a id="__codelineno-32-25" name="__codelineno-32-25" href="#__codelineno-32-25"></a><span class="o">{{</span><span class="w"> </span>.Response<span class="w"> </span><span class="o">}}</span>&lt;<span class="p">|</span>end<span class="p">|</span>&gt;
+</span><span id="__span-32-26"><a id="__codelineno-32-26" name="__codelineno-32-26" href="#__codelineno-32-26"></a><span class="s2">&quot;&quot;&quot;</span>
+</span></code></pre></div>
+<h3 id="create-and-use-the-custom-model">Create and Use the Custom Model<a class="headerlink" href="#create-and-use-the-custom-model" title="Permanent link">&para;</a></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-33-1"><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a><span class="c1"># Create the custom model</span>
+</span><span id="__span-33-2"><a id="__codelineno-33-2" name="__codelineno-33-2" href="#__codelineno-33-2"></a>ollama<span class="w"> </span>create<span class="w"> </span>research-assistant<span class="w"> </span>-f<span class="w"> </span>Modelfile
+</span><span id="__span-33-3"><a id="__codelineno-33-3" name="__codelineno-33-3" href="#__codelineno-33-3"></a>
+</span><span id="__span-33-4"><a id="__codelineno-33-4" name="__codelineno-33-4" href="#__codelineno-33-4"></a><span class="c1"># Run your custom model</span>
+</span><span id="__span-33-5"><a id="__codelineno-33-5" name="__codelineno-33-5" href="#__codelineno-33-5"></a>ollama<span class="w"> </span>run<span class="w"> </span>research-assistant
+</span></code></pre></div>
+<h3 id="modelfile-commands-reference">Modelfile Commands Reference<a class="headerlink" href="#modelfile-commands-reference" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>FROM</code></td>
+<td>Base model (required)</td>
+<td><code>FROM llama3.2</code></td>
+</tr>
+<tr>
+<td><code>PARAMETER</code></td>
+<td>Set model parameters</td>
+<td><code>PARAMETER temperature 0.7</code></td>
+</tr>
+<tr>
+<td><code>SYSTEM</code></td>
+<td>Set system prompt</td>
+<td><code>SYSTEM "You are helpful..."</code></td>
+</tr>
+<tr>
+<td><code>TEMPLATE</code></td>
+<td>Custom prompt template</td>
+<td><code>TEMPLATE "..."</code></td>
+</tr>
+<tr>
+<td><code>ADAPTER</code></td>
+<td>Apply LoRA adapter</td>
+<td><code>ADAPTER ./lora.gguf</code></td>
+</tr>
+<tr>
+<td><code>LICENSE</code></td>
+<td>Specify license</td>
+<td><code>LICENSE "MIT"</code></td>
+</tr>
+<tr>
+<td><code>MESSAGE</code></td>
+<td>Add example messages</td>
+<td><code>MESSAGE user "Hello"</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="example-academic-discipline-specific-assistants">Example: Academic Discipline-Specific Assistants<a class="headerlink" href="#example-academic-discipline-specific-assistants" title="Permanent link">&para;</a></h3>
+<p><strong>Biology Research Assistant:</strong></p>
+<div class="language-dockerfile highlight"><pre><span></span><code><span id="__span-34-1"><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a><span class="k">FROM</span><span class="w"> </span><span class="s">llama3.2</span>
+</span><span id="__span-34-2"><a id="__codelineno-34-2" name="__codelineno-34-2" href="#__codelineno-34-2"></a>
+</span><span id="__span-34-3"><a id="__codelineno-34-3" name="__codelineno-34-3" href="#__codelineno-34-3"></a>PARAMETER<span class="w"> </span>temperature<span class="w"> </span><span class="m">0</span>.3
+</span><span id="__span-34-4"><a id="__codelineno-34-4" name="__codelineno-34-4" href="#__codelineno-34-4"></a>PARAMETER<span class="w"> </span>num_ctx<span class="w"> </span><span class="m">8192</span>
+</span><span id="__span-34-5"><a id="__codelineno-34-5" name="__codelineno-34-5" href="#__codelineno-34-5"></a>
+</span><span id="__span-34-6"><a id="__codelineno-34-6" name="__codelineno-34-6" href="#__codelineno-34-6"></a>SYSTEM<span class="w"> </span><span class="s2">&quot;&quot;&quot;You are an expert biology research assistant with deep knowledge of:</span>
+</span><span id="__span-34-7"><a id="__codelineno-34-7" name="__codelineno-34-7" href="#__codelineno-34-7"></a>-<span class="w"> </span>Molecular<span class="w"> </span>biology<span class="w"> </span>and<span class="w"> </span>genetics
+</span><span id="__span-34-8"><a id="__codelineno-34-8" name="__codelineno-34-8" href="#__codelineno-34-8"></a>-<span class="w"> </span>Cell<span class="w"> </span>biology<span class="w"> </span>and<span class="w"> </span>biochemistry
+</span><span id="__span-34-9"><a id="__codelineno-34-9" name="__codelineno-34-9" href="#__codelineno-34-9"></a>-<span class="w"> </span>Evolutionary<span class="w"> </span>biology
+</span><span id="__span-34-10"><a id="__codelineno-34-10" name="__codelineno-34-10" href="#__codelineno-34-10"></a>-<span class="w"> </span>Ecology<span class="w"> </span>and<span class="w"> </span>environmental<span class="w"> </span>science
+</span><span id="__span-34-11"><a id="__codelineno-34-11" name="__codelineno-34-11" href="#__codelineno-34-11"></a>
+</span><span id="__span-34-12"><a id="__codelineno-34-12" name="__codelineno-34-12" href="#__codelineno-34-12"></a>When<span class="w"> </span>answering<span class="w"> </span>questions:
+</span><span id="__span-34-13"><a id="__codelineno-34-13" name="__codelineno-34-13" href="#__codelineno-34-13"></a><span class="m">1</span>.<span class="w"> </span>Use<span class="w"> </span>precise<span class="w"> </span>scientific<span class="w"> </span>terminology
+</span><span id="__span-34-14"><a id="__codelineno-34-14" name="__codelineno-34-14" href="#__codelineno-34-14"></a><span class="m">2</span>.<span class="w"> </span>Cite<span class="w"> </span>relevant<span class="w"> </span>concepts<span class="w"> </span>and<span class="w"> </span>theories
+</span><span id="__span-34-15"><a id="__codelineno-34-15" name="__codelineno-34-15" href="#__codelineno-34-15"></a><span class="m">3</span>.<span class="w"> </span>Distinguish<span class="w"> </span>between<span class="w"> </span>established<span class="w"> </span>facts<span class="w"> </span>and<span class="w"> </span>current<span class="w"> </span>hypotheses
+</span><span id="__span-34-16"><a id="__codelineno-34-16" name="__codelineno-34-16" href="#__codelineno-34-16"></a><span class="m">4</span>.<span class="w"> </span>Suggest<span class="w"> </span>relevant<span class="w"> </span>experimental<span class="w"> </span>approaches<span class="w"> </span>when<span class="w"> </span>applicable<span class="s2">&quot;&quot;&quot;</span>
+</span></code></pre></div>
+<p><strong>Statistics Tutor:</strong></p>
+<div class="language-dockerfile highlight"><pre><span></span><code><span id="__span-35-1"><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a><span class="k">FROM</span><span class="w"> </span><span class="s">qwen2.5:7b</span>
+</span><span id="__span-35-2"><a id="__codelineno-35-2" name="__codelineno-35-2" href="#__codelineno-35-2"></a>
+</span><span id="__span-35-3"><a id="__codelineno-35-3" name="__codelineno-35-3" href="#__codelineno-35-3"></a>PARAMETER<span class="w"> </span>temperature<span class="w"> </span><span class="m">0</span>.2
+</span><span id="__span-35-4"><a id="__codelineno-35-4" name="__codelineno-35-4" href="#__codelineno-35-4"></a>PARAMETER<span class="w"> </span>num_ctx<span class="w"> </span><span class="m">4096</span>
+</span><span id="__span-35-5"><a id="__codelineno-35-5" name="__codelineno-35-5" href="#__codelineno-35-5"></a>
+</span><span id="__span-35-6"><a id="__codelineno-35-6" name="__codelineno-35-6" href="#__codelineno-35-6"></a>SYSTEM<span class="w"> </span><span class="s2">&quot;&quot;&quot;You are a patient statistics tutor helping graduate students understand</span>
+</span><span id="__span-35-7"><a id="__codelineno-35-7" name="__codelineno-35-7" href="#__codelineno-35-7"></a>statistical<span class="w"> </span>concepts.<span class="w"> </span>When<span class="w"> </span>explaining:
+</span><span id="__span-35-8"><a id="__codelineno-35-8" name="__codelineno-35-8" href="#__codelineno-35-8"></a>
+</span><span id="__span-35-9"><a id="__codelineno-35-9" name="__codelineno-35-9" href="#__codelineno-35-9"></a><span class="m">1</span>.<span class="w"> </span>Start<span class="w"> </span>with<span class="w"> </span>intuitive<span class="w"> </span>explanations<span class="w"> </span>before<span class="w"> </span>formal<span class="w"> </span>definitions
+</span><span id="__span-35-10"><a id="__codelineno-35-10" name="__codelineno-35-10" href="#__codelineno-35-10"></a><span class="m">2</span>.<span class="w"> </span>Use<span class="w"> </span>concrete<span class="w"> </span>examples<span class="w"> </span>from<span class="w"> </span>research<span class="w"> </span>contexts
+</span><span id="__span-35-11"><a id="__codelineno-35-11" name="__codelineno-35-11" href="#__codelineno-35-11"></a><span class="m">3</span>.<span class="w"> </span>Show<span class="w"> </span>step-by-step<span class="w"> </span>calculations<span class="w"> </span>when<span class="w"> </span>relevant
+</span><span id="__span-35-12"><a id="__codelineno-35-12" name="__codelineno-35-12" href="#__codelineno-35-12"></a><span class="m">4</span>.<span class="w"> </span>Explain<span class="w"> </span>assumptions<span class="w"> </span>and<span class="w"> </span>when<span class="w"> </span>methods<span class="w"> </span>are<span class="w"> </span>appropriate
+</span><span id="__span-35-13"><a id="__codelineno-35-13" name="__codelineno-35-13" href="#__codelineno-35-13"></a><span class="m">5</span>.<span class="w"> </span>Suggest<span class="w"> </span>R<span class="w"> </span>or<span class="w"> </span>Python<span class="w"> </span>code<span class="w"> </span><span class="k">for</span><span class="w"> </span>implementation
+</span><span id="__span-35-14"><a id="__codelineno-35-14" name="__codelineno-35-14" href="#__codelineno-35-14"></a>
+</span><span id="__span-35-15"><a id="__codelineno-35-15" name="__codelineno-35-15" href="#__codelineno-35-15"></a>Always<span class="w"> </span>check<span class="w"> </span><span class="k">for</span><span class="w"> </span>understanding<span class="w"> </span>and<span class="w"> </span>offer<span class="w"> </span>to<span class="w"> </span>clarify<span class="w"> </span>further.<span class="s2">&quot;&quot;&quot;</span>
+</span></code></pre></div>
+<p><strong>Code Review Assistant:</strong></p>
+<div class="language-dockerfile highlight"><pre><span></span><code><span id="__span-36-1"><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a><span class="k">FROM</span><span class="w"> </span><span class="s">deepseek-r1:8b</span>
+</span><span id="__span-36-2"><a id="__codelineno-36-2" name="__codelineno-36-2" href="#__codelineno-36-2"></a>
+</span><span id="__span-36-3"><a id="__codelineno-36-3" name="__codelineno-36-3" href="#__codelineno-36-3"></a>PARAMETER<span class="w"> </span>temperature<span class="w"> </span><span class="m">0</span>.1
+</span><span id="__span-36-4"><a id="__codelineno-36-4" name="__codelineno-36-4" href="#__codelineno-36-4"></a>PARAMETER<span class="w"> </span>num_ctx<span class="w"> </span><span class="m">8192</span>
+</span><span id="__span-36-5"><a id="__codelineno-36-5" name="__codelineno-36-5" href="#__codelineno-36-5"></a>
+</span><span id="__span-36-6"><a id="__codelineno-36-6" name="__codelineno-36-6" href="#__codelineno-36-6"></a>SYSTEM<span class="w"> </span><span class="s2">&quot;&quot;&quot;You are a senior software engineer conducting code reviews.</span>
+</span><span id="__span-36-7"><a id="__codelineno-36-7" name="__codelineno-36-7" href="#__codelineno-36-7"></a>For<span class="w"> </span>each<span class="w"> </span>piece<span class="w"> </span>of<span class="w"> </span>code<span class="w"> </span>you<span class="w"> </span>review:
+</span><span id="__span-36-8"><a id="__codelineno-36-8" name="__codelineno-36-8" href="#__codelineno-36-8"></a>
+</span><span id="__span-36-9"><a id="__codelineno-36-9" name="__codelineno-36-9" href="#__codelineno-36-9"></a><span class="m">1</span>.<span class="w"> </span>Identify<span class="w"> </span>potential<span class="w"> </span>bugs<span class="w"> </span>or<span class="w"> </span>errors
+</span><span id="__span-36-10"><a id="__codelineno-36-10" name="__codelineno-36-10" href="#__codelineno-36-10"></a><span class="m">2</span>.<span class="w"> </span>Suggest<span class="w"> </span>performance<span class="w"> </span>improvements
+</span><span id="__span-36-11"><a id="__codelineno-36-11" name="__codelineno-36-11" href="#__codelineno-36-11"></a><span class="m">3</span>.<span class="w"> </span>Recommend<span class="w"> </span>better<span class="w"> </span>naming<span class="w"> </span>or<span class="w"> </span>structure
+</span><span id="__span-36-12"><a id="__codelineno-36-12" name="__codelineno-36-12" href="#__codelineno-36-12"></a><span class="m">4</span>.<span class="w"> </span>Check<span class="w"> </span><span class="k">for</span><span class="w"> </span>security<span class="w"> </span>vulnerabilities
+</span><span id="__span-36-13"><a id="__codelineno-36-13" name="__codelineno-36-13" href="#__codelineno-36-13"></a><span class="m">5</span>.<span class="w"> </span>Ensure<span class="w"> </span>code<span class="w"> </span>follows<span class="w"> </span>best<span class="w"> </span>practices
+</span><span id="__span-36-14"><a id="__codelineno-36-14" name="__codelineno-36-14" href="#__codelineno-36-14"></a>
+</span><span id="__span-36-15"><a id="__codelineno-36-15" name="__codelineno-36-15" href="#__codelineno-36-15"></a>Be<span class="w"> </span>constructive<span class="w"> </span>and<span class="w"> </span>explain<span class="w"> </span>the<span class="w"> </span>reasoning<span class="w"> </span>behind<span class="w"> </span>each<span class="w"> </span>suggestion.<span class="s2">&quot;&quot;&quot;</span>
+</span></code></pre></div>
+<h2 id="gpu-configuration-and-performance">GPU Configuration and Performance<a class="headerlink" href="#gpu-configuration-and-performance" title="Permanent link">&para;</a></h2>
+<h3 id="automatic-gpu-detection">Automatic GPU Detection<a class="headerlink" href="#automatic-gpu-detection" title="Permanent link">&para;</a></h3>
+<p>Ollama automatically detects and uses available GPUs. Check your GPU status:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-37-1"><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a>ollama<span class="w"> </span>run<span class="w"> </span>llama3.2<span class="w"> </span>--verbose
+</span><span id="__span-37-2"><a id="__codelineno-37-2" name="__codelineno-37-2" href="#__codelineno-37-2"></a><span class="c1"># Look for &quot;gpu&quot; in the output</span>
+</span></code></pre></div>
+<h3 id="nvidia-gpu-setup-linux">NVIDIA GPU Setup (Linux)<a class="headerlink" href="#nvidia-gpu-setup-linux" title="Permanent link">&para;</a></h3>
+<p>Ensure you have the NVIDIA drivers and CUDA toolkit:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-38-1"><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a><span class="c1"># Check NVIDIA driver</span>
+</span><span id="__span-38-2"><a id="__codelineno-38-2" name="__codelineno-38-2" href="#__codelineno-38-2"></a>nvidia-smi
+</span><span id="__span-38-3"><a id="__codelineno-38-3" name="__codelineno-38-3" href="#__codelineno-38-3"></a>
+</span><span id="__span-38-4"><a id="__codelineno-38-4" name="__codelineno-38-4" href="#__codelineno-38-4"></a><span class="c1"># The Ollama install script usually handles CUDA setup</span>
+</span><span id="__span-38-5"><a id="__codelineno-38-5" name="__codelineno-38-5" href="#__codelineno-38-5"></a><span class="c1"># If needed, install CUDA toolkit:</span>
+</span><span id="__span-38-6"><a id="__codelineno-38-6" name="__codelineno-38-6" href="#__codelineno-38-6"></a><span class="c1"># sudo apt install nvidia-cuda-toolkit</span>
+</span></code></pre></div>
+<h3 id="apple-silicon-optimization">Apple Silicon Optimization<a class="headerlink" href="#apple-silicon-optimization" title="Permanent link">&para;</a></h3>
+<p>Apple M1/M2/M3/M4 Macs use Metal for GPU acceleration automatically. Ollama is highly optimized for Apple Silicon:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-39-1"><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a><span class="c1"># Check Metal usage (models should show &quot;metal&quot; backend)</span>
+</span><span id="__span-39-2"><a id="__codelineno-39-2" name="__codelineno-39-2" href="#__codelineno-39-2"></a>ollama<span class="w"> </span>run<span class="w"> </span>llama3.2<span class="w"> </span>--verbose
+</span></code></pre></div>
+<h3 id="memory-management">Memory Management<a class="headerlink" href="#memory-management" title="Permanent link">&para;</a></h3>
+<p><strong>Control GPU Memory Usage:</strong></p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-40-1"><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a><span class="c1"># Set maximum VRAM usage (in MB)</span>
+</span><span id="__span-40-2"><a id="__codelineno-40-2" name="__codelineno-40-2" href="#__codelineno-40-2"></a><span class="nv">OLLAMA_GPU_MEMORY</span><span class="o">=</span><span class="m">8192</span><span class="w"> </span>ollama<span class="w"> </span>serve
+</span><span id="__span-40-3"><a id="__codelineno-40-3" name="__codelineno-40-3" href="#__codelineno-40-3"></a>
+</span><span id="__span-40-4"><a id="__codelineno-40-4" name="__codelineno-40-4" href="#__codelineno-40-4"></a><span class="c1"># Or in environment</span>
+</span><span id="__span-40-5"><a id="__codelineno-40-5" name="__codelineno-40-5" href="#__codelineno-40-5"></a><span class="nb">export</span><span class="w"> </span><span class="nv">OLLAMA_GPU_MEMORY</span><span class="o">=</span><span class="m">8192</span>
+</span></code></pre></div>
+<p><strong>CPU-Only Mode:</strong></p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-41-1"><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a><span class="c1"># Disable GPU acceleration</span>
+</span><span id="__span-41-2"><a id="__codelineno-41-2" name="__codelineno-41-2" href="#__codelineno-41-2"></a><span class="nv">CUDA_VISIBLE_DEVICES</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="w"> </span>ollama<span class="w"> </span>serve
+</span></code></pre></div>
+<h3 id="performance-tuning-parameters">Performance Tuning Parameters<a class="headerlink" href="#performance-tuning-parameters" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Environment Variable</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>OLLAMA_NUM_PARALLEL</code></td>
+<td>Number of parallel requests</td>
+<td><code>4</code></td>
+</tr>
+<tr>
+<td><code>OLLAMA_MAX_LOADED_MODELS</code></td>
+<td>Models to keep in memory</td>
+<td><code>2</code></td>
+</tr>
+<tr>
+<td><code>OLLAMA_GPU_MEMORY</code></td>
+<td>Max GPU memory (MB)</td>
+<td><code>8192</code></td>
+</tr>
+<tr>
+<td><code>OLLAMA_HOST</code></td>
+<td>API bind address</td>
+<td><code>0.0.0.0:11434</code></td>
+</tr>
+<tr>
+<td><code>OLLAMA_KEEP_ALIVE</code></td>
+<td>Model unload timeout</td>
+<td><code>5m</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="monitoring-performance">Monitoring Performance<a class="headerlink" href="#monitoring-performance" title="Permanent link">&para;</a></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-42-1"><a id="__codelineno-42-1" name="__codelineno-42-1" href="#__codelineno-42-1"></a><span class="c1"># Watch GPU memory usage (NVIDIA)</span>
+</span><span id="__span-42-2"><a id="__codelineno-42-2" name="__codelineno-42-2" href="#__codelineno-42-2"></a>watch<span class="w"> </span>-n<span class="w"> </span><span class="m">1</span><span class="w"> </span>nvidia-smi
+</span><span id="__span-42-3"><a id="__codelineno-42-3" name="__codelineno-42-3" href="#__codelineno-42-3"></a>
+</span><span id="__span-42-4"><a id="__codelineno-42-4" name="__codelineno-42-4" href="#__codelineno-42-4"></a><span class="c1"># Monitor Ollama logs</span>
+</span><span id="__span-42-5"><a id="__codelineno-42-5" name="__codelineno-42-5" href="#__codelineno-42-5"></a>journalctl<span class="w"> </span>-u<span class="w"> </span>ollama<span class="w"> </span>-f<span class="w">  </span><span class="c1"># Linux with systemd</span>
+</span></code></pre></div>
+<h2 id="model-recommendations">Model Recommendations<a class="headerlink" href="#model-recommendations" title="Permanent link">&para;</a></h2>
+<h3 id="by-hardware-capability">By Hardware Capability<a class="headerlink" href="#by-hardware-capability" title="Permanent link">&para;</a></h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Laptop (8GB RAM)</label><label for="__tabbed_1_2">Workstation (16-32GB RAM)</label><label for="__tabbed_1_3">GPU Server (24GB+ VRAM)</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Size</th>
+<th>Best For</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>llama3.2:1b</code></td>
+<td>~700MB</td>
+<td>Quick responses, basic tasks</td>
+</tr>
+<tr>
+<td><code>qwen2.5:1.5b</code></td>
+<td>~1GB</td>
+<td>Multilingual, reasoning</td>
+</tr>
+<tr>
+<td><code>phi3:mini</code></td>
+<td>~2GB</td>
+<td>Coding, analysis</td>
+</tr>
+<tr>
+<td><code>deepseek-r1:1.5b</code></td>
+<td>~1GB</td>
+<td>Reasoning tasks</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Size</th>
+<th>Best For</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>llama3.2:3b</code></td>
+<td>~2GB</td>
+<td>Balanced performance</td>
+</tr>
+<tr>
+<td><code>qwen2.5:7b</code></td>
+<td>~4.5GB</td>
+<td>Strong reasoning, coding</td>
+</tr>
+<tr>
+<td><code>mistral:7b</code></td>
+<td>~4GB</td>
+<td>General purpose</td>
+</tr>
+<tr>
+<td><code>deepseek-r1:8b</code></td>
+<td>~5GB</td>
+<td>Advanced reasoning</td>
+</tr>
+<tr>
+<td><code>codellama:13b</code></td>
+<td>~7GB</td>
+<td>Specialized coding</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Size</th>
+<th>Best For</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>llama3.3:70b</code></td>
+<td>~40GB</td>
+<td>Near-frontier capability</td>
+</tr>
+<tr>
+<td><code>qwen2.5:32b</code></td>
+<td>~20GB</td>
+<td>Strong all-around</td>
+</tr>
+<tr>
+<td><code>deepseek-r1:70b</code></td>
+<td>~40GB</td>
+<td>Best open reasoning</td>
+</tr>
+<tr>
+<td><code>mixtral:8x7b</code></td>
+<td>~26GB</td>
+<td>Mixture of experts</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<h3 id="by-use-case">By Use Case<a class="headerlink" href="#by-use-case" title="Permanent link">&para;</a></h3>
+<p><strong>Academic Writing and Research:</strong></p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-43-1"><a id="__codelineno-43-1" name="__codelineno-43-1" href="#__codelineno-43-1"></a><span class="c1"># For writing assistance and analysis</span>
+</span><span id="__span-43-2"><a id="__codelineno-43-2" name="__codelineno-43-2" href="#__codelineno-43-2"></a>ollama<span class="w"> </span>pull<span class="w"> </span>qwen2.5:7b
+</span><span id="__span-43-3"><a id="__codelineno-43-3" name="__codelineno-43-3" href="#__codelineno-43-3"></a>
+</span><span id="__span-43-4"><a id="__codelineno-43-4" name="__codelineno-43-4" href="#__codelineno-43-4"></a><span class="c1"># For reasoning-heavy tasks</span>
+</span><span id="__span-43-5"><a id="__codelineno-43-5" name="__codelineno-43-5" href="#__codelineno-43-5"></a>ollama<span class="w"> </span>pull<span class="w"> </span>deepseek-r1:8b
+</span></code></pre></div>
+<p><strong>Coding and Development:</strong></p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-44-1"><a id="__codelineno-44-1" name="__codelineno-44-1" href="#__codelineno-44-1"></a><span class="c1"># General coding</span>
+</span><span id="__span-44-2"><a id="__codelineno-44-2" name="__codelineno-44-2" href="#__codelineno-44-2"></a>ollama<span class="w"> </span>pull<span class="w"> </span>deepseek-coder:6.7b
+</span><span id="__span-44-3"><a id="__codelineno-44-3" name="__codelineno-44-3" href="#__codelineno-44-3"></a>
+</span><span id="__span-44-4"><a id="__codelineno-44-4" name="__codelineno-44-4" href="#__codelineno-44-4"></a><span class="c1"># Code review and debugging</span>
+</span><span id="__span-44-5"><a id="__codelineno-44-5" name="__codelineno-44-5" href="#__codelineno-44-5"></a>ollama<span class="w"> </span>pull<span class="w"> </span>codellama:13b
+</span><span id="__span-44-6"><a id="__codelineno-44-6" name="__codelineno-44-6" href="#__codelineno-44-6"></a>
+</span><span id="__span-44-7"><a id="__codelineno-44-7" name="__codelineno-44-7" href="#__codelineno-44-7"></a><span class="c1"># Fast completions</span>
+</span><span id="__span-44-8"><a id="__codelineno-44-8" name="__codelineno-44-8" href="#__codelineno-44-8"></a>ollama<span class="w"> </span>pull<span class="w"> </span>starcoder2:3b
+</span></code></pre></div>
+<p><strong>Data Analysis:</strong></p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-45-1"><a id="__codelineno-45-1" name="__codelineno-45-1" href="#__codelineno-45-1"></a><span class="c1"># Statistical reasoning</span>
+</span><span id="__span-45-2"><a id="__codelineno-45-2" name="__codelineno-45-2" href="#__codelineno-45-2"></a>ollama<span class="w"> </span>pull<span class="w"> </span>qwen2.5:7b
+</span><span id="__span-45-3"><a id="__codelineno-45-3" name="__codelineno-45-3" href="#__codelineno-45-3"></a>
+</span><span id="__span-45-4"><a id="__codelineno-45-4" name="__codelineno-45-4" href="#__codelineno-45-4"></a><span class="c1"># Code generation for analysis</span>
+</span><span id="__span-45-5"><a id="__codelineno-45-5" name="__codelineno-45-5" href="#__codelineno-45-5"></a>ollama<span class="w"> </span>pull<span class="w"> </span>deepseek-coder:6.7b
+</span></code></pre></div>
+<p><strong>Teaching and Tutoring:</strong></p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-46-1"><a id="__codelineno-46-1" name="__codelineno-46-1" href="#__codelineno-46-1"></a><span class="c1"># Patient explanations</span>
+</span><span id="__span-46-2"><a id="__codelineno-46-2" name="__codelineno-46-2" href="#__codelineno-46-2"></a>ollama<span class="w"> </span>pull<span class="w"> </span>llama3.2:3b
+</span><span id="__span-46-3"><a id="__codelineno-46-3" name="__codelineno-46-3" href="#__codelineno-46-3"></a>
+</span><span id="__span-46-4"><a id="__codelineno-46-4" name="__codelineno-46-4" href="#__codelineno-46-4"></a><span class="c1"># Math and science tutoring</span>
+</span><span id="__span-46-5"><a id="__codelineno-46-5" name="__codelineno-46-5" href="#__codelineno-46-5"></a>ollama<span class="w"> </span>pull<span class="w"> </span>qwen2.5:7b
+</span></code></pre></div>
+<p><strong>Embeddings and RAG:</strong></p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-47-1"><a id="__codelineno-47-1" name="__codelineno-47-1" href="#__codelineno-47-1"></a><span class="c1"># Text embeddings</span>
+</span><span id="__span-47-2"><a id="__codelineno-47-2" name="__codelineno-47-2" href="#__codelineno-47-2"></a>ollama<span class="w"> </span>pull<span class="w"> </span>nomic-embed-text
+</span><span id="__span-47-3"><a id="__codelineno-47-3" name="__codelineno-47-3" href="#__codelineno-47-3"></a>
+</span><span id="__span-47-4"><a id="__codelineno-47-4" name="__codelineno-47-4" href="#__codelineno-47-4"></a><span class="c1"># Multilingual embeddings</span>
+</span><span id="__span-47-5"><a id="__codelineno-47-5" name="__codelineno-47-5" href="#__codelineno-47-5"></a>ollama<span class="w"> </span>pull<span class="w"> </span>mxbai-embed-large
+</span></code></pre></div>
+<h2 id="integration-with-other-tools">Integration with Other Tools<a class="headerlink" href="#integration-with-other-tools" title="Permanent link">&para;</a></h2>
+<h3 id="open-webui">Open WebUI<a class="headerlink" href="#open-webui" title="Permanent link">&para;</a></h3>
+<p><a href="https://github.com/open-webui/open-webui" target="_blank">Open WebUI</a> provides a ChatGPT-like interface for Ollama:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-48-1"><a id="__codelineno-48-1" name="__codelineno-48-1" href="#__codelineno-48-1"></a><span class="c1"># Run with Docker</span>
+</span><span id="__span-48-2"><a id="__codelineno-48-2" name="__codelineno-48-2" href="#__codelineno-48-2"></a>docker<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span>-p<span class="w"> </span><span class="m">3000</span>:8080<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-48-3"><a id="__codelineno-48-3" name="__codelineno-48-3" href="#__codelineno-48-3"></a><span class="w">  </span>--add-host<span class="o">=</span>host.docker.internal:host-gateway<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-48-4"><a id="__codelineno-48-4" name="__codelineno-48-4" href="#__codelineno-48-4"></a><span class="w">  </span>-v<span class="w"> </span>open-webui:/app/backend/data<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-48-5"><a id="__codelineno-48-5" name="__codelineno-48-5" href="#__codelineno-48-5"></a><span class="w">  </span>--name<span class="w"> </span>open-webui<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-48-6"><a id="__codelineno-48-6" name="__codelineno-48-6" href="#__codelineno-48-6"></a><span class="w">  </span>ghcr.io/open-webui/open-webui:main
+</span></code></pre></div>
+<p>Access at <code>http://localhost:3000</code>. Open WebUI automatically detects your Ollama installation.</p>
+<h3 id="vs-code-integration">VS Code Integration<a class="headerlink" href="#vs-code-integration" title="Permanent link">&para;</a></h3>
+<p>Install the <a href="https://continue.dev/" target="_blank">Continue</a> extension for AI-assisted coding with Ollama:</p>
+<ol>
+<li>Install the Continue extension from VS Code marketplace</li>
+<li>Configure to use Ollama in settings:</li>
+</ol>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-49-1"><a id="__codelineno-49-1" name="__codelineno-49-1" href="#__codelineno-49-1"></a><span class="p">{</span>
+</span><span id="__span-49-2"><a id="__codelineno-49-2" name="__codelineno-49-2" href="#__codelineno-49-2"></a><span class="w">  </span><span class="nt">&quot;models&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-49-3"><a id="__codelineno-49-3" name="__codelineno-49-3" href="#__codelineno-49-3"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-49-4"><a id="__codelineno-49-4" name="__codelineno-49-4" href="#__codelineno-49-4"></a><span class="w">      </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Ollama&quot;</span><span class="p">,</span>
+</span><span id="__span-49-5"><a id="__codelineno-49-5" name="__codelineno-49-5" href="#__codelineno-49-5"></a><span class="w">      </span><span class="nt">&quot;provider&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ollama&quot;</span><span class="p">,</span>
+</span><span id="__span-49-6"><a id="__codelineno-49-6" name="__codelineno-49-6" href="#__codelineno-49-6"></a><span class="w">      </span><span class="nt">&quot;model&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;deepseek-coder:6.7b&quot;</span>
+</span><span id="__span-49-7"><a id="__codelineno-49-7" name="__codelineno-49-7" href="#__codelineno-49-7"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-49-8"><a id="__codelineno-49-8" name="__codelineno-49-8" href="#__codelineno-49-8"></a><span class="w">  </span><span class="p">]</span>
+</span><span id="__span-49-9"><a id="__codelineno-49-9" name="__codelineno-49-9" href="#__codelineno-49-9"></a><span class="p">}</span>
+</span></code></pre></div>
+<h3 id="obsidian-integration">Obsidian Integration<a class="headerlink" href="#obsidian-integration" title="Permanent link">&para;</a></h3>
+<p>Use the <a href="https://github.com/hinterdupfinger/obsidian-ollama" target="_blank">Ollama plugin for Obsidian</a> for note-taking with AI assistance.</p>
+<h3 id="api-compatible-services">API-Compatible Services<a class="headerlink" href="#api-compatible-services" title="Permanent link">&para;</a></h3>
+<p>Ollama's API is compatible with the OpenAI API format. Many tools that support OpenAI can work with Ollama:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-50-1"><a id="__codelineno-50-1" name="__codelineno-50-1" href="#__codelineno-50-1"></a><span class="c1"># Using OpenAI library with Ollama</span>
+</span><span id="__span-50-2"><a id="__codelineno-50-2" name="__codelineno-50-2" href="#__codelineno-50-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">openai</span><span class="w"> </span><span class="kn">import</span> <span class="n">OpenAI</span>
+</span><span id="__span-50-3"><a id="__codelineno-50-3" name="__codelineno-50-3" href="#__codelineno-50-3"></a>
+</span><span id="__span-50-4"><a id="__codelineno-50-4" name="__codelineno-50-4" href="#__codelineno-50-4"></a><span class="n">client</span> <span class="o">=</span> <span class="n">OpenAI</span><span class="p">(</span>
+</span><span id="__span-50-5"><a id="__codelineno-50-5" name="__codelineno-50-5" href="#__codelineno-50-5"></a>    <span class="n">base_url</span><span class="o">=</span><span class="s1">&#39;http://localhost:11434/v1&#39;</span><span class="p">,</span>
+</span><span id="__span-50-6"><a id="__codelineno-50-6" name="__codelineno-50-6" href="#__codelineno-50-6"></a>    <span class="n">api_key</span><span class="o">=</span><span class="s1">&#39;ollama&#39;</span>  <span class="c1"># Ollama doesn&#39;t require a key, but the library needs something</span>
+</span><span id="__span-50-7"><a id="__codelineno-50-7" name="__codelineno-50-7" href="#__codelineno-50-7"></a><span class="p">)</span>
+</span><span id="__span-50-8"><a id="__codelineno-50-8" name="__codelineno-50-8" href="#__codelineno-50-8"></a>
+</span><span id="__span-50-9"><a id="__codelineno-50-9" name="__codelineno-50-9" href="#__codelineno-50-9"></a><span class="n">response</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">chat</span><span class="o">.</span><span class="n">completions</span><span class="o">.</span><span class="n">create</span><span class="p">(</span>
+</span><span id="__span-50-10"><a id="__codelineno-50-10" name="__codelineno-50-10" href="#__codelineno-50-10"></a>    <span class="n">model</span><span class="o">=</span><span class="s1">&#39;llama3.2&#39;</span><span class="p">,</span>
+</span><span id="__span-50-11"><a id="__codelineno-50-11" name="__codelineno-50-11" href="#__codelineno-50-11"></a>    <span class="n">messages</span><span class="o">=</span><span class="p">[</span>
+</span><span id="__span-50-12"><a id="__codelineno-50-12" name="__codelineno-50-12" href="#__codelineno-50-12"></a>        <span class="p">{</span><span class="s1">&#39;role&#39;</span><span class="p">:</span> <span class="s1">&#39;user&#39;</span><span class="p">,</span> <span class="s1">&#39;content&#39;</span><span class="p">:</span> <span class="s1">&#39;Hello!&#39;</span><span class="p">}</span>
+</span><span id="__span-50-13"><a id="__codelineno-50-13" name="__codelineno-50-13" href="#__codelineno-50-13"></a>    <span class="p">]</span>
+</span><span id="__span-50-14"><a id="__codelineno-50-14" name="__codelineno-50-14" href="#__codelineno-50-14"></a><span class="p">)</span>
+</span><span id="__span-50-15"><a id="__codelineno-50-15" name="__codelineno-50-15" href="#__codelineno-50-15"></a>
+</span><span id="__span-50-16"><a id="__codelineno-50-16" name="__codelineno-50-16" href="#__codelineno-50-16"></a><span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">choices</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">message</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
+</span></code></pre></div>
+<h2 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h2>
+<h3 id="common-issues-and-solutions">Common Issues and Solutions<a class="headerlink" href="#common-issues-and-solutions" title="Permanent link">&para;</a></h3>
+<details class="failure">
+<summary>Model fails to load - Out of Memory</summary>
+<p><strong>Symptoms:</strong> Error messages about memory allocation, system becomes unresponsive</p>
+<p><strong>Solutions:</strong></p>
+<ol>
+<li>
+<p>Try a smaller model variant:
+    <div class="language-bash highlight"><pre><span></span><code><span id="__span-51-1"><a id="__codelineno-51-1" name="__codelineno-51-1" href="#__codelineno-51-1"></a><span class="c1"># Instead of</span>
+</span><span id="__span-51-2"><a id="__codelineno-51-2" name="__codelineno-51-2" href="#__codelineno-51-2"></a>ollama<span class="w"> </span>run<span class="w"> </span>llama3.2
+</span><span id="__span-51-3"><a id="__codelineno-51-3" name="__codelineno-51-3" href="#__codelineno-51-3"></a>
+</span><span id="__span-51-4"><a id="__codelineno-51-4" name="__codelineno-51-4" href="#__codelineno-51-4"></a><span class="c1"># Try</span>
+</span><span id="__span-51-5"><a id="__codelineno-51-5" name="__codelineno-51-5" href="#__codelineno-51-5"></a>ollama<span class="w"> </span>run<span class="w"> </span>llama3.2:1b
+</span></code></pre></div></p>
+</li>
+<li>
+<p>Close other memory-intensive applications</p>
+</li>
+<li>
+<p>Reduce context window:
+    <div class="language-bash highlight"><pre><span></span><code><span id="__span-52-1"><a id="__codelineno-52-1" name="__codelineno-52-1" href="#__codelineno-52-1"></a>ollama<span class="w"> </span>run<span class="w"> </span>llama3.2<span class="w"> </span>--num-ctx<span class="w"> </span><span class="m">2048</span>
+</span></code></pre></div></p>
+</li>
+<li>
+<p>Use quantized versions (look for <code>q4_0</code> or <code>q4_K_M</code> tags)</p>
+</li>
+</ol>
+</details>
+<details class="failure">
+<summary>Ollama service not running</summary>
+<p><strong>Symptoms:</strong> Connection refused errors, <code>curl: (7) Failed to connect</code></p>
+<p><strong>Solutions:</strong></p>
+<ol>
+<li>
+<p>Start the service:
+    <div class="language-bash highlight"><pre><span></span><code><span id="__span-53-1"><a id="__codelineno-53-1" name="__codelineno-53-1" href="#__codelineno-53-1"></a><span class="c1"># macOS/Windows: Launch the Ollama app</span>
+</span><span id="__span-53-2"><a id="__codelineno-53-2" name="__codelineno-53-2" href="#__codelineno-53-2"></a><span class="c1"># Linux:</span>
+</span><span id="__span-53-3"><a id="__codelineno-53-3" name="__codelineno-53-3" href="#__codelineno-53-3"></a>ollama<span class="w"> </span>serve
+</span><span id="__span-53-4"><a id="__codelineno-53-4" name="__codelineno-53-4" href="#__codelineno-53-4"></a><span class="c1"># Or with systemd:</span>
+</span><span id="__span-53-5"><a id="__codelineno-53-5" name="__codelineno-53-5" href="#__codelineno-53-5"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>ollama
+</span></code></pre></div></p>
+</li>
+<li>
+<p>Check if another process is using port 11434:
+    <div class="language-bash highlight"><pre><span></span><code><span id="__span-54-1"><a id="__codelineno-54-1" name="__codelineno-54-1" href="#__codelineno-54-1"></a>lsof<span class="w"> </span>-i<span class="w"> </span>:11434
+</span></code></pre></div></p>
+</li>
+<li>
+<p>Use a different port:
+    <div class="language-bash highlight"><pre><span></span><code><span id="__span-55-1"><a id="__codelineno-55-1" name="__codelineno-55-1" href="#__codelineno-55-1"></a><span class="nv">OLLAMA_HOST</span><span class="o">=</span><span class="m">127</span>.0.0.1:11435<span class="w"> </span>ollama<span class="w"> </span>serve
+</span></code></pre></div></p>
+</li>
+</ol>
+</details>
+<details class="failure">
+<summary>Slow generation speed</summary>
+<p><strong>Symptoms:</strong> Model runs much slower than expected</p>
+<p><strong>Solutions:</strong></p>
+<ol>
+<li>
+<p>Verify GPU is being used:
+    <div class="language-bash highlight"><pre><span></span><code><span id="__span-56-1"><a id="__codelineno-56-1" name="__codelineno-56-1" href="#__codelineno-56-1"></a>ollama<span class="w"> </span>run<span class="w"> </span>llama3.2<span class="w"> </span>--verbose
+</span><span id="__span-56-2"><a id="__codelineno-56-2" name="__codelineno-56-2" href="#__codelineno-56-2"></a><span class="c1"># Look for &quot;gpu&quot; or &quot;metal&quot; in output</span>
+</span></code></pre></div></p>
+</li>
+<li>
+<p>Check GPU drivers are up to date</p>
+</li>
+<li>
+<p>Ensure sufficient VRAM:
+    <div class="language-bash highlight"><pre><span></span><code><span id="__span-57-1"><a id="__codelineno-57-1" name="__codelineno-57-1" href="#__codelineno-57-1"></a>nvidia-smi<span class="w">  </span><span class="c1"># For NVIDIA GPUs</span>
+</span></code></pre></div></p>
+</li>
+<li>
+<p>Try a smaller model or quantization</p>
+</li>
+</ol>
+</details>
+<details class="failure">
+<summary>Model gives poor quality responses</summary>
+<p><strong>Symptoms:</strong> Responses are incoherent, repetitive, or off-topic</p>
+<p><strong>Solutions:</strong></p>
+<ol>
+<li>
+<p>Adjust temperature:
+    <div class="language-bash highlight"><pre><span></span><code><span id="__span-58-1"><a id="__codelineno-58-1" name="__codelineno-58-1" href="#__codelineno-58-1"></a>/set<span class="w"> </span>temperature<span class="w"> </span><span class="m">0</span>.7
+</span></code></pre></div></p>
+</li>
+<li>
+<p>Increase context window for complex tasks:
+    <div class="language-bash highlight"><pre><span></span><code><span id="__span-59-1"><a id="__codelineno-59-1" name="__codelineno-59-1" href="#__codelineno-59-1"></a>/set<span class="w"> </span>num_ctx<span class="w"> </span><span class="m">4096</span>
+</span></code></pre></div></p>
+</li>
+<li>
+<p>Try a larger model variant</p>
+</li>
+<li>
+<p>Be more specific in your prompts</p>
+</li>
+</ol>
+</details>
+<details class="failure">
+<summary>Cannot connect from other devices</summary>
+<p><strong>Symptoms:</strong> API works on localhost but not from other machines</p>
+<p><strong>Solutions:</strong></p>
+<ol>
+<li>
+<p>Bind to all interfaces:
+    <div class="language-bash highlight"><pre><span></span><code><span id="__span-60-1"><a id="__codelineno-60-1" name="__codelineno-60-1" href="#__codelineno-60-1"></a><span class="nv">OLLAMA_HOST</span><span class="o">=</span><span class="m">0</span>.0.0.0:11434<span class="w"> </span>ollama<span class="w"> </span>serve
+</span></code></pre></div></p>
+</li>
+<li>
+<p>Check firewall settings:
+    <div class="language-bash highlight"><pre><span></span><code><span id="__span-61-1"><a id="__codelineno-61-1" name="__codelineno-61-1" href="#__codelineno-61-1"></a><span class="c1"># Linux</span>
+</span><span id="__span-61-2"><a id="__codelineno-61-2" name="__codelineno-61-2" href="#__codelineno-61-2"></a>sudo<span class="w"> </span>ufw<span class="w"> </span>allow<span class="w"> </span><span class="m">11434</span>
+</span></code></pre></div></p>
+</li>
+<li>
+<p>Verify network connectivity</p>
+</li>
+</ol>
+</details>
+<h3 id="getting-help">Getting Help<a class="headerlink" href="#getting-help" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Official Documentation:</strong> <a href="https://github.com/ollama/ollama" target="_blank">github.com/ollama/ollama</a></li>
+<li><strong>Discord Community:</strong> <a href="https://discord.gg/ollama" target="_blank">discord.gg/ollama</a></li>
+<li><strong>GitHub Issues:</strong> <a href="https://github.com/ollama/ollama/issues" target="_blank">github.com/ollama/ollama/issues</a></li>
+</ul>
+<h2 id="academic-use-cases">Academic Use Cases<a class="headerlink" href="#academic-use-cases" title="Permanent link">&para;</a></h2>
+<h3 id="literature-review-assistance">Literature Review Assistance<a class="headerlink" href="#literature-review-assistance" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-62-1"><a id="__codelineno-62-1" name="__codelineno-62-1" href="#__codelineno-62-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">ollama</span>
+</span><span id="__span-62-2"><a id="__codelineno-62-2" name="__codelineno-62-2" href="#__codelineno-62-2"></a>
+</span><span id="__span-62-3"><a id="__codelineno-62-3" name="__codelineno-62-3" href="#__codelineno-62-3"></a><span class="k">def</span><span class="w"> </span><span class="nf">analyze_abstract</span><span class="p">(</span><span class="n">abstract</span><span class="p">):</span>
+</span><span id="__span-62-4"><a id="__codelineno-62-4" name="__codelineno-62-4" href="#__codelineno-62-4"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Analyze a research paper abstract.&quot;&quot;&quot;</span>
+</span><span id="__span-62-5"><a id="__codelineno-62-5" name="__codelineno-62-5" href="#__codelineno-62-5"></a>    <span class="n">prompt</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;&quot;&quot;Analyze this research abstract and provide:</span>
+</span><span id="__span-62-6"><a id="__codelineno-62-6" name="__codelineno-62-6" href="#__codelineno-62-6"></a><span class="s2">1. Research question or hypothesis</span>
+</span><span id="__span-62-7"><a id="__codelineno-62-7" name="__codelineno-62-7" href="#__codelineno-62-7"></a><span class="s2">2. Methodology</span>
+</span><span id="__span-62-8"><a id="__codelineno-62-8" name="__codelineno-62-8" href="#__codelineno-62-8"></a><span class="s2">3. Key findings</span>
+</span><span id="__span-62-9"><a id="__codelineno-62-9" name="__codelineno-62-9" href="#__codelineno-62-9"></a><span class="s2">4. Limitations mentioned</span>
+</span><span id="__span-62-10"><a id="__codelineno-62-10" name="__codelineno-62-10" href="#__codelineno-62-10"></a><span class="s2">5. Potential follow-up questions</span>
+</span><span id="__span-62-11"><a id="__codelineno-62-11" name="__codelineno-62-11" href="#__codelineno-62-11"></a>
+</span><span id="__span-62-12"><a id="__codelineno-62-12" name="__codelineno-62-12" href="#__codelineno-62-12"></a><span class="s2">Abstract:</span>
+</span><span id="__span-62-13"><a id="__codelineno-62-13" name="__codelineno-62-13" href="#__codelineno-62-13"></a><span class="si">{</span><span class="n">abstract</span><span class="si">}</span>
+</span><span id="__span-62-14"><a id="__codelineno-62-14" name="__codelineno-62-14" href="#__codelineno-62-14"></a><span class="s2">&quot;&quot;&quot;</span>
+</span><span id="__span-62-15"><a id="__codelineno-62-15" name="__codelineno-62-15" href="#__codelineno-62-15"></a>
+</span><span id="__span-62-16"><a id="__codelineno-62-16" name="__codelineno-62-16" href="#__codelineno-62-16"></a>    <span class="n">response</span> <span class="o">=</span> <span class="n">ollama</span><span class="o">.</span><span class="n">generate</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="s1">&#39;qwen2.5:7b&#39;</span><span class="p">,</span> <span class="n">prompt</span><span class="o">=</span><span class="n">prompt</span><span class="p">)</span>
+</span><span id="__span-62-17"><a id="__codelineno-62-17" name="__codelineno-62-17" href="#__codelineno-62-17"></a>    <span class="k">return</span> <span class="n">response</span><span class="p">[</span><span class="s1">&#39;response&#39;</span><span class="p">]</span>
+</span><span id="__span-62-18"><a id="__codelineno-62-18" name="__codelineno-62-18" href="#__codelineno-62-18"></a>
+</span><span id="__span-62-19"><a id="__codelineno-62-19" name="__codelineno-62-19" href="#__codelineno-62-19"></a><span class="c1"># Example usage</span>
+</span><span id="__span-62-20"><a id="__codelineno-62-20" name="__codelineno-62-20" href="#__codelineno-62-20"></a><span class="n">abstract</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+</span><span id="__span-62-21"><a id="__codelineno-62-21" name="__codelineno-62-21" href="#__codelineno-62-21"></a><span class="s2">We present a novel approach to protein structure prediction using</span>
+</span><span id="__span-62-22"><a id="__codelineno-62-22" name="__codelineno-62-22" href="#__codelineno-62-22"></a><span class="s2">graph neural networks. Our method achieves state-of-the-art results</span>
+</span><span id="__span-62-23"><a id="__codelineno-62-23" name="__codelineno-62-23" href="#__codelineno-62-23"></a><span class="s2">on the CASP14 benchmark, outperforming existing methods by 15</span><span class="si">% i</span><span class="s2">n</span>
+</span><span id="__span-62-24"><a id="__codelineno-62-24" name="__codelineno-62-24" href="#__codelineno-62-24"></a><span class="s2">GDT-TS score. We demonstrate that incorporating evolutionary</span>
+</span><span id="__span-62-25"><a id="__codelineno-62-25" name="__codelineno-62-25" href="#__codelineno-62-25"></a><span class="s2">information through multiple sequence alignments significantly</span>
+</span><span id="__span-62-26"><a id="__codelineno-62-26" name="__codelineno-62-26" href="#__codelineno-62-26"></a><span class="s2">improves prediction accuracy.</span>
+</span><span id="__span-62-27"><a id="__codelineno-62-27" name="__codelineno-62-27" href="#__codelineno-62-27"></a><span class="s2">&quot;&quot;&quot;</span>
+</span><span id="__span-62-28"><a id="__codelineno-62-28" name="__codelineno-62-28" href="#__codelineno-62-28"></a>
+</span><span id="__span-62-29"><a id="__codelineno-62-29" name="__codelineno-62-29" href="#__codelineno-62-29"></a><span class="n">analysis</span> <span class="o">=</span> <span class="n">analyze_abstract</span><span class="p">(</span><span class="n">abstract</span><span class="p">)</span>
+</span><span id="__span-62-30"><a id="__codelineno-62-30" name="__codelineno-62-30" href="#__codelineno-62-30"></a><span class="nb">print</span><span class="p">(</span><span class="n">analysis</span><span class="p">)</span>
+</span></code></pre></div>
+<h3 id="grant-writing-support">Grant Writing Support<a class="headerlink" href="#grant-writing-support" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-63-1"><a id="__codelineno-63-1" name="__codelineno-63-1" href="#__codelineno-63-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">ollama</span>
+</span><span id="__span-63-2"><a id="__codelineno-63-2" name="__codelineno-63-2" href="#__codelineno-63-2"></a>
+</span><span id="__span-63-3"><a id="__codelineno-63-3" name="__codelineno-63-3" href="#__codelineno-63-3"></a><span class="k">def</span><span class="w"> </span><span class="nf">improve_grant_section</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">section_type</span><span class="p">):</span>
+</span><span id="__span-63-4"><a id="__codelineno-63-4" name="__codelineno-63-4" href="#__codelineno-63-4"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Suggest improvements for grant application sections.&quot;&quot;&quot;</span>
+</span><span id="__span-63-5"><a id="__codelineno-63-5" name="__codelineno-63-5" href="#__codelineno-63-5"></a>    <span class="n">prompt</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;&quot;&quot;You are an experienced grant reviewer. Review this </span><span class="si">{</span><span class="n">section_type</span><span class="si">}</span>
+</span><span id="__span-63-6"><a id="__codelineno-63-6" name="__codelineno-63-6" href="#__codelineno-63-6"></a><span class="s2">section and provide specific suggestions to strengthen it:</span>
+</span><span id="__span-63-7"><a id="__codelineno-63-7" name="__codelineno-63-7" href="#__codelineno-63-7"></a>
+</span><span id="__span-63-8"><a id="__codelineno-63-8" name="__codelineno-63-8" href="#__codelineno-63-8"></a><span class="si">{</span><span class="n">text</span><span class="si">}</span>
+</span><span id="__span-63-9"><a id="__codelineno-63-9" name="__codelineno-63-9" href="#__codelineno-63-9"></a>
+</span><span id="__span-63-10"><a id="__codelineno-63-10" name="__codelineno-63-10" href="#__codelineno-63-10"></a><span class="s2">Please provide:</span>
+</span><span id="__span-63-11"><a id="__codelineno-63-11" name="__codelineno-63-11" href="#__codelineno-63-11"></a><span class="s2">1. Strengths of the current text</span>
+</span><span id="__span-63-12"><a id="__codelineno-63-12" name="__codelineno-63-12" href="#__codelineno-63-12"></a><span class="s2">2. Areas that need improvement</span>
+</span><span id="__span-63-13"><a id="__codelineno-63-13" name="__codelineno-63-13" href="#__codelineno-63-13"></a><span class="s2">3. Specific rewrite suggestions</span>
+</span><span id="__span-63-14"><a id="__codelineno-63-14" name="__codelineno-63-14" href="#__codelineno-63-14"></a><span class="s2">4. Questions a reviewer might ask&quot;&quot;&quot;</span>
+</span><span id="__span-63-15"><a id="__codelineno-63-15" name="__codelineno-63-15" href="#__codelineno-63-15"></a>
+</span><span id="__span-63-16"><a id="__codelineno-63-16" name="__codelineno-63-16" href="#__codelineno-63-16"></a>    <span class="n">response</span> <span class="o">=</span> <span class="n">ollama</span><span class="o">.</span><span class="n">generate</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="s1">&#39;qwen2.5:7b&#39;</span><span class="p">,</span> <span class="n">prompt</span><span class="o">=</span><span class="n">prompt</span><span class="p">)</span>
+</span><span id="__span-63-17"><a id="__codelineno-63-17" name="__codelineno-63-17" href="#__codelineno-63-17"></a>    <span class="k">return</span> <span class="n">response</span><span class="p">[</span><span class="s1">&#39;response&#39;</span><span class="p">]</span>
+</span></code></pre></div>
+<h3 id="teaching-assistant">Teaching Assistant<a class="headerlink" href="#teaching-assistant" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-64-1"><a id="__codelineno-64-1" name="__codelineno-64-1" href="#__codelineno-64-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">ollama</span>
+</span><span id="__span-64-2"><a id="__codelineno-64-2" name="__codelineno-64-2" href="#__codelineno-64-2"></a>
+</span><span id="__span-64-3"><a id="__codelineno-64-3" name="__codelineno-64-3" href="#__codelineno-64-3"></a><span class="k">def</span><span class="w"> </span><span class="nf">create_quiz_questions</span><span class="p">(</span><span class="n">topic</span><span class="p">,</span> <span class="n">difficulty</span><span class="p">,</span> <span class="n">num_questions</span><span class="p">):</span>
+</span><span id="__span-64-4"><a id="__codelineno-64-4" name="__codelineno-64-4" href="#__codelineno-64-4"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Generate quiz questions on a topic.&quot;&quot;&quot;</span>
+</span><span id="__span-64-5"><a id="__codelineno-64-5" name="__codelineno-64-5" href="#__codelineno-64-5"></a>    <span class="n">prompt</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;&quot;&quot;Create </span><span class="si">{</span><span class="n">num_questions</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">difficulty</span><span class="si">}</span><span class="s2">-level multiple choice questions</span>
+</span><span id="__span-64-6"><a id="__codelineno-64-6" name="__codelineno-64-6" href="#__codelineno-64-6"></a><span class="s2">about </span><span class="si">{</span><span class="n">topic</span><span class="si">}</span><span class="s2">. For each question:</span>
+</span><span id="__span-64-7"><a id="__codelineno-64-7" name="__codelineno-64-7" href="#__codelineno-64-7"></a><span class="s2">1. Provide the question</span>
+</span><span id="__span-64-8"><a id="__codelineno-64-8" name="__codelineno-64-8" href="#__codelineno-64-8"></a><span class="s2">2. Give 4 options (A, B, C, D)</span>
+</span><span id="__span-64-9"><a id="__codelineno-64-9" name="__codelineno-64-9" href="#__codelineno-64-9"></a><span class="s2">3. Indicate the correct answer</span>
+</span><span id="__span-64-10"><a id="__codelineno-64-10" name="__codelineno-64-10" href="#__codelineno-64-10"></a><span class="s2">4. Explain why the correct answer is right</span>
+</span><span id="__span-64-11"><a id="__codelineno-64-11" name="__codelineno-64-11" href="#__codelineno-64-11"></a>
+</span><span id="__span-64-12"><a id="__codelineno-64-12" name="__codelineno-64-12" href="#__codelineno-64-12"></a><span class="s2">Format clearly with separators between questions.&quot;&quot;&quot;</span>
+</span><span id="__span-64-13"><a id="__codelineno-64-13" name="__codelineno-64-13" href="#__codelineno-64-13"></a>
+</span><span id="__span-64-14"><a id="__codelineno-64-14" name="__codelineno-64-14" href="#__codelineno-64-14"></a>    <span class="n">response</span> <span class="o">=</span> <span class="n">ollama</span><span class="o">.</span><span class="n">generate</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="s1">&#39;llama3.2&#39;</span><span class="p">,</span> <span class="n">prompt</span><span class="o">=</span><span class="n">prompt</span><span class="p">)</span>
+</span><span id="__span-64-15"><a id="__codelineno-64-15" name="__codelineno-64-15" href="#__codelineno-64-15"></a>    <span class="k">return</span> <span class="n">response</span><span class="p">[</span><span class="s1">&#39;response&#39;</span><span class="p">]</span>
+</span><span id="__span-64-16"><a id="__codelineno-64-16" name="__codelineno-64-16" href="#__codelineno-64-16"></a>
+</span><span id="__span-64-17"><a id="__codelineno-64-17" name="__codelineno-64-17" href="#__codelineno-64-17"></a><span class="c1"># Generate quiz</span>
+</span><span id="__span-64-18"><a id="__codelineno-64-18" name="__codelineno-64-18" href="#__codelineno-64-18"></a><span class="n">quiz</span> <span class="o">=</span> <span class="n">create_quiz_questions</span><span class="p">(</span>
+</span><span id="__span-64-19"><a id="__codelineno-64-19" name="__codelineno-64-19" href="#__codelineno-64-19"></a>    <span class="n">topic</span><span class="o">=</span><span class="s2">&quot;the scientific method&quot;</span><span class="p">,</span>
+</span><span id="__span-64-20"><a id="__codelineno-64-20" name="__codelineno-64-20" href="#__codelineno-64-20"></a>    <span class="n">difficulty</span><span class="o">=</span><span class="s2">&quot;intermediate&quot;</span><span class="p">,</span>
+</span><span id="__span-64-21"><a id="__codelineno-64-21" name="__codelineno-64-21" href="#__codelineno-64-21"></a>    <span class="n">num_questions</span><span class="o">=</span><span class="mi">5</span>
+</span><span id="__span-64-22"><a id="__codelineno-64-22" name="__codelineno-64-22" href="#__codelineno-64-22"></a><span class="p">)</span>
+</span><span id="__span-64-23"><a id="__codelineno-64-23" name="__codelineno-64-23" href="#__codelineno-64-23"></a><span class="nb">print</span><span class="p">(</span><span class="n">quiz</span><span class="p">)</span>
+</span></code></pre></div>
+<h3 id="data-analysis-helper">Data Analysis Helper<a class="headerlink" href="#data-analysis-helper" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-65-1"><a id="__codelineno-65-1" name="__codelineno-65-1" href="#__codelineno-65-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">ollama</span>
+</span><span id="__span-65-2"><a id="__codelineno-65-2" name="__codelineno-65-2" href="#__codelineno-65-2"></a>
+</span><span id="__span-65-3"><a id="__codelineno-65-3" name="__codelineno-65-3" href="#__codelineno-65-3"></a><span class="k">def</span><span class="w"> </span><span class="nf">suggest_analysis</span><span class="p">(</span><span class="n">data_description</span><span class="p">):</span>
+</span><span id="__span-65-4"><a id="__codelineno-65-4" name="__codelineno-65-4" href="#__codelineno-65-4"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Suggest statistical analyses for a dataset.&quot;&quot;&quot;</span>
+</span><span id="__span-65-5"><a id="__codelineno-65-5" name="__codelineno-65-5" href="#__codelineno-65-5"></a>    <span class="n">prompt</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;&quot;&quot;Based on this data description, suggest appropriate statistical</span>
+</span><span id="__span-65-6"><a id="__codelineno-65-6" name="__codelineno-65-6" href="#__codelineno-65-6"></a><span class="s2">analyses and explain the rationale:</span>
+</span><span id="__span-65-7"><a id="__codelineno-65-7" name="__codelineno-65-7" href="#__codelineno-65-7"></a>
+</span><span id="__span-65-8"><a id="__codelineno-65-8" name="__codelineno-65-8" href="#__codelineno-65-8"></a><span class="si">{</span><span class="n">data_description</span><span class="si">}</span>
+</span><span id="__span-65-9"><a id="__codelineno-65-9" name="__codelineno-65-9" href="#__codelineno-65-9"></a>
+</span><span id="__span-65-10"><a id="__codelineno-65-10" name="__codelineno-65-10" href="#__codelineno-65-10"></a><span class="s2">Please provide:</span>
+</span><span id="__span-65-11"><a id="__codelineno-65-11" name="__codelineno-65-11" href="#__codelineno-65-11"></a><span class="s2">1. Recommended statistical tests/methods</span>
+</span><span id="__span-65-12"><a id="__codelineno-65-12" name="__codelineno-65-12" href="#__codelineno-65-12"></a><span class="s2">2. Assumptions to check</span>
+</span><span id="__span-65-13"><a id="__codelineno-65-13" name="__codelineno-65-13" href="#__codelineno-65-13"></a><span class="s2">3. Python/R code snippets for implementation</span>
+</span><span id="__span-65-14"><a id="__codelineno-65-14" name="__codelineno-65-14" href="#__codelineno-65-14"></a><span class="s2">4. How to interpret potential results&quot;&quot;&quot;</span>
+</span><span id="__span-65-15"><a id="__codelineno-65-15" name="__codelineno-65-15" href="#__codelineno-65-15"></a>
+</span><span id="__span-65-16"><a id="__codelineno-65-16" name="__codelineno-65-16" href="#__codelineno-65-16"></a>    <span class="n">response</span> <span class="o">=</span> <span class="n">ollama</span><span class="o">.</span><span class="n">generate</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="s1">&#39;qwen2.5:7b&#39;</span><span class="p">,</span> <span class="n">prompt</span><span class="o">=</span><span class="n">prompt</span><span class="p">)</span>
+</span><span id="__span-65-17"><a id="__codelineno-65-17" name="__codelineno-65-17" href="#__codelineno-65-17"></a>    <span class="k">return</span> <span class="n">response</span><span class="p">[</span><span class="s1">&#39;response&#39;</span><span class="p">]</span>
+</span></code></pre></div>
+<h2 id="further-resources">Further Resources<a class="headerlink" href="#further-resources" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Ollama Website:</strong> <a href="https://ollama.com/" target="_blank">ollama.com</a></li>
+<li><strong>Model Library:</strong> <a href="https://ollama.com/library" target="_blank">ollama.com/library</a></li>
+<li><strong>GitHub Repository:</strong> <a href="https://github.com/ollama/ollama" target="_blank">github.com/ollama/ollama</a></li>
+<li><strong>API Documentation:</strong> <a href="https://github.com/ollama/ollama/blob/main/docs/api.md" target="_blank">github.com/ollama/ollama/blob/main/docs/api.md</a></li>
+<li><strong>Discord Community:</strong> <a href="https://discord.gg/ollama" target="_blank">discord.gg/ollama</a></li>
+</ul>
+<h2 id="related-workshop-materials">Related Workshop Materials<a class="headerlink" href="#related-workshop-materials" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong><a href="../huggingface/">Hugging Face</a>:</strong> Find and download models for use with Ollama</li>
+<li><strong><a href="../gradio/">Gradio</a>:</strong> Build web interfaces for your Ollama-powered applications</li>
+<li><strong><a href="../rag/">RAG</a>:</strong> Implement retrieval-augmented generation with local models</li>
+<li><strong><a href="../jupyter/">Jupyter AI</a>:</strong> Integrate AI assistance into your research notebooks</li>
+<li><strong><a href="../agentic/">Agentic AI</a>:</strong> Build autonomous AI agents with local models</li>
+<li><strong><a href="../mcp/">MCP</a>:</strong> Connect Ollama to external tools and data sources</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Getting Started Recommendation</p>
+<p>If you're new to running local AI models, start with these steps:</p>
+<ol>
+<li>Install Ollama using the method for your operating system</li>
+<li>Download a small model: <code>ollama pull llama3.2:3b</code></li>
+<li>Try interactive chat: <code>ollama run llama3.2:3b</code></li>
+<li>Experiment with the Python library for programmatic access</li>
+<li>Create a custom Modelfile for your specific use case</li>
+</ol>
+<p>Once comfortable, explore larger models and integrations with tools like Open WebUI or LangChain.</p>
+</div>
 
 
 
@@ -2156,7 +4836,7 @@
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2025 University of Arizona
+      Copyright &copy; 2026 University of Arizona
     </div>
   
   

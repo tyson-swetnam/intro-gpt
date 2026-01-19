@@ -25,7 +25,7 @@
       
       
       <link rel="icon" href="../assets/ua.ico">
-      <meta name="generator" content="zensical-0.0.16">
+      <meta name="generator" content="zensical-0.0.17">
     
     
       
@@ -36,7 +36,7 @@
       
         
       
-      <link rel="stylesheet" href="../assets/stylesheets/modern/main.dfcb43b2.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/modern/main.d4922b3c.min.css">
       
         
           
@@ -1217,17 +1217,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#by-use-case" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        By Use Case
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#integration-with-your-workflow" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1726,14 +1715,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../jupyter/" class="md-nav__link">
+      <a href="../ai_sandboxes/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Jupyter AI
+    AI Sandboxes
   
 
     
@@ -1866,62 +1855,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../execution/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Code Execution
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../openai/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    OpenAI API
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../huggingface/" class="md-nav__link">
         
   
@@ -1978,6 +1911,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../jupyter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jupyter AI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../posit/" class="md-nav__link">
         
   
@@ -1986,6 +1947,34 @@
     
   
     Posit (RStudio)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vscode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VS Code & AI Tools
   
 
     
@@ -2696,17 +2685,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#by-use-case" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        By Use Case
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#integration-with-your-workflow" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -3047,67 +3025,89 @@ Many universities and organizations have policies about AI code execution. Check
 </ul>
 <p>See our <a href="../vibe/">Vibe Coding security warnings</a> for more detailed guidance.</p>
 <h3 id="bias-licensing-and-intellectual-property">Bias, Licensing, and Intellectual Property<a class="headerlink" href="#bias-licensing-and-intellectual-property" title="Permanent link">&para;</a></h3>
-<p><strong>Training Data Considerations</strong>
-- AI models are trained on public code repositories, which may contain:
-  - <strong>Biased implementations</strong> (non-inclusive variable names, accessibility issues)
-  - <strong>Licensed code</strong> that may not be suitable for your use case
-  - <strong>Outdated patterns</strong> or deprecated approaches
-  - <strong>Security vulnerabilities</strong> from historical code</p>
-<p><strong>Best Practices:</strong>
-- Review generated code for inclusive language and accessibility
-- Check license compatibility for suggested libraries
-- Validate that patterns are current and recommended
-- Don't assume AI-generated code is "best practice"</p>
-<p><strong>Intellectual Property</strong>
-- Most AI providers claim no copyright on generated output
-- However, generated code might inadvertently replicate existing licensed code
-- Your organization may have policies about AI-generated code ownership
-- Document when and how AI tools were used in development</p>
+<p><strong>Training Data Considerations</strong></p>
+<p>AI models are trained on public code repositories, which may contain:</p>
+<ul>
+<li><strong>Biased implementations</strong> (non-inclusive variable names, accessibility issues)</li>
+<li><strong>Licensed code</strong> that may not be suitable for your use case</li>
+<li><strong>Outdated patterns</strong> or deprecated approaches</li>
+<li><strong>Security vulnerabilities</strong> from historical code</li>
+</ul>
+<p><strong>Best Practices:</strong></p>
+<ul>
+<li>Review generated code for inclusive language and accessibility</li>
+<li>Check license compatibility for suggested libraries</li>
+<li>Validate that patterns are current and recommended</li>
+<li>Don't assume AI-generated code is "best practice"</li>
+</ul>
+<p><strong>Intellectual Property</strong></p>
+<ul>
+<li>Most AI providers claim no copyright on generated output</li>
+<li>However, generated code might inadvertently replicate existing licensed code</li>
+<li>Your organization may have policies about AI-generated code ownership</li>
+<li>Document when and how AI tools were used in development</li>
+</ul>
 <h3 id="privacy-and-data-handling">Privacy and Data Handling<a class="headerlink" href="#privacy-and-data-handling" title="Permanent link">&para;</a></h3>
-<p><strong>What Data Gets Sent to AI Services?</strong>
-- Your prompts and code snippets
-- File contents (with MCP or when explicitly shared)
-- Error messages and terminal output
-- Project structure and metadata</p>
-<p><strong>Privacy Best Practices:</strong>
-- Don't share sensitive data, credentials, or personal information in prompts
-- Review your organization's data classification policies
-- Use local/self-hosted models for sensitive code when possible
-- Be aware of data retention policies for AI services you use
-- Consider anonymizing data before sharing with AI tools</p>
-<p><strong>Tools with Enhanced Privacy:</strong>
-- <a href="../vibe/#cline">Cline</a> and <a href="../vibe/#roo-code">Roo Code</a>: Can use local models via Ollama
-- <a href="https://aider.chat/">Aider</a>: Supports local LLMs
-- Claude Desktop with <a href="../mcp/">MCP</a>: Data processing happens locally before being sent to API</p>
+<p><strong>What Data Gets Sent to AI Services?</strong></p>
+<ul>
+<li>Your prompts and code snippets</li>
+<li>File contents (with MCP or when explicitly shared)</li>
+<li>Error messages and terminal output</li>
+<li>Project structure and metadata</li>
+</ul>
+<p><strong>Privacy Best Practices:</strong></p>
+<ul>
+<li>Don't share sensitive data, credentials, or personal information in prompts</li>
+<li>Review your organization's data classification policies</li>
+<li>Use local/self-hosted models for sensitive code when possible</li>
+<li>Be aware of data retention policies for AI services you use</li>
+<li>Consider anonymizing data before sharing with AI tools</li>
+</ul>
+<p><strong>Tools with Enhanced Privacy:</strong></p>
+<ul>
+<li><a href="../vibe/#cline">Cline</a> and <a href="../vibe/#roo-code">Roo Code</a>: Can use local models via Ollama</li>
+<li><a href="https://aider.chat/">Aider</a> and <a href="https://opencode.ai">OpenCode.ai</a>: Supports local LLMs</li>
+<li>Claude Desktop with <a href="../mcp/">MCP</a>: Data processing happens locally before being sent to API</li>
+</ul>
 <h3 id="accessibility-and-inclusive-development">Accessibility and Inclusive Development<a class="headerlink" href="#accessibility-and-inclusive-development" title="Permanent link">&para;</a></h3>
-<p><strong>Use AI to Improve Accessibility</strong>
-- Ask AI to review code for WCAG compliance
-- Generate accessible alternatives for visual content
-- Check color contrast and screen reader compatibility
-- Implement keyboard navigation</p>
-<p><strong>Avoid Perpetuating Bias</strong>
-- Review generated variable names and comments for inclusive language
-- Ask AI to suggest alternatives if you spot problematic patterns
-- Consider diverse user needs when prompting for UI/UX implementations</p>
+<p><strong>Use AI to Improve Accessibility</strong></p>
+<ul>
+<li>Ask AI to review code for WCAG compliance</li>
+<li>Generate accessible alternatives for visual content</li>
+<li>Check color contrast and screen reader compatibility</li>
+<li>Implement keyboard navigation</li>
+</ul>
+<p><strong>Avoid Perpetuating Bias</strong></p>
+<ul>
+<li>Review generated variable names and comments for inclusive language</li>
+<li>Ask AI to suggest alternatives if you spot problematic patterns</li>
+<li>Consider diverse user needs when prompting for UI/UX implementations</li>
+</ul>
 <h3 id="environmental-considerations">Environmental Considerations<a class="headerlink" href="#environmental-considerations" title="Permanent link">&para;</a></h3>
-<p><strong>AI Compute Costs</strong>
-- LLM inference requires significant energy
-- Be mindful of unnecessary requests
-- Use appropriate model sizes (don't use GPT-4 for simple autocomplete)
-- Cache results when possible
-- Consider carbon-aware computing practices</p>
+<p><strong>AI Compute Costs</strong></p>
+<ul>
+<li>LLM inference requires significant energy</li>
+<li>Be mindful of unnecessary requests</li>
+<li>Use appropriate model sizes (don't use GPT-4 for simple autocomplete)</li>
+<li>Cache results when possible</li>
+<li>Consider carbon-aware computing practices</li>
+</ul>
 <h3 id="continuous-learning">Continuous Learning<a class="headerlink" href="#continuous-learning" title="Permanent link">&para;</a></h3>
-<p><strong>Stay Updated</strong>
-- AI coding tools evolve rapidly
-- Follow release notes and changelogs
-- Experiment with new features in safe environments
-- Join communities and share learnings
-- Read our <a href="../vibe/">Vibe Coding guide</a> regularly for updates</p>
-<p><strong>Develop AI Literacy</strong>
-- Understand how LLMs work and their limitations
-- Learn about prompt engineering techniques
-- Recognize when AI is appropriate vs. when human expertise is needed
-- Share knowledge with your team</p>
+<p><strong>Stay Updated</strong></p>
+<ul>
+<li>AI coding tools evolve rapidly</li>
+<li>Follow release notes and changelogs</li>
+<li>Experiment with new features in safe environments</li>
+<li>Join communities and share learnings</li>
+<li>Read our <a href="../vibe/">Vibe Coding guide</a> regularly for updates</li>
+</ul>
+<p><strong>Develop AI Literacy</strong></p>
+<ul>
+<li>Understand how LLMs work and their limitations</li>
+<li>Learn about prompt engineering techniques</li>
+<li>Recognize when AI is appropriate vs. when human expertise is needed</li>
+<li>Share knowledge with your team</li>
+</ul>
 <div class="admonition tip">
 <p class="admonition-title">The Human-AI Partnership</p>
 <p>The goal isn't to replace developers with AI—it's to augment human capabilities. The best results come from combining AI's pattern recognition and code generation with human creativity, domain expertise, and critical thinking. Use AI as a powerful tool, but keep your judgment and expertise at the center of development decisions.</p>
@@ -3116,34 +3116,6 @@ Many universities and organizations have policies about AI code execution. Check
 <h2 id="4-choosing-the-right-tool-for-your-workflow">4. Choosing the Right Tool for Your Workflow<a class="headerlink" href="#4-choosing-the-right-tool-for-your-workflow" title="Permanent link">&para;</a></h2>
 <p>With dozens of AI coding tools available, selecting the right one depends on your needs, environment, and workflow preferences.</p>
 <h3 id="decision-framework">Decision Framework<a class="headerlink" href="#decision-framework" title="Permanent link">&para;</a></h3>
-<pre class="mermaid"><code>flowchart TD
-    Start[What's your primary use case?] --&gt; DataAnalysis{Data Analysis&lt;br/&gt;One-off Tasks?}
-    Start --&gt; Development{Software&lt;br/&gt;Development?}
-
-    DataAnalysis --&gt;|Yes| Sandboxed[Use Code Interpreters]
-    Sandboxed --&gt; SandboxChoice[Claude, Gemini, ChatGPT Plus]
-
-    Development --&gt;|Yes| IDE{Prefer IDE&lt;br/&gt;Integration?}
-
-    IDE --&gt;|VS Code| VSCodeTools{Open Source&lt;br/&gt;or Official?}
-    VSCodeTools --&gt;|Official| ClaudeCode[Claude Code Extension]
-    VSCodeTools --&gt;|Open Source| ClineRoo[Cline or Roo Code]
-    VSCodeTools --&gt;|Enterprise| Copilot[GitHub Copilot]
-
-    IDE --&gt;|Standalone| Standalone{Budget&lt;br/&gt;Preference?}
-    Standalone --&gt;|Flat Fee| Cursor[Cursor or Windsurf]
-    Standalone --&gt;|Pay-as-you-go| ClaudeDesktop[Claude Desktop + MCP]
-
-    IDE --&gt;|Terminal/CLI| CLI[Claude Code CLI or Aider]
-
-    IDE --&gt;|Browser| Browser[Claude Code Web, Firebase IDX]
-
-    style Sandboxed fill:#e1f5ff
-    style ClaudeCode fill:#c8e6c9
-    style ClineRoo fill:#c8e6c9
-    style Cursor fill:#c8e6c9
-    style CLI fill:#c8e6c9</code></pre>
-<h3 id="by-use-case">By Use Case<a class="headerlink" href="#by-use-case" title="Permanent link">&para;</a></h3>
 <p><strong>Exploratory Data Analysis</strong>
 → <a href="#1-code-interpreters-your-sandboxed-ai-analyst">Code Interpreters</a>: Claude, Gemini, ChatGPT Plus</p>
 <p><strong>Learning to Code</strong>
@@ -3161,22 +3133,30 @@ Many universities and organizations have policies about AI code execution. Check
 <p><strong>Terminal-First Workflow</strong>
 → <a href="https://aider.chat/">Aider</a> or <a href="https://docs.anthropic.com/en/docs/claude-code">Claude Code CLI</a></p>
 <h3 id="integration-with-your-workflow">Integration with Your Workflow<a class="headerlink" href="#integration-with-your-workflow" title="Permanent link">&para;</a></h3>
-<p><strong>For Researchers:</strong>
-- Start with <a href="#1-code-interpreters-your-sandboxed-ai-analyst">Code Interpreters</a> for data analysis
-- Progress to <a href="../mcp/">Claude Desktop with MCP</a> for accessing research databases
-- Use <a href="../vibe/">Vibe Coding tools</a> for reproducible research code</p>
-<p><strong>For Students:</strong>
-- Begin with <a href="#1-code-interpreters-your-sandboxed-ai-analyst">sandboxed interpreters</a> to learn safely
-- Experiment with <a href="../vibe/#browser-based-vibe-coding">browser-based tools</a> for homework
-- Transition to <a href="../vibe/#vs-code-extensions">IDE extensions</a> as skills develop</p>
-<p><strong>For Professional Developers:</strong>
-- Choose <a href="../vibe/">agentic tools</a> based on your IDE preference
-- Leverage <a href="../mcp/">MCP</a> for project-specific integrations
-- Follow <a href="#security-considerations">security best practices</a> rigorously</p>
-<p><strong>For Teams:</strong>
-- Standardize on <a href="../vibe/#github-copilot">enterprise tools</a> with centralized billing
-- Establish code review processes for AI-generated code
-- Document policies on AI tool usage and data sharing</p>
+<p><strong>For Researchers:</strong></p>
+<ul>
+<li>Start with <a href="#1-code-interpreters-your-sandboxed-ai-analyst">Code Interpreters</a> for data analysis</li>
+<li>Progress to <a href="../mcp/">Claude Desktop with MCP</a> for accessing research databases</li>
+<li>Use <a href="../vibe/">Vibe Coding tools</a> for reproducible research code</li>
+</ul>
+<p><strong>For Students:</strong></p>
+<ul>
+<li>Begin with <a href="#1-code-interpreters-your-sandboxed-ai-analyst">sandboxed interpreters</a> to learn safely</li>
+<li>Experiment with <a href="../vibe/#browser-based-vibe-coding">browser-based tools</a> for homework</li>
+<li>Transition to <a href="../vibe/#vs-code-extensions">IDE extensions</a> as skills develop</li>
+</ul>
+<p><strong>For Professional Developers:</strong></p>
+<ul>
+<li>Choose <a href="../vibe/">agentic tools</a> based on your IDE preference</li>
+<li>Leverage <a href="../mcp/">MCP</a> for project-specific integrations</li>
+<li>Follow <a href="#security-considerations">security best practices</a> rigorously</li>
+</ul>
+<p><strong>For Teams:</strong></p>
+<ul>
+<li>Standardize on <a href="../vibe/#github-copilot">enterprise tools</a> with centralized billing</li>
+<li>Establish code review processes for AI-generated code</li>
+<li>Document policies on AI tool usage and data sharing</li>
+</ul>
 <hr />
 <h2 id="5-the-path-forward-vibe-coding-and-beyond">5. The Path Forward: Vibe Coding and Beyond<a class="headerlink" href="#5-the-path-forward-vibe-coding-and-beyond" title="Permanent link">&para;</a></h2>
 <p>This lesson introduced the landscape of AI-powered code generation and execution. You've learned about:</p>
@@ -3360,7 +3340,7 @@ Understand the principles behind autonomous AI systems and how they're transform
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2025 University of Arizona
+      Copyright &copy; 2026 University of Arizona
     </div>
   
   

@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://tyson-swetnam.github.io/intro-gpt/huggingface/">
       
       
-        <link rel="prev" href="../openai/">
+        <link rel="prev" href="../rag/">
       
       
         <link rel="next" href="../gradio/">
@@ -25,18 +25,18 @@
       
       
       <link rel="icon" href="../assets/ua.ico">
-      <meta name="generator" content="zensical-0.0.16">
+      <meta name="generator" content="zensical-0.0.17">
     
     
       
-        <title>Huggingface - GPT 101</title>
+        <title>Hugging Face - GPT 101</title>
       
     
     
       
         
       
-      <link rel="stylesheet" href="../assets/stylesheets/modern/main.dfcb43b2.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/modern/main.d4922b3c.min.css">
       
         
           
@@ -99,7 +99,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#smollm" class="md-skip">
+        <a href="#hugging-face" class="md-skip">
           Skip to content
         </a>
       
@@ -134,7 +134,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Huggingface
+              Hugging Face
             
           </span>
         </div>
@@ -1284,14 +1284,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../jupyter/" class="md-nav__link">
+      <a href="../ai_sandboxes/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Jupyter AI
+    AI Sandboxes
   
 
     
@@ -1421,62 +1421,6 @@
                 
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../execution/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Code Execution
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../openai/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    OpenAI API
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
     
   
   
@@ -1485,6 +1429,8 @@
       
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
+      
+        
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
@@ -1529,6 +1475,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1537,22 +1485,33 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#smollm" class="md-nav__link">
+  <a href="#what-is-hugging-face" class="md-nav__link">
     <span class="md-ellipsis">
       
-        SmolLM
+        What is Hugging Face?
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="SmolLM">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#navigating-the-hub" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Navigating the Hub
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Navigating the Hub">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#hugging-face-tb-research" class="md-nav__link">
+  <a href="#finding-models" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Hugging Face TB Research
+        Finding Models
       
     </span>
   </a>
@@ -1560,10 +1519,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#fineweb-edu" class="md-nav__link">
+  <a href="#finding-datasets" class="md-nav__link">
     <span class="md-ellipsis">
       
-        FineWeb-Edu
+        Finding Datasets
       
     </span>
   </a>
@@ -1576,22 +1535,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#academic-research-models" class="md-nav__link">
+  <a href="#installing-the-hugging-face-cli" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Academic Research Models
+        Installing the Hugging Face CLI
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Academic Research Models">
+    <nav class="md-nav" aria-label="Installing the Hugging Face CLI">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#paper-qa" class="md-nav__link">
+  <a href="#installation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Paper-QA
+        Installation
       
     </span>
   </a>
@@ -1599,10 +1558,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#hugginggpt" class="md-nav__link">
+  <a href="#authentication-required-for-some-models" class="md-nav__link">
     <span class="md-ellipsis">
       
-        HuggingGPT
+        Authentication (Required for Some Models)
       
     </span>
   </a>
@@ -1611,6 +1570,267 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#downloading-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Downloading Models
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Downloading Models">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#method-1-using-ollama-recommended-for-beginners" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Method 1: Using Ollama (Recommended for Beginners)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-2-using-huggingface-cli" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Method 2: Using huggingface-cli
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-3-using-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Method 3: Using Python
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#running-models-locally" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Running Models Locally
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Running Models Locally">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#option-1-transformers-library-most-flexible" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Option 1: Transformers Library (Most Flexible)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option-2-llamacpp-efficient-cpugpu-inference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Option 2: llama.cpp (Efficient CPU/GPU Inference)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option-3-text-generation-web-ui" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Option 3: Text Generation Web UI
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recommended-models-for-beginners" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recommended Models for Beginners
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Recommended Models for Beginners">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#small-models-4-8gb-ram" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Small Models (4-8GB RAM)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#medium-models-16-32gb-ram" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Medium Models (16-32GB RAM)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#large-models-gpu-required" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Large Models (GPU Required)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#downloading-datasets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Downloading Datasets
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Downloading Datasets">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-the-datasets-library" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using the datasets Library
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#popular-academic-datasets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Popular Academic Datasets
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spaces-interactive-demos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Spaces: Interactive Demos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Best Practices
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Best Practices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#storage-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Storage Management
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#model-selection-tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Model Selection Tips
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-academic-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        For Academic Use
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Further Resources
+      
+    </span>
+  </a>
   
 </li>
       
@@ -1658,6 +1878,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../jupyter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jupyter AI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../posit/" class="md-nav__link">
         
   
@@ -1666,6 +1914,34 @@
     
   
     Posit (RStudio)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vscode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VS Code & AI Tools
   
 
     
@@ -2060,6 +2336,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -2068,22 +2346,33 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#smollm" class="md-nav__link">
+  <a href="#what-is-hugging-face" class="md-nav__link">
     <span class="md-ellipsis">
       
-        SmolLM
+        What is Hugging Face?
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="SmolLM">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#navigating-the-hub" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Navigating the Hub
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Navigating the Hub">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#hugging-face-tb-research" class="md-nav__link">
+  <a href="#finding-models" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Hugging Face TB Research
+        Finding Models
       
     </span>
   </a>
@@ -2091,10 +2380,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#fineweb-edu" class="md-nav__link">
+  <a href="#finding-datasets" class="md-nav__link">
     <span class="md-ellipsis">
       
-        FineWeb-Edu
+        Finding Datasets
       
     </span>
   </a>
@@ -2107,22 +2396,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#academic-research-models" class="md-nav__link">
+  <a href="#installing-the-hugging-face-cli" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Academic Research Models
+        Installing the Hugging Face CLI
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Academic Research Models">
+    <nav class="md-nav" aria-label="Installing the Hugging Face CLI">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#paper-qa" class="md-nav__link">
+  <a href="#installation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Paper-QA
+        Installation
       
     </span>
   </a>
@@ -2130,10 +2419,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#hugginggpt" class="md-nav__link">
+  <a href="#authentication-required-for-some-models" class="md-nav__link">
     <span class="md-ellipsis">
       
-        HuggingGPT
+        Authentication (Required for Some Models)
       
     </span>
   </a>
@@ -2142,6 +2431,267 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#downloading-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Downloading Models
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Downloading Models">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#method-1-using-ollama-recommended-for-beginners" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Method 1: Using Ollama (Recommended for Beginners)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-2-using-huggingface-cli" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Method 2: Using huggingface-cli
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-3-using-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Method 3: Using Python
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#running-models-locally" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Running Models Locally
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Running Models Locally">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#option-1-transformers-library-most-flexible" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Option 1: Transformers Library (Most Flexible)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option-2-llamacpp-efficient-cpugpu-inference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Option 2: llama.cpp (Efficient CPU/GPU Inference)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option-3-text-generation-web-ui" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Option 3: Text Generation Web UI
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recommended-models-for-beginners" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recommended Models for Beginners
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Recommended Models for Beginners">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#small-models-4-8gb-ram" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Small Models (4-8GB RAM)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#medium-models-16-32gb-ram" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Medium Models (16-32GB RAM)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#large-models-gpu-required" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Large Models (GPU Required)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#downloading-datasets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Downloading Datasets
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Downloading Datasets">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-the-datasets-library" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using the datasets Library
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#popular-academic-datasets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Popular Academic Datasets
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spaces-interactive-demos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Spaces: Interactive Demos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Best Practices
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Best Practices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#storage-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Storage Management
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#model-selection-tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Model Selection Tips
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-academic-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        For Academic Use
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Further Resources
+      
+    </span>
+  </a>
   
 </li>
       
@@ -2160,16 +2710,24 @@
                 
                   
 
-  <h1>Huggingface</h1>
-
+<h1 id="hugging-face">Hugging Face<a class="headerlink" href="#hugging-face" title="Permanent link">&para;</a></h1>
 <p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+<h2 id="what-is-hugging-face">What is Hugging Face?<a class="headerlink" href="#what-is-hugging-face" title="Permanent link">&para;</a></h2>
+<p><a href="https://huggingface.co" target="_blank">Hugging Face</a> is the central hub for the open-source AI community. Think of it as "GitHub for AI models" - a platform where researchers and developers share:</p>
+<ul>
+<li><strong>Models:</strong> Pre-trained AI models ready to download and use</li>
+<li><strong>Datasets:</strong> Training and evaluation data for machine learning</li>
+<li><strong>Spaces:</strong> Interactive demos and applications</li>
+<li><strong>Documentation:</strong> Model cards, papers, and usage guides</li>
+</ul>
+<p>For researchers and academics, Hugging Face provides access to state-of-the-art models without needing to train them from scratch, saving significant computational resources and time.</p>
 <details class="info">
-<summary>Create a HuggingFace Account</summary>
-<p><strong><img alt="🤗" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f917.svg" title=":hugging:" /> HuggingFace</strong></p>
-<p>Follow these instructions to sign up for HuggingFace:</p>
+<summary>Create a Hugging Face Account</summary>
+<p><strong><img alt="🤗" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f917.svg" title=":hugging:" /> Hugging Face</strong></p>
+<p>Follow these instructions to sign up for Hugging Face:</p>
 <ol>
 <li>
-<p>Visit the HuggingFace website: <a href="https://huggingface.co/" target="_blank">https://huggingface.co</a></p>
+<p>Visit the Hugging Face website: <a href="https://huggingface.co/" target="_blank">https://huggingface.co</a></p>
 </li>
 <li>
 <p>Click on the "Sign Up" button in the top-right corner of the page.</p>
@@ -2178,31 +2736,406 @@
 <p>Fill in your email address, username, and password in the respective fields.</p>
 </li>
 <li>
-<p>Check the box to agree to HuggingFace's terms and conditions, then click "Sign Up."</p>
+<p>Check the box to agree to Hugging Face's terms and conditions, then click "Sign Up."</p>
 </li>
 <li>
 <p>You'll receive an email to confirm your account. Click on the confirmation link in the email.</p>
 </li>
 <li>
-<p>Once your account is confirmed, sign in to access HuggingFace's features.</p>
+<p>Once your account is confirmed, sign in to access Hugging Face's features.</p>
 </li>
 </ol>
-<p>For more information, visit the HuggingFace documentation: <a href="https://huggingface.co/docs" target="_blank">https://huggingface.co/docs</a></p>
+<p>For more information, visit the Hugging Face documentation: <a href="https://huggingface.co/docs" target="_blank">https://huggingface.co/docs</a></p>
 </details>
-<details class="info">
-<summary>Run HuggingFace models locally</summary>
-</details>
-<h2 id="smollm"><img alt="🤗" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f917.svg" title=":hugging:" /> SmolLM<a class="headerlink" href="#smollm" title="Permanent link">&para;</a></h2>
-<p>The smol models (SmolLM) include sets of high quality pre-trained datasets.</p>
-<h3 id="hugging-face-tb-research">Hugging Face TB Research<a class="headerlink" href="#hugging-face-tb-research" title="Permanent link">&para;</a></h3>
-<p><a href="https://huggingface.co/HuggingFaceTB"><img alt="🤗" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f917.svg" title=":hugging:" /> HuggingFaceTB</a></p>
-<h3 id="fineweb-edu">FineWeb-Edu<a class="headerlink" href="#fineweb-edu" title="Permanent link">&para;</a></h3>
-<p><a href="https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu"><img alt="🤗" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f917.svg" title=":hugging:" /> FineWeb-Edu</a></p>
-<h2 id="academic-research-models">Academic Research Models<a class="headerlink" href="#academic-research-models" title="Permanent link">&para;</a></h2>
-<h3 id="paper-qa">Paper-QA<a class="headerlink" href="#paper-qa" title="Permanent link">&para;</a></h3>
-<p>ChatGPT, despite its potential for generating inaccurate information, is just one among various AI tools available for research purposes. Other tools, like <a href=""><img alt="🤗" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f917.svg" title=":hugging:" /> Paper-QA</a>,  <a href="https://github.com/whitead/paper-qa" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></span> GitHub whitead/paper-qa </a> provide a more reliable approach, relying solely on inputted textual information (PDFs) to generate contextual answers with citations. Researchers can use platforms like Paper-QA to perform meta-analyses of numerous papers in just a few seconds. These tools allow users to quickly verify the results by directly navigating to the pages where the context was extracted from, ensuring a higher degree of confidence in the generated information. By harnessing the capabilities of such tools, researchers can streamline their literature review processes and gain valuable insights more efficiently.</p>
-<h3 id="hugginggpt">HuggingGPT<a class="headerlink" href="#hugginggpt" title="Permanent link">&para;</a></h3>
-<p><a href="https://huggingface.co/spaces/microsoft/HuggingGPT">HuggingGPT</a></p>
+<h2 id="navigating-the-hub">Navigating the Hub<a class="headerlink" href="#navigating-the-hub" title="Permanent link">&para;</a></h2>
+<h3 id="finding-models">Finding Models<a class="headerlink" href="#finding-models" title="Permanent link">&para;</a></h3>
+<p>The <a href="https://huggingface.co/models" target="_blank">Model Hub</a> hosts over 1 million models. To find what you need:</p>
+<ol>
+<li><strong>Browse by Task:</strong> Filter by what you want to do (text generation, image classification, translation, etc.)</li>
+<li><strong>Sort by Downloads:</strong> Popular models are well-tested and documented</li>
+<li><strong>Filter by License:</strong> Important for academic and commercial use</li>
+<li><strong>Check the Model Card:</strong> Every model should have documentation explaining its capabilities and limitations</li>
+</ol>
+<p><strong>Popular Model Categories for Researchers:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Example Models</th>
+<th>Use Cases</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Text Generation</td>
+<td>Llama 3, Mistral, Qwen</td>
+<td>Writing assistance, code generation, analysis</td>
+</tr>
+<tr>
+<td>Embeddings</td>
+<td>BGE, E5, GTE</td>
+<td>Document search, similarity matching, RAG</td>
+</tr>
+<tr>
+<td>Vision-Language</td>
+<td>LLaVA, Qwen-VL</td>
+<td>Image analysis, chart interpretation</td>
+</tr>
+<tr>
+<td>Speech</td>
+<td>Whisper, Wav2Vec2</td>
+<td>Transcription, audio analysis</td>
+</tr>
+</tbody>
+</table>
+<h3 id="finding-datasets">Finding Datasets<a class="headerlink" href="#finding-datasets" title="Permanent link">&para;</a></h3>
+<p>The <a href="https://huggingface.co/datasets" target="_blank">Dataset Hub</a> hosts datasets for training and evaluation:</p>
+<ol>
+<li><strong>Search by Domain:</strong> Academic papers, code, images, audio, etc.</li>
+<li><strong>Check Size and Format:</strong> Ensure it fits your storage and processing capabilities</li>
+<li><strong>Review the License:</strong> Some datasets have restrictions on use</li>
+</ol>
+<h2 id="installing-the-hugging-face-cli">Installing the Hugging Face CLI<a class="headerlink" href="#installing-the-hugging-face-cli" title="Permanent link">&para;</a></h2>
+<p>The <code>huggingface_hub</code> library provides tools for downloading and managing models.</p>
+<h3 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">pip</label><label for="__tabbed_1_2">conda</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>huggingface_hub
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span>huggingface_hub
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<h3 id="authentication-required-for-some-models">Authentication (Required for Some Models)<a class="headerlink" href="#authentication-required-for-some-models" title="Permanent link">&para;</a></h3>
+<p>Some models (especially Llama and other gated models) require you to accept license terms and authenticate:</p>
+<ol>
+<li><strong>Create an Access Token:</strong></li>
+<li>Go to <a href="https://huggingface.co/settings/tokens" target="_blank">huggingface.co/settings/tokens</a></li>
+<li>Click "New token" and create a token with "Read" access</li>
+<li>
+<p>Copy the token (you will only see it once)</p>
+</li>
+<li>
+<p><strong>Login via CLI:</strong>
+   <div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>huggingface-cli<span class="w"> </span>login
+</span></code></pre></div>
+   Paste your token when prompted.</p>
+</li>
+<li>
+<p><strong>Accept Model License (for gated models):</strong></p>
+</li>
+<li>Visit the model page (e.g., <a href="https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct" target="_blank">meta-llama/Llama-3.3-70B-Instruct</a>)</li>
+<li>Click "Access repository" and accept the license terms</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Token Security</p>
+<p>Treat your Hugging Face token like a password. Do not commit it to version control or share it publicly.</p>
+</div>
+<h2 id="downloading-models">Downloading Models<a class="headerlink" href="#downloading-models" title="Permanent link">&para;</a></h2>
+<h3 id="method-1-using-ollama-recommended-for-beginners">Method 1: Using Ollama (Recommended for Beginners)<a class="headerlink" href="#method-1-using-ollama-recommended-for-beginners" title="Permanent link">&para;</a></h3>
+<p>The easiest way to run Hugging Face models locally is through <a href="../ollama/">Ollama</a>, which handles all the complexity:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># Install Ollama (if not already installed)</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://ollama.com/install.sh<span class="w"> </span><span class="p">|</span><span class="w"> </span>sh
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="c1"># Run popular models directly</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>ollama<span class="w"> </span>run<span class="w"> </span>llama3.2
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>ollama<span class="w"> </span>run<span class="w"> </span>mistral
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>ollama<span class="w"> </span>run<span class="w"> </span>qwen2.5
+</span></code></pre></div>
+<p>Ollama automatically downloads optimized versions of models from Hugging Face.</p>
+<h3 id="method-2-using-huggingface-cli">Method 2: Using huggingface-cli<a class="headerlink" href="#method-2-using-huggingface-cli" title="Permanent link">&para;</a></h3>
+<p>For more control, download models directly:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1"># Download a specific model</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>huggingface-cli<span class="w"> </span>download<span class="w"> </span>microsoft/Phi-3-mini-4k-instruct
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="c1"># Download to a specific directory</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>huggingface-cli<span class="w"> </span>download<span class="w"> </span>microsoft/Phi-3-mini-4k-instruct<span class="w"> </span>--local-dir<span class="w"> </span>./models/phi3
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="c1"># Download only specific files (useful for large models)</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>huggingface-cli<span class="w"> </span>download<span class="w"> </span>meta-llama/Llama-3.2-1B<span class="w"> </span>--include<span class="w"> </span><span class="s2">&quot;*.safetensors&quot;</span>
+</span></code></pre></div>
+<h3 id="method-3-using-python">Method 3: Using Python<a class="headerlink" href="#method-3-using-python" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">huggingface_hub</span><span class="w"> </span><span class="kn">import</span> <span class="n">snapshot_download</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="c1"># Download entire model repository</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="n">model_path</span> <span class="o">=</span> <span class="n">snapshot_download</span><span class="p">(</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>    <span class="n">repo_id</span><span class="o">=</span><span class="s2">&quot;microsoft/Phi-3-mini-4k-instruct&quot;</span><span class="p">,</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>    <span class="n">local_dir</span><span class="o">=</span><span class="s2">&quot;./models/phi3&quot;</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="p">)</span>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Model downloaded to: </span><span class="si">{</span><span class="n">model_path</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<h2 id="running-models-locally">Running Models Locally<a class="headerlink" href="#running-models-locally" title="Permanent link">&para;</a></h2>
+<p>Once downloaded, you can run models using various frameworks.</p>
+<h3 id="option-1-transformers-library-most-flexible">Option 1: Transformers Library (Most Flexible)<a class="headerlink" href="#option-1-transformers-library-most-flexible" title="Permanent link">&para;</a></h3>
+<p>The <code>transformers</code> library from Hugging Face is the standard for working with models:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>pip<span class="w"> </span>install<span class="w"> </span>transformers<span class="w"> </span>torch<span class="w"> </span>accelerate
+</span></code></pre></div>
+<p><strong>Basic Text Generation Example:</strong></p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">transformers</span><span class="w"> </span><span class="kn">import</span> <span class="n">AutoTokenizer</span><span class="p">,</span> <span class="n">AutoModelForCausalLM</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">torch</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="c1"># Load model and tokenizer</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="n">model_name</span> <span class="o">=</span> <span class="s2">&quot;microsoft/Phi-3-mini-4k-instruct&quot;</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="n">tokenizer</span> <span class="o">=</span> <span class="n">AutoTokenizer</span><span class="o">.</span><span class="n">from_pretrained</span><span class="p">(</span><span class="n">model_name</span><span class="p">)</span>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="n">model</span> <span class="o">=</span> <span class="n">AutoModelForCausalLM</span><span class="o">.</span><span class="n">from_pretrained</span><span class="p">(</span>
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>    <span class="n">model_name</span><span class="p">,</span>
+</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>    <span class="n">torch_dtype</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">float16</span><span class="p">,</span>  <span class="c1"># Use half precision to save memory</span>
+</span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>    <span class="n">device_map</span><span class="o">=</span><span class="s2">&quot;auto&quot;</span>           <span class="c1"># Automatically use GPU if available</span>
+</span><span id="__span-7-11"><a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="p">)</span>
+</span><span id="__span-7-12"><a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a>
+</span><span id="__span-7-13"><a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a><span class="c1"># Generate text</span>
+</span><span id="__span-7-14"><a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a><span class="n">prompt</span> <span class="o">=</span> <span class="s2">&quot;Explain the process of photosynthesis in simple terms:&quot;</span>
+</span><span id="__span-7-15"><a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a><span class="n">inputs</span> <span class="o">=</span> <span class="n">tokenizer</span><span class="p">(</span><span class="n">prompt</span><span class="p">,</span> <span class="n">return_tensors</span><span class="o">=</span><span class="s2">&quot;pt&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">device</span><span class="p">)</span>
+</span><span id="__span-7-16"><a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a>
+</span><span id="__span-7-17"><a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a><span class="n">outputs</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">generate</span><span class="p">(</span>
+</span><span id="__span-7-18"><a id="__codelineno-7-18" name="__codelineno-7-18" href="#__codelineno-7-18"></a>    <span class="o">**</span><span class="n">inputs</span><span class="p">,</span>
+</span><span id="__span-7-19"><a id="__codelineno-7-19" name="__codelineno-7-19" href="#__codelineno-7-19"></a>    <span class="n">max_new_tokens</span><span class="o">=</span><span class="mi">200</span><span class="p">,</span>
+</span><span id="__span-7-20"><a id="__codelineno-7-20" name="__codelineno-7-20" href="#__codelineno-7-20"></a>    <span class="n">temperature</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span>
+</span><span id="__span-7-21"><a id="__codelineno-7-21" name="__codelineno-7-21" href="#__codelineno-7-21"></a>    <span class="n">do_sample</span><span class="o">=</span><span class="kc">True</span>
+</span><span id="__span-7-22"><a id="__codelineno-7-22" name="__codelineno-7-22" href="#__codelineno-7-22"></a><span class="p">)</span>
+</span><span id="__span-7-23"><a id="__codelineno-7-23" name="__codelineno-7-23" href="#__codelineno-7-23"></a>
+</span><span id="__span-7-24"><a id="__codelineno-7-24" name="__codelineno-7-24" href="#__codelineno-7-24"></a><span class="n">response</span> <span class="o">=</span> <span class="n">tokenizer</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="n">outputs</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">skip_special_tokens</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span><span id="__span-7-25"><a id="__codelineno-7-25" name="__codelineno-7-25" href="#__codelineno-7-25"></a><span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
+</span></code></pre></div>
+<h3 id="option-2-llamacpp-efficient-cpugpu-inference">Option 2: llama.cpp (Efficient CPU/GPU Inference)<a class="headerlink" href="#option-2-llamacpp-efficient-cpugpu-inference" title="Permanent link">&para;</a></h3>
+<p>For running models efficiently on consumer hardware, <code>llama.cpp</code> provides optimized inference:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1"># Install llama-cpp-python</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>pip<span class="w"> </span>install<span class="w"> </span>llama-cpp-python
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="c1"># Or with GPU support (CUDA)</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="nv">CMAKE_ARGS</span><span class="o">=</span><span class="s2">&quot;-DGGML_CUDA=on&quot;</span><span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>llama-cpp-python
+</span></code></pre></div>
+<p><strong>Using GGUF Format Models:</strong></p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">llama_cpp</span><span class="w"> </span><span class="kn">import</span> <span class="n">Llama</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="c1"># Download a GGUF model from Hugging Face</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="c1"># Example: https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.2-GGUF</span>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="n">llm</span> <span class="o">=</span> <span class="n">Llama</span><span class="p">(</span>
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>    <span class="n">model_path</span><span class="o">=</span><span class="s2">&quot;./models/mistral-7b-instruct-v0.2.Q4_K_M.gguf&quot;</span><span class="p">,</span>
+</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>    <span class="n">n_ctx</span><span class="o">=</span><span class="mi">4096</span><span class="p">,</span>      <span class="c1"># Context window</span>
+</span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>    <span class="n">n_threads</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span>     <span class="c1"># CPU threads</span>
+</span><span id="__span-9-10"><a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>    <span class="n">n_gpu_layers</span><span class="o">=</span><span class="mi">35</span>  <span class="c1"># Layers to offload to GPU (0 for CPU-only)</span>
+</span><span id="__span-9-11"><a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a><span class="p">)</span>
+</span><span id="__span-9-12"><a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>
+</span><span id="__span-9-13"><a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a><span class="n">output</span> <span class="o">=</span> <span class="n">llm</span><span class="p">(</span>
+</span><span id="__span-9-14"><a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a>    <span class="s2">&quot;What are the key differences between supervised and unsupervised learning?&quot;</span><span class="p">,</span>
+</span><span id="__span-9-15"><a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a>    <span class="n">max_tokens</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span>
+</span><span id="__span-9-16"><a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a>    <span class="n">temperature</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span>
+</span><span id="__span-9-17"><a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a>    <span class="n">echo</span><span class="o">=</span><span class="kc">False</span>
+</span><span id="__span-9-18"><a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a><span class="p">)</span>
+</span><span id="__span-9-19"><a id="__codelineno-9-19" name="__codelineno-9-19" href="#__codelineno-9-19"></a>
+</span><span id="__span-9-20"><a id="__codelineno-9-20" name="__codelineno-9-20" href="#__codelineno-9-20"></a><span class="nb">print</span><span class="p">(</span><span class="n">output</span><span class="p">[</span><span class="s2">&quot;choices&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s2">&quot;text&quot;</span><span class="p">])</span>
+</span></code></pre></div>
+<h3 id="option-3-text-generation-web-ui">Option 3: Text Generation Web UI<a class="headerlink" href="#option-3-text-generation-web-ui" title="Permanent link">&para;</a></h3>
+<p>For a graphical interface, <a href="https://github.com/oobabooga/text-generation-webui" target="_blank">text-generation-webui</a> provides a ChatGPT-like experience for local models.</p>
+<h2 id="recommended-models-for-beginners">Recommended Models for Beginners<a class="headerlink" href="#recommended-models-for-beginners" title="Permanent link">&para;</a></h2>
+<p>Here are well-tested models suitable for different hardware configurations:</p>
+<h3 id="small-models-4-8gb-ram">Small Models (4-8GB RAM)<a class="headerlink" href="#small-models-4-8gb-ram" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Size</th>
+<th>Best For</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://huggingface.co/microsoft/Phi-3-mini-4k-instruct" target="_blank">Phi-3-mini</a></td>
+<td>3.8B</td>
+<td>General tasks, runs on laptops</td>
+</tr>
+<tr>
+<td><a href="https://huggingface.co/Qwen/Qwen2.5-3B-Instruct" target="_blank">Qwen2.5-3B-Instruct</a></td>
+<td>3B</td>
+<td>Multilingual, good reasoning</td>
+</tr>
+<tr>
+<td><a href="https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct" target="_blank">Llama-3.2-1B-Instruct</a></td>
+<td>1B</td>
+<td>Very fast, basic tasks</td>
+</tr>
+</tbody>
+</table>
+<h3 id="medium-models-16-32gb-ram">Medium Models (16-32GB RAM)<a class="headerlink" href="#medium-models-16-32gb-ram" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Size</th>
+<th>Best For</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct" target="_blank">Llama-3.2-3B-Instruct</a></td>
+<td>3B</td>
+<td>Balanced performance</td>
+</tr>
+<tr>
+<td><a href="https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3" target="_blank">Mistral-7B-Instruct</a></td>
+<td>7B</td>
+<td>Excellent general purpose</td>
+</tr>
+<tr>
+<td><a href="https://huggingface.co/Qwen/Qwen2.5-7B-Instruct" target="_blank">Qwen2.5-7B-Instruct</a></td>
+<td>7B</td>
+<td>Strong reasoning, coding</td>
+</tr>
+</tbody>
+</table>
+<h3 id="large-models-gpu-required">Large Models (GPU Required)<a class="headerlink" href="#large-models-gpu-required" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Size</th>
+<th>Best For</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct" target="_blank">Llama-3.3-70B-Instruct</a></td>
+<td>70B</td>
+<td>Near-frontier performance</td>
+</tr>
+<tr>
+<td><a href="https://huggingface.co/Qwen/Qwen2.5-72B-Instruct" target="_blank">Qwen2.5-72B-Instruct</a></td>
+<td>72B</td>
+<td>State-of-the-art open model</td>
+</tr>
+<tr>
+<td><a href="https://huggingface.co/deepseek-ai/DeepSeek-R1" target="_blank">DeepSeek-R1</a></td>
+<td>671B</td>
+<td>Advanced reasoning (requires cluster)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Quantized Models</p>
+<p>For running larger models on limited hardware, look for quantized versions (GGUF format). These reduce memory requirements with minimal quality loss. Search for model names with "GGUF" or visit <a href="https://huggingface.co/TheBloke" target="_blank">TheBloke</a> for quantized versions.</p>
+</div>
+<h2 id="downloading-datasets">Downloading Datasets<a class="headerlink" href="#downloading-datasets" title="Permanent link">&para;</a></h2>
+<h3 id="using-the-datasets-library">Using the datasets Library<a class="headerlink" href="#using-the-datasets-library" title="Permanent link">&para;</a></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>pip<span class="w"> </span>install<span class="w"> </span>datasets
+</span></code></pre></div>
+<p><strong>Load a Dataset:</strong></p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">datasets</span><span class="w"> </span><span class="kn">import</span> <span class="n">load_dataset</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="c1"># Load a dataset from the Hub</span>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="n">dataset</span> <span class="o">=</span> <span class="n">load_dataset</span><span class="p">(</span><span class="s2">&quot;squad&quot;</span><span class="p">)</span>  <span class="c1"># Stanford Question Answering Dataset</span>
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>
+</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="c1"># View dataset structure</span>
+</span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">dataset</span><span class="p">)</span>
+</span><span id="__span-11-8"><a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a><span class="nb">print</span><span class="p">(</span><span class="n">dataset</span><span class="p">[</span><span class="s2">&quot;train&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>  <span class="c1"># First training example</span>
+</span></code></pre></div>
+<p><strong>Download for Offline Use:</strong></p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">datasets</span><span class="w"> </span><span class="kn">import</span> <span class="n">load_dataset</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="c1"># Download and cache locally</span>
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="n">dataset</span> <span class="o">=</span> <span class="n">load_dataset</span><span class="p">(</span>
+</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>    <span class="s2">&quot;scientific_papers&quot;</span><span class="p">,</span>
+</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>    <span class="s2">&quot;arxiv&quot;</span><span class="p">,</span>
+</span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a>    <span class="n">cache_dir</span><span class="o">=</span><span class="s2">&quot;./data/scientific_papers&quot;</span>
+</span><span id="__span-12-8"><a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a><span class="p">)</span>
+</span><span id="__span-12-9"><a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a>
+</span><span id="__span-12-10"><a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a><span class="c1"># Save to disk in a specific format</span>
+</span><span id="__span-12-11"><a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a><span class="n">dataset</span><span class="o">.</span><span class="n">save_to_disk</span><span class="p">(</span><span class="s2">&quot;./data/arxiv_papers&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<h3 id="popular-academic-datasets">Popular Academic Datasets<a class="headerlink" href="#popular-academic-datasets" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Dataset</th>
+<th>Description</th>
+<th>Size</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://huggingface.co/datasets/nick007x/arxiv-papers" target="_blank">arxiv-papers</a></td>
+<td>ArXiv papers</td>
+<td>4.6TB of papers</td>
+</tr>
+<tr>
+<td><a href="https://huggingface.co/datasets/wikimedia/wikipedia" target="_blank">wikipedia</a></td>
+<td>Wikipedia articles</td>
+<td>Multiple languages</td>
+</tr>
+<tr>
+<td><a href="https://huggingface.co/datasets/EleutherAI/pile" target="_blank">pile</a></td>
+<td>Diverse text corpus</td>
+<td>800GB</td>
+</tr>
+<tr>
+<td><a href="https://huggingface.co/datasets/code-search-net/code_search_net" target="_blank">code_search_net</a></td>
+<td>Code from GitHub</td>
+<td>6M functions</td>
+</tr>
+</tbody>
+</table>
+<h2 id="spaces-interactive-demos">Spaces: Interactive Demos<a class="headerlink" href="#spaces-interactive-demos" title="Permanent link">&para;</a></h2>
+<p><a href="https://huggingface.co/spaces" target="_blank">Hugging Face Spaces</a> hosts interactive applications built with models:</p>
+<ul>
+<li><strong>Try before you download:</strong> Test models in your browser</li>
+<li><strong>Share your work:</strong> Deploy demos for papers or projects</li>
+<li><strong>Learn from examples:</strong> See how others implement solutions</li>
+</ul>
+<p>Most Spaces are built using <a href="../gradio/">Gradio</a>, an open-source Python library for creating web interfaces for ML models. You can build and deploy your own Gradio apps to Spaces with just a few lines of code. See our <a href="../gradio/">Gradio documentation</a> for tutorials and examples.</p>
+<p><strong>Notable Spaces for Researchers:</strong></p>
+<ul>
+<li><a href="https://huggingface.co/spaces/openai/whisper" target="_blank">Whisper</a> - Audio transcription</li>
+<li><a href="https://huggingface.co/spaces/impira/docquery" target="_blank">Document Question Answering</a> - Extract information from documents</li>
+<li><a href="https://huggingface.co/spaces/stabilityai/stable-diffusion" target="_blank">Stable Diffusion</a> - Image generation</li>
+</ul>
+<h2 id="best-practices">Best Practices<a class="headerlink" href="#best-practices" title="Permanent link">&para;</a></h2>
+<h3 id="storage-management">Storage Management<a class="headerlink" href="#storage-management" title="Permanent link">&para;</a></h3>
+<p>Models can be large. Manage your cache:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="c1"># View cache usage</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>huggingface-cli<span class="w"> </span>scan-cache
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="c1"># Delete unused models</span>
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>huggingface-cli<span class="w"> </span>delete-cache
+</span></code></pre></div>
+<h3 id="model-selection-tips">Model Selection Tips<a class="headerlink" href="#model-selection-tips" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Start small:</strong> Begin with smaller models to test your workflow</li>
+<li><strong>Check benchmarks:</strong> Review model cards for performance on relevant tasks</li>
+<li><strong>Consider licensing:</strong> Ensure the license fits your use case (research vs. commercial)</li>
+<li><strong>Read the limitations:</strong> Model cards describe known issues and biases</li>
+</ol>
+<h3 id="for-academic-use">For Academic Use<a class="headerlink" href="#for-academic-use" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Cite properly:</strong> Model cards include citation information</li>
+<li><strong>Document your setup:</strong> Record model versions and parameters for reproducibility</li>
+<li><strong>Check data provenance:</strong> Understand what data was used to train the model</li>
+</ul>
+<h2 id="further-resources">Further Resources<a class="headerlink" href="#further-resources" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Hugging Face Documentation:</strong> <a href="https://huggingface.co/docs" target="_blank">https://huggingface.co/docs</a></li>
+<li><strong>Transformers Library:</strong> <a href="https://huggingface.co/docs/transformers" target="_blank">https://huggingface.co/docs/transformers</a></li>
+<li><strong>Hugging Face Course:</strong> <a href="https://huggingface.co/learn" target="_blank">https://huggingface.co/learn</a> (Free NLP course)</li>
+<li><strong>Model Hub:</strong> <a href="https://huggingface.co/models" target="_blank">https://huggingface.co/models</a></li>
+<li><strong>Dataset Hub:</strong> <a href="https://huggingface.co/datasets" target="_blank">https://huggingface.co/datasets</a></li>
+<li><strong>Spaces:</strong> <a href="https://huggingface.co/spaces" target="_blank">https://huggingface.co/spaces</a></li>
+<li><strong>Gradio (for building Spaces):</strong> See our <a href="../gradio/">Gradio documentation</a> for tutorials on building interactive demos</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Hugging Face vs. Ollama</p>
+<p>For most workshop participants, we recommend starting with <a href="../ollama/">Ollama</a> for running local models. It handles model downloading and optimization automatically. Use Hugging Face directly when you need:</p>
+<ul>
+<li>Access to specific model versions or configurations</li>
+<li>Fine-tuning or training capabilities</li>
+<li>Datasets for research</li>
+<li>Models not available in Ollama's library</li>
+</ul>
+</div>
 
 
 
@@ -2242,7 +3175,7 @@
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2025 University of Arizona
+      Copyright &copy; 2026 University of Arizona
     </div>
   
   
