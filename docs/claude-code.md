@@ -10,7 +10,7 @@ Claude Code acts as a pair programmer that understands context, writes code, cre
 
 !!! Tip "What You'll Learn"
 
-    This tutorial covers both the **Claude Code CLI** (command-line interface) and the **Claude Code VS Code Extension**. 
+    This tutorial covers both the Claude Code **CLI** (command-line interface), the **VS Code Extension**, and **Claude Desktop Code** feature. 
     
     We'll highlight the differences and help you choose the right tool for your workflow.
 
@@ -41,14 +41,17 @@ Claude Code acts as a pair programmer that understands context, writes code, cre
 
 ??? Question "Are there other CLI :simple-gnubash: Code Assistants?"
 
-    Claude Code is not the only CLI tool for AI-assisted development. 
+    Yes! Claude Code is not the only CLI tool for AI-assisted development. 
     
     Other popular options include:
      
-    - [**:material-google: Google Gemini CLI**](https://geminicli.com/){:target="_blank"}
-    - [**:fontawesome-brands-openai: ChatGPT Codex**](https://chat.openai.com/codex){:target="_blank"}
-    - [**:simple-opensourceinitiative: OpenCode.ai**](https://opencode.ai){:target="_blank"}
-    - [**:simple-gnubash: aider.chat**](https://aider.chat){:target="_blank"}
+    [**:material-google: Google Gemini CLI**](https://geminicli.com/){:target="_blank"}
+    
+    [**:fontawesome-brands-openai: ChatGPT Codex**](https://chat.openai.com/codex){:target="_blank"}
+    
+    [**:simple-opensourceinitiative: OpenCode.ai**](https://opencode.ai){:target="_blank"}
+    
+    [**:simple-gnubash: aider.chat**](https://aider.chat){:target="_blank"}
 
 ---
 
@@ -1398,11 +1401,13 @@ Should I proceed with creating these files? Any changes you'd like?
 ```
 
 **You:**
+
 ```
 Yes, looks good! Let's also add a priority field to tasks. And use Rich for better output.
 ```
 
 **Claude:**
+
 ```
 Perfect! I'll update the plan to include:
 - Priority field (LOW, MEDIUM, HIGH)
@@ -1638,7 +1643,46 @@ In Claude Code, an **agent** is a specialized AI assistant configured for specif
 
 For deeper understanding of agentic AI concepts, see [Agentic AI](agentic.md).
 
-### 6.2 Creating a Documentation Writer Agent
+### 6.2 Built-in Specialized Agents
+
+Claude Code includes several built-in specialized agents that handle common development tasks. These agents are always available and can be invoked using the Task tool or through natural conversation.
+
+**Available Built-in Agents:**
+
+| Agent | Purpose | When to Use | Key Capabilities |
+|-------|---------|-------------|------------------|
+| **Explore** | Codebase exploration specialist | Finding files, searching code, understanding project structure | Fast pattern matching, keyword search, architectural analysis. Supports thoroughness levels: "quick", "medium", "very thorough" |
+| **Plan** | Software architecture and planning | Designing implementation strategies before coding | Creates step-by-step plans, identifies critical files, considers architectural trade-offs |
+| **Bash** | Command execution specialist | Git operations, terminal tasks, system commands | Specialized for bash command execution and terminal operations |
+| **general-purpose** | Multi-step task automation | Complex research, iterative searching, multi-step workflows | Access to all tools, autonomous task handling, ideal when multiple search attempts needed |
+| **claude-code-guide** | Claude documentation expert | Questions about Claude Code, API, or Agent SDK | Specialized knowledge of Claude features, tools, commands, and best practices |
+| **webcrawler** | Web content extraction | Documentation research, gathering information from websites | Web fetching, search, content extraction and analysis |
+| **statusline-setup** | Configuration assistant | Setting up Claude Code status line | Reads and edits status line configuration |
+
+**How to Invoke Built-in Agents:**
+
+Built-in agents are automatically invoked by Claude when appropriate for your task, but you can also request them explicitly:
+
+```bash
+# Examples of natural requests that invoke specific agents:
+"Explore the authentication system in this codebase"  # → Explore agent
+"Plan out how to implement dark mode"                 # → Plan agent
+"How do I configure Claude Code hooks?"               # → claude-code-guide agent
+"Search for information about Zensical features"      # → webcrawler agent
+```
+
+**Thoroughness Levels for Explore Agent:**
+
+When using the Explore agent, you can specify how thorough the search should be:
+
+- **"quick"**: Basic searches, fastest response
+- **"medium"**: Moderate exploration, balanced approach
+- **"very thorough"**: Comprehensive analysis across multiple locations and naming conventions
+
+!!! tip "Choosing the Right Agent"
+    Claude automatically selects the most appropriate built-in agent for your task. For codebase exploration, the Explore agent is much faster than running search commands directly. For implementation planning, the Plan agent helps you design before you code.
+
+### 6.3 Creating a Documentation Writer Agent
 
 Let's create a practical example: a documentation writer agent that maintains your project's documentation.
 
@@ -1652,25 +1696,57 @@ A documentation agent should:
 - Keep documentation in sync with code changes
 - Generate examples and usage instructions
 
-#### Step-by-Step Creation
+#### Step-by-Step Creation Using `/agents`
 
-**Step 1: Create Agents Directory**
+Claude Code provides the `/agents` slash command to create custom agents interactively. This is the recommended approach as it guides you through the process and generates the configuration file automatically.
 
-```bash
-# In your project root
-mkdir -p .claude/agents
+**Step 1: Run the `/agents` Command**
+
+In Claude Code chat:
+
+```
+/agents
 ```
 
-**Step 2: Create Agent Configuration**
+This launches the agent creation wizard that will:
 
-Create `.claude/agents/docs-writer.yaml`:
+1. Ask you to describe the agent's purpose and responsibilities
+2. Help you define the agent's instructions and behavior
+3. Set up any domain-specific knowledge
+4. Create the agent configuration file in `.claude/agents/`
+5. Automatically register the agent for use
+
+**Step 2: Describe Your Agent**
+
+When prompted, provide a clear description. For a documentation writer agent:
+
+```
+I need a documentation writer agent that:
+- Writes clear, concise technical documentation
+- Follows Markdown formatting standards
+- Includes code examples for all features
+- Creates API docs, README updates, and tutorials
+- Uses active voice and present tense
+- Keeps documentation in sync with code changes
+```
+
+**Step 3: Refine Agent Instructions**
+
+The wizard will generate initial instructions and allow you to refine them. You can specify:
+
+- **Documentation standards**: Formatting, style, structure
+- **Style guide**: Voice, tense, sentence length
+- **Documentation types**: README, API docs, changelogs, etc.
+- **Code style preferences**: Language-specific conventions
+- **Domain knowledge**: Project-specific information
+
+The wizard creates a configuration file like `.claude/agents/docs-writer.yaml` with content similar to:
 
 ```yaml
 name: Documentation Writer
 description: Technical documentation specialist for this project
 version: 1.0.0
 
-# Instructions for the agent
 instructions: |
   You are a technical documentation expert specializing in clear, concise, and
   comprehensive documentation for software projects.
@@ -1682,8 +1758,6 @@ instructions: |
   - Provide usage examples with realistic scenarios
   - Keep README.md up-to-date with project changes
   - Document all public APIs, functions, and classes
-  - Include installation and setup instructions
-  - Add troubleshooting sections for common issues
 
   STYLE GUIDE:
   - Use second person ("you") for instructions
@@ -1691,53 +1765,12 @@ instructions: |
   - Keep sentences concise (< 20 words)
   - Use bullet points for lists
   - Include code blocks with syntax highlighting
-  - Add warnings/notes/tips using appropriate formatting
 
-  DOCUMENTATION TYPES:
-  - README.md: Project overview, installation, quick start
-  - API.md: Detailed API documentation
-  - CONTRIBUTING.md: Contribution guidelines
-  - CHANGELOG.md: Version history and changes
-  - Inline comments: For complex code sections
-  - Docstrings: For all functions and classes
-
-# Domain knowledge
-knowledge:
-  - "This project follows semantic versioning (MAJOR.MINOR.PATCH)"
-  - "Code examples should be runnable without modification"
-  - "All public APIs must have docstrings with type hints"
-  - "Documentation deploys automatically on merge to main"
-
-# Capabilities
-skills:
-  - markdown
-  - api-documentation
-  - technical-writing
-  - code-examples
-  - tutorial-writing
-
-# Behavior preferences
-preferences:
-  verbosity: concise
-  code_style: pythonic  # or javascript, rust, etc.
-  example_complexity: medium
+# Additional configuration generated by the wizard...
 ```
 
-**Step 3: Register Agent (if needed)**
-
-Some configurations require explicit registration:
-
-```bash
-# CLI
-claude agents add .claude/agents/docs-writer.yaml
-
-# Or in VS Code settings.json
-{
-  "claude.agents": [
-    ".claude/agents/docs-writer.yaml"
-  ]
-}
-```
+!!! tip "Manual Creation Alternative"
+    While `/agents` is recommended, you can also manually create agent files in `.claude/agents/` if you prefer full control. See the [Claude Code documentation](https://docs.anthropic.com/en/docs/claude-code) for the complete YAML schema.
 
 #### How to Invoke the Agent
 
@@ -1832,7 +1865,7 @@ Invoke the documentation agent when:
 - Generating changelogs
 - Writing contribution guidelines
 
-### 6.3 Other Useful Agent Ideas
+### 6.4 Other Useful Agent Ideas
 
 Here are other specialized agents you might create (conceptual descriptions):
 
