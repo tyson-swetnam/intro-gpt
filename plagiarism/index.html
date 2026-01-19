@@ -1,0 +1,3994 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentation for Prompt Engineering 101 Workshop">
+      
+      
+        <meta name="author" content="University of Arizona">
+      
+      
+        <link rel="canonical" href="https://tyson-swetnam.github.io/intro-gpt/plagiarism/">
+      
+      
+        <link rel="prev" href="../admissions/">
+      
+      
+        <link rel="next" href="../research/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/ua.ico">
+      <meta name="generator" content="zensical-0.0.16">
+    
+    
+      
+        <title>Plagiarism Detection and AI-Generated Content - GPT 101</title>
+      
+    
+    
+      
+        
+      
+      <link rel="stylesheet" href="../assets/stylesheets/modern/main.dfcb43b2.min.css">
+      
+        
+          
+        
+        <link rel="stylesheet" href="../assets/stylesheets/modern/palette.dfe2e883.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,700,700i%7CRegular:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Montserrat";--md-code-font:"Regular"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../chatbot_widget.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,a=__md_scope)=>JSON.parse(t.getItem(a.pathname+"."+e)),__md_set=(e,t,a=localStorage,_=__md_scope)=>{try{a.setItem(_.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-NYETZFD8DN"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-NYETZFD8DN",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-NYETZFD8DN",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#plagiarism-detection-and-ai-generated-content" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="GPT 101" class="md-header__button md-logo" aria-label="GPT 101" data-md-component="logo">
+      
+  <img src="../assets/ua.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-menu" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            GPT 101
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Plagiarism Detection and AI-Generated Content
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="home" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog" aria-label="Search">
+  <button type="button" class="md-search__button">
+    Search
+  </button>
+</div>
+      
+    
+    <div class="md-header__source">
+      
+    </div>
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href=".." class="md-tabs__link">
+          
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../claude/" class="md-tabs__link">
+          
+  
+  Setup
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../prompts/" class="md-tabs__link">
+          
+  
+  Prompt Engineering
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../education/" class="md-tabs__link">
+          
+  
+  Education
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../research/" class="md-tabs__link">
+          
+  
+  Research
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../ethics/" class="md-tabs__link">
+          
+  
+  Ethics
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../claude-code/" class="md-tabs__link">
+          
+  
+  Tutorials
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="GPT 101" class="md-nav__button md-logo" aria-label="GPT 101" data-md-component="logo">
+      
+  <img src="../assets/ua.png" alt="logo">
+
+    </a>
+    GPT 101
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href=".." class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Home
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../agenda/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Agenda
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ai_landscape/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Landscape
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Setup
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Setup
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../claude/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Claude
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gemini/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gemini
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chatgpt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OpenAI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../microsoft/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Copilot
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../copilot/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GitHub
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Prompt Engineering
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Prompt Engineering
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../prompts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Writing Prompts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../daily-productivity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    General Productivity
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../code/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Code Interpreters
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vibe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vibe Coding
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../choose/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Choosing a Platform
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Education
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Education
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../education/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../teaching/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Teaching with AI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutoring/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Tutoring
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../admissions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Admissions & Recruiting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plagiarism & AI Detection
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plagiarism & AI Detection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Introduction
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#understanding-ai-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Understanding AI Detection
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Understanding AI Detection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-ai-detectors-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How AI Detectors Work
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-detection-is-difficult" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Detection is Difficult
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#major-detection-tools-comprehensive-coverage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Major Detection Tools: Comprehensive Coverage
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Major Detection Tools: Comprehensive Coverage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#turnitin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Turnitin
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ithenticate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        iThenticate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#copyleaks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Copyleaks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gptzero" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GPTZero
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scribbr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scribbr
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paperpal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PaperPal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#originalityai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Originality.AI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#other-notable-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Other Notable Tools
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comprehensive-detection-tool-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Comprehensive Detection Tool Comparison
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#institutional-implementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Institutional Implementation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Institutional Implementation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#choosing-a-detection-tool" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Choosing a Detection Tool
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#policy-development" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Policy Development
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#training-and-rollout" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Training and Rollout
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#beyond-detection-alternative-approaches" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Beyond Detection: Alternative Approaches
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Beyond Detection: Alternative Approaches">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#process-based-assessment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Process-Based Assessment
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-integrated-assignments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AI-Integrated Assignments
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oral-and-performance-assessments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Oral and Performance Assessments
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#authentic-assessment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Authentic Assessment
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#honor-code-evolution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Honor Code Evolution
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#for-students-understanding-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        For Students: Understanding Detection
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="For Students: Understanding Detection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-triggers-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Triggers Detection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#false-positive-scenarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        False Positive Scenarios
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#if-youre-falsely-accused" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        If You're Falsely Accused:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ethical-ai-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ethical AI Use
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practical-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Practical Resources
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Practical Resources">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#for-faculty" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        For Faculty
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-administrators" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        For Administrators
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-students" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        For Students
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Additional Resources
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Research
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Research
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../research/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../agentic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Agentic AI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../jupyter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jupyter AI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mcp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MCP
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooklm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NotebookLM
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ollama/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ollama
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rag/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RAG
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../execution/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Code Execution
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../openai/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OpenAI API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../huggingface/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    HuggingFace
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gradio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gradio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../posit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Posit (RStudio)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../text_mining/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Text Mining
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ethics
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Ethics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ethics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bias
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../legal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Legal
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../transparency/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Transparency
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tutorials
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tutorials
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../claude-code/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Claude Code Workflow
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorials/publichealth/casestudy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Public Health
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorials/publichealth/gis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Map making
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Introduction
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#understanding-ai-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Understanding AI Detection
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Understanding AI Detection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-ai-detectors-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How AI Detectors Work
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-detection-is-difficult" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Detection is Difficult
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#major-detection-tools-comprehensive-coverage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Major Detection Tools: Comprehensive Coverage
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Major Detection Tools: Comprehensive Coverage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#turnitin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Turnitin
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ithenticate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        iThenticate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#copyleaks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Copyleaks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gptzero" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GPTZero
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scribbr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scribbr
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paperpal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PaperPal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#originalityai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Originality.AI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#other-notable-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Other Notable Tools
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comprehensive-detection-tool-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Comprehensive Detection Tool Comparison
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#institutional-implementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Institutional Implementation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Institutional Implementation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#choosing-a-detection-tool" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Choosing a Detection Tool
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#policy-development" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Policy Development
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#training-and-rollout" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Training and Rollout
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#beyond-detection-alternative-approaches" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Beyond Detection: Alternative Approaches
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Beyond Detection: Alternative Approaches">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#process-based-assessment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Process-Based Assessment
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-integrated-assignments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AI-Integrated Assignments
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oral-and-performance-assessments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Oral and Performance Assessments
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#authentic-assessment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Authentic Assessment
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#honor-code-evolution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Honor Code Evolution
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#for-students-understanding-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        For Students: Understanding Detection
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="For Students: Understanding Detection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-triggers-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Triggers Detection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#false-positive-scenarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        False Positive Scenarios
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#if-youre-falsely-accused" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        If You're Falsely Accused:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ethical-ai-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ethical AI Use
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practical-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Practical Resources
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Practical Resources">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#for-faculty" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        For Faculty
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-administrators" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        For Administrators
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-students" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        For Students
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Additional Resources
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+<h1 id="plagiarism-detection-and-ai-generated-content">Plagiarism Detection and AI-Generated Content<a class="headerlink" href="#plagiarism-detection-and-ai-generated-content" title="Permanent link">&para;</a></h1>
+<p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<p>The advent of sophisticated AI writing tools like ChatGPT, Claude, and Gemini has fundamentally changed conversations about plagiarism and academic integrity in higher education. By 2026, the landscape has shifted from "Can we detect AI-generated content?" to "How do we assess learning authentically in an AI-augmented world?"</p>
+<p>This guide provides comprehensive coverage of AI detection tools, their significant limitations, and—more importantly—alternative assessment approaches that emphasize learning over policing.</p>
+<div class="admonition warning">
+<p class="admonition-title">The Limits of AI Detection</p>
+<p><strong>Research is clear:</strong> AI detection tools are unreliable and produce significant false positives, particularly affecting non-native English speakers <a href="https://doi.org/10.1007/s40979-023-00146-z" target="_blank">(Weber-Wulff et al., 2024)</a>. The MIT Sloan research consortium concluded that <a href="https://mitsloanedtech.mit.edu/ai/teach/ai-detectors-dont-work/" target="_blank">"AI detectors don't work"</a> as a reliable enforcement mechanism.</p>
+<p><strong>This guide emphasizes</strong> moving beyond detection toward process-based assessment and AI-transparent assignment design.</p>
+</div>
+<h2 id="understanding-ai-detection">Understanding AI Detection<a class="headerlink" href="#understanding-ai-detection" title="Permanent link">&para;</a></h2>
+<h3 id="how-ai-detectors-work">How AI Detectors Work<a class="headerlink" href="#how-ai-detectors-work" title="Permanent link">&para;</a></h3>
+<p>AI detection tools analyze text for patterns characteristic of AI-generated content:</p>
+<p><strong>Perplexity Analysis:</strong></p>
+<ul>
+<li><strong>Perplexity</strong> measures how "surprising" or unpredictable text is</li>
+<li>Human writing has higher perplexity (more varied, less predictable)</li>
+<li>AI writing tends toward lower perplexity (more consistent, predictable patterns)</li>
+<li>However, good human writers can have low perplexity, and AI can be prompted to increase it</li>
+</ul>
+<p><strong>Burstiness Detection:</strong></p>
+<ul>
+<li><strong>Burstiness</strong> measures variation in sentence structure and complexity</li>
+<li>Human writing alternates between simple and complex sentences</li>
+<li>AI writing tends toward more uniform sentence structures</li>
+<li>But this varies significantly by writing style and genre</li>
+</ul>
+<p><strong>Statistical Pattern Recognition:</strong></p>
+<ul>
+<li>Detectors are trained on known AI-generated vs. human-written text</li>
+<li>They identify linguistic patterns, word choice frequencies, and structural markers</li>
+<li>Models improve at mimicking human writing faster than detectors improve at detection</li>
+</ul>
+<h3 id="why-detection-is-difficult">Why Detection is Difficult<a class="headerlink" href="#why-detection-is-difficult" title="Permanent link">&para;</a></h3>
+<p>Multiple factors make reliable AI detection nearly impossible:</p>
+<p><strong>1. Human-AI Collaboration</strong></p>
+<ul>
+<li>Most real-world AI use involves collaboration (human outlines, AI drafts, human edits)</li>
+<li>Mixed authorship defeats detection algorithms designed for binary classification</li>
+<li>No clear line between "acceptable editing assistance" and "AI-generated content"</li>
+</ul>
+<p><strong>2. Rapid AI Model Improvements</strong></p>
+<ul>
+<li>Each new AI model generation becomes harder to detect</li>
+<li>Models are optimized to produce more human-like text</li>
+<li>Detection tools constantly play catch-up</li>
+<li>By the time detectors adapt, new models have been released</li>
+</ul>
+<p><strong>3. Paraphrasing and Editing</strong></p>
+<ul>
+<li>Students can use AI to write, then manually rephrase to avoid detection</li>
+<li>Running AI output through multiple models reduces detectability</li>
+<li>Simple editing of AI-generated text significantly lowers detection confidence</li>
+</ul>
+<p><strong>4. Multilingual Challenges</strong></p>
+<ul>
+<li>Detectors perform poorly on non-English text</li>
+<li>Non-native English speakers are disproportionately flagged as AI users</li>
+<li>Cultural variations in academic writing styles confuse detection algorithms</li>
+</ul>
+<p><strong>5. False Positives</strong></p>
+<p>Research shows detection tools produce false positive rates of 10-30%, meaning innocent students are regularly accused of AI use <a href="https://doi.org/10.1016/j.patter.2023.100779" target="_blank">(Liang et al., 2023)</a>.</p>
+<hr />
+<h2 id="major-detection-tools-comprehensive-coverage">Major Detection Tools: Comprehensive Coverage<a class="headerlink" href="#major-detection-tools-comprehensive-coverage" title="Permanent link">&para;</a></h2>
+<h3 id="turnitin">Turnitin<a class="headerlink" href="#turnitin" title="Permanent link">&para;</a></h3>
+<p><strong>Most Widely Used Institutional Tool</strong></p>
+<p><a href="https://www.turnitin.com/products/features/ai-writing-detection" target="_blank">Turnitin</a> is the market leader in plagiarism detection and added AI writing detection in April 2023.</p>
+<p><strong>AI Detection Features:</strong></p>
+<ul>
+<li>Integrated into existing Turnitin plagiarism detection platform</li>
+<li>Claims 98% accuracy on <em>fully</em> AI-generated content (drops significantly for mixed authorship)</li>
+<li>Provides percentage likelihood that text is AI-generated</li>
+<li>Highlights specific passages flagged as potentially AI-written</li>
+</ul>
+<p><strong>Institutional Adoption:</strong></p>
+<ul>
+<li>Integrated with Canvas, Blackboard, Moodle, and D2L Brightspace</li>
+<li>Requires institutional licensing (no individual purchase option)</li>
+<li>Most common tool used by universities worldwide</li>
+<li>Faculty can enable/disable AI detection per assignment</li>
+</ul>
+<p><strong>Pricing:</strong></p>
+<ul>
+<li>Institutional licensing only (pricing not public, negotiated per institution)</li>
+<li>Typically bundled with plagiarism detection service</li>
+<li>Large-scale adoption discounts available</li>
+</ul>
+<p><strong>Limitations:</strong></p>
+<ul>
+<li>High false positive rate on non-native English speakers</li>
+<li>Struggles with edited or paraphrased AI content</li>
+<li>Cannot reliably detect hybrid human-AI writing</li>
+<li>Accuracy claims based on idealized laboratory conditions, not real student work</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Turnitin Key Facts</p>
+<ul>
+<li><strong>Launched:</strong> April 2023</li>
+<li><strong>Accuracy Claim:</strong> 98% on fully AI-generated content (much lower on real mixed-authorship scenarios)</li>
+<li><strong>LMS Integration:</strong> Excellent (Canvas, Blackboard, Moodle, D2L)</li>
+<li><strong>Best For:</strong> Institutions already using Turnitin for plagiarism detection</li>
+<li><strong>Major Limitation:</strong> Cannot reliably detect AI-assisted (vs. AI-generated) work</li>
+</ul>
+</div>
+<h3 id="ithenticate">iThenticate<a class="headerlink" href="#ithenticate" title="Permanent link">&para;</a></h3>
+<p><strong>Research and Professional Publishing Focus</strong></p>
+<p><a href="https://www.ithenticate.com/" target="_blank">iThenticate</a> is Turnitin's professional-grade service for researchers, publishers, and graduate programs.</p>
+<p><strong>Primary Use Cases:</strong></p>
+<ul>
+<li>Dissertation and thesis originality checking</li>
+<li>Manuscript submission for journal publication</li>
+<li>Grant proposal review</li>
+<li>Professional writing integrity verification</li>
+</ul>
+<p><strong>AI Detection:</strong></p>
+<ul>
+<li>Similar technology to Turnitin's AI detection</li>
+<li>Integrated with existing plagiarism detection</li>
+<li>Preferred by academic publishers and graduate schools</li>
+</ul>
+<p><strong>Pricing:</strong></p>
+<ul>
+<li>Per-document pricing ($19-40 per document depending on volume)</li>
+<li>Institutional subscriptions available</li>
+<li>Individual researcher access through publishers or institutions</li>
+</ul>
+<p><strong>Best For:</strong></p>
+<ul>
+<li>Graduate students submitting dissertations</li>
+<li>Researchers preparing manuscripts for publication</li>
+<li>Publishers screening submitted work</li>
+</ul>
+<h3 id="copyleaks">Copyleaks<a class="headerlink" href="#copyleaks" title="Permanent link">&para;</a></h3>
+<p><strong>Multilingual and Enterprise-Focused</strong></p>
+<p><a href="https://copyleaks.com/" target="_blank">Copyleaks</a> offers comprehensive AI detection with strong multilingual support.</p>
+<p><strong>Key Features:</strong></p>
+<ul>
+<li>Supports 120+ languages (strongest multilingual offering)</li>
+<li>API access for custom integration</li>
+<li>Batch document processing</li>
+<li>Code plagiarism detection (unique among major tools)</li>
+<li>Real-time scanning as students type (optional feature)</li>
+</ul>
+<p><strong>Accuracy Claims:</strong></p>
+<ul>
+<li>Claims 99.1% accuracy (similar caveats as other tools about mixed authorship)</li>
+<li>Provides sentence-level highlighting</li>
+<li>Confidence scores for each flagged section</li>
+</ul>
+<p><strong>LMS Integration:</strong></p>
+<ul>
+<li>Canvas, Blackboard, Moodle, Google Classroom</li>
+<li>API allows custom LMS integration</li>
+</ul>
+<p><strong>Pricing:</strong></p>
+<ul>
+<li>Tiered pricing based on usage volume</li>
+<li>Educational discounts available</li>
+<li>Free tier with limited scans per month</li>
+<li>Enterprise pricing for large institutions</li>
+</ul>
+<p><strong>Best For:</strong></p>
+<ul>
+<li>Institutions with significant multilingual student populations</li>
+<li>Computer science departments (code detection feature)</li>
+<li>Organizations requiring API integration</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Copyleaks Multilingual Advantage</p>
+<p>If your institution serves large international student populations, Copyleaks' multilingual detection (120+ languages) may reduce false positives compared to English-focused tools.</p>
+</div>
+<h3 id="gptzero">GPTZero<a class="headerlink" href="#gptzero" title="Permanent link">&para;</a></h3>
+<p><strong>AI-Specific Detection Tool</strong></p>
+<p><a href="https://gptzero.me/" target="_blank">GPTZero</a> was built specifically for detecting AI-generated content, particularly from ChatGPT.</p>
+<p><strong>Key Features:</strong></p>
+<ul>
+<li>Free for educators (premium tiers available)</li>
+<li>Chrome extension for quick scanning</li>
+<li>Batch document upload</li>
+<li>Detailed scan reports with sentence-level highlighting</li>
+<li>"Writing Report" showing perplexity and burstiness scores</li>
+</ul>
+<p><strong>Educator Features:</strong></p>
+<ul>
+<li>Dashboard for tracking scans across classes</li>
+<li>Integration with Google Classroom</li>
+<li>Student-facing version for self-checking before submission</li>
+<li>API access for developers</li>
+</ul>
+<p><strong>Pricing:</strong></p>
+<ul>
+<li><strong>Free tier:</strong> Limited scans per month for individual educators</li>
+<li><strong>Essential Plan:</strong> $9.99/month for regular classroom use</li>
+<li><strong>Premium Plan:</strong> $29.99/month for department-level use</li>
+<li><strong>Institutional:</strong> Custom pricing for universities</li>
+</ul>
+<p><strong>Limitations:</strong></p>
+<ul>
+<li>Newer tool with less institutional trust than Turnitin</li>
+<li>No integration with major LMS platforms (Canvas, Blackboard)</li>
+<li>Same fundamental detection limitations as other tools</li>
+<li>Accuracy not independently verified</li>
+</ul>
+<p><strong>Best For:</strong></p>
+<ul>
+<li>Individual instructors experimenting with AI detection</li>
+<li>K-12 and community colleges with limited budgets</li>
+<li>Quick spot-checks of suspicious submissions</li>
+</ul>
+<h3 id="scribbr">Scribbr<a class="headerlink" href="#scribbr" title="Permanent link">&para;</a></h3>
+<p><strong>Student-Focused Detection and Writing Support</strong></p>
+<p><a href="https://www.scribbr.com/" target="_blank">Scribbr</a> combines AI detection with plagiarism checking and writing assistance tools aimed at students.</p>
+<p><strong>Key Features:</strong></p>
+<ul>
+<li>AI detection bundled with plagiarism checker</li>
+<li>Citation generation and proofreading services</li>
+<li>Student-friendly interface and pricing</li>
+<li>Educational resources about academic integrity</li>
+</ul>
+<p><strong>Pricing:</strong></p>
+<ul>
+<li><strong>Per-document pricing:</strong> $19.95 per scan (includes plagiarism + AI detection)</li>
+<li><strong>No subscription required:</strong> Pay as you go</li>
+<li><strong>Academic writing bundles:</strong> Combined services at discount</li>
+</ul>
+<p><strong>Target Market:</strong></p>
+<ul>
+<li>Undergraduate students self-checking work before submission</li>
+<li>Graduate students preparing dissertations</li>
+<li>International students needing writing support</li>
+</ul>
+<p><strong>Limitations:</strong></p>
+<ul>
+<li>No institutional integration or bulk scanning</li>
+<li>Designed for individual student use, not institutional enforcement</li>
+<li>Same detection accuracy issues as other tools</li>
+</ul>
+<p><strong>Best For:</strong></p>
+<ul>
+<li>Students wanting to self-check before submitting to institutional detectors</li>
+<li>Combining AI detection with citation help and proofreading</li>
+</ul>
+<h3 id="paperpal">PaperPal<a class="headerlink" href="#paperpal" title="Permanent link">&para;</a></h3>
+<p><strong>AI Writing Assistant with Integrity Checking</strong></p>
+<p><a href="https://paperpal.com/" target="_blank">PaperPal</a> is unique in offering both AI writing enhancement and AI detection.</p>
+<p><strong>Key Features:</strong></p>
+<ul>
+<li>AI-powered writing suggestions (grammar, clarity, academic tone)</li>
+<li>Plagiarism detection</li>
+<li>AI content detection</li>
+<li>Designed for academic writing (research papers, theses)</li>
+</ul>
+<p><strong>Dual Use Cases:</strong></p>
+<ul>
+<li><strong>For Students:</strong> Improve writing while checking for unintentional plagiarism or AI overuse</li>
+<li><strong>For Faculty:</strong> Screen submissions while understanding AI was used for enhancement</li>
+</ul>
+<p><strong>Pricing:</strong></p>
+<ul>
+<li><strong>Free tier:</strong> Limited features and scans</li>
+<li><strong>Premium:</strong> $9.99/month for enhanced features</li>
+<li><strong>Institutional:</strong> Custom pricing for universities</li>
+</ul>
+<p><strong>Philosophy:</strong></p>
+<p>PaperPal embraces AI as a writing aid while helping users maintain academic integrity—a more nuanced approach than pure detection.</p>
+<p><strong>Best For:</strong></p>
+<ul>
+<li>Students using AI appropriately for writing enhancement</li>
+<li>Faculty accepting regulated AI use with disclosure</li>
+</ul>
+<h3 id="originalityai">Originality.AI<a class="headerlink" href="#originalityai" title="Permanent link">&para;</a></h3>
+<p><strong>Content Marketing and Education Hybrid</strong></p>
+<p><a href="https://originality.ai/" target="_blank">Originality.AI</a> serves both content marketers (checking for AI-generated web content) and educators.</p>
+<p><strong>Key Features:</strong></p>
+<ul>
+<li>AI detection + plagiarism checking</li>
+<li>Fact-checking capabilities (unique feature)</li>
+<li>Readability scoring</li>
+<li>Team collaboration tools</li>
+</ul>
+<p><strong>Pricing:</strong></p>
+<ul>
+<li><strong>Credit-based:</strong> $0.01 per 100 words scanned (pay-per-use)</li>
+<li><strong>Base package:</strong> $30 for 30,000 scans</li>
+<li><strong>Team plans:</strong> Volume discounts for organizations</li>
+</ul>
+<p><strong>Best For:</strong></p>
+<ul>
+<li>Online education programs and MOOCs</li>
+<li>Institutions creating content at scale</li>
+<li>Teams needing collaborative review workflows</li>
+</ul>
+<h3 id="other-notable-tools">Other Notable Tools<a class="headerlink" href="#other-notable-tools" title="Permanent link">&para;</a></h3>
+<p><strong>Brief Overview of Additional Options:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Focus</th>
+<th>Pricing</th>
+<th>Key Feature</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Winston AI</strong></td>
+<td>Education &amp; publishing</td>
+<td>$12-49/month</td>
+<td>Multiple AI model detection</td>
+</tr>
+<tr>
+<td><strong>Content at Scale</strong></td>
+<td>Content creation</td>
+<td>$49-99/month</td>
+<td>SEO-optimized content creation + detection</td>
+</tr>
+<tr>
+<td><strong>Writer.com</strong></td>
+<td>Enterprise writing</td>
+<td>Custom enterprise</td>
+<td>Brand consistency + AI detection</td>
+</tr>
+<tr>
+<td><strong>Sapling AI</strong></td>
+<td>Customer service</td>
+<td>$25/user/month</td>
+<td>AI writing + grammar for business</td>
+</tr>
+<tr>
+<td><strong>ZeroGPT</strong></td>
+<td>Free detection</td>
+<td>Free (ad-supported)</td>
+<td>No account required, quick checks</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="comprehensive-detection-tool-comparison">Comprehensive Detection Tool Comparison<a class="headerlink" href="#comprehensive-detection-tool-comparison" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Primary Use</th>
+<th>AI Detection</th>
+<th>Plagiarism</th>
+<th>LMS Integration</th>
+<th>Pricing Model</th>
+<th>Accuracy Claims</th>
+<th>Best For</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Turnitin</strong></td>
+<td>Higher Ed</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Canvas, Blackboard, Moodle, D2L</td>
+<td>Institutional licensing</td>
+<td>98% full AI content</td>
+<td>Universities with existing Turnitin</td>
+</tr>
+<tr>
+<td><strong>iThenticate</strong></td>
+<td>Research/Professional</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Publisher systems</td>
+<td>Per-document or subscription</td>
+<td>Similar to Turnitin</td>
+<td>Dissertations, journal submissions</td>
+</tr>
+<tr>
+<td><strong>Copyleaks</strong></td>
+<td>Enterprise/Education</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Canvas, Blackboard, Moodle, API</td>
+<td>Tiered usage-based</td>
+<td>99.1% claimed</td>
+<td>Multilingual institutions (120+ languages)</td>
+</tr>
+<tr>
+<td><strong>GPTZero</strong></td>
+<td>K-12 &amp; Higher Ed</td>
+<td>Yes</td>
+<td>No</td>
+<td>Google Classroom only</td>
+<td>Free-Premium ($0-30/mo)</td>
+<td>Not disclosed</td>
+<td>Individual educators, budget-conscious</td>
+</tr>
+<tr>
+<td><strong>Scribbr</strong></td>
+<td>Students</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>None (student-facing)</td>
+<td>Per-document ($19.95)</td>
+<td>Not disclosed</td>
+<td>Students self-checking before submission</td>
+</tr>
+<tr>
+<td><strong>PaperPal</strong></td>
+<td>Academic Writing</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>None (standalone)</td>
+<td>Freemium ($0-10/mo)</td>
+<td>Not disclosed</td>
+<td>Students using AI for writing enhancement</td>
+</tr>
+<tr>
+<td><strong>Originality.AI</strong></td>
+<td>Content/Education</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>API available</td>
+<td>Credit-based ($0.01/100 words)</td>
+<td>Not disclosed</td>
+<td>Online education, content teams</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="institutional-implementation">Institutional Implementation<a class="headerlink" href="#institutional-implementation" title="Permanent link">&para;</a></h2>
+<h3 id="choosing-a-detection-tool">Choosing a Detection Tool<a class="headerlink" href="#choosing-a-detection-tool" title="Permanent link">&para;</a></h3>
+<p><strong>Needs Assessment Framework:</strong></p>
+<p>Before adopting a detection tool, institutions should evaluate:</p>
+<p><strong>1. Integration Requirements</strong></p>
+<ul>
+<li>Does it integrate with your LMS (Canvas, Blackboard, Moodle, D2L)?</li>
+<li>Can faculty enable/disable per assignment?</li>
+<li>Does it support your workflow (batch uploads, API access)?</li>
+</ul>
+<p><strong>2. Budget Considerations</strong></p>
+<ul>
+<li>Institutional licensing vs. per-use pricing?</li>
+<li>Total cost for your student population?</li>
+<li>Cost compared to alternative assessment redesign?</li>
+</ul>
+<p><strong>3. Privacy and Data Security</strong></p>
+<ul>
+<li>Is the vendor FERPA-compliant?</li>
+<li>Where is student data stored?</li>
+<li>How long is data retained?</li>
+<li>Can students' work be used to train detection models?</li>
+</ul>
+<p><strong>4. Multilingual Support</strong></p>
+<ul>
+<li>Do you have significant non-native English speaker populations?</li>
+<li>Does the tool work well in languages your students write in?</li>
+<li>What are false positive rates for non-native speakers?</li>
+</ul>
+<p><strong>5. Accuracy and Reliability</strong></p>
+<ul>
+<li>What are independently verified accuracy rates (not just vendor claims)?</li>
+<li>How does it handle hybrid human-AI writing?</li>
+<li>What is the false positive rate in real-world conditions?</li>
+</ul>
+<p><strong>6. Faculty and Student Support</strong></p>
+<ul>
+<li>Training resources for faculty?</li>
+<li>Clear guidance for students?</li>
+<li>Technical support responsiveness?</li>
+<li>Appeals process for false positives?</li>
+</ul>
+<h3 id="policy-development">Policy Development<a class="headerlink" href="#policy-development" title="Permanent link">&para;</a></h3>
+<p>Effective institutional policies balance enforcement with education:</p>
+<p><strong>Policy Components:</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Transparent AI Use Policy</label><label for="__tabbed_1_2">AI-Transparent Assessment Policy</label><label for="__tabbed_1_3">AI Detection and Due Process Policy</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><strong>Sample Institutional Policy Language:</strong></p>
+<p><strong>AI Use in Coursework</strong></p>
+<p>[Institution] recognizes that artificial intelligence tools are increasingly part of academic and professional life. Our approach emphasizes:</p>
+<ol>
+<li><strong>Transparency:</strong> Students must disclose significant AI use in submitted work</li>
+<li><strong>Learning First:</strong> Assignments should demonstrate genuine learning, not AI-generated shortcuts</li>
+<li><strong>Faculty Autonomy:</strong> Individual instructors set AI policies for their courses (must be stated in syllabus)</li>
+<li><strong>Educational Approach:</strong> First violations addressed through education; repeated violations subject to academic integrity processes</li>
+</ol>
+<p><strong>AI Detection Use:</strong></p>
+<ul>
+<li>Faculty may use AI detection tools to screen submissions</li>
+<li>Detection is one data point, not sole evidence of misconduct</li>
+<li>Students flagged by detection tools receive opportunity to explain their process</li>
+<li>False positives are treated seriously; students will not be penalized without substantial evidence</li>
+</ul>
+<p><strong>Appeals Process:</strong></p>
+<p>Students accused of inappropriate AI use based on detection tool results may appeal by providing:
+* Draft documents showing writing process
+* Explanation of AI tools used and how
+* Original notes, outlines, or research materials</p>
+</div>
+<div class="tabbed-block">
+<p><strong>Sample Course-Level Policy:</strong></p>
+<p><strong>AI Policy for [Course Name]</strong></p>
+<p>In this course, AI tools are permitted under the following conditions:</p>
+<p><strong>Permitted Uses:</strong>
+* Brainstorming and generating ideas
+* Explaining concepts you're learning
+* Grammar and clarity checking on your own writing
+* Generating practice problems for self-study</p>
+<p><strong>Prohibited Uses:</strong>
+* Writing any portion of assignments submitted for credit
+* Generating solutions to problem sets or labs
+* Taking quizzes or completing exams</p>
+<p><strong>Disclosure Requirement:</strong>
+All assignments must include an "AI Use Statement" describing any AI assistance and how it was used.</p>
+<p><strong>Rationale:</strong>
+This policy helps you develop skills in effective AI collaboration while ensuring you build genuine understanding of course material.</p>
+</div>
+<div class="tabbed-block">
+<p><strong>Sample Procedures for AI Detection:</strong></p>
+<p><strong>When AI Detection Flags a Submission:</strong></p>
+<ol>
+<li><strong>Initial Review (Faculty):</strong></li>
+<li>Review detection report and student's work holistically</li>
+<li>Consider: Does the writing match the student's typical work? Are there other indicators of AI use?</li>
+<li>
+<p>If substantial concerns, proceed to Step 2</p>
+</li>
+<li>
+<p><strong>Student Conference (Required Before Formal Accusation):</strong></p>
+</li>
+<li>Meet with student to discuss the flagged submission</li>
+<li>Ask student to explain their writing process</li>
+<li>Request any draft documents, notes, or outlines</li>
+<li>
+<p>Provide opportunity for student to respond to concerns</p>
+</li>
+<li>
+<p><strong>Faculty Decision:</strong></p>
+</li>
+<li>Dismiss concern if student provides satisfactory explanation</li>
+<li>Assign educational consequence (revision, academic integrity training) for minor violations</li>
+<li>
+<p>Report to academic integrity office for substantial violations</p>
+</li>
+<li>
+<p><strong>Student Appeals:</strong></p>
+</li>
+<li>Students may appeal faculty decisions to [designated office]</li>
+<li>Appeals process includes independent review of detection evidence</li>
+<li>False positive determinations result in record expungement</li>
+</ol>
+</div>
+</div>
+</div>
+<h3 id="training-and-rollout">Training and Rollout<a class="headerlink" href="#training-and-rollout" title="Permanent link">&para;</a></h3>
+<p><strong>Phased Implementation Approach:</strong></p>
+<p><strong>Phase 1: Planning and Policy Development (Semester 1)</strong></p>
+<ul>
+<li>Form task force with faculty, students, IT, and academic integrity officers</li>
+<li>Research tools and develop institutional policy</li>
+<li>Draft faculty and student guidance documents</li>
+<li>Create appeals process and support structures</li>
+</ul>
+<p><strong>Phase 2: Pilot Program (Semester 2)</strong></p>
+<ul>
+<li>Select 10-15 volunteer faculty across disciplines</li>
+<li>Provide intensive training and support</li>
+<li>Test detection tool in real courses</li>
+<li>Gather feedback on accuracy, usability, and student reactions</li>
+<li>Refine policies based on pilot results</li>
+</ul>
+<p><strong>Phase 3: Expanded Rollout (Year 2)</strong></p>
+<ul>
+<li>Offer professional development workshops for all faculty</li>
+<li>Provide discipline-specific guidance</li>
+<li>Launch student education campaign about AI policies</li>
+<li>Make detection tool available campus-wide</li>
+<li>Monitor for false positives and policy issues</li>
+</ul>
+<p><strong>Phase 4: Ongoing Evaluation and Adjustment (Ongoing)</strong></p>
+<ul>
+<li>Annual review of detection tool accuracy and effectiveness</li>
+<li>Regular updates to policies as AI technology evolves</li>
+<li>Continuous faculty and student education</li>
+<li>Share best practices across departments</li>
+</ul>
+<p><strong>Faculty Training Topics:</strong></p>
+<ul>
+<li>How AI detection tools work (and their limitations)</li>
+<li>Interpreting detection reports critically</li>
+<li>Conducting student conferences about flagged work</li>
+<li>Redesigning assignments to emphasize process and learning</li>
+<li>Balancing detection with pedagogical goals</li>
+</ul>
+<p><strong>Student Education:</strong></p>
+<ul>
+<li>What constitutes appropriate vs. inappropriate AI use</li>
+<li>How to disclose AI assistance properly</li>
+<li>Understanding detection tools and their limitations</li>
+<li>Academic integrity in the AI era</li>
+<li>Resources for using AI effectively for learning</li>
+</ul>
+<hr />
+<h2 id="beyond-detection-alternative-approaches">Beyond Detection: Alternative Approaches<a class="headerlink" href="#beyond-detection-alternative-approaches" title="Permanent link">&para;</a></h2>
+<p><strong>The Most Important Section of This Guide</strong></p>
+<p>Research increasingly shows that detection is an arms race institutions cannot win. The most effective approach is designing assessments where AI use is transparent, regulated, or incorporated—rendering detection unnecessary.</p>
+<h3 id="process-based-assessment">Process-Based Assessment<a class="headerlink" href="#process-based-assessment" title="Permanent link">&para;</a></h3>
+<p>Focus on the learning process rather than just the final product:</p>
+<p><strong>Draft Submissions and Revision Tracking:</strong></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Assignment Structure:
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>- Submit initial outline (Week 2)
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>- Submit annotated bibliography with your notes (Week 4)
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>- Submit first draft with track changes enabled (Week 6)
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>- Submit revised draft with revision memo explaining changes (Week 8)
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>- Submit final draft (Week 10)
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>Grade based on:
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>- 30%: Quality of process (research, outlining, revision)
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>- 40%: Improvement from draft to final
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>- 30%: Final product quality
+</span></code></pre></div>
+<p><strong>Reflective Journals:</strong></p>
+<p>Require students to document their research and thinking process:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Weekly Learning Journal Prompts:
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>- What sources did you consult this week? What did you learn from each?
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>- What challenges did you encounter? How did you address them?
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>- What decisions did you make about your argument? Why?
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>- If you used AI tools, how did they help? What did they miss?
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>- What will you work on next week?
+</span></code></pre></div>
+<p><strong>In-Class Components:</strong></p>
+<ul>
+<li>Oral presentations defending written work</li>
+<li>Synchronous problem-solving sessions</li>
+<li>Live coding or demonstrations</li>
+<li>Discussion-based assessment showing deep understanding</li>
+</ul>
+<div class="admonition success">
+<p class="admonition-title">Process-Based Assessment Examples by Discipline</p>
+<p><strong>History:</strong></p>
+<ul>
+<li>Submit annotated primary sources with analysis notes</li>
+<li>Present findings to class before final paper</li>
+<li>Reflective memo on historiographical debates</li>
+</ul>
+<p><strong>STEM:</strong></p>
+<ul>
+<li>Lab notebooks documenting experimental process</li>
+<li>Error analysis and troubleshooting documentation</li>
+<li>Peer review of methodology before final submission</li>
+</ul>
+<p><strong>Writing:</strong></p>
+<ul>
+<li>Multiple drafts with peer review feedback</li>
+<li>Revision rationale explaining changes</li>
+<li>Portfolio of process documents (brainstorming, outlines, drafts)</li>
+</ul>
+</div>
+<h3 id="ai-integrated-assignments">AI-Integrated Assignments<a class="headerlink" href="#ai-integrated-assignments" title="Permanent link">&para;</a></h3>
+<p>Instead of prohibiting AI, design assignments requiring thoughtful AI use:</p>
+<p><strong>Comparative Analysis Assignments:</strong></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Assignment: Climate Change Policy Analysis
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>Part 1: Generate three policy proposals using ChatGPT/Claude by providing:
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>- Current climate data and constraints
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>- Policy objectives
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>- Stakeholder considerations
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>Part 2: Analyze each AI-generated proposal:
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>- What are the strengths and limitations of each?
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>- What did the AI miss or misunderstand?
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>- Which proposal is best? Why?
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>- How would you improve the best proposal?
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>Part 3: Write your own policy proposal incorporating insights from your AI analysis
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>Deliverable:
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>- AI conversation logs (prompts and responses)
+</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>- 5-page analysis and original proposal
+</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a>- Reflection on what you learned about both the topic and AI&#39;s capabilities/limitations
+</span></code></pre></div>
+<p><strong>AI Tool Critique:</strong></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Assignment: Evaluating AI for [Your Field]
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>1. Use 3 different AI tools to solve the same problem in [field]
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>2. Compare outputs for accuracy, completeness, and usefulness
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>3. Identify errors, biases, or gaps in each AI&#39;s response
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>4. Research the correct answer using scholarly sources
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>5. Write a report analyzing:
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>   - How AI tools can assist professionals in [field]
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>   - Their limitations and risks
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>   - Best practices for using AI in [field] responsibly
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>Demonstrate your understanding by critiquing AI, not by avoiding it.
+</span></code></pre></div>
+<p><strong>Prompt Engineering Assignments:</strong></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>Assignment: The Art of the Prompt
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>Task: Solve [complex problem] using AI assistance
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>Requirements:
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>1. Document 5-10 prompts you used, showing iteration and refinement
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>2. Explain your prompting strategy and how you improved prompts based on responses
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>3. Evaluate the AI&#39;s final output critically
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>4. Demonstrate deep understanding by explaining what the AI got right and wrong
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>5. Produce final work that integrates AI assistance with your expertise
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>Assessment Criteria:
+</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a>- Quality of prompts (specificity, context, iteration)
+</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a>- Critical evaluation of AI outputs
+</span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a>- Integration of AI insights with original thinking
+</span><span id="__span-4-16"><a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a>- Clear documentation of process
+</span></code></pre></div>
+<h3 id="oral-and-performance-assessments">Oral and Performance Assessments<a class="headerlink" href="#oral-and-performance-assessments" title="Permanent link">&para;</a></h3>
+<p>Assessments requiring synchronous demonstration of knowledge:</p>
+<p><strong>Presentations and Defenses:</strong></p>
+<ul>
+<li>Students present written work and answer questions</li>
+<li>Demonstrate ability to explain, defend, and extend arguments</li>
+<li>"Defense" format similar to thesis defense for major papers</li>
+</ul>
+<p><strong>Live Problem-Solving:</strong></p>
+<ul>
+<li>Timed in-class problem sets where students explain their thinking</li>
+<li>Open-book, open-AI, but must articulate process</li>
+<li>Assess understanding, not just correct answers</li>
+</ul>
+<p><strong>Video Reflections:</strong></p>
+<ul>
+<li>Students record themselves explaining their project/paper</li>
+<li>Demonstrate understanding by teaching the content</li>
+<li>Show their face while explaining to verify authenticity</li>
+</ul>
+<p><strong>Synchronous Discussions:</strong></p>
+<ul>
+<li>Participation in live class discussions demonstrating preparation</li>
+<li>Socratic seminars where students must engage with texts</li>
+<li>Fishbowl discussions requiring deep textual knowledge</li>
+</ul>
+<h3 id="authentic-assessment">Authentic Assessment<a class="headerlink" href="#authentic-assessment" title="Permanent link">&para;</a></h3>
+<p>Connect assignments to real-world contexts where AI provides incomplete solutions:</p>
+<p><strong>Community-Based Projects:</strong></p>
+<ul>
+<li>Partner with local organizations on real problems</li>
+<li>Deliverables go to actual clients with real stakes</li>
+<li>AI can assist but cannot replace community engagement and context</li>
+</ul>
+<p><strong>Professional Portfolio Development:</strong></p>
+<ul>
+<li>Build portfolios demonstrating skills over time</li>
+<li>Include reflections on growth and learning</li>
+<li>Authentic representation of student capabilities</li>
+</ul>
+<p><strong>Original Data Creation:</strong></p>
+<ul>
+<li>Conduct experiments, surveys, or fieldwork generating original data</li>
+<li>AI cannot fabricate data that doesn't exist</li>
+<li>Analysis must be grounded in actual results</li>
+</ul>
+<p><strong>Multimodal Projects:</strong></p>
+<ul>
+<li>Create podcasts, videos, infographics, or interactive media</li>
+<li>Demonstrate understanding through multiple formats</li>
+<li>AI assistance possible but human creativity and voice central</li>
+</ul>
+<h3 id="honor-code-evolution">Honor Code Evolution<a class="headerlink" href="#honor-code-evolution" title="Permanent link">&para;</a></h3>
+<p>Reframe academic integrity for the AI era:</p>
+<p><strong>Updated Honor Code Principles:</strong></p>
+<p>Instead of:</p>
+<blockquote>
+<p>"I will not use unauthorized assistance on assignments."</p>
+</blockquote>
+<p>Consider:</p>
+<blockquote>
+<p>"I will engage honestly with course material, using tools appropriately to support my learning. I will be transparent about my process and attribute assistance received, whether from humans or AI."</p>
+</blockquote>
+<div class="admonition quote">
+<p class="admonition-title">AI Use Pledge Example:</p>
+<blockquote>
+<p>I pledge to: </p>
+<ol>
+<li>Use AI as a learning tool, not a replacement for learning</li>
+<li>Disclose all significant AI assistance in my work</li>
+<li>Verify AI-generated information against authoritative sources</li>
+<li>Ensure my submissions represent my own understanding</li>
+<li>Ask my instructor when unsure whether AI use is appropriate</li>
+</ol>
+</blockquote>
+</div>
+<p><strong>Educational Approach to Violations:</strong></p>
+<ul>
+<li>First-time violations: Educational intervention (integrity workshop, assignment revision)</li>
+<li>Repeated violations: Traditional academic integrity consequences</li>
+<li>Focus on growth and learning rather than pure punishment</li>
+</ul>
+<hr />
+<h2 id="for-students-understanding-detection">For Students: Understanding Detection<a class="headerlink" href="#for-students-understanding-detection" title="Permanent link">&para;</a></h2>
+<h3 id="what-triggers-detection">What Triggers Detection<a class="headerlink" href="#what-triggers-detection" title="Permanent link">&para;</a></h3>
+<p>Common patterns that flag AI-written content:</p>
+<p><strong>Writing Characteristics:</strong></p>
+<ul>
+<li>Unusually consistent sentence structure</li>
+<li>Perfect grammar with no typos</li>
+<li>Sophisticated vocabulary inconsistent with prior work</li>
+<li>Generic examples rather than specific, personal details</li>
+<li>Lack of clear thesis development across paragraphs</li>
+<li>Overly formal or stilted academic language</li>
+<li>Missing the "messiness" of authentic human thought</li>
+</ul>
+<p><strong>Red Flags for Instructors:</strong></p>
+<ul>
+<li>Sudden dramatic improvement in writing quality</li>
+<li>Style inconsistent with student's previous submissions</li>
+<li>Content that doesn't reflect class discussions or readings</li>
+<li>Perfect formatting and citations (unusual for students)</li>
+<li>Text that reads like an encyclopedia or generic essay</li>
+</ul>
+<h3 id="false-positive-scenarios">False Positive Scenarios<a class="headerlink" href="#false-positive-scenarios" title="Permanent link">&para;</a></h3>
+<p><strong>Legitimate writing that may be flagged:</strong></p>
+<ul>
+<li>Non-native English speakers who write formally</li>
+<li>Students who use grammar checkers extensively (Grammarly)</li>
+<li>Well-prepared students with strong writing skills</li>
+<li>Students who heavily edit and revise their work</li>
+<li>Writing in formal academic genres (lab reports, literature reviews)</li>
+</ul>
+<h3 id="if-youre-falsely-accused"><strong>If You're Falsely Accused:</strong><a class="headerlink" href="#if-youre-falsely-accused" title="Permanent link">&para;</a></h3>
+<p>Steps to take if you're accused of using AI inappropriately:</p>
+<p><strong>1. Stay Calm and Professional</strong></p>
+<ul>
+<li>Don't panic or get defensive</li>
+<li>Academic integrity processes have due process protections</li>
+<li>False positives are relatively common with AI detection</li>
+</ul>
+<p><strong>2. Gather Evidence of Your Process</strong></p>
+<ul>
+<li>Draft documents with timestamps</li>
+<li>Research notes and annotated sources</li>
+<li>Outlines and brainstorming documents</li>
+<li>Email drafts or version history</li>
+<li>Google Docs version history (shows your writing process over time)</li>
+</ul>
+<p><strong>3. Request Specifics</strong></p>
+<ul>
+<li>Ask which tool was used for detection</li>
+<li>Request the specific detection report</li>
+<li>Understand what percentage/sections were flagged</li>
+<li>Ask what other evidence supports the accusation (beyond detection tool)</li>
+</ul>
+<p><strong>4. Prepare Your Explanation</strong></p>
+<ul>
+<li>Document your writing process honestly</li>
+<li>Explain any tools you used (grammar checkers, AI for brainstorming)</li>
+<li>Demonstrate your understanding of the content</li>
+<li>Offer to discuss your work in detail or rewrite under supervision</li>
+</ul>
+<p><strong>5. Know Your Rights</strong></p>
+<ul>
+<li>You have the right to see evidence against you</li>
+<li>You can appeal decisions you believe are unfair</li>
+<li>Many institutions provide student advocates</li>
+<li>False accusations should be documented and appealed</li>
+</ul>
+<p><strong>6. Learn from the Experience</strong></p>
+<ul>
+<li>Understand your institution's AI policies better</li>
+<li>Document your process more carefully in future assignments</li>
+<li>Consider disclosing all AI use proactively, even minor uses</li>
+</ul>
+<h3 id="ethical-ai-use">Ethical AI Use<a class="headerlink" href="#ethical-ai-use" title="Permanent link">&para;</a></h3>
+<p><strong>Best Practices for Students:</strong></p>
+<p><strong>Disclosure Templates:</strong></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>AI Use Statement for Assignment:
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>&quot;I used ChatGPT to brainstorm initial topic ideas for this essay. After selecting
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>a topic, I conducted my own research using library databases. I used Grammarly to
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>check grammar and clarity on my final draft. All ideas, analysis, and arguments
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>are my own, developed through my research and understanding of course material.&quot;
+</span></code></pre></div>
+<p><strong>Citation Methods for AI:</strong></p>
+<p>When citing AI assistance in your work:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>APA Style (7th edition):
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>OpenAI. (2026). ChatGPT (version GPT-4.5) [Large language model].
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>https://chat.openai.com/
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>In-text: (OpenAI, 2026)
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>Note: Include the specific prompt and response in an appendix if requested by instructor.
+</span></code></pre></div>
+<p><strong>Process Documentation:</strong></p>
+<p>Keep records of:</p>
+<ul>
+<li>All drafts with dates</li>
+<li>Research notes and sources consulted</li>
+<li>Any AI interactions (save conversation logs)</li>
+<li>Revisions and the thinking behind them</li>
+<li>Notes from professor feedback and how you addressed it</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Proactive Documentation</p>
+<p><strong>Best practice:</strong> Document your process even when not required. This protects you if ever questioned and helps you reflect on your own learning.</p>
+</div>
+<hr />
+<h2 id="practical-resources">Practical Resources<a class="headerlink" href="#practical-resources" title="Permanent link">&para;</a></h2>
+<h3 id="for-faculty">For Faculty<a class="headerlink" href="#for-faculty" title="Permanent link">&para;</a></h3>
+<p><a href="../teaching/#syllabus-ai-policies-2026-best-practices"><strong>Syllabus Language Templates</strong></a></p>
+<p><strong>Assignment Redesign Checklist:</strong></p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Does this assignment require demonstration of process, not just product?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Can students easily complete it using AI without learning?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Have I included opportunities for students to show their thinking?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Is there an in-class or synchronous component?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Do students need to create original data or use course-specific materials?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Would I learn about student understanding from their AI use patterns?</li>
+</ul>
+<p><strong>Student Conversation Scripts:</strong></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>Opening a Conversation About Flagged Work:
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>&quot;I&#39;d like to talk with you about your recent assignment. The similarity detection
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>tool flagged some portions as potentially AI-generated. I&#39;m not accusing you of
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>misconduct—I want to understand your process. Can you walk me through how you
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>approached this assignment and what tools or resources you used?&quot;
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>[Listen to student explanation]
+</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>
+</span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>&quot;Thank you for explaining. To help me understand your work better, do you have any
+</span><span id="__span-7-11"><a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>drafts, notes, or outlines you can share? I&#39;m interested in seeing your thinking
+</span><span id="__span-7-12"><a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a>process.&quot;
+</span></code></pre></div>
+<h3 id="for-administrators">For Administrators<a class="headerlink" href="#for-administrators" title="Permanent link">&para;</a></h3>
+<p><strong>Policy Template:</strong></p>
+<p>See <a href="#policy-development">"Policy Development"</a> section above for comprehensive institutional policy templates.</p>
+<p><strong>Budget Justification Document:</strong></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>Proposal: AI Detection Tool Implementation
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>Estimated Costs:
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>- Detection tool licensing: $XX,XXX annually
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>- Faculty training and support: $X,XXX
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>- Student education campaign: $X,XXX
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>- IT integration and maintenance: $X,XXX
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>Total: $XX,XXX
+</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>
+</span><span id="__span-8-10"><a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a>Alternative Approach:
+</span><span id="__span-8-11"><a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a>- Faculty professional development on assessment redesign: $XX,XXX
+</span><span id="__span-8-12"><a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a>- Instructional designer support for course revision: $XX,XXX
+</span><span id="__span-8-13"><a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a>- Student AI literacy programming: $X,XXX
+</span><span id="__span-8-14"><a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a>Total: $XX,XXX (potentially more sustainable investment)
+</span><span id="__span-8-15"><a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a>
+</span><span id="__span-8-16"><a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a>Recommendation:
+</span><span id="__span-8-17"><a id="__codelineno-8-17" name="__codelineno-8-17" href="#__codelineno-8-17"></a>Invest in assessment transformation rather than detection arms race.
+</span><span id="__span-8-18"><a id="__codelineno-8-18" name="__codelineno-8-18" href="#__codelineno-8-18"></a>If detection tool adopted, combine with significant pedagogical support.
+</span></code></pre></div>
+<p><strong>Implementation Checklist:</strong></p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Task force formed with diverse stakeholders</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Institutional policy drafted and vetted</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Faculty handbook updated</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Student code of conduct revised</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> LMS integration tested</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Faculty training schedule developed</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Student education materials created</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Appeals process established</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Data privacy audit completed</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Assessment plan for effectiveness created</li>
+</ul>
+<h3 id="for-students">For Students<a class="headerlink" href="#for-students" title="Permanent link">&para;</a></h3>
+<p><strong>AI Use Disclosure Template:</strong></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>AI Use Statement
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>For this assignment, I used the following AI tools:
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>[Tool Name]: Used for [specific purpose]
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>- Prompts used: [brief description or examples]
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>- How I used the output: [explanation]
+</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>
+</span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>All analysis, arguments, and conclusions are my own, developed through [describe your
+</span><span id="__span-9-10"><a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>process: research, class materials, discussions, etc.].
+</span><span id="__span-9-11"><a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>
+</span><span id="__span-9-12"><a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>[Your Name]
+</span><span id="__span-9-13"><a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a>[Date]
+</span></code></pre></div>
+<p><strong>Self-Assessment Checklist:</strong></p>
+<p>Before submitting an assignment, ask yourself:</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Can I explain every idea in this assignment in my own words?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Do I understand the reasoning behind my arguments?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Could I defend this work in a conversation with my professor?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Have I disclosed all significant AI assistance?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Does this work represent my learning, not just AI output?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Am I proud of this work and what I learned creating it?</li>
+</ul>
+<p>If you answer "no" to any question, revise before submitting.</p>
+<hr />
+<h2 id="additional-resources">Additional Resources<a class="headerlink" href="#additional-resources" title="Permanent link">&para;</a></h2>
+<p><strong>For All Stakeholders:</strong></p>
+<ul>
+<li><a href="https://mitsloanedtech.mit.edu/ai/teach/ai-detectors-dont-work/" target="_blank">MIT Sloan EdTech: Why AI Detectors Don't Work</a></li>
+<li><a href="https://doi.org/10.1007/s40979-023-00146-z" target="_blank">Weber-Wulff et al. (2024): AI Detection Tool Analysis</a></li>
+<li><a href="https://doi.org/10.1016/j.patter.2023.100779" target="_blank">Liang et al. (2023): GPT Detectors Biased Against Non-Native English Writers</a></li>
+</ul>
+<p><strong>Related Workshop Materials:</strong></p>
+<ul>
+<li><a href="../education/">Education Overview</a> - AI's broader impact on higher education</li>
+<li><a href="../teaching/">Teaching with AI</a> - Faculty strategies for AI integration</li>
+<li><a href="../tutoring/">AI Tutoring</a> - Student learning support</li>
+<li><a href="../admissions/">Admissions &amp; Recruiting</a> - AI in application processes</li>
+</ul>
+<hr />
+<p><strong>Last Updated:</strong> January 2026</p>
+<p><em>This guide will be updated as detection technology and institutional practices evolve.</em></p>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-circle-arrow-up" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16 12-4-4-4 4M12 16V8"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 University of Arizona
+    </div>
+  
+  
+    Made with
+    <a href="https://zensical.org/" target="_blank" rel="noopener">
+      Zensical
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://orcid.org/0000-0002-6639-7181" target="_blank" rel="noopener" title="orcid.org" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M294.7 188.2h-45.9V342h47.5c67.6 0 83.1-51.3 83.1-76.9 0-41.6-26.5-76.9-84.7-76.9M256 8a248 248 0 1 0 0 496 248 248 0 1 0 0-496m-80.8 360.8h-29.8V161.3h29.8zM160.3 98.5a19.6 19.6 0 1 1 0 39.2 19.6 19.6 0 1 1 0-39.2M300 369h-81V161.3h80.6c76.7 0 110.4 54.8 110.4 103.9 0 53.3-41.7 103.9-110 103.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://scholar.google.com/citations?user=nanIeAYAAAAJ&hl=en" target="_blank" rel="noopener" title="scholar.google.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.242 13.769 0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269M12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/tyson-swetnam/" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/tswetnam" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M459.4 151.7c.3 4.5.3 9.1.3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53C87.4 130.8 165 172.4 252.1 176.9c-1.6-7.8-2.6-15.9-2.6-24C249.5 95.1 296.3 48 354.4 48c30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/tyson-swetnam" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://hub.docker.com/u/tswetnam" target="_blank" rel="noopener" title="hub.docker.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M349.9 236.3h-66.1v-59.4h66.1zm0-204.3h-66.1v60.7h66.1zm78.2 144.8H362v59.4h66.1zm-156.3-72.1h-66.1v60.1h66.1zm78.1 0h-66.1v60.1h66.1zm276.8 100c-14.4-9.7-47.6-13.2-73.1-8.4-3.3-24-16.7-44.9-41.1-63.7l-14-9.3-9.3 14c-18.4 27.8-23.4 73.6-3.7 103.8-8.7 4.7-25.8 11.1-48.4 10.7H2.4c-8.7 50.8 5.8 116.8 44 162.1 37.1 43.9 92.7 66.2 165.4 66.2 157.4 0 273.9-72.5 328.4-204.2 21.4.4 67.6.1 91.3-45.2 1.5-2.5 6.6-13.2 8.5-17.1zm-511.1-27.9h-66v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1zm78.1 0h-66.1v59.4h66.1zm-78.1-72.1h-66.1v60.1h66.1z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.youtube.com/channel/UC5xPt9KZHccC0ehMNEkINzQ" target="_blank" rel="noopener" title="www.youtube.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M549.7 124.1c-6.2-23.7-24.8-42.3-48.3-48.6C458.9 64 288.1 64 288.1 64S117.3 64 74.7 75.5c-23.5 6.3-42 24.9-48.3 48.6C15 167 15 256.4 15 256.4s0 89.4 11.4 132.3c6.3 23.6 24.8 41.5 48.3 47.8C117.3 448 288.1 448 288.1 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zM232.2 337.6V175.2l142.7 81.2z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      
+      <script id="__config" type="application/json">{"annotate":null,"base":"..","features":["navigation.instant","navigation.tracking","navigation.tabs","navigation.tabs.sticky","navigation.indexes","navigation.top","search.highlight","search.share","search.suggest","content.code.copy","content.code.prettify","content.tooltips"],"search":"../assets/javascripts/workers/search.e2d2d235.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.8ffeb9c9.min.js"></script>
+      
+        <script src="../chatbot_widget.js"></script>
+      
+    
+  </body>
+</html>
