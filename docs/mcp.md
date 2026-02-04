@@ -4,7 +4,7 @@
 
 ## What is Model Context Protocol (MCP)? 
 
-[**Model Context Protocol (MCP)**](https://modelcontextprotocol.io/introduction){target=_blank} is a standardized communication framework designed to allow Large Language Models (LLMs) and other AI tools to access and understand the **context** of what a user is currently working on within various applications.
+[**Model Context Protocol (MCP)**](https://modelcontextprotocol.io/introduction){target=_blank} is a standardized communication framework designed to allow Large Language Models (LLMs) and other AI tools to access and understand the **context** of what a user is currently working on within various applications. It is often referred to as [__a USB-C port for AI applications__](https://modelcontextprotocol.io/docs/getting-started/intro).
 
 Think of it as a universal translator and information bridge. It enables your AI assistant to "see" and "interact with" the content and state of your active applications—be it your code editor, a 3D modeling suite, a design tool, or a document processor.
 
