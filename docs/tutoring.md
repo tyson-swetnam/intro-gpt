@@ -17,7 +17,34 @@ Access to AI unlocks new learning opportunities for traditionally underserved st
 * **Resource-Constrained Students:** Free AI tools provide tutoring support that would otherwise cost hundreds of dollars per month for human tutors.
 * **Non-Traditional Learners:** Study at any time, at your own pace, without scheduling constraints of human tutors or office hours.
 
-However, it's essential to use AI as a learning tool, not a shortcut. This guide will help you leverage AI effectively while building genuine understanding and skills. 
+However, it's essential to use AI as a learning tool, not a shortcut. This guide will help you leverage AI effectively while building genuine understanding and skills.
+
+## AI Fluency Training
+
+Before diving into specific tutoring use cases, consider developing foundational AI interaction skills through structured learning:
+
+**[Claude for You: AI Fluency Framework](https://www.anthropic.com/learn/claude-for-you){target=_blank}**
+
+A comprehensive 12-lesson course developed by Anthropic in partnership with academic experts (Prof. Joseph Feller and Prof. Rick Dakan). The course teaches "practical skills for effective, efficient, ethical, and safe AI interaction."
+
+**What You'll Learn:**
+
+* Introduction to AI concepts and generative AI fundamentals
+* Delegation and description techniques
+* Effective prompting strategies
+* Discernment and critical evaluation of AI outputs
+* Diligence in responsible AI use
+
+**Why Take This Course:**
+
+* Designed for both beginners and experienced AI users
+* Emphasizes responsible AI collaboration
+* Teaches how to leverage Claude's capabilities across personal and professional contexts
+* Includes sections on AI fluency for both educators and students
+
+**Free and Self-Paced:** The course is available at no cost and can be completed at your own pace.
+
+Building these foundational skills will make you more effective at all the tutoring use cases described below.
 
 ## Use Cases
 
