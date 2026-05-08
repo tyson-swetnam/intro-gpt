@@ -9,73 +9,109 @@
 
 ??? Info "Setup (click to expand if you haven't installed tools yet)"
 
-    **Minimum path for this lab:** VS Code + Cline extension + the [Filesystem MCP server](https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem). Everything else below is alternative or optional.
+    Pick whichever agent surface you have access to — the prompts in this lab are platform-neutral and work with any modern AI coding agent. You'll want **at least one** from each row below.
 
-    !!! Success "Desktop LLM Apps"
-        
-        !!! Success "Claude Desktop"
+    !!! Success "Desktop LLM apps"
 
-            (:material-microsoft-windows: Windows, :material-apple: Mac OS)
+        - **Claude Desktop** (:material-microsoft-windows: Windows, :material-apple: Mac OS) — [claude.ai/download](https://claude.ai/download){target=_blank}
+        - **Codex Desktop** (ChatGPT) — [chat.openai.com/codex](https://chat.openai.com/codex){target=_blank}
+        - **Perplexity Computer** (Comet) — [perplexity.ai/comet](https://www.perplexity.ai/comet){target=_blank}
 
-            Connects automatically to Anthropic Claude. 
+    !!! Success "CLI agents"
 
-            [:simple-claude: Claude Desktop https://claude.ai/download](https://claude.ai/download){target=_blank} 
-            
-        !!! Success "AnythingLLM Desktop"
+        - **Claude Code** — [claude.ai/code](https://claude.ai/code){target=_blank}
+        - **Codex CLI** — [github.com/openai/codex](https://github.com/openai/codex){target=_blank}
+        - **Gemini CLI** — [geminicli.com](https://geminicli.com/){target=_blank}
 
-            (:material-microsoft-windows: Windows, :material-apple: Mac OS, :simple-linux: Linux)
+    !!! Success "AI-native IDEs"
 
-            [:material-infinity: AnythingLLM https://anythingllm.com/desktop](https://anythingllm.com/desktop){target=_blank} 
-
-    !!! Success "Integrated Development Environment (IDE) Desktops"
-    
-        !!! Success ":material-microsoft-visual-studio-code: VS Code"
-
-            (:material-microsoft-windows: Windows, :material-apple: Mac OS, :simple-linux: Linux)
-            
-            [:material-microsoft-visual-studio-code: https://code.visualstudio.com/download](https://code.visualstudio.com/download){target=_blank}
-
-        !!! Success "Positron"
-
-            [:simple-posit: https://positron.posit.co/](https://positron.posit.co/){target=_blank} 
-
-        !!! Success "API Access"
-
-            [:simple-claude: https://console.anthropic.com/](https://console.anthropic.com/){target=_blank}
-
-    **Cline (:material-microsoft-visual-studio-code: VS Code Extension)** [:material-robot: https://cline.bot/](https://cline.bot/){target=_blank}
-
-    **Optional: :simple-qgis: QGIS** [https://qgis.org/download/](https://qgis.org/download/){target=_blank}
-
-    **:simple-qgis: QGISMCP** [:material-github: https://github.com/jjsantos01/qgis_mcp](https://github.com/jjsantos01/qgis_mcp){target=_blank}
+        - **VS Code** (:material-microsoft-windows: Windows, :material-apple: Mac OS, :simple-linux: Linux) — [code.visualstudio.com/download](https://code.visualstudio.com/download){target=_blank}
+        - **Cursor** — [cursor.com](https://cursor.com/){target=_blank}
+        - **Antigravity** (Google) — [antigravity.google](https://antigravity.google/){target=_blank}
 
 ## Prompt Engineering & Vibe Coding
 
-> The goal of this lab is to guide your LLM agent (Claude, Cline, etc.) through a reproducible workflow that turns open geospatial data into an interactive **story map**.  
+> The goal of this lab is to guide your AI coding agent (Claude Code, Codex, Gemini CLI, Cursor, etc.) through a reproducible workflow that turns open geospatial data into an interactive **story map**.  
 > Copy-and-paste the prompts below in order. Adjust ONLY the bracketed values (`<…>`) to match your environment.  
 
 ### Prerequisites (checklist)
 
 | ✔︎ | Requirement | Notes |
 |---|-------------|-------|
-|   | Frontier-class LLM access (API or Desktop) | Claude 4, GPT-4.5, Gemini 2.5 Pro, etc. |
-|   | IDE with Cline or Roo Code extension **or** Claude Desktop | Enables local tool use & file ops |
+|   | Frontier-class LLM access | Claude 4, GPT-5, Gemini 2.5 Pro, or equivalent |
+|   | One agent surface from the Setup list above | Desktop, CLI, or AI-native IDE — pick what you know |
 |   | [Filesystem MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem) running | Gives the agent read/write access. **Without this, Step 1 will fail silently.** |
 |   | Git & GitHub account (optional but recommended) | For version control & sharing |
 
 ---
 
-### Step 0 — Skills & subagents
+### Step 0 — Set up agent context files
 
-!!! Tip "Skills and subagents replace the old EigenPrompt"
-    Earlier versions of this lab opened with a 120-line "EigenPrompt" workspace-rules file. Modern agentic IDEs (Claude Code, Cursor, Codex, Cline) replace that pattern with two composable extension surfaces:
+Modern AI coding agents read project-level context files at the start of each session. The exact filename varies by platform — `CLAUDE.md` for Claude Code, `AGENTS.md` for Codex / Cursor / most others, `GEMINI.md` for Gemini CLI — but the content is identical. Three files cover the workspace:
 
-    - **Skills** — reusable, model-invokable playbooks (e.g., `/review`, `/simplify`, `/init`) that activate only when relevant to the task at hand.
-    - **Subagents** — focused helpers the main agent spawns to handle a discrete task (research, drafting, review) and report back.
+| File | Purpose |
+|------|---------|
+| `CLAUDE.md` (or `AGENTS.md`, `GEMINI.md`, `CODEX.md`) | Workspace rules and conventions |
+| `Skills.md` | Reusable, named playbooks the agent can invoke |
+| `Memory.md` | Persistent project facts that survive across sessions |
 
-    Both scale better than a single giant pre-prompt because they're scoped, named, and only fire when needed. For this 90-minute lab, lean on your agent's defaults and skip the custom rules file.
+Drop the same content into whichever filename your agent expects. Create all three at the project root before running Step 1.
 
-    Want to learn how to build your own? See [Agentic AI](../../agentic.md) and [Claude Code Workflow](../../claude-code.md).
+??? Clipboard "CLAUDE.md / AGENTS.md / GEMINI.md — workspace rules"
+
+    ```markdown
+    # Project: Public Health Map Lab
+
+    ## Stack
+    - Python 3.10+ for scripts
+    - Plain HTML / CSS / JS for the web map (no bundlers, no frameworks)
+    - Leaflet for mapping
+
+    ## Conventions
+    - Save scripts to `code/`, raw data to `data/`, maps to `map/`
+    - Log every prompt and response to `prompts/NNN_<topic>.md`
+    - Cite source URLs in code comments for any data fetch
+
+    ## Guardrails
+    - Confirm before destructive actions (delete, overwrite, `git push`)
+    - Never fabricate sample data — surface failures clearly and stop
+    - Run a local web server on a high random port for HTML preview
+    ```
+
+??? Clipboard "Skills.md — reusable playbooks"
+
+    ```markdown
+    # Skills available in this workspace
+
+    ## /scaffold
+    Create the `data/`, `map/`, `code/`, `prompts/` folder structure at the project root.
+
+    ## /fetch-snow
+    Download <https://geodacenter.github.io/data-and-lab/data/snow.zip> into `data/`,
+    unzip, and move every `*.geojson` into `map/`.
+
+    ## /storymap
+    Generate `map/snow_storymap.html` using Leaflet with scrolly layout, choropleth
+    on `deaths` and `deathdens`, and per-layer narrative captions.
+
+    ## /critique
+    Open the current storymap, identify up to three improvements
+    (colors, fonts, scroll feel), wait for approval, then apply in place.
+    ```
+
+??? Clipboard "Memory.md — persistent project facts"
+
+    ```markdown
+    # Project memory
+
+    - Deliverable: `map/snow_storymap.html`, served at http://localhost:51234.
+    - GeoJSON field names: `deaths` (count), `deathdens` (density per polygon area).
+    - Death-count labels go on polygon layers only — NOT on point layers.
+    - The PI prefers per-layer narrative captions over a single overview block.
+    - Story context: 1850 London cholera outbreak; the Broad Street pump is the central feature.
+    ```
+
+Want to learn how skills, subagents, and memory work? See [Agentic AI](../../agentic.md) and [Claude Code Workflow](../../claude-code.md).
 
 ---
 
