@@ -9,199 +9,109 @@
 
 ??? Info "Setup (click to expand if you haven't installed tools yet)"
 
-    **Minimum path for this lab:** VS Code + Cline extension + the [Filesystem MCP server](https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem). Everything else below is alternative or optional.
+    Pick whichever agent surface you have access to — the prompts in this lab are platform-neutral and work with any modern AI coding agent. You'll want **at least one** from each row below.
 
-    !!! Success "Desktop LLM Apps"
-        
-        !!! Success "Claude Desktop"
+    !!! Success "Desktop LLM apps"
 
-            (:material-microsoft-windows: Windows, :material-apple: Mac OS)
+        - **Claude Desktop** (:material-microsoft-windows: Windows, :material-apple: Mac OS) — [claude.ai/download](https://claude.ai/download){target=_blank}
+        - **Codex Desktop** (ChatGPT) — [chat.openai.com/codex](https://chat.openai.com/codex){target=_blank}
+        - **Perplexity Computer** (Comet) — [perplexity.ai/comet](https://www.perplexity.ai/comet){target=_blank}
 
-            Connects automatically to Anthropic Claude. 
+    !!! Success "CLI agents"
 
-            [:simple-claude: Claude Desktop https://claude.ai/download](https://claude.ai/download){target=_blank} 
-            
-        !!! Success "AnythingLLM Desktop"
+        - **Claude Code** — [claude.ai/code](https://claude.ai/code){target=_blank}
+        - **Codex CLI** — [github.com/openai/codex](https://github.com/openai/codex){target=_blank}
+        - **Gemini CLI** — [geminicli.com](https://geminicli.com/){target=_blank}
 
-            (:material-microsoft-windows: Windows, :material-apple: Mac OS, :simple-linux: Linux)
+    !!! Success "AI-native IDEs"
 
-            [:material-infinity: AnythingLLM https://anythingllm.com/desktop](https://anythingllm.com/desktop){target=_blank} 
-
-    !!! Success "Integrated Development Environment (IDE) Desktops"
-    
-        !!! Success ":material-microsoft-visual-studio-code: VS Code"
-
-            (:material-microsoft-windows: Windows, :material-apple: Mac OS, :simple-linux: Linux)
-            
-            [:material-microsoft-visual-studio-code: https://code.visualstudio.com/download](https://code.visualstudio.com/download){target=_blank}
-
-        !!! Success "Positron"
-
-            [:simple-posit: https://positron.posit.co/](https://positron.posit.co/){target=_blank} 
-
-        !!! Success "API Access"
-
-            [:simple-claude: https://console.anthropic.com/](https://console.anthropic.com/){target=_blank}
-
-    **Cline (:material-microsoft-visual-studio-code: VS Code Extension)** [:material-robot: https://cline.bot/](https://cline.bot/){target=_blank}
-
-    **Optional: :simple-qgis: QGIS** [https://qgis.org/download/](https://qgis.org/download/){target=_blank}
-
-    **:simple-qgis: QGISMCP** [:material-github: https://github.com/jjsantos01/qgis_mcp](https://github.com/jjsantos01/qgis_mcp){target=_blank}
+        - **VS Code** (:material-microsoft-windows: Windows, :material-apple: Mac OS, :simple-linux: Linux) — [code.visualstudio.com/download](https://code.visualstudio.com/download){target=_blank}
+        - **Cursor** — [cursor.com](https://cursor.com/){target=_blank}
+        - **Antigravity** (Google) — [antigravity.google](https://antigravity.google/){target=_blank}
 
 ## Prompt Engineering & Vibe Coding
 
-> The goal of this lab is to guide your LLM agent (Claude, Cline, etc.) through a reproducible workflow that turns open geospatial data into an interactive **story map**.  
+> The goal of this lab is to guide your AI coding agent (Claude Code, Codex, Gemini CLI, Cursor, etc.) through a reproducible workflow that turns open geospatial data into an interactive **story map**.  
 > Copy-and-paste the prompts below in order. Adjust ONLY the bracketed values (`<…>`) to match your environment.  
 
 ### Prerequisites (checklist)
 
 | ✔︎ | Requirement | Notes |
 |---|-------------|-------|
-|   | Frontier-class LLM access (API or Desktop) | Claude 4, GPT-4.5, Gemini 2.5 Pro, etc. |
-|   | IDE with Cline or Roo Code extension **or** Claude Desktop | Enables local tool use & file ops |
+|   | Frontier-class LLM access | Claude 4, GPT-5, Gemini 2.5 Pro, or equivalent |
+|   | One agent surface from the Setup list above | Desktop, CLI, or AI-native IDE — pick what you know |
 |   | [Filesystem MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem) running | Gives the agent read/write access. **Without this, Step 1 will fail silently.** |
 |   | Git & GitHub account (optional but recommended) | For version control & sharing |
 
 ---
 
-### Step 0 — Set up agent rules
+### Step 0 — Set up agent context files
 
-Agent rules act as a "pre-prompt" that shapes every response your AI coding agent gives in this session — think of them as standing instructions the model re-reads before each turn. For this 90-minute lab we'll use a tight, minimal ruleset so you can focus on the GIS work. The full, more rigorous **EigenPrompt** (the prompt that comes before all others) is collapsed below for after-class study.
+Modern AI coding agents read project-level context files at the start of each session. The exact filename varies by platform — `CLAUDE.md` for Claude Code, `AGENTS.md` for Codex / Cursor / most others, `GEMINI.md` for Gemini CLI — but the content is identical. Three files cover the workspace:
 
-!!! Tip "Why agent rules?"
+| File | Purpose |
+|------|---------|
+| `CLAUDE.md` (or `AGENTS.md`, `GEMINI.md`, `CODEX.md`) | Workspace rules and conventions |
+| `Skills.md` | Reusable, named playbooks the agent can invoke |
+| `Memory.md` | Persistent project facts that survive across sessions |
 
-    Different agents read different files: **Cline** picks up `.clinerules/` in your workspace, **Claude Code** reads `CLAUDE.md` at the project root, and most other coding agents (Cursor, Aider, Codex, etc.) read `AGENTS.md`. Drop the same content into whichever file your tool expects.
+Drop the same content into whichever filename your agent expects. Create all three at the project root before running Step 1.
 
-??? Clipboard "Copy/Paste — Minimal rules (use this for the lab)"
+??? Clipboard "CLAUDE.md / AGENTS.md / GEMINI.md — workspace rules"
 
     ```markdown
-    # Workshop agent rules
+    # Project: Public Health Map Lab
 
-    - Use Python 3.10+ for all scripts; for the web preview, use plain HTML/CSS/JS with no build tools or bundlers.
-    - Surface failures with clear, specific error messages. Never fabricate or hallucinate sample data — if a fetch fails, say so and stop.
-    - Log every prompt and response to `prompts/NNN_<topic>.md` using zero-padded sequential numbering (e.g., `001_setup.md`, `002_fetch_data.md`).
-    - Confirm with me before any destructive action: deleting files, overwriting existing files, or running `git push`.
-    - To preview HTML locally, run `python -m http.server <port>` on a high random port (e.g., 8723, 9412) to avoid collisions.
-    - For any data fetch, cite the source URL in a code comment immediately above the fetch call.
+    ## Stack
+    - Python 3.10+ for scripts
+    - Plain HTML / CSS / JS for the web map (no bundlers, no frameworks)
+    - Leaflet for mapping
+
+    ## Conventions
+    - Save scripts to `code/`, raw data to `data/`, maps to `map/`
+    - Log every prompt and response to `prompts/NNN_<topic>.md`
+    - Cite source URLs in code comments for any data fetch
+
+    ## Guardrails
+    - Confirm before destructive actions (delete, overwrite, `git push`)
+    - Never fabricate sample data — surface failures clearly and stop
+    - Run a local web server on a high random port for HTML preview
     ```
 
-??? Tip "Full EigenPrompt (advanced — for after the workshop)"
+??? Clipboard "Skills.md — reusable playbooks"
 
-    These are sometimes called an EigenPrompt — because they come before any other prompts. We are using Cline on VS Code, so we will create a unique Workspace Rules file; these are located in the `.clinerules` folder — clicking on the :material-scales: icon will take you to Cline Rules.
+    ```markdown
+    # Skills available in this workspace
 
-    ??? Clipboard "Copy/Paste"
+    ## /scaffold
+    Create the `data/`, `map/`, `code/`, `prompts/` folder structure at the project root.
 
-        ```markdown
-        **Eigenprompt: Rigorous Code Generation & Automated Validation**
+    ## /fetch-snow
+    Download <https://geodacenter.github.io/data-and-lab/data/snow.zip> into `data/`,
+    unzip, and move every `*.geojson` into `map/`.
 
-        **Objective:** Generate [code for a specific function/module/class | architectural outline] for [project/feature description] with a focus on correctness, testability, maintainability, and automated verification via Cline Workspace Rules.
+    ## /storymap
+    Generate `map/snow_storymap.html` using Leaflet with scrolly layout, choropleth
+    on `deaths` and `deathdens`, and per-layer narrative captions.
 
-        **I. Code Generation Specifications:**
+    ## /critique
+    Open the current storymap, identify up to three improvements
+    (colors, fonts, scroll feel), wait for approval, then apply in place.
+    ```
 
-        1. **Functionality:**  
-          - Clearly define input(s), output(s), and the intended behavior.
-          
-        2. **Language/Framework:**  
-          - Specify the programming language and version clearly (e.g., Python 3.10, JavaScript ES2022, Go 1.18).
+??? Clipboard "Memory.md — persistent project facts"
 
-        3. **Dependencies:**  
-          - Explicitly list external libraries or modules required.
+    ```markdown
+    # Project memory
 
-        4. **Error Handling:**  
-          - Define expected errors explicitly with handling methods (exceptions, error codes, fallbacks).
+    - Deliverable: `map/snow_storymap.html`, served at http://localhost:51234.
+    - GeoJSON field names: `deaths` (count), `deathdens` (density per polygon area).
+    - Death-count labels go on polygon layers only — NOT on point layers.
+    - The PI prefers per-layer narrative captions over a single overview block.
+    - Story context: 1850 London cholera outbreak; the Broad Street pump is the central feature.
+    ```
 
-        5. **Performance Constraints (Optional):**  
-          - Describe any important time or memory constraints clearly.
-
-        6. **Code Style:**  
-          - Follow defined style guides (e.g., PEP 8, Google Java Style).  
-          - Clearly document non-obvious or complex logic concisely, specifying reasons ("why") and behavior ("what").
-
-        **II. Testing & Validation Requirements:**
-
-        1. **Unit Tests:**  
-          - Specify testing framework explicitly (e.g., unittest, Jest, Mocha).  
-          - List and implement critical test cases clearly:
-            - Typical valid inputs.
-            - Edge cases.
-            - Invalid inputs and related error-handling tests.
-          - Indicate desired code coverage clearly [% of coverage as applicable].
-
-        2. **Validation Criteria:**  
-          - Clearly describe measurable criteria for successful test results.  
-          - Specify validation datasets, criteria, or methods if needed.
-
-        **III. Automated Execution, Validation, and Bug-Fixing Workflow (Cline Workspace Rules):**
-
-        1. **Terminal Execution Validation:**
-          - After execution of generated code or tests via ChatGPT API in VS Code Terminal, automatically inspect the outputs.
-          - Verify explicitly that the commands have exited without errors or warnings.
-
-        2. **Error & Warning Inspection:**
-          - Check VS Code's "Problems" pane for reported errors, warnings, or alerts promptly after running code or tests.
-
-        3. **Automated Re-examination on Errors:**
-          - In case of any detected terminal output issues or problems pane alerts:
-            - Automatically re-inspect the relevant code and identify root causes clearly.
-            - Promptly propose corrected or improved code, addressing identified issues directly.
-            - Re-run tests and terminal commands, verifying fixes iteratively until no critical issues persist.
-
-        4. **Final Confirmation:**
-          - Explicitly confirm successful execution (no persistent errors or warnings) before finishing the task.
-
-        **IV. Project Structure & Documentation (Initialize/Update):**
-
-        1. **`README.md`:**
-          - **Project Title:**
-          - **Description:** Succinct description.
-          - **Setup Instructions:** Clearly outlined installation and execution steps.
-          - **Usage:** Simple demonstration or examples.
-          - **Testing Instructions:** Exact commands to run provided unit tests.
-
-        2. **`prompts/` directory:**
-          - Log initial eigenprompt clearly as `prompts/001_initial_eigenprompt.md`.
-          - Log ChatGPT API's full responses (code, documentation, README) as `prompts/001_response.md`.
-          - Future interactions follow sequential convention (e.g., `002_refinement_prompt.md`, `002_response.md`).
-
-        **V. Output Format (Concise & Complete):**
-
-        - Clearly named source code files according to module criteria (e.g., `module_name.py`).
-        - Clearly named unit test files aligned with testing framework (e.g., `test_module_name.py`).
-        - Complete and concise README.md file content.
-        - Confirmation that automated validation via Cline Workspace Rules has executed successfully or corrections documented explicitly.
-        - Confirmation of structured prompt logging.
-
-        ---
-
-        **Illustrative Usage Example:**
-
-        **Objective:** Generate efficient Python code for calculating Fibonacci numbers with memoization, fully tested and automatically validated via Cline Workspace Rules.
-
-        - **Code Specifications:**
-          - Input: non-negative integer `n`; Output: nth Fibonacci number.
-          - Use memoization for efficiency, with clear descriptive comments.
-          - Error Handling: Raise explicit `ValueError` on negative input.
-          - Python version: 3.10; Adhere strictly to PEP 8 style.
-
-        - **Unit Testing:**
-          - Framework: `unittest`.
-          - Test cases: `fib(0)`→`0`, `fib(1)`→`1`, `fib(10)`→`55`, `fib(20)`→`6765`; negative inputs raise `ValueError`.
-
-        - **Automated Validation (Cline Workflow):**
-          - Upon running tests in terminal through ChatGPT API integration with VS Code, check terminal output immediately.
-          - Automatically examine the "Problems" pane for errors or warnings.
-          - If issues detected, automatically re-inspect code, clearly identify and implement fixes, and iteratively rerun validation steps until no problems remain.
-
-        - **Project Structure & Logs:**
-          - Create README.md, `prompts/` structure and log prompts/responses precisely as described.
-
-        - **Final Output:**
-          - Files: `fibonacci.py`, `test_fibonacci.py`, `README.md`.
-          - Explicit confirmation that code and tests execute without errors or warnings and validation is automated successfully.
-        ```
-
-Want to go deeper? See [Writing Prompts](../../prompts.md) and [Vibe Coding](../../vibe.md) for more on shaping agent behavior.
+Want to learn how skills, subagents, and memory work? See [Agentic AI](../../agentic.md) and [Claude Code Workflow](../../claude-code.md).
 
 ---
 
