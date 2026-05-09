@@ -122,7 +122,7 @@ In response to the rapid rise of generative AI, specifically GPTs, new agreement
 
 ## Current Legislation
 
-[National Conference of State Legislatures (NCSL) Artificial Intelligence 2025 Legislation](https://www.ncsl.org/technology-and-communication/artificial-intelligence-2025-legislation){target=_blank}
+[National Conference of State Legislatures (NCSL) Artificial Intelligence Legislation Database](https://www.ncsl.org/financial-services/artificial-intelligence-legislation-database){target=_blank}
 
 
 The previous administration had proposed a ["Blueprint for an AI Bill of Rights"](https://bidenwhitehouse.archives.gov/ostp/ai-bill-of-rights/){target=_blank}, and executive order around the ["Safe, Secure, and Trustworthy Development and Use of Artificial Intelligence"](https://www.federalregister.gov/documents/2023/11/01/2023-24283/safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence){target=_blank} which is now rescinded. 
