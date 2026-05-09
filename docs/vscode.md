@@ -381,10 +381,15 @@ Suggested improvements:
 
 | Plan | Price | Features |
 |------|-------|----------|
-| **Individual** | $10/month | Code completions, chat |
+| **Individual / Pro** | $10/month | Code completions, chat |
+| **Pro+** | $39/user/month | Claude Opus access, 5x Pro premium requests |
 | **Business** | $19/user/month | Team management, policy controls |
 | **Enterprise** | $39/user/month | Advanced security, fine-tuning |
-| **Free for Education** | $0 | Full access for verified students/educators |
+| **Free for Education (Free Pro)** | $0 | Full access for verified students, educators, and OSS maintainers |
+
+!!! warning "Billing change (May 2026)"
+
+    GitHub Copilot transitions to usage-based billing with monthly AI Credits effective June 1, 2026 --- see vendor pricing page.
 
 !!! info "See Full Setup Instructions"
 

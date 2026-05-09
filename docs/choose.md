@@ -2,7 +2,7 @@
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 
-This comprehensive guide helps you choose the right AI platform for your needs. All pricing information has been verified as of **January 2026**.
+This comprehensive guide helps you choose the right AI platform for your needs. All pricing information has been verified as of **May 2026**.
 
 ---
 
@@ -15,18 +15,18 @@ Below are tables that rank popular AI platforms by use case, organized by Chat, 
 | **Platform** | **Strength** | **Weakness** | **Cost** | **Interface** | **Docs** |
 |--------------|--------------|--------------|----------|---------------|----------|
 | **Claude (Anthropic)** | - Fast, coherent dialogue <br/>- Large context window <br/>- Strong reasoning | - API can be expensive <br/>- Limited third-party integrations | Free, $20/mo (Pro), $100-200/mo (Max), $30+/seat (Team) | [**Claude**](https://claude.ai){target=_blank} | [**Anthropic Docs**](https://docs.anthropic.com/){target=_blank} |
-| **Gemini (Google)** | - Multimodal (images + text + video) <br/>- Strong Google integration | - Some features Beta/experimental <br/>- Pricing tiers complex | Free, $19.99/mo (AI Pro), $249.99/mo (AI Ultra) | [**Gemini**](https://gemini.google.com/){target=_blank} | [**Gemini Docs**](https://ai.google.dev/gemini-api/docs){target=_blank} |
-| **ChatGPT (OpenAI)** | - Strong reasoning (o-series) <br/>- Extensive plugin ecosystem <br/>- Multi-turn conversation | - Subscription required for best models <br/>- Usage caps on free tier | Free, $8/mo (Go with ads), $20/mo (Plus), $200/mo (Pro), Team/Enterprise | [**ChatGPT**](https://chatgpt.com/){target=_blank} | [**OpenAI Docs**](https://platform.openai.com/docs/){target=_blank} |
+| **Gemini (Google)** | - Multimodal (images + text + video) <br/>- Strong Google integration | - Some features Beta/experimental <br/>- Pricing tiers complex | Free, $7.99/mo (AI Plus), $19.99/mo (AI Pro), $249.99/mo (AI Ultra) | [**Gemini**](https://gemini.google.com/){target=_blank} | [**Gemini Docs**](https://ai.google.dev/gemini-api/docs){target=_blank} |
+| **ChatGPT (OpenAI)** | - Strong reasoning (o-series) <br/>- Extensive plugin ecosystem <br/>- Multi-turn conversation | - Subscription required for best models <br/>- Usage caps on free tier <br/>- Free tier shows ads in US (Feb 9, 2026) | Free (now ad-supported in US), $8/mo (Go with ads), $20/mo (Plus), $100/mo (NEW Pro tier as of April 2026, verify), $200/mo (Pro), Team/Enterprise | [**ChatGPT**](https://chatgpt.com/){target=_blank} | [**OpenAI Docs**](https://platform.openai.com/docs/){target=_blank} |
 | **DeepSeek (Open Source)**  | - Extremely affordable API <br/>- Open source models | - Smaller dev community <br/>- Data stored in China | Free (Web Chat) / Free (Open Source) / API from $0.28 per 1M tokens | [**DeepSeek Chat**](https://chat.deepseek.com/){target=_blank} | [**DeepSeek Docs**](https://api-docs.deepseek.com/){target=_blank} |
 | **Microsoft 365 Copilot** | - Deep MS Office integration <br/>- Enterprise features | - Requires M365 license <br/>- Premium pricing | Free (Chat), $21/mo (Business), $30/mo (Enterprise) | [**Copilot**](https://copilot.microsoft.com/){target=_blank} | [**Copilot Docs**](https://learn.microsoft.com/en-us/copilot/microsoft-365/){target=_blank} |
 | **Grok (xAI)** | - Multimodal capabilities <br/>- X platform integration | - Premium pricing <br/>- Content restrictions | Free (limited), $40/mo (X Premium+), API from $0.20 per 1M tokens | [**Grok**](https://grok.com){target=_blank} | [**xAI Docs**](https://docs.x.ai/docs/overview){target=_blank} |
 | **HuggingFace Chat** | - 113+ open source models <br/>- Free access | - Quality varies by model <br/>- Some features need Pro | Free, $9/mo (Pro), $20/user/mo (Team), $50+/mo (Enterprise) | [**HF Chat**](https://huggingface.co/chat/){target=_blank} | [**HF Docs**](https://huggingface.co/docs){target=_blank} |
 | **Jasper** | - Marketing-focused <br/>- Content workflows | - Expensive for individual use <br/>- Less technical depth | $59/mo (Pro), $69/mo (monthly billing) | [**Jasper**](https://www.jasper.ai/){target=_blank} | [**Jasper Docs**](https://developers.jasper.ai/){target=_blank} |
-| **Perplexity** | - Research + search <br/>- Citation backing | - Subscription for advanced features | Free, $20/mo (Pro), $200/mo (Max), $4.99/mo (Education) | [**Perplexity**](https://www.perplexity.ai/){target=_blank} | [**Perplexity Docs**](https://docs.perplexity.ai/){target=_blank} |
+| **Perplexity** | - Research + search <br/>- Citation backing | - Subscription for advanced features | Free, $20/mo (Pro), $200/mo (Max) | [**Perplexity**](https://www.perplexity.ai/){target=_blank} | [**Perplexity Docs**](https://docs.perplexity.ai/){target=_blank} |
 | **NotebookLM (Google)** | - RAG capabilities <br/>- Google Drive integration | - Still evolving features | Free, $19.99/mo (Plus via Google One AI Premium) | [**NotebookLM**](https://notebooklm.google.com/){target=_blank} | [**NotebookLM Docs**](https://support.google.com/notebooklm){target=_blank} |
 | **Vicuna** | - Open source <br/>- Free to use | - Smaller than frontier models <br/>- Self-hosting required | Free (self-host) or free demos | [**Vicuna Demo**](https://chat.lmsys.org/){target=_blank} | [**Vicuna GitHub**](https://github.com/lm-sys/FastChat){target=_blank} |
 | **Pi (Inflection AI)** | - Empathetic conversation style <br/>- Personal AI | - Rate limited <br/>- No coding support | Free (personal use, rate limits) | [**Pi**](https://pi.ai){target=_blank} | N/A (Enterprise API only) |
-| **Poe (Quora)** | - Access to multiple models <br/>- Single subscription | - Usage caps on free tier | $5/mo (10k points), $19.99/mo (1M points), $250/mo (12.5M points) | [**Poe**](https://poe.com/){target=_blank} | [**Poe Docs**](https://help.poe.com/){target=_blank} |
+| **Poe (Quora)** | - Access to multiple models <br/>- Single subscription | - Usage caps on free tier | $4.99/mo (Lite, 10k daily points), $19.99/mo (Standard, 1M monthly points), $249.99/mo (Power, 12.5M monthly points) | [**Poe**](https://poe.com/){target=_blank} | [**Poe Docs**](https://help.poe.com/){target=_blank} |
 | **Mistral AI** | - European LLMs <br/>- Multilingual | - Still evolving ecosystem | Free + API from $0.02-$6 per 1M tokens, Le Chat Pro $14.99/mo | [**Mistral**](https://mistral.ai/){target=_blank} | [**Mistral Docs**](https://docs.mistral.ai/){target=_blank} |
 | **Latimer** | - Diversity-focused training <br/>- Inclusive perspective | - Smaller user base | Free (100 interactions), $9.99/mo (Individual) | [**Latimer**](https://app.latimer.ai/){target=_blank} | Email: support@latimer.ai |
 | **Meta AI (Llama)** | - Open source <br/>- Multiple model sizes available | - Self-hosting requires resources | Free (self-host) or enterprise | [**Llama**](https://www.llama.com/){target=_blank} | [**Meta GitHub**](https://github.com/facebookresearch/llama){target=_blank} |
@@ -42,8 +42,8 @@ Below are tables that rank popular AI platforms by use case, organized by Chat, 
 
 | **Platform** | **Strength** | **Weakness** | **Cost** | **Interface** | **Docs** |
 |--------------|--------------|--------------|----------|---------------|----------|
-| **Perplexity** | - Citation-backed answers <br/>- Web search integration | - Subscription for Pro searches | Free, $20/mo (Pro), $200/mo (Max), $4.99/mo (Education) | [**Perplexity**](https://www.perplexity.ai/){target=_blank} | [**Perplexity Docs**](https://docs.perplexity.ai/){target=_blank} |
-| **Gemini (Google)** | - In-depth analysis <br/>- Chain-of-thought reasoning | - Can be slow for complex queries | Free, $19.99/mo (AI Pro), $249.99/mo (AI Ultra) | [**Gemini**](https://gemini.google.com/){target=_blank} | [**Gemini Docs**](https://ai.google.dev/gemini-api/docs){target=_blank} |
+| **Perplexity** | - Citation-backed answers <br/>- Web search integration | - Subscription for Pro searches | Free, $20/mo (Pro), $200/mo (Max) | [**Perplexity**](https://www.perplexity.ai/){target=_blank} | [**Perplexity Docs**](https://docs.perplexity.ai/){target=_blank} |
+| **Gemini (Google)** | - In-depth analysis <br/>- Chain-of-thought reasoning | - Can be slow for complex queries | Free, $7.99/mo (AI Plus), $19.99/mo (AI Pro), $249.99/mo (AI Ultra) | [**Gemini**](https://gemini.google.com/){target=_blank} | [**Gemini Docs**](https://ai.google.dev/gemini-api/docs){target=_blank} |
 | **ChatGPT (OpenAI)** | - Advanced reasoning <br/>- Multi-step problems | - Requires Plus/Pro subscription | $20/mo (Plus), $200/mo (Pro) | [**ChatGPT**](https://chatgpt.com/){target=_blank} | [**OpenAI Docs**](https://platform.openai.com/docs/){target=_blank} |
 | **Claude (Anthropic)** | - Strong analysis <br/>- 200K context window | - Higher API costs | Free, $20/mo (Pro), $100-200/mo (Max) | [**Claude**](https://claude.ai){target=_blank} | [**Anthropic Docs**](https://docs.anthropic.com/){target=_blank} |
 | **ScholarAI** | - 200M+ papers <br/>- Academic focus | - Requires ChatGPT Plus or standalone subscription | Free (5 credits), $9.99/mo (Basic), $18.99/mo (Premium) | [**Scholar AI GPT**](https://chatgpt.com/g/g-L2HknCZTC-scholar-ai){target=_blank} / [**Web App**](https://app.scholarai.io){target=_blank} | [**ScholarAI Docs**](https://docs.scholarai.io){target=_blank} |
@@ -64,13 +64,13 @@ Below are tables that rank popular AI platforms by use case, organized by Chat, 
 | **Platform** | **Strength** | **Weakness** | **Cost** | **Interface** | **Docs** |
 |--------------|--------------|--------------|----------|---------------|----------|
 | **Claude Code (Anthropic)** | - CLI/IDE integration <br/>- Strong code generation | - Requires Pro+ subscription | Included with Pro ($20/mo) or higher | [**Claude**](https://claude.ai){target=_blank} | [**Anthropic Docs**](https://docs.anthropic.com/){target=_blank} |
-| **Gemini (Google)** | - Code + text synergy <br/>- Fast responses | - Less specialized than dedicated coding tools | Free, $19.99/mo (AI Pro) | [**Gemini**](https://gemini.google.com/){target=_blank} | [**Gemini Docs**](https://ai.google.dev/gemini-api/docs){target=_blank} |
-| **GitHub Copilot** | - Seamless IDE integration <br/>- Code completions | - Subscription required for unlimited | Free (students/OSS), $10/mo (Pro), $39/mo (Pro+), $19/user/mo (Business) | [**GitHub Copilot**](https://github.com/features/copilot){target=_blank} | [**Copilot Docs**](https://docs.github.com/en/copilot){target=_blank} |
-| **ChatGPT (OpenAI)** | - Interactive code execution <br/>- Good for learning | - Requires Plus/Pro for best experience | Free, $20/mo (Plus), $200/mo (Pro) | [**ChatGPT**](https://chatgpt.com/){target=_blank} | [**OpenAI Docs**](https://platform.openai.com/docs/guides/code){target=_blank} |
+| **Gemini (Google)** | - Code + text synergy <br/>- Fast responses | - Less specialized than dedicated coding tools | Free, $7.99/mo (AI Plus), $19.99/mo (AI Pro) | [**Gemini**](https://gemini.google.com/){target=_blank} | [**Gemini Docs**](https://ai.google.dev/gemini-api/docs){target=_blank} |
+| **GitHub Copilot** | - Seamless IDE integration <br/>- Code completions | - Subscription required for unlimited | Free (students/OSS), $10/mo (Pro), $39/mo (Pro+), $19/user/mo (Business) <br/>Transitions to usage-based billing June 1, 2026 | [**GitHub Copilot**](https://github.com/features/copilot){target=_blank} | [**Copilot Docs**](https://docs.github.com/en/copilot){target=_blank} |
+| **ChatGPT (OpenAI)** | - Interactive code execution <br/>- Good for learning | - Requires Plus/Pro for best experience <br/>- Free tier shows ads in US (Feb 9, 2026) | Free (now ad-supported in US), $20/mo (Plus), $100/mo (NEW Pro tier as of April 2026, verify), $200/mo (Pro) | [**ChatGPT**](https://chatgpt.com/){target=_blank} | [**OpenAI Docs**](https://platform.openai.com/docs/guides/code){target=_blank} |
 | **Continue.dev** | - Open source <br/>- Multiple model support | - Requires technical setup <br/>- Users pay LLM API costs | Free (Open Source, users pay API costs) | [**Continue.dev**](https://continue.dev/){target=_blank} | [**Continue Docs**](https://continue.dev/docs/){target=_blank} |
-| **Codeium (Windsurf)** | - Free tier available <br/>- IDE integration | - Rebranded to Windsurf <br/>- Credit-based limits | Free (25 credits/mo), $15/mo (Pro), $30/mo (Teams), $60/mo (Enterprise) | [**Windsurf**](https://www.codeium.com/){target=_blank} | [**Codeium Docs**](https://docs.codeium.com/){target=_blank} |
-| **Phind** | - Code search + AI chat | - Inconsistent pricing | Free, Paid tiers $10-40/mo (verify on site) | [**Phind**](https://www.phind.com/){target=_blank} | [**Phind Help**](https://help.phind.com/hc/en-us){target=_blank} |
-| **Replit AI** | - Cloud IDE + AI <br/>- Multi-language support | - Subscription for full features | Free tier, $20/mo (annual) or $25/mo (monthly) | [**Replit AI**](https://replit.com/ai){target=_blank} | [**Replit Docs**](https://docs.replit.com/){target=_blank} |
+| **Codeium (Windsurf)** | - Free tier available <br/>- IDE integration | - Rebranded to Windsurf (acquired by Cognition AI Dec 2025) <br/>- Credit-based limits | Free (5 sessions/day), $15/mo (Pro), $35/mo (Pro Plus) (verify), $25-35/user/mo (Teams) (verify), $60/user/mo (Enterprise) (verify) | [**Windsurf**](https://www.codeium.com/){target=_blank} | [**Codeium Docs**](https://docs.codeium.com/){target=_blank} |
+| **Phind** | - Code search + AI chat | **Discontinued January 16, 2026** | **Discontinued January 16, 2026** — alternatives: Cursor, GitHub Copilot, Perplexity | [**Phind**](https://www.phind.com/){target=_blank} | [**Phind Help**](https://help.phind.com/hc/en-us){target=_blank} |
+| **Replit AI** | - Cloud IDE + AI <br/>- Multi-language support | - Subscription for full features | Free tier, $20/mo (Core, ~5 collaborators), $100/mo (Pro, ~15 builders), Enterprise custom | [**Replit AI**](https://replit.com/ai){target=_blank} | [**Replit Docs**](https://docs.replit.com/){target=_blank} |
 | **StarCoder** | - Open source <br/>- Multiple model sizes | - Self-hosting required | Free (Open Source) | [**StarCoder2**](https://huggingface.co/bigcode){target=_blank} | [**BigCode**](https://www.bigcode-project.org/){target=_blank} |
 | **Code Llama (Meta)** | - Specialized for coding <br/>- Multiple variants | ⚠️ **Repository archived July 2025** - consider StarCoder2 instead | Free (Open Source, archived) | [**Code Llama**](https://ai.meta.com/blog/code-llama-large-language-model-coding/){target=_blank} | [**Meta GitHub**](https://github.com/facebookresearch/llama){target=_blank} |
 
@@ -159,6 +159,8 @@ Below are tables that rank popular AI platforms by use case, organized by Chat, 
 
 ### Open Source & Self-Hosted
 
+!!! note "Pricing for tools below not re-verified May 2026 — check vendor pages."
+
 | **Platform** | **Description** | **Cost** | **Link** |
 |--------------|-----------------|----------|----------|
 | **Amplify GenAI** | Open source multi-model platform from Vanderbilt | AWS usage + model costs (~$3/user/mo) | [**Amplify GenAI**](https://www.amplifygenai.org/){target=_blank} / [**GitHub**](https://github.com/gaiin-platform){target=_blank} |
@@ -168,6 +170,8 @@ Below are tables that rank popular AI platforms by use case, organized by Chat, 
 ---
 
 ## Educational AI Platforms
+
+!!! note "Pricing for tools below not re-verified May 2026 — check vendor pages."
 
 These platforms provide AI-powered tutoring and learning support across various subjects:
 
@@ -196,7 +200,7 @@ For more information on using AI for tutoring and education, see [AI Tutoring: S
 
 !!! Info "About This Guide"
 
-    * **Verification Date:** All pricing verified January 2026
+    * **Verification Date:** All pricing verified May 2026
     * **Updates:** AI platforms change rapidly. Check official websites for current pricing
     * **Free Tiers:** Many services offer free tiers with usage limits
     * **Student Discounts:** Check for education pricing (Perplexity, Google AI Pro, GitHub Copilot, etc.)
@@ -213,7 +217,7 @@ For more information on using AI for tutoring and education, see [AI Tutoring: S
     **Free/Low-Cost:**
 
     * **GitHub Copilot** - Free for students, teachers, OSS maintainers
-    * **Perplexity Education** - $4.99/mo with verification
+    * **Perplexity Education** - $10/mo with SheerID verification
     * **Google AI Pro** - Free for university students (1 year)
     * **Khan Academy** - Completely free
 
@@ -230,6 +234,8 @@ For more information on using AI for tutoring and education, see [AI Tutoring: S
 ## Agentic Browsers (AI-Powered Web Browsers)
 
 Agentic browsers integrate AI directly into your web browsing experience, enabling autonomous task execution, intelligent search, and productivity enhancements.
+
+!!! note "Pricing for tools below not re-verified May 2026 — check vendor pages."
 
 | **Browser**  | **Plan** | **Price (per month)** | **Details**  |
 | :----------- | :------- | :-------------------- | :----------- |
@@ -263,6 +269,8 @@ Agentic browsers integrate AI directly into your web browsing experience, enabli
 ## API Pricing for Developers
 
 For developers building with AI APIs, here's detailed token-level pricing:
+
+!!! note "Cloud platform pricing (Together AI, Replicate, etc.) not re-verified May 2026 — check vendor pages."
 
 | **Service**  | **Plan** | **Pricing** | **Details**  |
 | :----------- | :------- | :---------- | :----------- |

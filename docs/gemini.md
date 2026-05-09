@@ -16,8 +16,10 @@ There are multiple ways to access and use Google Gemini:
     **Subscription Options:**
 
     - **Free:** Gemini Flash unlimited
-    - **AI Pro ($19.99/mo):** Gemini Pro access, NotebookLM Plus, 2TB storage - **Free for university students (1 year)**
+    - **AI Plus ($7.99/mo):** Lighter paid tier with expanded Gemini Pro limits (US, new May 2026)
+    - **AI Pro ($19.99/mo):** Gemini Pro access, NotebookLM Plus, 2TB storage - **Discounted $9.99/mo for verified university students (free 1-year tier closed to new signups March 11, 2026)**
     - **AI Ultra ($249.99/mo):** Gemini Pro unlimited, Deep Think, Veo video generation
+    - **AI Ultra Lite:** announced May 5 2026, price TBD `(verify)`
 
     **Compare with other AI platforms:** See [Choosing the Right AI Platform](choose.md) for detailed comparisons
 

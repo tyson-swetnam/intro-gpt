@@ -102,7 +102,7 @@ Claude Code represents the evolution of AI-assisted development—moving beyond 
 
 #### Option 1: Claude.ai
 
-**Claude** (\$20/month), **Claude Pro** (\$100/month), **Claude Pro Max** (\$200/month) 
+**Claude Pro** (\$20/month), **Claude Max** (\$100/month, 5x Pro), **Claude Max** (\$200/month, 20x Pro) 
 
 - Access to Claude Code CLI and VS Code Extension
 - Extended usage limits (5x more than free tier)
@@ -126,11 +126,11 @@ For programmatic access and integration:
 **Best for**: Teams, developers who want fine-grained control, batch processing, or integration with other tools
 
 !!! info "API Pricing by tier"
-    Per million tokens (see [docs.claude.com](https://docs.claude.com/en/docs/about-claude/models){target=_blank} for current rates):
+    Per million tokens, as of May 2026 (see [docs.claude.com](https://docs.claude.com/en/docs/about-claude/models){target=_blank} for current rates):
 
-    - **Sonnet** (balanced): mid-range input / output pricing
-    - **Opus** (flagship): highest input / output pricing
-    - **Haiku** (fast & cost-efficient): lowest input / output pricing
+    - **Sonnet** (balanced): $3 input / $15 output
+    - **Opus** (flagship, Opus 4.5+): $5 input / $25 output
+    - **Haiku** (Haiku 4.5, fast & cost-efficient): $1 input / $5 output
 
     For most coding tasks, the Sonnet tier provides the best balance of capability and cost.
 

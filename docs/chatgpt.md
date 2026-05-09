@@ -45,14 +45,21 @@ ChatGPT is powered by a family of large language models (LLMs) spanning flagship
 
 ## ChatGPT Subscription Plans
 
-!!! info "Pricing tiers (check [OpenAI's pricing page](https://openai.com/chatgpt/pricing/){target=_blank} for current rates)"
+!!! info "Pricing tiers, as of May 2026 (check [OpenAI's pricing page](https://openai.com/chatgpt/pricing/){target=_blank} for current rates)"
 
-    **Free Tier**
+    **Free Tier ($0)**
 
-    - Access to a flagship multimodal model with usage limits
+    - Limited GPT-5.x access; reasoning models throttled
     - Standard response speed
-    - Limited access to advanced features
+    - **Shows ads on US accounts** (rolled out Feb 9, 2026)
+    - **Sora removed from Free tier** as of Jan 10, 2026
     - Good for casual users exploring AI capabilities
+
+    **ChatGPT Go ($8/month)**
+
+    - Launched globally Jan 15, 2026
+    - Higher limits than Free
+    - Ads on US accounts
 
     **ChatGPT Plus ($20/month)**
 
@@ -63,18 +70,25 @@ ChatGPT is powered by a family of large language models (LLMs) spanning flagship
     - File uploads, voice mode, and data analysis
     - Custom GPTs and GPT Store access
     - Advanced Voice mode with natural conversation
+    - Includes 1,000 Sora credits/month
+
+    **ChatGPT Pro ($100/month) `(verify)`**
+
+    - NEW tier launched April 9, 2026 (sits between Plus and $200) `(verify)`
+    - Higher limits than Plus, below the $200 Pro tier
 
     **ChatGPT Pro ($200/month)**
 
     - Everything in Plus
+    - ~20x Plus usage
     - Unlimited access to frontier reasoning models
     - Unlimited access to the flagship multimodal model
     - Higher limits on advanced features
-    - Access to Sora video generation
+    - Access to Sora video generation (10,000 credits + unlimited overnight Relaxed mode)
     - Deep Research tool for comprehensive analysis
     - Priority access to newest features
 
-    **ChatGPT Team ($25-30/user/month)**
+    **ChatGPT Team / Business ($25/user/month annual, or $30/user/month monthly)**
 
     - Everything in Plus
     - Admin controls and workspace management
@@ -89,6 +103,21 @@ ChatGPT is powered by a family of large language models (LLMs) spanning flagship
     - Admin console with SSO and domain verification
     - Custom data retention policies
     - Priority support
+
+    **ChatGPT Edu** — contact sales
+
+!!! note "Heads-up (May 2026)"
+    - The **Free tier shows ads on US accounts** (since Feb 9, 2026).
+    - **Sora access** now requires Plus or Pro (removed from Free Jan 10, 2026).
+    - A **new ChatGPT Pro $100/month tier** launched April 9, 2026, sitting between Plus and the $200 tier `(verify)`.
+
+!!! info "API Pricing (per million tokens, May 2026) `(verify)`"
+    OpenAI's pricing page returned 403 at verification time; values below carry verify markers.
+
+    - **GPT-5.4** (flagship): $2.50 input / $15 output `(verify)`
+    - **GPT-5** (prev-gen flagship): $1.25 input / $10 output
+    - **GPT-5-mini**: $0.25 input / $2 output
+    - **o3 / o4-mini** (reasoning): ~$2.00 / $1.10 input rates `(verify)`
 
 ## Using ChatGPT
 

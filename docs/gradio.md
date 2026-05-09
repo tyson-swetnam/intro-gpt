@@ -54,7 +54,7 @@ import gradio as gr
 print(gr.__version__)
 ```
 
-As of early 2026, the current stable version is Gradio 5.x.
+As of mid-2026, the current stable version is Gradio 5.x.
 
 ## Quick Start: Your First Gradio App
 

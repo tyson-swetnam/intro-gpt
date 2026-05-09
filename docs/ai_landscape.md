@@ -6,7 +6,7 @@
 
 The generative AI landscape has transformed dramatically since the release of ChatGPT in November 2022. What began as text-generation models has exploded into a diverse ecosystem of platforms capable of creating text, images, video, code, and music—while also evolving from simple chatbots into sophisticated **agentic systems** that can autonomously complete complex tasks.
 
-This page provides an overview of the generative AI landscape as of January 2026, focusing on three key perspectives:
+This page provides an overview of the generative AI landscape as of May 2026, focusing on three key perspectives:
 
 1. **The Evolution of Foundation Models** - How we arrived at today's capable AI systems
 2. **Platform Comparison** - Choosing the right tool for your needs
@@ -133,7 +133,7 @@ The AI landscape now includes dozens of platforms, each optimized for different 
 - **Student Discounts** - Special pricing for students and educators
 - **Federal Restrictions** - Important compliance information for US-based researchers
 
-All pricing verified **January 2026**.
+All pricing verified **May 2026** (core AI vendors).
 
 ### Quick Recommendations
 
@@ -146,7 +146,7 @@ All pricing verified **January 2026**.
 
 **For Education:**
 
-- **Students (Budget)**: Free options - HuggingFace Chat, Google AI Pro (1 yr free for students), Perplexity Education ($4.99/mo)
+- **Students (Budget)**: Free options - HuggingFace Chat, Google AI Pro (1 yr free for students), Perplexity Education ($10/mo with SheerID verification)
 - **Teachers**: GitHub Copilot (free for educators), Claude (strong pedagogy), ChatGPT
 - **Tutoring**: Khan Academy (free AI tutor Khanmigo), Claude, ChatGPT
 

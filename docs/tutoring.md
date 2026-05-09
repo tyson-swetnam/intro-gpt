@@ -836,7 +836,7 @@ For a comprehensive comparison of AI-powered educational platforms including IXL
 
 The table includes:
 - Subject areas and target audiences
-- Current pricing (verified January 2026)
+- Current pricing (verified May 2026 for core AI vendors; edu-tool pricing not re-verified — check vendor pages)
 - Key features and capabilities
 - Links to all platforms
 

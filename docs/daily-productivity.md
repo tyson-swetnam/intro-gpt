@@ -502,7 +502,7 @@ Google Scholar Labs represents a new approach to academic literature search by u
 
 !!! tip "Accessing Google Scholar Labs"
 
-    Google Scholar Labs is currently experimental (as of January 2026):
+    Google Scholar Labs is currently experimental (as of May 2026):
 
     - Visit [https://scholar.google.com/scholar_labs/search](https://scholar.google.com/scholar_labs/search){target=_blank}
     - Requires logging in with a Google account

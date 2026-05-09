@@ -85,7 +85,7 @@ This workshop is organized into **five main modules** with an estimated **8-12 h
 
    - [:simple-anthropic: Claude](claude.md) - Free or Pro ($20/month)
    - [:fontawesome-brands-openai: ChatGPT](chatgpt.md) - Free or Plus ($20/month)
-   - [:simple-google: Google Gemini](gemini.md) - Free or Advanced ($20/month)
+   - [:simple-google: Google Gemini](gemini.md) - Free or AI Pro ($19.99/month)
    - [:material-microsoft: Microsoft Copilot](microsoft.md) - Free with Microsoft 365
 
 :material-check: **No prior AI experience required** - This workshop starts with the basics and progresses to advanced topics
