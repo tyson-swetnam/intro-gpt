@@ -1,0 +1,89 @@
+name: Refresh AI vendor pricing
+
+# Runs the /refresh-pricing slash command monthly so the docs don't go
+# stale between active edits. Opens a draft PR with any changes; a human
+# still reviews and merges.
+#
+# Requires repo secret ANTHROPIC_API_KEY. Without it, the run no-ops with
+# a warning.
+
+on:
+  schedule:
+    # 1st of every month, 14:00 UTC
+    - cron: '0 14 1 * *'
+  workflow_dispatch:
+    inputs:
+      branch_suffix:
+        description: 'Optional branch suffix (e.g. "manual"); auto YYYYMM otherwise'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check API key is configured
+        id: check_key
+        run: |
+          if [ -z "${{ secrets.ANTHROPIC_API_KEY }}" ]; then
+            echo "::warning::ANTHROPIC_API_KEY secret is not set on this repo. Skipping pricing refresh. Add the secret in Settings -> Secrets and variables -> Actions to enable."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Checkout
+        if: steps.check_key.outputs.skip == 'false'
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Compute branch name
+        if: steps.check_key.outputs.skip == 'false'
+        id: branch
+        run: |
+          SUFFIX="${{ github.event.inputs.branch_suffix }}"
+          MONTH=$(date -u +%Y%m)
+          if [ -n "$SUFFIX" ]; then
+            BRANCH="claude/refresh-pricing-${MONTH}-${SUFFIX}"
+          else
+            BRANCH="claude/refresh-pricing-${MONTH}"
+          fi
+          echo "name=$BRANCH" >> "$GITHUB_OUTPUT"
+
+      - name: Run pricing refresh via Claude Code
+        if: steps.check_key.outputs.skip == 'false'
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          prompt: |
+            Run the /refresh-pricing slash command (defined in
+            .claude/commands/refresh-pricing.md) targeting branch
+            ${{ steps.branch.outputs.name }}.
+
+            When the workflow finishes, push the branch but do NOT
+            open a pull request — the GitHub Actions step after
+            this one handles PR creation.
+
+      - name: Open draft PR if branch has commits
+        if: steps.check_key.outputs.skip == 'false'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: ${{ steps.branch.outputs.name }}
+        run: |
+          # Only open a PR if the branch was actually pushed and differs from main.
+          if git fetch origin "$BRANCH" 2>/dev/null && \
+             [ "$(git rev-list --count "origin/main..origin/$BRANCH" 2>/dev/null || echo 0)" -gt 0 ]; then
+            gh pr create \
+              --base main \
+              --head "$BRANCH" \
+              --title "Refresh AI vendor pricing ($(date -u +'%B %Y'))" \
+              --body "Automated monthly pricing refresh produced by \`.github/workflows/refresh-pricing.yml\`. Review the \`(verify)\` markers before merging." \
+              --draft || echo "PR creation failed or PR already exists for $BRANCH"
+          else
+            echo "No new commits on $BRANCH — nothing to PR this month."
+          fi
