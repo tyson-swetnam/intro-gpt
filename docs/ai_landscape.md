@@ -22,7 +22,7 @@ This page provides an overview of the generative AI landscape as of January 2026
 
 Image Credit: [Yang et al. 2023 :simple-arxiv:](https://arxiv.org/abs/2304.13712){target=_blank}
 
-This diagram traces the lineage of large language models from 2018-2023, showing how modern models like GPT-4, Claude, and Gemini descended from earlier architectures. Key milestones include:
+This diagram traces the lineage of large language models from 2018-2023, showing how modern models like GPT, Claude, and Gemini descended from earlier architectures. Key milestones include:
 
 - **2017**: [Transformer architecture](https://arxiv.org/abs/1706.03762){target=_blank} introduced ("Attention is All You Need")
 - **2018-2019**: BERT, GPT-2 demonstrate transfer learning potential
@@ -345,7 +345,7 @@ The ability of an AI model to learn new tasks from just a few examples in the pr
 The process of further training a pre-trained model on a specific dataset or task to specialize its capabilities for particular domains or use cases.
 
 **Foundation Models:**
-Large-scale AI models (LLMs, vision models, multimodal models) trained on massive datasets. They serve as a base for many downstream tasks via transfer learning and rapid adaptation. Examples: GPT-4, Claude, Gemini, Llama.
+Large-scale AI models (LLMs, vision models, multimodal models) trained on massive datasets. They serve as a base for many downstream tasks via transfer learning and rapid adaptation. Examples: GPT, Claude, Gemini, Llama.
 
 **Hallucination:**
 When an AI model generates false, nonsensical, or unfaithful information presented as fact. A key challenge in LLM reliability, especially for factual domains.
@@ -354,7 +354,7 @@ When an AI model generates false, nonsensical, or unfaithful information present
 AI systems that generate video content in real-time based on user input, combining video generation with interactive control. Unlike passive video generation (Sora, Runway), IGV systems respond to user actions in real-time, enabling gaming, simulation, and embodied AI applications.
 
 **Large Language Models (LLMs):**
-A subset of foundation models trained on extensive text corpora, enabling them to generate human-like text, summarize information, reason about topics, and perform various NLP tasks. Examples: GPT-4, Claude, Gemini, Llama.
+A subset of foundation models trained on extensive text corpora, enabling them to generate human-like text, summarize information, reason about topics, and perform various NLP tasks. Examples: GPT, Claude, Gemini, Llama.
 
 **Lifelong Learning:**
 The capability of an AI system to continuously learn and adapt from new experiences after initial training, accumulating knowledge over time. Enables agents to improve through environmental feedback and adapt to changing contexts without catastrophic forgetting.
@@ -369,7 +369,7 @@ An open standard protocol developed by Anthropic for connecting AI assistants to
 A neural network architecture that uses multiple specialized sub-models (experts) and activates only relevant ones for each input, improving efficiency and scalability in large models.
 
 **Multimodal Models:**
-AI systems that can process and generate multiple types of data (text, images, audio, video) in combination. Examples: GPT-4 with vision, Gemini, Claude 3.5.
+AI systems that can process and generate multiple types of data (text, images, audio, video) in combination. Examples: GPT with vision, Gemini, Claude.
 
 **Multi-Agent System:**
 An AI architecture where multiple specialized agents collaborate to complete complex tasks, with each agent handling specific subtasks and coordinating with others. Examples: CrewAI, AutoGen frameworks.

@@ -164,10 +164,10 @@ Ollama maintains a curated library of optimized models at [ollama.com/library](h
 
 ```bash
 # Download a model (happens automatically when you run it)
-ollama pull llama3.2
+ollama pull llama
 
 # Or run directly - it will download if not present
-ollama run llama3.2
+ollama run llama
 ```
 
 **Specify Model Size/Variant:**
@@ -175,27 +175,16 @@ ollama run llama3.2
 Models often come in multiple sizes. Use tags to select:
 
 ```bash
-# Llama 3.2 variants
-ollama pull llama3.2:1b      # 1 billion parameters (~1GB)
-ollama pull llama3.2:3b      # 3 billion parameters (~2GB)
-ollama pull llama3.2         # Default (usually the balanced option)
+# Use `ollama search <family>` to discover available sizes/quantizations
 
-# Qwen 2.5 variants
-ollama pull qwen2.5:0.5b     # Tiny - very fast
-ollama pull qwen2.5:1.5b     # Small
-ollama pull qwen2.5:3b       # Medium
-ollama pull qwen2.5:7b       # Large - best quality
-ollama pull qwen2.5:14b      # Extra large
-ollama pull qwen2.5:32b      # Very large - requires significant RAM/VRAM
-ollama pull qwen2.5:72b      # Massive - requires high-end GPU
+# Llama variants - sizes typically range from ~1B to 70B+ parameters
+ollama pull llama          # Default (usually a balanced option)
 
-# DeepSeek R1 distilled models
-ollama pull deepseek-r1:1.5b # Smallest reasoning model
-ollama pull deepseek-r1:7b   # Good balance
-ollama pull deepseek-r1:8b   # Llama-based distillation
-ollama pull deepseek-r1:14b  # Higher quality
-ollama pull deepseek-r1:32b  # Best distilled quality
-ollama pull deepseek-r1:70b  # Full-size distillation
+# Qwen variants - available in many sizes (sub-1B up to 70B+)
+ollama pull qwen           # Default size
+
+# DeepSeek R1 distilled reasoning models - available across multiple sizes
+ollama pull deepseek-r1    # Default size
 ```
 
 ### Managing Downloaded Models
@@ -206,18 +195,18 @@ ollama list
 
 # Example output:
 # NAME              ID              SIZE      MODIFIED
-# llama3.2:latest   a3e4c7e8d9f0    2.0 GB    2 hours ago
-# qwen2.5:7b        b5f6c8d9e0a1    4.4 GB    1 day ago
-# deepseek-r1:8b    c7d8e9f0a1b2    4.9 GB    3 days ago
+# llama:latest      a3e4c7e8d9f0    2.0 GB    2 hours ago
+# qwen:latest       b5f6c8d9e0a1    4.4 GB    1 day ago
+# deepseek-r1:latest c7d8e9f0a1b2   4.9 GB    3 days ago
 
 # Show detailed information about a model
-ollama show llama3.2
+ollama show llama
 
 # Delete a model to free disk space
-ollama rm llama3.2:1b
+ollama rm llama
 
 # Copy a model (useful for creating variants)
-ollama cp llama3.2 my-llama
+ollama cp llama my-llama
 ```
 
 ### Model Storage Location
@@ -245,7 +234,7 @@ $env:OLLAMA_MODELS = "D:\ollama\models"
 The simplest way to use Ollama is through interactive chat:
 
 ```bash
-ollama run llama3.2
+ollama run llama
 ```
 
 This opens an interactive session where you can type prompts and receive responses. Use `/bye` or Ctrl+C to exit.
@@ -268,13 +257,13 @@ For scripting and automation, pass the prompt directly:
 
 ```bash
 # Single prompt with immediate response
-ollama run llama3.2 "What is photosynthesis?"
+ollama run llama "What is photosynthesis?"
 
 # Pipe input from a file
-cat essay.txt | ollama run llama3.2 "Summarize this text:"
+cat essay.txt | ollama run llama "Summarize this text:"
 
 # Save output to a file
-ollama run llama3.2 "Write a haiku about machine learning" > haiku.txt
+ollama run llama "Write a haiku about machine learning" > haiku.txt
 ```
 
 ### Model Parameters
@@ -287,7 +276,7 @@ Adjust model behavior with parameters:
 /set num_predict 500
 
 # Or set when starting
-ollama run llama3.2 --verbose
+ollama run llama --verbose
 ```
 
 **Common Parameters:**
@@ -307,7 +296,7 @@ ollama run llama3.2 --verbose
 For complex prompts, use multiline input:
 
 ```bash
-ollama run llama3.2 """
+ollama run llama """
 You are an expert historian. Please analyze the following event
 and provide context about its significance:
 
@@ -330,7 +319,7 @@ Ollama provides a REST API that enables integration with other applications. The
 
 ```bash
 curl http://localhost:11434/api/generate -d '{
-  "model": "llama3.2",
+  "model": "llama",
   "prompt": "Explain quantum computing in simple terms",
   "stream": false
 }'
@@ -340,7 +329,7 @@ curl http://localhost:11434/api/generate -d '{
 
 ```bash
 curl http://localhost:11434/api/generate -d '{
-  "model": "llama3.2",
+  "model": "llama",
   "prompt": "Write a creative story about a robot learning to paint",
   "stream": false,
   "options": {
@@ -357,7 +346,7 @@ For multi-turn conversations:
 
 ```bash
 curl http://localhost:11434/api/chat -d '{
-  "model": "llama3.2",
+  "model": "llama",
   "messages": [
     {"role": "system", "content": "You are a helpful research assistant."},
     {"role": "user", "content": "What are the main causes of climate change?"},
@@ -374,7 +363,7 @@ For real-time output, enable streaming:
 
 ```bash
 curl http://localhost:11434/api/generate -d '{
-  "model": "llama3.2",
+  "model": "llama",
   "prompt": "Write a detailed explanation of neural networks",
   "stream": true
 }'
@@ -410,7 +399,7 @@ import ollama
 
 # Simple generation
 response = ollama.generate(
-    model='llama3.2',
+    model='llama',
     prompt='What is machine learning?'
 )
 print(response['response'])
@@ -428,7 +417,7 @@ messages = [
 ]
 
 response = ollama.chat(
-    model='llama3.2',
+    model='llama',
     messages=messages
 )
 
@@ -442,7 +431,7 @@ import ollama
 
 # Stream responses for better UX
 stream = ollama.chat(
-    model='llama3.2',
+    model='llama',
     messages=[{'role': 'user', 'content': 'Explain the water cycle'}],
     stream=True
 )
@@ -477,7 +466,7 @@ pip install langchain langchain-ollama
 from langchain_ollama import OllamaLLM
 
 # Initialize the model
-llm = OllamaLLM(model="llama3.2")
+llm = OllamaLLM(model="llama")
 
 # Simple invocation
 response = llm.invoke("What are the benefits of exercise?")
@@ -490,7 +479,7 @@ print(response)
 from langchain_ollama import ChatOllama
 from langchain_core.messages import HumanMessage, SystemMessage
 
-chat = ChatOllama(model="llama3.2", temperature=0.7)
+chat = ChatOllama(model="llama", temperature=0.7)
 
 messages = [
     SystemMessage(content="You are a research assistant specializing in biology."),
@@ -511,7 +500,7 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.runnables import RunnablePassthrough
 
 # Initialize components
-llm = OllamaLLM(model="llama3.2")
+llm = OllamaLLM(model="llama")
 embeddings = OllamaEmbeddings(model="nomic-embed-text")
 
 # Sample documents (in practice, load from files)
@@ -558,7 +547,7 @@ For simple integrations without additional dependencies:
 import requests
 import json
 
-def query_ollama(prompt, model="llama3.2", stream=False):
+def query_ollama(prompt, model="llama", stream=False):
     """Simple function to query Ollama API."""
     response = requests.post(
         'http://localhost:11434/api/generate',
@@ -606,7 +595,7 @@ for model in models['models']:
 
 # Cell 3: Interactive chat
 response = ollama.generate(
-    model='llama3.2',
+    model='llama',
     prompt='Explain the difference between correlation and causation'
 )
 print(response['response'])
@@ -620,7 +609,7 @@ import ollama
 class ResearchAssistant:
     """A simple research assistant using Ollama."""
 
-    def __init__(self, model='llama3.2'):
+    def __init__(self, model='llama'):
         self.model = model
         self.conversation = []
 
@@ -665,7 +654,7 @@ Abstract:
         return self.ask(prompt)
 
 # Usage in notebook
-assistant = ResearchAssistant(model='llama3.2')
+assistant = ResearchAssistant(model='llama')
 assistant.set_context("You are an expert in computational biology.")
 
 response = assistant.ask("What are the latest advances in protein folding prediction?")
@@ -684,7 +673,7 @@ Create a file called `Modelfile` (no extension):
 
 ```dockerfile
 # Base model to customize
-FROM llama3.2
+FROM llama
 
 # Set model parameters
 PARAMETER temperature 0.7
@@ -725,7 +714,7 @@ ollama run research-assistant
 
 | Command | Description | Example |
 |---------|-------------|---------|
-| `FROM` | Base model (required) | `FROM llama3.2` |
+| `FROM` | Base model (required) | `FROM llama` |
 | `PARAMETER` | Set model parameters | `PARAMETER temperature 0.7` |
 | `SYSTEM` | Set system prompt | `SYSTEM "You are helpful..."` |
 | `TEMPLATE` | Custom prompt template | `TEMPLATE "..."` |
@@ -738,7 +727,7 @@ ollama run research-assistant
 **Biology Research Assistant:**
 
 ```dockerfile
-FROM llama3.2
+FROM llama
 
 PARAMETER temperature 0.3
 PARAMETER num_ctx 8192
@@ -759,7 +748,7 @@ When answering questions:
 **Statistics Tutor:**
 
 ```dockerfile
-FROM qwen2.5:7b
+FROM qwen
 
 PARAMETER temperature 0.2
 PARAMETER num_ctx 4096
@@ -779,7 +768,7 @@ Always check for understanding and offer to clarify further."""
 **Code Review Assistant:**
 
 ```dockerfile
-FROM deepseek-r1:8b
+FROM deepseek-r1
 
 PARAMETER temperature 0.1
 PARAMETER num_ctx 8192
@@ -803,7 +792,7 @@ Be constructive and explain the reasoning behind each suggestion."""
 Ollama automatically detects and uses available GPUs. Check your GPU status:
 
 ```bash
-ollama run llama3.2 --verbose
+ollama run llama --verbose
 # Look for "gpu" in the output
 ```
 
@@ -826,7 +815,7 @@ Apple M1/M2/M3/M4 Macs use Metal for GPU acceleration automatically. Ollama is h
 
 ```bash
 # Check Metal usage (models should show "metal" backend)
-ollama run llama3.2 --verbose
+ollama run llama --verbose
 ```
 
 ### Memory Management
@@ -874,75 +863,89 @@ journalctl -u ollama -f  # Linux with systemd
 
 === "Laptop (8GB RAM)"
 
-    | Model | Size | Best For |
-    |-------|------|----------|
-    | `llama3.2:1b` | ~700MB | Quick responses, basic tasks |
-    | `qwen2.5:1.5b` | ~1GB | Multilingual, reasoning |
-    | `phi3:mini` | ~2GB | Coding, analysis |
-    | `deepseek-r1:1.5b` | ~1GB | Reasoning tasks |
+    Look for the smallest variants (roughly 1-2B parameters) of these families. Use `ollama search <family>` to pick a specific size/quant.
+
+    | Family | Best For |
+    |--------|----------|
+    | `llama` | Quick responses, basic tasks |
+    | `qwen` | Multilingual, reasoning |
+    | `phi` | Coding, analysis |
+    | `deepseek-r1` | Reasoning tasks |
 
 === "Workstation (16-32GB RAM)"
 
-    | Model | Size | Best For |
-    |-------|------|----------|
-    | `llama3.2:3b` | ~2GB | Balanced performance |
-    | `qwen2.5:7b` | ~4.5GB | Strong reasoning, coding |
-    | `mistral:7b` | ~4GB | General purpose |
-    | `deepseek-r1:8b` | ~5GB | Advanced reasoning |
-    | `codellama:13b` | ~7GB | Specialized coding |
+    Mid-size variants (roughly 3-13B parameters) of these families typically fit comfortably. Use `ollama search <family>` to pick a specific size/quant.
+
+    | Family | Best For |
+    |--------|----------|
+    | `llama` | Balanced performance |
+    | `qwen` | Strong reasoning, coding |
+    | `mistral` | General purpose |
+    | `deepseek-r1` | Advanced reasoning |
+    | `codellama` | Specialized coding |
 
 === "GPU Server (24GB+ VRAM)"
 
-    | Model | Size | Best For |
-    |-------|------|----------|
-    | `llama3.3:70b` | ~40GB | Near-frontier capability |
-    | `qwen2.5:32b` | ~20GB | Strong all-around |
-    | `deepseek-r1:70b` | ~40GB | Best open reasoning |
-    | `mixtral:8x7b` | ~26GB | Mixture of experts |
+    Larger variants (30B and up, including mixture-of-experts) of these families become practical. Use `ollama search <family>` to pick a specific size/quant.
+
+    | Family | Best For |
+    |--------|----------|
+    | `llama` | Near-frontier capability |
+    | `qwen` | Strong all-around |
+    | `deepseek-r1` | Best open reasoning |
+    | `mixtral` | Mixture of experts |
 
 ### By Use Case
 
 **Academic Writing and Research:**
 
 ```bash
+# Use `ollama search <family>` to pick a specific size/quant
+
 # For writing assistance and analysis
-ollama pull qwen2.5:7b
+ollama pull qwen
 
 # For reasoning-heavy tasks
-ollama pull deepseek-r1:8b
+ollama pull deepseek-r1
 ```
 
 **Coding and Development:**
 
 ```bash
+# Use `ollama search <family>` to pick a specific size/quant
+
 # General coding
-ollama pull deepseek-coder:6.7b
+ollama pull deepseek-coder
 
 # Code review and debugging
-ollama pull codellama:13b
+ollama pull codellama
 
 # Fast completions
-ollama pull starcoder2:3b
+ollama pull starcoder2
 ```
 
 **Data Analysis:**
 
 ```bash
+# Use `ollama search <family>` to pick a specific size/quant
+
 # Statistical reasoning
-ollama pull qwen2.5:7b
+ollama pull qwen
 
 # Code generation for analysis
-ollama pull deepseek-coder:6.7b
+ollama pull deepseek-coder
 ```
 
 **Teaching and Tutoring:**
 
 ```bash
+# Use `ollama search <family>` to pick a specific size/quant
+
 # Patient explanations
-ollama pull llama3.2:3b
+ollama pull llama
 
 # Math and science tutoring
-ollama pull qwen2.5:7b
+ollama pull qwen
 ```
 
 **Embeddings and RAG:**
@@ -985,7 +988,7 @@ Install the [Continue](https://continue.dev/){target=_blank} extension for AI-as
     {
       "title": "Ollama",
       "provider": "ollama",
-      "model": "deepseek-coder:6.7b"
+      "model": "deepseek-coder"
     }
   ]
 }
@@ -1009,7 +1012,7 @@ client = OpenAI(
 )
 
 response = client.chat.completions.create(
-    model='llama3.2',
+    model='llama',
     messages=[
         {'role': 'user', 'content': 'Hello!'}
     ]
@@ -1028,20 +1031,20 @@ print(response.choices[0].message.content)
 
     **Solutions:**
 
-    1. Try a smaller model variant:
+    1. Try a smaller model variant (use `ollama search <family>` to see sizes):
         ```bash
-        # Instead of
-        ollama run llama3.2
+        # Instead of a mid/large variant
+        ollama run llama
 
-        # Try
-        ollama run llama3.2:1b
+        # Try a small variant (e.g. ~1B parameters)
+        ollama run llama:1b
         ```
 
     2. Close other memory-intensive applications
 
     3. Reduce context window:
         ```bash
-        ollama run llama3.2 --num-ctx 2048
+        ollama run llama --num-ctx 2048
         ```
 
     4. Use quantized versions (look for `q4_0` or `q4_K_M` tags)
@@ -1079,7 +1082,7 @@ print(response.choices[0].message.content)
 
     1. Verify GPU is being used:
         ```bash
-        ollama run llama3.2 --verbose
+        ollama run llama --verbose
         # Look for "gpu" or "metal" in output
         ```
 
@@ -1157,7 +1160,7 @@ Abstract:
 {abstract}
 """
 
-    response = ollama.generate(model='qwen2.5:7b', prompt=prompt)
+    response = ollama.generate(model='qwen', prompt=prompt)
     return response['response']
 
 # Example usage
@@ -1192,7 +1195,7 @@ Please provide:
 3. Specific rewrite suggestions
 4. Questions a reviewer might ask"""
 
-    response = ollama.generate(model='qwen2.5:7b', prompt=prompt)
+    response = ollama.generate(model='qwen', prompt=prompt)
     return response['response']
 ```
 
@@ -1212,7 +1215,7 @@ about {topic}. For each question:
 
 Format clearly with separators between questions."""
 
-    response = ollama.generate(model='llama3.2', prompt=prompt)
+    response = ollama.generate(model='llama', prompt=prompt)
     return response['response']
 
 # Generate quiz
@@ -1242,7 +1245,7 @@ Please provide:
 3. Python/R code snippets for implementation
 4. How to interpret potential results"""
 
-    response = ollama.generate(model='qwen2.5:7b', prompt=prompt)
+    response = ollama.generate(model='qwen', prompt=prompt)
     return response['response']
 ```
 
@@ -1267,8 +1270,8 @@ Please provide:
     If you're new to running local AI models, start with these steps:
 
     1. Install Ollama using the method for your operating system
-    2. Download a small model: `ollama pull llama3.2:3b`
-    3. Try interactive chat: `ollama run llama3.2:3b`
+    2. Download a small model: `ollama pull llama` (use `ollama search llama` to pick a small variant, e.g. ~3B parameters)
+    3. Try interactive chat: `ollama run llama`
     4. Experiment with the Python library for programmatic access
     5. Create a custom Modelfile for your specific use case
 

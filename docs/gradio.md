@@ -443,8 +443,8 @@ demo = gr.ChatInterface(
     fn=chat_with_ollama,
     additional_inputs=[
         gr.Dropdown(
-            choices=["llama3.2", "mistral", "qwen2.5", "deepseek-r1:8b"],
-            value="llama3.2",
+            choices=["llama", "mistral", "qwen", "deepseek-r1"],
+            value="llama",
             label="Local Model (Ollama)"
         )
     ],

@@ -326,7 +326,7 @@ VS Code's extension marketplace offers numerous AI coding assistants. Here are t
 - Interactive chat panel for complex requests
 - Terminal command generation and execution
 - Git integration for version control assistance
-- Support for Claude 4.5 Sonnet, Opus, and Haiku models
+- Support for Claude models across the Opus, Sonnet, and Haiku tiers
 
 **Installation:**
 
@@ -419,19 +419,19 @@ Suggested improvements:
 
     1. Get API key from [console.anthropic.com](https://console.anthropic.com){target=_blank}
     2. Paste key in Cline settings
-    3. Select model (Claude 4.5 Sonnet recommended)
+    3. Select a model (a current Claude Sonnet-tier model is a good default)
 
 === "OpenAI (GPT)"
 
     1. Get API key from [platform.openai.com](https://platform.openai.com/api-keys){target=_blank}
     2. Paste key in Cline settings
-    3. Select model (GPT-4o recommended)
+    3. Select a model (see the [OpenAI models documentation](https://platform.openai.com/docs/models){target=_blank} for current options)
 
 === "Google (Gemini)"
 
     1. Get API key from [aistudio.google.com](https://aistudio.google.com/apikey){target=_blank}
     2. Paste key in Cline settings
-    3. Select model (Gemini 2.5 Pro recommended)
+    3. Select a model (a current Gemini Pro-tier model is a good default)
 
 === "Ollama (Local)"
 
@@ -500,7 +500,7 @@ Do you want me to apply these changes?
 1. Open CodeGPT settings
 2. Select "OpenAI" as provider
 3. Enter your API key from [platform.openai.com](https://platform.openai.com/api-keys){target=_blank}
-4. Select model (GPT-4o or GPT-4o-mini)
+4. Select a current OpenAI model (see the [OpenAI models documentation](https://platform.openai.com/docs/models){target=_blank} for available options across capability and cost tiers)
 
 !!! info "OpenAI Account Setup"
 
@@ -652,7 +652,7 @@ Run AI models locally for privacy, offline access, and cost savings. See our ful
     ollama pull llama3.2:latest
 
     # Or for smaller machines
-    ollama pull qwen2.5-coder:7b
+    ollama pull qwen
     ```
 
 3. In Cline settings:
@@ -679,12 +679,12 @@ Cline (via local Codellama): [Provides explanation and modified code]
 
 !!! tip "Model Recommendations for Coding"
 
-    | Model | Size | RAM Needed | Best For |
+    | Model family | Size class | RAM Needed | Best For |
     |-------|------|------------|----------|
-    | `qwen2.5-coder:7b` | 4.7GB | 8GB | Fast coding on laptops |
-    | `codellama:13b` | 7.4GB | 16GB | Balanced coding |
-    | `deepseek-coder:33b` | 19GB | 32GB | Complex coding tasks |
-    | `codestral:latest` | 12GB | 24GB | Multi-language coding |
+    | Qwen coder (7B class) | ~5GB | 8GB | Fast coding on laptops |
+    | Code Llama (13B class) | ~7GB | 16GB | Balanced coding |
+    | DeepSeek coder (large) | ~19GB | 32GB | Complex coding tasks |
+    | Codestral | ~12GB | 24GB | Multi-language coding |
 
 ---
 

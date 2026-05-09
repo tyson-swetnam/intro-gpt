@@ -407,7 +407,7 @@ AI models are trained on public code repositories, which may contain:
 
 - LLM inference requires significant energy
 - Be mindful of unnecessary requests
-- Use appropriate model sizes (don't use GPT-4 for simple autocomplete)
+- Use appropriate model sizes (don't use a frontier model for simple autocomplete)
 - Cache results when possible
 - Consider carbon-aware computing practices
 

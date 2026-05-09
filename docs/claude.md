@@ -83,10 +83,10 @@ The Model Context Protocol is an open standard that enables Claude to interact w
 
 !!! info "Subscription Plans and Pricing"
 
-    *   **Claude Free:** Access to Claude 4.5 Sonnet with usage limits
+    *   **Claude Free:** Access to the Sonnet tier with usage limits
     *   **Claude Pro ($20/month):**
         - 5x more usage vs free tier
-        - Access to Claude 4.5 Opus and Claude 4.5 Haiku
+        - Access to the Opus and Haiku tiers
         - Priority access during high-traffic periods
         - Early access to new features
     *   **Claude Max ($100-200/month):**
@@ -96,10 +96,10 @@ The Model Context Protocol is an open standard that enables Claude to interact w
         - Everything in Pro
         - Central billing and administration
         - Team collaboration features
-    *   **API Pricing (per million tokens, as of January 2026):**
-        - Claude 4.5 Sonnet: $3 input / $15 output
-        - Claude 4.5 Opus: $15 input / $75 output
-        - Claude 4.5 Haiku: $0.25 input / $1.25 output
+    *   **API Pricing (per million tokens, by tier — check [docs.claude.com](https://docs.claude.com/en/docs/about-claude/models){target=_blank} for current rates):**
+        - Sonnet (balanced): mid-range input / output pricing
+        - Opus (flagship): highest input / output pricing
+        - Haiku (fast & cost-efficient): lowest input / output pricing
 
     **Compare with other AI platforms:** See [Choosing the Right AI Platform](choose.md) for detailed comparisons with ChatGPT, Gemini, and more.
 
@@ -148,7 +148,7 @@ The Model Context Protocol is an open standard that enables Claude to interact w
     client = Anthropic(api_key="your-api-key")
     
     response = client.messages.create(
-        model="claude-4-5-sonnet-20260115",
+        model="claude-sonnet-latest",  # alias; for production, pin to a dated ID — see https://docs.claude.com/en/docs/about-claude/models
         max_tokens=1000,
         messages=[
             {"role": "user", "content": "Hello, Claude!"}
@@ -178,28 +178,28 @@ Claude is a family of large language models (LLMs) developed by Anthropic, a com
 
 ## Claude Model Family
 
-**Latest Models (January 2026):**
+Anthropic publishes Claude in three tiers. For an authoritative, up-to-date list of model IDs, see the [Anthropic models documentation](https://docs.claude.com/en/docs/about-claude/models){target=_blank}.
 
-*   **Claude 4.5 Sonnet:**
-    - Most capable balanced model
+*   **Sonnet:**
+    - Balanced tier
     - Best for coding, analysis, and creative tasks
     - Excellent performance-to-cost ratio
-    - Model ID: `claude-4-5-sonnet-20260115`
+    - Alias: `claude-sonnet-latest` (pin a dated ID for production)
 
-*   **Claude 4.5 Opus:**
-    - Most capable flagship model
+*   **Opus:**
+    - Flagship tier
     - Best for complex reasoning and advanced tasks
     - Highest intelligence and capability
-    - Model ID: `claude-4-5-opus-20251101`
+    - Alias: `claude-opus-latest` (pin a dated ID for production)
 
-*   **Claude 4.5 Haiku:**
-    - Fast and cost-effective
+*   **Haiku:**
+    - Fast and cost-effective tier
     - Great for simple tasks and high-volume applications
     - Optimized for speed and efficiency
-    - Model ID: `claude-4-5-haiku-20260115`
+    - Alias: `claude-haiku-latest` (pin a dated ID for production)
 
 !!! note "Model Selection"
-    Claude 4.5 Sonnet is recommended for most use cases as it offers the best combination of capability, speed, and cost. Use Opus for tasks requiring maximum intelligence and reasoning, and Haiku for high-volume, simple tasks.
+    The Sonnet tier is recommended for most use cases as it offers the best combination of capability, speed, and cost. Use Opus for tasks requiring maximum intelligence and reasoning, and Haiku for high-volume, simple tasks.
 
 
 ## Further Resources

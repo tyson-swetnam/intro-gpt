@@ -858,7 +858,7 @@ When citing AI assistance in your work:
 
 ```
 APA Style (7th edition):
-OpenAI. (2026). ChatGPT (version GPT-4.5) [Large language model].
+OpenAI. (2026). ChatGPT [Large language model].
 https://chat.openai.com/
 
 In-text: (OpenAI, 2026)

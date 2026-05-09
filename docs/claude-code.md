@@ -125,14 +125,14 @@ For programmatic access and integration:
 
 **Best for**: Teams, developers who want fine-grained control, batch processing, or integration with other tools
 
-!!! info "API Pricing (January 2026)"
-    Per million tokens:
+!!! info "API Pricing by tier"
+    Per million tokens (see [docs.claude.com](https://docs.claude.com/en/docs/about-claude/models){target=_blank} for current rates):
 
-    - **Claude 4.5 Sonnet**: $3 input / $15 output
-    - **Claude 4.5 Opus**: $15 input / $75 output
-    - **Claude 4.5 Haiku**: $0.25 input / $1.25 output
+    - **Sonnet** (balanced): mid-range input / output pricing
+    - **Opus** (flagship): highest input / output pricing
+    - **Haiku** (fast & cost-efficient): lowest input / output pricing
 
-    For most coding tasks, Claude 4.5 Sonnet provides the best balance of capability and cost.
+    For most coding tasks, the Sonnet tier provides the best balance of capability and cost.
 
 !!! warning "Treat Your API Key Like a Password"
     **Never commit API keys to version control!**
@@ -3095,7 +3095,7 @@ Common issues and their solutions.
 
 2. **Use faster model:**
    ```bash
-   You: /model claude-4-5-haiku-20260115
+   You: /model claude-haiku-latest  # alias; pin a dated ID for production — see https://docs.claude.com/en/docs/about-claude/models
    ```
 
 3. **Close unnecessary files (VS Code):**

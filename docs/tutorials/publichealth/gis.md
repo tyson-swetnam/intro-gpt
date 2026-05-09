@@ -38,7 +38,7 @@
 
 | ✔︎ | Requirement | Notes |
 |---|-------------|-------|
-|   | Frontier-class LLM access | Claude 4, GPT-5, Gemini 2.5 Pro, or equivalent |
+|   | Frontier-class LLM access | Claude, GPT, Gemini Pro, or equivalent |
 |   | One agent surface from the Setup list above | Desktop, CLI, or AI-native IDE — pick what you know |
 |   | [Filesystem MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem) running | Gives the agent read/write access. **Without this, Step 1 will fail silently.** |
 |   | Git & GitHub account (optional but recommended) | For version control & sharing |
