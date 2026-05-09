@@ -123,7 +123,7 @@ Apply your learning with practical case studies and tutorials.
 | Tutorial | Description | Link |
 |----------|-------------|------|
 | Claude Code Workflow | Complete workflow using Claude Code | [Claude Code Tutorial](claude-code.md) |
-| Public Health Case Study | AI for public health research | [Public Health](tutorials/publichealth/casestudy.md) |
+| Public Health AI Lab | Hands-on lab: SMS triage, outbreak synthesis, chart abstraction | [Public Health](tutorials/publichealth/casestudy.md) |
 | GIS & Map Making | Creating maps with AI assistance | [Map Making](tutorials/publichealth/gis.md) |
 
 ### :material-lightbulb: Recommended Learning Paths

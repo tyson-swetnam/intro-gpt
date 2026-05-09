@@ -171,7 +171,7 @@ Apply your learning with practical case studies and tutorials.
 | Tutorial | Description |
 |----------|-------------|
 | [:simple-anthropic: Claude Code Workflow](claude-code.md) | Complete workflow using Claude Code |
-| [:material-hospital-building: Public Health Case Study](tutorials/publichealth/casestudy.md) | AI for public health research |
+| [:material-hospital-building: Public Health AI Lab](tutorials/publichealth/casestudy.md) | Hands-on lab: SMS triage, outbreak synthesis, chart abstraction |
 | [:material-map: GIS & Map Making](tutorials/publichealth/gis.md) | Creating maps with AI assistance |
 
 ## About This Workshop

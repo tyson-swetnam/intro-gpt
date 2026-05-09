@@ -242,7 +242,7 @@ Each link below extends a step we trimmed from the live lab — pick whichever i
 
 - [VS Code & AI Tools](../../vscode.md) — covers the git commit/push step and IDE ergonomics.
 - [MCP](../../mcp.md) — required reading before trying QGISMCP for richer layer styling.
-- [Public Health Case Study](./casestudy.md) — applies the same agent skills to a different public-health problem.
+- [Public Health AI Lab](./casestudy.md) — applies prompt-engineering techniques to SMS triage, outbreak synthesis, and chart abstraction.
 
 ## Next Steps
 
