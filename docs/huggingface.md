@@ -48,7 +48,7 @@ The [Model Hub](https://huggingface.co/models){target=_blank} hosts over 1 milli
 
 | Category | Example Models | Use Cases |
 |----------|---------------|-----------|
-| Text Generation | Llama 3, Mistral, Qwen | Writing assistance, code generation, analysis |
+| Text Generation | Llama, Mistral, Qwen | Writing assistance, code generation, analysis |
 | Embeddings | BGE, E5, GTE | Document search, similarity matching, RAG |
 | Vision-Language | LLaVA, Qwen-VL | Image analysis, chart interpretation |
 | Speech | Whisper, Wav2Vec2 | Transcription, audio analysis |
@@ -260,7 +260,7 @@ Here are well-tested models suitable for different hardware configurations:
 | [DeepSeek-R1](https://huggingface.co/deepseek-ai/DeepSeek-R1){target=_blank} | 671B | Advanced reasoning (requires cluster) |
 
 !!! tip "Quantized Models"
-    For running larger models on limited hardware, look for quantized versions (GGUF format). These reduce memory requirements with minimal quality loss. Search for model names with "GGUF" or visit [TheBloke](https://huggingface.co/TheBloke){target=_blank} for quantized versions.
+    For running larger models on limited hardware, look for quantized versions (GGUF format). These reduce memory requirements with minimal quality loss. Search for model names with "GGUF" or visit [bartowski](https://huggingface.co/bartowski){target=_blank} or [unsloth](https://huggingface.co/unsloth){target=_blank} for actively-maintained quantized versions.
 
 ## Downloading Datasets
 

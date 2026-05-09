@@ -293,7 +293,7 @@ If you manage an OpenWebUI instance, you can tune RAG performance in **Admin Pan
 |---------|-----------|------------|----------------|-----------------|
 | **Cost** | Free (self-hosted) | Free | $20/month | $20/month |
 | **Data Privacy** | Full local control | Google servers | OpenAI servers | Anthropic servers |
-| **Model Choice** | Any Ollama/API model | Gemini only | GPT-4 only | Claude only |
+| **Model Choice** | Any Ollama/API model | Gemini only | ChatGPT only | Claude only |
 | **Setup Complexity** | Requires installation | None | None | None |
 | **Persistent Collections** | Yes | Yes (Notebooks) | Limited | Yes (Projects) |
 | **Offline Use** | Yes (local models) | No | No | No |
@@ -323,6 +323,9 @@ Several frameworks simplify building RAG applications:
 | [Haystack](https://haystack.deepset.ai/){target=_blank} | Python | Production-ready NLP framework with RAG support |
 | [Semantic Kernel](https://learn.microsoft.com/semantic-kernel/){target=_blank} | Python, C#, Java | Microsoft's SDK for AI orchestration |
 
+!!! info "Provider gateways for multi-LLM RAG"
+    Most production RAG stacks end up calling more than one LLM provider over their lifetime: a hosted frontier model for the final answer generation, a cheaper or local model for query rewriting, and a small embedding model for retrieval. [LiteLLM](https://github.com/BerriAI/litellm){target=_blank} is a unified API gateway that exposes 100+ providers (OpenAI, Anthropic, Gemini, Mistral, vLLM, Ollama, AWS Bedrock, Azure, and more) behind a single OpenAI-compatible interface. Pointing your RAG pipeline at LiteLLM (either as a Python SDK or as a deployed proxy) lets you swap models, add fallbacks, track per-request cost, and mix self-hosted and commercial backends without changing application code. See the [Ollama page](ollama.md#self-hosted-serving-beyond-ollama) for how LiteLLM fits with vLLM and OpenWebUI.
+
 ??? example "Simple RAG with LangChain (Python)"
 
     This example demonstrates the core RAG workflow using LangChain:
@@ -350,7 +353,7 @@ Several frameworks simplify building RAG applications:
     vectorstore = Chroma.from_documents(chunks, embeddings)
 
     # 4. Create a retrieval chain
-    llm = ChatOpenAI(model="gpt-4")
+    llm = ChatOpenAI()  # defaults to current OpenAI model; override with model="..." if needed
     qa_chain = RetrievalQA.from_chain_type(
         llm=llm,
         chain_type="stuff",

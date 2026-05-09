@@ -13,7 +13,21 @@
     *   [Neovim](https://neovim.io/){target=_blank}
     *   [JetBrains IDEs](https://www.jetbrains.com/){target=_blank} (IntelliJ IDEA, PyCharm, WebStorm, etc.)
     *   [Visual Studio](https://visualstudio.microsoft.com/){target=_blank}
-*   **GitHub Copilot Subscription:** GitHub Copilot is a paid service. You'll need an active subscription to use it. There are plans for individuals and businesses. There is a limited free trial so you can try it out. GitHub Copilot is free for verified students and maintainers of popular open source projects on GitHub.
+*   **GitHub Copilot Subscription:** GitHub Copilot is a paid service. You'll need an active subscription to use it. A limited free trial is available. GitHub Copilot is free for verified students, teachers, and maintainers of popular open source projects on GitHub.
+
+!!! info "Plans and pricing (as of May 2026)"
+
+    | Plan | Cost | Audience |
+    |------|------|----------|
+    | **Free** | $0 | Verified students, teachers, and OSS maintainers — full Pro features |
+    | **Copilot Pro** | $10/month | Individual developers |
+    | **Copilot Business** | $19/user/month | Teams, with org policy controls |
+    | **Copilot Enterprise** | $39/user/month | Advanced security, fine-tuning, Copilot Workspace |
+
+    Verify current pricing at [github.com/features/copilot/plans](https://github.com/features/copilot/plans){target=_blank}.
+
+!!! tip "GitHub Copilot vs Microsoft Copilot"
+    GitHub Copilot (this page) is an AI pair programmer for IDEs. **[Microsoft Copilot](microsoft.md)** is a separate product — the productivity-suite assistant inside Word, Excel, PowerPoint, Outlook, and Teams. Both are owned by Microsoft, but they are distinct subscriptions.
 
 ## Installation and Setup
 

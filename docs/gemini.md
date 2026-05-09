@@ -10,14 +10,14 @@ There are multiple ways to access and use Google Gemini:
 
    *   Visit [gemini.google.com](https://gemini.google.com/){target=_blank}.
    *   Sign in with your Google Account. If you don't have one, create one at [accounts.google.com](https://accounts.google.com/){target=_blank}.
-   *   You can start interacting with Gemini through the chat interface. The free tier includes Gemini 2.5 Flash (unlimited) and limited Gemini Pro access.
+   *   You can start interacting with Gemini through the chat interface. The free tier includes Gemini Flash (unlimited) and limited Gemini Pro access.
 
 !!! Info "Gemini Pricing & Comparisons"
-    **Subscription Options:**
+    **Subscription Options (as of May 2026):**
 
-    - **Free:** Gemini 2.5 Flash unlimited
-    - **AI Pro ($19.99/mo):** Gemini 2.5 Pro access, NotebookLM Plus, 2TB storage - **Free for university students (1 year)**
-    - **AI Ultra ($249.99/mo):** Gemini 2.5 Pro unlimited, Deep Think, Veo 3 video generation
+    - **Free:** Gemini Flash unlimited
+    - **Google AI Pro ($19.99/mo):** Gemini Pro access, NotebookLM Plus, 2TB storage — **free for verified university students (1 year)**
+    - **Google AI Ultra ($249.99/mo):** Gemini Pro unlimited, Deep Think, Veo video generation
 
     **Compare with other AI platforms:** See [Choosing the Right AI Platform](choose.md) for detailed comparisons
 
@@ -34,7 +34,7 @@ There are multiple ways to access and use Google Gemini:
 
 **4. On Android Devices:**
 
-   *   Gemini Nano will be available on select Android devices, enabling on-device AI capabilities.
+   *   Gemini Nano powers on-device AI features on select Android devices.
 
 ## Troubleshooting Sign-In Issues
 
@@ -50,12 +50,12 @@ For University managed accounts (`netid@arizona.edu`), Gemini access may depend 
 
 Gemini is designed to understand and generate text, code, images, audio, and video. 
 
-While Google initially launched Bard as its conversational AI, it has since been rebranded and significantly upgraded as **Gemini**.  The Gemini models are being integrated into various Google products and services, including:
+Google initially launched Bard (2023) as its conversational AI; it has since been rebranded and significantly upgraded as **Gemini**. The Gemini models are integrated into various Google products and services, including:
 
 *   [**Google AI Studio:**](https://aistudio.google.com/){target=_blank} A web-based IDE for developers to prototype and build with generative AI models.
 *   [**Google Search:**](https://google.com){target=_blank} Enhancing search results with AI-generated summaries and insights.
 *   [**Google Workspace:**](https://workspace.google.com/solutions/ai/){target=_blank} AI features to Google Docs, Sheets, Slides, Gmail, and Meet. (Similar to [Microsoft's Copilot](https://copilot.microsoft.com/){target=_blank} integration with Office 365).
-*   **Android:** [Gemini Nano](https://deepmind.google/technologies/gemini/nano/){target=_blank} will power on-device AI features in Android devices.
+*   **Android:** [Gemini Nano](https://deepmind.google/technologies/gemini/nano/){target=_blank} powers on-device AI features on Android devices.
 
 !!! tip "Setting up your Gemini API Key"
 

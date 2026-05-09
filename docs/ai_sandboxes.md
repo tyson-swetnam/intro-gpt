@@ -61,7 +61,7 @@ The University of Arizona provides managed cloud services that support tradition
 
 ## Agentic AI Sandboxes
 
-Agentic AI sandboxes are a newer concept that emerged with the rise of AI coding assistants like Claude Code, OpenAI Codex, and Gemini CLI. These tools can read files, write code, and execute commands on your computer, which creates significant security considerations.
+Agentic AI sandboxes are a newer concept that emerged with the rise of AI coding assistants like Claude Code, ClawCode, OpenCode, and Gemini CLI. These tools can read files, write code, and execute commands on your computer, which creates significant security considerations.
 
 ### What Are Agentic AI Sandboxes?
 
@@ -95,12 +95,20 @@ Several major AI coding assistants now include sandbox modes:
 - **Documentation:** [Claude Code Sandboxing Guide](https://www.anthropic.com/engineering/claude-code-sandboxing){target=_blank}
 - **Features:** Configurable file access, command restrictions, and approval workflows
 
-#### OpenAI Codex
+#### ClawCode
 
-[:fontawesome-brands-openai: OpenAI Codex](https://openai.com/index/codex/){target=_blank} provides sandbox execution environments.
+[:material-cat: ClawCode](https://claw-code.codes/){target=_blank} provides sandboxed execution similar to Claude Code, with multi-provider support.
 
-- Runs code in isolated containers
-- Limited network access by default
+- Configurable filesystem allow-list and command approval workflow
+- Optional rootless container mode for stronger isolation on Linux
+- Same MCP server compatibility as Claude Code
+
+#### OpenCode
+
+[:material-code-braces: OpenCode](https://opencode.ai/){target=_blank} runs a local agent loop with explicit per-tool approval prompts.
+
+- Plan/diff preview before any filesystem write
+- Provider-agnostic (Claude, OpenAI, Gemini, local models)
 
 #### Gemini CLI
 
@@ -138,7 +146,7 @@ When you give an AI tool permission to execute code on your computer, several th
 |------------|-------------|----------|
 | **Low** | AI provides suggestions only; you execute manually | ChatGPT web chat, Claude web interface |
 | **Medium** | AI can execute code in isolated browser environment | ChatGPT Code Interpreter, Google Colab |
-| **High** | AI can execute code on your local machine | Claude Code, Cursor, Codex CLI |
+| **High** | AI can execute code on your local machine | Claude Code, Cursor, ClawCode, Codex CLI |
 | **Very High** | AI has unrestricted access to your system | Any tool with sandbox disabled |
 
 ### Best Practices for Safe AI Usage
@@ -171,7 +179,7 @@ The Discovery Environment is a Kubernetes-based platform that provides:
 
 ### The Layered Security Model
 
-When you run a commercial AI application (like Claude Code or Codex) inside the Discovery Environment, you benefit from two layers of protection:
+When you run a commercial AI application (like Claude Code or Codex CLI) inside the Discovery Environment, you benefit from two layers of protection:
 
 ```mermaid
 flowchart TB
@@ -248,18 +256,32 @@ The Discovery Environment offers pre-configured applications for running agentic
 - [Claude Code Sandboxing](https://www.anthropic.com/engineering/claude-code-sandboxing){target=_blank}
 - [Claude Code Documentation](https://docs.anthropic.com/en/docs/claude-code){target=_blank}
 
-### OpenAI Codex in Discovery Environment
+### ClawCode in Discovery Environment
 
-[:fontawesome-brands-openai: OpenAI Codex](https://openai.com/index/codex/){target=_blank} is also available in the CloudShell application.
+[:material-cat: ClawCode](https://claw-code.codes/){target=_blank} runs in the CloudShell application as a multi-provider open-source alternative to Claude Code.
 
 **Setup:**
 
 1. Launch the CloudShell application in the Discovery Environment
-2. Install the OpenAI CLI:
+2. Install ClawCode:
    ```bash
-   pip install openai
+   pip install claw-code
    ```
-3. Authenticate with your OpenAI account or API key:
+3. Configure your provider:
+   ```bash
+   export ANTHROPIC_API_KEY="..."   # or OPENAI_API_KEY, or point at a local Ollama / vLLM endpoint
+   claw-code
+   ```
+
+### Codex CLI in Discovery Environment
+
+[:fontawesome-brands-openai: Codex CLI](https://github.com/openai/codex){target=_blank} (OpenAI's CLI agent) is available in the CloudShell application.
+
+**Setup:**
+
+1. Launch the CloudShell application in the Discovery Environment
+2. Install Codex CLI per the [project README](https://github.com/openai/codex){target=_blank}
+3. Authenticate with your OpenAI API key:
    ```bash
    export OPENAI_API_KEY="your-api-key"
    ```

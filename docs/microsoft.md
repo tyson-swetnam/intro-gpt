@@ -16,6 +16,17 @@ Once logged in, you should see a :material-shield-check: shield icon that shows 
 
 ## Integration with Microsoft 365
 
-The Microsoft 365 app is migrating to Microsoft Copilot at [m365.cloud.microsoft.](https://m365.cloud.microsoft){target=_blank}
+Microsoft 365 is now accessed via Microsoft Copilot at [m365.cloud.microsoft](https://m365.cloud.microsoft){target=_blank}. Copilot is integrated across **Word, Excel, PowerPoint, Outlook, Teams, OneDrive, and SharePoint** — drafting documents, suggesting formulas, summarizing meetings, generating slides, and surfacing files across your tenant.
 
-[Announcements made by Microsoft in fall 2024 suggest Copilot release in OneDrive early 2025](https://techcommunity.microsoft.com/blog/microsoft365copilotblog/microsoft-365-copilot-wave-2-ai-innovations-in-sharepoint-and-onedrive/4245159){target=_blank}.
+## Plans and pricing (as of May 2026)
+
+| Plan | Cost | Audience |
+|------|------|----------|
+| **Copilot (free chat)** | $0 | Anyone with a Microsoft account; web chat at [copilot.microsoft.com](https://copilot.microsoft.com){target=_blank} |
+| **Copilot Pro** | ~$20/month | Personal users wanting Copilot inside Microsoft 365 personal apps |
+| **Microsoft 365 Copilot** | $30/user/month (annual) | Business / Enterprise — full integration across Word, Excel, PowerPoint, Outlook, Teams |
+
+University tenants typically license **Microsoft 365 Copilot** for staff and faculty; check with your IT department for availability. Verify current pricing at [microsoft.com/microsoft-365/business/copilot](https://www.microsoft.com/microsoft-365/business/copilot){target=_blank}.
+
+!!! tip "Microsoft Copilot vs GitHub Copilot"
+    Microsoft Copilot (this page) is the productivity-suite assistant for Office, Outlook, and Teams. **[GitHub Copilot](copilot.md)** is a separate product — an AI pair programmer for IDEs. Both are owned by Microsoft, but the licenses, pricing, and surfaces are distinct.

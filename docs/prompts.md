@@ -24,7 +24,7 @@ Modern AI assistants have evolved beyond simple text chat:
 |---------|--------|---------|--------|------------|---------|
 | **Document Upload** | PDFs, text, code | PDFs, images, data | PDFs, images, GDrive | PDFs, Google Docs | PDFs, OneDrive |
 | **Web Search** | Via MCP | Yes | Yes | Yes | Yes |
-| **Context Window (tokens)** | 200K | 128K| 2M | Document-based | 128K |
+| **Context Window** | Long (200K+) | Long (128K+) | Very long (1M+) | Document-based | Long (128K+) |
 | **File Analysis** | Yes | Yes | Yes | Deep analysis | Yes |
 | **Code Execution** | Yes (MCP) | Yes | Yes | No | Yes |
 
@@ -134,7 +134,7 @@ Modern AI platforms allow you to set persistent instructions:
 
 !!! example "'Custom Instructions' or 'System Instructions'"
 
-    Platforms like Gemini and Claude allow you to add "Custom Instructions" or "System Instructions" as prior prompts, which act as a global rule to subsequent prompt chaining.
+    Platforms like ChatGPT, Claude, and Gemini allow you to add "Custom Instructions" or "System Instructions" as prior prompts, which act as a global rule to subsequent prompt chaining.
 
     For example:
 
@@ -157,7 +157,7 @@ Most featured GPTs now feature a web browse or search engine capability.
 Enabling search allows the GPT to use document retrieval on websites and PDFs when reasoning out its response.
 
 ```markdown
-Search for the latest research on the public health benefits of vaccination published in 2024. 
+Search for the latest research on the public health benefits of vaccination published in the past two years. 
 
 Focus on:
 - Papers from top conferences (AHA, ASPPH, NRHA, ICFMDP)
@@ -251,7 +251,7 @@ Based on the uploaded requirements document:
 4. Create a README with installation and usage instructions
 5. Follow PEP 8 style guidelines
 
-Use modern Python features (3.10+) and include error handling.
+Use modern Python features (3.11+) and include error handling.
 ```
 
 ## Common Pitfalls and Solutions
@@ -334,7 +334,7 @@ Use modern Python features (3.10+) and include error handling.
     
     !!! success "Answer"
 
-        1. **Use custom instructions** (ChatGPT, Claude) or system prompts
+        1. **Use custom instructions** (ChatGPT, Claude, Gemini) or system prompts
 
         2. **Create templates** for common tasks
 

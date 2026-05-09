@@ -16,20 +16,22 @@ This page provides an overview of the generative AI landscape as of January 2026
 
 ## Evolution of Foundation Models
 
-### The LLM Family Tree (2018-2023)
+### The LLM Family Tree (2018–2026)
 
 [![tree](assets/tree.jpeg){width=800}](https://arxiv.org/abs/2304.13712){target=_blank}
 
-Image Credit: [Yang et al. 2023 :simple-arxiv:](https://arxiv.org/abs/2304.13712){target=_blank}
+Image Credit: [Yang et al. 2023 :simple-arxiv:](https://arxiv.org/abs/2304.13712){target=_blank} — historical lineage through early 2023.
 
-This diagram traces the lineage of large language models from 2018-2023, showing how modern models like GPT-4, Claude, and Gemini descended from earlier architectures. Key milestones include:
+This diagram traces the early lineage of large language models. Today's models (Claude, ChatGPT, Gemini, Llama, Qwen, DeepSeek, Mistral, Gemma, GPT-OSS) descend from these architectures. Key milestones:
 
 - **2017**: [Transformer architecture](https://arxiv.org/abs/1706.03762){target=_blank} introduced ("Attention is All You Need")
-- **2018-2019**: BERT, GPT-2 demonstrate transfer learning potential
-- **2020**: GPT-3 shows few-shot learning at scale (175B parameters)
-- **2021-2022**: Model scaling continues (PaLM, GPT-3.5, ChatGPT)
-- **2023**: Multimodal models emerge (GPT-4 with vision, Gemini)
-- **2024-2026**: Agent capabilities, reasoning models, and specialized tools
+- **2018–2019**: BERT and GPT-2 demonstrate transfer learning at scale
+- **2020**: GPT-3 (175B parameters) shows few-shot learning at scale
+- **2021–2022**: Model scaling continues (PaLM, GPT-3.5, ChatGPT launches Nov 2022)
+- **2023**: Multimodal models emerge; Llama 2 ships open-weights; Bard (since rebranded as Gemini) launches; Mistral 7B released
+- **2024**: Llama 3 family, Mistral Large, multimodal Claude and ChatGPT; **Model Context Protocol (MCP)** introduced by Anthropic in November
+- **2025**: Reasoning-focused models (Claude reasoning, ChatGPT o-series, Gemini Deep Think); DeepSeek R1 open reasoning model; Qwen and Gemma family releases; OpenAI publishes open-weights **GPT-OSS**; agentic IDEs (Cursor, Claude Code, OpenCode, ClawCode) mature
+- **2026**: Consolidation around tool use and agentic workflows, MCP ecosystem expansion, on-device + frontier models coexist; agentic browsers (Perplexity Comet, Dia, Fellou) reach broad availability
 
 ---
 
@@ -39,14 +41,14 @@ The evolution of generative AI has progressed through distinct phases:
 
 **Phase 1: Text Generation (2018-2022)**
 
-- Models like GPT-3, BERT, and T5 focused on understanding and generating text
+- Models like GPT-3 (2020), BERT, and T5 focused on understanding and generating text
 - Primary use cases: chatbots, summarization, translation
 - Interaction model: single-turn question-and-answer
 
 **Phase 2: Multimodal Integration (2022-2024)**
 
 - Models gained ability to process images, audio, and eventually video
-- GPT-4 Vision, Gemini, and Claude 3 could analyze charts, diagrams, and photos
+- ChatGPT, Gemini, and Claude could analyze charts, diagrams, and photos
 - Enabled new use cases: visual analysis, document understanding, accessibility
 
 **Phase 3: Agentic Systems (2024-Present)**
@@ -133,26 +135,26 @@ The AI landscape now includes dozens of platforms, each optimized for different 
 - **Student Discounts** - Special pricing for students and educators
 - **Federal Restrictions** - Important compliance information for US-based researchers
 
-All pricing verified **January 2026**.
+All pricing verified **May 2026**.
 
 ### Quick Recommendations
 
 **For Academic Research:**
 
 - **Literature Review**: Perplexity, Claude, ScholarAI, Consensus
-- **Data Analysis**: Claude (200K context), ChatGPT (Advanced Data Analysis)
+- **Data Analysis**: Claude (long-context), ChatGPT (Advanced Data Analysis)
 - **Writing Assistance**: Claude (strong reasoning), ChatGPT Plus (plugins)
 - **Citation Management**: NotebookLM (RAG capabilities)
 
 **For Education:**
 
-- **Students (Budget)**: Free options - HuggingFace Chat, Google AI Pro (1 yr free for students), Perplexity Education ($4.99/mo)
+- **Students (Budget)**: Free options - HuggingFace Chat, Google AI Pro (1 yr free for verified students), Perplexity Education (discounted rate, see [choose.md](choose.md))
 - **Teachers**: GitHub Copilot (free for educators), Claude (strong pedagogy), ChatGPT
 - **Tutoring**: Khan Academy (free AI tutor Khanmigo), Claude, ChatGPT
 
 **For Coding:**
 
-- **IDE Integration**: [Claude Code](claude-code.md), GitHub Copilot, Continue.dev
+- **IDE Integration**: [Claude Code](claude-code.md), GitHub Copilot, Cursor, OpenCode, ClawCode
 - **Learning to Code**: ChatGPT (interactive execution), Replit AI
 - **Code Review**: Claude (strong analysis), GitHub Copilot
 - **See also**: Our [Vibe Coding guide](vibe.md) for detailed agentic coding workflows
@@ -160,9 +162,89 @@ All pricing verified **January 2026**.
 **For Creative Work:**
 
 - **Images**: Midjourney (quality), ChatGPT Image (convenience), Stable Diffusion (control)
-- **Video**: Sora (OpenAI), Veo (Google), Runway Gen-4.5
+- **Video**: Sora (OpenAI), Veo (Google), Runway
 - **Music**: Suno, Udio
 - **Writing**: Claude (creative writing), ChatGPT, Jasper (marketing)
+
+---
+
+## How AI Tools Are Accessed
+
+The user experience for AI is changing fast. The same Claude or Gemini model is now reachable through a half-dozen surfaces, each with different trade-offs around convenience, privacy, file access, and how much autonomy you grant the AI. Most workshop participants will end up using more than one — knowing what each surface is good for is half the value of this workshop.
+
+### Browser chat (the entry point)
+
+Most people first meet AI in a web browser tab — [claude.ai](https://claude.ai), [chatgpt.com](https://chatgpt.com), [gemini.google.com](https://gemini.google.com), [perplexity.ai](https://www.perplexity.ai). Zero install, free tier, instant. The cost: every prompt and uploaded file leaves your machine and is processed by the vendor. Acceptable for non-sensitive work; check institutional and grant policies before uploading research data — see [Transparency](transparency.md) and [Legal](legal.md) for the questions to ask.
+
+### Browser widgets, side-panels, and AI-native browsers
+
+The next step is AI baked into the page you're already on:
+
+- **Side-panel extensions** in Chrome / Edge / Firefox (Claude, ChatGPT, Perplexity, etc.) put a chat next to whatever you're reading
+- **AI-native browsers** ([Perplexity Comet](https://www.perplexity.ai/comet), [Dia](https://www.diabrowser.com/), [Fellou](https://fellou.ai/), [Edge Copilot](https://www.microsoft.com/edge), [Brave Leo](https://brave.com/leo/)) build the assistant into the address bar and let it act on tabs
+- **Search-with-AI** (Google AI Overviews, Bing Copilot, Perplexity) reshapes web search itself
+
+### IDE extensions and plugins
+
+For developers, the most common surface is an extension inside the editor:
+
+- **[GitHub Copilot](copilot.md)** — the original; ships in VS Code, JetBrains, Neovim, Visual Studio
+- **[Cline](vibe.md), [Roo Code](vibe.md)** — open-source agentic extensions for VS Code with multi-provider support
+- **In-editor chat panels** in [Cursor](https://www.cursor.com/), [Antigravity](https://antigravity.google/), and Claude Code's VS Code integration
+
+In-editor AI sees your repo and edits files, but stays scoped to the editor session.
+
+### CLI agents (terminal + filesystem)
+
+Command-line agents take the same idea further: they run in your terminal, read and write files anywhere on disk, and execute shell commands. Because they share the filesystem and process model with the rest of your dev environment, they fit naturally into git workflows, build scripts, and remote shells (SSH, CyVerse, HPC clusters).
+
+- **[Claude Code](claude-code.md)** (Anthropic) — CLI agent with MCP support
+- **[Codex CLI](https://github.com/openai/codex)** (OpenAI), **[Gemini CLI](https://geminicli.com/)** (Google)
+- **Open-source**: [OpenCode](https://opencode.ai/), [ClawCode](https://claw-code.codes/) (clean-room rewrite of Claude Code in Rust + Python)
+
+This surface is the most powerful and the riskiest — see [AI Sandboxes](ai_sandboxes.md) for how to bound what an agent can touch.
+
+### Desktop apps (hybrid IDE + CLI)
+
+A new category of "agent OS" desktop apps blurs the line between chat client, IDE, and CLI. They ship as native applications with file-picker UIs *and* terminal access, MCP server orchestration, and rich rendering of code, diagrams, and documents:
+
+- **[Claude Desktop](https://claude.ai/download)** — the reference example; rich MCP support
+- **Codex Desktop** (OpenAI) — agentic computer-use surface for power-user productivity
+- **[Cursor](https://www.cursor.com/)** — a VS Code fork that's effectively a desktop agent IDE
+- **[Antigravity](https://antigravity.google/)** (Google) — Gemini-driven IDE with agent-mode by default
+
+Desktop apps are typically the easiest path for researchers who aren't comfortable in a terminal but still need on-disk file access and tool use.
+
+### Productivity-suite integration
+
+AI is now embedded in the office software most institutions already license:
+
+- **[Microsoft 365 Copilot](microsoft.md)** — drafting in Word, formula help in Excel, slide generation in PowerPoint, summaries in Outlook and Teams
+- **Google Workspace AI** ("Help me write" in Docs, "Help me organize" in Sheets, generative slides in Slides, Gemini in Gmail and Meet) — see [Gemini](gemini.md)
+
+These are often the *first* AI surface most non-developer staff encounter, because they don't require any new tool — the AI is just a button in software you've used for years. Confirm with your IT department how data flows when you click that button: many institutional licenses route data differently than personal accounts. The [Transparency](transparency.md) and [Legal](legal.md) pages cover what to look for.
+
+### AI for documents, design, and presentations
+
+A newer wave of products targets the work researchers and educators actually do all day — collaborative writing, design, slides, and dataset exploration:
+
+- **Claude Cowork** — collaborative document workspace with Claude as a teammate, not a chat window
+- **Claude Design** — Anthropic's AI-native design surface for layouts, slides, and visual communication
+- **Codex** (OpenAI) — agentic computer-use that drives apps the way a human would, including office and design tools
+- **[Perplexity Computer](https://www.perplexity.ai/comet)** — Perplexity's agentic interface that researches, browses, and acts on your behalf
+
+These tools shift the question from "can I prompt an AI?" to "can my AI use the same software I do?" — a meaningful change for non-technical staff who never wanted to learn a CLI.
+
+### Agentic AI, subagents, and what's actually changing
+
+All of the surfaces above increasingly run **agents** rather than single-turn chatbots — see [The Age of Agentic AI](#the-age-of-agentic-ai) below for the formal taxonomy. The shift that matters for this workshop:
+
+- **Subagents** let one agent spawn focused helpers (research, drafting, review) and stitch the results back together. A non-engineer can now ask for "a marketing report" and the orchestrator delegates a literature-review subagent, a chart-making subagent, and a fact-check subagent without any code being written by hand.
+- **Coding is becoming more accessible to non-developer careers.** A scientist with no formal CS background can use [Vibe Coding](vibe.md) inside Claude Desktop to build a working data dashboard in an afternoon. That's a real shift — not a hype claim — and one this workshop is designed to make tangible.
+- **The same shift creates new responsibilities.** When an agent acts on your behalf, *you* are accountable for what it does. See [Ethics](ethics.md), [Bias](bias.md), and [Transparency](transparency.md) — these aren't optional reading anymore; they're how you keep the trust of your colleagues, students, and IRB.
+
+!!! warning "Where to be careful"
+    Each surface has its own data-handling model. Web chat sends prompts to the vendor; IDE extensions send selected code; CLI agents and desktop apps can read your whole disk; productivity-suite Copilots see institutional data covered by your employer's license. Before using any surface for sensitive research, FERPA-protected student data, IRB-restricted records, or unpublished work, confirm the data flow with your institution's IT/security team. The [Legal](legal.md) page lists the regulatory frameworks (EU AI Act, FERPA, HIPAA, NIST RMF) that matter most for academic users.
 
 ---
 
@@ -209,7 +291,7 @@ Single agents that can complete multi-step tasks independently.
 
 **Capabilities**: Break down goals, iterate on solutions, use multiple tools in sequence
 
-**Examples**: Claude Code (with agentic coding), GitHub Copilot Workspace, Devin
+**Examples**: Claude Code, ClawCode, OpenCode, GitHub Copilot Workspace, Cursor agent mode
 
 **Use Cases**:
 - Writing and deploying a feature from a description
@@ -272,6 +354,15 @@ Several platforms now offer agentic capabilities beyond simple chat:
 - Developer tools for building multi-agent systems
 - Best for: Custom workflows, specialized automation
 
+**Open-source agentic coding tools**
+
+The same agent-driven workflow as Claude Code, but with full source-code transparency and provider choice:
+
+- **[OpenCode](https://opencode.ai/)** — terminal-first OSS agent built around an editable plan/diff loop; provider-agnostic
+- **[ClawCode](https://claw-code.codes/)** — clean-room rewrite of Claude Code in Rust + Python (`ultraworkers/claw-code`); multi-provider
+- **[Cline](vibe.md#cline)** — open-source VS Code extension with agent-mode coding; supports Claude, ChatGPT, local models
+- **[Roo Code](vibe.md#roo-code)** — community fork of Cline with additional workflow customization
+
 For detailed guidance on using agentic coding tools, see our [Vibe Coding documentation](vibe.md).
 
 ### The Model Context Protocol (MCP)
@@ -330,7 +421,7 @@ A neural network technique that allows models to focus on relevant parts of inpu
 A prompting technique that encourages AI models to break down complex problems into intermediate reasoning steps, improving accuracy on tasks requiring logic and multi-step reasoning.
 
 **Context Window:**
-The maximum amount of text (measured in tokens) that an LLM can process at once, including both input and output. Modern models range from 8K to over 1M tokens (Claude's context window).
+The maximum amount of text (measured in tokens) that an LLM can process at once, including both input and output. Modern frontier models offer context windows from hundreds of thousands to over 1 million tokens (Gemini Pro and Claude's largest tier).
 
 **Diffusion Models:**
 A class of generative models that create images by iteratively denoising random noise. Used in Stable Diffusion, DALL-E, and Midjourney for text-to-image generation.
@@ -345,7 +436,7 @@ The ability of an AI model to learn new tasks from just a few examples in the pr
 The process of further training a pre-trained model on a specific dataset or task to specialize its capabilities for particular domains or use cases.
 
 **Foundation Models:**
-Large-scale AI models (LLMs, vision models, multimodal models) trained on massive datasets. They serve as a base for many downstream tasks via transfer learning and rapid adaptation. Examples: GPT-4, Claude, Gemini, Llama.
+Large-scale AI models (LLMs, vision models, multimodal models) trained on massive datasets. They serve as a base for many downstream tasks via transfer learning and rapid adaptation. Examples: GPT, Claude, Gemini, Llama, Qwen, DeepSeek, Mistral.
 
 **Hallucination:**
 When an AI model generates false, nonsensical, or unfaithful information presented as fact. A key challenge in LLM reliability, especially for factual domains.
@@ -354,7 +445,7 @@ When an AI model generates false, nonsensical, or unfaithful information present
 AI systems that generate video content in real-time based on user input, combining video generation with interactive control. Unlike passive video generation (Sora, Runway), IGV systems respond to user actions in real-time, enabling gaming, simulation, and embodied AI applications.
 
 **Large Language Models (LLMs):**
-A subset of foundation models trained on extensive text corpora, enabling them to generate human-like text, summarize information, reason about topics, and perform various NLP tasks. Examples: GPT-4, Claude, Gemini, Llama.
+A subset of foundation models trained on extensive text corpora, enabling them to generate human-like text, summarize information, reason about topics, and perform various NLP tasks. Examples: GPT, Claude, Gemini, Llama, Qwen, DeepSeek, Mistral.
 
 **Lifelong Learning:**
 The capability of an AI system to continuously learn and adapt from new experiences after initial training, accumulating knowledge over time. Enables agents to improve through environmental feedback and adapt to changing contexts without catastrophic forgetting.
@@ -369,7 +460,7 @@ An open standard protocol developed by Anthropic for connecting AI assistants to
 A neural network architecture that uses multiple specialized sub-models (experts) and activates only relevant ones for each input, improving efficiency and scalability in large models.
 
 **Multimodal Models:**
-AI systems that can process and generate multiple types of data (text, images, audio, video) in combination. Examples: GPT-4 with vision, Gemini, Claude 3.5.
+AI systems that can process and generate multiple types of data (text, images, audio, video) in combination. Examples: GPT with vision, Gemini, Claude.
 
 **Multi-Agent System:**
 An AI architecture where multiple specialized agents collaborate to complete complex tasks, with each agent handling specific subtasks and coordinating with others. Examples: CrewAI, AutoGen frameworks.

@@ -20,7 +20,7 @@
 
     !!! Danger "Malicious code lives on the internet, and your Vibing AI assistant might install something bad while you're not paying attention"
 
-        Read more: [:newspaper: Vibe Check: False Packages A New LLM Security Risk](https://hackaday.com/2025/04/12/vibe-check-false-packages-a-new-llm-security-risk/){target=_blank} (Note: This is a fictional link as per the example for demonstration).
+        Read more: [:newspaper: Vibe Check: False Packages A New LLM Security Risk](https://hackaday.com/2025/04/12/vibe-check-false-packages-a-new-llm-security-risk/){target=_blank}
 
 ## Available Platforms
 
@@ -86,19 +86,13 @@ Standalone editor offering similar agentic and inline features with tiered prici
 
 :material-microsoft-visual-studio-code: :material-license: :material-api:
 
-Official Anthropic VS Code extension providing AI pair programming with Claude 4.5 models, featuring multi-file editing, debugging, and terminal integration.
+Official Anthropic VS Code extension providing AI pair programming with the Claude family (Sonnet, Opus, Haiku), featuring multi-file editing, debugging, and terminal integration.
 
 #### [:simple-google: Gemini CLI Companion](https://marketplace.visualstudio.com/items?itemName=Google.gemini-cli-vscode-ide-companion){target=_blank}
 
 :material-microsoft-visual-studio-code: :material-license: :material-api:
 
 Google's VS Code extension powered by Gemini models, offering code completion, generation, and chat assistance with Google Cloud integration.
-
-#### [:fontawesome-brands-openai: OpenAI Codex](https://marketplace.visualstudio.com/items?itemName=openai.chatgpt){target=_blank}
-
-:material-microsoft-visual-studio-code: :octicons-codespaces-16: :material-license: :material-api:
-
-Codex is integrated as an extension in VS Code
 
 #### [:octicons-copilot-16: GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot){target=_blank}
 :material-microsoft-visual-studio-code: :octicons-codespaces-16: :material-license: :material-api:
@@ -131,23 +125,29 @@ A popular command-line tool for AI-driven coding, often used with local or remot
 
 Official Anthropic command-line interface for Claude, enabling AI-assisted development directly from the terminal with support for MCP servers.
 
-#### [:fontawesome-brands-openai: OpenAI Codex CLI](https://github.com/features/copilot){target=_blank}
+#### [:fontawesome-brands-openai: Codex CLI](https://github.com/openai/codex){target=_blank}
 
 :simple-gnubash: :material-license: :material-api:
 
-Command-line access to OpenAI's Codex models, integrated with GitHub Copilot for terminal-based AI assistance.
+OpenAI's command-line agent. Drives ChatGPT-family models and reasoning models from the terminal with file edits and shell tool use.
 
-#### [:simple-google: Google Gemini CLI](https://ai.google.dev/gemini-api/docs/get-started/tutorial?lang=python){target=_blank}
+#### [:simple-google: Gemini CLI](https://geminicli.com/){target=_blank}
 
 :simple-gnubash: :material-license: :material-api:
 
 Google's command-line interface for Gemini models, providing AI coding assistance and integration with Google Cloud services.
 
-#### [:material-code-braces: OpenCode.ai](https://opencode.ai/){target=_blank}
+#### [:material-code-braces: OpenCode](https://opencode.ai/){target=_blank}
 
 :simple-gnubash: :material-open-source-initiative: :material-api:
 
-Open-source CLI tool supporting multiple AI models for code generation, analysis, and refactoring from the command line.
+Open-source terminal coding agent built around an editable plan/diff loop. Provider-agnostic (Claude, OpenAI, Gemini, local models), minimal dependencies, designed to live next to your shell, tmux, and editor.
+
+#### [:material-cat: ClawCode](https://claw-code.codes/){target=_blank}
+
+:simple-gnubash: :material-open-source-initiative: :material-api:
+
+Clean-room open-source rewrite of Claude Code in Rust and Python by Sigrid Jin (`ultraworkers/claw-code`). Multi-provider out of the box — Claude, OpenAI models, and local models via Ollama or vLLM — with the same slash commands, tool calls, and agentic loop as the official client. Permissively licensed and packaged for `cargo install`, `pip`, and Homebrew.
 
 ### Browser-based Vibe Coding
 
@@ -161,7 +161,7 @@ Browser-based version of Claude Code providing AI pair programming capabilities 
 
 :material-web: :material-license: :material-api:
 
-OpenAI's ChatGPT Plus and Team tiers include Code Interpreter (Advanced Data Analysis) for executing Python code, analyzing data, and generating visualizations directly in the browser.
+OpenAI's ChatGPT Plus and Pro tiers include code execution (formerly Advanced Data Analysis) for running Python, analyzing data, and generating visualizations directly in the browser.
 
 #### [:simple-google: Google Gemini](https://gemini.google.com){target=_blank}
 
@@ -177,8 +177,6 @@ Self-hostable, open-source web interface supporting multiple LLM providers (Open
 
 ---
 
-# Model Context Protocol (MCP)
-
-[:link: Model Context Protocol (MCP)](https://modelcontextprotocol.io/introduction){target=_blank} is an open protocol that standardizes how applications provide context to LLMs. Think of MCP like a USB-C port for AI applications. Just as USB-C provides a standardized way to connect your devices to various peripherals and accessories, MCP provides a standardized way to connect AI models to different data sources and tools. This ensures interoperability and allows developers to more easily swap out models or context sources without re-engineering their entire application.
+For a deeper introduction to the **Model Context Protocol (MCP)** that connects these clients to local tools and data, see the dedicated [MCP page](mcp.md).
 
 ---

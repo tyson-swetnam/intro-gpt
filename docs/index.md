@@ -75,7 +75,7 @@ This workshop is organized into **five main modules** with an estimated **8-12 h
         1. [:simple-githubcopilot: GitHub Copilot](copilot.md) - AI pair programming
         2. [:material-palette-swatch: Vibe Coding](vibe.md) - AI-assisted development
         3. [:material-link-variant: Model Context Protocol](mcp.md) - Tool integration
-        4. [:material-api: OpenAI API](openai.md) - Programmatic access
+        4. [:material-compare: Choosing a Platform](choose.md) - Pick the right coding tool
 
 ## Prerequisites
 
@@ -103,7 +103,7 @@ Get started with major AI platforms. Each guide includes account setup, interfac
 | Platform | Description |
 |----------|-------------|
 | [:simple-anthropic: Claude](claude.md) | Anthropic's AI with Projects, Artifacts, and MCP support |
-| [:fontawesome-brands-openai: ChatGPT](chatgpt.md) | OpenAI's ChatGPT with GPTs, Canvas, and Advanced Voice |
+| [:fontawesome-brands-openai: ChatGPT](chatgpt.md) | OpenAI's ChatGPT with GPTs, Canvas, Projects, and Advanced Voice |
 | [:simple-google: Gemini](gemini.md) | Google's AI with workspace integration and multimodal capabilities |
 | [:material-microsoft: Microsoft Copilot](microsoft.md) | AI integrated into Microsoft 365 applications |
 | [:simple-githubcopilot: GitHub Copilot](copilot.md) | AI pair programming for developers |

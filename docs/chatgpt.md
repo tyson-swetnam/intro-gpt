@@ -8,7 +8,7 @@ This work is licensed under a
 
 **OpenAI** is an artificial intelligence research company founded in 2015, known for developing some of the most influential AI models in recent years. Their flagship product, **ChatGPT**, launched in November 2022 and quickly became the fastest-growing consumer application in history.
 
-ChatGPT is powered by a family of large language models (LLMs) including GPT-4, GPT-4o, and the reasoning-focused o1 and o3 models. These models can understand and generate human-like text, analyze images, write code, and assist with a wide range of tasks.
+ChatGPT is powered by a family of large language models (LLMs), including general-purpose GPT models and reasoning-focused o-series models. These models can understand and generate human-like text, analyze images, write code, and assist with a wide range of tasks.
 
 ## Creating a ChatGPT Account
 
@@ -45,11 +45,11 @@ ChatGPT is powered by a family of large language models (LLMs) including GPT-4, 
 
 ## ChatGPT Subscription Plans
 
-!!! info "Pricing (as of January 2025)"
+!!! info "Pricing (as of May 2026)"
 
     **Free Tier**
 
-    - Access to GPT-4o with usage limits
+    - Access to ChatGPT with usage limits
     - Standard response speed
     - Limited access to advanced features
     - Good for casual users exploring AI capabilities
@@ -58,8 +58,8 @@ ChatGPT is powered by a family of large language models (LLMs) including GPT-4, 
 
     - Priority access during peak hours
     - Faster response speeds
-    - Access to GPT-4, GPT-4o, and o1 reasoning models
-    - Image generation with DALL-E 3
+    - Access to advanced and reasoning-focused models
+    - Image generation
     - File uploads, voice mode, and data analysis
     - Custom GPTs and GPT Store access
     - Advanced Voice mode with natural conversation
@@ -67,14 +67,14 @@ ChatGPT is powered by a family of large language models (LLMs) including GPT-4, 
     **ChatGPT Pro ($200/month)**
 
     - Everything in Plus
-    - Unlimited access to o1 and o1 pro mode (enhanced reasoning)
-    - Unlimited access to GPT-4o
+    - Unlimited access to advanced reasoning models
+    - Unlimited access to standard ChatGPT models
     - Higher limits on advanced features
     - Access to Sora video generation
     - Deep Research tool for comprehensive analysis
     - Priority access to newest features
 
-    **ChatGPT Team ($25-30/user/month)**
+    **ChatGPT Team ($25–30/user/month)**
 
     - Everything in Plus
     - Admin controls and workspace management
@@ -84,7 +84,7 @@ ChatGPT is powered by a family of large language models (LLMs) including GPT-4, 
 
     **ChatGPT Enterprise (Custom pricing)**
 
-    - Unlimited high-speed GPT-4 access
+    - Unlimited high-speed access to advanced ChatGPT models
     - Enterprise-grade security and compliance
     - Admin console with SSO and domain verification
     - Custom data retention policies
@@ -96,7 +96,7 @@ ChatGPT is powered by a family of large language models (LLMs) including GPT-4, 
 
 - **Prompting:** Type your requests or questions into the chat box. Be clear and specific in your prompts.
 - **Conversation History:** ChatGPT remembers context within the current chat session.
-- **Model Selection:** Plus and Pro users can switch between models (GPT-4o, o1, etc.) using the model selector.
+- **Model Selection:** Plus and Pro users can switch between standard and reasoning-focused models using the model selector.
 - **File Uploads:** Upload images, PDFs, documents, and data files for analysis.
 - **Voice Mode:** Use voice input and receive spoken responses (Plus feature).
 - **Canvas:** Collaborative editing workspace for writing and coding projects.
@@ -111,7 +111,7 @@ ChatGPT is powered by a family of large language models (LLMs) including GPT-4, 
 
 - **Web Browsing:** Search the internet for current information (enabled by default for Plus users).
 - **Code Interpreter:** Run Python code, analyze data, create visualizations, and process files.
-- **DALL-E 3:** Generate and edit images from text descriptions.
+- **Image generation:** Generate and edit images from text descriptions.
 - **Advanced Voice:** Natural, conversational voice interactions with low latency.
 
 ---
@@ -124,7 +124,7 @@ Beyond ChatGPT, OpenAI provides a developer platform for programmatic access to 
 
 ### OpenAI API Access
 
-The OpenAI API provides programmatic access to models like GPT-4, GPT-4o, o1, DALL-E, and more, enabling integration into applications and research workflows.
+The OpenAI API provides programmatic access to models for chat, reasoning, image generation, audio, and more — enabling integration into applications and research workflows.
 
 **Signing up for the OpenAI API:**
 
@@ -158,7 +158,7 @@ from openai import OpenAI
 client = OpenAI(api_key="your-api-key")
 
 response = client.chat.completions.create(
-    model="gpt-4o",
+    model="gpt-4o",  # see https://platform.openai.com/docs/models for the current default
     messages=[
         {"role": "user", "content": "Hello, GPT!"}
     ]
@@ -197,7 +197,7 @@ The cookbook is also available at [cookbook.openai.com](https://cookbook.openai.
 - **Iterate:** Refine your prompts based on ChatGPT's responses to improve outcomes.
 - **Use System Instructions:** For custom GPTs or API usage, system prompts guide the model's behavior.
 - **Leverage Context:** Upload relevant documents or provide background information for complex tasks.
-- **Experiment with Models:** Different models excel at different tasks - o1 for reasoning, GPT-4o for general use, DALL-E for images.
+- **Experiment with Models:** Different models excel at different tasks — reasoning models for analysis, standard models for general use, image models for visuals.
 
 ---
 

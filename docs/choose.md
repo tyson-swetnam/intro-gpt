@@ -2,7 +2,7 @@
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 
-This comprehensive guide helps you choose the right AI platform for your needs. All pricing information has been verified as of **January 2026**.
+This comprehensive guide helps you choose the right AI platform for your needs. All pricing information has been verified as of **May 2026**.
 
 ---
 
@@ -24,12 +24,10 @@ Below are tables that rank popular AI platforms by use case, organized by Chat, 
 | **Jasper** | - Marketing-focused <br/>- Content workflows | - Expensive for individual use <br/>- Less technical depth | $59/mo (Pro), $69/mo (monthly billing) | [**Jasper**](https://www.jasper.ai/){target=_blank} | [**Jasper Docs**](https://developers.jasper.ai/){target=_blank} |
 | **Perplexity** | - Research + search <br/>- Citation backing | - Subscription for advanced features | Free, $20/mo (Pro), $200/mo (Max), $4.99/mo (Education) | [**Perplexity**](https://www.perplexity.ai/){target=_blank} | [**Perplexity Docs**](https://docs.perplexity.ai/){target=_blank} |
 | **NotebookLM (Google)** | - RAG capabilities <br/>- Google Drive integration | - Still evolving features | Free, $19.99/mo (Plus via Google One AI Premium) | [**NotebookLM**](https://notebooklm.google.com/){target=_blank} | [**NotebookLM Docs**](https://support.google.com/notebooklm){target=_blank} |
-| **Vicuna** | - Open source <br/>- Free to use | - Smaller than GPT-4 <br/>- Self-hosting required | Free (self-host) or free demos | [**Vicuna Demo**](https://chat.lmsys.org/){target=_blank} | [**Vicuna GitHub**](https://github.com/lm-sys/FastChat){target=_blank} |
-| **Pi (Inflection AI)** | - Empathetic conversation style <br/>- Personal AI | - Rate limited <br/>- No coding support | Free (personal use, rate limits) | [**Pi**](https://pi.ai){target=_blank} | N/A (Enterprise API only) |
 | **Poe (Quora)** | - Access to multiple models <br/>- Single subscription | - Usage caps on free tier | $5/mo (10k points), $19.99/mo (1M points), $250/mo (12.5M points) | [**Poe**](https://poe.com/){target=_blank} | [**Poe Docs**](https://help.poe.com/){target=_blank} |
-| **Mistral AI** | - European LLMs <br/>- Multilingual | - Still evolving ecosystem | Free + API from $0.02-$6 per 1M tokens, Le Chat Pro $14.99/mo | [**Mistral**](https://mistral.ai/){target=_blank} | [**Mistral Docs**](https://docs.mistral.ai/){target=_blank} |
+| **Mistral AI** | - European LLMs <br/>- Multilingual | - Still evolving ecosystem | Free + API from $0.02–$6 per 1M tokens; Le Chat Pro $19.99/mo | [**Mistral**](https://mistral.ai/){target=_blank} | [**Mistral Docs**](https://docs.mistral.ai/){target=_blank} |
 | **Latimer** | - Diversity-focused training <br/>- Inclusive perspective | - Smaller user base | Free (100 interactions), $9.99/mo (Individual) | [**Latimer**](https://app.latimer.ai/){target=_blank} | Email: support@latimer.ai |
-| **Meta AI (Llama)** | - Open source <br/>- Llama 4 available | - Self-hosting requires resources | Free (self-host) or enterprise | [**Llama**](https://www.llama.com/){target=_blank} | [**Meta GitHub**](https://github.com/facebookresearch/llama){target=_blank} |
+| **Meta AI (Llama)** | - Open source <br/>- Active model family | - Self-hosting requires resources | Free (self-host) or enterprise | [**Llama**](https://www.llama.com/){target=_blank} | [**Meta GitHub**](https://github.com/facebookresearch/llama){target=_blank} |
 | **Apple Intelligence** | - iOS/macOS integration <br/>- Privacy-focused | - Apple ecosystem only | Included on Apple devices (iOS 18.1+, M1+ Macs) | [**Apple Intelligence**](https://www.apple.com/apple-intelligence/){target=_blank} | [**Apple Dev Docs**](https://developer.apple.com/apple-intelligence/){target=_blank} |
 | **Amazon Titan** | - AWS ecosystem <br/>- Bedrock integration | - Enterprise-focused | Pay-per-use on Bedrock | [**Titan**](https://aws.amazon.com/bedrock/titan/){target=_blank} | [**AWS Docs**](https://docs.aws.amazon.com/bedrock/){target=_blank} |
 | **Amazon Bedrock** | - Multi-model platform <br/>- 100+ models | - Requires AWS account | Pay-per-use (varies by model) | [**Bedrock**](https://aws.amazon.com/bedrock/){target=_blank} | [**Bedrock Docs**](https://docs.aws.amazon.com/bedrock/){target=_blank} |
@@ -65,14 +63,17 @@ Below are tables that rank popular AI platforms by use case, organized by Chat, 
 |--------------|--------------|--------------|----------|---------------|----------|
 | **Claude Code (Anthropic)** | - CLI/IDE integration <br/>- Strong code generation | - Requires Pro+ subscription | Included with Pro ($20/mo) or higher | [**Claude**](https://claude.ai){target=_blank} | [**Anthropic Docs**](https://docs.anthropic.com/){target=_blank} |
 | **Gemini (Google)** | - Code + text synergy <br/>- Fast responses | - Less specialized than dedicated coding tools | Free, $19.99/mo (AI Pro) | [**Gemini**](https://gemini.google.com/){target=_blank} | [**Gemini Docs**](https://ai.google.dev/gemini-api/docs){target=_blank} |
-| **GitHub Copilot** | - Seamless IDE integration <br/>- Code completions | - Subscription required for unlimited | Free (students/OSS), $10/mo (Pro), $39/mo (Pro+), $19/user/mo (Business) | [**GitHub Copilot**](https://github.com/features/copilot){target=_blank} | [**Copilot Docs**](https://docs.github.com/en/copilot){target=_blank} |
+| **GitHub Copilot** | - Seamless IDE integration <br/>- Code completions | - Subscription required for unlimited | Free (students/OSS), $10/mo (Pro), $19/user/mo (Business), $39/user/mo (Enterprise) | [**GitHub Copilot**](https://github.com/features/copilot){target=_blank} | [**Copilot Docs**](https://docs.github.com/en/copilot){target=_blank} |
 | **ChatGPT (OpenAI)** | - Interactive code execution <br/>- Good for learning | - Requires Plus/Pro for best experience | Free, $20/mo (Plus), $200/mo (Pro) | [**ChatGPT**](https://chatgpt.com/){target=_blank} | [**OpenAI Docs**](https://platform.openai.com/docs/guides/code){target=_blank} |
-| **Continue.dev** | - Open source <br/>- Multiple model support | - Requires technical setup <br/>- Users pay LLM API costs | Free (Open Source, users pay API costs) | [**Continue.dev**](https://continue.dev/){target=_blank} | [**Continue Docs**](https://continue.dev/docs/){target=_blank} |
+| **Cursor** | - Standalone agentic editor (VS Code fork) <br/>- Multi-file edits, codebase indexing | - Subscription required for unlimited usage <br/>- Indexing sends snippets to Cursor servers | Free (Hobby), $20/mo (Pro), $40/user/mo (Business) | [**Cursor**](https://www.cursor.com/){target=_blank} | [**Cursor Docs**](https://docs.cursor.com/){target=_blank} |
+| **OpenCode** | - Open-source terminal agent <br/>- Provider-agnostic, including local models | - CLI-only; no GUI | Free (Open Source, users pay LLM API) | [**OpenCode**](https://opencode.ai/){target=_blank} | [**OpenCode GitHub**](https://github.com/opencode-ai/opencode){target=_blank} |
+| **ClawCode** | - Open-source rewrite of Claude Code (Rust + Python) <br/>- Multi-provider (Claude, OpenAI, local) | - Younger project, fewer integrations than Claude Code | Free (Open Source, users pay LLM API) | [**ClawCode**](https://claw-code.codes/){target=_blank} | [**ClawCode GitHub**](https://github.com/ultraworkers/claw-code){target=_blank} |
+| **Cline** | - Open-source VS Code extension <br/>- BYO model, multi-provider | - Per-request billing accrues fast | Free (Open Source, users pay LLM API) | [**Cline**](https://cline.bot/){target=_blank} | [**Cline Docs**](https://docs.cline.bot/){target=_blank} |
+| **Roo Code** | - Open-source Cline fork <br/>- Experimental workflow features | - Small community vs upstream | Free (Open Source, users pay LLM API) | [**Roo Code**](https://github.com/RooCodeInc/Roo-Code){target=_blank} | [**Roo Docs**](https://docs.roocode.com/){target=_blank} |
 | **Codeium (Windsurf)** | - Free tier available <br/>- IDE integration | - Rebranded to Windsurf <br/>- Credit-based limits | Free (25 credits/mo), $15/mo (Pro), $30/mo (Teams), $60/mo (Enterprise) | [**Windsurf**](https://www.codeium.com/){target=_blank} | [**Codeium Docs**](https://docs.codeium.com/){target=_blank} |
 | **Phind** | - Code search + AI chat | - Inconsistent pricing | Free, Paid tiers $10-40/mo (verify on site) | [**Phind**](https://www.phind.com/){target=_blank} | [**Phind Help**](https://help.phind.com/hc/en-us){target=_blank} |
 | **Replit AI** | - Cloud IDE + AI <br/>- Multi-language support | - Subscription for full features | Free tier, $20/mo (annual) or $25/mo (monthly) | [**Replit AI**](https://replit.com/ai){target=_blank} | [**Replit Docs**](https://docs.replit.com/){target=_blank} |
 | **StarCoder** | - Open source <br/>- Multiple model sizes | - Self-hosting required | Free (Open Source) | [**StarCoder2**](https://huggingface.co/bigcode){target=_blank} | [**BigCode**](https://www.bigcode-project.org/){target=_blank} |
-| **Code Llama (Meta)** | - Specialized for coding <br/>- Multiple variants | ⚠️ **Repository archived July 2025** - consider StarCoder2 instead | Free (Open Source, archived) | [**Code Llama**](https://ai.meta.com/blog/code-llama-large-language-model-coding/){target=_blank} | [**Meta GitHub**](https://github.com/facebookresearch/llama){target=_blank} |
 
 ---
 
@@ -82,11 +83,11 @@ Below are tables that rank popular AI platforms by use case, organized by Chat, 
 |--------------|--------------|--------------|----------|---------------|----------|
 | **Veo (Google)** | - High-quality video <br/>- Up to 4K resolution | - Limited daily generation | \$0.15-\$0.60/second (API) or \$19.99-\$249.99/mo (subscription via AI Pro/Ultra) | [**Veo**](https://deepmind.google/technologies/veo/){target=_blank} | [**Veo Docs**](https://ai.google.dev/gemini-api/docs/video){target=_blank} |
 | **Midjourney** | - Exceptional image quality <br/>- Web interface available | - Subscription required | $10/mo (Basic), $30/mo (Standard), $60/mo (Pro), $120/mo (Mega) | [**Midjourney**](https://www.midjourney.com/){target=_blank} | [**Midjourney Docs**](https://docs.midjourney.com/){target=_blank} |
-| **ChatGPT Image (OpenAI)** | - Native integration <br/>- Multi-turn refinement | ⚠️ **DALL-E 3 being sunset May 2026** - GPT-4o Image is replacement | $20/mo (ChatGPT Plus) or API pricing | [**ChatGPT**](https://chatgpt.com/){target=_blank} | [**OpenAI Image Docs**](https://platform.openai.com/docs/guides/images){target=_blank} |
+| **ChatGPT Image (OpenAI)** | - Native integration <br/>- Multi-turn refinement | - Older DALL-E being sunset; ChatGPT's native image generation is the replacement | $20/mo (ChatGPT Plus) or API pricing | [**ChatGPT**](https://chatgpt.com/){target=_blank} | [**OpenAI Image Docs**](https://platform.openai.com/docs/guides/images){target=_blank} |
 | **Stable Diffusion** | - Open source <br/>- Highly customizable | - Requires technical knowledge | Free (Open Source) or API services | [**Stability AI**](https://stability.ai/){target=_blank} | [**Stable Diffusion**](https://stability.ai/stable-image){target=_blank} |
 | **Adobe Firefly** | - Creative Cloud integration <br/>- Commercial-safe | - Subscription required | \$9.99-\$29.99/mo (standalone) or \$70/mo (CC Pro) | [**Firefly**](https://firefly.adobe.com/){target=_blank} | [**Firefly Docs**](https://developer.adobe.com/firefly-services/docs/guides/){target=_blank} |
 | **Sora (OpenAI)** | - Text-to-video <br/>- Up to 1080p | ⚠️ **NOT available in EU/UK** | $20/mo (ChatGPT Plus), $200/mo (ChatGPT Pro) | [**Sora**](https://openai.com/sora){target=_blank} | [**Sora Research**](https://openai.com/research/video-generation-models-as-world-simulators){target=_blank} |
-| **Runway ML** | - Advanced video tools <br/>- Gen-4.5 available | - Higher-res requires paid plans | $15/mo (monthly), $12/mo (annual) to $95/mo | [**Runway**](https://runwayml.com/){target=_blank} | [**Runway Docs**](https://docs.runwayml.com/){target=_blank} |
+| **Runway ML** | - Advanced video tools <br/>- Active Gen model line | - Higher-res requires paid plans | $15/mo (monthly), $12/mo (annual) to $95/mo | [**Runway**](https://runwayml.com/){target=_blank} | [**Runway Docs**](https://docs.runwayml.com/){target=_blank} |
 | **Imagine with Meta** | - Free image generation <br/>- Meta AI integration | - Quality less advanced | Free, $30/mo (Meta AI+ optional) | [**Meta AI**](https://www.meta.ai/){target=_blank} | [**Meta Help**](https://www.meta.com/help/artificial-intelligence/imagine/){target=_blank} |
 | **Craiyon** | - Simple free tier <br/>- Unlimited base quality | - Lower quality on free tier | Free (unlimited Base w/ ads), $5-12/mo (Supporter), $20-24/mo (Professional) | [**Craiyon**](https://www.craiyon.com/){target=_blank} | FAQ on site |
 
@@ -163,7 +164,30 @@ Below are tables that rank popular AI platforms by use case, organized by Chat, 
 |--------------|-----------------|----------|----------|
 | **Amplify GenAI** | Open source multi-model platform from Vanderbilt | AWS usage + model costs (~$3/user/mo) | [**Amplify GenAI**](https://www.amplifygenai.org/){target=_blank} / [**GitHub**](https://github.com/gaiin-platform){target=_blank} |
 | **Ollama** | Run LLMs locally | Free | [**Ollama**](https://ollama.com/){target=_blank} |
+| **vLLM** | High-throughput LLM serving engine for production self-hosting | Free (Open Source) | [**vLLM**](https://github.com/vllm-project/vllm){target=_blank} |
+| **LiteLLM** | Unified gateway exposing 100+ LLM providers via one OpenAI-compatible API | Free (Open Source); paid Cloud tier | [**LiteLLM**](https://www.litellm.ai/){target=_blank} |
+| **OpenWebUI** | Self-hosted ChatGPT-style web UI for any OpenAI-compatible backend | Free (Open Source) | [**OpenWebUI**](https://openwebui.com/){target=_blank} |
 | **LM Studio** | Desktop app for local LLMs | Free | [**LM Studio**](https://lmstudio.ai/){target=_blank} |
+
+### Open-Weight Model Families
+
+| **Family** | **Origin** | **License** | **Best for** |
+|------------|-----------|-------------|--------------|
+| **Llama** | Meta | Llama Community License (permissive with size threshold) | General-purpose chat, instruction following, mature ecosystem |
+| **Qwen** | Alibaba | Apache 2.0 (most variants) | Multilingual, coding (Qwen Coder), reasoning |
+| **DeepSeek** | DeepSeek AI | MIT or DeepSeek License (varies) | Reasoning, math, code (R1 reasoning family) — see US researcher restrictions below |
+| **Gemma** | Google DeepMind | Gemma Terms of Use (permissive) | Lightweight on-device, education, research |
+| **GPT-OSS** | OpenAI | Apache 2.0 | Open-weight from the OpenAI family for self-hosting |
+| **Mistral** | Mistral AI | Apache 2.0 (most) | European data residency, multilingual, coding (Codestral) |
+
+### Personal AI Assistants (Self-Hosted)
+
+These tools let you run a personal AI assistant on your own hardware, bring your own API keys, and access it through messaging platforms or chat UIs.
+
+| **Platform** | **Description** | **Cost** | **Link** |
+|--------------|-----------------|----------|----------|
+| **OpenClaw** | Open-source personal AI assistant. Runs locally, BYO API key (Claude, OpenAI, DeepSeek, etc.), accessed through Signal, Telegram, Discord, Slack, and other messaging platforms. | Free (Open Source) — users pay LLM API | [**OpenClaw**](https://openclaw.ai/){target=_blank} / [**GitHub**](https://github.com/openclaw/openclaw){target=_blank} |
+| **OpenWebUI** | Self-hostable web UI for any OpenAI-compatible model (Ollama, vLLM, LiteLLM, hosted APIs). Multi-user, RAG, function calling. | Free (Open Source) | [**OpenWebUI**](https://openwebui.com/){target=_blank} |
 
 ---
 
@@ -196,7 +220,7 @@ For more information on using AI for tutoring and education, see [AI Tutoring: S
 
 !!! Info "About This Guide"
 
-    * **Verification Date:** All pricing verified January 2026
+    * **Verification Date:** All pricing verified May 2026
     * **Updates:** AI platforms change rapidly. Check official websites for current pricing
     * **Free Tiers:** Many services offer free tiers with usage limits
     * **Student Discounts:** Check for education pricing (Perplexity, Google AI Pro, GitHub Copilot, etc.)
@@ -204,9 +228,13 @@ For more information on using AI for tutoring and education, see [AI Tutoring: S
 
 !!! Warning "⚠️ Deprecated/Archived Platforms"
 
-    * **SearchGPT** - Merged into ChatGPT (no longer standalone)
-    * **Code Llama** - Repository archived July 2025 (consider StarCoder instead)
-    * **DALL-E** - Version 3 being sunset May 2026 (replaced by GPT-4o Image Generation)
+    * **SearchGPT** — merged into ChatGPT (no longer standalone)
+    * **Code Llama** — repository archived July 2025 (consider StarCoder, Qwen Coder, or DeepSeek Coder instead)
+    * **Older DALL-E** — being sunset; ChatGPT's native image generation is the replacement
+    * **OpenAI Codex (legacy product)** — deprecated; the current OpenAI CLI agent is **Codex CLI** (`github.com/openai/codex`)
+    * **Bard** — rebranded as Gemini (2024)
+    * **Pi (Inflection AI)** — Inflection shifted to enterprise B2B; Pi is no longer a primary consumer product
+    * **Vicuna** — historical 2023 demo; superseded by Llama, Qwen, DeepSeek, and Gemma family models
 
 !!! Tip "Best Options for Students & Educators"
 
@@ -266,18 +294,17 @@ For developers building with AI APIs, here's detailed token-level pricing:
 
 | **Service**  | **Plan** | **Pricing** | **Details**  |
 | :----------- | :------- | :---------- | :----------- |
-| [**Claude API**](https://console.anthropic.com/){target=_blank} | Pay-As-You-Go | Varies | **Claude 4.5 Sonnet:** $3/1M input, $15/1M output <br> **Claude 4.5 Opus:** $15/1M input, $75/1M output <br> **Claude 4.5 Haiku:** $0.25/1M input, $1.25/1M output <br> Batch: 50% discount, Prompt caching: 75-90% savings |
-| [**Gemini API**](https://aistudio.google.com/){target=_blank} | Pay-As-You-Go | Varies | **Gemini 2.5 Flash:** $0.30/1M input, $2.50/1M output <br> **Gemini 2.5 Pro:** $1.25/1M input, $10/1M output <br> **Gemini 2.5 Flash-Lite:** $0.10/1M input, $0.40/1M output <br> Batch: 50% discount |
-| [**OpenAI API**](https://platform.openai.com/){target=_blank} | Pay-As-You-Go | Varies | **GPT-4o:** $2.50/1M input, $10/1M output <br> **GPT-4o mini:** $0.15/1M input, $0.60/1M output <br> **o1:** $15/1M input, $60/1M output <br> **o3-mini:** $1.10/1M input, $4.40/1M output |
-| [**Mistral API**](https://console.mistral.ai/){target=_blank} | Pay-As-You-Go | Varies | **Medium 3:** $0.40/1M in, $2/1M out <br> **Nemo:** $0.30/1M <br> **Large 2:** $3/1M in, $9/1M out <br> **Codestral:** $1/1M in, $3/1M out |
-| [**DeepSeek API**](https://platform.deepseek.com/){target=_blank} | Pay-As-You-Go | ~200x cheaper | **DeepSeek Chat:** $0.28/1M in, $1.12/1M out <br> **Reasoner (R1):** $0.28/1M in, $1.12/1M out <br> ⚠️ **NOT ALLOWED for US researchers** |
-| [**Cohere API**](https://cohere.com/){target=_blank} | Pay-As-You-Go | Varies | **Command R:** $0.50/1M in, $1.50/1M out <br> **Command R+:** $2.50/1M in, $10/1M out <br> **Command-light:** $0.30/1M in, $0.60/1M out |
-| [**Together AI**](https://www.together.ai/){target=_blank} | Serverless | Pay-As-You-Go | Text/Vision: $0.02-$3.50/1M tokens <br> Images: $0.0027-$0.08/MP <br> GPU Clusters: $1.76-$5.50/GPU hr |
-| [**Groq**](https://groq.com/){target=_blank} | Developer | Pay-As-You-Go | 10x rate limits vs free, 50% batch discount |
-| [**Replicate**](https://replicate.com/){target=_blank} | Pay-As-You-Go | Varies | CPU: $0.36/hr <br> T4 GPU: $0.81/hr <br> 8x H100: $43.92/hr |
-| [**Amazon Bedrock**](https://aws.amazon.com/bedrock/){target=_blank} | On-Demand | Varies | Multi-model platform (Claude, Llama, etc.) - model-specific pricing |
-| [**Google Vertex AI**](https://cloud.google.com/vertex-ai){target=_blank} | On-Demand | Varies | 130+ models - refer to Gemini API pricing + model-specific costs |
-| [**Azure AI Studio**](https://ai.azure.com/){target=_blank} | On-Demand | Varies | GPT-4o, Claude, Llama, Mistral - refer to OpenAI API pricing + Azure markup |
+| [**Claude API**](https://console.anthropic.com/){target=_blank} | Pay-As-You-Go | Varies | **Claude Sonnet:** $3/1M input, $15/1M output <br> **Claude Opus:** $15/1M input, $75/1M output <br> **Claude Haiku:** $0.25/1M input, $1.25/1M output <br> Batch: 50% discount, Prompt caching: 75–90% savings |
+| [**Gemini API**](https://aistudio.google.com/){target=_blank} | Pay-As-You-Go | Varies | **Gemini Flash:** $0.30/1M input, $2.50/1M output <br> **Gemini Pro:** $1.25/1M input, $10/1M output <br> **Gemini Flash-Lite:** $0.10/1M input, $0.40/1M output <br> Batch: 50% discount |
+| [**OpenAI API**](https://platform.openai.com/){target=_blank} | Pay-As-You-Go | Varies | **GPT (flagship):** $2.50/1M input, $10/1M output <br> **GPT (mini):** $0.15/1M input, $0.60/1M output <br> **GPT (o-series reasoning):** $15/1M input, $60/1M output <br> **GPT (o-series mini):** $1.10/1M input, $4.40/1M output |
+| [**Mistral API**](https://console.mistral.ai/){target=_blank} | Pay-As-You-Go | Varies | **Medium:** $0.40/1M in, $2/1M out <br> **Nemo:** $0.30/1M <br> **Large:** $3/1M in, $9/1M out <br> **Codestral:** $1/1M in, $3/1M out |
+| [**DeepSeek API**](https://platform.deepseek.com/){target=_blank} | Pay-As-You-Go | ~200× cheaper | **DeepSeek Chat:** $0.28/1M in, $1.12/1M out <br> **Reasoner (R1):** $0.28/1M in, $1.12/1M out <br> ⚠️ **NOT ALLOWED for US researchers** |
+| [**Together AI**](https://www.together.ai/){target=_blank} | Serverless | Pay-As-You-Go | Text/Vision: $0.02–$3.50/1M tokens <br> Images: $0.0027–$0.08/MP <br> GPU Clusters: $1.76–$5.50/GPU hr |
+| [**Groq**](https://groq.com/){target=_blank} | Developer | Pay-As-You-Go | 10× rate limits vs free, 50% batch discount |
+| [**Replicate**](https://replicate.com/){target=_blank} | Pay-As-You-Go | Varies | CPU: $0.36/hr <br> T4 GPU: $0.81/hr <br> 8× H100: $43.92/hr |
+| [**Amazon Bedrock**](https://aws.amazon.com/bedrock/){target=_blank} | On-Demand | Varies | Multi-model platform (Claude, Llama, Mistral, etc.) — model-specific pricing |
+| [**Google Vertex AI**](https://cloud.google.com/vertex-ai){target=_blank} | On-Demand | Varies | 130+ models — refer to Gemini API pricing + model-specific costs |
+| [**Azure AI Studio**](https://ai.azure.com/){target=_blank} | On-Demand | Varies | ChatGPT, Claude, Llama, Mistral — refer to OpenAI API pricing + Azure markup |
 
 ---
 
@@ -382,8 +409,6 @@ Qwen's Apache 2.0 licensed models (40M+ downloads on HuggingFace) can be run **o
 - Microsoft (Copilot) - US company
 
 - Mistral AI - French company (EU-based)
-
-- Cohere - Canadian company
 
 **⚠️ USE WITH EXTREME CAUTION (Chinese companies):**
 

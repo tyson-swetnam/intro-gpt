@@ -57,7 +57,7 @@ flowchart LR
     * They may also expose capabilities for the client to invoke actions within the application.
 
 * **MCP Clients (Consumers):**
-    * These are typically LLMs, AI assistants (like a conceptual Claude Desktop with MCP capabilities), or other tools that need to consume context.
+    * These are typically LLMs and AI assistants — for example Claude Desktop, Claude Code, ClawCode, Codex CLI, Gemini CLI, Cursor, or any other MCP-aware client.
     * They **request** context from MCP Servers to better understand the user's environment and intent.
     * This context is then used by the LLM to:
         * Generate more relevant and accurate responses.

@@ -47,9 +47,11 @@ Claude Code acts as a pair programmer that understands context, writes code, cre
      
     [**:material-google: Google Gemini CLI**](https://geminicli.com/){:target="_blank"}
     
-    [**:fontawesome-brands-openai: ChatGPT Codex**](https://chat.openai.com/codex){:target="_blank"}
+    [**:fontawesome-brands-openai: Codex CLI**](https://github.com/openai/codex){:target="_blank"}
     
-    [**:simple-opensourceinitiative: OpenCode.ai**](https://opencode.ai){:target="_blank"}
+    [**:simple-opensourceinitiative: OpenCode**](https://opencode.ai){:target="_blank"}
+    
+    [**:material-cat: ClawCode**](https://claw-code.codes/){:target="_blank"}
     
     [**:simple-gnubash: aider.chat**](https://aider.chat){:target="_blank"}
 
@@ -102,12 +104,12 @@ Claude Code represents the evolution of AI-assisted development—moving beyond 
 
 #### Option 1: Claude.ai
 
-**Claude** (\$20/month), **Claude Pro** (\$100/month), **Claude Pro Max** (\$200/month) 
+**Claude Pro** (\$20/month), **Claude Max 5×** (\$100/month), **Claude Max 20×** (\$200/month)
 
 - Access to Claude Code CLI and VS Code Extension
-- Extended usage limits (5x more than free tier)
+- Extended usage limits — 5× the Pro tier on Max $100, 20× on Max $200
 - Priority access during high-traffic periods
-- Access to all Claude models (Sonnet, Opus, Haiku)
+- Access to all Claude tiers (Sonnet, Opus, Haiku)
 - Early access to new features
 
 **Best for**: Individual developers and frequent users
@@ -125,14 +127,13 @@ For programmatic access and integration:
 
 **Best for**: Teams, developers who want fine-grained control, batch processing, or integration with other tools
 
-!!! info "API Pricing (January 2026)"
-    Per million tokens:
+!!! info "API Pricing (per million tokens, as of May 2026)"
 
-    - **Claude 4.5 Sonnet**: $3 input / $15 output
-    - **Claude 4.5 Opus**: $15 input / $75 output
-    - **Claude 4.5 Haiku**: $0.25 input / $1.25 output
+    - **Claude Sonnet**: $3 input / $15 output
+    - **Claude Opus**: $15 input / $75 output
+    - **Claude Haiku**: $0.25 input / $1.25 output
 
-    For most coding tasks, Claude 4.5 Sonnet provides the best balance of capability and cost.
+    For most coding tasks, Claude Sonnet provides the best balance of capability and cost.
 
 !!! warning "Treat Your API Key Like a Password"
     **Never commit API keys to version control!**
@@ -228,11 +229,14 @@ claude --version
 ```
 
 
-Expected output:
+Expected output (the version digits will differ for your install):
 
 ```
 2.1.9 (Claude Code)
 ```
+
+!!! note "Version numbers in screenshots"
+    Several screenshots and CLI transcripts in this guide pin a specific Claude Code build (e.g. `v2.1.9`) and a specific model tier name (e.g. `Sonnet`, `Opus`, `Haiku`). The version your install reports will differ; the workflow shown is otherwise the same.
 
 #### Installation on Windows
 
@@ -363,7 +367,7 @@ In Claude, type the `/model` command:
 
 ```bash
  ▐▛███▜▌   Claude Code v2.1.9                                                                   
-▝▜█████▛▘  Sonnet 4.5 (1M context) · Claude Max                                                 
+▝▜█████▛▘  Sonnet (1M context) · Claude Max                                                 
   ▘▘ ▝▝    ~/github/intro-gpt                                                                   
                                                                                                 
 ────────────────────────────────────────────────────────────────────────────────────────────────
@@ -381,26 +385,26 @@ Select a model from the list:
 
 ```bash
  ▐▛███▜▌   Claude Code v2.1.9                                                                   
-▝▜█████▛▘  Sonnet 4.5 (1M context) · Claude Max                                                 
+▝▜█████▛▘  Sonnet (1M context) · Claude Max                                                 
   ▘▘ ▝▝    ~/github/intro-gpt                                                                   
 ────────────────────────────────────────────────────────────────────────────────────────────────
  Select model                                                                                   
  Switch between Claude models. Applies to this session and future Claude Code sessions. For     
  other/previous model names, specify with --model.                                              
                                                                                                 
-   1. Default (recommended)  Opus 4.5 · Most capable for complex work                           
-   2. Sonnet                 Sonnet 4.5 · Best for everyday tasks                               
- ❯ 3. Sonnet (1M context) ✔  Sonnet 4.5 with 1M context · Uses rate limits faster               
-   4. Haiku                  Haiku 4.5 · Fastest for quick answers    
+   1. Default (recommended)  Opus · Most capable for complex work                              
+   2. Sonnet                 Sonnet · Best for everyday tasks                                  
+ ❯ 3. Sonnet (1M context) ✔  Sonnet with 1M context · Uses rate limits faster                  
+   4. Haiku                  Haiku · Fastest for quick answers    
 ```
 
-In general, the default `Sonnet 4.5` model should be most useful (both efficient and accurate) for coding tasks.
+In general, the default `Sonnet` model should be most useful (both efficient and accurate) for coding tasks.
 
-Use the `Opus 4.5` model when creating complex plans or for analysing a new codebase
+Use the `Opus` model when creating complex plans or for analysing a new codebase
 
-Use `Sonnet 4.5 1M` for large projects (this is actually the most expensive model)
+Use `Sonnet 1M` for large projects (this is actually the most expensive option)
 
-Use `Haiku 4.5` for faster outputs that don't require complexity (Haiku is still excellent for writing code, and is the least expensive model).
+Use `Haiku` for faster outputs that don't require complexity (Haiku is still excellent for writing code, and is the least expensive tier).
 
 ### 3.2 VS Code Extension
 
@@ -1293,7 +1297,7 @@ Don't try to understand everything at once. Start with:
 
 ??? warning "Context Window Limits"
 
-    Claude has a large context window (200K tokens ≈ 150,000 words), but extremely large codebases might exceed this. If you encounter limits:
+    Claude has a large context window (hundreds of thousands of tokens, with a 1M-token tier on the largest Sonnet model), but extremely large codebases might exceed this. If you encounter limits:
 
     - Focus on specific directories
     - Use `.claudeignore` to exclude generated files, dependencies
@@ -3095,7 +3099,7 @@ Common issues and their solutions.
 
 2. **Use faster model:**
    ```bash
-   You: /model claude-4-5-haiku-20260115
+   You: /model haiku
    ```
 
 3. **Close unnecessary files (VS Code):**
@@ -3183,7 +3187,7 @@ If you're still stuck:
    - Reddit r/ClaudeAI
 
 4. **Contact support:**
-   - Pro/Team subscribers: support@anthropic.com
+   - Pro/Max/Team subscribers: support@anthropic.com
    - Include: Claude Code version, OS, error messages, steps to reproduce
 
 ---

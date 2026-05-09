@@ -889,7 +889,7 @@ journalctl -u ollama -f  # Linux with systemd
     | `qwen2.5:7b` | ~4.5GB | Strong reasoning, coding |
     | `mistral:7b` | ~4GB | General purpose |
     | `deepseek-r1:8b` | ~5GB | Advanced reasoning |
-    | `codellama:13b` | ~7GB | Specialized coding |
+    | `qwen2.5-coder:14b` | ~8GB | Specialized coding (Qwen Coder family) |
 
 === "GPU Server (24GB+ VRAM)"
 
@@ -918,11 +918,11 @@ ollama pull deepseek-r1:8b
 # General coding
 ollama pull deepseek-coder:6.7b
 
-# Code review and debugging
-ollama pull codellama:13b
+# Larger code review and debugging
+ollama pull qwen2.5-coder:14b
 
 # Fast completions
-ollama pull starcoder2:3b
+ollama pull qwen2.5-coder:1.5b
 ```
 
 **Data Analysis:**
@@ -954,6 +954,70 @@ ollama pull nomic-embed-text
 # Multilingual embeddings
 ollama pull mxbai-embed-large
 ```
+
+## Self-hosted serving beyond Ollama
+
+Ollama is an excellent on-ramp for local models, but production-style self-hosting and multi-user deployments often pair with three additional projects: **vLLM** for high-throughput serving, **LiteLLM** for unified provider routing, and **OpenWebUI** for a polished chat front-end.
+
+### vLLM
+
+[vLLM](https://github.com/vllm-project/vllm){target=_blank} is a high-throughput inference and serving engine for LLMs. It is the default choice when you need to serve open-weight models to many concurrent users from one or more GPUs.
+
+Key capabilities:
+
+- **PagedAttention** memory management that drastically reduces KV-cache fragmentation, enabling far higher batch sizes than naive serving
+- **Continuous batching** so new requests can join an in-flight batch without waiting for previous requests to complete
+- **OpenAI-compatible HTTP API** (`/v1/chat/completions`, `/v1/completions`, `/v1/embeddings`) that lets existing OpenAI client code work unchanged
+- **Tensor parallelism** for splitting large models across multiple GPUs on one host
+- **Quantization support** (AWQ, GPTQ, FP8) for fitting larger models into available VRAM
+- **Tool calling and structured output** for agentic and JSON-mode workloads
+
+A typical launch:
+
+```bash
+pip install vllm
+vllm serve meta-llama/Llama-3.3-70B-Instruct --tensor-parallel-size 2
+```
+
+Use vLLM when you have GPU hardware, need consistent latency under load, and want to expose an OpenAI-compatible endpoint to internal users or applications. For single-user laptop work, Ollama remains simpler.
+
+### LiteLLM
+
+[LiteLLM](https://github.com/BerriAI/litellm){target=_blank} is a unified API gateway and Python SDK that translates calls for 100+ LLM providers into a single OpenAI-compatible interface. You can point client code at one endpoint and route requests across Anthropic, OpenAI, Gemini, Mistral, vLLM, Ollama, AWS Bedrock, Azure OpenAI, and more.
+
+Common uses:
+
+- **Multi-provider failover** with automatic retries and fallback chains
+- **Cost tracking and budgeting** per user, project, or API key
+- **Caching, rate limiting, and logging** without code changes
+- **Mixing local and hosted models** behind one interface (route low-stakes traffic to a self-hosted vLLM/Ollama node, sensitive traffic to an enterprise provider)
+
+LiteLLM ships as both a lightweight Python library and a standalone proxy server that teams can deploy as a shared gateway.
+
+### OpenWebUI
+
+[OpenWebUI](https://github.com/open-webui/open-webui){target=_blank} is a self-hosted, ChatGPT-style web interface that connects to any OpenAI-compatible backend (Ollama, vLLM, LiteLLM, or commercial APIs). It provides multi-user accounts, conversation history, RAG knowledge collections (see [RAG](rag.md)), prompt templates, and admin controls.
+
+Pairing OpenWebUI with Ollama or vLLM gives a research group a private, branded chat interface without sending any data to a third-party provider.
+
+### Open-weight model families
+
+Specific tag and parameter counts change frequently — check the upstream library for current variants. The families below are the ones most commonly pulled through Ollama, vLLM, or Hugging Face today.
+
+| Family | License | When to use | Hardware tier |
+|--------|---------|-------------|---------------|
+| **Llama** (Meta) | Llama Community License (permissive with size threshold) | Strong general-purpose chat and instruction following; mature ecosystem and tooling support | Small variants run on laptops; large variants need multi-GPU servers |
+| **Qwen** (Alibaba) | Apache 2.0 (most variants) | Multilingual workloads, coding (Qwen Coder variants), reasoning; strong benchmarks across sizes | Wide range of tiers from laptop to multi-GPU |
+| **DeepSeek** (DeepSeek AI) | MIT or DeepSeek License (varies by release) | Reasoning-heavy tasks, math, code; flagship "R1" reasoning models with distilled smaller variants | Distilled small/medium tiers run on workstation GPUs; full models need clusters |
+| **Gemma** (Google DeepMind) | Gemma Terms of Use (permissive) | Lightweight on-device deployment, education, research; strong small-model quality | Designed for laptop and small-GPU tiers |
+| **GPT-OSS** (OpenAI) | Apache 2.0 | Open-weight generation from the OpenAI family; useful when you want OpenAI-style behavior with self-hosting | Medium and large tiers; GPU recommended |
+| **Mistral** (Mistral AI) | Apache 2.0 (most) | European data residency, multilingual, coding (Codestral) | Wide range from laptop to GPU server |
+
+!!! tip "Choosing a serving stack"
+    - **Just exploring on a laptop?** Use Ollama on its own.
+    - **Want a chat UI for your team over a single GPU box?** Ollama + OpenWebUI.
+    - **Serving many concurrent users or building production apps?** vLLM (with OpenWebUI in front, optionally LiteLLM behind it for provider routing).
+    - **Need a single endpoint that mixes self-hosted and commercial providers?** LiteLLM as a gateway in front of vLLM, Ollama, and any cloud APIs.
 
 ## Integration with Other Tools
 

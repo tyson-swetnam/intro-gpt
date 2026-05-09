@@ -326,7 +326,7 @@ VS Code's extension marketplace offers numerous AI coding assistants. Here are t
 - Interactive chat panel for complex requests
 - Terminal command generation and execution
 - Git integration for version control assistance
-- Support for Claude 4.5 Sonnet, Opus, and Haiku models
+- Support for the Claude family (Sonnet, Opus, Haiku tiers)
 
 **Installation:**
 
@@ -419,19 +419,19 @@ Suggested improvements:
 
     1. Get API key from [console.anthropic.com](https://console.anthropic.com){target=_blank}
     2. Paste key in Cline settings
-    3. Select model (Claude 4.5 Sonnet recommended)
+    3. Select model (Claude Sonnet recommended)
 
 === "OpenAI (GPT)"
 
     1. Get API key from [platform.openai.com](https://platform.openai.com/api-keys){target=_blank}
     2. Paste key in Cline settings
-    3. Select model (GPT-4o recommended)
+    3. Select model (OpenAI's flagship ChatGPT tier recommended)
 
 === "Google (Gemini)"
 
     1. Get API key from [aistudio.google.com](https://aistudio.google.com/apikey){target=_blank}
     2. Paste key in Cline settings
-    3. Select model (Gemini 2.5 Pro recommended)
+    3. Select model (Gemini Pro recommended)
 
 === "Ollama (Local)"
 
@@ -483,6 +483,24 @@ Do you want me to apply these changes?
 
 ---
 
+### Cursor
+
+:material-cursor-default-click: **[Cursor](https://www.cursor.com/){target=_blank}** is a standalone fork of VS Code rather than an extension, so you install it instead of (or alongside) VS Code. It bundles its own AI features — agent-mode multi-file edits, codebase indexing, inline chat, and tab completion — across Claude, OpenAI, and Gemini providers. Most VS Code keybindings, themes, and extensions work out of the box, making migration painless.
+
+**Pricing:** Hobby (free, limited), Pro ($20/mo) for unlimited fast completions and agent requests, Business ($40/user/mo) for SSO, admin controls, and centralized billing.
+
+**Best for:** Developers who want a turnkey agentic editor without configuring multiple extensions.
+
+---
+
+### ClawCode
+
+:material-cat: **[ClawCode](https://claw-code.codes/){target=_blank}** is an open-source clean-room rewrite of Claude Code (Rust + Python) by Sigrid Jin. It runs as a CLI but also ships a VS Code companion that surfaces the agent loop, diffs, and slash commands inside the editor. Provider-agnostic: Claude, OpenAI, and local models via Ollama or vLLM.
+
+**Best for:** Teams that want the Claude Code experience with provider choice, full source transparency, and self-hostable inference.
+
+---
+
 ### ChatGPT / CodeGPT Extensions
 
 :fontawesome-brands-openai: Several extensions bring OpenAI's GPT models to VS Code:
@@ -500,7 +518,7 @@ Do you want me to apply these changes?
 1. Open CodeGPT settings
 2. Select "OpenAI" as provider
 3. Enter your API key from [platform.openai.com](https://platform.openai.com/api-keys){target=_blank}
-4. Select model (GPT-4o or GPT-4o-mini)
+4. Select model (GPT flagship or GPT mini tier)
 
 !!! info "OpenAI Account Setup"
 
@@ -646,7 +664,7 @@ Run AI models locally for privacy, offline access, and cost savings. See our ful
 
     ```bash
     # Recommended for coding
-    ollama pull codellama:13b
+    ollama pull qwen2.5-coder:7b
 
     # Or for general use
     ollama pull llama3.2:latest
@@ -682,7 +700,7 @@ Cline (via local Codellama): [Provides explanation and modified code]
     | Model | Size | RAM Needed | Best For |
     |-------|------|------------|----------|
     | `qwen2.5-coder:7b` | 4.7GB | 8GB | Fast coding on laptops |
-    | `codellama:13b` | 7.4GB | 16GB | Balanced coding |
+    | `qwen2.5-coder:7b` | 4.7GB | 16GB | Balanced coding (Qwen Coder family) |
     | `deepseek-coder:33b` | 19GB | 32GB | Complex coding tasks |
     | `codestral:latest` | 12GB | 24GB | Multi-language coding |
 

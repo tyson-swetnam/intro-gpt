@@ -83,23 +83,23 @@ The Model Context Protocol is an open standard that enables Claude to interact w
 
 !!! info "Subscription Plans and Pricing"
 
-    *   **Claude Free:** Access to Claude 4.5 Sonnet with usage limits
+    *   **Claude Free:** Access to Claude Sonnet with usage limits
     *   **Claude Pro ($20/month):**
         - 5x more usage vs free tier
-        - Access to Claude 4.5 Opus and Claude 4.5 Haiku
+        - Access to Claude Opus and Claude Haiku
         - Priority access during high-traffic periods
         - Early access to new features
-    *   **Claude Max ($100-200/month):**
-        - Extended usage limits
-        - Priority access to newest models
-    *   **Claude Team ($25-30/user/month, min 5 users):**
+    *   **Claude Max 5× ($100/month)** and **Claude Max 20× ($200/month):**
+        - Extended usage limits (5× and 20× the Pro tier)
+        - Priority access to the newest models
+    *   **Claude Team ($25–30/user/month, min 5 users):**
         - Everything in Pro
         - Central billing and administration
         - Team collaboration features
-    *   **API Pricing (per million tokens, as of January 2026):**
-        - Claude 4.5 Sonnet: $3 input / $15 output
-        - Claude 4.5 Opus: $15 input / $75 output
-        - Claude 4.5 Haiku: $0.25 input / $1.25 output
+    *   **API Pricing (per million tokens, as of May 2026):**
+        - Claude Sonnet: $3 input / $15 output
+        - Claude Opus: $15 input / $75 output
+        - Claude Haiku: $0.25 input / $1.25 output
 
     **Compare with other AI platforms:** See [Choosing the Right AI Platform](choose.md) for detailed comparisons with ChatGPT, Gemini, and more.
 
@@ -148,7 +148,7 @@ The Model Context Protocol is an open standard that enables Claude to interact w
     client = Anthropic(api_key="your-api-key")
     
     response = client.messages.create(
-        model="claude-4-5-sonnet-20260115",
+        model="claude-sonnet-latest",  # see https://docs.anthropic.com for the current Sonnet model ID
         max_tokens=1000,
         messages=[
             {"role": "user", "content": "Hello, Claude!"}
@@ -173,33 +173,30 @@ Claude is a family of large language models (LLMs) developed by Anthropic, a com
 *   **Helpful and Honest Responses:** Designed with Constitutional AI for safer, more aligned outputs
 *   **Advanced Reasoning:** Excels at complex analysis, math, and multi-step problem-solving
 *   **Strong Coding Abilities:** Excellent for software development, debugging, and code review
-*   **Large Context Window:** Up to 200,000 tokens (approximately 150,000 words or 500 pages)
+*   **Large Context Window:** Hundreds of thousands of tokens, with a 1M-token tier on the largest Sonnet model — see Anthropic docs for current limits
 *   **Vision Capabilities:** Can analyze images, charts, diagrams, and screenshots
 
 ## Claude Model Family
 
-**Latest Models (January 2026):**
+The Claude family ships in three tiers. Specific model snapshot IDs change with each release; pull the current ID from the [Anthropic models documentation](https://docs.anthropic.com/en/docs/about-claude/models) when calling the API.
 
-*   **Claude 4.5 Sonnet:**
-    - Most capable balanced model
+*   **Claude Sonnet:**
+    - Balanced flagship model
     - Best for coding, analysis, and creative tasks
     - Excellent performance-to-cost ratio
-    - Model ID: `claude-4-5-sonnet-20260115`
 
-*   **Claude 4.5 Opus:**
-    - Most capable flagship model
-    - Best for complex reasoning and advanced tasks
-    - Highest intelligence and capability
-    - Model ID: `claude-4-5-opus-20251101`
+*   **Claude Opus:**
+    - Most capable model
+    - Best for complex reasoning and advanced multi-step tasks
+    - Highest intelligence and capability tier
 
-*   **Claude 4.5 Haiku:**
+*   **Claude Haiku:**
     - Fast and cost-effective
     - Great for simple tasks and high-volume applications
     - Optimized for speed and efficiency
-    - Model ID: `claude-4-5-haiku-20260115`
 
 !!! note "Model Selection"
-    Claude 4.5 Sonnet is recommended for most use cases as it offers the best combination of capability, speed, and cost. Use Opus for tasks requiring maximum intelligence and reasoning, and Haiku for high-volume, simple tasks.
+    Claude Sonnet is recommended for most use cases as it offers the best combination of capability, speed, and cost. Use Opus for tasks requiring maximum intelligence and reasoning, and Haiku for high-volume, simple tasks.
 
 
 ## Further Resources

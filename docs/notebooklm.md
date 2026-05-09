@@ -82,7 +82,7 @@
 
 ## NotebookLM Plus
 
-Like most Google products, NotebookLM has a freemium model where the tool is available for free to anyone, but with limitations. Power users can get NotebookLM Plus for a subscription fee. Please check the technical documentation for how to get [NotebookLM Plus](https://support.google.com/notebooklm/answer/15678219).
+Like most Google products, NotebookLM has a freemium model — the tool is available for free with usage limits. **NotebookLM Plus** is bundled with **[Google AI Pro](gemini.md) ($19.99/mo)**, which is **free for verified university students for 1 year**. NotebookLM Plus raises notebook, source, and audio-overview limits and enables team-shared notebooks. See the [NotebookLM Plus documentation](https://support.google.com/notebooklm/answer/15678219){target=_blank} for current details.
 
 
 

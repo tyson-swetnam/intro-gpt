@@ -184,6 +184,13 @@ Fork of Cline focused on rapid feature development and customization. Serves use
 
 **Best for**: Early adopters wanting cutting-edge features and customization options.
 
+**[:material-cat: ClawCode](https://claw-code.codes/)**
+:material-microsoft-visual-studio-code: :simple-gnubash: :material-open-source-initiative:
+
+Clean-room open-source rewrite of Claude Code in Rust + Python. Multi-provider by design — drive it with Claude, OpenAI models, or local models via Ollama or vLLM — with the same agentic loop, tool use, and slash-command ergonomics as the official client. Distributed under a permissive license with an active community on GitHub.
+
+**Best for**: Teams that want the Claude Code workflow but need provider flexibility, on-prem deployment, or full source-code transparency for security review.
+
 **[:octicons-copilot-16: GitHub Copilot](vibe.md#github-copilot)**
 :material-microsoft-visual-studio-code: :octicons-codespaces-16:
 
@@ -213,6 +220,13 @@ Official Anthropic command-line interface enabling AI-assisted development from 
 Popular open-source command-line tool for AI-driven coding. Works with local or remote LLMs and integrates well with Git workflows.
 
 **Best for**: Developers who prefer command-line workflows and want model flexibility.
+
+**[:material-code-braces: OpenCode](https://opencode.ai/)**
+:simple-gnubash: :material-open-source-initiative:
+
+Terminal-first open-source coding agent built around an editable plan/diff loop. Provider-agnostic (Claude, OpenAI, Gemini, local models), minimal dependencies, designed to live next to your shell, tmux, and editor.
+
+**Best for**: CLI-native developers who want a transparent, hackable agent and provider choice.
 
 #### Browser-Based Development
 
@@ -383,7 +397,7 @@ AI models are trained on public code repositories, which may contain:
 **Tools with Enhanced Privacy:**
 
 - [Cline](vibe.md#cline) and [Roo Code](vibe.md#roo-code): Can use local models via Ollama
-- [Aider](https://aider.chat/) and [OpenCode.ai](https://opencode.ai): Supports local LLMs
+- [Aider](https://aider.chat/), [OpenCode](https://opencode.ai), and [ClawCode](https://claw-code.codes/): Support local LLMs
 - Claude Desktop with [MCP](mcp.md): Data processing happens locally before being sent to API
 
 ### Accessibility and Inclusive Development
