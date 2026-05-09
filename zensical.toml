@@ -12,12 +12,7 @@ docs_dir = "docs"
 site_dir = "site"
 
 extra_css = [
-    "stylesheets/extra.css",
-    "chatbot_widget.css"
-]
-
-extra_javascript = [
-    "chatbot_widget.js"
+    "stylesheets/extra.css"
 ]
 
 [project.repo]
