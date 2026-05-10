@@ -235,7 +235,7 @@ ChatGPT could then explain the issue (in this case, a common pitfall with JavaSc
 !!! warning "Limitations"
     Remember, while ChatGPT is knowledgeable in many programming languages and concepts, it doesn't replace a full Integrated Development Environment (IDE) or debugger and should be used as a supplementary tool for coding assistance.
 
-### Popular Uses of Prompt Engineering in Research (Data Science and Code Interpreters)
+### Popular Uses of Prompt Engineering in Research (Data Science and Code Generation)
 
 *   **Data Cleaning and Preprocessing:** Automate the process of cleaning and preparing data for analysis, including handling missing values, data normalization, and outlier detection.
 *   **Code Generation:** Generate code snippets for specific data analysis tasks, such as statistical tests, data visualization, and machine learning model implementation.

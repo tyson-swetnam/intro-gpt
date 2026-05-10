@@ -3454,13 +3454,6 @@ Explore these related topics to deepen your understanding:
 - Explore advanced agent patterns
 - See how agents transform software development
 
-**[:material-code-braces: Code Interpreters](code.md)**
-
-- Understand code execution fundamentals
-- Compare sandboxed vs local execution
-- Security and privacy considerations
-- Best practices for AI-generated code
-
 **[:simple-jupyter: Jupyter AI](jupyter.md)**
 
 - Integrate Claude with Jupyter notebooks

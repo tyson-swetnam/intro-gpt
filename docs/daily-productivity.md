@@ -18,10 +18,44 @@ Prompt engineering can significantly enhance your productivity. In particular wh
 *   **Language Translation:** Translate documents or conversations in real-time, facilitating communication with international colleagues or clients.
 *   **Learning and Skill Development:** Get quick explanations of complex topics, find learning resources, and even practice new skills through simulated scenarios.
 
-In our [:material-run-fast: Code Interpreter](code.md) lesson we discuss how GPTs can be used for:
+---
 
-*   **Code Generation and Debugging:** Write basic code snippets, find and fix bugs in existing code, and understand complex code segments.
-*   **Data Analysis and Interpretation:** Summarize datasets, identify trends, and generate reports from raw data.
+## Data analysis without writing code
+
+Every major chat LLM now ships with built-in sandboxed code execution. You upload a file (CSV, spreadsheet, image), ask a question in plain English, and the model writes Python, runs it, and shows you the result. That makes statistical analysis, data cleaning, and chart generation accessible without programming experience — useful when you want results, not code.
+
+**What it's good for:**
+
+- **Data analysis and visualization** — process datasets and create charts without writing code
+- **File conversions** — transform formats (CSV to JSON, image format conversions)
+- **Mathematical computations** — solve equations and perform statistical analyses
+- **Prototyping** — quickly test algorithms or data-processing workflows
+- **Learning** — experiment with programming concepts in a safe sandbox
+
+**Available on:**
+
+- :fontawesome-brands-openai: ChatGPT — Advanced Data Analysis (Plus/Team)
+- :simple-anthropic: Claude — Artifacts (Pro+, Python sandbox)
+- :simple-google: Gemini — chat plus Workspace integration
+- :material-brain: Perplexity Pro — web search plus Python execution
+
+For a current side-by-side comparison of pricing, file-size limits, and supported file types, see [Choosing a Platform](choose.md). For software development (where the AI runs code on *your* machine, not a sandbox), see [Vibe Coding](vibe.md).
+
+!!! example "Data analysis on the Palmer Penguins dataset"
+
+    Imagine you're a researcher with a dataset of measurements. You could upload a CSV to ChatGPT, Claude, or Gemini and prompt:
+
+    ```
+    Analyze the CSV https://raw.githubusercontent.com/allisonhorst/palmerpenguins/main/inst/extdata/penguins.csv
+
+    1.  Load the dataset into a Pandas DataFrame.
+    2.  Clean the data by handling any missing values.
+    3.  Generate a scatter plot to visualize the relationship between key variables.
+    4.  Calculate the Pearson correlation coefficient between these two variables.
+    5.  Interpret the results and provide a brief summary.
+    ```
+
+    The platform will write and run Python to perform each step, showing you the code, the output, and the final analysis — no local Python install required.
 
 ---
 
