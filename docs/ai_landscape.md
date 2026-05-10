@@ -2,6 +2,24 @@
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 
+??? Info "Where Generative AI and LLMs fit in the broader AI family"
+
+    Generative AI and Large Language Models (LLMs) are **one branch** of a much older, broader field. The lay-of-the-land:
+
+    - **Artificial Intelligence (AI)** — the umbrella: any system that performs tasks normally requiring human intelligence.
+        - **Machine Learning (ML)** — AI systems that learn patterns from data instead of following hand-coded rules.
+            - **Supervised Learning** — learn from labeled examples (classification, regression, most disease-prediction models).
+            - **Unsupervised Learning** — find structure in unlabeled data (clustering, dimensionality reduction).
+            - **Reinforcement Learning (RL)** — learn from rewards and penalties (game-playing, robotics, RLHF for chatbot alignment).
+        - **Deep Learning** — ML using deep, multi-layer neural networks; the foundation of nearly every modern AI capability.
+            - **Natural Language Processing (NLP)** — AI for human language; modern NLP is dominated by transformer-based deep-learning models.
+            - **Computer Vision** — AI for images and video.
+            - **Generative AI** — models that produce *new* content (text, images, code, audio, video).
+                - **Large Language Models (LLMs)** — generative models trained on text. ChatGPT, Claude, Gemini, Llama. The primary subject of this workshop.
+                - **Diffusion Models** — generative models for images and video (Stable Diffusion, DALL-E, Sora, Veo).
+
+    The categories blur in practice. Most "agentic AI" in 2026 combines an LLM (generative AI) with reinforcement-learning techniques (RLHF for alignment, RL for tool-use training) and classical search/planning algorithms. Use the map to locate where a specific tool sits — not to draw neat fences around it.
+
 ## The Generative AI Landscape in 2026
 
 The generative AI landscape has transformed dramatically since the release of ChatGPT in November 2022. What began as text-generation models has exploded into a diverse ecosystem of platforms capable of creating text, images, video, code, and music—while also evolving from simple chatbots into sophisticated **agentic systems** that can autonomously complete complex tasks.
@@ -287,6 +305,59 @@ MCP enables agents to:
 - Query cloud services (GitHub, Slack, Google Drive, etc.)
 
 **Security Note**: MCP runs locally with explicit user permission for each connection. See our [MCP documentation](mcp.md) for setup instructions.
+
+---
+
+## Digital Twins
+
+A **[digital twin](https://en.wikipedia.org/wiki/Digital_twin){target=_blank}** is a virtual replica of a physical system — a factory, an aircraft engine, a supply chain, a city, an organ, an ecosystem — kept in sync with the real thing through live sensor data. The concept predates the current AI wave (the term goes back to NASA's Apollo program), but generative AI and large multimodal models have changed what twins can do.
+
+### Where AI plugs into a digital twin
+
+- **Anomaly detection** on streaming telemetry — flag unusual sensor patterns before failures cascade.
+- **Synthetic data generation** — train models on rare-event scenarios that would be unsafe or impossible to collect on the real system.
+- **Natural-language interfaces** — LLMs let domain experts query a complex twin in plain English ("show me the bearings that have drifted >2σ in the last 24 hours").
+- **Forward simulation** — agentic systems can rehearse plans inside the twin before executing them on the real asset.
+
+### Examples deployed in 2026
+
+| Domain | System | What it twins |
+|---|---|---|
+| Earth science | NVIDIA Earth-2 | Global climate at km-scale resolution |
+| Manufacturing | NVIDIA Omniverse | Factories, robots, production lines |
+| Industrial | Siemens Xcelerator | Power grids, rail networks, building systems |
+| Healthcare | Patient and organ twins (heart, lung, tumor) | Personalized treatment simulation |
+| Urban | Virtual Singapore, Helsinki 3D+ | City-scale traffic, energy, planning |
+
+Digital twins are most useful when they're **instrumented** (live data flowing in) and **actionable** (decisions flow back out). An LLM that talks to a twin without those two loops is just a chatbot with extra steps.
+
+---
+
+## World Models
+
+A **world model** is an AI system that learns an internal representation of how the world behaves — physics, causality, agent interactions — and can simulate forward in time to predict the consequences of actions. The modern formulation is from [Ha & Schmidhuber (2018)](https://arxiv.org/abs/1803.10122){target=_blank}; the idea has become tractable at scale only in the last two years.
+
+World models matter because they're the missing piece between today's reactive agents and tomorrow's agents that can *plan*: a system with a good enough world model can rehearse hundreds of candidate plans against its internal simulation before committing to one in reality.
+
+### How world models differ from generative video
+
+[Interactive Generative Video](#from-text-generation-to-world-simulation) (covered earlier in this page) is one expression of world-model research, but the broader category covers more than video output:
+
+| Property | Generative video | World model |
+|---|---|---|
+| Primary output | Video frames | Internal state representation; output can be video, language, action, or all three |
+| Training goal | Plausible-looking content | Accurate forward prediction of consequences |
+| Typical use | Entertainment, content creation | Planning, control, embodied AI, robotics |
+
+### Examples in 2026
+
+- **[Genie 3](https://deepmind.google/blog/genie-3-a-new-frontier-for-world-models/){target=_blank}** (Google DeepMind) — generates playable 3D environments from a single image or text prompt. Covered in detail in the [Interactive Generative Video](#from-text-generation-to-world-simulation) section above.
+- **V-JEPA 2** (Meta) — learns physical-world dynamics from video and is used for robot planning.
+- **GAIA-1** (Wayve) — autonomous-driving world model that predicts how a driving scene unfolds given the ego-vehicle's actions.
+- **NVIDIA Cosmos** — open foundation models for "physical AI"; the platform layer being used to build world models for robotics and autonomous systems.
+- **[Sora](https://openai.com/sora){target=_blank}** (OpenAI) and **Veo** (Google DeepMind) — video generators that learn implicit world physics. Their failure modes (object-permanence violations, gravity slips, hands with too many fingers) are diagnostic of how complete the implicit world model actually is.
+
+A useful rule of thumb: if you can ask the system "what happens if I do X?" and the answer can be acted on, it's a world model. If you can only ask "what does this scene look like?", it's still generative video.
 
 ---
 
