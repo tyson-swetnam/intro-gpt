@@ -2840,7 +2840,7 @@
 <tbody>
 <tr>
 <td>Text Generation</td>
-<td>Llama 3, Mistral, Qwen</td>
+<td>Llama, Mistral, Qwen</td>
 <td>Writing assistance, code generation, analysis</td>
 </tr>
 <tr>
@@ -2914,9 +2914,9 @@
 </span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://ollama.com/install.sh<span class="w"> </span><span class="p">|</span><span class="w"> </span>sh
 </span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
 </span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="c1"># Run popular models directly</span>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>ollama<span class="w"> </span>run<span class="w"> </span>llama3.2
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>ollama<span class="w"> </span>run<span class="w"> </span>llama
 </span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>ollama<span class="w"> </span>run<span class="w"> </span>mistral
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>ollama<span class="w"> </span>run<span class="w"> </span>qwen2.5
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>ollama<span class="w"> </span>run<span class="w"> </span>qwen
 </span></code></pre></div>
 <p>Ollama automatically downloads optimized versions of models from Hugging Face.</p>
 <h3 id="method-2-using-huggingface-cli">Method 2: Using huggingface-cli<a class="headerlink" href="#method-2-using-huggingface-cli" title="Permanent link">&para;</a></h3>
@@ -2986,23 +2986,24 @@
 <div class="language-python highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">llama_cpp</span><span class="w"> </span><span class="kn">import</span> <span class="n">Llama</span>
 </span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>
 </span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="c1"># Download a GGUF model from Hugging Face</span>
-</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="c1"># Example: https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.2-GGUF</span>
-</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>
-</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="n">llm</span> <span class="o">=</span> <span class="n">Llama</span><span class="p">(</span>
-</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>    <span class="n">model_path</span><span class="o">=</span><span class="s2">&quot;./models/mistral-7b-instruct-v0.2.Q4_K_M.gguf&quot;</span><span class="p">,</span>
-</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>    <span class="n">n_ctx</span><span class="o">=</span><span class="mi">4096</span><span class="p">,</span>      <span class="c1"># Context window</span>
-</span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>    <span class="n">n_threads</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span>     <span class="c1"># CPU threads</span>
-</span><span id="__span-9-10"><a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>    <span class="n">n_gpu_layers</span><span class="o">=</span><span class="mi">35</span>  <span class="c1"># Layers to offload to GPU (0 for CPU-only)</span>
-</span><span id="__span-9-11"><a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a><span class="p">)</span>
-</span><span id="__span-9-12"><a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>
-</span><span id="__span-9-13"><a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a><span class="n">output</span> <span class="o">=</span> <span class="n">llm</span><span class="p">(</span>
-</span><span id="__span-9-14"><a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a>    <span class="s2">&quot;What are the key differences between supervised and unsupervised learning?&quot;</span><span class="p">,</span>
-</span><span id="__span-9-15"><a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a>    <span class="n">max_tokens</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span>
-</span><span id="__span-9-16"><a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a>    <span class="n">temperature</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span>
-</span><span id="__span-9-17"><a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a>    <span class="n">echo</span><span class="o">=</span><span class="kc">False</span>
-</span><span id="__span-9-18"><a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a><span class="p">)</span>
-</span><span id="__span-9-19"><a id="__codelineno-9-19" name="__codelineno-9-19" href="#__codelineno-9-19"></a>
-</span><span id="__span-9-20"><a id="__codelineno-9-20" name="__codelineno-9-20" href="#__codelineno-9-20"></a><span class="nb">print</span><span class="p">(</span><span class="n">output</span><span class="p">[</span><span class="s2">&quot;choices&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s2">&quot;text&quot;</span><span class="p">])</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="c1"># Example: a 7B-class Mistral instruct model in GGUF format</span>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="c1"># (search the Hub for the current canonical GGUF release)</span>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="n">llm</span> <span class="o">=</span> <span class="n">Llama</span><span class="p">(</span>
+</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>    <span class="n">model_path</span><span class="o">=</span><span class="s2">&quot;./models/mistral-7b-instruct-v0.2.Q4_K_M.gguf&quot;</span><span class="p">,</span>
+</span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>    <span class="n">n_ctx</span><span class="o">=</span><span class="mi">4096</span><span class="p">,</span>      <span class="c1"># Context window</span>
+</span><span id="__span-9-10"><a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>    <span class="n">n_threads</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span>     <span class="c1"># CPU threads</span>
+</span><span id="__span-9-11"><a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>    <span class="n">n_gpu_layers</span><span class="o">=</span><span class="mi">35</span>  <span class="c1"># Layers to offload to GPU (0 for CPU-only)</span>
+</span><span id="__span-9-12"><a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a><span class="p">)</span>
+</span><span id="__span-9-13"><a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a>
+</span><span id="__span-9-14"><a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a><span class="n">output</span> <span class="o">=</span> <span class="n">llm</span><span class="p">(</span>
+</span><span id="__span-9-15"><a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a>    <span class="s2">&quot;What are the key differences between supervised and unsupervised learning?&quot;</span><span class="p">,</span>
+</span><span id="__span-9-16"><a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a>    <span class="n">max_tokens</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span>
+</span><span id="__span-9-17"><a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a>    <span class="n">temperature</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span>
+</span><span id="__span-9-18"><a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a>    <span class="n">echo</span><span class="o">=</span><span class="kc">False</span>
+</span><span id="__span-9-19"><a id="__codelineno-9-19" name="__codelineno-9-19" href="#__codelineno-9-19"></a><span class="p">)</span>
+</span><span id="__span-9-20"><a id="__codelineno-9-20" name="__codelineno-9-20" href="#__codelineno-9-20"></a>
+</span><span id="__span-9-21"><a id="__codelineno-9-21" name="__codelineno-9-21" href="#__codelineno-9-21"></a><span class="nb">print</span><span class="p">(</span><span class="n">output</span><span class="p">[</span><span class="s2">&quot;choices&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s2">&quot;text&quot;</span><span class="p">])</span>
 </span></code></pre></div>
 <h3 id="option-3-text-generation-web-ui">Option 3: Text Generation Web UI<a class="headerlink" href="#option-3-text-generation-web-ui" title="Permanent link">&para;</a></h3>
 <p>For a graphical interface, <a href="https://github.com/oobabooga/text-generation-webui" target="_blank">text-generation-webui</a> provides a ChatGPT-like experience for local models.</p>
@@ -3024,7 +3025,7 @@
 <td>General tasks, runs on laptops</td>
 </tr>
 <tr>
-<td><a href="https://huggingface.co/Qwen/Qwen2.5-3B-Instruct" target="_blank">Qwen2.5-3B-Instruct</a></td>
+<td><a href="https://huggingface.co/Qwen/Qwen2.5-3B-Instruct" target="_blank">Qwen2.5-3B-Instruct</a> (representative of the Qwen 3B-class instruct family)</td>
 <td>3B</td>
 <td>Multilingual, good reasoning</td>
 </tr>
@@ -3051,12 +3052,12 @@
 <td>Balanced performance</td>
 </tr>
 <tr>
-<td><a href="https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3" target="_blank">Mistral-7B-Instruct</a></td>
+<td><a href="https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3" target="_blank">Mistral-7B-Instruct</a> (a long-standing 7B-class instruct release; check the Hub for newer revisions)</td>
 <td>7B</td>
 <td>Excellent general purpose</td>
 </tr>
 <tr>
-<td><a href="https://huggingface.co/Qwen/Qwen2.5-7B-Instruct" target="_blank">Qwen2.5-7B-Instruct</a></td>
+<td><a href="https://huggingface.co/Qwen/Qwen2.5-7B-Instruct" target="_blank">Qwen2.5-7B-Instruct</a> (representative of the Qwen 7B-class instruct family)</td>
 <td>7B</td>
 <td>Strong reasoning, coding</td>
 </tr>
@@ -3078,13 +3079,13 @@
 <td>Near-frontier performance</td>
 </tr>
 <tr>
-<td><a href="https://huggingface.co/Qwen/Qwen2.5-72B-Instruct" target="_blank">Qwen2.5-72B-Instruct</a></td>
+<td><a href="https://huggingface.co/Qwen/Qwen2.5-72B-Instruct" target="_blank">Qwen2.5-72B-Instruct</a> (representative of Qwen's flagship 70B-class instruct model)</td>
 <td>72B</td>
-<td>State-of-the-art open model</td>
+<td>Strong open-weights option in the 70B-class tier</td>
 </tr>
 <tr>
-<td><a href="https://huggingface.co/deepseek-ai/DeepSeek-R1" target="_blank">DeepSeek-R1</a></td>
-<td>671B</td>
+<td><a href="https://huggingface.co/deepseek-ai/DeepSeek-R1" target="_blank">DeepSeek-R1</a> (DeepSeek's flagship reasoning release)</td>
+<td>600B+</td>
 <td>Advanced reasoning (requires cluster)</td>
 </tr>
 </tbody>

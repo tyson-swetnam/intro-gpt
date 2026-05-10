@@ -3511,7 +3511,7 @@
 <li>Interactive chat panel for complex requests</li>
 <li>Terminal command generation and execution</li>
 <li>Git integration for version control assistance</li>
-<li>Support for Claude 4.5 Sonnet, Opus, and Haiku models</li>
+<li>Support for Claude models across the Opus, Sonnet, and Haiku tiers</li>
 </ul>
 <p><strong>Installation:</strong></p>
 <ol>
@@ -3567,9 +3567,14 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>Individual</strong></td>
+<td><strong>Individual / Pro</strong></td>
 <td>$10/month</td>
 <td>Code completions, chat</td>
+</tr>
+<tr>
+<td><strong>Pro+</strong></td>
+<td>$39/user/month</td>
+<td>Claude Opus access, 5x Pro premium requests</td>
 </tr>
 <tr>
 <td><strong>Business</strong></td>
@@ -3582,12 +3587,16 @@
 <td>Advanced security, fine-tuning</td>
 </tr>
 <tr>
-<td><strong>Free for Education</strong></td>
+<td><strong>Free for Education (Free Pro)</strong></td>
 <td>$0</td>
-<td>Full access for verified students/educators</td>
+<td>Full access for verified students, educators, and OSS maintainers</td>
 </tr>
 </tbody>
 </table>
+<div class="admonition warning">
+<p class="admonition-title">Billing change (May 2026)</p>
+<p>GitHub Copilot transitions to usage-based billing with monthly AI Credits effective June 1, 2026 --- see vendor pricing page.</p>
+</div>
 <div class="admonition info">
 <p class="admonition-title">See Full Setup Instructions</p>
 <p>For detailed GitHub Copilot setup, see our <a href="../copilot/">GitHub Copilot guide</a>.</p>
@@ -3620,21 +3629,21 @@
 <ol>
 <li>Get API key from <a href="https://console.anthropic.com" target="_blank">console.anthropic.com</a></li>
 <li>Paste key in Cline settings</li>
-<li>Select model (Claude 4.5 Sonnet recommended)</li>
+<li>Select a model (a current Claude Sonnet-tier model is a good default)</li>
 </ol>
 </div>
 <div class="tabbed-block">
 <ol>
 <li>Get API key from <a href="https://platform.openai.com/api-keys" target="_blank">platform.openai.com</a></li>
 <li>Paste key in Cline settings</li>
-<li>Select model (GPT-4o recommended)</li>
+<li>Select a model (see the <a href="https://platform.openai.com/docs/models" target="_blank">OpenAI models documentation</a> for current options)</li>
 </ol>
 </div>
 <div class="tabbed-block">
 <ol>
 <li>Get API key from <a href="https://aistudio.google.com/apikey" target="_blank">aistudio.google.com</a></li>
 <li>Paste key in Cline settings</li>
-<li>Select model (Gemini 2.5 Pro recommended)</li>
+<li>Select a model (a current Gemini Pro-tier model is a good default)</li>
 </ol>
 </div>
 <div class="tabbed-block">
@@ -3696,7 +3705,7 @@
 <li>Open CodeGPT settings</li>
 <li>Select "OpenAI" as provider</li>
 <li>Enter your API key from <a href="https://platform.openai.com/api-keys" target="_blank">platform.openai.com</a></li>
-<li>Select model (GPT-4o or GPT-4o-mini)</li>
+<li>Select a current OpenAI model (see the <a href="https://platform.openai.com/docs/models" target="_blank">OpenAI models documentation</a> for available options across capability and cost tiers)</li>
 </ol>
 <div class="admonition info">
 <p class="admonition-title">OpenAI Account Setup</p>
@@ -3906,7 +3915,7 @@
 </span><span id="__span-15-5"><a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>ollama<span class="w"> </span>pull<span class="w"> </span>llama3.2:latest
 </span><span id="__span-15-6"><a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a>
 </span><span id="__span-15-7"><a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a><span class="c1"># Or for smaller machines</span>
-</span><span id="__span-15-8"><a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a>ollama<span class="w"> </span>pull<span class="w"> </span>qwen2.5-coder:7b
+</span><span id="__span-15-8"><a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a>ollama<span class="w"> </span>pull<span class="w"> </span>qwen
 </span></code></pre></div>
 </li>
 <li>
@@ -3937,34 +3946,34 @@
 <table>
 <thead>
 <tr>
-<th>Model</th>
-<th>Size</th>
+<th>Model family</th>
+<th>Size class</th>
 <th>RAM Needed</th>
 <th>Best For</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>qwen2.5-coder:7b</code></td>
-<td>4.7GB</td>
+<td>Qwen coder (7B class)</td>
+<td>~5GB</td>
 <td>8GB</td>
 <td>Fast coding on laptops</td>
 </tr>
 <tr>
-<td><code>codellama:13b</code></td>
-<td>7.4GB</td>
+<td>Code Llama (13B class)</td>
+<td>~7GB</td>
 <td>16GB</td>
 <td>Balanced coding</td>
 </tr>
 <tr>
-<td><code>deepseek-coder:33b</code></td>
-<td>19GB</td>
+<td>DeepSeek coder (large)</td>
+<td>~19GB</td>
 <td>32GB</td>
 <td>Complex coding tasks</td>
 </tr>
 <tr>
-<td><code>codestral:latest</code></td>
-<td>12GB</td>
+<td>Codestral</td>
+<td>~12GB</td>
 <td>24GB</td>
 <td>Multi-language coding</td>
 </tr>

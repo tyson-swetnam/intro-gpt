@@ -5363,7 +5363,7 @@
 <h2 id="2-prerequisites-account-setup">2. Prerequisites &amp; Account Setup<a class="headerlink" href="#2-prerequisites-account-setup" title="Permanent link">&para;</a></h2>
 <h3 id="21-account-options">2.1 Account Options<a class="headerlink" href="#21-account-options" title="Permanent link">&para;</a></h3>
 <h4 id="option-1-claudeai">Option 1: Claude.ai<a class="headerlink" href="#option-1-claudeai" title="Permanent link">&para;</a></h4>
-<p><strong>Claude</strong> ($20/month), <strong>Claude Pro</strong> ($100/month), <strong>Claude Pro Max</strong> ($200/month) </p>
+<p><strong>Claude Pro</strong> ($20/month), <strong>Claude Max</strong> ($100/month, 5x Pro), <strong>Claude Max</strong> ($200/month, 20x Pro) </p>
 <ul>
 <li>Access to Claude Code CLI and VS Code Extension</li>
 <li>Extended usage limits (5x more than free tier)</li>
@@ -5383,14 +5383,14 @@
 </ul>
 <p><strong>Best for</strong>: Teams, developers who want fine-grained control, batch processing, or integration with other tools</p>
 <div class="admonition info">
-<p class="admonition-title">API Pricing (January 2026)</p>
-<p>Per million tokens:</p>
+<p class="admonition-title">API Pricing by tier</p>
+<p>Per million tokens, as of May 2026 (see <a href="https://docs.claude.com/en/docs/about-claude/models" target="_blank">docs.claude.com</a> for current rates):</p>
 <ul>
-<li><strong>Claude 4.5 Sonnet</strong>: $3 input / $15 output</li>
-<li><strong>Claude 4.5 Opus</strong>: $15 input / $75 output</li>
-<li><strong>Claude 4.5 Haiku</strong>: $0.25 input / $1.25 output</li>
+<li><strong>Sonnet</strong> (balanced): $3 input / $15 output</li>
+<li><strong>Opus</strong> (flagship, Opus 4.5+): $5 input / $25 output</li>
+<li><strong>Haiku</strong> (Haiku 4.5, fast &amp; cost-efficient): $1 input / $5 output</li>
 </ul>
-<p>For most coding tasks, Claude 4.5 Sonnet provides the best balance of capability and cost.</p>
+<p>For most coding tasks, the Sonnet tier provides the best balance of capability and cost.</p>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">Treat Your API Key Like a Password</p>
@@ -7968,7 +7968,7 @@ Perfect! I'll update the plan to include:
 </li>
 <li>
 <p><strong>Use faster model:</strong>
-   <div class="language-bash highlight"><pre><span></span><code><span id="__span-116-1"><a id="__codelineno-116-1" name="__codelineno-116-1" href="#__codelineno-116-1"></a>You:<span class="w"> </span>/model<span class="w"> </span>claude-4-5-haiku-20260115
+   <div class="language-bash highlight"><pre><span></span><code><span id="__span-116-1"><a id="__codelineno-116-1" name="__codelineno-116-1" href="#__codelineno-116-1"></a>You:<span class="w"> </span>/model<span class="w"> </span>claude-haiku-latest<span class="w">  </span><span class="c1"># alias; pin a dated ID for production — see https://docs.claude.com/en/docs/about-claude/models</span>
 </span></code></pre></div></p>
 </li>
 <li>

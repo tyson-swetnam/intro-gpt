@@ -1875,6 +1875,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#concrete-examples-in-public-health" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Concrete examples in public health
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#assessment" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
@@ -2201,6 +2212,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#concrete-examples-in-public-health" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Concrete examples in public health
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#assessment" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
@@ -2286,6 +2308,20 @@
 <p><strong>Fairness Metrics</strong> - equalized odds, demographic parity, counterfactual fairness</p>
 <p><strong>Algorithmic Adjustments</strong> - pre-processing (adjusting training data), in-process (modifying algorithm), or post-processing (adjust outputs)</p>
 <p><strong>Explainable AI (XAI)</strong> - understand which inputs are driving model decisions, reveal hidden biases or reliance on spurious factors</p>
+<h2 id="concrete-examples-in-public-health">Concrete examples in public health<a class="headerlink" href="#concrete-examples-in-public-health" title="Permanent link">&para;</a></h2>
+<p>The categories above are easier to remember when you can map each to a deployed system that caused real harm. Three to anchor:</p>
+<div class="admonition warning">
+<p class="admonition-title">Pulse-oximeter racial bias (measurement bias)</p>
+<p>AI-enabled pulse oximeters <a href="https://www.aclu.org/news/privacy-technology/algorithms-in-health-care-may-worsen-medical-racism" target="_blank">overstate blood-oxygen saturation in patients with darker skin</a>. Any downstream system that ingests sat readings — clinical decision support, severity scoring, an LLM that classifies SMS triage based on "the patient said sat 92" — inherits that bias. This is <strong>measurement bias</strong>: the data systematically differs from the true value, and the difference is patterned by skin tone.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Historical-spending bias in care allocation (selection / measurement bias)</p>
+<p>A widely deployed U.S. care-allocation algorithm <a href="https://www.science.org/doi/10.1126/science.aax2342" target="_blank">systematically routed less care to Black patients than to White patients</a> (Obermeyer et al., 2019, <em>Science</em>) because it was trained on historical health-care <strong>spending</strong> as a proxy for medical need. Spending was lower for Black patients not because they were healthier but because they had less access. Any outbreak-prioritization or resource-allocation prompt that learns from past response patterns will reproduce past inequities.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Training-scope bias in dermatology and retinopathy (selection bias)</p>
+<p>AI dermatology and retinopathy models trained predominantly on lighter-skinned cohorts perform measurably worse on darker skin — a clear <strong>selection bias</strong> in the training data. The same logic applies to clinical text: if your chart-abstraction model has not seen code-switched notes or local abbreviations, the silent-failure rate on those records is higher. When you build LLM workflows on top of clinical data, the abstention rate (how often the model says "UNCLEAR") on under-represented inputs is your early-warning signal.</p>
+</div>
 <h2 id="assessment">Assessment<a class="headerlink" href="#assessment" title="Permanent link">&para;</a></h2>
 <details class="question">
 <summary>True or False: AI bias only originates from the data used to train the model.</summary>
