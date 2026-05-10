@@ -139,7 +139,7 @@ ChatGPT is powered by a family of large language models (LLMs) spanning flagship
 **Advanced Features:**
 
 - **Web Browsing:** Search the internet for current information (enabled by default for Plus users).
-- **Code Interpreter:** Run Python code, analyze data, create visualizations, and process files.
+- **Sandboxed Python:** Run Python code, analyze data, create visualizations, and process files in a browser-based sandbox.
 - **DALL-E 3:** Generate and edit images from text descriptions.
 - **Advanced Voice:** Natural, conversational voice interactions with low latency.
 
