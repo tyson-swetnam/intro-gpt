@@ -82,7 +82,6 @@ Setup = [
 "Prompt Engineering" = [
     { "Writing Prompts" = "prompts.md" },
     { "General Productivity" = "daily-productivity.md" },
-    { "Code Interpreters" = "code.md" },
     { "Vibe Coding" = "vibe.md" },
     { "Choosing a Platform" = "choose.md" }
 ]

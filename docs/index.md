@@ -64,7 +64,7 @@ This workshop is organized into **five main modules** with an estimated **8-12 h
         Focus on research applications:
 
         1. [:material-flask: Research Overview](research.md) - AI in academic research
-        2. [:material-code-braces: Code Interpreters](code.md) - Data analysis and visualization
+        2. [:material-chart-bar: Data Analysis](daily-productivity.md#data-analysis-without-writing-code) - AI-powered data analysis without coding
         3. [:material-robot: Agentic AI](agentic.md) - Autonomous AI workflows
         4. [:material-database-search: RAG](rag.md) - Custom knowledge bases
 
@@ -115,9 +115,8 @@ Master the core skills for effective AI interaction.
 | Topic | Description |
 |-------|-------------|
 | [:material-pencil: Writing Prompts](prompts.md) | Core techniques: chain-of-thought, few-shot learning, role-based prompting |
-| [:material-briefcase: Daily Productivity](daily-productivity.md) | AI for emails, writing, summarization, and workflow automation |
-| [:material-code-braces: Code Interpreters](code.md) | Data analysis, visualization, and computational tasks |
-| [:material-palette-swatch: Vibe Coding](vibe.md) | AI-assisted software development and prototyping |
+| [:material-briefcase: Daily Productivity](daily-productivity.md) | AI for emails, writing, summarization, data analysis, and workflow automation |
+| [:material-palette-swatch: Vibe Coding](vibe.md) | AI-assisted software development, plus code-safety guidance |
 | [:material-compare: Choosing a Platform](choose.md) | Compare features, pricing, and use cases |
 
 ### [:material-school: Education](education.md)
