@@ -89,7 +89,7 @@ Below are tables that rank popular AI platforms by use case, organized by Chat, 
 | **Stable Diffusion 3.5 (Stability AI)** | - Open source <br/>- Highly customizable, runs locally | - Requires technical knowledge | Free (open weights) or API services | [**Stability AI**](https://stability.ai/){target=_blank} | [**SD 3.5**](https://stability.ai/news/introducing-stable-diffusion-3-5){target=_blank} |
 | **Adobe Firefly** | - Creative Cloud integration <br/>- Commercial-safe training data | - Subscription required | $9.99-$29.99/mo (standalone) or $70/mo (CC Pro) | [**Firefly**](https://firefly.adobe.com/){target=_blank} | [**Firefly Docs**](https://developer.adobe.com/firefly-services/docs/guides/){target=_blank} |
 | **Veo 3 (Google)** | - High-quality video with native audio <br/>- Up to 4K resolution | - Limited daily generation on consumer tiers | $0.15-$0.60/second (API) or $19.99-$249.99/mo (subscription via AI Pro/Ultra) | [**Veo**](https://deepmind.google/technologies/veo/){target=_blank} | [**Veo Docs**](https://ai.google.dev/gemini-api/docs/video){target=_blank} |
-| **Sora 2 (OpenAI)** | - Text-to-video with native audio <br/>- Up to 1080p | ⚠️ **NOT available in EU/UK** | $20/mo (ChatGPT Plus), $200/mo (ChatGPT Pro) | [**Sora**](https://openai.com/sora){target=_blank} | [**Sora Research**](https://openai.com/research/video-generation-models-as-world-simulators){target=_blank} |
+| **Sora 2 (OpenAI)** | - Text-to-video with native audio <br/>- Up to 1080p | ⚠️ **DISCONTINUED** — web/app shut down April 26, 2026; API sunset Sept 24, 2026. Use Veo 3, Runway, or Kling instead | Was $20/mo (Plus), $200/mo (Pro) | [**Sora discontinuation FAQ**](https://help.openai.com/en/articles/20001152-what-to-know-about-the-sora-discontinuation){target=_blank} | — |
 | **Runway ML** | - Professional video tools <br/>- Latest generation models | - Higher-res requires paid plans | $15/mo (monthly), $12/mo (annual) to $95/mo | [**Runway**](https://runwayml.com/){target=_blank} | [**Runway Docs**](https://docs.runwayml.com/){target=_blank} |
 
 ---
@@ -185,7 +185,7 @@ Below are tables that rank popular AI platforms by use case, organized by Chat, 
 
     **Commercial Platforms:**
 
-    *   [**Sora**](https://openai.com/sora){target=_blank} (OpenAI): Text-to-video with native audio. Available to ChatGPT Plus/Pro subscribers. Not available in EU/UK.
+    *   ~~[**Sora**](https://openai.com/sora){target=_blank} (OpenAI)~~ — **DISCONTINUED**: web and app shut down April 26, 2026; API sunset Sept 24, 2026. OpenAI cited operating costs of $8–12M/month against under $2M/month in revenue. A successor model called "Spud" is reportedly in development. Migrate to Veo 3, Runway, or Kling.
     *   [**Veo**](https://deepmind.google/models/veo/){target=_blank} (Google): High-quality video with native audio. Available via Gemini API and Google AI Studio.
     *   [**Runway**](https://runwayml.com/){target=_blank}: Professional video tools with world consistency features.
     *   [**Pika**](https://pika.art/){target=_blank}: Keyframe-based video creation.
@@ -276,6 +276,7 @@ For more information on using AI for tutoring and education, see [AI Tutoring: S
     * **SearchGPT** - Merged into ChatGPT (no longer standalone)
     * **Code Llama** - Repository archived July 2025 (consider StarCoder instead)
     * **DALL-E 3** - Sunset May 2026 (replaced by GPT Image 1.5 / GPT Image 2)
+    * **Sora / Sora 2** - Discontinued by OpenAI: web and app shut down April 26, 2026; API sunset September 24, 2026. Successor model "Spud" reportedly in development. Migrate to Veo 3, Runway, or Kling.
 
 !!! Tip "Best Options for Students & Educators"
 

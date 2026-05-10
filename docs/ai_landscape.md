@@ -16,7 +16,7 @@
             - **Computer Vision** — AI for images and video.
             - **Generative AI** — models that produce *new* content (text, images, code, audio, video).
                 - **Large Language Models (LLMs)** — generative models trained on text. ChatGPT, Claude, Gemini, Llama. The primary subject of this workshop.
-                - **Diffusion Models** — generative models for images and video (Stable Diffusion, DALL-E, Sora, Veo).
+                - **Diffusion Models** — generative models for images and video (Stable Diffusion 3.5, GPT Image, Imagen 4, Nano Banana, Veo 3).
 
     The categories blur in practice. Most "agentic AI" in 2026 combines an LLM (generative AI) with reinforcement-learning techniques (RLHF for alignment, RL for tool-use training) and classical search/planning algorithms. Use the map to locate where a specific tool sits — not to draw neat fences around it.
 
@@ -99,7 +99,7 @@ For more on agentic AI systems, see our dedicated [Agentic AI documentation](age
 
 Image: IGV System Architecture from [Yu et al. 2025 :simple-arxiv:](https://arxiv.org/abs/2504.21853){target=_blank}
 
-Unlike traditional video generation (Sora, Runway), **Interactive Generative Video** systems generate video content that responds to user input in real-time—essentially creating playable worlds from text descriptions.
+Unlike traditional video generation (Veo 3, Runway, Kling), **Interactive Generative Video** systems generate video content that responds to user input in real-time—essentially creating playable worlds from text descriptions.
 
 IGV systems combine five key modules:
 
@@ -178,7 +178,7 @@ All pricing verified **May 2026** (core AI vendors).
 **For Creative Work:**
 
 - **Images**: Midjourney (quality), ChatGPT Image (convenience), Stable Diffusion (control)
-- **Video**: Sora (OpenAI), Veo (Google), Runway Gen-4.5
+- **Video**: Veo 3 (Google), Runway Gen-4.5, Kling AI (OpenAI's Sora was discontinued April 2026)
 - **Music**: Suno, Udio
 - **Writing**: Claude (creative writing), ChatGPT, Jasper (marketing)
 
@@ -355,7 +355,7 @@ World models matter because they're the missing piece between today's reactive a
 - **V-JEPA 2** (Meta) — learns physical-world dynamics from video and is used for robot planning.
 - **GAIA-1** (Wayve) — autonomous-driving world model that predicts how a driving scene unfolds given the ego-vehicle's actions.
 - **NVIDIA Cosmos** — open foundation models for "physical AI"; the platform layer being used to build world models for robotics and autonomous systems.
-- **[Sora](https://openai.com/sora){target=_blank}** (OpenAI) and **Veo** (Google DeepMind) — video generators that learn implicit world physics. Their failure modes (object-permanence violations, gravity slips, hands with too many fingers) are diagnostic of how complete the implicit world model actually is.
+- **Veo 3** (Google DeepMind) and **Sora** (OpenAI, discontinued April 2026) — video generators that learn implicit world physics. Their failure modes (object-permanence violations, gravity slips, hands with too many fingers) are diagnostic of how complete the implicit world model actually is. Sora pioneered this framing; the discontinuation reflected economics rather than technical failure (operating costs of $8–12M/month against under $2M/month in revenue).
 
 A useful rule of thumb: if you can ask the system "what happens if I do X?" and the answer can be acted on, it's a world model. If you can only ask "what does this scene look like?", it's still generative video.
 
@@ -422,7 +422,7 @@ Large-scale AI models (LLMs, vision models, multimodal models) trained on massiv
 When an AI model generates false, nonsensical, or unfaithful information presented as fact. A key challenge in LLM reliability, especially for factual domains.
 
 **Interactive Generative Video (IGV):**
-AI systems that generate video content in real-time based on user input, combining video generation with interactive control. Unlike passive video generation (Sora, Runway), IGV systems respond to user actions in real-time, enabling gaming, simulation, and embodied AI applications.
+AI systems that generate video content in real-time based on user input, combining video generation with interactive control. Unlike passive video generation (Veo 3, Runway, Kling), IGV systems respond to user actions in real-time, enabling gaming, simulation, and embodied AI applications.
 
 **Large Language Models (LLMs):**
 A subset of foundation models trained on extensive text corpora, enabling them to generate human-like text, summarize information, reason about topics, and perform various NLP tasks. Examples: GPT, Claude, Gemini, Llama.
