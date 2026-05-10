@@ -18,7 +18,7 @@
         <link rel="prev" href="../prompts/">
       
       
-        <link rel="next" href="../code/">
+        <link rel="next" href="../vibe/">
       
       
         
@@ -279,8 +279,6 @@
   
     
       
-      
-        
       
         
       
@@ -839,8 +837,6 @@
       
         
       
-        
-      
     
     
     
@@ -982,6 +978,17 @@
     <span class="md-ellipsis">
       <span class="md-typeset">
         When to use a GPT
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-analysis-without-writing-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Data analysis without writing code
       </span>
     </span>
   </a>
@@ -1169,33 +1176,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../code/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Code Interpreters
-
-    
-  </span>
-  
-  
-
-      </a>
     </li>
   
 
@@ -2267,6 +2247,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#data-analysis-without-writing-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Data analysis without writing code
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#meeting-summary" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
@@ -2475,11 +2466,38 @@
 <li><strong>Language Translation:</strong> Translate documents or conversations in real-time, facilitating communication with international colleagues or clients.</li>
 <li><strong>Learning and Skill Development:</strong> Get quick explanations of complex topics, find learning resources, and even practice new skills through simulated scenarios.</li>
 </ul>
-<p>In our <a href="../code/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.5 5.5a2 2 0 0 0 2-2 2 2 0 0 0-2-2 2 2 0 0 0-2 2 2 2 0 0 0 2 2m-3.6 13.9 1-4.4 2.1 2v6h2v-7.5l-2.1-2 .6-3A7.3 7.3 0 0 0 22 13v-2c-1.76.03-3.4-.89-4.3-2.4l-1-1.6c-.36-.6-1-1-1.7-1-.3 0-.5.1-.8.1L9 8.3V13h2V9.6l1.8-.7-1.6 8.1-4.9-1-.4 2zM4 9a1 1 0 0 1-1-1 1 1 0 0 1 1-1h3v2zm1-4a1 1 0 0 1-1-1 1 1 0 0 1 1-1h5v2zm-2 8a1 1 0 0 1-1-1 1 1 0 0 1 1-1h4v2z"/></svg></span> Code Interpreter</a> lesson we discuss how GPTs can be used for:</p>
+<hr />
+<h2 id="data-analysis-without-writing-code">Data analysis without writing code<a class="headerlink" href="#data-analysis-without-writing-code" title="Permanent link">&para;</a></h2>
+<p>Every major chat LLM now ships with built-in sandboxed code execution. You upload a file (CSV, spreadsheet, image), ask a question in plain English, and the model writes Python, runs it, and shows you the result. That makes statistical analysis, data cleaning, and chart generation accessible without programming experience — useful when you want results, not code.</p>
+<p><strong>What it's good for:</strong></p>
 <ul>
-<li><strong>Code Generation and Debugging:</strong> Write basic code snippets, find and fix bugs in existing code, and understand complex code segments.</li>
-<li><strong>Data Analysis and Interpretation:</strong> Summarize datasets, identify trends, and generate reports from raw data.</li>
+<li><strong>Data analysis and visualization</strong> — process datasets and create charts without writing code</li>
+<li><strong>File conversions</strong> — transform formats (CSV to JSON, image format conversions)</li>
+<li><strong>Mathematical computations</strong> — solve equations and perform statistical analyses</li>
+<li><strong>Prototyping</strong> — quickly test algorithms or data-processing workflows</li>
+<li><strong>Learning</strong> — experiment with programming concepts in a safe sandbox</li>
 </ul>
+<p><strong>Available on:</strong></p>
+<ul>
+<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M196.4 185.8v-48.6c0-4.1 1.5-7.2 5.1-9.2l97.8-56.3c13.3-7.7 29.2-11.3 45.6-11.3 61.4 0 100.4 47.6 100.4 98.3 0 3.6 0 7.7-.5 11.8l-101.5-59.4c-6.1-3.6-12.3-3.6-18.4 0zm228.3 189.4V259c0-7.2-3.1-12.3-9.2-15.9L287 168.4l42-24.1c3.6-2 6.7-2 10.2 0l97.8 56.4c28.2 16.4 47.1 51.2 47.1 85 0 38.9-23 74.8-59.4 89.6zM166.2 272.8l-42-24.6c-3.6-2-5.1-5.1-5.1-9.2V126.4c0-54.8 42-96.3 98.8-96.3 21.5 0 41.5 7.2 58.4 20l-100.9 58.4c-6.1 3.6-9.2 8.7-9.2 15.9v148.5zm90.4 52.2-60.2-33.8v-71.7l60.2-33.8 60.2 33.8v71.7zm38.7 155.7c-21.5 0-41.5-7.2-58.4-20l100.9-58.4c6.1-3.6 9.2-8.7 9.2-15.9V237.9l42.5 24.6c3.6 2 5.1 5.1 5.1 9.2v112.6c0 54.8-42.5 96.3-99.3 96.3zM173.8 366.5l-97.7-56.3C47.9 293.8 29 259 29 225.2c0-39.4 23.6-74.8 59.9-89.6v116.7c0 7.2 3.1 12.3 9.2 15.9l128 74.2-42 24.1c-3.6 2-6.7 2-10.2 0zm-5.6 84c-57.9 0-100.4-43.5-100.4-97.3 0-4.1.5-8.2 1-12.3l100.9 58.4c6.1 3.6 12.3 3.6 18.4 0l128.5-74.2v48.6c0 4.1-1.5 7.2-5.1 9.2l-97.8 56.3c-13.3 7.7-29.2 11.3-45.6 11.3zm127 60.9c62 0 113.7-44 125.4-102.4 57.3-14.9 94.2-68.6 94.2-123.4 0-35.8-15.4-70.7-43-95.7 2.6-10.8 4.1-21.5 4.1-32.3 0-73.2-59.4-128-128-128-13.8 0-27.1 2-40.4 6.7-23-22.5-54.8-36.9-89.6-36.9-62 0-113.7 44-125.4 102.4-57.3 14.8-94.2 68.6-94.2 123.4 0 35.8 15.4 70.7 43 95.7-2.6 10.8-4.1 21.5-4.1 32.3 0 73.2 59.4 128 128 128 13.8 0 27.1-2 40.4-6.7 23 22.5 54.8 36.9 89.6 36.9"/></svg></span> ChatGPT — Advanced Data Analysis (Plus/Team)</li>
+<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.304 3.541h-3.672l6.696 16.918H24Zm-10.608 0L0 20.459h3.744l1.37-3.553h7.005l1.369 3.553h3.744L10.536 3.541Zm-.371 10.223L8.616 7.82l2.291 5.945Z"/></svg></span> Claude — Artifacts (Pro+, Python sandbox)</li>
+<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053z"/></svg></span> Gemini — chat plus Workspace integration</li>
+<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.33 12.91c.09 1.55-.62 3.04-1.89 3.95l.77 1.49c.23.45.26.98.06 1.45-.19.47-.58.84-1.06 1l-.79.25a1.687 1.687 0 0 1-1.86-.55L14.44 18c-.89-.15-1.73-.53-2.44-1.1-.5.15-1 .23-1.5.23-.88 0-1.76-.27-2.5-.79-.53.16-1.07.23-1.62.22-.79.01-1.57-.15-2.3-.45a4.1 4.1 0 0 1-2.43-3.61c-.08-.72.04-1.45.35-2.11-.29-.75-.32-1.57-.07-2.33C2.3 7.11 3 6.32 3.87 5.82c.58-1.69 2.21-2.82 4-2.7 1.6-1.5 4.05-1.66 5.83-.37.42-.11.86-.17 1.3-.17 1.36-.03 2.65.57 3.5 1.64 2.04.53 3.5 2.35 3.58 4.47.05 1.11-.25 2.2-.86 3.13.07.36.11.72.11 1.09m-5-1.41c.57.07 1.02.5 1.02 1.07a1 1 0 0 1-1 1h-.63c-.32.9-.88 1.69-1.62 2.29.25.09.51.14.77.21 5.13-.07 4.53-3.2 4.53-3.25a2.59 2.59 0 0 0-2.69-2.49 1 1 0 0 1-1-1 1 1 0 0 1 1-1c1.23.03 2.41.49 3.33 1.3.05-.29.08-.59.08-.89-.06-1.24-.62-2.32-2.87-2.53-1.25-2.96-4.4-1.32-4.4-.4-.03.23.21.72.25.75a1 1 0 0 1 1 1c0 .55-.45 1-1 1-.53-.02-1.03-.22-1.43-.56-.48.31-1.03.5-1.6.56-.57.05-1.04-.35-1.07-.9a.97.97 0 0 1 .88-1.1c.16-.02.94-.14.94-.77 0-.66.25-1.29.68-1.79-.92-.25-1.91.08-2.91 1.29C6.75 5 6 5.25 5.45 7.2 4.5 7.67 4 8 3.78 9c1.08-.22 2.19-.13 3.22.25.5.19.78.75.59 1.29-.19.52-.77.78-1.29.59-.73-.32-1.55-.34-2.3-.06-.32.27-.32.83-.32 1.27 0 .74.37 1.43 1 1.83.53.27 1.12.41 1.71.4q-.225-.39-.39-.81a1.038 1.038 0 0 1 1.96-.68c.4 1.14 1.42 1.92 2.62 2.05 1.37-.07 2.59-.88 3.19-2.13.23-1.38 1.34-1.5 2.56-1.5m2 7.47-.62-1.3-.71.16 1 1.25zm-4.65-8.61a1 1 0 0 0-.91-1.03c-.71-.04-1.4.2-1.93.67-.57.58-.87 1.38-.84 2.19a1 1 0 0 0 1 1c.57 0 1-.45 1-1 0-.27.07-.54.23-.76.12-.1.27-.15.43-.15.55.03 1.02-.38 1.02-.92"/></svg></span> Perplexity Pro — web search plus Python execution</li>
+</ul>
+<p>For a current side-by-side comparison of pricing, file-size limits, and supported file types, see <a href="../choose/">Choosing a Platform</a>. For software development (where the AI runs code on <em>your</em> machine, not a sandbox), see <a href="../vibe/">Vibe Coding</a>.</p>
+<div class="admonition example">
+<p class="admonition-title">Data analysis on the Palmer Penguins dataset</p>
+<p>Imagine you're a researcher with a dataset of measurements. You could upload a CSV to ChatGPT, Claude, or Gemini and prompt:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Analyze the CSV https://raw.githubusercontent.com/allisonhorst/palmerpenguins/main/inst/extdata/penguins.csv
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>1.  Load the dataset into a Pandas DataFrame.
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>2.  Clean the data by handling any missing values.
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>3.  Generate a scatter plot to visualize the relationship between key variables.
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>4.  Calculate the Pearson correlation coefficient between these two variables.
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>5.  Interpret the results and provide a brief summary.
+</span></code></pre></div>
+<p>The platform will write and run Python to perform each step, showing you the code, the output, and the final analysis — no local Python install required.</p>
+</div>
 <hr />
 <h2 id="meeting-summary">Meeting Summary<a class="headerlink" href="#meeting-summary" title="Permanent link">&para;</a></h2>
 <p><a href="https://www.zoom.com/en/ai-assistant/" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.033 14.649H.743a.74.74 0 0 1-.686-.458.74.74 0 0 1 .16-.808L3.19 10.41H1.06A1.06 1.06 0 0 1 0 9.35h3.957c.301 0 .57.18.686.458a.74.74 0 0 1-.161.808L1.51 13.59h2.464c.585 0 1.06.475 1.06 1.06zM24 11.338a2.068 2.068 0 0 0-3.603-1.38 2.06 2.06 0 0 0-1.536-.686c-1.14 0-2.066.926-2.066 2.066v3.311a1.06 1.06 0 0 0 1.06-1.06v-2.251a1.004 1.004 0 0 1 2.013 0v2.251c0 .586.474 1.06 1.06 1.06v-3.311a1.004 1.004 0 0 1 2.012 0v2.251c0 .586.475 1.06 1.06 1.06zM16.265 12a2.728 2.728 0 1 1-5.457 0 2.728 2.728 0 0 1 5.457 0m-1.06 0a1.669 1.669 0 1 0-3.338 0 1.669 1.669 0 0 0 3.338 0m-4.82 0a2.728 2.728 0 1 1-5.458 0 2.728 2.728 0 0 1 5.457 0zm-1.06 0a1.669 1.669 0 1 0-3.338 0 1.669 1.669 0 0 0 3.338 0"/></svg></span> AI Companion</a>, along with other AI-powered meeting summary tools, can significantly boost productivity by automating note-taking and extracting key information from meetings. To effectively use these tools, it's important to understand best practices and institutional policies.</p>
@@ -2534,10 +2552,10 @@
 <details class="example">
 <summary>Planning your day</summary>
 <p><strong>Prompt:</strong></p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>I need your help planning my day tomorrow.
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>First, please list all my scheduled meetings and deadlines from my calendar.
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>Then, taking into account 2 hours of break time, could you suggest a time-managed itinerary for me?
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>Lastly, based on the priority of the tasks, can you create a task list in the order I should tackle them?
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>I need your help planning my day tomorrow.
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>First, please list all my scheduled meetings and deadlines from my calendar.
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>Then, taking into account 2 hours of break time, could you suggest a time-managed itinerary for me?
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>Lastly, based on the priority of the tasks, can you create a task list in the order I should tackle them?
 </span></code></pre></div>
 <p><strong>Response:</strong></p>
 <p>I would be happy to help you plan your day, but I need to clarify something first: I do not currently have access to your calendar or scheduling system.</p>
@@ -2625,12 +2643,12 @@
 </ol>
 <p><strong>Example: Meeting Recap Email</strong></p>
 <p><strong>Copilot Prompt:</strong></p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Draft an email to my team summarizing today&#39;s meeting. Include:
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>- New project timeline with July 30th deadline
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>- Weekly client status updates rotating among team members
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>- Brainstorming session next Wednesday for marketing strategies
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>- Reminder to submit expense reports by Friday
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>Use a professional but friendly tone.
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Draft an email to my team summarizing today&#39;s meeting. Include:
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>- New project timeline with July 30th deadline
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>- Weekly client status updates rotating among team members
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>- Brainstorming session next Wednesday for marketing strategies
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>- Reminder to submit expense reports by Friday
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>Use a professional but friendly tone.
 </span></code></pre></div>
 <p><strong>Copilot Generated Email:</strong></p>
 <p><strong>Subject:</strong> Meeting Recap - Action Items and Next Steps</p>
@@ -2676,11 +2694,11 @@ Reminder: Submit all expense reports by <strong>end of day Friday</strong>.</p>
 </ol>
 <p><strong>Example: Meeting Recap Email</strong></p>
 <p><strong>Gmail Prompt:</strong></p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Write a professional email to my team summarizing our meeting today:
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>- New deadline: July 30th
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>- Weekly client updates will rotate among team
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>- Marketing brainstorming session next Wednesday
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>- Expense reports due this Friday
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Write a professional email to my team summarizing our meeting today:
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>- New deadline: July 30th
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>- Weekly client updates will rotate among team
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>- Marketing brainstorming session next Wednesday
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>- Expense reports due this Friday
 </span></code></pre></div>
 <p><strong>Gmail Generated Email:</strong></p>
 <p>Subject: Today's Meeting - Key Takeaways</p>
@@ -2752,13 +2770,13 @@ Reminder: Submit all expense reports by <strong>end of day Friday</strong>.</p>
 <summary>Using Extended Thinking for research methodology</summary>
 <p><strong>Scenario:</strong> You are designing a mixed-methods study on faculty adoption of AI tools in teaching and want Claude to help you think through potential methodological challenges.</p>
 <p><strong>Prompt:</strong></p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>I&#39;m designing a mixed-methods study to investigate how faculty at research universities
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>are integrating generative AI tools into their teaching practices. The study will combine
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>surveys with semi-structured interviews.
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>Please think carefully about the methodological challenges I might face and how to
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>address them. Consider issues of sampling, bias, validity, and the rapidly changing
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>nature of AI technology.
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>I&#39;m designing a mixed-methods study to investigate how faculty at research universities
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>are integrating generative AI tools into their teaching practices. The study will combine
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>surveys with semi-structured interviews.
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>Please think carefully about the methodological challenges I might face and how to
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>address them. Consider issues of sampling, bias, validity, and the rapidly changing
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>nature of AI technology.
 </span></code></pre></div>
 <p><strong>Claude's Extended Thinking Process</strong> (visible to you):</p>
 <p><em>Let me think through this systematically...</em></p>
@@ -2833,10 +2851,10 @@ underreport due to institutional policies they're uncertain about...</em></p>
 <summary>Using Scholar Labs for a literature review</summary>
 <p><strong>Scenario:</strong> You're preparing a literature review for your dissertation on the effectiveness of peer-led instruction in undergraduate STEM courses.</p>
 <p><strong>Research Question:</strong></p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>What evidence exists about the effectiveness of peer-led instruction (also called
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>peer-led team learning or PLTL) in improving learning outcomes for underrepresented
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>students in undergraduate STEM courses, particularly in gateway courses like
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>introductory biology, chemistry, and physics?
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>What evidence exists about the effectiveness of peer-led instruction (also called
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>peer-led team learning or PLTL) in improving learning outcomes for underrepresented
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>students in undergraduate STEM courses, particularly in gateway courses like
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>introductory biology, chemistry, and physics?
 </span></code></pre></div>
 <p><strong>What Scholar Labs Does:</strong></p>
 <p>Instead of searching for papers that simply contain "peer-led instruction" and "underrepresented students," Scholar Labs:</p>
@@ -2873,13 +2891,13 @@ underreport due to institutional policies they're uncertain about...</em></p>
 </ul>
 <p><strong>Follow-up Questions:</strong></p>
 <p>Scholar Labs allows you to ask follow-up questions to narrow or expand your search:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>Which of these studies include control groups and experimental designs rather than
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>observational studies?
+<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>Which of these studies include control groups and experimental designs rather than
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>observational studies?
 </span></code></pre></div>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>Are there any meta-analyses or systematic reviews synthesizing this evidence?
+<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>Are there any meta-analyses or systematic reviews synthesizing this evidence?
 </span></code></pre></div>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>What critiques or limitations have researchers identified about peer-led instruction
-</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>for diverse student populations?
+<div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>What critiques or limitations have researchers identified about peer-led instruction
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>for diverse student populations?
 </span></code></pre></div>
 </details>
 <div class="admonition tip">
@@ -2972,8 +2990,8 @@ underreport due to institutional policies they're uncertain about...</em></p>
 <summary>Real-world comparison: Researching polar ice melt rates</summary>
 <p>To illustrate the differences between these research tools, here's a side-by-side comparison using the same research question across four different platforms: Scholar Labs, ChatGPT Deep Research, Gemini Deep Research, and Claude.</p>
 <p><strong>Research Question:</strong></p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>Find recent and highly cited peer-reviewed articles from top-ranked journals that
-</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>report the rate of polar ice melt.
+<div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>Find recent and highly cited peer-reviewed articles from top-ranked journals that
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>report the rate of polar ice melt.
 </span></code></pre></div>
 <hr />
 <h3 id="google-scholar-labs-results">Google Scholar Labs Results<a class="headerlink" href="#google-scholar-labs-results" title="Permanent link">&para;</a></h3>
