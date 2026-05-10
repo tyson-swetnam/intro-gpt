@@ -294,15 +294,15 @@ ellmer supports a wide range of LLM providers:
 
 | Provider | Function | Notes |
 |----------|----------|-------|
-| OpenAI | `chat_openai()` | GPT-4.1, GPT-4o, o3 models |
-| Anthropic | `chat_anthropic()` | Claude 4.5 models |
-| Google | `chat_google_gemini()` | Gemini models |
+| OpenAI | `chat_openai()` | GPT family (cost-efficient and frontier reasoning tiers) |
+| Anthropic | `chat_anthropic()` | Claude family (Opus/Sonnet/Haiku tiers) |
+| Google | `chat_google_gemini()` | Gemini family (Pro/Flash tiers) |
 | Azure OpenAI | `chat_azure_openai()` | Enterprise Azure deployment |
 | AWS Bedrock | `chat_aws_bedrock()` | Multiple models via AWS |
 | Ollama | `chat_ollama()` | Local models (free) |
-| Mistral | `chat_mistral()` | Mistral models |
+| Mistral | `chat_mistral()` | Mistral family |
 | Groq | `chat_groq()` | Fast inference |
-| DeepSeek | `chat_deepseek()` | DeepSeek models |
+| DeepSeek | `chat_deepseek()` | DeepSeek family |
 | Hugging Face | `chat_huggingface()` | HF Inference API |
 | GitHub Models | `chat_github()` | GitHub model marketplace |
 | Perplexity | `chat_perplexity()` | Search-augmented |
@@ -314,8 +314,9 @@ ellmer supports a wide range of LLM providers:
 library(ellmer)
 
 # Create a chat with OpenAI
+# See https://platform.openai.com/docs/models for current model IDs
 chat <- chat_openai(
-  model = "gpt-4o-mini",
+  model = "<current-gpt-model-id>",
   system_prompt = "You are a helpful data science assistant."
 )
 
@@ -336,7 +337,7 @@ library(ellmer)
 
 # Create a chat with Claude
 chat <- chat_anthropic(
-  model = "claude-sonnet-4-5-20250514",
+  model = "claude-sonnet-latest",
   system_prompt = "You are an expert R programmer."
 )
 
@@ -349,7 +350,7 @@ chat$chat("How do I read a CSV file with readr?")
 ```r
 library(ellmer)
 
-chat <- chat_openai(model = "gpt-4o-mini")
+chat <- chat_openai(model = "<current-gpt-model-id>")  # see https://platform.openai.com/docs/models
 
 # Stream the response to the console
 chat$chat("Explain the central limit theorem", echo = "all")
@@ -370,7 +371,7 @@ paper_info <- type_object(
   journal = type_string("Journal name")
 )
 
-chat <- chat_openai(model = "gpt-4o-mini")
+chat <- chat_openai(model = "<current-gpt-model-id>")  # see https://platform.openai.com/docs/models
 
 # Extract structured information
 result <- chat$extract_data(
@@ -407,7 +408,7 @@ get_weather <- function(city) {
 }
 
 chat <- chat_openai(
-  model = "gpt-4o-mini",
+  model = "<current-gpt-model-id>",  # see https://platform.openai.com/docs/models
   system_prompt = "You help users with weather information."
 )
 
@@ -441,15 +442,15 @@ pip install -U chatlas
 
 | Provider | Class | Notes |
 |----------|-------|-------|
-| OpenAI | `ChatOpenAI` | GPT-4.1, GPT-4o models |
-| Anthropic | `ChatAnthropic` | Claude 4.5 models |
-| Google | `ChatGoogle` | Gemini models |
+| OpenAI | `ChatOpenAI` | GPT family (cost-efficient and frontier reasoning tiers) |
+| Anthropic | `ChatAnthropic` | Claude family (Opus/Sonnet/Haiku tiers) |
+| Google | `ChatGoogle` | Gemini family (Pro/Flash tiers) |
 | Azure OpenAI | `ChatAzureOpenAI` | Enterprise Azure |
 | AWS Bedrock | `ChatBedrockAnthropic` | Claude via AWS |
 | Ollama | `ChatOllama` | Local models (free) |
-| Mistral | `ChatMistral` | Mistral models |
+| Mistral | `ChatMistral` | Mistral family |
 | Groq | `ChatGroq` | Fast inference |
-| DeepSeek | `ChatDeepSeek` | DeepSeek models |
+| DeepSeek | `ChatDeepSeek` | DeepSeek family |
 | Hugging Face | `ChatHuggingFace` | HF Inference API |
 | Any Provider | `ChatAuto` | Auto-detect provider |
 
@@ -459,8 +460,9 @@ pip install -U chatlas
 from chatlas import ChatOpenAI
 
 # Create a chat
+# See https://platform.openai.com/docs/models for current model IDs
 chat = ChatOpenAI(
-    model="gpt-4o-mini",
+    model="<current-gpt-model-id>",
     system_prompt="You are a helpful data science assistant."
 )
 
@@ -477,7 +479,7 @@ chat.chat("How do I read a CSV file?")
 from chatlas import ChatAnthropic
 
 chat = ChatAnthropic(
-    model="claude-sonnet-4-5-20250514",
+    model="<current-claude-sonnet-id>",  # see https://docs.claude.com/en/docs/about-claude/models
     system_prompt="You are an expert Python programmer."
 )
 
@@ -490,7 +492,7 @@ chat.chat("How do I create a scatter plot with matplotlib?")
 from chatlas import ChatOpenAI
 
 chat = ChatOpenAI(
-    model="gpt-4o-mini",
+    model="<current-gpt-model-id>",  # see https://platform.openai.com/docs/models
     system_prompt="You help users with weather information."
 )
 
@@ -520,7 +522,7 @@ class PaperInfo(BaseModel):
     year: int
     journal: str
 
-chat = ChatOpenAI(model="gpt-4o-mini")
+chat = ChatOpenAI(model="<current-gpt-model-id>")  # see https://platform.openai.com/docs/models
 
 # Extract structured data
 result = chat.extract_data(
@@ -539,7 +541,7 @@ print(result)
 ```python
 from chatlas import ChatOpenAI, parallel_chat_text
 
-chat = ChatOpenAI(model="gpt-4o-mini")
+chat = ChatOpenAI(model="<current-gpt-model-id>")  # see https://platform.openai.com/docs/models
 
 # Process multiple prompts in parallel
 prompts = [
@@ -636,9 +638,9 @@ Reload your shell: `source ~/.bashrc`
 ```r
 library(ellmer)
 
-# Test OpenAI
+# Test OpenAI (see https://platform.openai.com/docs/models for current IDs)
 tryCatch({
-  chat <- chat_openai(model = "gpt-4o-mini")
+  chat <- chat_openai(model = "<current-gpt-model-id>")
   chat$chat("Say hello!")
   message("OpenAI API key is working!")
 }, error = function(e) {
@@ -647,7 +649,7 @@ tryCatch({
 
 # Test Anthropic
 tryCatch({
-  chat <- chat_anthropic(model = "claude-sonnet-4-5-20250514")
+  chat <- chat_anthropic(model = "claude-sonnet-latest")
   chat$chat("Say hello!")
   message("Anthropic API key is working!")
 }, error = function(e) {
@@ -660,17 +662,17 @@ tryCatch({
 ```python
 from chatlas import ChatOpenAI, ChatAnthropic
 
-# Test OpenAI
+# Test OpenAI (see https://platform.openai.com/docs/models for current IDs)
 try:
-    chat = ChatOpenAI(model="gpt-4o-mini")
+    chat = ChatOpenAI(model="<current-gpt-model-id>")
     chat.chat("Say hello!")
     print("OpenAI API key is working!")
 except Exception as e:
     print(f"OpenAI API key issue: {e}")
 
-# Test Anthropic
+# Test Anthropic (see https://docs.claude.com/en/docs/about-claude/models)
 try:
-    chat = ChatAnthropic(model="claude-sonnet-4-5-20250514")
+    chat = ChatAnthropic(model="<current-claude-sonnet-id>")
     chat.chat("Say hello!")
     print("Anthropic API key is working!")
 except Exception as e:
@@ -837,17 +839,17 @@ analyst.chat("How can I create a grouped bar chart of this summary?")
 
 | Model | Size | Best For |
 |-------|------|----------|
-| `llama3.2:3b` | ~2GB | Quick responses, basic coding |
-| `qwen2.5:7b` | ~4.5GB | Reasoning, data analysis |
-| `deepseek-coder:6.7b` | ~4GB | Code generation |
-| `deepseek-r1:8b` | ~5GB | Complex reasoning |
-| `codellama:13b` | ~7GB | Advanced coding |
+| `llama3.2` (small tier) | ~2GB | Quick responses, basic coding |
+| `qwen` (mid tier) | ~4-5GB | Reasoning, data analysis |
+| `deepseek-coder` | ~4GB | Code generation |
+| `deepseek-r1` | ~5GB | Complex reasoning |
+| `codellama` (large tier) | ~7GB | Advanced coding |
 
 ```bash
-# Download recommended models
-ollama pull llama3.2:3b
-ollama pull qwen2.5:7b
-ollama pull deepseek-coder:6.7b
+# Download recommended models (pick a tag appropriate to your hardware)
+ollama pull llama3.2
+ollama pull qwen
+ollama pull deepseek-coder
 ```
 
 ---
@@ -862,7 +864,7 @@ library(tidyverse)
 
 # Create a specialized assistant
 lit_review <- chat_ollama(
-  model = "qwen2.5:7b",
+  model = "qwen",
   system_prompt = "You are an academic research assistant specializing in
                    literature reviews. Help researchers:
                    1. Identify key themes in abstracts
@@ -916,7 +918,7 @@ library(ellmer)
 
 # Create a documentation assistant
 doc_helper <- chat_openai(
-  model = "gpt-4o-mini",
+  model = "<current-gpt-model-id>",  # see https://platform.openai.com/docs/models
   system_prompt = "You are an R documentation expert. When given R code,
                    generate roxygen2-style documentation including:
                    @title, @description, @param, @return, @examples"
@@ -1054,7 +1056,7 @@ Beyond ellmer and chatlas, several other R packages provide AI capabilities:
 library(tidyllm)
 
 llm_message("Explain linear regression") |>
-  openai_chat(model = "gpt-4o-mini") |>
+  openai_chat(model = "<current-gpt-model-id>") |>  # see https://platform.openai.com/docs/models
   get_reply()
 ```
 

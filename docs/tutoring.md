@@ -4,7 +4,7 @@
 
 ## Introduction
 
-Generative AI tools have transformed self-directed learning in 2026, offering 24/7 personalized tutoring support that was previously accessible only to students with private tutors or extensive institutional resources. Tools like ChatGPT 4.5, Claude 4.5, and Gemini 2.0 Flash provide sophisticated explanations, practice problems, and study support across virtually every academic subject.
+Generative AI tools have transformed self-directed learning in 2026, offering 24/7 personalized tutoring support that was previously accessible only to students with private tutors or extensive institutional resources. Tools like ChatGPT, Claude, and Gemini provide sophisticated explanations, practice problems, and study support across virtually every academic subject.
 
 Beyond simply providing answers to prompts, AI can be used to interactively engage with topics, assess your understanding, generate practice materials, and provide feedback tailored to your individual learning style and needs.
 
@@ -86,7 +86,7 @@ Here's how you can use AI to become a more effective self-tutor:
 
             In short, photosynthesis is a natural process that keeps both plants and animals alive: plants get food for themselves, and they give off oxygen for us to breathe.
 
-        === "Gemini Pro 2.0 Response"
+        === "Gemini Pro Response"
 
             Okay, imagine plants are like little chefs that make their own food. But instead of using an oven or a stove, they use sunlight! That process of making food using sunlight is called **photosynthesis**.
 
@@ -492,9 +492,9 @@ Upload images of:
 
 **Example Tools:**
 
-* **ChatGPT Plus/Team** - Advanced image understanding with GPT-4.5
-* **Claude 4.5** - Excellent at analyzing complex diagrams and charts
-* **Gemini 2.0 Flash** - Fast image analysis, good for quick questions
+* **ChatGPT Plus/Team** - Advanced image understanding with GPT
+* **Claude** - Excellent at analyzing complex diagrams and charts
+* **Gemini Flash** - Fast image analysis, good for quick questions
 * **Google Lens** - Identify objects, plants, landmarks, translate text
 
 !!! Example "Uploading Homework for Help"
@@ -836,7 +836,7 @@ For a comprehensive comparison of AI-powered educational platforms including IXL
 
 The table includes:
 - Subject areas and target audiences
-- Current pricing (verified January 2026)
+- Current pricing (verified May 2026 for core AI vendors; edu-tool pricing not re-verified — check vendor pages)
 - Key features and capabilities
 - Links to all platforms
 

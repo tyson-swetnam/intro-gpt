@@ -38,7 +38,7 @@
 
 | ✔︎ | Requirement | Notes |
 |---|-------------|-------|
-|   | Frontier-class LLM access | Claude 4, GPT-5, Gemini 2.5 Pro, or equivalent |
+|   | Frontier-class LLM access | Claude, GPT, Gemini Pro, or equivalent |
 |   | One agent surface from the Setup list above | Desktop, CLI, or AI-native IDE — pick what you know |
 |   | [Filesystem MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem) running | Gives the agent read/write access. **Without this, Step 1 will fail silently.** |
 |   | Git & GitHub account (optional but recommended) | For version control & sharing |
@@ -242,7 +242,7 @@ Each link below extends a step we trimmed from the live lab — pick whichever i
 
 - [VS Code & AI Tools](../../vscode.md) — covers the git commit/push step and IDE ergonomics.
 - [MCP](../../mcp.md) — required reading before trying QGISMCP for richer layer styling.
-- [Public Health Case Study](./casestudy.md) — applies the same agent skills to a different public-health problem.
+- [Public Health AI Lab](./casestudy.md) — applies prompt-engineering techniques to SMS triage, outbreak synthesis, and chart abstraction.
 
 ## Next Steps
 

@@ -185,7 +185,7 @@ Consider these approaches along a spectrum from prohibited to encouraged:
 
     2. **Demonstrate Learning:** Your grade is based on your critical engagement with AI, not just the final product. Show me your thinking.
 
-    3. **Cite AI Appropriately:** Use this format: *"Initial draft developed in collaboration with Claude 4.5 (Anthropic, 2026). See appendix for interaction log."*
+    3. **Cite AI Appropriately:** Use this format: *"Initial draft developed in collaboration with Claude (Anthropic, 2026). See appendix for interaction log."*
 
     **This approach treats AI as a professional tool you must learn to use effectively, not as a shortcut.**"
 

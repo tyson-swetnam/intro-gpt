@@ -86,7 +86,7 @@ Standalone editor offering similar agentic and inline features with tiered prici
 
 :material-microsoft-visual-studio-code: :material-license: :material-api:
 
-Official Anthropic VS Code extension providing AI pair programming with Claude 4.5 models, featuring multi-file editing, debugging, and terminal integration.
+Official Anthropic VS Code extension providing AI pair programming with Claude models, featuring multi-file editing, debugging, and terminal integration.
 
 #### [:simple-google: Gemini CLI Companion](https://marketplace.visualstudio.com/items?itemName=Google.gemini-cli-vscode-ide-companion){target=_blank}
 

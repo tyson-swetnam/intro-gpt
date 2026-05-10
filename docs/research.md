@@ -175,7 +175,7 @@ Examples of roles you might ask for are: a domain science expert, an IT or DevOp
     RStudio system dependencies and R libraries that Palmer Penguins requires.
     ```
 
-    Example can use `GPT o1` or `Gemini 2.0` 
+    Example can use `GPT` or `Gemini` 
 
 ??? Abstract "Talk to Dead Scientists"
 

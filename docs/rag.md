@@ -293,7 +293,7 @@ If you manage an OpenWebUI instance, you can tune RAG performance in **Admin Pan
 |---------|-----------|------------|----------------|-----------------|
 | **Cost** | Free (self-hosted) | Free | $20/month | $20/month |
 | **Data Privacy** | Full local control | Google servers | OpenAI servers | Anthropic servers |
-| **Model Choice** | Any Ollama/API model | Gemini only | GPT-4 only | Claude only |
+| **Model Choice** | Any Ollama/API model | Gemini only | OpenAI models only | Claude only |
 | **Setup Complexity** | Requires installation | None | None | None |
 | **Persistent Collections** | Yes | Yes (Notebooks) | Limited | Yes (Projects) |
 | **Offline Use** | Yes (local models) | No | No | No |
@@ -350,7 +350,7 @@ Several frameworks simplify building RAG applications:
     vectorstore = Chroma.from_documents(chunks, embeddings)
 
     # 4. Create a retrieval chain
-    llm = ChatOpenAI(model="gpt-4")
+    llm = ChatOpenAI(model="<current-openai-model-id>")  # see https://platform.openai.com/docs/models
     qa_chain = RetrievalQA.from_chain_type(
         llm=llm,
         chain_type="stuff",

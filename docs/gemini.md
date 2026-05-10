@@ -10,14 +10,16 @@ There are multiple ways to access and use Google Gemini:
 
    *   Visit [gemini.google.com](https://gemini.google.com/){target=_blank}.
    *   Sign in with your Google Account. If you don't have one, create one at [accounts.google.com](https://accounts.google.com/){target=_blank}.
-   *   You can start interacting with Gemini through the chat interface. The free tier includes Gemini 2.5 Flash (unlimited) and limited Gemini Pro access.
+   *   You can start interacting with Gemini through the chat interface. The free tier includes Gemini Flash (unlimited) and limited Gemini Pro access.
 
 !!! Info "Gemini Pricing & Comparisons"
     **Subscription Options:**
 
-    - **Free:** Gemini 2.5 Flash unlimited
-    - **AI Pro ($19.99/mo):** Gemini 2.5 Pro access, NotebookLM Plus, 2TB storage - **Free for university students (1 year)**
-    - **AI Ultra ($249.99/mo):** Gemini 2.5 Pro unlimited, Deep Think, Veo 3 video generation
+    - **Free:** Gemini Flash unlimited
+    - **AI Plus ($7.99/mo):** Lighter paid tier with expanded Gemini Pro limits (US, new May 2026)
+    - **AI Pro ($19.99/mo):** Gemini Pro access, NotebookLM Plus, 2TB storage - **Discounted $9.99/mo for verified university students (free 1-year tier closed to new signups March 11, 2026)**
+    - **AI Ultra ($249.99/mo):** Gemini Pro unlimited, Deep Think, Veo video generation
+    - **AI Ultra Lite:** announced May 5 2026, price TBD `(verify)`
 
     **Compare with other AI platforms:** See [Choosing the Right AI Platform](choose.md) for detailed comparisons
 
