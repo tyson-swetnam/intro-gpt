@@ -25,21 +25,40 @@ As consumers of GPTs and other AI platforms, we must consider in what ways can w
 
 How should the values that guide AI systems be set, and by whom? Two distinct approaches have emerged: **corporate AI constitutions** written by AI companies for their own models (Anthropic's *Claude Constitution* is the canonical example), and **public AI bills of rights** developed through democratic processes (the White House *Blueprint for an AI Bill of Rights*, October 2022, is the leading example).
 
-Sociologist [Alondra Nelson](https://www.ias.edu/sss/faculty/nelson){target=_blank} — who led the development of the Blueprint while serving as acting director of the White House Office of Science and Technology Policy (OSTP) — argues in [*A civic grammar for AI rights*](https://www.science.org/doi/10.1126/science.aeh7153){target=_blank} (Science, 2026) that these two forms of foundational document do very different work:
+Sociologist [Alondra Nelson](https://www.ias.edu/sss/faculty/nelson){target=_blank} — who led the Blueprint's development as acting director of the White House Office of Science and Technology Policy (OSTP) — argues in [*A civic grammar for AI rights*](https://www.science.org/doi/10.1126/science.aeh7153){target=_blank} (Science, 2026) that these two forms of foundational document do very different work, and that one of them is structurally insufficient as a source of democratic legitimacy.
 
-- **Corporate AI constitutions** are internal training and alignment specifications. They describe a company's vision of how its model should behave, but they are not negotiated with the publics affected by the model's deployment, and they can be revised by company fiat. Nelson notes, for example, that newer revisions of Anthropic's Claude Constitution have quietly removed references to international human rights agreements — and with them protections for personal liberty, freedom of religion, and intellectual property that earlier versions included.
-- **Public AI bills of rights** declare rights claims that publics can extend to new institutions and new harms. Their force comes from democratic legitimacy and the broader legal and political infrastructure around them, not from the model developers themselves.
+### Corporate constitutions vs. public bills of rights
 
-Nelson describes the result as a **"civic grammar"** — a shared vocabulary of rights claims (privacy, non-discrimination, due process, notice, recourse) that the public has built up over decades and can now extend to AI systems. The political question, in her framing, is *who gets to author the foundational documents that govern AI* — companies, or publics?
+- **Corporate AI constitutions** are internal training and alignment specifications. They describe a company's vision of how its model should behave. They are not negotiated with the publics affected by the model's deployment, and they can be revised by company fiat. Nelson notes that newer revisions of Anthropic's Claude Constitution have quietly removed references to international human rights agreements — and with them protections for "personal liberty, freedom of religion and intellectual property," and other rights that earlier versions included. Historian Jill Lepore observed that the document arrived *"at a trying time for both artificial intelligence and constitutional democracy."*
+- **Public AI bills of rights** declare rights claims that publics can extend to new institutions and new harms. Their force comes from democratic legitimacy and the broader legal-political infrastructure, not from the model developers. The Blueprint took its name from the first ten amendments to the U.S. Constitution but, Nelson argues, structurally resembles a different founding document — the **Declaration of Independence**. It declares principles and claims rights against concentrated power, but it does not establish courts, enforcement mechanisms, or procedures for redress.
 
-The structural comparison matters. The Blueprint for an AI Bill of Rights, Nelson notes, is closer to the **Declaration of Independence** than to the actual **Bill of Rights**: it declares principles and asserts claims against concentrated power, but it does not establish courts, enforcement mechanisms, or procedures for redress. Closing that gap — moving from declaration to enforceable rights — is the work that remains.
+### "Civic grammar" and the diffusion of rights claims
 
-For the specific principles in the Blueprint and their current legal status, see [Ethical & Legal Considerations: Blueprint for an AI Bill of Rights](legal.md#blueprint-for-an-ai-bill-of-rights).
+Nelson describes what has emerged as a **"civic grammar"**: a shared vocabulary of rights claims (non-discrimination, transparency, data privacy, notice, human alternatives) that publics can extend to new institutions and new harms, and that "has been traveling across jurisdictions, partisan lines, and institutional contexts." The American tradition is long — Patients' Bill of Rights, Consumer Bill of Rights, Tenants' Bill of Rights, Workers' Bill of Rights, Taxpayers' Bill of Rights — and the AI Bill of Rights template has spread the same way: actors with no shared political coalition, sometimes with explicit antipathy toward each other, adopting a common vocabulary because each, separately, has encountered the same kind of algorithmic harm.
 
-!!! info "Further reading"
+This pattern reflects what sociologists David Strang and John Meyer call **institutional diffusion** among *weakly related actors* — a conceptual rather than relational mechanism by which abstract typologies become "a strategy for making sense of the world." Connecticut Democrats, Oklahoma Republicans, Florida's Republican governor, and a national student-advocacy network can adopt the same vocabulary without coordinating, because all are responding to the same structural condition: AI reshaping people's lives without their consultation. (For the specific state-level examples and the international convergence, see [Blueprint for an AI Bill of Rights](legal.md#blueprint-for-an-ai-bill-of-rights) in the Legal lesson.)
+
+### Marshall's social citizenship and the AI rights tier
+
+Nelson grounds the analysis in British sociologist T. H. Marshall's 1950 essay *Citizenship and Social Class*. Marshall argued that rights expand historically through successive waves of claim-making: civil rights extending to political rights, political rights extending to **social rights** — entitlements to economic security and the conditions of participation, against harms of industrial capitalism that individual civil-liberties frameworks could not address. Rights, in Marshall's account, "are never fully delivered at the moment of declaration. They are successively rearticulated by publics who attempt to hold institutions to commitments those institutions have not yet honored."
+
+The Blueprint's five principles, Nelson argues, map onto Marshall's social-rights tier. They are not classical civil liberties; they are entitlements against systems "that increasingly govern access to employment, credit, healthcare, housing, and education." The structural parallel — collective, diffuse, opaque harms that older rights frameworks address only partially — is what explains the cross-partisan convergence: "actors who disagree on nearly everything else agree that algorithmic power requires a social citizenship response."
+
+### The limits of rights talk
+
+Nelson is clear-eyed about what civic grammar cannot do on its own:
+
+- **Accommodation can mimic transformation.** A vocabulary that moves easily across partisan lines may have been "drained of the political content that gives rights claims their force."
+- **Rights individualize structural problems.** Frameworks built around individual claims often fail to address the collective and systemic nature of algorithmic harms.
+- **Declaration is not delivery.** History shows "declarations of entitlement and their substantive delivery can remain decades apart, separated by the organized power of those who benefit from the status quo."
+
+Nelson's clarifying question for democratic institutions: *will they take this civic grammar seriously before the AI companies finish writing their own constitutions for us all?*
+
+!!! info "Sources and further reading"
 
     - Alondra Nelson, [*A civic grammar for AI rights*](https://www.science.org/doi/10.1126/science.aeh7153){target=_blank}, *Science* (2026). DOI: 10.1126/science.aeh7153
     - Alondra Nelson, [Bluesky thread on these principles](https://bsky.app/profile/alondra.bsky.social/post/3mltfqoc7ok2y){target=_blank}
+    - T. H. Marshall, "Citizenship and Social Class" (1950)
     - [Blueprint for an AI Bill of Rights](https://bidenwhitehouse.archives.gov/ostp/ai-bill-of-rights/){target=_blank} (White House OSTP, October 2022, archived)
     - Anthropic, [Claude's Constitution](https://www.anthropic.com/news/claudes-constitution){target=_blank}
 

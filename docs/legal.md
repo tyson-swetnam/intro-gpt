@@ -122,7 +122,9 @@ In response to the rapid rise of generative AI, specifically GPTs, new agreement
 
 ## Blueprint for an AI Bill of Rights
 
-The [**Blueprint for an AI Bill of Rights**](https://bidenwhitehouse.archives.gov/ostp/ai-bill-of-rights/){target=_blank} was released by the White House Office of Science and Technology Policy (OSTP) in October 2022. It proposed five principles to guide the design, development, and deployment of automated systems:
+### Timeline and status
+
+The [**Blueprint for an AI Bill of Rights**](https://bidenwhitehouse.archives.gov/ostp/ai-bill-of-rights/){target=_blank} emerged from a public process announced in an October 2021 *Wired* essay by the White House Office of Science and Technology Policy (OSTP). It was released in October 2022 with **five principles** to guide the design, development, and deployment of automated systems:
 
 1. **Safe and Effective Systems** — protection from unsafe or ineffective systems.
 2. **Algorithmic Discrimination Protections** — equitable design and use of automated systems.
@@ -130,21 +132,50 @@ The [**Blueprint for an AI Bill of Rights**](https://bidenwhitehouse.archives.go
 4. **Notice and Explanation** — knowing when an automated system is being used and how/why it affects you.
 5. **Human Alternatives, Consideration, and Fallback** — the ability to opt out and reach a human alternative when an automated system fails or causes harm.
 
-The companion [Executive Order on Safe, Secure, and Trustworthy Development and Use of Artificial Intelligence](https://www.federalregister.gov/documents/2023/11/01/2023-24283/safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence){target=_blank} (October 2023) operationalized parts of this framework for federal agencies. **Both the Blueprint and the Executive Order have been rescinded by the current administration.**
+These principles were incorporated into President Biden's [October 2023 Executive Order on Safe, Secure, and Trustworthy AI](https://www.federalregister.gov/documents/2023/11/01/2023-24283/safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence){target=_blank}. The Executive Order was rescinded by President Trump's January 2025 [Removing Barriers to American Leadership in Artificial Intelligence](https://www.whitehouse.gov/presidential-actions/2025/01/removing-barriers-to-american-leadership-in-artificial-intelligence/){target=_blank}. The Blueprint itself was always non-binding guidance.
 
 ### Constitution vs. Bill of Rights vs. Declaration of Independence
 
-Sociologist [Alondra Nelson](https://www.ias.edu/sss/faculty/nelson){target=_blank} — who led the Blueprint's development as acting director of OSTP — has argued in [*A civic grammar for AI rights*](https://www.science.org/doi/10.1126/science.aeh7153){target=_blank} (Science, 2026) that the Blueprint is structurally closer to the **Declaration of Independence** than to the actual **Bill of Rights**: it declares principles and asserts claims against concentrated power, but it does not establish courts, enforcement mechanisms, or procedures for redress. The Blueprint was always non-binding guidance; the recent rescission removed even that declarative scaffolding from federal AI policy.
+Sociologist [Alondra Nelson](https://www.ias.edu/sss/faculty/nelson){target=_blank} — who led the Blueprint's development as acting director of OSTP — argues in [*A civic grammar for AI rights*](https://www.science.org/doi/10.1126/science.aeh7153){target=_blank} (Science, 2026) that the Blueprint drew its name from the first ten amendments to the U.S. Constitution, but in structural terms resembles a different founding document: the **Declaration of Independence**.
 
-Nelson distinguishes the public Blueprint from **corporate "AI constitutions"** — internal training and alignment specifications written by AI companies for their own models. Anthropic's *Claude Constitution* is the canonical example. These corporate documents are not negotiated with the publics affected by AI deployments, can be revised by company fiat, and recent versions have quietly removed references to international human rights agreements — and with them protections for personal liberty, freedom of religion, and intellectual property that earlier versions included.
+> "Unlike the Bill of Rights, the Blueprint does not establish courts or enforcement mechanisms. It does not create procedures for redress. It declares. It states principles and claims rights against a concentration of power that most Americans cannot meaningfully constrain through existing institutions or processes."
 
-The deeper question Nelson raises is *who gets to author the foundational documents that govern AI* — companies, or publics? She frames the public response as a **"civic grammar"** — a shared vocabulary of rights claims (privacy, non-discrimination, due process, notice, recourse) that the public has built up over decades and can now extend to AI systems. For the philosophical framing in more depth, see [AI Constitutions and Bills of Rights](ethics.md#ai-constitutions-and-bills-of-rights) in the Ethics lesson.
+The five principles, Nelson argues, are statements of values — "social expectations, stated in the vocabulary Americans reach for when they want to contest power: Patients' Bill of Rights, Consumer Bill of Rights, Tenants' Bill of Rights, Workers' Bill of Rights, Taxpayers' Bill of Rights." The Blueprint extended that civic grammar to algorithmic systems.
+
+Nelson distinguishes the public Blueprint from **corporate "AI constitutions"** — internal training and alignment specifications written by AI companies for their own models. Anthropic's *Claude Constitution* is the canonical example. These corporate documents are not negotiated with the publics affected by AI deployments, can be revised by company fiat, and recent versions have quietly removed references to international human rights agreements. The deeper question, Nelson asks, is *who gets to author the foundational documents that govern AI* — companies, or publics? For the philosophical framing in depth (T. H. Marshall's social-citizenship framework, the diffusion mechanism, the limits of rights talk), see [AI Constitutions and Bills of Rights](ethics.md#ai-constitutions-and-bills-of-rights) in the Ethics lesson.
+
+### The Blueprint's "second life": cross-partisan diffusion
+
+Although rescinded at the federal level, the Blueprint, in Nelson's words, "has done what its metaphor suggests blueprints do: it has been built upon." State legislatures, governors, and advocacy organizations have produced their own AI bills of rights drawing directly from the five principles — often across explicitly opposed political coalitions:
+
+- **Connecticut (2023):** Democratic Governor Ned Lamont signed legislation directing state policy-makers to develop their own AI Bill of Rights.
+- **Oklahoma (2024):** The Republican-controlled House of Representatives introduced and passed an AI Bill of Rights, though it was not ultimately codified into law.
+- **Florida (2025):** Republican Governor Ron DeSantis pushed for an AI Bill of Rights through executive action and twice backed Florida Senate Bill 482, the "Artificial Intelligence Bill of Rights," which would codify several Blueprint principles into Florida law. The bill was blocked in the Florida House, where the Speaker aligned with the Trump administration's effort to prevent states from regulating AI.
+- **Student AI Bill of Rights (2026):** The National Student Legal Defense Network released a Student AI Bill of Rights.
+
+These actors did not coordinate. As Nelson puts it: "What the actors share is a vocabulary and a common perspective that AI is reshaping people's lives without their consultation." The driver of the diffusion is not relational but conceptual — what sociologists David Strang and John Meyer describe as alignment among "weakly related actors" through abstract typologies that travel "as a strategy for making sense of the world."
+
+### International convergence
+
+Legal scholar Yuval Shany has surveyed international standard-setting instruments — the [EU AI Act](https://artificialintelligenceact.eu/){target=_blank}, the [Council of Europe Framework Convention on AI](https://www.coe.int/en/web/artificial-intelligence/the-framework-convention-on-artificial-intelligence){target=_blank}, the United Nations Global Digital Compact, and national legislation in South Korea and Italy — and finds they coalesce around the same protections as the Blueprint: **non-discrimination, transparency, data privacy, and human alternatives**. The pattern predates the Blueprint: the EU's General Data Protection Regulation (GDPR) established data-protection rights nearly a decade earlier. The "bill of rights" frame is American; the underlying rights-claim convergence is global.
+
+### From declaration to enforcement
+
+Nelson is direct about what civic grammar alone cannot deliver. The harder labor that remains is "translating the grammar of rights into the standards, audit protocols, and enforcement mechanisms that give those sentences force." The institutional models exist:
+
+- **Algorithmic impact assessments** required before AI systems are shipped.
+- **Standardized evaluation methods** for detecting algorithmic risk and harm.
+- **Independent audit frameworks** that subject deployed systems to outside scrutiny.
+
+What is missing, in Nelson's account, is the political will to extend existing accountability frameworks to a domain that has so far resisted them — and the institutional coalitions, not just the vocabulary, required to deliver the principles the Blueprint declared.
 
 !!! info "Sources and further reading"
 
     - Alondra Nelson, [*A civic grammar for AI rights*](https://www.science.org/doi/10.1126/science.aeh7153){target=_blank}, *Science* (2026). DOI: 10.1126/science.aeh7153
     - Alondra Nelson, [Bluesky thread on these principles](https://bsky.app/profile/alondra.bsky.social/post/3mltfqoc7ok2y){target=_blank}
     - [Blueprint for an AI Bill of Rights](https://bidenwhitehouse.archives.gov/ostp/ai-bill-of-rights/){target=_blank} (White House OSTP, October 2022, archived)
+    - [EO 14110: Safe, Secure, and Trustworthy AI](https://www.federalregister.gov/documents/2023/11/01/2023-24283/safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence){target=_blank} (Biden, October 2023, rescinded January 2025)
+    - [Removing Barriers to American Leadership in AI](https://www.whitehouse.gov/presidential-actions/2025/01/removing-barriers-to-american-leadership-in-artificial-intelligence/){target=_blank} (Trump, January 2025)
     - Anthropic, [Claude's Constitution](https://www.anthropic.com/news/claudes-constitution){target=_blank}
 
 ## Current Legislation
