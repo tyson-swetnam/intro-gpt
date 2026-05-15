@@ -21,6 +21,28 @@ Over the next 70 years, Artificial Intelligence persisted mainly in [the minds o
 
 As consumers of GPTs and other AI platforms, we must consider in what ways can we use AI both effectively, and ethically.
 
+## AI Constitutions and Bills of Rights
+
+How should the values that guide AI systems be set, and by whom? Two distinct approaches have emerged: **corporate AI constitutions** written by AI companies for their own models (Anthropic's *Claude Constitution* is the canonical example), and **public AI bills of rights** developed through democratic processes (the White House *Blueprint for an AI Bill of Rights*, October 2022, is the leading example).
+
+Sociologist [Alondra Nelson](https://www.ias.edu/sss/faculty/nelson){target=_blank} — who led the development of the Blueprint while serving as acting director of the White House Office of Science and Technology Policy (OSTP) — argues in [*A civic grammar for AI rights*](https://www.science.org/doi/10.1126/science.aeh7153){target=_blank} (Science, 2026) that these two forms of foundational document do very different work:
+
+- **Corporate AI constitutions** are internal training and alignment specifications. They describe a company's vision of how its model should behave, but they are not negotiated with the publics affected by the model's deployment, and they can be revised by company fiat. Nelson notes, for example, that newer revisions of Anthropic's Claude Constitution have quietly removed references to international human rights agreements — and with them protections for personal liberty, freedom of religion, and intellectual property that earlier versions included.
+- **Public AI bills of rights** declare rights claims that publics can extend to new institutions and new harms. Their force comes from democratic legitimacy and the broader legal and political infrastructure around them, not from the model developers themselves.
+
+Nelson describes the result as a **"civic grammar"** — a shared vocabulary of rights claims (privacy, non-discrimination, due process, notice, recourse) that the public has built up over decades and can now extend to AI systems. The political question, in her framing, is *who gets to author the foundational documents that govern AI* — companies, or publics?
+
+The structural comparison matters. The Blueprint for an AI Bill of Rights, Nelson notes, is closer to the **Declaration of Independence** than to the actual **Bill of Rights**: it declares principles and asserts claims against concentrated power, but it does not establish courts, enforcement mechanisms, or procedures for redress. Closing that gap — moving from declaration to enforceable rights — is the work that remains.
+
+For the specific principles in the Blueprint and their current legal status, see [Ethical & Legal Considerations: Blueprint for an AI Bill of Rights](legal.md#blueprint-for-an-ai-bill-of-rights).
+
+!!! info "Further reading"
+
+    - Alondra Nelson, [*A civic grammar for AI rights*](https://www.science.org/doi/10.1126/science.aeh7153){target=_blank}, *Science* (2026). DOI: 10.1126/science.aeh7153
+    - Alondra Nelson, [Bluesky thread on these principles](https://bsky.app/profile/alondra.bsky.social/post/3mltfqoc7ok2y){target=_blank}
+    - [Blueprint for an AI Bill of Rights](https://bidenwhitehouse.archives.gov/ostp/ai-bill-of-rights/){target=_blank} (White House OSTP, October 2022, archived)
+    - Anthropic, [Claude's Constitution](https://www.anthropic.com/news/claudes-constitution){target=_blank}
+
 ## [:material-scale-balance: Ethical and Legal Considerations](legal.md)
 
 ## [:material-mirror: Transparency & Accountability](transparency.md)

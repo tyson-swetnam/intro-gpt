@@ -120,14 +120,38 @@ In response to the rapid rise of generative AI, specifically GPTs, new agreement
 | **Framework Convention on Artificial Intelligence** | September 5, 2024 | United States, United Kingdom, European Union, Andorra, Georgia, Iceland, Norway, Republic of Moldova, San Marino, Israel | The first legally binding international treaty on AI, aiming to ensure AI activities are consistent with human rights, democracy, and the rule of law. | [Council of Europe](https://www.coe.int/en/web/artificial-intelligence/the-framework-convention-on-artificial-intelligence){target=_blank} |
 | **AI Alliance Network** | December 11, 2024 | Russia, BRICS countries (Brazil, China, India, South Africa), Serbia, Indonesia, and others | An initiative to develop AI collaboratively, focusing on joint research, regulation, and commercialization of AI products among member countries. | [Reuters](https://www.reuters.com/technology/artificial-intelligence/russia-teams-up-with-brics-create-ai-alliance-putin-says-2024-12-11/){target=_blank} |
 
+## Blueprint for an AI Bill of Rights
+
+The [**Blueprint for an AI Bill of Rights**](https://bidenwhitehouse.archives.gov/ostp/ai-bill-of-rights/){target=_blank} was released by the White House Office of Science and Technology Policy (OSTP) in October 2022. It proposed five principles to guide the design, development, and deployment of automated systems:
+
+1. **Safe and Effective Systems** — protection from unsafe or ineffective systems.
+2. **Algorithmic Discrimination Protections** — equitable design and use of automated systems.
+3. **Data Privacy** — protection from abusive data practices, with agency over how your data is used.
+4. **Notice and Explanation** — knowing when an automated system is being used and how/why it affects you.
+5. **Human Alternatives, Consideration, and Fallback** — the ability to opt out and reach a human alternative when an automated system fails or causes harm.
+
+The companion [Executive Order on Safe, Secure, and Trustworthy Development and Use of Artificial Intelligence](https://www.federalregister.gov/documents/2023/11/01/2023-24283/safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence){target=_blank} (October 2023) operationalized parts of this framework for federal agencies. **Both the Blueprint and the Executive Order have been rescinded by the current administration.**
+
+### Constitution vs. Bill of Rights vs. Declaration of Independence
+
+Sociologist [Alondra Nelson](https://www.ias.edu/sss/faculty/nelson){target=_blank} — who led the Blueprint's development as acting director of OSTP — has argued in [*A civic grammar for AI rights*](https://www.science.org/doi/10.1126/science.aeh7153){target=_blank} (Science, 2026) that the Blueprint is structurally closer to the **Declaration of Independence** than to the actual **Bill of Rights**: it declares principles and asserts claims against concentrated power, but it does not establish courts, enforcement mechanisms, or procedures for redress. The Blueprint was always non-binding guidance; the recent rescission removed even that declarative scaffolding from federal AI policy.
+
+Nelson distinguishes the public Blueprint from **corporate "AI constitutions"** — internal training and alignment specifications written by AI companies for their own models. Anthropic's *Claude Constitution* is the canonical example. These corporate documents are not negotiated with the publics affected by AI deployments, can be revised by company fiat, and recent versions have quietly removed references to international human rights agreements — and with them protections for personal liberty, freedom of religion, and intellectual property that earlier versions included.
+
+The deeper question Nelson raises is *who gets to author the foundational documents that govern AI* — companies, or publics? She frames the public response as a **"civic grammar"** — a shared vocabulary of rights claims (privacy, non-discrimination, due process, notice, recourse) that the public has built up over decades and can now extend to AI systems. For the philosophical framing in more depth, see [AI Constitutions and Bills of Rights](ethics.md#ai-constitutions-and-bills-of-rights) in the Ethics lesson.
+
+!!! info "Sources and further reading"
+
+    - Alondra Nelson, [*A civic grammar for AI rights*](https://www.science.org/doi/10.1126/science.aeh7153){target=_blank}, *Science* (2026). DOI: 10.1126/science.aeh7153
+    - Alondra Nelson, [Bluesky thread on these principles](https://bsky.app/profile/alondra.bsky.social/post/3mltfqoc7ok2y){target=_blank}
+    - [Blueprint for an AI Bill of Rights](https://bidenwhitehouse.archives.gov/ostp/ai-bill-of-rights/){target=_blank} (White House OSTP, October 2022, archived)
+    - Anthropic, [Claude's Constitution](https://www.anthropic.com/news/claudes-constitution){target=_blank}
+
 ## Current Legislation
 
 [National Conference of State Legislatures (NCSL) Artificial Intelligence Legislation Database](https://www.ncsl.org/financial-services/artificial-intelligence-legislation-database){target=_blank}
 
-
-The previous administration had proposed a ["Blueprint for an AI Bill of Rights"](https://bidenwhitehouse.archives.gov/ostp/ai-bill-of-rights/){target=_blank}, and executive order around the ["Safe, Secure, and Trustworthy Development and Use of Artificial Intelligence"](https://www.federalregister.gov/documents/2023/11/01/2023-24283/safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence){target=_blank} which is now rescinded. 
-
-The current administration has instead focused most of its efforts on executive orders related to AI and federal agencies. [Pending legislation](https://www.newsweek.com/trump-constitutional-crisis-ai-2076230){target=_blank} would ban states' ability to enforce AI regulations. 
+The current administration has focused most of its efforts on executive orders related to AI and federal agencies. [Pending legislation](https://www.newsweek.com/trump-constitutional-crisis-ai-2076230){target=_blank} would ban states' ability to enforce AI regulations. 
 
 
 !!! Tip "2025 Executive Orders"
