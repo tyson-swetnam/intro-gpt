@@ -52,7 +52,6 @@ ChatGPT is powered by a family of large language models (LLMs) spanning flagship
     - Limited GPT-5.x access; reasoning models throttled
     - Standard response speed
     - **Shows ads on US accounts** (rolled out Feb 9, 2026)
-    - **Sora removed from Free tier** as of Jan 10, 2026
     - Good for casual users exploring AI capabilities
 
     **ChatGPT Go ($8/month)**
@@ -70,7 +69,6 @@ ChatGPT is powered by a family of large language models (LLMs) spanning flagship
     - File uploads, voice mode, and data analysis
     - Custom GPTs and GPT Store access
     - Advanced Voice mode with natural conversation
-    - Includes 1,000 Sora credits/month
 
     **ChatGPT Pro ($100/month) `(verify)`**
 
@@ -84,7 +82,6 @@ ChatGPT is powered by a family of large language models (LLMs) spanning flagship
     - Unlimited access to frontier reasoning models
     - Unlimited access to the flagship multimodal model
     - Higher limits on advanced features
-    - Access to Sora video generation (10,000 credits + unlimited overnight Relaxed mode)
     - Deep Research tool for comprehensive analysis
     - Priority access to newest features
 
@@ -108,7 +105,7 @@ ChatGPT is powered by a family of large language models (LLMs) spanning flagship
 
 !!! note "Heads-up (May 2026)"
     - The **Free tier shows ads on US accounts** (since Feb 9, 2026).
-    - **Sora access** now requires Plus or Pro (removed from Free Jan 10, 2026).
+    - **Sora discontinued.** OpenAI shut down the Sora web and app on April 26, 2026; the API will sunset September 24, 2026. Video generation in ChatGPT is in transition; a successor model ("Spud") is reportedly in development. For video work today, migrate to [Veo 3](https://deepmind.google/technologies/veo/){target=_blank}, [Runway](https://runwayml.com/){target=_blank}, or [Kling](https://klingai.com/){target=_blank}.
     - A **new ChatGPT Pro $100/month tier** launched April 9, 2026, sitting between Plus and the $200 tier `(verify)`.
 
 !!! info "API Pricing (per million tokens, May 2026) `(verify)`"
@@ -139,8 +136,8 @@ ChatGPT is powered by a family of large language models (LLMs) spanning flagship
 **Advanced Features:**
 
 - **Web Browsing:** Search the internet for current information (enabled by default for Plus users).
-- **Code Interpreter:** Run Python code, analyze data, create visualizations, and process files.
-- **DALL-E 3:** Generate and edit images from text descriptions.
+- **Sandboxed Python:** Run Python code, analyze data, create visualizations, and process files in a browser-based sandbox.
+- **GPT Image 1.5 / 2:** Generate and edit images from text descriptions (DALL-E 3 was sunset May 2026).
 - **Advanced Voice:** Natural, conversational voice interactions with low latency.
 
 ---

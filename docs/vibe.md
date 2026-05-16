@@ -151,7 +151,7 @@ Browser-based version of Claude Code providing AI pair programming capabilities 
 
 :material-web: :material-license: :material-api:
 
-OpenAI's ChatGPT Plus and Team tiers include Code Interpreter (Advanced Data Analysis) for executing Python code, analyzing data, and generating visualizations directly in the browser.
+OpenAI's ChatGPT runs a sandboxed Python environment for executing code, analyzing data, and generating visualizations directly in the browser. Available on Plus and Team tiers.
 
 #### [:simple-google: Google Gemini](https://gemini.google.com){target=_blank}
 

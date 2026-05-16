@@ -80,15 +80,17 @@ Below are tables that rank popular AI platforms by use case, organized by Chat, 
 
 | **Platform** | **Strength** | **Weakness** | **Cost** | **Interface** | **Docs** |
 |--------------|--------------|--------------|----------|---------------|----------|
-| **Veo (Google)** | - High-quality video <br/>- Up to 4K resolution | - Limited daily generation | \$0.15-\$0.60/second (API) or \$19.99-\$249.99/mo (subscription via AI Pro/Ultra) | [**Veo**](https://deepmind.google/technologies/veo/){target=_blank} | [**Veo Docs**](https://ai.google.dev/gemini-api/docs/video){target=_blank} |
-| **Midjourney** | - Exceptional image quality <br/>- Web interface available | - Subscription required | $10/mo (Basic), $30/mo (Standard), $60/mo (Pro), $120/mo (Mega) | [**Midjourney**](https://www.midjourney.com/){target=_blank} | [**Midjourney Docs**](https://docs.midjourney.com/){target=_blank} |
-| **ChatGPT Image (OpenAI)** | - Native integration <br/>- Multi-turn refinement | - Earlier DALL-E versions being sunset; check current model availability | $20/mo (ChatGPT Plus) or API pricing | [**ChatGPT**](https://chatgpt.com/){target=_blank} | [**OpenAI Image Docs**](https://platform.openai.com/docs/guides/images){target=_blank} |
-| **Stable Diffusion** | - Open source <br/>- Highly customizable | - Requires technical knowledge | Free (Open Source) or API services | [**Stability AI**](https://stability.ai/){target=_blank} | [**Stable Diffusion**](https://stability.ai/stable-image){target=_blank} |
-| **Adobe Firefly** | - Creative Cloud integration <br/>- Commercial-safe | - Subscription required | \$9.99-\$29.99/mo (standalone) or \$70/mo (CC Pro) | [**Firefly**](https://firefly.adobe.com/){target=_blank} | [**Firefly Docs**](https://developer.adobe.com/firefly-services/docs/guides/){target=_blank} |
-| **Sora (OpenAI)** | - Text-to-video <br/>- Up to 1080p | ⚠️ **NOT available in EU/UK** | $20/mo (ChatGPT Plus), $200/mo (ChatGPT Pro) | [**Sora**](https://openai.com/sora){target=_blank} | [**Sora Research**](https://openai.com/research/video-generation-models-as-world-simulators){target=_blank} |
-| **Runway ML** | - Advanced video tools <br/>- Latest generation models | - Higher-res requires paid plans | $15/mo (monthly), $12/mo (annual) to $95/mo | [**Runway**](https://runwayml.com/){target=_blank} | [**Runway Docs**](https://docs.runwayml.com/){target=_blank} |
-| **Imagine with Meta** | - Free image generation <br/>- Meta AI integration | - Quality less advanced | Free, $30/mo (Meta AI+ optional) | [**Meta AI**](https://www.meta.ai/){target=_blank} | [**Meta Help**](https://www.meta.com/help/artificial-intelligence/imagine/){target=_blank} |
-| **Craiyon** | - Simple free tier <br/>- Unlimited base quality | - Lower quality on free tier | Free (unlimited Base w/ ads), $5-12/mo (Supporter), $20-24/mo (Professional) | [**Craiyon**](https://www.craiyon.com/){target=_blank} | FAQ on site |
+| **Gemini Nano Banana 2 (Google)** | - State-of-the-art image editing <br/>- Multi-image fusion, character consistency <br/>- Conversational refinement <br/>- SynthID watermark on every output | - Editing-first model; pure txt2img not always best | ~$0.039/image (Gemini API) or included in Gemini AI Pro/Ultra | [**Gemini**](https://gemini.google.com/){target=_blank} | [**Nano Banana Docs**](https://ai.google.dev/gemini-api/docs/image-generation){target=_blank} |
+| **GPT Image 1.5 / 2 (OpenAI)** | - Top-ranked on human-vote leaderboards (May 2026) <br/>- Native ChatGPT integration <br/>- Strong text rendering and instruction following | - Higher per-image cost than Gemini <br/>- Geographic restrictions on some features | $20/mo (ChatGPT Plus) or per-image API pricing | [**ChatGPT**](https://chatgpt.com/){target=_blank} | [**OpenAI Image Docs**](https://platform.openai.com/docs/guides/images){target=_blank} |
+| **Imagen 4 / Imagen 4 Ultra (Google)** | - Best-in-class photorealism <br/>- Strong text rendering | - Vertex AI / API only | Per-image API pricing via Vertex AI | [**Imagen**](https://deepmind.google/models/imagen/){target=_blank} | [**Imagen Docs**](https://ai.google.dev/gemini-api/docs/imagen){target=_blank} |
+| **Midjourney v7** | - Exceptional artistic quality <br/>- Web interface available | - Subscription required | $10/mo (Basic), $30/mo (Standard), $60/mo (Pro), $120/mo (Mega) | [**Midjourney**](https://www.midjourney.com/){target=_blank} | [**Midjourney Docs**](https://docs.midjourney.com/){target=_blank} |
+| **FLUX 1.1 Pro / FLUX 2 Pro (Black Forest Labs)** | - Best technical quality + speed <br/>- Open-weight tiers (Schnell, dev) | - Pro tiers API-only | Free open-weights (Schnell/dev) or per-image API | [**Black Forest Labs**](https://bfl.ai/){target=_blank} | [**FLUX Docs**](https://docs.bfl.ai/){target=_blank} |
+| **Ideogram v3** | - Best-in-class text rendering and typography | - Less photorealistic than Imagen 4 | Free tier; $7-$48/mo paid plans | [**Ideogram**](https://ideogram.ai/){target=_blank} | [**Ideogram Docs**](https://developer.ideogram.ai){target=_blank} |
+| **Stable Diffusion 3.5 (Stability AI)** | - Open source <br/>- Highly customizable, runs locally | - Requires technical knowledge | Free (open weights) or API services | [**Stability AI**](https://stability.ai/){target=_blank} | [**SD 3.5**](https://stability.ai/news/introducing-stable-diffusion-3-5){target=_blank} |
+| **Adobe Firefly** | - Creative Cloud integration <br/>- Commercial-safe training data | - Subscription required | $9.99-$29.99/mo (standalone) or $70/mo (CC Pro) | [**Firefly**](https://firefly.adobe.com/){target=_blank} | [**Firefly Docs**](https://developer.adobe.com/firefly-services/docs/guides/){target=_blank} |
+| **Veo 3 (Google)** | - High-quality video with native audio <br/>- Up to 4K resolution | - Limited daily generation on consumer tiers | $0.15-$0.60/second (API) or $19.99-$249.99/mo (subscription via AI Pro/Ultra) | [**Veo**](https://deepmind.google/technologies/veo/){target=_blank} | [**Veo Docs**](https://ai.google.dev/gemini-api/docs/video){target=_blank} |
+| **Sora 2 (OpenAI)** | - Text-to-video with native audio <br/>- Up to 1080p | ⚠️ **DISCONTINUED** — web/app shut down April 26, 2026; API sunset Sept 24, 2026. Use Veo 3, Runway, or Kling instead | Was $20/mo (Plus), $200/mo (Pro) | [**Sora discontinuation FAQ**](https://help.openai.com/en/articles/20001152-what-to-know-about-the-sora-discontinuation){target=_blank} | — |
+| **Runway ML** | - Professional video tools <br/>- Latest generation models | - Higher-res requires paid plans | $15/mo (monthly), $12/mo (annual) to $95/mo | [**Runway**](https://runwayml.com/){target=_blank} | [**Runway Docs**](https://docs.runwayml.com/){target=_blank} |
 
 ---
 
@@ -96,23 +98,86 @@ Below are tables that rank popular AI platforms by use case, organized by Chat, 
 
     ## **Image Generation Models**
 
-    The image generation landscape includes both commercial platforms and open-source options:
+    The image-generation landscape in May 2026 has consolidated around a small set of multimodal frontier models (Nano Banana, GPT Image, Imagen 4) plus standalone leaders for artistic, technical, and typography work, alongside a strong open-weight ecosystem.
 
-    **Commercial Platforms:**
+    **Multimodal chat-integrated (current leaders for editing and conversational refinement):**
 
-    *   [**Midjourney**](https://www.midjourney.com/){target=_blank}: Known for exceptional artistic quality and aesthetics. Discord and web interface available.
-    *   [**ChatGPT Image Generation**](https://openai.com/index/introducing-4o-image-generation/){target=_blank} (OpenAI): Native integration with ChatGPT, good text rendering, iterative refinement.
-    *   [**Google Imagen**](https://deepmind.google/models/imagen/){target=_blank}: Strong photo-realism and text rendering. Available via Gemini API.
-    *   [**Adobe Firefly**](https://firefly.adobe.com/){target=_blank}: Commercial-safe training data, Creative Cloud integration.
-    *   [**Ideogram**](https://ideogram.ai/){target=_blank}: Strong text rendering and style references.
-    *   [**Leonardo**](https://leonardo.ai/){target=_blank}: Versatile with multiple style options.
-    *   [**Recraft**](https://www.recraft.ai/){target=_blank}: Vector art generation and extended text capabilities.
+    *   [**Gemini 2.5 Flash Image / Nano Banana 2**](https://deepmind.google/models/gemini-image/){target=_blank} (Google): State-of-the-art editing model. Multi-image fusion, character/style consistency across generations, targeted local edits via natural language ("blur the background," "remove the truck," "change the pose"), and SynthID watermarking on every output. Best for high-volume generation, conversational editing, and synthetic-data workflows. Nano Banana Pro / Nano Banana 2 (Gemini 3 Pro Image) adds 4K photorealism. ([API docs](https://ai.google.dev/gemini-api/docs/image-generation){target=_blank})
+    *   [**GPT Image 1.5 / GPT Image 2**](https://platform.openai.com/docs/guides/images){target=_blank} (OpenAI): Top-ranked on the [LLM Stats human-vote leaderboard](https://llm-stats.com/leaderboards/best-ai-for-image-generation){target=_blank} (May 2026). Native ChatGPT integration, strong instruction following, multi-turn refinement. Replaced DALL-E 3.
+    *   [**Imagen 4 / Imagen 4 Ultra**](https://deepmind.google/models/imagen/){target=_blank} (Google): Best-in-class photorealism and text rendering. Available via Vertex AI and the Gemini API.
 
-    **Open-Source Options:**
+    **Standalone commercial leaders:**
 
-    *   [**Stable Diffusion**](https://stability.ai/stable-diffusion-3-5){target=_blank} (Stability AI): Highly customizable, can run locally. Available on [HuggingFace](https://huggingface.co/stabilityai){target=_blank}.
-    *   [**FLUX**](https://bfl.ai/){target=_blank} (Black Forest Labs): Multiple variants for different use cases, Apache-licensed options available.
-    *   [**HiDream**](https://hidream.org/){target=_blank}: Open-source (MIT license).
+    *   [**Midjourney v7**](https://www.midjourney.com/){target=_blank}: Released April 2025. Still the benchmark for artistic and aesthetic image quality. Web and Discord interfaces.
+    *   [**FLUX 1.1 Pro / FLUX 2 Pro**](https://bfl.ai/){target=_blank} (Black Forest Labs): Best technical quality plus speed (~4.5s generation). Often the best default for general commercial use. Open-weight tiers (Schnell, dev) also available.
+    *   [**Ideogram v3**](https://ideogram.ai/){target=_blank}: Owns the typography niche. If text rendering matters in your output, start here.
+    *   [**Adobe Firefly**](https://firefly.adobe.com/){target=_blank}: Commercial-safe training data, deep Creative Cloud integration. Important if you need indemnification for client work.
+    *   [**Recraft V3**](https://www.recraft.ai/){target=_blank}: Vector art generation and extended text capabilities; popular for design workflows.
+    *   [**Reve Image 1.0**](https://reve.art/){target=_blank}: Newer entrant (2025) competing on prompt adherence.
+    *   [**Riverflow 2.0 Pro**](https://llm-stats.com/leaderboards/best-ai-for-image-generation){target=_blank}: Leaderboard top-three (May 2026); strong all-rounder.
+
+    **Open-source / open-weight:**
+
+    *   [**Stable Diffusion 3.5**](https://stability.ai/news/introducing-stable-diffusion-3-5){target=_blank} (Stability AI): Major step forward over SD 3. Highly customizable, runs locally. Available on [HuggingFace](https://huggingface.co/stabilityai){target=_blank}.
+    *   [**FLUX.1 Schnell / FLUX.1 dev**](https://bfl.ai/){target=_blank} (Black Forest Labs): Open-weight tiers of FLUX, Apache-licensed (Schnell) and non-commercial (dev). Strong baseline for self-hosting.
+    *   [**HiDream-I1**](https://hidream.org/){target=_blank}: MIT-licensed, fully open.
+    *   [**Qwen Image**](https://huggingface.co/Qwen){target=_blank} (Alibaba): Strong open-weight alternative with multilingual prompt support.
+
+    !!! example "Synthetic data for downstream model training: storm damage assessment from drone imagery"
+
+        Drone imagery for disaster-damage classification is hard to come by — major storms are infrequent, drones often can't fly during or immediately after, and labeled examples of severe damage are especially scarce. Multimodal image-editing models like Gemini 2.5 Flash Image (Nano Banana) can systematically expand a small seed dataset of real drone images into a much larger paired training set with controlled variation across damage severity, structure type, and environmental conditions.
+
+        **Workflow**
+
+        1. **Collect a seed dataset.** Start with a small set of real labeled nadir-view drone images — for example, 200 images of intact rural rooftops captured at known altitudes between 60–100 m AGL.
+
+        2. **Generate damage variants per scene.** For each seed image, prompt Nano Banana to produce a paired set of damage variants while preserving the underlying scene:
+
+            ```
+            I'm uploading a nadir drone image of an intact rural metal-panel roof
+            captured at ~80 m altitude. Generate four variants of the same scene at
+            the same camera angle, lighting, and surrounding vegetation, varying
+            ONLY the roof condition:
+
+            1. Light damage: 1-2 panels lifted, debris scattered around the perimeter
+            2. Moderate damage: ~30% of panels missing, some structural deformation
+            3. Severe damage: ~70% of panels missing, partial wall collapse on one side
+            4. Total loss: roof completely removed, exposed framing and interior visible
+
+            Maintain consistent perspective, vegetation, time of day, and shadow
+            direction across all four variants so they form a paired training set.
+            ```
+
+        3. **Generate environmental variants.** For each seed-plus-damage combination, vary lighting, weather, and seasonal conditions to teach the downstream model invariances:
+
+            ```
+            Take this drone image and generate four variants for: overcast midday,
+            golden-hour side-lit, low-altitude haze after rainfall, and partial cloud
+            shadow. Keep the roof condition, structure, and surrounding vegetation
+            identical across all four.
+            ```
+
+        4. **Generate structure-type diversity.** Use multi-image fusion to combine your scene templates with different roof morphologies (residential gable, commercial flat, agricultural barn) while preserving the damage signatures from step 2.
+
+        5. **Train your downstream classifier** (e.g., YOLOv8 for object detection, ResNet or a vision transformer for damage-class scoring) on the combined real + synthetic dataset. **Reserve a real-only test set** for honest evaluation.
+
+        **Why Nano Banana fits this workflow**
+
+        - **Scene consistency across edits** means damage variants share the same underlying structure, giving cleanly paired before/after training examples — hard to do with standalone txt2img models.
+        - **Multi-image fusion** lets you blend a real scene with a reference damage example to produce hybrids that retain your scene's geometry.
+        - **Conversational refinement** lets you iterate on a single variant ("more debris around the eaves," "less smoke on the right side") instead of re-rolling from scratch.
+        - **Low cost per image** (~$0.039 via API) makes augmenting a 200-image seed into a 10,000-image training set tractable (~$390).
+        - **Automatic SynthID watermarking** is invisible but detectable — important for documenting the synthetic provenance of every generated image in your training corpus.
+
+        **Caveats and methodological hygiene**
+
+        - **Validate on real data only.** Synthetic data narrows your training distribution in ways that often don't show up at training time. Always reserve a real-only test split, and report performance on it separately.
+        - **Domain gap.** Generated imagery can miss sensor-specific artifacts (rolling shutter, lens distortion, sensor noise, JPEG compression). Models trained heavily on synthetic data sometimes overfit to "synthetic-looking" features and degrade on real deployment.
+        - **Bias amplification.** If your seed images skew toward one geography, structure type, season, or altitude, synthetic variants amplify that skew. Audit class balance and sub-population coverage after augmentation.
+        - **Disclosure.** If you publish a model trained on synthetic data, document the generation workflow, prompt templates, sample sizes, and SynthID provenance in your methods section. Some journals and conferences now require it.
+        - **Validation against ground truth.** For high-stakes deployments (insurance estimation, FEMA damage assessment, search-and-rescue prioritization), pair synthetic augmentation with physics-based scene synthesis or labeled real datasets like [xBD](https://xview2.org){target=_blank} (building damage from satellite imagery) and [LADI](https://github.com/LADI-Dataset/ladi-overview){target=_blank} (low-altitude disaster imagery).
+
+        For the broader synthetic-data discussion in earth observation and disaster response, see also [Veo 3](https://deepmind.google/technologies/veo/){target=_blank} for video augmentation and physics-based CGI pipelines for defensible ground truth.
 
     ## **Video Generation Models**
 
@@ -120,7 +185,7 @@ Below are tables that rank popular AI platforms by use case, organized by Chat, 
 
     **Commercial Platforms:**
 
-    *   [**Sora**](https://openai.com/sora){target=_blank} (OpenAI): Text-to-video with native audio. Available to ChatGPT Plus/Pro subscribers. Not available in EU/UK.
+    *   ~~[**Sora**](https://openai.com/sora){target=_blank} (OpenAI)~~ — **DISCONTINUED**: web and app shut down April 26, 2026; API sunset Sept 24, 2026. OpenAI cited operating costs of $8–12M/month against under $2M/month in revenue. A successor model called "Spud" is reportedly in development. Migrate to Veo 3, Runway, or Kling.
     *   [**Veo**](https://deepmind.google/models/veo/){target=_blank} (Google): High-quality video with native audio. Available via Gemini API and Google AI Studio.
     *   [**Runway**](https://runwayml.com/){target=_blank}: Professional video tools with world consistency features.
     *   [**Pika**](https://pika.art/){target=_blank}: Keyframe-based video creation.
@@ -210,7 +275,8 @@ For more information on using AI for tutoring and education, see [AI Tutoring: S
 
     * **SearchGPT** - Merged into ChatGPT (no longer standalone)
     * **Code Llama** - Repository archived July 2025 (consider StarCoder instead)
-    * **DALL-E** - Version 3 being sunset May 2026 (replaced by GPT-4o Image Generation)
+    * **DALL-E 3** - Sunset May 2026 (replaced by GPT Image 1.5 / GPT Image 2)
+    * **Sora / Sora 2** - Discontinued by OpenAI: web and app shut down April 26, 2026; API sunset September 24, 2026. Successor model "Spud" reportedly in development. Migrate to Veo 3, Runway, or Kling.
 
 !!! Tip "Best Options for Students & Educators"
 
@@ -251,6 +317,9 @@ Agentic browsers integrate AI directly into your web browsing experience, enabli
 | [**Genspark AI Browser**](https://www.genspark.ai){target=_blank} | [Free](https://www.genspark.ai/pricing){target=_blank} | $0 | 100 credits daily, Super Agent Everywhere, Autopilot Mode, 700+ MCP tool integrations |
 | | [Plus](https://www.genspark.ai/pricing){target=_blank} | $24.99 | 10,000 credits monthly, priority AI agent access, top-tier models, AI Slides/Sheets/Docs |
 | | [Pro](https://www.genspark.ai/pricing){target=_blank} | $249.99 | 125,000 credits monthly, full Super Agent access, phone calls, video generation |
+| [**Google Chrome + Gemini**](https://gemini.google/overview/gemini-in-chrome/){target=_blank} | [Free](https://www.google.com/chrome/){target=_blank} | $0 | Gemini side panel (right rail), page summarization, cross-tab Q&A, in-browser Nano Banana image transformation, voice-driven browsing <br> **Free with any Google account** |
+| | [Google AI Pro](https://gemini.google.com/){target=_blank} | $19.99 | **Auto Browse** (launched Jan 2026): agentic multi-step tasks — shopping, form filling, hotel/flight research, scheduling, subscription management. Personal Intelligence (calendar/email) rolling out <br> **US-only at launch** |
+| | [Google AI Ultra](https://gemini.google.com/){target=_blank} | $249.99 | Higher Auto Browse limits, Gemini 3 Pro/Ultra access for deeper reasoning on agentic tasks |
 | [**Microsoft Edge Copilot Mode**](https://www.microsoft.com/edge){target=_blank} | [Free (Experimental)](https://www.microsoft.com/en-us/edge/features/copilot){target=_blank} | $0 | Cross-tab awareness, task automation, in-page assistance, browser history/credentials access <br> **Windows/Mac, opt-in** |
 | [**Opera One + Aria**](https://www.opera.com/features/aria){target=_blank} | [Free](https://www.opera.com/){target=_blank} | $0 | Free AI assistant, real-time web access, page context mode, image generation, tab commands, local AI models <br> **No account required** |
 | [**Brave + Leo AI**](https://brave.com/leo/){target=_blank} | [Free](https://brave.com/){target=_blank} | $0 | Privacy-first AI, Llama, Mixtral, Claude Haiku, Qwen, content awareness, zero data retention |
@@ -258,11 +327,11 @@ Agentic browsers integrate AI directly into your web browsing experience, enabli
 
 **Notes on Agentic Browsers:**
 
-*   **True Agentic Capabilities:** Comet, Fellou, Opera Neon, Dia, and Genspark can autonomously perform multi-step tasks (booking, purchasing, form filling)
+*   **True Agentic Capabilities:** Comet, Fellou, Opera Neon, Dia, Genspark, and Google Chrome (Auto Browse, AI Pro/Ultra) can autonomously perform multi-step tasks (booking, purchasing, form filling)
 *   **AI-Enhanced:** Microsoft Edge Copilot Mode, Opera One, and Brave Leo provide AI assistance but with less autonomous action
+*   **Major-vendor entry:** Google Chrome added agentic Auto Browse in January 2026, bringing autonomous web tasks into the world's most-used browser. Requires Google AI Pro or Ultra; US-only at launch.
 *   **Platform Availability:** Most are Chromium-based; Dia is macOS only (M1+); Others support Windows/Mac/Linux
 *   **Privacy Considerations:** Check each browser's data policies - some use cloud AI, others offer local processing
-*   **Coming Soon:** OpenAI browser expected late 2025 with ChatGPT integration and Operator agent
 
 ---
 
