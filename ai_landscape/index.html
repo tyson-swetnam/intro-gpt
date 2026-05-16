@@ -25,7 +25,7 @@
       
       
       <link rel="icon" href="../assets/ua.ico">
-      <meta name="generator" content="zensical-0.0.41">
+      <meta name="generator" content="zensical-0.0.42">
     
     
       
@@ -2691,7 +2691,7 @@
 <li><strong>Computer Vision</strong> — AI for images and video.</li>
 <li><strong>Generative AI</strong> — models that produce <em>new</em> content (text, images, code, audio, video).<ul>
 <li><strong>Large Language Models (LLMs)</strong> — generative models trained on text. ChatGPT, Claude, Gemini, Llama. The primary subject of this workshop.</li>
-<li><strong>Diffusion Models</strong> — generative models for images and video (Stable Diffusion, DALL-E, Sora, Veo).</li>
+<li><strong>Diffusion Models</strong> — generative models for images and video (Stable Diffusion 3.5, GPT Image, Imagen 4, Nano Banana, Veo 3).</li>
 </ul>
 </li>
 </ul>
@@ -2761,7 +2761,7 @@
 <p><strong>Interactive Generative Video (IGV)</strong></p>
 <p><a href="https://arxiv.org/abs/2504.21853" target="_blank"><img alt="igv-architecture" src="https://cdn-uploads.huggingface.co/production/uploads/64105a6d14215c0775dfdd14/5kPNXDj9LIsgShhFz5WSg.jpeg" width="700" /></a></p>
 <p>Image: IGV System Architecture from <a href="https://arxiv.org/abs/2504.21853" target="_blank">Yu et al. 2025 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3.842 0a1 1 0 0 0-.922.608c-.153.369-.044.627.294 1.111l6.919 8.36-1.023 1.106a1.04 1.04 0 0 0 .003 1.423l1.23 1.313-5.44 6.444c-.28.3-.453.823-.297 1.199a1.025 1.025 0 0 0 .959.635.91.91 0 0 0 .689-.34l5.783-6.126 7.49 8.005a.85.85 0 0 0 .684.26.96.96 0 0 0 .877-.615c.158-.377-.017-.75-.306-1.14L13.73 13.9l1.064-1.13a.963.963 0 0 0 .009-1.316L4.633.464S4.26.01 3.867 0zm0 .272h.017c.218.005.487.272.564.364l.005.006.005.005 10.17 10.99a.69.69 0 0 1-.008.946l-1.066 1.133-1.498-1.772-8.6-10.39c-.328-.472-.352-.619-.26-.841a.73.73 0 0 1 .671-.44Zm14.341 1.57a.88.88 0 0 0-.655.242l-5.696 6.158 1.694 1.832 5.309-6.514c.325-.433.479-.66.325-1.029a1.12 1.12 0 0 0-.977-.689zm-7.655 12.282 1.318 1.414-5.786 6.13a.65.65 0 0 1-.496.26.75.75 0 0 1-.706-.467c-.112-.269.036-.687.244-.909l.005-.005.005-.006z"/></svg></span></a></p>
-<p>Unlike traditional video generation (Sora, Runway), <strong>Interactive Generative Video</strong> systems generate video content that responds to user input in real-time—essentially creating playable worlds from text descriptions.</p>
+<p>Unlike traditional video generation (Veo 3, Runway, Kling), <strong>Interactive Generative Video</strong> systems generate video content that responds to user input in real-time—essentially creating playable worlds from text descriptions.</p>
 <p>IGV systems combine five key modules:</p>
 <table>
 <thead>
@@ -2858,7 +2858,7 @@
 <p><strong>For Creative Work:</strong></p>
 <ul>
 <li><strong>Images</strong>: Midjourney (quality), ChatGPT Image (convenience), Stable Diffusion (control)</li>
-<li><strong>Video</strong>: Sora (OpenAI), Veo (Google), Runway Gen-4.5</li>
+<li><strong>Video</strong>: Veo 3 (Google), Runway Gen-4.5, Kling AI (OpenAI's Sora was discontinued April 2026)</li>
 <li><strong>Music</strong>: Suno, Udio</li>
 <li><strong>Writing</strong>: Claude (creative writing), ChatGPT, Jasper (marketing)</li>
 </ul>
@@ -3066,7 +3066,7 @@
 <li><strong>V-JEPA 2</strong> (Meta) — learns physical-world dynamics from video and is used for robot planning.</li>
 <li><strong>GAIA-1</strong> (Wayve) — autonomous-driving world model that predicts how a driving scene unfolds given the ego-vehicle's actions.</li>
 <li><strong>NVIDIA Cosmos</strong> — open foundation models for "physical AI"; the platform layer being used to build world models for robotics and autonomous systems.</li>
-<li><strong><a href="https://openai.com/sora" target="_blank">Sora</a></strong> (OpenAI) and <strong>Veo</strong> (Google DeepMind) — video generators that learn implicit world physics. Their failure modes (object-permanence violations, gravity slips, hands with too many fingers) are diagnostic of how complete the implicit world model actually is.</li>
+<li><strong>Veo 3</strong> (Google DeepMind) and <strong>Sora</strong> (OpenAI, discontinued April 2026) — video generators that learn implicit world physics. Their failure modes (object-permanence violations, gravity slips, hands with too many fingers) are diagnostic of how complete the implicit world model actually is. Sora pioneered this framing; the discontinuation reflected economics rather than technical failure (operating costs of $8–12M/month against under $2M/month in revenue).</li>
 </ul>
 <p>A useful rule of thumb: if you can ask the system "what happens if I do X?" and the answer can be acted on, it's a world model. If you can only ask "what does this scene look like?", it's still generative video.</p>
 <hr />
@@ -3112,7 +3112,7 @@ Large-scale AI models (LLMs, vision models, multimodal models) trained on massiv
 <p><strong>Hallucination:</strong>
 When an AI model generates false, nonsensical, or unfaithful information presented as fact. A key challenge in LLM reliability, especially for factual domains.</p>
 <p><strong>Interactive Generative Video (IGV):</strong>
-AI systems that generate video content in real-time based on user input, combining video generation with interactive control. Unlike passive video generation (Sora, Runway), IGV systems respond to user actions in real-time, enabling gaming, simulation, and embodied AI applications.</p>
+AI systems that generate video content in real-time based on user input, combining video generation with interactive control. Unlike passive video generation (Veo 3, Runway, Kling), IGV systems respond to user actions in real-time, enabling gaming, simulation, and embodied AI applications.</p>
 <p><strong>Large Language Models (LLMs):</strong>
 A subset of foundation models trained on extensive text corpora, enabling them to generate human-like text, summarize information, reason about topics, and perform various NLP tasks. Examples: GPT, Claude, Gemini, Llama.</p>
 <p><strong>Lifelong Learning:</strong>
@@ -3322,7 +3322,7 @@ The capability of an AI model to perform tasks it has never been explicitly trai
       <script id="__config" type="application/json">{"annotate":null,"base":"..","features":["navigation.instant","navigation.tracking","navigation.tabs","navigation.tabs.sticky","navigation.indexes","navigation.top","search.highlight","search.share","search.suggest","content.code.copy","content.code.prettify","content.tooltips"],"search":"../assets/javascripts/workers/search.e2d2d235.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
     
     
-      <script src="../assets/javascripts/bundle.dbc0afdc.min.js"></script>
+      <script src="../assets/javascripts/bundle.6e5f0216.min.js"></script>
       
     
   </body>
