@@ -182,22 +182,52 @@ What is missing, in Nelson's account, is the political will to extend existing a
 
 [National Conference of State Legislatures (NCSL) Artificial Intelligence Legislation Database](https://www.ncsl.org/financial-services/artificial-intelligence-legislation-database){target=_blank}
 
-The current administration has focused most of its efforts on executive orders related to AI and federal agencies. [Pending legislation](https://www.newsweek.com/trump-constitutional-crisis-ai-2076230){target=_blank} would ban states' ability to enforce AI regulations. 
+The current administration has focused most of its efforts on executive orders related to AI and federal agencies. The December 2025 [Executive Order 14365 "Ensuring a National Policy Framework for Artificial Intelligence"](https://www.whitehouse.gov/presidential-actions/2025/12/eliminating-state-law-obstruction-of-national-artificial-intelligence-policy/){target=_blank} asserts federal authority to challenge or override state AI laws through DOJ litigation, conditioned BEAD broadband funding, and an FTC policy statement. See also [pending congressional legislation](https://www.newsweek.com/trump-constitutional-crisis-ai-2076230){target=_blank} that would codify state-preemption.
 
 
-!!! Tip "2025 Executive Orders"
+!!! Tip "2025–2026 Executive Orders"
 
-    * [REMOVING BARRIERS TO AMERICAN LEADERSHIP IN ARTIFICIAL INTELLIGENCE, January 23, 2025](https://www.whitehouse.gov/presidential-actions/2025/01/removing-barriers-to-american-leadership-in-artificial-intelligence/){target=_blank}
+    **January 2025**
+
+    * [Removing Barriers to American Leadership in Artificial Intelligence, January 23, 2025](https://www.whitehouse.gov/presidential-actions/2025/01/removing-barriers-to-american-leadership-in-artificial-intelligence/){target=_blank} — rescinded Biden's October 2023 EO on Safe, Secure, and Trustworthy AI
+
+    **April 2025**
 
     * [OMB Accelerating Federal Use of AI through Innovation, Governance, and Public Trust, April 3, 2025](https://www.whitehouse.gov/wp-content/uploads/2025/02/M-25-21-Accelerating-Federal-Use-of-AI-through-Innovation-Governance-and-Public-Trust.pdf){target=_blank}
 
         * [Fact Sheet: Eliminating Barriers for Federal Artificial Intelligence Use and Procurement, April 7, 2025](https://www.whitehouse.gov/fact-sheets/2025/04/fact-sheet-eliminating-barriers-for-federal-artificial-intelligence-use-and-procurement/){target=_blank}
 
-    * [ADVANCING ARTIFICIAL INTELLIGENCE EDUCATION FOR AMERICAN YOUTH, April 23, 2025](https://www.whitehouse.gov/presidential-actions/2025/04/advancing-artificial-intelligence-education-for-american-youth/){target=_blank}
+    * [Advancing Artificial Intelligence Education for American Youth, April 23, 2025](https://www.whitehouse.gov/presidential-actions/2025/04/advancing-artificial-intelligence-education-for-american-youth/){target=_blank}
+
+    **May 2025**
 
     * [Restoring Gold Standard Science, May 23, 2025](https://www.whitehouse.gov/presidential-actions/2025/05/restoring-gold-standard-science/){target=_blank}
 
         * [Fact Sheet: President Donald J. Trump is Restoring Gold Standard Science in America](https://www.whitehouse.gov/fact-sheets/2025/05/fact-sheet-president-donald-j-trump-deploys-advanced-nuclear-reactor-technologies-for-national-security/){target=_blank}
+
+    **July 2025 — America's AI Action Plan (three EOs paired with the 90-policy "Winning the Race" action plan)**
+
+    * **Promoting the Export of the American AI Technology Stack, July 23, 2025** — directs federal agencies to promote export of US AI software, hardware, and standards
+    * [EO 14318: Accelerating Federal Permitting of Data Center Infrastructure, July 23, 2025](https://www.whitehouse.gov/presidential-actions/2025/07/accelerating-federal-permitting-of-data-center-infrastructure/){target=_blank} — streamlines NEPA reviews and creates new categorical exclusions for AI-related data-center projects
+    * **Preventing Woke AI in the Federal Government, July 23, 2025** — bars federal procurement of AI models judged to embed "ideological bias," including DEI-aligned principles; mandates "Unbiased AI Principles" prioritizing "truth-seeking" and "ideological neutrality"
+
+    **December 2025**
+
+    * [EO 14365: Ensuring a National Policy Framework for Artificial Intelligence, December 11, 2025](https://www.whitehouse.gov/presidential-actions/2025/12/eliminating-state-law-obstruction-of-national-artificial-intelligence-policy/){target=_blank} — asserts federal authority to challenge or override state AI laws. Three operational mechanisms:
+
+        * Establishes an **AI Litigation Task Force** at the Department of Justice to challenge state AI laws in federal court (operational January 10, 2026)
+        * Directs the Department of Commerce to condition **$42 billion in BEAD** (Broadband Equity, Access and Deployment) funding on the repeal of state AI regulations deemed onerous
+        * Directs the **FTC** to issue a policy statement (by March 11, 2026) treating state-mandated bias mitigation as a per se deceptive trade practice
+
+        Carve-outs from preemption: child-safety laws, AI compute and data-center infrastructure laws, and state procurement of AI.
+
+    **2026 — implementation and forthcoming actions**
+
+    No new AI executive orders have been signed in calendar year 2026 (January–May). Activity has been implementation of EO 14365 and related deliverables:
+
+    * **January 9, 2026:** Attorney General [formally established the AI Litigation Task Force](https://www.paulhastings.com/insights/client-alerts/president-trump-signs-executive-order-challenging-state-ai-laws){target=_blank} at DOJ via memorandum (operational January 10)
+    * **March 20, 2026:** White House released the [National Policy Framework for Artificial Intelligence](https://www.whitehouse.gov/wp-content/uploads/2026/03/03.20.26-National-Policy-Framework-for-Artificial-Intelligence-Legislative-Recommendations.pdf){target=_blank} — legislative recommendations for Congress (non-binding; not an EO) on federal preemption, data-infrastructure buildout, and intellectual property
+    * **May 2026:** White House [reportedly studying](https://federalnewsnetwork.com/artificial-intelligence/2026/05/wh-studying-ai-security-executive-order/){target=_blank} an AI security executive order modeled on FDA-style pre-release evaluation of AI models
 
 As of today, there are no comprehensive federal laws or regulations that have been enacted to specifically regulate AI in the United States of America.  
 
