@@ -54,9 +54,22 @@ Nelson is clear-eyed about what civic grammar cannot do on its own:
 
 Nelson's clarifying question for democratic institutions: *will they take this civic grammar seriously before the AI companies finish writing their own constitutions for us all?*
 
+### Three imperatives for studying AI: question, object, tool
+
+Nelson's argument about AI rights builds on a broader claim she develops in [*Field Theory: AI as Social Science Question, Object & Tool*](https://www.amacad.org/publication/daedalus/field-theory-ai-social-science-question-object-tool){target=_blank} (*Daedalus*, Winter/Spring 2026): AI models, tools, and systems pose **three interrelated imperatives** for the social sciences.
+
+1. **AI as social-science question.** Renewed attention to social theories of how technology, human experience, and social order are entangled. Nelson reaches back to Weber's analysis of rationalization and W. E. B. Du Bois's study of technology and inequality, and forward to contemporary scholarship on algorithmic governance.
+2. **AI as object of inquiry.** AI systems themselves require study as social, political, and economic artifacts — not just engineering products. Their training corpora, their labor relations, their ideological commitments, and their effects on the institutions that deploy them all merit investigation in their own right.
+3. **AI as method/tool.** AI capabilities may transform — or upend — the practice of social investigation itself: large-scale text analysis, multimodal pattern detection, conversational interviewing at scale. That transformation deserves critical scrutiny rather than uncritical adoption.
+
+The capacities social science distinctively brings to all three, Nelson argues: **historicizing the apparently unprecedented**, **tracing connections across scales** (from individual experience to institutional behavior to political economy), and **centering those most affected** by technological change.
+
+This three-part framing also doubles as a useful diagnostic. When you read a piece of AI-ethics scholarship, ask which of the three imperatives it engages — that often clarifies what kind of argument is being made and what kind of counter-argument would land.
+
 !!! info "Sources and further reading"
 
     - Alondra Nelson, [*A civic grammar for AI rights*](https://www.science.org/doi/10.1126/science.aeh7153){target=_blank}, *Science* (2026). DOI: 10.1126/science.aeh7153
+    - Alondra Nelson, [*Field Theory: AI as Social Science Question, Object & Tool*](https://www.amacad.org/publication/daedalus/field-theory-ai-social-science-question-object-tool){target=_blank}, *Daedalus* (Winter/Spring 2026)
     - Alondra Nelson, [Bluesky thread on these principles](https://bsky.app/profile/alondra.bsky.social/post/3mltfqoc7ok2y){target=_blank}
     - T. H. Marshall, "Citizenship and Social Class" (1950)
     - [Blueprint for an AI Bill of Rights](https://bidenwhitehouse.archives.gov/ostp/ai-bill-of-rights/){target=_blank} (White House OSTP, October 2022, archived)
