@@ -75,6 +75,45 @@ This three-part framing also doubles as a useful diagnostic. When you read a pie
     - [Blueprint for an AI Bill of Rights](https://bidenwhitehouse.archives.gov/ostp/ai-bill-of-rights/){target=_blank} (White House OSTP, October 2022, archived)
     - Anthropic, [Claude's Constitution](https://www.anthropic.com/news/claudes-constitution){target=_blank}
 
+## Catholic social teaching: *Magnifica Humanitas* (Pope Leo XIV, 2026)
+
+On May 25, 2026, Pope Leo XIV released [*Magnifica Humanitas*](https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html){target=_blank} ("Magnificent Humanity"), his first encyclical, addressed to Catholics and "every person of goodwill." The 235-page document treats artificial intelligence as the central moral question of the age and frames AI as a new industrial revolution requiring a parallel foundational moral response.
+
+The signing date is deliberate: **May 15, 2026** is the **135th anniversary of Pope Leo XIII's *Rerum Novarum*** (1891), the foundational encyclical of modern Catholic social teaching, written to address the dignity of workers amid the 19th-century industrial revolution. Leo XIV explicitly places AI alongside that earlier disruption as a moment demanding renewed teaching.
+
+In a break with tradition, Pope Leo personally presented the encyclical at the Vatican alongside Chris Olah, co-founder of Anthropic — the first time a pontiff has presented an encyclical himself rather than delegating the task to cardinals.
+
+### Core teachings
+
+- **The centrality of the human person.** The dignity of the human person is affirmed as infinite. Human beings take precedence over AI, and any deployment of AI must be evaluated against that priority.
+- **Critique of *transhumanism*** — the project of using technology to overcome biological limits such as aging. Leo XIV rejects the framing of human finitude as a problem to be engineered away.
+- **Critique of *posthumanism*** — the philosophical position that blurs the boundaries between humans and machines, or denies the distinctiveness of human beings. The encyclical names this as an active "anti-human vision" embedded in contemporary AI development, not merely a speculative philosophical stance.
+- **Catholic social doctrine as the evaluation framework:** *dignity of the person*, *the common good*, and *justice* serve as the principles against which any AI deployment should be measured.
+- **Coverage** extends across education, the economy, unemployment, work, human trafficking, and war — the same broad social-impact terrain Catholic social teaching has historically addressed.
+
+### Calls to action
+
+- **"Disarm AI"** — withdraw AI from military applications and from purely economic interests; direct it to the common good.
+- **Stricter state and international regulation** of AI companies, not industry self-governance.
+- An explicit address to "every person of goodwill" extends the encyclical's claims of moral force beyond its Catholic audience — a move consistent with how *Laudato Si'* (2015, on climate) and the Vatican's *Antiqua et Nova* (January 2025, the Dicastery for the Doctrine of the Faith's earlier note on AI) sought ethical common ground beyond doctrinal lines.
+
+### Why this matters for the workshop
+
+For students and practitioners thinking about AI ethics, *Magnifica Humanitas* is significant in several ways:
+
+- It situates AI alongside the industrial revolution as a moment requiring **foundational moral and institutional response** rather than industry self-governance. That framing converges with the [civic grammar argument](#ai-constitutions-and-bills-of-rights) above — both Pope Leo and Alondra Nelson arrive at the same conclusion from very different starting points: *corporate self-governance is structurally insufficient as a source of legitimacy*.
+- It introduces a **theological and humanistic vocabulary** (transhumanism, posthumanism, infinite human dignity, the common good) that may not appear in technical AI-ethics literature but increasingly shapes public reception of AI.
+- The decision to present the encyclical alongside an AI-company executive signals that the Church views the conversation as dialogic rather than purely adversarial.
+
+!!! info "Sources and further reading"
+
+    - Pope Leo XIV, [*Magnifica Humanitas*](https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html){target=_blank} (signed May 15, 2026; published May 25, 2026)
+    - [Vatican News announcement](https://www.vaticannews.va/en/pope/news/2026-05/pope-leo-xiv-first-encyclical-magnifica-humanitas.html){target=_blank}
+    - [CNN: Pope Leo warns of AI fueling warfare in first major theological document](https://www.cnn.com/2026/05/25/europe/pope-leo-ai-encyclical-magnifica-humanitas-intl){target=_blank}
+    - [America Magazine: Pope Leo XIV calls for AI to be 'disarmed', directed to the common good](https://www.americamagazine.org/speeches/2026/05/25/pope-leo-xiv-calls-for-ai-to-be-disarmed-directed-to-the-common-good/){target=_blank}
+    - Earlier related Catholic texts: *Antiqua et Nova* (Dicastery for the Doctrine of the Faith, January 2025, on AI); Pope Francis, [*Laudato Si'*](https://www.vatican.va/content/francesco/en/encyclicals/documents/papa-francesco_20150524_enciclica-laudato-si.html){target=_blank} (2015, on care for creation)
+    - Pope Leo XIII, [*Rerum Novarum*](https://www.vatican.va/content/leo-xiii/en/encyclicals/documents/hf_l-xiii_enc_15051891_rerum-novarum.html){target=_blank} (1891) — the 135-year predecessor referenced by the signing date
+
 ## [:material-scale-balance: Ethical and Legal Considerations](legal.md)
 
 ## [:material-mirror: Transparency & Accountability](transparency.md)
