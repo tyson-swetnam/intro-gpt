@@ -1,0 +1,1526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Geospatial Analysis, AI-Powered — UA PH&amp;AI 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<script src="deck-stage.js"></script>
+<style>
+  :root {
+    /* University of Arizona palette */
+    --ua-blue:        #0C234B;
+    --ua-blue-deep:   #07173a;
+    --ua-blue-mid:    #1b3870;
+    --ua-red:         #AB0520;
+    --ua-red-bright:  #c8102e;
+    --cream:          #f7f4ee;
+    --cream-warm:     #efe9dc;
+    --paper:          #fbfaf6;
+    --ink:            #161616;
+    --ink-soft:       #2a2a2a;
+    --mute:           #6b6b6b;
+    --rule:           #d8d2c4;
+    --rule-strong:    #2a2a2a;
+    --code-bg:        #0f1623;
+    --code-fg:        #e6edf3;
+
+    /* Type scale — 1920x1080 */
+    --type-display:   140px;
+    --type-title:     72px;
+    --type-subtitle:  44px;
+    --type-body:      32px;
+    --type-small:     26px;
+    --type-tag:       24px;
+    --type-mono-sm:   24px;
+
+    /* Spacing */
+    --pad-x:          110px;
+    --pad-top:        96px;
+    --pad-bottom:     90px;
+    --gap-title:      48px;
+    --gap-item:       28px;
+  }
+
+  html, body { margin: 0; padding: 0; background: #000; }
+  body { font-family: 'Manrope', system-ui, sans-serif; color: var(--ink); }
+
+  deck-stage section {
+    box-sizing: border-box;
+    overflow: hidden;
+    background: var(--cream);
+    color: var(--ink);
+    font-family: 'Manrope', system-ui, sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── Shared atoms ──────────────────────────────────────────────── */
+  .slide {
+    padding: var(--pad-top) var(--pad-x) var(--pad-bottom);
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+  .slide-dark { background: var(--ua-blue); color: var(--cream); }
+  .slide-paper { background: var(--paper); }
+  .slide-red { background: var(--ua-red); color: var(--cream); }
+
+  .tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: var(--type-tag);
+    font-weight: 500;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ua-red);
+  }
+  .slide-dark .tag { color: var(--cream-warm); opacity: 0.85; }
+  .slide-red .tag { color: var(--cream); opacity: 0.85; }
+
+  .title {
+    font-size: var(--type-title);
+    font-weight: 700;
+    line-height: 1.02;
+    letter-spacing: -0.02em;
+    margin: 0;
+    text-wrap: balance;
+  }
+  .display {
+    font-size: var(--type-display);
+    font-weight: 800;
+    line-height: 0.95;
+    letter-spacing: -0.035em;
+    margin: 0;
+    text-wrap: balance;
+  }
+  .subtitle {
+    font-size: var(--type-subtitle);
+    font-weight: 500;
+    line-height: 1.18;
+    color: var(--ink-soft);
+    margin: 0;
+    text-wrap: pretty;
+  }
+  .slide-dark .subtitle, .slide-red .subtitle { color: var(--cream-warm); }
+  .body {
+    font-size: var(--type-body);
+    font-weight: 400;
+    line-height: 1.42;
+    color: var(--ink-soft);
+    margin: 0;
+    text-wrap: pretty;
+  }
+  .slide-dark .body { color: var(--cream-warm); }
+  .small {
+    font-size: var(--type-small);
+    color: var(--mute);
+    line-height: 1.4;
+  }
+  .slide-dark .small { color: rgba(247,244,238,0.65); }
+  .mono { font-family: 'JetBrains Mono', monospace; }
+
+  /* Header bar with workshop/track identity */
+  .deck-header {
+    position: absolute;
+    top: 38px;
+    left: var(--pad-x);
+    right: var(--pad-x);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--mute);
+  }
+  .slide-dark .deck-header,
+  .slide-red .deck-header { color: rgba(247,244,238,0.55); }
+  .deck-header .lockup {
+    display: flex; align-items: center; gap: 14px;
+  }
+  .deck-header .ua-block {
+    display: inline-block;
+    width: 38px; height: 38px;
+    background: var(--ua-red);
+    color: var(--cream);
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: -0.04em;
+  }
+  .slide-red .deck-header .ua-block { background: var(--cream); color: var(--ua-red); }
+
+  /* Footer crumb */
+  .deck-footer {
+    position: absolute;
+    bottom: 38px;
+    left: var(--pad-x);
+    right: var(--pad-x);
+    display: flex;
+    justify-content: space-between;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--mute);
+  }
+  .slide-dark .deck-footer,
+  .slide-red .deck-footer { color: rgba(247,244,238,0.5); }
+
+  /* Two-column generic */
+  .cols-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; flex: 1; }
+  .cols-2-uneven { display: grid; grid-template-columns: 1.2fr 1fr; gap: 80px; flex: 1; }
+  .cols-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 48px; flex: 1; }
+
+  /* Lists */
+  .checklist { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: var(--gap-item); }
+  .checklist li { display: flex; gap: 22px; font-size: var(--type-body); line-height: 1.35; color: var(--ink-soft); }
+  .checklist .num {
+    flex: 0 0 auto;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 26px;
+    font-weight: 500;
+    color: var(--ua-red);
+    padding-top: 10px;
+    letter-spacing: 0.06em;
+  }
+  .slide-dark .checklist li { color: var(--cream-warm); }
+  .slide-dark .checklist .num { color: var(--cream); opacity: 0.7; }
+
+  /* Cards */
+  .card {
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    padding: 38px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .slide-dark .card {
+    background: rgba(255,255,255,0.04);
+    border-color: rgba(247,244,238,0.18);
+    color: var(--cream);
+  }
+  .card h4 {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: -0.01em;
+    line-height: 1.05;
+  }
+  .card p {
+    font-size: 26px;
+    line-height: 1.4;
+    color: var(--ink-soft);
+    margin: 0;
+  }
+  .slide-dark .card p { color: var(--cream-warm); }
+  .card .kicker {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ua-red);
+  }
+
+  /* Code block */
+  pre.code {
+    background: var(--code-bg);
+    color: var(--code-fg);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    line-height: 1.45;
+    padding: 36px 42px;
+    margin: 0;
+    border-radius: 4px;
+    overflow: hidden;
+    white-space: pre-wrap;
+  }
+  pre.code .c { color: #8b96a8; }
+  pre.code .k { color: #ffb86c; }
+  pre.code .s { color: #a6e22e; }
+  pre.code .v { color: #79c0ff; }
+
+  /* Decorative rule */
+  .rule { height: 1px; background: var(--rule); margin: 0; }
+  .rule-strong { height: 2px; background: var(--ink); margin: 0; }
+  .slide-dark .rule { background: rgba(247,244,238,0.18); }
+  .slide-dark .rule-strong { background: var(--cream); }
+
+  /* Big number block */
+  .bignum {
+    font-size: 240px;
+    font-weight: 800;
+    line-height: 0.85;
+    letter-spacing: -0.04em;
+    color: var(--ua-red);
+  }
+  .slide-dark .bignum { color: var(--cream); }
+
+  /* Image placeholder (striped, monospace label) */
+  .placeholder {
+    background:
+      repeating-linear-gradient(135deg,
+        rgba(12,35,75,0.06) 0,
+        rgba(12,35,75,0.06) 14px,
+        rgba(12,35,75,0.10) 14px,
+        rgba(12,35,75,0.10) 28px);
+    border: 1px solid var(--rule);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--ink-soft);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 24px;
+    box-sizing: border-box;
+  }
+  .slide-dark .placeholder {
+    background:
+      repeating-linear-gradient(135deg,
+        rgba(247,244,238,0.06) 0,
+        rgba(247,244,238,0.06) 14px,
+        rgba(247,244,238,0.10) 14px,
+        rgba(247,244,238,0.10) 28px);
+    border-color: rgba(247,244,238,0.2);
+    color: rgba(247,244,238,0.7);
+  }
+
+  /* Section divider slides */
+  .section-slide {
+    padding: var(--pad-top) var(--pad-x) var(--pad-bottom);
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+  }
+  .section-slide .part-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 28px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    opacity: 0.7;
+    margin-bottom: 36px;
+  }
+  .section-slide .section-title {
+    font-size: 160px;
+    font-weight: 800;
+    line-height: 0.92;
+    letter-spacing: -0.035em;
+    margin: 0;
+    text-wrap: balance;
+  }
+  .section-slide .section-sub {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.3;
+    max-width: 1100px;
+    margin-top: 36px;
+    opacity: 0.85;
+  }
+
+  /* Title slide */
+  .title-slide {
+    height: 100%;
+    box-sizing: border-box;
+    padding: var(--pad-top) var(--pad-x) var(--pad-bottom);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+  }
+  .title-slide .grid-bg {
+    position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(247,244,238,0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(247,244,238,0.05) 1px, transparent 1px);
+    background-size: 80px 80px;
+    pointer-events: none;
+  }
+  .title-slide-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  /* Step header (lab steps) */
+  .step-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ua-red);
+    margin-bottom: 18px;
+  }
+
+  /* Table */
+  table.surfaces {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 28px;
+  }
+  table.surfaces th, table.surfaces td {
+    text-align: left;
+    padding: 22px 24px;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+  }
+  table.surfaces th {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--mute);
+    font-weight: 500;
+    border-bottom: 2px solid var(--ink);
+  }
+  table.surfaces td.tool {
+    font-weight: 700;
+    color: var(--ink);
+    width: 28%;
+  }
+  table.surfaces td.kind {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    color: var(--ua-red);
+    width: 22%;
+  }
+  table.surfaces td.desc { color: var(--ink-soft); }
+
+  /* Stack ladder for tools list */
+  .stack { display: flex; flex-direction: column; gap: 0; }
+  .stack-row {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 40px;
+    padding: 28px 0;
+    border-bottom: 1px solid var(--rule);
+    align-items: baseline;
+  }
+  .stack-row:last-child { border-bottom: none; }
+  .stack-row .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--ua-red);
+  }
+  .stack-row .val {
+    font-size: 30px;
+    color: var(--ink-soft);
+    line-height: 1.35;
+  }
+  .stack-row .val strong { color: var(--ink); font-weight: 700; }
+</style>
+</head>
+<body>
+
+<deck-stage width="1920" height="1080">
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       1 · TITLE SLIDE
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="01 Title" class="slide-dark">
+    <div class="title-slide">
+      <div class="grid-bg"></div>
+      <div class="deck-header">
+        <div class="lockup">
+          <span class="ua-block">A</span>
+          <span>University of Arizona · BIO5 Institute</span>
+        </div>
+        <div>PH&amp;AI Summer School · 2nd Edition</div>
+      </div>
+
+      <div class="title-slide-content" style="margin-top: 60px;">
+        <div class="tag" style="font-size: 26px;">Day 2 · AI Fluency Track · 10:30 AM</div>
+        <h1 class="display" style="font-size: 168px;">
+          Geospatial<br>Analysis,<br><span style="color: var(--ua-red-bright);">AI-Powered.</span>
+        </h1>
+      </div>
+
+      <div class="title-slide-content" style="gap: 12px;">
+        <div class="rule-strong" style="background: rgba(247,244,238,0.4); height: 1px; max-width: 600px;"></div>
+        <div style="display: flex; justify-content: space-between; align-items: flex-end;">
+          <div>
+            <div class="body" style="color: var(--cream); font-weight: 600; font-size: 36px;">Tyson Swetnam, PhD</div>
+            <div class="small" style="margin-top: 6px;">Associate Professor · BIO5 Institute</div>
+          </div>
+          <div class="mono small" style="text-align: right;">
+            Grand Challenges Research Building<br>
+            Tucson, AZ · June 9, 2026
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       2 · WHERE WE ARE IN THE PROGRAM
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="02 Where We Are">
+    <div class="slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>02 / Where We Are</div>
+      </div>
+
+      <div class="tag" style="margin-top: 40px;">Day 2 · Tuesday, June 9</div>
+      <h2 class="title" style="margin-top: 24px; max-width: 1500px;">Data &amp; Digital Health — and where geospatial fits in.</h2>
+
+      <div style="margin-top: 60px; flex: 1; display: flex; flex-direction: column; gap: 0;">
+        <div class="stack-row" style="grid-template-columns: 220px 320px 1fr; gap: 32px; padding: 22px 0;">
+          <div class="mono small" style="color: var(--mute); letter-spacing: 0.14em;">09:00</div>
+          <div class="body" style="font-weight: 600; color: var(--ink); font-size: 30px;">AI in Patient Care &amp; Digital Health Cohorts</div>
+          <div class="small" style="color: var(--mute);">All Tracks · Slepian</div>
+        </div>
+        <div class="stack-row" style="grid-template-columns: 220px 320px 1fr; gap: 32px; background: var(--ua-blue); margin: 0 -40px; padding: 24px 40px;">
+          <div class="mono small" style="color: var(--cream-warm); letter-spacing: 0.14em;">10:30 · YOU ARE HERE</div>
+          <div class="body" style="font-weight: 700; color: var(--cream); font-size: 32px;">Geospatial Analysis, AI-Powered</div>
+          <div class="small" style="color: rgba(247,244,238,0.7);">AI Fluency · Swetnam · 90 min lab</div>
+        </div>
+        <div class="stack-row" style="grid-template-columns: 220px 320px 1fr; gap: 32px; padding: 22px 0;">
+          <div class="mono small" style="color: var(--mute); letter-spacing: 0.14em;">13:00</div>
+          <div class="body" style="font-weight: 600; color: var(--ink); font-size: 30px;">AI Maker Space — Data Projects</div>
+          <div class="small" style="color: var(--mute);">All Tracks · Florez-Arango</div>
+        </div>
+        <div class="stack-row" style="grid-template-columns: 220px 320px 1fr; gap: 32px; padding: 22px 0;">
+          <div class="mono small" style="color: var(--mute); letter-spacing: 0.14em;">15:30</div>
+          <div class="body" style="font-weight: 600; color: var(--ink); font-size: 30px;">Fireside Chat — Gaps in AI &amp; Health Training</div>
+          <div class="small" style="color: var(--mute);">All Tracks · Leal Neto &amp; Weinstein</div>
+        </div>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>02 · WHERE WE ARE</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       3 · WHAT YOU'LL BUILD
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="03 What You'll Build">
+    <div class="slide slide-paper">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>03 / Outcome</div>
+      </div>
+
+      <div class="cols-2-uneven" style="margin-top: 60px;">
+        <div style="display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div class="tag">In 90 Minutes</div>
+            <h2 class="title" style="margin-top: 22px;">A scrolling Leaflet story-map of the 1850 London cholera outbreak.</h2>
+            <p class="body" style="margin-top: 36px; max-width: 720px;">
+              Served locally at <span class="mono" style="color: var(--ua-red); font-size: 28px;">http://localhost:51234</span>.
+              By minute 60 you should see the Broad Street pump and the death-density choropleth on screen.
+            </p>
+          </div>
+          <ul class="checklist" style="margin-top: 50px;">
+            <li><span class="num">01</span><div><strong style="color: var(--ink);">Open data in,</strong> interactive map out — no GIS desktop required.</div></li>
+            <li><span class="num">02</span><div><strong style="color: var(--ink);">An agent did the typing.</strong> You did the directing.</div></li>
+            <li><span class="num">03</span><div><strong style="color: var(--ink);">A workflow</strong> you can re-aim at any public health dataset.</div></li>
+          </ul>
+        </div>
+        <div class="placeholder" style="min-height: 100%;">
+          [ screenshot ]<br>snow_storymap.html<br>broad-street pump + choropleth
+        </div>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>03 · OUTCOME</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       4 · SECTION DIVIDER · PART 1
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="04 Part 1 Divider" class="slide-dark">
+    <div class="section-slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>Part 01 · Foundations</div>
+      </div>
+      <div>
+        <div class="part-num">Part 01</div>
+        <h2 class="section-title">Foundations.</h2>
+        <p class="section-sub">
+          The vocabulary, the surfaces, and the loop — so we share a language
+          before we share a keyboard.
+        </p>
+      </div>
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>04 · PART 01</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       5 · THE 2026 AGENT LANDSCAPE
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="05 Agent Landscape">
+    <div class="slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>05 / Landscape</div>
+      </div>
+
+      <div class="tag" style="margin-top: 40px;">The 2026 Picture</div>
+      <h2 class="title" style="margin-top: 24px; max-width: 1500px;">The frontier moved from chat windows to agents with hands.</h2>
+
+      <div class="cols-3" style="margin-top: 90px;">
+        <div class="card">
+          <div class="kicker">2022 — 2024</div>
+          <h4>Chat.</h4>
+          <p>You type, it replies. The model sees only your message. Useful, but you copy-paste everything.</p>
+        </div>
+        <div class="card" style="background: var(--cream-warm);">
+          <div class="kicker">2024 — 2025</div>
+          <h4>Tools.</h4>
+          <p>The model gains a code interpreter, file uploads, web search. Still a single turn, single surface.</p>
+        </div>
+        <div class="card" style="background: var(--ua-blue); border-color: var(--ua-blue); color: var(--cream);">
+          <div class="kicker" style="color: var(--cream-warm);">2025 — 2026</div>
+          <h4 style="color: var(--cream);">Agents.</h4>
+          <p style="color: var(--cream-warm);">The model reads your filesystem, runs commands, edits code, opens a browser — and reports back.</p>
+        </div>
+      </div>
+
+      <p class="small" style="margin-top: 60px; max-width: 1200px;">
+        Today's lab assumes the third column. If you are still living in the first, the gap is mostly muscle memory — not capability.
+      </p>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>05 · LANDSCAPE</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       6 · VIBE CODING
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="06 Vibe Coding">
+    <div class="slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>06 / Vocabulary</div>
+      </div>
+
+      <div class="cols-2" style="margin-top: 40px;">
+        <div style="display: flex; flex-direction: column; justify-content: center; gap: 30px;">
+          <div class="tag">Vibe Coding</div>
+          <h2 class="display" style="font-size: 120px;">Vibe<br>Coding.</h2>
+          <p class="body" style="max-width: 640px; font-size: 30px;">
+            You describe the <em>feel</em> of what you want — the shape, the behavior,
+            the audience — and let the agent produce, run, and refine the code.
+          </p>
+          <p class="small" style="max-width: 640px;">
+            Coined by Andrej Karpathy, 2025. Useful for prototypes, demos, internal tools,
+            and any disposable code where shipping fast beats writing it yourself.
+          </p>
+        </div>
+        <div style="display: flex; flex-direction: column; justify-content: center; gap: 28px;">
+          <div class="card">
+            <div class="kicker">What it is good for</div>
+            <p style="font-size: 28px;">First drafts. UI iteration. Throwaway scripts. "Can we visualize this?" moments. Today's storymap.</p>
+          </div>
+          <div class="card" style="border-color: var(--ua-red); border-width: 1px;">
+            <div class="kicker">What it is NOT</div>
+            <p style="font-size: 28px;">A substitute for code review on anything that handles PHI, runs in production, or makes clinical decisions.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>06 · VIBE CODING</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       7 · AGENTIC ENGINEERING
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="07 Agentic Engineering">
+    <div class="slide slide-paper">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>07 / Vocabulary</div>
+      </div>
+
+      <div class="cols-2" style="margin-top: 40px;">
+        <div style="display: flex; flex-direction: column; justify-content: center; gap: 30px;">
+          <div class="tag">Agentic Engineering</div>
+          <h2 class="display" style="font-size: 110px;">Agentic<br>Engineering.</h2>
+          <p class="body" style="max-width: 640px; font-size: 30px;">
+            The discipline of building software <em>through</em> an agent: setting up
+            context files, naming reusable skills, version-controlling prompts,
+            and treating the model as a teammate with a job description.
+          </p>
+        </div>
+        <div style="display: flex; flex-direction: column; justify-content: center; gap: 22px;">
+          <div class="stack">
+            <div class="stack-row">
+              <div class="label">Context</div>
+              <div class="val"><strong>AGENTS.md / CLAUDE.md</strong> — stack, conventions, guardrails.</div>
+            </div>
+            <div class="stack-row">
+              <div class="label">Skills</div>
+              <div class="val"><strong>Skills.md</strong> — named, reusable playbooks the agent can invoke.</div>
+            </div>
+            <div class="stack-row">
+              <div class="label">Memory</div>
+              <div class="val"><strong>Memory.md</strong> — persistent project facts that survive sessions.</div>
+            </div>
+            <div class="stack-row">
+              <div class="label">Logs</div>
+              <div class="val"><strong>prompts/NNN_*.md</strong> — every prompt versioned alongside the code.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>07 · AGENTIC ENGINEERING</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       8 · THREE SURFACES
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="08 Three Surfaces">
+    <div class="slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>08 / Tooling</div>
+      </div>
+
+      <div class="tag" style="margin-top: 40px;">Pick One From Each Row</div>
+      <h2 class="title" style="margin-top: 24px; max-width: 1500px;">Three surfaces, the same agent underneath.</h2>
+
+      <table class="surfaces" style="margin-top: 60px;">
+        <thead>
+          <tr>
+            <th style="width: 28%;">Surface</th>
+            <th style="width: 22%;">Best For</th>
+            <th>Examples</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="tool">Desktop LLM apps</td>
+            <td class="kind">Chat + artifacts</td>
+            <td class="desc">Claude Desktop · ChatGPT (Codex) · Perplexity Comet</td>
+          </tr>
+          <tr>
+            <td class="tool">CLI agents</td>
+            <td class="kind">Filesystem access</td>
+            <td class="desc">Claude Code · Codex CLI · Gemini CLI</td>
+          </tr>
+          <tr>
+            <td class="tool">AI-native IDEs</td>
+            <td class="kind">In-editor flow</td>
+            <td class="desc">VS Code (+ Copilot) · Cursor · Antigravity (Google)</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="small" style="margin-top: 50px; max-width: 1300px;">
+        The prompts in today's lab are platform-neutral. Use whichever surface
+        you already know — the workflow transfers.
+      </p>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>08 · SURFACES</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       9 · SECTION DIVIDER · PART 2
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="09 Part 2 Divider" class="slide-dark">
+    <div class="section-slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>Part 02 · AI for Geospatial Work</div>
+      </div>
+      <div>
+        <div class="part-num">Part 02</div>
+        <h2 class="section-title">AI, meet<br>the GIS stack.</h2>
+        <p class="section-sub">
+          Where agents already plug in — and where you, the analyst,
+          still have to do the thinking.
+        </p>
+      </div>
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>09 · PART 02</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       10 · WHERE AI FITS THE GEOSPATIAL STACK
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="10 Where AI Fits">
+    <div class="slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>10 / Map of the Map-Maker's Toolkit</div>
+      </div>
+
+      <div class="tag" style="margin-top: 40px;">A Layered View</div>
+      <h2 class="title" style="margin-top: 24px; max-width: 1500px;">Four layers an agent can write code against today.</h2>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 36px; margin-top: 70px; flex: 1;">
+        <div class="card">
+          <div class="kicker">Layer 01 · Scripting</div>
+          <h4>Python &amp; OSGeo CLI.</h4>
+          <p>geopandas, rasterio, shapely · gdal, ogr2ogr, pyproj. The agent writes, runs, and debugs in your shell.</p>
+        </div>
+        <div class="card">
+          <div class="kicker">Layer 02 · Desktop GIS</div>
+          <h4>ArcGIS &amp; QGIS.</h4>
+          <p>Reachable through Model Context Protocol servers (QGISMCP) — the agent drives the GUI for layer styling, processing, atlases.</p>
+        </div>
+        <div class="card" style="background: var(--ua-blue); color: var(--cream); border-color: var(--ua-blue);">
+          <div class="kicker" style="color: var(--cream-warm);">Layer 03 · Cloud</div>
+          <h4 style="color: var(--cream);">Google Earth Engine.</h4>
+          <p style="color: var(--cream-warm);">Petabyte-scale satellite catalog, JS &amp; Python APIs. Agents are excellent at boilerplate ingestion and reducer chains.</p>
+        </div>
+        <div class="card" style="background: var(--ua-red); color: var(--cream); border-color: var(--ua-red);">
+          <div class="kicker" style="color: var(--cream-warm);">Layer 04 · Web</div>
+          <h4 style="color: var(--cream);">Leaflet &amp; MapLibre GL.</h4>
+          <p style="color: var(--cream-warm);">Plain HTML / CSS / JS. The fastest path from "I have a GeoJSON" to "share this link." Today's deliverable.</p>
+        </div>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>10 · STACK</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       11 · OSGeo SCRIPTING
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="11 OSGeo Scripting" class="slide-paper">
+    <div class="slide slide-paper">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>11 / Layer 01 · Scripting</div>
+      </div>
+
+      <div class="cols-2-uneven" style="margin-top: 40px;">
+        <div style="display: flex; flex-direction: column; justify-content: center;">
+          <div class="tag">Layer 01 · Scripting</div>
+          <h2 class="title" style="margin-top: 24px;">Python and OSGeo, written by the agent.</h2>
+          <p class="body" style="margin-top: 32px;">
+            The CLI tools the geo community has used for thirty years
+            are now the agent's preferred plumbing. They are well-documented,
+            deterministic, and easy to verify.
+          </p>
+          <p class="small" style="margin-top: 30px;">
+            Your job shifts from <span class="mono" style="color: var(--ua-red); font-size: 24px;">man gdalwarp</span>
+            to specifying inputs, outputs, and expected CRS.
+          </p>
+        </div>
+        <pre class="code"><span class="c"># Prompt: reproject every shapefile in data/raw/</span>
+<span class="c"># to EPSG:4326 and save as GeoJSON in data/clean/.</span>
+
+<span class="k">for</span> f <span class="k">in</span> data/raw/*.shp; <span class="k">do</span>
+  name=$(<span class="v">basename</span> <span class="s">"$f"</span> .shp)
+  ogr2ogr \
+    -f <span class="s">"GeoJSON"</span> \
+    -t_srs EPSG:4326 \
+    data/clean/<span class="s">"$name"</span>.geojson \
+    <span class="s">"$f"</span>
+<span class="k">done</span>
+
+<span class="c"># Verify with one line of geopandas:</span>
+<span class="v">python</span> -c \
+  <span class="s">"import geopandas as gpd;
+print(gpd.read_file('data/clean/cases.geojson').crs)"</span></pre>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>11 · SCRIPTING</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       12 · DESKTOP GIS via MCP
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="12 Desktop GIS">
+    <div class="slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>12 / Layer 02 · Desktop GIS</div>
+      </div>
+
+      <div class="tag" style="margin-top: 40px;">Layer 02 · Desktop GIS</div>
+      <h2 class="title" style="margin-top: 24px; max-width: 1600px;">Your QGIS canvas, on the other end of an MCP server.</h2>
+
+      <div class="cols-2" style="margin-top: 80px;">
+        <div style="display: flex; flex-direction: column; gap: 28px;">
+          <p class="body">
+            <strong style="color: var(--ink);">Model Context Protocol</strong>
+            is the standard plug for "tool" servers — and the geo community
+            already shipped one for QGIS.
+          </p>
+          <div class="stack">
+            <div class="stack-row">
+              <div class="label">QGISMCP</div>
+              <div class="val">Add layers, style, run Processing toolbox, export atlas pages.</div>
+            </div>
+            <div class="stack-row">
+              <div class="label">ArcGIS Pro</div>
+              <div class="val">AI assistants via the ArcGIS Python Notebook + arcpy.</div>
+            </div>
+            <div class="stack-row">
+              <div class="label">Esri Maps SDK</div>
+              <div class="val">Agent-friendly REST endpoints for hosted feature services.</div>
+            </div>
+          </div>
+        </div>
+        <div class="placeholder" style="min-height: 480px;">
+          [ screenshot ]<br>QGIS canvas + Claude side-panel<br>driving layer styling
+        </div>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>12 · DESKTOP GIS</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       13 · GOOGLE EARTH ENGINE
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="13 Earth Engine" class="slide-dark">
+    <div class="slide slide-dark">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>13 / Layer 03 · Cloud</div>
+      </div>
+
+      <div class="cols-2-uneven" style="margin-top: 40px;">
+        <div style="display: flex; flex-direction: column; justify-content: center;">
+          <div class="tag">Layer 03 · Cloud</div>
+          <h2 class="title" style="margin-top: 24px; color: var(--cream);">Earth Engine, scripted on tap.</h2>
+          <p class="body" style="margin-top: 32px;">
+            The petabyte-scale public satellite catalog. The agent is excellent at
+            generating boilerplate: collection filters, cloud masks, reducers, exports.
+          </p>
+          <p class="small" style="margin-top: 30px;">
+            What you still own: choosing the right collection, defining the temporal
+            window, sanity-checking the output against ground truth.
+          </p>
+        </div>
+        <pre class="code"><span class="c"># Prompt: monthly NDVI for Pima County,</span>
+<span class="c"># 2024, Sentinel-2 Surface Reflectance.</span>
+
+<span class="k">import</span> ee
+ee.Initialize()
+
+aoi = ee.FeatureCollection(
+    <span class="s">"TIGER/2018/Counties"</span>) \
+  .filter(ee.Filter.eq(
+      <span class="s">"NAME"</span>, <span class="s">"Pima"</span>))
+
+s2 = (ee.ImageCollection(<span class="s">"COPERNICUS/S2_SR"</span>)
+        .filterBounds(aoi)
+        .filterDate(<span class="s">"2024-01-01"</span>,
+                    <span class="s">"2025-01-01"</span>)
+        .map(ndvi))</pre>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>13 · EARTH ENGINE</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       14 · WEB MAPPING
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="14 Web Mapping">
+    <div class="slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>14 / Layer 04 · Web</div>
+      </div>
+
+      <div class="tag" style="margin-top: 40px;">Layer 04 · Web Mapping</div>
+      <h2 class="title" style="margin-top: 24px; max-width: 1500px;">From <span class="mono" style="font-size: 56px; color: var(--ua-red);">.geojson</span> to a shareable link, in one prompt.</h2>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 48px; margin-top: 70px; flex: 1;">
+        <div class="card">
+          <div class="kicker">Leaflet</div>
+          <h4>The pragmatic default.</h4>
+          <p>Tile-based, tiny API, every public health JS map you've seen in the wild. Today's lab uses it.</p>
+          <p class="mono" style="font-size: 24px; color: var(--ua-red); margin-top: 8px;">~42 KB · works everywhere</p>
+        </div>
+        <div class="card">
+          <div class="kicker">MapLibre GL</div>
+          <h4>The vector successor.</h4>
+          <p>Open fork of Mapbox GL. WebGL-rendered vector tiles, smooth interaction, full styling spec. Reach for it when Leaflet hits a wall.</p>
+          <p class="mono" style="font-size: 24px; color: var(--ua-red); margin-top: 8px;">vector tiles · 3D terrain · MIT</p>
+        </div>
+      </div>
+
+      <p class="small" style="margin-top: 50px; max-width: 1400px;">
+        Both are plain HTML / CSS / JS. No bundler, no framework — which means the agent's output is
+        a single file you can read, edit, and host on any static server.
+      </p>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>14 · WEB MAPPING</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       15 · SECTION DIVIDER · PART 3
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="15 Part 3 Divider" class="slide-red">
+    <div class="section-slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>Part 03 · The Lab</div>
+      </div>
+      <div>
+        <div class="part-num">Part 03</div>
+        <h2 class="section-title">The lab.</h2>
+        <p class="section-sub">
+          Four steps. Ninety minutes. One scrolling map of a 175-year-old outbreak —
+          built end-to-end by directing an agent.
+        </p>
+      </div>
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>15 · PART 03</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       16 · THE STORY — 1850 CHOLERA
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="16 The Story">
+    <div class="slide slide-paper">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>16 / Why This Dataset</div>
+      </div>
+
+      <div class="cols-2-uneven" style="margin-top: 40px;">
+        <div style="display: flex; flex-direction: column; justify-content: center;">
+          <div class="tag">Why This Dataset</div>
+          <h2 class="title" style="margin-top: 24px;">John Snow, Broad Street, 1854.</h2>
+          <p class="body" style="margin-top: 32px;">
+            The founding dataset of modern epidemiology. Geocoded cholera deaths,
+            pump locations, and the spatial argument that broke the miasma theory.
+          </p>
+          <p class="body" style="margin-top: 24px;">
+            Small enough to load in a browser. Famous enough that every public
+            health professional in this room has seen the map — but probably
+            never built one themselves.
+          </p>
+          <p class="mono small" style="margin-top: 36px; color: var(--ua-red);">
+            geodacenter.github.io/data-and-lab/data/snow.zip
+          </p>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 20px;">
+          <div class="placeholder" style="height: 580px;">
+            [ image ]<br>John Snow's original<br>1854 cholera map
+          </div>
+          <p class="small" style="text-align: right;">Public domain · Wellcome Collection</p>
+        </div>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>16 · THE STORY</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       17 · WORKFLOW AT A GLANCE
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="17 Workflow">
+    <div class="slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>17 / Workflow</div>
+      </div>
+
+      <div class="tag" style="margin-top: 40px;">The Loop</div>
+      <h2 class="title" style="margin-top: 24px; max-width: 1500px;">Four steps. Each one a single, copy-able prompt.</h2>
+
+      <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px; margin-top: 90px;">
+        <div class="card" style="padding: 32px;">
+          <div class="kicker">Step 0</div>
+          <h4 style="font-size: 32px;">Context.</h4>
+          <p style="font-size: 24px;">Drop in the three <span class="mono" style="font-size: 24px;">.md</span> files that tell the agent how this workspace operates.</p>
+        </div>
+        <div class="card" style="padding: 32px;">
+          <div class="kicker">Step 1</div>
+          <h4 style="font-size: 32px;">Scaffold.</h4>
+          <p style="font-size: 24px;">Folder tree, dataset download, unzip, sort GeoJSONs into <span class="mono" style="font-size: 24px;">map/</span>.</p>
+        </div>
+        <div class="card" style="padding: 32px;">
+          <div class="kicker">Step 2</div>
+          <h4 style="font-size: 32px;">Build.</h4>
+          <p style="font-size: 24px;">A scrolling Leaflet storymap, choropleth on <span class="mono" style="font-size: 24px;">deaths</span>, served on a local port.</p>
+        </div>
+        <div class="card" style="padding: 32px;">
+          <div class="kicker">Step 3 — 4</div>
+          <h4 style="font-size: 32px;">Iterate.</h4>
+          <p style="font-size: 24px;">Critique. Approve. Then a one-shot reveal: the same workflow, compressed to one prompt.</p>
+        </div>
+      </div>
+
+      <p class="small" style="margin-top: 70px; max-width: 1400px;">
+        We will walk steps 0 — 3 together. Step 4 is yours to try in a fresh chat.
+      </p>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>17 · WORKFLOW</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       18 · STEP 0
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="18 Step 0 Context">
+    <div class="slide slide-paper">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>18 / Step 0</div>
+      </div>
+
+      <div class="step-label" style="margin-top: 40px;">Step 00 — Set up context</div>
+      <h2 class="title" style="margin-top: 8px; max-width: 1600px;">Three markdown files. Same content. Whichever filename your agent expects.</h2>
+
+      <div class="cols-3" style="margin-top: 70px;">
+        <div class="card">
+          <div class="kicker">CLAUDE.md / AGENTS.md</div>
+          <h4 style="font-size: 30px;">Workspace rules.</h4>
+          <p style="font-size: 24px;">Stack (Python 3.10, Leaflet, no bundlers). Conventions (<span class="mono" style="font-size: 24px;">code/</span>, <span class="mono" style="font-size: 24px;">data/</span>, <span class="mono" style="font-size: 24px;">map/</span>). Guardrails (confirm destructive actions, never fabricate sample data).</p>
+        </div>
+        <div class="card">
+          <div class="kicker">Skills.md</div>
+          <h4 style="font-size: 30px;">Reusable playbooks.</h4>
+          <p style="font-size: 24px;"><span class="mono" style="font-size: 24px;">/scaffold</span>, <span class="mono" style="font-size: 24px;">/fetch-snow</span>, <span class="mono" style="font-size: 24px;">/storymap</span>, <span class="mono" style="font-size: 24px;">/critique</span> — named macros the agent can invoke.</p>
+        </div>
+        <div class="card">
+          <div class="kicker">Memory.md</div>
+          <h4 style="font-size: 30px;">Project facts.</h4>
+          <p style="font-size: 24px;">Field names (<span class="mono" style="font-size: 24px;">deaths</span>, <span class="mono" style="font-size: 24px;">deathdens</span>). Labels on polygons, not points. PI's stylistic preferences.</p>
+        </div>
+      </div>
+
+      <p class="small" style="margin-top: 70px; max-width: 1400px;">
+        This is the moment you stop treating the agent as a chatbot and start treating it as a teammate
+        with a contract.
+      </p>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>18 · STEP 00</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       19 · STEP 1 — SCAFFOLD
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="19 Step 1 Scaffold">
+    <div class="slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>19 / Step 1</div>
+      </div>
+
+      <div class="step-label" style="margin-top: 40px;">Step 01 — Scaffold &amp; fetch</div>
+      <h2 class="title" style="margin-top: 8px; max-width: 1600px;">Folder tree, dataset, sort. One prompt.</h2>
+
+      <div class="cols-2-uneven" style="margin-top: 50px;">
+        <pre class="code" style="font-size: 24px;">TASK
+1. Create folders:
+   data/, map/, code/, prompts/
+2. Download
+   geodacenter.github.io/data-and-lab
+     /data/snow.zip
+   into data/
+3. Unzip in place, delete the .zip
+4. Move every *.geojson from the
+   unzipped folder into map/.
+   Ignore __MACOSX, non-geojson.
+5. Save script as code/setup.py.
+   Confirm each step.</pre>
+        <div style="display: flex; flex-direction: column; gap: 24px; justify-content: center;">
+          <div class="card">
+            <div class="kicker">What to watch</div>
+            <p style="font-size: 24px;">The agent should <strong>announce each step</strong> and stop on the first failure. If it silently "succeeds" with no files in <span class="mono" style="font-size: 24px;">map/</span>, your Filesystem MCP isn't running.</p>
+          </div>
+          <div class="card" style="border-color: var(--ua-red);">
+            <div class="kicker">If the download fails</div>
+            <p style="font-size: 24px;">Grab the zip via your browser, drop it into <span class="mono" style="font-size: 24px;">data/</span>, and re-run from step 3.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>19 · STEP 01</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       20 · STEP 2 — BUILD
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="20 Step 2 Build" class="slide-paper">
+    <div class="slide slide-paper">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>20 / Step 2</div>
+      </div>
+
+      <div class="step-label" style="margin-top: 40px;">Step 02 — Build the storymap</div>
+      <h2 class="title" style="margin-top: 8px; max-width: 1600px;">The centerpiece prompt. Layout, data styling, serve.</h2>
+
+      <div class="cols-2-uneven" style="margin-top: 50px;">
+        <pre class="code" style="font-size: 24px;">TASK
+Create map/snow_storymap.html using Leaflet
+(HTML/CSS/JS).
+
+Layout:
+  - Scrolly story-map
+  - Layers appear on scroll, fade past
+  - Short caption per layer
+
+Data styling:
+  - Choropleth on 'deaths', 'deathdens'
+  - Labels on polygons only (NOT points)
+
+Serve:
+  - python -m http.server 51234</pre>
+        <div style="display: flex; flex-direction: column; gap: 24px; justify-content: center;">
+          <div class="placeholder" style="height: 280px;">
+            [ screenshot ]<br>Expected output<br>scrolly map at :51234
+          </div>
+          <div class="card">
+            <div class="kicker">If a field is missing</div>
+            <p style="font-size: 24px;">If <span class="mono" style="font-size: 24px;">deathdens</span> isn't in the GeoJSON, ask the agent to compute it from <span class="mono" style="font-size: 24px;">deaths</span> divided by polygon area.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>20 · STEP 02</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       21 · STEP 3 — ITERATE
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="21 Step 3 Iterate">
+    <div class="slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>21 / Step 3</div>
+      </div>
+
+      <div class="step-label" style="margin-top: 40px;">Step 03 — Iterate aesthetics</div>
+      <h2 class="title" style="margin-top: 8px; max-width: 1600px;">Critique. Approve. Apply. Time-box: 10 minutes.</h2>
+
+      <div class="cols-2" style="margin-top: 70px;">
+        <pre class="code" style="font-size: 24px;">TASK
+Open map/snow_storymap.html.
+Critique colors, fonts, and scroll feel.
+Propose up to 3 improvements.
+Wait for my approval, then apply
+them in place.</pre>
+        <div style="display: flex; flex-direction: column; gap: 24px; justify-content: center;">
+          <div class="stack">
+            <div class="stack-row">
+              <div class="label">Wait</div>
+              <div class="val">The agent should <strong>pause</strong> after proposing. If it edits immediately, your guardrails aren't being read.</div>
+            </div>
+            <div class="stack-row">
+              <div class="label">Approve</div>
+              <div class="val">Pick the changes you want. Reject the rest. Be specific.</div>
+            </div>
+            <div class="stack-row">
+              <div class="label">Apply</div>
+              <div class="val">"In place" means the same file path. No new variant files unless you ask.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="small" style="margin-top: 60px; max-width: 1400px;">
+        This is the most cuttable step if we're running short. The point is just to feel the iteration loop once.
+      </p>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>21 · STEP 03</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       22 · STEP 4 — ONE-SHOT REVEAL
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="22 Step 4 One Shot" class="slide-dark">
+    <div class="slide slide-dark">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>22 / Step 4</div>
+      </div>
+
+      <div class="step-label" style="margin-top: 40px; color: var(--cream-warm);">Step 04 — One-shot reveal</div>
+      <h2 class="title" style="margin-top: 8px; max-width: 1600px; color: var(--cream);">Now the same workflow, in a single prompt, in a fresh chat.</h2>
+
+      <div class="cols-2-uneven" style="margin-top: 60px;">
+        <div style="display: flex; flex-direction: column; justify-content: center; gap: 28px;">
+          <p class="body" style="max-width: 640px;">
+            We just walked four steps. The pedagogical point of step 4 is to
+            paste it all as one prompt and watch the agent execute end-to-end.
+          </p>
+          <p class="body" style="max-width: 640px;">
+            <strong style="color: var(--cream);">Yes, the prompt has typos.</strong> The numbering jumps. "Chloropleth" is misspelled.
+            Both are preserved on purpose — modern agents handle messy real-world prompts surprisingly well.
+          </p>
+          <p class="small">
+            Compare this output to the artifact you built across Steps 1–3.
+            Where did the agent do better with all-at-once context? Where did it cut corners?
+          </p>
+        </div>
+        <div class="card" style="background: rgba(255,255,255,0.04); border-color: rgba(247,244,238,0.18);">
+          <div class="kicker" style="color: var(--cream-warm);">The compressed prompt</div>
+          <p style="color: var(--cream); font-size: 24px; font-family: 'JetBrains Mono', monospace; line-height: 1.5;">
+            "Build a scrolling story telling map…
+            using Leaflet, HTML, CSS, and
+            JavaScript…
+            <br><br>
+            • layers appear on scroll<br>
+            • chloropleth on 'deaths' and<br>
+            &nbsp;&nbsp;'deathdens'<br>
+            • death count labels on polygons,<br>
+            &nbsp;&nbsp;not points"
+          </p>
+        </div>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>22 · STEP 04</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       23 · WHAT TO WATCH FOR
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="23 Watch For">
+    <div class="slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>23 / Guardrails</div>
+      </div>
+
+      <div class="tag" style="margin-top: 40px;">In Public Health Work, Especially</div>
+      <h2 class="title" style="margin-top: 24px; max-width: 1500px;">Three failure modes worth memorizing.</h2>
+
+      <div class="cols-3" style="margin-top: 90px;">
+        <div class="card">
+          <div class="kicker">01 · Fabrication</div>
+          <h4>Made-up data.</h4>
+          <p>Agents will invent plausible-looking sample data when a real fetch fails. Your guardrail: <em>never fabricate — surface failures and stop.</em></p>
+        </div>
+        <div class="card">
+          <div class="kicker">02 · Silent success</div>
+          <h4>"It worked" — but didn't.</h4>
+          <p>The script ran. No files appeared. Check the Filesystem MCP is actually connected, and ask the agent to <span class="mono" style="font-size: 24px;">ls map/</span> after every step.</p>
+        </div>
+        <div class="card">
+          <div class="kicker">03 · PHI in prompts</div>
+          <h4>What goes in the chat.</h4>
+          <p>Treat the prompt window like a public Slack channel. Strip identifiers before pasting. Use synthetic or geocoded-out datasets for development.</p>
+        </div>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>23 · GUARDRAILS</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       24 · OPTIONAL HOMEWORK
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="24 Homework" class="slide-paper">
+    <div class="slide slide-paper">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>24 / Optional Homework</div>
+      </div>
+
+      <div class="tag" style="margin-top: 40px;">Take It Further</div>
+      <h2 class="title" style="margin-top: 24px; max-width: 1500px;">Four directions, pick whichever interests you.</h2>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 36px; margin-top: 70px; flex: 1;">
+        <div class="card">
+          <div class="kicker">Sharpen your prompts</div>
+          <h4>Writing Prompts · Vibe Coding.</h4>
+          <p>Two deeper reads on the iterate-with-an-agent loop you just used in Step 3.</p>
+        </div>
+        <div class="card">
+          <div class="kicker">Bring documents in</div>
+          <h4>Text Mining · RAG.</h4>
+          <p>Replace the cut PDF-summary step. Extend the storymap with retrieval over the cholera primary sources.</p>
+        </div>
+        <div class="card">
+          <div class="kicker">Automate the workflow</div>
+          <h4>Claude Code Workflow · Agentic AI.</h4>
+          <p>Prompt logging, session automation, the agent loop framed end-to-end.</p>
+        </div>
+        <div class="card">
+          <div class="kicker">Ship &amp; extend</div>
+          <h4>QGISMCP · GitHub Pages.</h4>
+          <p>Rebuild the layers in QGIS via MCP. Deploy the map as a public static site.</p>
+        </div>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>24 · HOMEWORK</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       25 · RESOURCES & NEXT STEPS
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="25 Resources">
+    <div class="slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>25 / Resources</div>
+      </div>
+
+      <div class="tag" style="margin-top: 40px;">Bookmarks</div>
+      <h2 class="title" style="margin-top: 24px; max-width: 1500px;">Everything from today, in one place.</h2>
+
+      <div class="stack" style="margin-top: 80px;">
+        <div class="stack-row">
+          <div class="label">This Lab</div>
+          <div class="val mono" style="color: var(--ua-red); font-size: 26px;">tyson-swetnam.github.io/intro-gpt/tutorials/publichealth/gis/</div>
+        </div>
+        <div class="stack-row">
+          <div class="label">Full Workshop</div>
+          <div class="val mono" style="color: var(--ua-red); font-size: 26px;">tyson-swetnam.github.io/intro-gpt/</div>
+        </div>
+        <div class="stack-row">
+          <div class="label">Dataset</div>
+          <div class="val mono" style="color: var(--ua-red); font-size: 26px;">geodacenter.github.io/data-and-lab/data/snow.zip</div>
+        </div>
+        <div class="stack-row">
+          <div class="label">QGIS MCP</div>
+          <div class="val mono" style="color: var(--ua-red); font-size: 26px;">github.com/jjsantos01/qgis_mcp</div>
+        </div>
+        <div class="stack-row">
+          <div class="label">PH&amp;AI 2026</div>
+          <div class="val mono" style="color: var(--ua-red); font-size: 26px;">ph-ai.me</div>
+        </div>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>25 · RESOURCES</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       26 · THANK YOU / Q&A
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="26 Thank You" class="slide-dark">
+    <div class="slide slide-dark">
+      <div class="title-slide">
+        <div class="grid-bg"></div>
+        <div class="deck-header">
+          <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+          <div>End · Q&amp;A</div>
+        </div>
+
+        <div class="title-slide-content" style="margin-top: 0;">
+          <div class="tag" style="color: var(--cream-warm);">Now, the Maker Space</div>
+          <h2 class="display" style="font-size: 200px;">
+            Questions<span style="color: var(--ua-red-bright);">?</span>
+          </h2>
+          <p class="body" style="max-width: 1100px; font-size: 36px;">
+            Bring your storymap to the 1:00 PM AI Maker Space. We'll re-aim
+            the workflow at a dataset of your choosing.
+          </p>
+        </div>
+
+        <div class="title-slide-content" style="gap: 12px;">
+          <div class="rule-strong" style="background: rgba(247,244,238,0.4); height: 1px; max-width: 600px;"></div>
+          <div style="display: flex; justify-content: space-between; align-items: flex-end;">
+            <div>
+              <div class="body" style="color: var(--cream); font-weight: 600; font-size: 36px;">Tyson Swetnam, PhD</div>
+              <div class="small mono" style="margin-top: 6px;">tswetnam@arizona.edu · @tswetnam</div>
+            </div>
+            <div class="mono small" style="text-align: right;">
+              BIO5 Institute<br>
+              University of Arizona
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</deck-stage>
+
+</body>
+</html>
