@@ -1,0 +1,1903 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Ethics &amp; Environmental Impact — Panel · UA PH&amp;AI 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<script src="deck-stage.js"></script>
+<style>
+  :root {
+    --ua-blue:        #0C234B;
+    --ua-blue-deep:   #07173a;
+    --ua-blue-mid:    #1b3870;
+    --ua-red:         #AB0520;
+    --ua-red-bright:  #c8102e;
+    --cream:          #f7f4ee;
+    --cream-warm:     #efe9dc;
+    --paper:          #fbfaf6;
+    --ink:            #161616;
+    --ink-soft:       #2a2a2a;
+    --mute:           #6b6b6b;
+    --rule:           #d8d2c4;
+    --code-bg:        #0f1623;
+    --code-fg:        #e6edf3;
+
+    --pad-x:          110px;
+    --pad-top:        96px;
+    --pad-bottom:     90px;
+  }
+
+  html, body { margin: 0; padding: 0; background: #000; }
+  body { font-family: 'Manrope', system-ui, sans-serif; color: var(--ink); }
+
+  deck-stage section {
+    box-sizing: border-box;
+    overflow: hidden;
+    background: var(--cream);
+    color: var(--ink);
+    font-family: 'Manrope', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .slide {
+    padding: var(--pad-top) var(--pad-x) var(--pad-bottom);
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+  .slide-dark { background: var(--ua-blue); color: var(--cream); }
+  .slide-paper { background: var(--paper); }
+  .slide-red { background: var(--ua-red); color: var(--cream); }
+
+  .tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ua-red);
+  }
+  .slide-dark .tag { color: var(--cream-warm); opacity: 0.85; }
+  .slide-red .tag { color: var(--cream); opacity: 0.85; }
+
+  .title {
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 1.02;
+    letter-spacing: -0.02em;
+    margin: 0;
+    text-wrap: balance;
+  }
+  .display {
+    font-size: 140px;
+    font-weight: 800;
+    line-height: 0.95;
+    letter-spacing: -0.035em;
+    margin: 0;
+    text-wrap: balance;
+  }
+  .subtitle {
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 1.18;
+    color: var(--ink-soft);
+    margin: 0;
+    text-wrap: pretty;
+  }
+  .slide-dark .subtitle, .slide-red .subtitle { color: var(--cream-warm); }
+  .body {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.42;
+    color: var(--ink-soft);
+    margin: 0;
+    text-wrap: pretty;
+  }
+  .slide-dark .body { color: var(--cream-warm); }
+  .small {
+    font-size: 24px;
+    color: var(--mute);
+    line-height: 1.4;
+  }
+  .slide-dark .small { color: rgba(247,244,238,0.65); }
+  .mono { font-family: 'JetBrains Mono', monospace; }
+
+  .deck-header {
+    position: absolute;
+    top: 38px;
+    left: var(--pad-x);
+    right: var(--pad-x);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--mute);
+  }
+  .slide-dark .deck-header,
+  .slide-red .deck-header { color: rgba(247,244,238,0.55); }
+  .deck-header .lockup { display: flex; align-items: center; gap: 14px; }
+  .deck-header .ua-block {
+    display: inline-block;
+    width: 38px; height: 38px;
+    background: var(--ua-red);
+    color: var(--cream);
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: -0.04em;
+  }
+  .slide-red .deck-header .ua-block { background: var(--cream); color: var(--ua-red); }
+
+  .deck-footer {
+    position: absolute;
+    bottom: 38px;
+    left: var(--pad-x);
+    right: var(--pad-x);
+    display: flex;
+    justify-content: space-between;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--mute);
+  }
+  .slide-dark .deck-footer,
+  .slide-red .deck-footer { color: rgba(247,244,238,0.5); }
+
+  .cols-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; flex: 1; }
+  .cols-2-uneven { display: grid; grid-template-columns: 1.2fr 1fr; gap: 80px; flex: 1; }
+  .cols-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 36px; flex: 1; }
+  .cols-4 { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 24px; }
+
+  .card {
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    padding: 34px 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .slide-dark .card {
+    background: rgba(255,255,255,0.04);
+    border-color: rgba(247,244,238,0.18);
+    color: var(--cream);
+  }
+  .card h4 {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: -0.01em;
+    line-height: 1.05;
+  }
+  .card p {
+    font-size: 24px;
+    line-height: 1.4;
+    color: var(--ink-soft);
+    margin: 0;
+  }
+  .slide-dark .card p { color: var(--cream-warm); }
+  .card .kicker {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ua-red);
+  }
+
+  .placeholder {
+    background:
+      repeating-linear-gradient(135deg,
+        rgba(12,35,75,0.06) 0,
+        rgba(12,35,75,0.06) 14px,
+        rgba(12,35,75,0.10) 14px,
+        rgba(12,35,75,0.10) 28px);
+    border: 1px solid var(--rule);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--ink-soft);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 24px;
+    box-sizing: border-box;
+  }
+
+  .section-slide {
+    padding: var(--pad-top) var(--pad-x) var(--pad-bottom);
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+  }
+  .section-slide .part-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 28px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    opacity: 0.7;
+    margin-bottom: 36px;
+  }
+  .section-slide .section-title {
+    font-size: 160px;
+    font-weight: 800;
+    line-height: 0.92;
+    letter-spacing: -0.035em;
+    margin: 0;
+    text-wrap: balance;
+  }
+  .section-slide .section-sub {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.3;
+    max-width: 1100px;
+    margin-top: 36px;
+    opacity: 0.85;
+  }
+
+  .title-slide {
+    height: 100%;
+    box-sizing: border-box;
+    padding: var(--pad-top) var(--pad-x) var(--pad-bottom);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+  }
+  .title-slide .grid-bg {
+    position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(247,244,238,0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(247,244,238,0.05) 1px, transparent 1px);
+    background-size: 80px 80px;
+    pointer-events: none;
+  }
+  .title-slide-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .step-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ua-red);
+    margin-bottom: 18px;
+  }
+
+  table.surfaces {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 26px;
+  }
+  table.surfaces th, table.surfaces td {
+    text-align: left;
+    padding: 18px 16px;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+  }
+  table.surfaces th {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--mute);
+    font-weight: 500;
+    border-bottom: 2px solid var(--ink);
+  }
+  table.surfaces td.tool {
+    font-weight: 700;
+    color: var(--ink);
+    font-size: 26px;
+  }
+  table.surfaces td.kind {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    color: var(--ua-red);
+    letter-spacing: 0.04em;
+  }
+  table.surfaces td.desc { color: var(--ink-soft); font-size: 24px; line-height: 1.35; }
+
+  .stack { display: flex; flex-direction: column; gap: 0; }
+  .stack-row {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 40px;
+    padding: 24px 0;
+    border-bottom: 1px solid var(--rule);
+    align-items: baseline;
+  }
+  .stack-row:last-child { border-bottom: none; }
+  .stack-row .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--ua-red);
+  }
+  .stack-row .val {
+    font-size: 28px;
+    color: var(--ink-soft);
+    line-height: 1.35;
+  }
+  .stack-row .val strong { color: var(--ink); font-weight: 700; }
+
+  /* Capability blocks */
+  .cap-block {
+    border: 1px solid var(--rule);
+    background: var(--paper);
+    padding: 32px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    min-height: 280px;
+  }
+  .cap-block .icon-letter {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--ua-red);
+    letter-spacing: -0.02em;
+  }
+  .cap-block h5 {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.1;
+  }
+  .cap-block p {
+    font-size: 24px;
+    line-height: 1.4;
+    color: var(--ink-soft);
+    margin: 0;
+  }
+
+  /* Quote callout */
+  .pullquote {
+    font-size: 44px;
+    line-height: 1.25;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+    text-wrap: pretty;
+  }
+  .slide-dark .pullquote { color: var(--cream); }
+  .pullquote::before {
+    content: "\201C";
+    font-family: 'Manrope', sans-serif;
+    font-size: 100px;
+    line-height: 0.5;
+    color: var(--ua-red);
+    vertical-align: -22px;
+    margin-right: 12px;
+  }
+  .attrib {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--mute);
+    margin-top: 32px;
+  }
+  .slide-dark .attrib { color: rgba(247,244,238,0.6); }
+
+  /* Safety stack rows */
+  .safety-row {
+    display: grid;
+    grid-template-columns: 60px 1fr 2.2fr;
+    gap: 36px;
+    padding: 22px 0;
+    border-bottom: 1px solid var(--rule);
+    align-items: baseline;
+  }
+  .safety-row:last-child { border-bottom: none; }
+  .safety-row .n {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    color: var(--ua-red);
+    letter-spacing: 0.06em;
+  }
+  .safety-row .h {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--ink);
+    letter-spacing: -0.01em;
+    line-height: 1.15;
+  }
+  .safety-row .d {
+    font-size: 24px;
+    color: var(--ink-soft);
+    line-height: 1.4;
+  }
+
+  /* Compare panel */
+  .compare {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+    flex: 1;
+  }
+  .compare-col {
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    padding: 36px 38px 42px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  .compare-col.alt { border-top: 8px solid var(--ua-blue); }
+  .compare-col.gov { border-top: 8px solid var(--ua-red); }
+  .compare-col .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ua-red);
+  }
+  .compare-col.alt .label { color: var(--ua-blue); }
+  .compare-col h3 {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+    margin: 0;
+  }
+  .compare-col p {
+    font-size: 24px;
+    line-height: 1.42;
+    color: var(--ink-soft);
+    margin: 0;
+  }
+  .compare-col ul {
+    margin: 0; padding: 0; list-style: none;
+    display: flex; flex-direction: column; gap: 12px;
+  }
+  .compare-col ul li {
+    font-size: 24px;
+    line-height: 1.35;
+    color: var(--ink-soft);
+    padding-left: 28px;
+    position: relative;
+  }
+  .compare-col ul li::before {
+    content: "›";
+    position: absolute; left: 0;
+    color: var(--ua-red);
+    font-weight: 700;
+  }
+  .compare-col.alt ul li::before { color: var(--ua-blue); }
+
+  /* Three-tier pyramid for Marshall */
+  .marshall {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-top: 20px;
+  }
+  .marshall-row {
+    display: grid;
+    grid-template-columns: 220px 280px 1fr;
+    gap: 32px;
+    padding: 26px 0;
+    border-bottom: 1px solid var(--rule);
+    align-items: baseline;
+  }
+  .marshall-row:first-child { border-top: 2px solid var(--ink); }
+  .marshall-row .era {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    color: var(--mute);
+    letter-spacing: 0.08em;
+  }
+  .marshall-row .wave {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--ink);
+    letter-spacing: -0.01em;
+  }
+  .marshall-row .wave .sub {
+    display: block;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    color: var(--ua-red);
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-top: 4px;
+  }
+  .marshall-row .desc {
+    font-size: 24px;
+    color: var(--ink-soft);
+    line-height: 1.4;
+  }
+  .marshall-row.hi { background: rgba(171,5,32,0.04); }
+
+  /* Numbered grid */
+  .num-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 32px;
+    margin-top: 50px;
+  }
+  .num-block {
+    border-top: 2px solid var(--ink);
+    padding-top: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .slide-dark .num-block { border-top-color: var(--cream); }
+  .num-block .num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 28px;
+    color: var(--ua-red);
+    letter-spacing: 0.08em;
+  }
+  .num-block h4 {
+    font-size: 34px;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: -0.01em;
+    line-height: 1.1;
+  }
+  .num-block p {
+    font-size: 24px;
+    line-height: 1.4;
+    color: var(--ink-soft);
+    margin: 0;
+  }
+  .slide-dark .num-block p { color: var(--cream-warm); }
+
+  /* Encyclical card */
+  .encyclical {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 60px;
+    align-items: stretch;
+  }
+  .encyclical-seal {
+    background: var(--ua-blue);
+    color: var(--cream);
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 32px;
+    position: relative;
+  }
+  .encyclical-seal .lat {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--cream-warm);
+  }
+  .encyclical-seal h3 {
+    font-size: 68px;
+    font-weight: 800;
+    margin: 0;
+    letter-spacing: -0.025em;
+    line-height: 0.95;
+    font-style: italic;
+  }
+  .encyclical-seal .meta {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    line-height: 1.55;
+    color: var(--cream-warm);
+    letter-spacing: 0.04em;
+  }
+  .encyclical-seal .meta strong { color: var(--cream); font-weight: 700; }
+
+  /* Discussion / panel question cards */
+  .q-block {
+    border: 1px solid var(--rule);
+    background: var(--paper);
+    padding: 34px 36px 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .slide-dark .q-block {
+    background: rgba(255,255,255,0.04);
+    border-color: rgba(247,244,238,0.2);
+  }
+  .q-block .qnum {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    letter-spacing: 0.18em;
+    color: var(--ua-red);
+  }
+  .slide-dark .q-block .qnum { color: var(--ua-red-bright); }
+  .q-block h5 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0;
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+  }
+  .q-block p {
+    font-size: 24px;
+    line-height: 1.4;
+    color: var(--mute);
+    margin: 0;
+  }
+  .slide-dark .q-block h5 { color: var(--cream); }
+  .slide-dark .q-block p { color: rgba(247,244,238,0.65); }
+
+  /* Panelist roster */
+  .roster {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    margin-top: 24px;
+  }
+  .panelist {
+    border: 1px solid var(--rule);
+    background: var(--paper);
+    padding: 28px 30px;
+    display: grid;
+    grid-template-columns: 96px 1fr;
+    gap: 20px;
+    align-items: center;
+  }
+  .slide-dark .panelist {
+    background: rgba(255,255,255,0.04);
+    border-color: rgba(247,244,238,0.2);
+  }
+  .panelist .portrait {
+    width: 96px; height: 96px;
+    background:
+      repeating-linear-gradient(135deg,
+        rgba(12,35,75,0.10) 0,
+        rgba(12,35,75,0.10) 6px,
+        rgba(12,35,75,0.18) 6px,
+        rgba(12,35,75,0.18) 12px);
+    border: 1px solid var(--rule);
+  }
+  .slide-dark .panelist .portrait {
+    background:
+      repeating-linear-gradient(135deg,
+        rgba(247,244,238,0.06) 0,
+        rgba(247,244,238,0.06) 6px,
+        rgba(247,244,238,0.14) 6px,
+        rgba(247,244,238,0.14) 12px);
+    border-color: rgba(247,244,238,0.2);
+  }
+  .panelist .who {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+  }
+  .panelist .role {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    color: var(--ua-red);
+    margin-top: 6px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  .slide-dark .panelist .who { color: var(--cream); }
+
+  /* Footprint figure: stacked bars */
+  .footprint {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    flex: 1;
+    align-items: stretch;
+  }
+  .fp-card {
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    padding: 36px 38px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .fp-card .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    letter-spacing: 0.16em;
+    color: var(--ua-red);
+    text-transform: uppercase;
+  }
+  .fp-card h4 {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: -0.01em;
+    line-height: 1.1;
+  }
+  .fp-card .figrow {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    align-items: center;
+    gap: 18px;
+  }
+  .fp-card .figrow .k {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    color: var(--mute);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  .fp-card .figrow .bar {
+    height: 22px;
+    background: var(--cream-warm);
+    border: 1px solid var(--rule);
+    position: relative;
+  }
+  .fp-card .figrow .bar .fill {
+    position: absolute; inset: 0 auto 0 0;
+    background: var(--ua-red);
+  }
+  .fp-card .figrow .bar.alt .fill { background: var(--ua-blue); }
+  .fp-card p {
+    font-size: 24px;
+    line-height: 1.42;
+    color: var(--ink-soft);
+    margin: 0;
+  }
+
+  /* Vocab band for transhumanism / posthumanism */
+  .vocab {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+    margin-top: 40px;
+  }
+  .vocab-card {
+    border: 1px solid var(--rule);
+    background: var(--paper);
+    padding: 32px 34px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .vocab-card .term {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ua-red);
+  }
+  .vocab-card h4 {
+    font-size: 36px;
+    margin: 0;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+    font-weight: 700;
+  }
+  .vocab-card p {
+    font-size: 24px;
+    line-height: 1.42;
+    color: var(--ink-soft);
+    margin: 0;
+  }
+
+  /* Banner */
+  .warn-band {
+    background: var(--ua-red);
+    color: var(--cream);
+    padding: 28px 36px;
+    display: flex;
+    gap: 28px;
+    align-items: center;
+  }
+  .warn-band .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    flex: 0 0 auto;
+    border-right: 1px solid rgba(247,244,238,0.4);
+    padding-right: 28px;
+  }
+  .warn-band .msg { font-size: 26px; line-height: 1.35; }
+</style>
+</head>
+<body>
+
+<template id="__bundler_thumbnail" data-bg-color="#0C234B">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#0C234B"/>
+    <rect x="470" y="250" width="120" height="120" fill="#AB0520"/>
+    <text x="530" y="345" font-family="Manrope, sans-serif" font-size="100" font-weight="800" fill="#f7f4ee" text-anchor="middle">A</text>
+    <text x="630" y="345" font-family="Manrope, sans-serif" font-size="100" font-weight="800" fill="#f7f4ee" text-anchor="start" opacity="0">.</text>
+    <text x="600" y="500" font-family="Manrope, sans-serif" font-size="56" font-weight="700" fill="#f7f4ee" text-anchor="middle">Ethics &amp; Environment</text>
+    <text x="600" y="560" font-family="monospace" font-size="28" letter-spacing="6" fill="#efe9dc" text-anchor="middle" opacity="0.7">UA PH&amp;AI · PANEL</text>
+  </svg>
+</template>
+
+<deck-stage width="1920" height="1080">
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       1 · TITLE
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="01 Title" class="slide-dark">
+    <div class="title-slide">
+      <div class="grid-bg"></div>
+      <div class="deck-header">
+        <div class="lockup">
+          <span class="ua-block">A</span>
+          <span>University of Arizona · BIO5 Institute</span>
+        </div>
+        <div>PH&amp;AI Summer School · Day 3 · Panel</div>
+      </div>
+
+      <div class="title-slide-content" style="margin-top: 40px;">
+        <div class="tag" style="font-size: 26px;">Closing Session · Panel Discussion</div>
+        <h1 class="display" style="font-size: 148px;">
+          Ethics &amp;<br>environmental<br>impact<span style="color: var(--ua-red-bright);">.</span>
+        </h1>
+        <p class="body" style="color: var(--cream-warm); font-size: 36px; max-width: 1300px;">
+          Who writes the rules — corporations or publics? What does an honest accounting
+          of the compute, the water, and the grid look like? An open conversation to
+          close the school.
+        </p>
+      </div>
+
+      <div class="title-slide-content" style="gap: 12px;">
+        <div style="background: rgba(247,244,238,0.4); height: 1px; max-width: 600px;"></div>
+        <div style="display: flex; justify-content: space-between; align-items: flex-end;">
+          <div>
+            <div style="color: var(--cream); font-weight: 600; font-size: 32px;">Moderated by Tyson Swetnam, PhD</div>
+            <div class="small mono" style="margin-top: 6px;">Associate Professor · BIO5 Institute</div>
+          </div>
+          <div class="mono small" style="text-align: right;">
+            Grand Challenges Research Building<br>
+            Tucson, AZ · June 2026
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       2 · PANEL FORMAT
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="02 Panel Format" class="slide-paper">
+    <div class="slide slide-paper">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics Panel</span></div>
+        <div>02 / Format</div>
+      </div>
+
+      <div class="tag" style="margin-top: 40px;">How This Session Runs</div>
+      <h2 class="title" style="margin-top: 20px; max-width: 1600px;">Sixty minutes. Three panelists. Six questions.</h2>
+
+      <div class="cols-3" style="margin-top: 70px; gap: 32px;">
+        <div class="cap-block">
+          <span class="icon-letter">10′</span>
+          <h5>Framing.</h5>
+          <p>Tyson sets the question, the vocabulary, the stakes. The slides that follow are the shared substrate — not the lecture.</p>
+        </div>
+        <div class="cap-block">
+          <span class="icon-letter">35′</span>
+          <h5>Panel.</h5>
+          <p>Three voices working through six prompts. Brief openings, then real conversation — disagreement welcome.</p>
+        </div>
+        <div class="cap-block">
+          <span class="icon-letter">15′</span>
+          <h5>Room.</h5>
+          <p>Open Q&amp;A. You've been reading and prompting for three days — bring the harder question, not the safe one.</p>
+        </div>
+      </div>
+
+      <div class="roster">
+        <div class="panelist">
+          <div class="portrait"></div>
+          <div>
+            <div class="who">Panelist 01</div>
+            <div class="role">Public Health · Ethics</div>
+          </div>
+        </div>
+        <div class="panelist">
+          <div class="portrait"></div>
+          <div>
+            <div class="who">Panelist 02</div>
+            <div class="role">Policy · Law</div>
+          </div>
+        </div>
+        <div class="panelist">
+          <div class="portrait"></div>
+          <div>
+            <div class="who">Panelist 03</div>
+            <div class="role">Sustainability · Compute</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>02 · FORMAT</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       3 · ETHICS OF AI vs ETHICAL AI
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="03 Ethics vs Ethical">
+    <div class="slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics Panel</span></div>
+        <div>03 / Two Questions</div>
+      </div>
+
+      <div class="tag" style="margin-top: 40px;">Two Different Questions That Sound The Same</div>
+      <h2 class="title" style="margin-top: 20px; max-width: 1600px;">"Ethics <em>of</em> AI" is not the same as "Ethical AI."</h2>
+
+      <div class="cols-2" style="margin-top: 80px; gap: 60px;">
+        <div class="card" style="border-left: 6px solid var(--ua-blue);">
+          <div class="kicker" style="color: var(--ua-blue);">Ethics of AI · principles</div>
+          <h4>What rules should govern these systems?</h4>
+          <p style="font-size: 26px;">An outside-in question. Regulations, declarations, constitutions, bills of rights. Asks who has standing, who decides, who is harmed, who is accountable.</p>
+        </div>
+        <div class="card" style="border-left: 6px solid var(--ua-red);">
+          <div class="kicker">Ethical AI · behavior</div>
+          <h4>How should this model act, right now?</h4>
+          <p style="font-size: 26px;">An inside-out question. Refusal, safety, fairness, alignment. Asks how the system itself behaves under pressure — what it says yes to and what it says no to.</p>
+        </div>
+      </div>
+
+      <p class="body" style="margin-top: 60px; max-width: 1600px; font-size: 28px;">
+        Most of today's panel lives in the first column. Most of what AI companies talk about lives in the second.
+        The gap between them is where most of the disagreement actually sits — <span style="font-weight: 700; color: var(--ink);">Siau &amp; Wang (2020)</span>.
+      </p>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>03 · TWO QUESTIONS</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       4 · HISTORY · DARTMOUTH 1956
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="04 Dartmouth 1956" class="slide-paper">
+    <div class="slide slide-paper">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics Panel</span></div>
+        <div>04 / History</div>
+      </div>
+
+      <div class="tag" style="margin-top: 40px;">Where The Field Began</div>
+      <h2 class="title" style="margin-top: 20px; max-width: 1600px;">Dartmouth, summer 1956. Seventy years of waiting for the room we're in.</h2>
+
+      <div class="cols-2-uneven" style="margin-top: 70px; gap: 70px; flex: 0 1 auto;">
+        <div class="placeholder" style="min-height: 460px; font-size: 24px;">
+          [ DROP-IN IMAGE ]<br><br>
+          Dartmouth Summer Research Project<br>
+          Group photo · 1956<br>
+          credit: IEEE Spectrum
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 24px; justify-content: center;">
+          <p class="body" style="font-size: 28px;">
+            A small group of scientists gathered at Dartmouth for a Summer Research Project on Artificial Intelligence.
+            They coined the term. The field begins.
+          </p>
+          <p class="body" style="font-size: 28px;">
+            For the next seventy years AI lived mainly in <strong style="color: var(--ink);">science fiction</strong> and in a small
+            community of industry researchers and academics quietly building the digital infrastructure the modern systems would need.
+          </p>
+          <p class="body" style="font-size: 28px;">
+            What changed in the last three years isn't the idea — it's the infrastructure. The questions waiting from 1956
+            arrived all at once.
+          </p>
+        </div>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>04 · HISTORY</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       5 · INHERITED FRAMES · ASIMOV + TURING TRAP
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="05 Inherited Frames">
+    <div class="slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics Panel</span></div>
+        <div>05 / Inherited Frames</div>
+      </div>
+
+      <div class="tag" style="margin-top: 40px;">Two Frames We Inherited From The Twentieth Century</div>
+      <h2 class="title" style="margin-top: 20px; max-width: 1600px;">Useful, partial, and still load-bearing in 2026.</h2>
+
+      <div class="cols-2" style="margin-top: 70px; gap: 60px;">
+        <div class="card" style="border-left: 6px solid var(--ua-red); padding: 38px 40px;">
+          <div class="kicker">1942 · Asimov · "Do No Harm"</div>
+          <h4>The Three Laws of Robotics.</h4>
+          <p style="font-size: 26px;">
+            Asimov's framing — robots must not harm humans, must obey, must protect themselves — is fiction, not law.
+            But the deep instinct it encodes (<em>prevent harm to humans, by design</em>) shows up in every modern AI safety practice:
+            refusal training, red-teaming, evals.
+          </p>
+          <p style="font-size: 24px; color: var(--mute);">
+            The point isn't to apply the laws. The point is that the field still asks Asimov's question first.
+          </p>
+        </div>
+        <div class="card" style="border-left: 6px solid var(--ua-red); padding: 38px 40px;">
+          <div class="kicker">2022 · Brynjolfsson · The Turing Trap</div>
+          <h4>Human-like ≠ human-empowering.</h4>
+          <p style="font-size: 26px;">
+            The Turing Trap warns that pushing AI toward <em>imitation</em> of humans tends to <strong style="color: var(--ink);">replace</strong> workers
+            rather than augment them — driving wages down and concentrating economic and political power.
+          </p>
+          <p style="font-size: 24px; color: var(--mute);">
+            "More human-like" is not a self-evidently good design goal. The frame matters.
+          </p>
+        </div>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>05 · INHERITED FRAMES</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       6 · PART 1 · DIVIDER · TWO GRAMMARS
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="06 Part 1 Divider" class="slide-dark">
+    <div class="section-slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics Panel</span></div>
+        <div>Part 01 · Two Grammars</div>
+      </div>
+      <div>
+        <div class="part-num">Part 01</div>
+        <h2 class="section-title">Who writes<br>the rules<span style="color: var(--ua-red-bright);">?</span></h2>
+        <p class="section-sub">
+          Corporate AI constitutions and public AI bills of rights are doing very different work.
+          Alondra Nelson argues one of them is structurally insufficient.
+        </p>
+      </div>
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>06 · PART 01</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       7 · CORPORATE CONSTITUTIONS vs PUBLIC BILLS OF RIGHTS
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="07 Two Documents" class="slide-paper">
+    <div class="slide slide-paper">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics Panel</span></div>
+        <div>07 / Two Documents</div>
+      </div>
+
+      <div class="tag" style="margin-top: 40px;">Two Foundational Documents · Two Sources Of Legitimacy</div>
+      <h2 class="title" style="margin-top: 20px; max-width: 1600px;">A corporate constitution and a public bill of rights are not the same kind of object.</h2>
+
+      <div class="compare" style="margin-top: 56px;">
+        <div class="compare-col alt">
+          <div class="label">Type 01 · Corporate AI Constitution</div>
+          <h3>Internal training and alignment spec.</h3>
+          <p>The model developer's vision of how its own model should behave. Canonical example: a frontier-lab "constitution" document used in training.</p>
+          <ul>
+            <li>Written and revised by company fiat</li>
+            <li>Not negotiated with affected publics</li>
+            <li>Newer revisions can quietly remove references to international human-rights frameworks</li>
+            <li>Legitimacy comes from the company's own authority</li>
+          </ul>
+        </div>
+        <div class="compare-col gov">
+          <div class="label">Type 02 · Public AI Bill Of Rights</div>
+          <h3>Democratic rights claim against algorithmic power.</h3>
+          <p>Developed through public process. Canonical example: the White House OSTP <em>Blueprint for an AI Bill of Rights</em>, October 2022.</p>
+          <ul>
+            <li>Declares principles publics can extend to new institutions and new harms</li>
+            <li>Five principles: safety, discrimination protections, data privacy, notice/explanation, human alternatives</li>
+            <li>Force comes from democratic legitimacy and the surrounding legal infrastructure</li>
+            <li>Structurally closer to a <em>Declaration</em> than to a Bill — declares, but does not enforce</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="small" style="margin-top: 40px; max-width: 1700px; font-size: 24px;">
+        Source: Alondra Nelson, <em>A civic grammar for AI rights</em>, Science (2026). DOI 10.1126/science.aeh7153
+      </p>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>07 · TWO DOCUMENTS</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       8 · CIVIC GRAMMAR
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="08 Civic Grammar">
+    <div class="slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics Panel</span></div>
+        <div>08 / Civic Grammar</div>
+      </div>
+
+      <div class="tag" style="margin-top: 40px;">Nelson's Argument</div>
+      <h2 class="title" style="margin-top: 20px; max-width: 1600px;">A shared vocabulary for rights claims is moving across actors who agree on almost nothing else.</h2>
+
+      <div class="cols-2-uneven" style="margin-top: 60px; gap: 80px; flex: 0 1 auto;">
+        <div style="display: flex; flex-direction: column; justify-content: center;">
+          <p class="pullquote">
+            A <strong style="color: var(--ua-red);">civic grammar</strong> — non-discrimination, transparency, data privacy, notice, human alternatives — that has been traveling across jurisdictions, partisan lines, and institutional contexts.
+          </p>
+          <div class="attrib">Alondra Nelson · Science · 2026</div>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 22px; justify-content: center;">
+          <div class="card">
+            <div class="kicker">The pattern</div>
+            <p style="font-size: 25px;">
+              An American tradition — Patients', Consumer, Tenants', Workers', Taxpayers' Bills of Rights.
+              The AI Bill of Rights template is spreading the same way.
+            </p>
+          </div>
+          <div class="card" style="border-left: 6px solid var(--ua-red);">
+            <div class="kicker">The mechanism</div>
+            <p style="font-size: 25px;">
+              <strong style="color: var(--ink);">Institutional diffusion among weakly related actors</strong>
+              (Strang &amp; Meyer). Conceptual, not relational. Connecticut Democrats, Oklahoma Republicans, and a national student-advocacy network can adopt the same vocabulary because each, separately, met the same algorithmic harm.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>08 · CIVIC GRAMMAR</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       9 · MARSHALL · SOCIAL CITIZENSHIP
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="09 Marshall" class="slide-paper">
+    <div class="slide slide-paper">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics Panel</span></div>
+        <div>09 / Marshall</div>
+      </div>
+
+      <div class="tag" style="margin-top: 40px;">T. H. Marshall · Citizenship And Social Class · 1950</div>
+      <h2 class="title" style="margin-top: 16px; max-width: 1600px; font-size: 60px;">Rights expand in waves. AI rights map onto Marshall's <em>social</em> tier.</h2>
+
+      <div class="marshall">
+        <div class="marshall-row">
+          <div class="era">18th c.</div>
+          <div class="wave">Civil rights<span class="sub">Wave 01</span></div>
+          <div class="desc">Liberty of person, speech, faith, property. Individual freedoms against arbitrary state power.</div>
+        </div>
+        <div class="marshall-row">
+          <div class="era">19th c.</div>
+          <div class="wave">Political rights<span class="sub">Wave 02</span></div>
+          <div class="desc">The franchise. Participation in collective political authority. Universal suffrage as the long-running expansion.</div>
+        </div>
+        <div class="marshall-row hi">
+          <div class="era">20th c.</div>
+          <div class="wave">Social rights<span class="sub">Wave 03</span></div>
+          <div class="desc">Economic security and the conditions of participation. Entitlements against harms of industrial capitalism that civil-liberties frameworks could not address.</div>
+        </div>
+        <div class="marshall-row hi">
+          <div class="era">21st c. ?</div>
+          <div class="wave">AI rights<span class="sub">Nelson's argument</span></div>
+          <div class="desc">Entitlements against systems "that increasingly govern access to employment, credit, healthcare, housing, and education." Collective, diffuse, opaque harms. A social-citizenship response to algorithmic power.</div>
+        </div>
+      </div>
+
+      <p class="small" style="margin-top: 36px; max-width: 1700px; font-size: 24px;">
+        "Rights are never fully delivered at the moment of declaration. They are successively rearticulated by publics who attempt to hold institutions to commitments those institutions have not yet honored." — Nelson, paraphrasing Marshall.
+      </p>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>09 · MARSHALL</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       10 · LIMITS OF RIGHTS TALK
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="10 Limits Of Rights Talk">
+    <div class="slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics Panel</span></div>
+        <div>10 / Limits</div>
+      </div>
+
+      <div class="tag" style="margin-top: 40px;">What Civic Grammar Cannot Do On Its Own</div>
+      <h2 class="title" style="margin-top: 20px; max-width: 1600px;">Three failure modes Nelson is clear-eyed about.</h2>
+
+      <div class="stack" style="margin-top: 60px;">
+        <div class="safety-row">
+          <div class="n">01</div>
+          <div class="h">Accommodation can mimic transformation.</div>
+          <div class="d">A vocabulary that moves easily across partisan lines may have been "drained of the political content that gives rights claims their force." Crossing the aisle is not the same as biting.</div>
+        </div>
+        <div class="safety-row">
+          <div class="n">02</div>
+          <div class="h">Rights individualize structural problems.</div>
+          <div class="d">Frameworks built around individual claims often fail to address the collective and systemic nature of algorithmic harms. A model isn't biased against <em>you</em> — it's biased against a class you sit inside.</div>
+        </div>
+        <div class="safety-row">
+          <div class="n">03</div>
+          <div class="h">Declaration is not delivery.</div>
+          <div class="d">"Declarations of entitlement and their substantive delivery can remain decades apart, separated by the organized power of those who benefit from the status quo."</div>
+        </div>
+      </div>
+
+      <div class="warn-band" style="margin-top: 50px;">
+        <div class="label">Nelson's question</div>
+        <div class="msg">Will democratic institutions take this civic grammar seriously <em>before</em> the AI companies finish writing their own constitutions for us all?</div>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>10 · LIMITS</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       11 · THREE IMPERATIVES
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="11 Three Imperatives" class="slide-dark">
+    <div class="slide slide-dark">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics Panel</span></div>
+        <div>11 / Three Imperatives</div>
+      </div>
+
+      <div class="tag" style="margin-top: 40px; color: var(--cream-warm);">Field Theory · Daedalus · Winter/Spring 2026</div>
+      <h2 class="title" style="margin-top: 20px; max-width: 1600px; color: var(--cream);">Three things AI is, at the same time, for any field that studies it.</h2>
+
+      <div class="num-grid" style="margin-top: 70px;">
+        <div class="num-block">
+          <div class="num">01 · QUESTION</div>
+          <h4>AI as social-science question.</h4>
+          <p>Renewed attention to social theories of how technology, human experience, and social order are entangled. Weber on rationalization, Du Bois on technology and inequality, contemporary work on algorithmic governance.</p>
+        </div>
+        <div class="num-block">
+          <div class="num">02 · OBJECT</div>
+          <h4>AI as object of inquiry.</h4>
+          <p>The systems themselves merit study as social, political, and economic artifacts — not just engineering products. Training corpora, labor relations, ideological commitments, institutional effects.</p>
+        </div>
+        <div class="num-block">
+          <div class="num">03 · TOOL</div>
+          <h4>AI as method / tool.</h4>
+          <p>AI capabilities may transform — or upend — the practice of social investigation itself: large-scale text analysis, multimodal pattern detection, conversational interviewing at scale. Worth critical scrutiny, not uncritical adoption.</p>
+        </div>
+      </div>
+
+      <p class="small" style="margin-top: 60px; max-width: 1700px; font-size: 24px; color: rgba(247,244,238,0.65);">
+        Diagnostic use: when you read a piece of AI-ethics scholarship, ask which imperative it engages.
+        That often clarifies what kind of argument is being made — and what kind of counter-argument would land.
+      </p>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>11 · THREE IMPERATIVES</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       12 · PART 2 · DIVIDER · A MORAL RESPONSE
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="12 Part 2 Divider" class="slide-red">
+    <div class="section-slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics Panel</span></div>
+        <div>Part 02 · A Moral Response</div>
+      </div>
+      <div>
+        <div class="part-num">Part 02</div>
+        <h2 class="section-title">Magnifica<br>Humanitas.</h2>
+        <p class="section-sub">
+          May 2026. Pope Leo XIV's first encyclical places AI alongside the industrial
+          revolution — and arrives at the same conclusion as Nelson from a very different starting point.
+        </p>
+      </div>
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>12 · PART 02</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       13 · MAGNIFICA HUMANITAS · OVERVIEW
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="13 Magnifica Humanitas">
+    <div class="slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics Panel</span></div>
+        <div>13 / Encyclical</div>
+      </div>
+
+      <div class="tag" style="margin-top: 40px;">Pope Leo XIV · First Encyclical · 2026</div>
+      <h2 class="title" style="margin-top: 16px; max-width: 1600px; font-size: 60px;">Treats AI as the central moral question of the age. Signed on a deliberate date.</h2>
+
+      <div class="encyclical" style="margin-top: 60px;">
+        <div class="encyclical-seal">
+          <div class="lat">Encyclical · Lat. <em>Magnificent Humanity</em></div>
+          <h3>Magnifica<br>Humanitas</h3>
+          <div class="meta">
+            <strong>Signed</strong>  15 May 2026<br>
+            <strong>Published</strong>  25 May 2026<br>
+            <strong>Length</strong>  235 pp.<br>
+            <strong>Addressed</strong>  Catholics &amp; "every person of goodwill"
+          </div>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 26px; justify-content: center;">
+          <div class="card">
+            <div class="kicker">The date is the argument</div>
+            <p style="font-size: 26px;">
+              May 15, 2026 is the <strong style="color: var(--ink);">135th anniversary of Pope Leo XIII's <em>Rerum Novarum</em></strong>
+              (1891) — the foundational encyclical of modern Catholic social teaching, written for the dignity of workers
+              under the 19th-century industrial revolution. Leo XIV places AI explicitly alongside that disruption.
+            </p>
+          </div>
+          <div class="card" style="border-left: 6px solid var(--ua-red);">
+            <div class="kicker">A break with tradition</div>
+            <p style="font-size: 26px;">
+              Pope Leo personally presented the encyclical at the Vatican, alongside a co-founder of a frontier
+              AI lab. The first time a pontiff has presented an encyclical himself rather than delegating to cardinals —
+              a signal that the conversation is dialogic, not purely adversarial.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>13 · ENCYCLICAL</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       14 · CORE TEACHINGS — TRANS/POSTHUMANISM
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="14 Core Teachings" class="slide-paper">
+    <div class="slide slide-paper">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics Panel</span></div>
+        <div>14 / Core Teachings</div>
+      </div>
+
+      <div class="tag" style="margin-top: 40px;">The Center Of The Encyclical</div>
+      <h2 class="title" style="margin-top: 20px; max-width: 1600px;">The dignity of the human person is affirmed as infinite. Two ideologies are named.</h2>
+
+      <div class="vocab">
+        <div class="vocab-card" style="border-left: 6px solid var(--ua-red);">
+          <div class="term">Critique 01 · Transhumanism</div>
+          <h4>Engineering away human finitude.</h4>
+          <p>The project of using technology to overcome biological limits — aging, mortality, embodiment.
+          Leo XIV rejects the framing of human finitude as a <em>problem</em> to be solved.</p>
+        </div>
+        <div class="vocab-card" style="border-left: 6px solid var(--ua-red);">
+          <div class="term">Critique 02 · Posthumanism</div>
+          <h4>Blurring the human/machine line.</h4>
+          <p>The philosophical position that humans and machines are continuous, or that human distinctiveness is illusory.
+          Named as an active <strong style="color: var(--ink);">"anti-human vision"</strong> embedded in contemporary AI development —
+          not merely a speculative stance.</p>
+        </div>
+      </div>
+
+      <div class="stack" style="margin-top: 40px;">
+        <div class="stack-row" style="padding: 18px 0;">
+          <div class="label">Evaluation frame</div>
+          <div class="val" style="font-size: 26px;"><strong>Dignity of the person · Common good · Justice.</strong> The three principles against which any AI deployment is measured.</div>
+        </div>
+        <div class="stack-row" style="padding: 18px 0;">
+          <div class="label">Coverage</div>
+          <div class="val" style="font-size: 26px;">Education · economy · unemployment · work · human trafficking · war. The full social-impact terrain Catholic social teaching has historically addressed.</div>
+        </div>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>14 · CORE TEACHINGS</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       15 · CALLS TO ACTION
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="15 Calls To Action">
+    <div class="slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics Panel</span></div>
+        <div>15 / Calls To Action</div>
+      </div>
+
+      <div class="tag" style="margin-top: 40px;">From Doctrine To Demand</div>
+      <h2 class="title" style="margin-top: 20px; max-width: 1600px;">Two operational claims — and one rhetorical move that does work outside the Church.</h2>
+
+      <div class="cols-3" style="margin-top: 70px; gap: 36px;">
+        <div class="cap-block">
+          <span class="icon-letter">"</span>
+          <h5>Disarm AI.</h5>
+          <p>Withdraw AI from military applications and from purely economic interests. Direct it toward the common good. The framing is deliberately stark.</p>
+        </div>
+        <div class="cap-block">
+          <span class="icon-letter">§</span>
+          <h5>Regulate it.</h5>
+          <p>Stricter state and international regulation of AI companies. Not industry self-governance. The encyclical does not treat the two as substitutes.</p>
+        </div>
+        <div class="cap-block">
+          <span class="icon-letter">∀</span>
+          <h5>Address everyone.</h5>
+          <p>"Every person of goodwill" — the same rhetorical move <em>Laudato Si'</em> (2015, on climate) and <em>Antiqua et Nova</em> (2025, on AI) used to seek ethical common ground beyond doctrinal lines.</p>
+        </div>
+      </div>
+
+      <div class="warn-band" style="margin-top: 60px;">
+        <div class="label">Convergence</div>
+        <div class="msg">
+          Pope Leo and Alondra Nelson arrive at the same conclusion from very different starting points:
+          <strong>corporate self-governance is structurally insufficient as a source of legitimacy.</strong>
+        </div>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>15 · CALLS TO ACTION</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       16 · PART 3 · DIVIDER · INTERNATIONAL SCAFFOLDING
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="16 Part 3 Divider" class="slide-dark">
+    <div class="section-slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics Panel</span></div>
+        <div>Part 03 · International Scaffolding</div>
+      </div>
+      <div>
+        <div class="part-num">Part 03</div>
+        <h2 class="section-title">The frameworks<br>already on the<br>table.</h2>
+        <p class="section-sub">
+          Before we invent a new ethics for AI, an inventory: the declarations, principles,
+          and conventions you are already operating under whether you read them or not.
+        </p>
+      </div>
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>16 · PART 03</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       17 · INTERNATIONAL DECLARATIONS
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="17 Declarations" class="slide-paper">
+    <div class="slide slide-paper">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics Panel</span></div>
+        <div>17 / Declarations</div>
+      </div>
+
+      <div class="tag" style="margin-top: 28px;">A Working Map · Not Exhaustive</div>
+      <h2 class="title" style="margin-top: 12px; max-width: 1600px; font-size: 56px;">Major declarations and agreements you can name from memory.</h2>
+
+      <table class="surfaces" style="margin-top: 36px;">
+        <thead>
+          <tr>
+            <th>Document</th>
+            <th>Issuing body</th>
+            <th>Force</th>
+            <th>What it does</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="tool">Framework Convention on AI &amp; Human Rights</td>
+            <td class="desc">Council of Europe</td>
+            <td class="kind">Treaty</td>
+            <td class="desc">Binding international convention tying AI systems to human-rights, democracy, and rule-of-law obligations.</td>
+          </tr>
+          <tr>
+            <td class="tool">Recommendation on the Ethics of AI</td>
+            <td class="desc">UNESCO</td>
+            <td class="kind">Recommendation</td>
+            <td class="desc">First global standard-setting instrument on AI ethics, adopted by 193 member states.</td>
+          </tr>
+          <tr>
+            <td class="tool">OECD AI Principles · G20 endorsement</td>
+            <td class="desc">OECD · endorsed by G20</td>
+            <td class="kind">Principles</td>
+            <td class="desc">Trustworthy-AI principles widely adopted as a starting point for national strategies; signal of cross-bloc consensus.</td>
+          </tr>
+          <tr>
+            <td class="tool">Political Declaration on Responsible Military Use of AI &amp; Autonomy</td>
+            <td class="desc">U.S. State Dept. + co-signatories</td>
+            <td class="kind">Declaration</td>
+            <td class="desc">Norms for military AI: human accountability, legal review, controlled escalation.</td>
+          </tr>
+          <tr>
+            <td class="tool">Toronto Declaration</td>
+            <td class="desc">Amnesty Intl. + Access Now</td>
+            <td class="kind">Declaration</td>
+            <td class="desc">Machine learning, equality, and non-discrimination — a civil-society anchor for the Nelson framework.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="small" style="margin-top: 30px; max-width: 1700px; font-size: 24px;">
+        Panel prompt: which of these has any practical effect on what a public health researcher in Arizona actually does next Tuesday?
+      </p>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>17 · DECLARATIONS</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       18 · PART 4 · DIVIDER · ENVIRONMENTAL
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="18 Part 4 Divider" class="slide-red">
+    <div class="section-slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics Panel</span></div>
+        <div>Part 04 · Footprint</div>
+      </div>
+      <div>
+        <div class="part-num">Part 04</div>
+        <h2 class="section-title">The bill<br>nobody<br>itemized.</h2>
+        <p class="section-sub">
+          A frontier model has a body. Silicon, electricity, water, copper, land.
+          What an honest accounting of the environmental cost looks like — and where it lands.
+        </p>
+      </div>
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>18 · PART 04</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       19 · WHERE THE COST LANDS
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="19 Where Cost Lands">
+    <div class="slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics Panel</span></div>
+        <div>19 / Where The Cost Lands</div>
+      </div>
+
+      <div class="tag" style="margin-top: 40px;">Four Inputs · One System</div>
+      <h2 class="title" style="margin-top: 20px; max-width: 1600px;">Every prompt sits on a stack of physical inputs. Worth naming them out loud.</h2>
+
+      <div class="cols-4" style="margin-top: 60px; gap: 22px;">
+        <div class="tier-card cap-block" style="min-height: 360px;">
+          <span class="icon-letter">⚡</span>
+          <h5>Electricity.</h5>
+          <p>Training a frontier model and serving its inference both draw megawatts continuously. Datacenter demand is now a material driver of grid planning in several U.S. regions.</p>
+        </div>
+        <div class="tier-card cap-block" style="min-height: 360px;">
+          <span class="icon-letter">💧</span>
+          <h5>Water.</h5>
+          <p>Evaporative cooling consumes potable or industrial water — sited disproportionately in arid regions. The Southwest is a relevant case in this room.</p>
+        </div>
+        <div class="tier-card cap-block" style="min-height: 360px;">
+          <span class="icon-letter">⛏</span>
+          <h5>Embodied carbon.</h5>
+          <p>Accelerator manufacturing, server build, building shell, fiber, copper. The carbon cost is paid before the first prompt — and is rarely on the accounting.</p>
+        </div>
+        <div class="tier-card cap-block" style="min-height: 360px;">
+          <span class="icon-letter">🏗</span>
+          <h5>Siting &amp; land.</h5>
+          <p>Hyperscale datacenter buildout reshapes local economies, tax bases, transmission corridors, and noise envelopes. The externalities are not evenly distributed.</p>
+        </div>
+      </div>
+
+      <p class="small" style="margin-top: 40px; max-width: 1700px; font-size: 24px;">
+        Frame: AI's environmental cost is not one number. It is at least four numbers, on at least three timescales (training, inference, buildout).
+      </p>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>19 · COST</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       20 · MARGINAL COMPUTE COST
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="20 Marginal Cost" class="slide-paper">
+    <div class="slide slide-paper">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics Panel</span></div>
+        <div>20 / Marginal Cost</div>
+      </div>
+
+      <div class="tag" style="margin-top: 40px;">A Per-Call Heuristic</div>
+      <h2 class="title" style="margin-top: 20px; max-width: 1600px;">Two questions worth asking before every agentic loop.</h2>
+
+      <div class="footprint" style="margin-top: 60px;">
+        <div class="fp-card">
+          <div class="label">Q1 · Right-size the model</div>
+          <h4>Does this task actually need the frontier?</h4>
+          <div class="figrow"><div class="k">Tiny / local</div><div class="bar"><div class="fill" style="width: 12%;"></div></div></div>
+          <div class="figrow"><div class="k">Small hosted</div><div class="bar"><div class="fill" style="width: 28%;"></div></div></div>
+          <div class="figrow"><div class="k">Mid</div><div class="bar"><div class="fill" style="width: 52%;"></div></div></div>
+          <div class="figrow"><div class="k">Frontier</div><div class="bar"><div class="fill" style="width: 100%;"></div></div></div>
+          <p>Per-call energy and embodied compute scale with model size. Most tasks fit inside a smaller model — defaulting to the frontier is a habit, not a requirement. <em>(Figure is illustrative, not measured.)</em></p>
+        </div>
+        <div class="fp-card">
+          <div class="label">Q2 · Right-size the loop</div>
+          <h4>Does this agent need to retry forty times?</h4>
+          <div class="figrow"><div class="k">One-shot</div><div class="bar alt"><div class="fill" style="width: 10%;"></div></div></div>
+          <div class="figrow"><div class="k">+ retries</div><div class="bar alt"><div class="fill" style="width: 24%;"></div></div></div>
+          <div class="figrow"><div class="k">+ tool calls</div><div class="bar alt"><div class="fill" style="width: 55%;"></div></div></div>
+          <div class="figrow"><div class="k">Speculative agent</div><div class="bar alt"><div class="fill" style="width: 96%;"></div></div></div>
+          <p>Agentic loops fire speculative calls, retries, and tool calls behind one user action. Cumulative compute, not the visible turn count, is the cost. Cache. Cap retries. Watch the loop.</p>
+        </div>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>20 · MARGINAL COST</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       21 · ENVIRONMENTAL ETHICS BRIDGE
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="21 Environmental Bridge">
+    <div class="slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics Panel</span></div>
+        <div>21 / Bridge</div>
+      </div>
+
+      <div class="tag" style="margin-top: 40px;">Bridge · The Two Halves Are The Same Conversation</div>
+      <h2 class="title" style="margin-top: 20px; max-width: 1600px;">Environmental impact <em>is</em> an ethics question. Same publics. Same diffuse harms.</h2>
+
+      <div class="cols-2-uneven" style="margin-top: 70px; gap: 80px; flex: 0 1 auto;">
+        <div style="display: flex; flex-direction: column; justify-content: center;">
+          <p class="pullquote">
+            Collective, diffuse, opaque harms that older rights frameworks address only partially.
+          </p>
+          <div class="attrib">Nelson · on algorithmic harms — and equally on environmental ones</div>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 22px; justify-content: center;">
+          <div class="card">
+            <div class="kicker">Same structural pattern</div>
+            <p style="font-size: 26px;">
+              Datacenter siting, grid load, and water draw produce harms that are <strong style="color: var(--ink);">collective, diffuse, and opaque</strong> — the same shape as algorithmic harm.
+              Marshall's social-rights tier is the same conceptual address.
+            </p>
+          </div>
+          <div class="card" style="border-left: 6px solid var(--ua-red);">
+            <div class="kicker">Same convergence</div>
+            <p style="font-size: 26px;">
+              <em>Laudato Si'</em> (2015, on care for creation) and <em>Magnifica Humanitas</em> (2026, on AI) share a single underlying claim:
+              <strong style="color: var(--ink);">the environment and the economy and the technology are one moral question.</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>21 · BRIDGE</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       22 · PART 5 · DIVIDER · PANEL DISCUSSION
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="22 Part 5 Divider" class="slide-dark">
+    <div class="section-slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics Panel</span></div>
+        <div>Part 05 · Panel Discussion</div>
+      </div>
+      <div>
+        <div class="part-num">Part 05</div>
+        <h2 class="section-title">Over to<br>the panel<span style="color: var(--ua-red-bright);">.</span></h2>
+        <p class="section-sub">
+          Six prompts. The framing above is shared substrate — disagreement with it is fair game.
+        </p>
+      </div>
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>22 · PART 05</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       23 · DISCUSSION QUESTIONS
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="23 Discussion Questions" class="slide-paper">
+    <div class="slide slide-paper">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics Panel</span></div>
+        <div>23 / Questions</div>
+      </div>
+
+      <div class="tag" style="margin-top: 28px;">Six Prompts For The Panel</div>
+      <h2 class="title" style="margin-top: 12px; max-width: 1600px; font-size: 56px;">Pick the one you most want to argue with first.</h2>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px; margin-top: 40px;">
+        <div class="q-block">
+          <div class="qnum">Q1 · Legitimacy</div>
+          <h5>If corporate AI constitutions are structurally insufficient, what is the minimum public mechanism that <em>is</em> sufficient?</h5>
+          <p>Not principles. Mechanism.</p>
+        </div>
+        <div class="q-block">
+          <div class="qnum">Q2 · Civic grammar</div>
+          <h5>Is the convergence across partisan lines a sign of strength — or evidence the vocabulary has been drained of force?</h5>
+          <p>Nelson asks both. Pick one to defend.</p>
+        </div>
+        <div class="q-block">
+          <div class="qnum">Q3 · Magnifica Humanitas</div>
+          <h5>Does the theological vocabulary (infinite dignity, transhumanism, posthumanism) help or hinder public deliberation about AI?</h5>
+          <p>You can dislike the framing and still answer.</p>
+        </div>
+        <div class="q-block">
+          <div class="qnum">Q4 · Public health</div>
+          <h5>What algorithmic harm in public health practice today would <em>most</em> benefit from a Marshall-style social-rights response?</h5>
+          <p>Be specific. Name a system.</p>
+        </div>
+        <div class="q-block">
+          <div class="qnum">Q5 · Footprint</div>
+          <h5>Is "use a smaller model when you can" an adequate environmental ethic — or is it a personal-virtue dodge?</h5>
+          <p>Compare to "use less plastic."</p>
+        </div>
+        <div class="q-block">
+          <div class="qnum">Q6 · Trade-off</div>
+          <h5>When does a documented public-health benefit of an AI tool outweigh its documented environmental cost — and who gets to decide?</h5>
+          <p>The hardest question. Save it for last.</p>
+        </div>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>23 · QUESTIONS</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       24 · RESOURCES
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="24 Resources">
+    <div class="slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics Panel</span></div>
+        <div>24 / Resources</div>
+      </div>
+
+      <div class="tag" style="margin-top: 40px;">Bookmarks</div>
+      <h2 class="title" style="margin-top: 20px; max-width: 1600px;">Where to keep reading after the room empties out.</h2>
+
+      <div class="stack" style="margin-top: 60px;">
+        <div class="stack-row">
+          <div class="label">Course page</div>
+          <div class="val mono" style="color: var(--ua-red); font-size: 26px;">tyson-swetnam.github.io/intro-gpt/ethics/</div>
+        </div>
+        <div class="stack-row">
+          <div class="label">Nelson · 2026</div>
+          <div class="val" style="font-size: 26px;"><strong>A civic grammar for AI rights</strong>, Science · DOI 10.1126/science.aeh7153</div>
+        </div>
+        <div class="stack-row">
+          <div class="label">Nelson · 2026</div>
+          <div class="val" style="font-size: 26px;"><strong>Field Theory: AI as Social Science Question, Object &amp; Tool</strong> · Daedalus, Winter/Spring 2026</div>
+        </div>
+        <div class="stack-row">
+          <div class="label">Marshall · 1950</div>
+          <div class="val" style="font-size: 26px;">Citizenship and Social Class — the social-rights argument Nelson builds on</div>
+        </div>
+        <div class="stack-row">
+          <div class="label">OSTP · 2022</div>
+          <div class="val" style="font-size: 26px;">Blueprint for an AI Bill of Rights — bidenwhitehouse.archives.gov/ostp/ai-bill-of-rights/</div>
+        </div>
+        <div class="stack-row">
+          <div class="label">Leo XIV · 2026</div>
+          <div class="val" style="font-size: 26px;"><em>Magnifica Humanitas</em> · vatican.va/content/leo-xiv/…/magnifica-humanitas.html</div>
+        </div>
+        <div class="stack-row">
+          <div class="label">Bias · Legal · Transparency</div>
+          <div class="val mono" style="color: var(--ua-red); font-size: 24px;">/intro-gpt/bias/ · /intro-gpt/legal/ · /intro-gpt/transparency/</div>
+        </div>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>24 · RESOURCES</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       25 · CLOSING
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="25 Closing" class="slide-dark">
+    <div class="slide slide-dark">
+      <div class="title-slide">
+        <div class="grid-bg"></div>
+        <div class="deck-header">
+          <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics Panel</span></div>
+          <div>End · Thank You</div>
+        </div>
+
+        <div class="title-slide-content" style="margin-top: 0;">
+          <div class="tag" style="color: var(--cream-warm);">Three days. One conversation that doesn't end here.</div>
+          <h2 class="display" style="font-size: 168px;">
+            Keep<br>arguing<span style="color: var(--ua-red-bright);">.</span>
+          </h2>
+          <p class="body" style="max-width: 1300px; font-size: 34px;">
+            The civic grammar gets traction because publics use it. The footprint shrinks because
+            engineers and researchers refuse the default. Both are unfinished work — and both belong
+            to the room that just spent three days in it.
+          </p>
+        </div>
+
+        <div class="title-slide-content" style="gap: 12px;">
+          <div style="background: rgba(247,244,238,0.4); height: 1px; max-width: 600px;"></div>
+          <div style="display: flex; justify-content: space-between; align-items: flex-end;">
+            <div>
+              <div style="color: var(--cream); font-weight: 600; font-size: 32px;">Tyson Swetnam, PhD</div>
+              <div class="small mono" style="margin-top: 6px;">tswetnam@arizona.edu · @tswetnam</div>
+            </div>
+            <div class="mono small" style="text-align: right;">
+              BIO5 Institute · University of Arizona<br>
+              PH&amp;AI Summer School 2026
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</deck-stage>
+
+</body>
+</html>

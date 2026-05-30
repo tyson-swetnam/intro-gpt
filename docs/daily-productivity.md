@@ -18,10 +18,44 @@ Prompt engineering can significantly enhance your productivity. In particular wh
 *   **Language Translation:** Translate documents or conversations in real-time, facilitating communication with international colleagues or clients.
 *   **Learning and Skill Development:** Get quick explanations of complex topics, find learning resources, and even practice new skills through simulated scenarios.
 
-In our [:material-run-fast: Code Interpreter](code.md) lesson we discuss how GPTs can be used for:
+---
 
-*   **Code Generation and Debugging:** Write basic code snippets, find and fix bugs in existing code, and understand complex code segments.
-*   **Data Analysis and Interpretation:** Summarize datasets, identify trends, and generate reports from raw data.
+## Data analysis without writing code
+
+Every major chat LLM now ships with built-in sandboxed code execution. You upload a file (CSV, spreadsheet, image), ask a question in plain English, and the model writes Python, runs it, and shows you the result. That makes statistical analysis, data cleaning, and chart generation accessible without programming experience — useful when you want results, not code.
+
+**What it's good for:**
+
+- **Data analysis and visualization** — process datasets and create charts without writing code
+- **File conversions** — transform formats (CSV to JSON, image format conversions)
+- **Mathematical computations** — solve equations and perform statistical analyses
+- **Prototyping** — quickly test algorithms or data-processing workflows
+- **Learning** — experiment with programming concepts in a safe sandbox
+
+**Available on:**
+
+- :fontawesome-brands-openai: ChatGPT — Advanced Data Analysis (Plus/Team)
+- :simple-anthropic: Claude — Artifacts (Pro+, Python sandbox)
+- :simple-google: Gemini — chat plus Workspace integration
+- :material-brain: Perplexity Pro — web search plus Python execution
+
+For a current side-by-side comparison of pricing, file-size limits, and supported file types, see [Choosing a Platform](choose.md). For software development (where the AI runs code on *your* machine, not a sandbox), see [Vibe Coding](vibe.md).
+
+!!! example "Data analysis on the Palmer Penguins dataset"
+
+    Imagine you're a researcher with a dataset of measurements. You could upload a CSV to ChatGPT, Claude, or Gemini and prompt:
+
+    ```
+    Analyze the CSV https://raw.githubusercontent.com/allisonhorst/palmerpenguins/main/inst/extdata/penguins.csv
+
+    1.  Load the dataset into a Pandas DataFrame.
+    2.  Clean the data by handling any missing values.
+    3.  Generate a scatter plot to visualize the relationship between key variables.
+    4.  Calculate the Pearson correlation coefficient between these two variables.
+    5.  Interpret the results and provide a brief summary.
+    ```
+
+    The platform will write and run Python to perform each step, showing you the code, the output, and the final analysis — no local Python install required.
 
 ---
 
@@ -320,13 +354,13 @@ Modern email platforms include built-in AI assistants that can help you draft, r
 
 ## Advanced Research Capabilities
 
-Modern AI platforms offer sophisticated research capabilities that go far beyond simple web searches. Four notable approaches are **Extended Thinking** (available in Claude Opus 4.5), **Deep Research** (available in Google Gemini Pro 3.0 and ChatGPT), and **Google Scholar Labs** (an experimental AI-powered academic search tool). Understanding when and how to use these features can dramatically improve your research productivity.
+Modern AI platforms offer sophisticated research capabilities that go far beyond simple web searches. Four notable approaches are **Extended Thinking** (available in Claude Opus), **Deep Research** (available in Google Gemini Pro and ChatGPT), and **Google Scholar Labs** (an experimental AI-powered academic search tool). Understanding when and how to use these features can dramatically improve your research productivity.
 
 !!! info "What Are Extended Thinking, Deep Research, and Scholar Labs?"
 
-    **Extended Thinking (Claude Opus 4.5)** allows the AI to engage in deeper, more deliberate reasoning before responding. Instead of generating an immediate answer, Claude "thinks through" complex problems step-by-step, similar to how a researcher might work through a difficult problem on a whiteboard before presenting conclusions.
+    **Extended Thinking (Claude Opus)** allows the AI to engage in deeper, more deliberate reasoning before responding. Instead of generating an immediate answer, Claude "thinks through" complex problems step-by-step, similar to how a researcher might work through a difficult problem on a whiteboard before presenting conclusions.
 
-    **Deep Research (Google Gemini Pro 3.0 and ChatGPT)** is an agentic research mode where the AI autonomously searches the web, reads multiple sources, synthesizes information, and produces comprehensive research reports. Both platforms can spend several minutes gathering and analyzing information before delivering results:
+    **Deep Research (Google Gemini Pro and ChatGPT)** is an agentic research mode where the AI autonomously searches the web, reads multiple sources, synthesizes information, and produces comprehensive research reports. Both platforms can spend several minutes gathering and analyzing information before delivering results:
 
     - **Gemini Deep Research:** Produces longer, more formal research reports (~3,500+ words) with extensive sources including news, policy, and academic literature
     - **ChatGPT Deep Research:** Produces concise academic syntheses (~1,000 words) with focus on consensus findings and numerical data from peer-reviewed sources
@@ -412,13 +446,13 @@ Extended Thinking is particularly valuable when you need the AI to work through 
 
     In Claude (claude.ai or Claude Desktop):
 
-    - Extended Thinking is available with Claude Opus 4.5 for Pro subscribers
-    - Click the model selector and choose "Claude Opus 4.5"
+    - Extended Thinking is available with Claude Opus for Pro subscribers
+    - Click the model selector and choose "Claude Opus"
     - For complex problems, Claude may automatically engage in extended thinking
     - You can encourage deeper reasoning by asking Claude to "think carefully" or "reason through this step-by-step"
     - The thinking process appears in a collapsible section above the response
 
-#### Deep Research with Google Gemini Pro 3.0
+#### Deep Research with Google Gemini Pro
 
 Deep Research transforms Gemini into an autonomous research assistant that can spend several minutes (sometimes longer) exploring a topic across the web. Rather than providing an instant response, Gemini creates a research plan, searches multiple sources, reads and analyzes content, and synthesizes findings into a comprehensive report.
 
@@ -502,7 +536,7 @@ Google Scholar Labs represents a new approach to academic literature search by u
 
 !!! tip "Accessing Google Scholar Labs"
 
-    Google Scholar Labs is currently experimental (as of January 2026):
+    Google Scholar Labs is currently experimental (as of May 2026):
 
     - Visit [https://scholar.google.com/scholar_labs/search](https://scholar.google.com/scholar_labs/search){target=_blank}
     - Requires logging in with a Google account

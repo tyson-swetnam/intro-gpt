@@ -48,7 +48,7 @@ The [Model Hub](https://huggingface.co/models){target=_blank} hosts over 1 milli
 
 | Category | Example Models | Use Cases |
 |----------|---------------|-----------|
-| Text Generation | Llama 3, Mistral, Qwen | Writing assistance, code generation, analysis |
+| Text Generation | Llama, Mistral, Qwen | Writing assistance, code generation, analysis |
 | Embeddings | BGE, E5, GTE | Document search, similarity matching, RAG |
 | Vision-Language | LLaVA, Qwen-VL | Image analysis, chart interpretation |
 | Speech | Whisper, Wav2Vec2 | Transcription, audio analysis |
@@ -112,9 +112,9 @@ The easiest way to run Hugging Face models locally is through [Ollama](ollama.md
 curl -fsSL https://ollama.com/install.sh | sh
 
 # Run popular models directly
-ollama run llama3.2
+ollama run llama
 ollama run mistral
-ollama run qwen2.5
+ollama run qwen
 ```
 
 Ollama automatically downloads optimized versions of models from Hugging Face.
@@ -208,7 +208,8 @@ CMAKE_ARGS="-DGGML_CUDA=on" pip install llama-cpp-python
 from llama_cpp import Llama
 
 # Download a GGUF model from Hugging Face
-# Example: https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.2-GGUF
+# Example: a 7B-class Mistral instruct model in GGUF format
+# (search the Hub for the current canonical GGUF release)
 
 llm = Llama(
     model_path="./models/mistral-7b-instruct-v0.2.Q4_K_M.gguf",
@@ -240,7 +241,7 @@ Here are well-tested models suitable for different hardware configurations:
 | Model | Size | Best For |
 |-------|------|----------|
 | [Phi-3-mini](https://huggingface.co/microsoft/Phi-3-mini-4k-instruct){target=_blank} | 3.8B | General tasks, runs on laptops |
-| [Qwen2.5-3B-Instruct](https://huggingface.co/Qwen/Qwen2.5-3B-Instruct){target=_blank} | 3B | Multilingual, good reasoning |
+| [Qwen2.5-3B-Instruct](https://huggingface.co/Qwen/Qwen2.5-3B-Instruct){target=_blank} (representative of the Qwen 3B-class instruct family) | 3B | Multilingual, good reasoning |
 | [Llama-3.2-1B-Instruct](https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct){target=_blank} | 1B | Very fast, basic tasks |
 
 ### Medium Models (16-32GB RAM)
@@ -248,16 +249,16 @@ Here are well-tested models suitable for different hardware configurations:
 | Model | Size | Best For |
 |-------|------|----------|
 | [Llama-3.2-3B-Instruct](https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct){target=_blank} | 3B | Balanced performance |
-| [Mistral-7B-Instruct](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3){target=_blank} | 7B | Excellent general purpose |
-| [Qwen2.5-7B-Instruct](https://huggingface.co/Qwen/Qwen2.5-7B-Instruct){target=_blank} | 7B | Strong reasoning, coding |
+| [Mistral-7B-Instruct](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3){target=_blank} (a long-standing 7B-class instruct release; check the Hub for newer revisions) | 7B | Excellent general purpose |
+| [Qwen2.5-7B-Instruct](https://huggingface.co/Qwen/Qwen2.5-7B-Instruct){target=_blank} (representative of the Qwen 7B-class instruct family) | 7B | Strong reasoning, coding |
 
 ### Large Models (GPU Required)
 
 | Model | Size | Best For |
 |-------|------|----------|
 | [Llama-3.3-70B-Instruct](https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct){target=_blank} | 70B | Near-frontier performance |
-| [Qwen2.5-72B-Instruct](https://huggingface.co/Qwen/Qwen2.5-72B-Instruct){target=_blank} | 72B | State-of-the-art open model |
-| [DeepSeek-R1](https://huggingface.co/deepseek-ai/DeepSeek-R1){target=_blank} | 671B | Advanced reasoning (requires cluster) |
+| [Qwen2.5-72B-Instruct](https://huggingface.co/Qwen/Qwen2.5-72B-Instruct){target=_blank} (representative of Qwen's flagship 70B-class instruct model) | 72B | Strong open-weights option in the 70B-class tier |
+| [DeepSeek-R1](https://huggingface.co/deepseek-ai/DeepSeek-R1){target=_blank} (DeepSeek's flagship reasoning release) | 600B+ | Advanced reasoning (requires cluster) |
 
 !!! tip "Quantized Models"
     For running larger models on limited hardware, look for quantized versions (GGUF format). These reduce memory requirements with minimal quality loss. Search for model names with "GGUF" or visit [TheBloke](https://huggingface.co/TheBloke){target=_blank} for quantized versions.

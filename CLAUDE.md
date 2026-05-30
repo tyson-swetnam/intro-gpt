@@ -37,7 +37,6 @@ The site is configured in `zensical.toml` with:
 - Material theme with custom University of Arizona branding
 - Navigation structure covering AI landscape, setup guides, prompt engineering, education, research, and ethics
 - Multiple markdown extensions for enhanced formatting (admonitions, code highlighting, emoji, etc.)
-- Custom CSS and JavaScript for chatbot widget functionality
 - Google Analytics integration
 - Zensical plugins: mkdocstrings (preliminary support), search (built-in)
 

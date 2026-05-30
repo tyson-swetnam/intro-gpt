@@ -68,9 +68,8 @@ Learn core skills for effective AI interaction and daily productivity.
 | Topic | Description | Link |
 |-------|-------------|------|
 | Writing Effective Prompts | Core techniques for prompt engineering | [Prompt Engineering](prompts.md) |
-| Daily Productivity | AI for emails, writing, research, and workflow | [Daily Productivity](daily-productivity.md) |
-| Code Interpreters | Using AI for data analysis and visualization | [Code Interpreters](code.md) |
-| Vibe Coding | AI-assisted software development | [Vibe Coding](vibe.md) |
+| Daily Productivity | AI for emails, writing, research, data analysis, and workflow | [Daily Productivity](daily-productivity.md) |
+| Vibe Coding | AI-assisted software development, plus code-safety guidance | [Vibe Coding](vibe.md) |
 
 ### :material-school: Module 3: AI in Education (2-3 hours)
 
@@ -123,7 +122,7 @@ Apply your learning with practical case studies and tutorials.
 | Tutorial | Description | Link |
 |----------|-------------|------|
 | Claude Code Workflow | Complete workflow using Claude Code | [Claude Code Tutorial](claude-code.md) |
-| Public Health Case Study | AI for public health research | [Public Health](tutorials/publichealth/casestudy.md) |
+| Public Health AI Lab | Hands-on lab: SMS triage, outbreak synthesis, chart abstraction | [Public Health](tutorials/publichealth/casestudy.md) |
 | GIS & Map Making | Creating maps with AI assistance | [Map Making](tutorials/publichealth/gis.md) |
 
 ### :material-lightbulb: Recommended Learning Paths
@@ -147,7 +146,7 @@ Apply your learning with practical case studies and tutorials.
 
 1. Module 0: Getting Started
 2. Module 1: Platform Setup
-3. Module 2: Prompt Engineering & Code Interpreters
+3. Module 2: Prompt Engineering
 4. Module 4: Select relevant research topics
 5. Module 5: Ethics & Responsible AI
 6. Hands-On Tutorials

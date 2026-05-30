@@ -2,11 +2,29 @@
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 
+??? Info "Where Generative AI and LLMs fit in the broader AI family"
+
+    Generative AI and Large Language Models (LLMs) are **one branch** of a much older, broader field. The lay-of-the-land:
+
+    - **Artificial Intelligence (AI)** — the umbrella: any system that performs tasks normally requiring human intelligence.
+        - **Machine Learning (ML)** — AI systems that learn patterns from data instead of following hand-coded rules.
+            - **Supervised Learning** — learn from labeled examples (classification, regression, most disease-prediction models).
+            - **Unsupervised Learning** — find structure in unlabeled data (clustering, dimensionality reduction).
+            - **Reinforcement Learning (RL)** — learn from rewards and penalties (game-playing, robotics, RLHF for chatbot alignment).
+        - **Deep Learning** — ML using deep, multi-layer neural networks; the foundation of nearly every modern AI capability.
+            - **Natural Language Processing (NLP)** — AI for human language; modern NLP is dominated by transformer-based deep-learning models.
+            - **Computer Vision** — AI for images and video.
+            - **Generative AI** — models that produce *new* content (text, images, code, audio, video).
+                - **Large Language Models (LLMs)** — generative models trained on text. ChatGPT, Claude, Gemini, Llama. The primary subject of this workshop.
+                - **Diffusion Models** — generative models for images and video (Stable Diffusion 3.5, GPT Image, Imagen 4, Nano Banana, Veo 3).
+
+    The categories blur in practice. Most "agentic AI" in 2026 combines an LLM (generative AI) with reinforcement-learning techniques (RLHF for alignment, RL for tool-use training) and classical search/planning algorithms. Use the map to locate where a specific tool sits — not to draw neat fences around it.
+
 ## The Generative AI Landscape in 2026
 
 The generative AI landscape has transformed dramatically since the release of ChatGPT in November 2022. What began as text-generation models has exploded into a diverse ecosystem of platforms capable of creating text, images, video, code, and music—while also evolving from simple chatbots into sophisticated **agentic systems** that can autonomously complete complex tasks.
 
-This page provides an overview of the generative AI landscape as of January 2026, focusing on three key perspectives:
+This page provides an overview of the generative AI landscape as of May 2026, focusing on three key perspectives:
 
 1. **The Evolution of Foundation Models** - How we arrived at today's capable AI systems
 2. **Platform Comparison** - Choosing the right tool for your needs
@@ -22,7 +40,7 @@ This page provides an overview of the generative AI landscape as of January 2026
 
 Image Credit: [Yang et al. 2023 :simple-arxiv:](https://arxiv.org/abs/2304.13712){target=_blank}
 
-This diagram traces the lineage of large language models from 2018-2023, showing how modern models like GPT-4, Claude, and Gemini descended from earlier architectures. Key milestones include:
+This diagram traces the lineage of large language models from 2018-2023, showing how modern models like GPT, Claude, and Gemini descended from earlier architectures. Key milestones include:
 
 - **2017**: [Transformer architecture](https://arxiv.org/abs/1706.03762){target=_blank} introduced ("Attention is All You Need")
 - **2018-2019**: BERT, GPT-2 demonstrate transfer learning potential
@@ -81,7 +99,7 @@ For more on agentic AI systems, see our dedicated [Agentic AI documentation](age
 
 Image: IGV System Architecture from [Yu et al. 2025 :simple-arxiv:](https://arxiv.org/abs/2504.21853){target=_blank}
 
-Unlike traditional video generation (Sora, Runway), **Interactive Generative Video** systems generate video content that responds to user input in real-time—essentially creating playable worlds from text descriptions.
+Unlike traditional video generation (Veo 3, Runway, Kling), **Interactive Generative Video** systems generate video content that responds to user input in real-time—essentially creating playable worlds from text descriptions.
 
 IGV systems combine five key modules:
 
@@ -133,7 +151,7 @@ The AI landscape now includes dozens of platforms, each optimized for different 
 - **Student Discounts** - Special pricing for students and educators
 - **Federal Restrictions** - Important compliance information for US-based researchers
 
-All pricing verified **January 2026**.
+All pricing verified **May 2026** (core AI vendors).
 
 ### Quick Recommendations
 
@@ -146,7 +164,7 @@ All pricing verified **January 2026**.
 
 **For Education:**
 
-- **Students (Budget)**: Free options - HuggingFace Chat, Google AI Pro (1 yr free for students), Perplexity Education ($4.99/mo)
+- **Students (Budget)**: Free options - HuggingFace Chat, Google AI Pro (1 yr free for students), Perplexity Education ($10/mo with SheerID verification)
 - **Teachers**: GitHub Copilot (free for educators), Claude (strong pedagogy), ChatGPT
 - **Tutoring**: Khan Academy (free AI tutor Khanmigo), Claude, ChatGPT
 
@@ -160,7 +178,7 @@ All pricing verified **January 2026**.
 **For Creative Work:**
 
 - **Images**: Midjourney (quality), ChatGPT Image (convenience), Stable Diffusion (control)
-- **Video**: Sora (OpenAI), Veo (Google), Runway Gen-4.5
+- **Video**: Veo 3 (Google), Runway Gen-4.5, Kling AI (OpenAI's Sora was discontinued April 2026)
 - **Music**: Suno, Udio
 - **Writing**: Claude (creative writing), ChatGPT, Jasper (marketing)
 
@@ -290,6 +308,59 @@ MCP enables agents to:
 
 ---
 
+## Digital Twins
+
+A **[digital twin](https://en.wikipedia.org/wiki/Digital_twin){target=_blank}** is a virtual replica of a physical system — a factory, an aircraft engine, a supply chain, a city, an organ, an ecosystem — kept in sync with the real thing through live sensor data. The concept predates the current AI wave (the term goes back to NASA's Apollo program), but generative AI and large multimodal models have changed what twins can do.
+
+### Where AI plugs into a digital twin
+
+- **Anomaly detection** on streaming telemetry — flag unusual sensor patterns before failures cascade.
+- **Synthetic data generation** — train models on rare-event scenarios that would be unsafe or impossible to collect on the real system.
+- **Natural-language interfaces** — LLMs let domain experts query a complex twin in plain English ("show me the bearings that have drifted >2σ in the last 24 hours").
+- **Forward simulation** — agentic systems can rehearse plans inside the twin before executing them on the real asset.
+
+### Examples deployed in 2026
+
+| Domain | System | What it twins |
+|---|---|---|
+| Earth science | NVIDIA Earth-2 | Global climate at km-scale resolution |
+| Manufacturing | NVIDIA Omniverse | Factories, robots, production lines |
+| Industrial | Siemens Xcelerator | Power grids, rail networks, building systems |
+| Healthcare | Patient and organ twins (heart, lung, tumor) | Personalized treatment simulation |
+| Urban | Virtual Singapore, Helsinki 3D+ | City-scale traffic, energy, planning |
+
+Digital twins are most useful when they're **instrumented** (live data flowing in) and **actionable** (decisions flow back out). An LLM that talks to a twin without those two loops is just a chatbot with extra steps.
+
+---
+
+## World Models
+
+A **world model** is an AI system that learns an internal representation of how the world behaves — physics, causality, agent interactions — and can simulate forward in time to predict the consequences of actions. The modern formulation is from [Ha & Schmidhuber (2018)](https://arxiv.org/abs/1803.10122){target=_blank}; the idea has become tractable at scale only in the last two years.
+
+World models matter because they're the missing piece between today's reactive agents and tomorrow's agents that can *plan*: a system with a good enough world model can rehearse hundreds of candidate plans against its internal simulation before committing to one in reality.
+
+### How world models differ from generative video
+
+[Interactive Generative Video](#from-text-generation-to-world-simulation) (covered earlier in this page) is one expression of world-model research, but the broader category covers more than video output:
+
+| Property | Generative video | World model |
+|---|---|---|
+| Primary output | Video frames | Internal state representation; output can be video, language, action, or all three |
+| Training goal | Plausible-looking content | Accurate forward prediction of consequences |
+| Typical use | Entertainment, content creation | Planning, control, embodied AI, robotics |
+
+### Examples in 2026
+
+- **[Genie 3](https://deepmind.google/blog/genie-3-a-new-frontier-for-world-models/){target=_blank}** (Google DeepMind) — generates playable 3D environments from a single image or text prompt. Covered in detail in the [Interactive Generative Video](#from-text-generation-to-world-simulation) section above.
+- **V-JEPA 2** (Meta) — learns physical-world dynamics from video and is used for robot planning.
+- **GAIA-1** (Wayve) — autonomous-driving world model that predicts how a driving scene unfolds given the ego-vehicle's actions.
+- **NVIDIA Cosmos** — open foundation models for "physical AI"; the platform layer being used to build world models for robotics and autonomous systems.
+- **Veo 3** (Google DeepMind) and **Sora** (OpenAI, discontinued April 2026) — video generators that learn implicit world physics. Their failure modes (object-permanence violations, gravity slips, hands with too many fingers) are diagnostic of how complete the implicit world model actually is. Sora pioneered this framing; the discontinuation reflected economics rather than technical failure (operating costs of $8–12M/month against under $2M/month in revenue).
+
+A useful rule of thumb: if you can ask the system "what happens if I do X?" and the answer can be acted on, it's a world model. If you can only ask "what does this scene look like?", it's still generative video.
+
+---
+
 ## Industry Landscape Resources
 
 **[Matt Turck's MAD (ML/AI/Data) Landscape](https://mad.firstmark.com/){target=_blank}**
@@ -345,16 +416,16 @@ The ability of an AI model to learn new tasks from just a few examples in the pr
 The process of further training a pre-trained model on a specific dataset or task to specialize its capabilities for particular domains or use cases.
 
 **Foundation Models:**
-Large-scale AI models (LLMs, vision models, multimodal models) trained on massive datasets. They serve as a base for many downstream tasks via transfer learning and rapid adaptation. Examples: GPT-4, Claude, Gemini, Llama.
+Large-scale AI models (LLMs, vision models, multimodal models) trained on massive datasets. They serve as a base for many downstream tasks via transfer learning and rapid adaptation. Examples: GPT, Claude, Gemini, Llama.
 
 **Hallucination:**
 When an AI model generates false, nonsensical, or unfaithful information presented as fact. A key challenge in LLM reliability, especially for factual domains.
 
 **Interactive Generative Video (IGV):**
-AI systems that generate video content in real-time based on user input, combining video generation with interactive control. Unlike passive video generation (Sora, Runway), IGV systems respond to user actions in real-time, enabling gaming, simulation, and embodied AI applications.
+AI systems that generate video content in real-time based on user input, combining video generation with interactive control. Unlike passive video generation (Veo 3, Runway, Kling), IGV systems respond to user actions in real-time, enabling gaming, simulation, and embodied AI applications.
 
 **Large Language Models (LLMs):**
-A subset of foundation models trained on extensive text corpora, enabling them to generate human-like text, summarize information, reason about topics, and perform various NLP tasks. Examples: GPT-4, Claude, Gemini, Llama.
+A subset of foundation models trained on extensive text corpora, enabling them to generate human-like text, summarize information, reason about topics, and perform various NLP tasks. Examples: GPT, Claude, Gemini, Llama.
 
 **Lifelong Learning:**
 The capability of an AI system to continuously learn and adapt from new experiences after initial training, accumulating knowledge over time. Enables agents to improve through environmental feedback and adapt to changing contexts without catastrophic forgetting.
@@ -369,7 +440,7 @@ An open standard protocol developed by Anthropic for connecting AI assistants to
 A neural network architecture that uses multiple specialized sub-models (experts) and activates only relevant ones for each input, improving efficiency and scalability in large models.
 
 **Multimodal Models:**
-AI systems that can process and generate multiple types of data (text, images, audio, video) in combination. Examples: GPT-4 with vision, Gemini, Claude 3.5.
+AI systems that can process and generate multiple types of data (text, images, audio, video) in combination. Examples: GPT with vision, Gemini, Claude.
 
 **Multi-Agent System:**
 An AI architecture where multiple specialized agents collaborate to complete complex tasks, with each agent handling specific subtasks and coordinating with others. Examples: CrewAI, AutoGen frameworks.

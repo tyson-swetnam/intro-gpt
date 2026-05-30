@@ -70,6 +70,19 @@ Technical tools can help to identify bias in models:
 
 **Explainable AI (XAI)** - understand which inputs are driving model decisions, reveal hidden biases or reliance on spurious factors
 
+## Concrete examples in public health
+
+The categories above are easier to remember when you can map each to a deployed system that caused real harm. Three to anchor:
+
+!!! Warning "Pulse-oximeter racial bias (measurement bias)"
+    AI-enabled pulse oximeters [overstate blood-oxygen saturation in patients with darker skin](https://www.aclu.org/news/privacy-technology/algorithms-in-health-care-may-worsen-medical-racism){target=_blank}. Any downstream system that ingests sat readings — clinical decision support, severity scoring, an LLM that classifies SMS triage based on "the patient said sat 92" — inherits that bias. This is **measurement bias**: the data systematically differs from the true value, and the difference is patterned by skin tone.
+
+!!! Warning "Historical-spending bias in care allocation (selection / measurement bias)"
+    A widely deployed U.S. care-allocation algorithm [systematically routed less care to Black patients than to White patients](https://www.science.org/doi/10.1126/science.aax2342){target=_blank} (Obermeyer et al., 2019, *Science*) because it was trained on historical health-care **spending** as a proxy for medical need. Spending was lower for Black patients not because they were healthier but because they had less access. Any outbreak-prioritization or resource-allocation prompt that learns from past response patterns will reproduce past inequities.
+
+!!! Warning "Training-scope bias in dermatology and retinopathy (selection bias)"
+    AI dermatology and retinopathy models trained predominantly on lighter-skinned cohorts perform measurably worse on darker skin — a clear **selection bias** in the training data. The same logic applies to clinical text: if your chart-abstraction model has not seen code-switched notes or local abbreviations, the silent-failure rate on those records is higher. When you build LLM workflows on top of clinical data, the abstention rate (how often the model says "UNCLEAR") on under-represented inputs is your early-warning signal.
+
 ## Assessment
 
 ??? question "True or False: AI bias only originates from the data used to train the model."

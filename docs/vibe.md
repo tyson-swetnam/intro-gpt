@@ -10,17 +10,7 @@
 
     <blockquote class="twitter-tweet"><p lang="en" dir="ltr">There&#39;s a new kind of coding I call &quot;vibe coding&quot;, where you fully give in to the vibes, embrace exponentials, and forget that the code even exists. It&#39;s possible because the LLMs (e.g. Cursor Composer w Sonnet) are getting too good. I just mass chat, mass accept, skip to errors,…</p>&mdash; Andrej Karpathy (@karpathy) <a href="https://twitter.com/karpathy/status/1886192184808149383?ref_src=twsrc%5Etfw">February 2, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-    
-
-!!! Warning "Allowing an LLM to execute code on your computer may be a violation of institutional security and privacy policy"
-
-    Desktop applications like Claude Desktop or OpenAI's ChatGPT Desktop give you the option to allow 'execution' of code on your computer (laptop or PC). 
-
-    You must understand the implications of giving these AI assistants the authority to execute code on your computer and access to the network it is running upon.
-
-    !!! Danger "Malicious code lives on the internet, and your Vibing AI assistant might install something bad while you're not paying attention"
-
-        Read more: [:newspaper: Vibe Check: False Packages A New LLM Security Risk](https://hackaday.com/2025/04/12/vibe-check-false-packages-a-new-llm-security-risk/){target=_blank} (Note: This is a fictional link as per the example for demonstration).
+Vibe coding hands an AI agent meaningful authority over your machine. Before turning one loose on a project that matters, read the [Coding safely with AI](#coding-safely-with-ai) section at the bottom of this page — it covers code review, local execution risk, licensing, privacy, and accessibility.
 
 ## Available Platforms
 
@@ -86,7 +76,7 @@ Standalone editor offering similar agentic and inline features with tiered prici
 
 :material-microsoft-visual-studio-code: :material-license: :material-api:
 
-Official Anthropic VS Code extension providing AI pair programming with Claude 4.5 models, featuring multi-file editing, debugging, and terminal integration.
+Official Anthropic VS Code extension providing AI pair programming with Claude models, featuring multi-file editing, debugging, and terminal integration.
 
 #### [:simple-google: Gemini CLI Companion](https://marketplace.visualstudio.com/items?itemName=Google.gemini-cli-vscode-ide-companion){target=_blank}
 
@@ -161,7 +151,7 @@ Browser-based version of Claude Code providing AI pair programming capabilities 
 
 :material-web: :material-license: :material-api:
 
-OpenAI's ChatGPT Plus and Team tiers include Code Interpreter (Advanced Data Analysis) for executing Python code, analyzing data, and generating visualizations directly in the browser.
+OpenAI's ChatGPT runs a sandboxed Python environment for executing code, analyzing data, and generating visualizations directly in the browser. Available on Plus and Team tiers.
 
 #### [:simple-google: Google Gemini](https://gemini.google.com){target=_blank}
 
@@ -174,6 +164,106 @@ Google Gemini's web interface features code execution capabilities, allowing you
 :material-web: :material-open-source-initiative:
 
 Self-hostable, open-source web interface supporting multiple LLM providers (OpenAI, Anthropic, Ollama) with built-in code execution, function calling, and customizable workflows.
+
+---
+
+## Coding safely with AI
+
+Vibe coding hands an AI agent real authority over your machine — your files, your network, your shell, sometimes your credentials. Most of the safety questions you'll face fall into six buckets: code review, local execution risk, bias and licensing, privacy, accessibility, and environmental footprint. Work through them in order before pointing an agent at code that matters.
+
+### Review every line
+
+**Never trust generated code blindly.**
+
+- Always review for correctness, efficiency, and maintainability.
+- Test thoroughly with unit tests, integration tests, and edge cases.
+- Check for common security flaws: SQL injection, XSS, weak authentication, secret leakage.
+- Verify the code matches your project's coding standards and existing patterns.
+
+**Understand before using.** If you don't understand a generated block, ask the AI to explain it or research the libraries it pulls in. Will you be able to debug this code in six months?
+
+**Refine iteratively.** Start with a basic implementation, test it, then refine. Use the AI to help debug and improve, not just to generate-and-walk-away.
+
+### Local execution risks
+
+!!! danger "What an agent on your machine can actually do"
+
+    Desktop apps like Claude Desktop and ChatGPT Desktop, plus IDE-integrated agents like Cursor, Cline, and Claude Code, can run code on your laptop. Once you grant that capability, the agent can:
+
+    - **File system access:** read, modify, and delete files anywhere your user has permission
+    - **Network access:** make API calls and external connections from your machine
+    - **Terminal access:** execute arbitrary shell commands
+    - **Environment variables:** read sensitive credentials your shell exposes
+
+    **Practices that keep this manageable:**
+
+    - Review commands before approving them — most tools prompt; don't auto-approve everything.
+    - Work inside project-specific virtual environments rather than at user-root.
+    - Never store secrets in code. Use environment variables and secret managers.
+    - Be cautious with `sudo` or administrator privileges; agents rarely need them.
+    - Monitor agent actions actively when you're learning a new tool.
+    - Follow your institution's security and privacy policies.
+    - Consider sandboxed development environments (containers, VMs) for sensitive work — see [ai_sandboxes.md](ai_sandboxes.md).
+
+!!! warning "Malicious code lives on the internet, and your agent might install it"
+
+    LLMs occasionally hallucinate package names that an attacker can register on PyPI or npm. If your agent installs dependencies without review, it can pull in malicious code from a "false package." Read commands and `requirements.txt` / `package.json` diffs before approving them. ([Vibe Check: False Packages — Hackaday](https://hackaday.com/2025/04/12/vibe-check-false-packages-a-new-llm-security-risk/){target=_blank})
+
+**Institutional policies.** Universities and employers often restrict which AI tools may run against work code or sensitive data. Check with your IT or security team about approved tools, data classifications, code-review requirements for AI-generated code, and network access policies.
+
+### Bias, licensing, and intellectual property
+
+AI coding models are trained on public code repositories. That training data carries baggage:
+
+- **Biased implementations** — non-inclusive variable names, accessibility blind spots
+- **Licensed code** that may conflict with your project's license
+- **Outdated patterns** or deprecated APIs
+- **Historical security flaws** that the model has learned to reproduce
+
+**Practices that limit the damage:**
+
+- Review generated code for inclusive language and accessibility — see [bias.md](bias.md).
+- Check license compatibility for any libraries the AI suggests.
+- Validate that patterns are current and recommended, not historical.
+- Don't assume AI-generated code is "best practice" — it's "common practice."
+
+**Intellectual property.** Most AI providers claim no copyright on generated output, but generated code can inadvertently replicate licensed code from training data. Your organization may have its own policies on AI-generated code ownership and disclosure. Document when and how you used AI tools during development. See [legal.md](legal.md) for institutional and academic considerations.
+
+### Privacy and data handling
+
+When you use a cloud AI agent, the following typically leaves your machine:
+
+- Your prompts and code snippets
+- File contents (with MCP, when explicitly attached, or when the agent reads files autonomously)
+- Error messages and terminal output
+- Project structure and metadata
+
+**Privacy best practices:**
+
+- Don't share sensitive data, credentials, or personal information in prompts.
+- Review your organization's data classification policies before connecting agents to sensitive directories.
+- Use local or self-hosted models for highly sensitive code when possible — Cline and Roo Code support BYOM via Ollama; Aider and OpenCode.ai work with local LLMs. See [ollama.md](ollama.md).
+- Be aware of each service's data retention policy.
+- Consider anonymizing or redacting data before sharing with AI tools.
+
+### Accessibility and inclusive development
+
+**Use AI to improve accessibility.**
+
+- Ask for WCAG compliance review on UI code.
+- Generate accessible alternatives for visual content (alt text, ARIA labels, descriptive captions).
+- Check color contrast and screen-reader compatibility.
+- Implement keyboard navigation as a default, not an afterthought.
+
+**Avoid perpetuating bias.**
+
+- Review generated identifiers and comments for inclusive language.
+- Ask the AI to suggest alternatives if you spot problematic patterns.
+- Consider diverse user needs when prompting for UI/UX implementations.
+
+### Environmental footprint
+
+LLM inference is energy-intensive. Don't use a frontier model when a smaller one will do, cache results when you can, and avoid agentic loops that fire off speculative requests. Cumulative compute is the cost.
 
 ---
 

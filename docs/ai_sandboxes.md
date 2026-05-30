@@ -137,7 +137,7 @@ When you give an AI tool permission to execute code on your computer, several th
 | Risk Level | Description | Examples |
 |------------|-------------|----------|
 | **Low** | AI provides suggestions only; you execute manually | ChatGPT web chat, Claude web interface |
-| **Medium** | AI can execute code in isolated browser environment | ChatGPT Code Interpreter, Google Colab |
+| **Medium** | AI can execute code in isolated browser environment | ChatGPT, Claude Artifacts, Gemini sandboxes; Google Colab |
 | **High** | AI can execute code on your local machine | Claude Code, Cursor, Codex CLI |
 | **Very High** | AI has unrestricted access to your system | Any tool with sandbox disabled |
 

@@ -2,297 +2,187 @@
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 
-!!! Info "Setup"
+!!! Example "What you'll build (90 min)"
+    A scrolling Leaflet story-map of the 1850 London cholera outbreak,
+    served locally at http://localhost:51234. By minute 60 you should
+    see the Broad Street pump and the death-density choropleth on screen.
 
+??? Info "Setup (click to expand if you haven't installed tools yet)"
 
-    !!! Success "Desktop LLM Apps"
-        
-        !!! Success "Claude Desktop"
+    Pick whichever agent surface you have access to — the prompts in this lab are platform-neutral and work with any modern AI coding agent. You'll want **at least one** from each row below.
 
-            (:material-microsoft-windows: Windows, :material-apple: Mac OS)
+    !!! Success "Desktop LLM apps"
 
-            Connects automatically to Anthropic Claude. 
+        - **Claude Desktop** (:material-microsoft-windows: Windows, :material-apple: Mac OS) — [claude.ai/download](https://claude.ai/download){target=_blank}
+        - **Codex Desktop** (ChatGPT) — [chat.openai.com/codex](https://chat.openai.com/codex){target=_blank}
+        - **Perplexity Computer** (Comet) — [perplexity.ai/comet](https://www.perplexity.ai/comet){target=_blank}
 
-            [:simple-claude: Claude Desktop https://claude.ai/download](https://claude.ai/download){target=_blank} 
-            
-        !!! Success "AnythingLLM Desktop"
+    !!! Success "CLI agents"
 
-            (:material-microsoft-windows: Windows, :material-apple: Mac OS, :simple-linux: Linux)
+        - **Claude Code** — [claude.ai/code](https://claude.ai/code){target=_blank}
+        - **Codex CLI** — [github.com/openai/codex](https://github.com/openai/codex){target=_blank}
+        - **Gemini CLI** — [geminicli.com](https://geminicli.com/){target=_blank}
 
-            [:material-infinity: AnythingLLM https://anythingllm.com/desktop](https://anythingllm.com/desktop){target=_blank} 
+    !!! Success "AI-native IDEs"
 
-    
-    !!! Success "Integrated Development Environment (IDE) Desktops"
-    
-        !!! Success ":material-microsoft-visual-studio-code: VS Code"
-
-            (:material-microsoft-windows: Windows, :material-apple: Mac OS, :simple-linux: Linux)
-            
-            [:material-microsoft-visual-studio-code: https://code.visualstudio.com/download](https://code.visualstudio.com/download){target=_blank}
-
-        !!! Success "Positron"
-
-            [:simple-posit: https://positron.posit.co/](https://positron.posit.co/){target=_blank} 
-
-    
-        !!! Success "API Access"
-
-            [:simple-claude: https://console.anthropic.com/](https://console.anthropic.com/){target=_blank}
-
-    
-    **Cline (:material-microsoft-visual-studio-code: VS Code Extension)** [:material-robot: https://cline.bot/](https://cline.bot/){target=_blank}
-
-    **Optional: :simple-qgis: QGIS** [https://qgis.org/download/](https://qgis.org/download/){target=_blank}
-
-    **:simple-qgis: QGISMCP**
-
-    [:material-github: https://github.com/jjsantos01/qgis_mcp](https://github.com/jjsantos01/qgis_mcp){target=_blank}
+        - **VS Code** (:material-microsoft-windows: Windows, :material-apple: Mac OS, :simple-linux: Linux) — [code.visualstudio.com/download](https://code.visualstudio.com/download){target=_blank}
+        - **Cursor** — [cursor.com](https://cursor.com/){target=_blank}
+        - **Antigravity** (Google) — [antigravity.google](https://antigravity.google/){target=_blank}
 
 ## Prompt Engineering & Vibe Coding
 
-> The goal of this lab is to guide your LLM agent (Claude, Cline, etc.) through a reproducible workflow that turns open geospatial data into an interactive **story map**.  
+> The goal of this lab is to guide your AI coding agent (Claude Code, Codex, Gemini CLI, Cursor, etc.) through a reproducible workflow that turns open geospatial data into an interactive **story map**.  
 > Copy-and-paste the prompts below in order. Adjust ONLY the bracketed values (`<…>`) to match your environment.  
 
 ### Prerequisites (checklist)
 
 | ✔︎ | Requirement | Notes |
 |---|-------------|-------|
-|   | Frontier-class LLM access (API or Desktop) | Claude 4, GPT-4.5, Gemini 2.5 Pro, etc. |
-|   | IDE with Cline or Roo Code extension **or** Claude Desktop | Enables local tool use & file ops |
-|   | Filesystem MCP server running | Gives the AI read/write access |
+|   | Frontier-class LLM access | Claude, GPT, Gemini Pro, or equivalent |
+|   | One agent surface from the Setup list above | Desktop, CLI, or AI-native IDE — pick what you know |
+|   | [Filesystem MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem) running | Gives the agent read/write access. **Without this, Step 1 will fail silently.** |
 |   | Git & GitHub account (optional but recommended) | For version control & sharing |
 
 ---
 
-### Step 0 – Add a System Instruction or Workspace Rules file.
+### Step 0 — Set up agent context files
 
-These are sometimes called an EigenPrompt -- because they come before any other prompts.
+Modern AI coding agents read project-level context files at the start of each session. The exact filename varies by platform — `CLAUDE.md` for Claude Code, `AGENTS.md` for Codex / Cursor / most others, `GEMINI.md` for Gemini CLI — but the content is identical. Three files cover the workspace:
 
-??? Tip "EigenPrompts"
+| File | Purpose |
+|------|---------|
+| `CLAUDE.md` (or `AGENTS.md`, `GEMINI.md`, `CODEX.md`) | Workspace rules and conventions |
+| `Skills.md` | Reusable, named playbooks the agent can invoke |
+| `Memory.md` | Persistent project facts that survive across sessions |
 
-    We are using Cline on VS Code, so we will create a unique Workspace Rules file, these are located in the `.clinerules` folder -- clicking on the :material-scales: icon will take you to Cline Rules 
+Drop the same content into whichever filename your agent expects. Create all three at the project root before running Step 1.
 
-    ??? Clipboard "Copy/Paste"
+??? Clipboard "CLAUDE.md / AGENTS.md / GEMINI.md — workspace rules"
 
-        ```markdown
-        **Eigenprompt: Rigorous Code Generation & Automated Validation**
+    ```markdown
+    # Project: Public Health Map Lab
 
-        **Objective:** Generate [code for a specific function/module/class | architectural outline] for [project/feature description] with a focus on correctness, testability, maintainability, and automated verification via Cline Workspace Rules.
+    ## Stack
+    - Python 3.10+ for scripts
+    - Plain HTML / CSS / JS for the web map (no bundlers, no frameworks)
+    - Leaflet for mapping
 
-        **I. Code Generation Specifications:**
+    ## Conventions
+    - Save scripts to `code/`, raw data to `data/`, maps to `map/`
+    - Log every prompt and response to `prompts/NNN_<topic>.md`
+    - Cite source URLs in code comments for any data fetch
 
-        1. **Functionality:**  
-          - Clearly define input(s), output(s), and the intended behavior.
-          
-        2. **Language/Framework:**  
-          - Specify the programming language and version clearly (e.g., Python 3.10, JavaScript ES2022, Go 1.18).
+    ## Guardrails
+    - Confirm before destructive actions (delete, overwrite, `git push`)
+    - Never fabricate sample data — surface failures clearly and stop
+    - Run a local web server on a high random port for HTML preview
+    ```
 
-        3. **Dependencies:**  
-          - Explicitly list external libraries or modules required.
+??? Clipboard "Skills.md — reusable playbooks"
 
-        4. **Error Handling:**  
-          - Define expected errors explicitly with handling methods (exceptions, error codes, fallbacks).
+    ```markdown
+    # Skills available in this workspace
 
-        5. **Performance Constraints (Optional):**  
-          - Describe any important time or memory constraints clearly.
+    ## /scaffold
+    Create the `data/`, `map/`, `code/`, `prompts/` folder structure at the project root.
 
-        6. **Code Style:**  
-          - Follow defined style guides (e.g., PEP 8, Google Java Style).  
-          - Clearly document non-obvious or complex logic concisely, specifying reasons ("why") and behavior ("what").
+    ## /fetch-snow
+    Download <https://geodacenter.github.io/data-and-lab/data/snow.zip> into `data/`,
+    unzip, and move every `*.geojson` into `map/`.
 
-        **II. Testing & Validation Requirements:**
+    ## /storymap
+    Generate `map/snow_storymap.html` using Leaflet with scrolly layout, choropleth
+    on `deaths` and `deathdens`, and per-layer narrative captions.
 
-        1. **Unit Tests:**  
-          - Specify testing framework explicitly (e.g., unittest, Jest, Mocha).  
-          - List and implement critical test cases clearly:
-            - Typical valid inputs.
-            - Edge cases.
-            - Invalid inputs and related error-handling tests.
-          - Indicate desired code coverage clearly [% of coverage as applicable].
+    ## /critique
+    Open the current storymap, identify up to three improvements
+    (colors, fonts, scroll feel), wait for approval, then apply in place.
+    ```
 
-        2. **Validation Criteria:**  
-          - Clearly describe measurable criteria for successful test results.  
-          - Specify validation datasets, criteria, or methods if needed.
+??? Clipboard "Memory.md — persistent project facts"
 
-        **III. Automated Execution, Validation, and Bug-Fixing Workflow (Cline Workspace Rules):**
+    ```markdown
+    # Project memory
 
-        1. **Terminal Execution Validation:**
-          - After execution of generated code or tests via ChatGPT API in VS Code Terminal, automatically inspect the outputs.
-          - Verify explicitly that the commands have exited without errors or warnings.
+    - Deliverable: `map/snow_storymap.html`, served at http://localhost:51234.
+    - GeoJSON field names: `deaths` (count), `deathdens` (density per polygon area).
+    - Death-count labels go on polygon layers only — NOT on point layers.
+    - The PI prefers per-layer narrative captions over a single overview block.
+    - Story context: 1850 London cholera outbreak; the Broad Street pump is the central feature.
+    ```
 
-        2. **Error & Warning Inspection:**
-          - Check VS Code's "Problems" pane for reported errors, warnings, or alerts promptly after running code or tests.
-
-        3. **Automated Re-examination on Errors:**
-          - In case of any detected terminal output issues or problems pane alerts:
-            - Automatically re-inspect the relevant code and identify root causes clearly.
-            - Promptly propose corrected or improved code, addressing identified issues directly.
-            - Re-run tests and terminal commands, verifying fixes iteratively until no critical issues persist.
-
-        4. **Final Confirmation:**
-          - Explicitly confirm successful execution (no persistent errors or warnings) before finishing the task.
-
-        **IV. Project Structure & Documentation (Initialize/Update):**
-
-        1. **`README.md`:**
-          - **Project Title:**
-          - **Description:** Succinct description.
-          - **Setup Instructions:** Clearly outlined installation and execution steps.
-          - **Usage:** Simple demonstration or examples.
-          - **Testing Instructions:** Exact commands to run provided unit tests.
-
-        2. **`prompts/` directory:**
-          - Log initial eigenprompt clearly as `prompts/001_initial_eigenprompt.md`.
-          - Log ChatGPT API's full responses (code, documentation, README) as `prompts/001_response.md`.
-          - Future interactions follow sequential convention (e.g., `002_refinement_prompt.md`, `002_response.md`).
-
-        **V. Output Format (Concise & Complete):**
-
-        - Clearly named source code files according to module criteria (e.g., `module_name.py`).
-        - Clearly named unit test files aligned with testing framework (e.g., `test_module_name.py`).
-        - Complete and concise README.md file content.
-        - Confirmation that automated validation via Cline Workspace Rules has executed successfully or corrections documented explicitly.
-        - Confirmation of structured prompt logging.
-
-        ---
-
-        **Illustrative Usage Example:**
-
-        **Objective:** Generate efficient Python code for calculating Fibonacci numbers with memoization, fully tested and automatically validated via Cline Workspace Rules.
-
-        - **Code Specifications:**
-          - Input: non-negative integer `n`; Output: nth Fibonacci number.
-          - Use memoization for efficiency, with clear descriptive comments.
-          - Error Handling: Raise explicit `ValueError` on negative input.
-          - Python version: 3.10; Adhere strictly to PEP 8 style.
-
-        - **Unit Testing:**
-          - Framework: `unittest`.
-          - Test cases: `fib(0)`→`0`, `fib(1)`→`1`, `fib(10)`→`55`, `fib(20)`→`6765`; negative inputs raise `ValueError`.
-
-        - **Automated Validation (Cline Workflow):**
-          - Upon running tests in terminal through ChatGPT API integration with VS Code, check terminal output immediately.
-          - Automatically examine the "Problems" pane for errors or warnings.
-          - If issues detected, automatically re-inspect code, clearly identify and implement fixes, and iteratively rerun validation steps until no problems remain.
-
-        - **Project Structure & Logs:**
-          - Create README.md, `prompts/` structure and log prompts/responses precisely as described.
-
-        - **Final Output:**
-          - Files: `fibonacci.py`, `test_fibonacci.py`, `README.md`.
-          - Explicit confirmation that code and tests execute without errors or warnings and validation is automated successfully.
-
-        ```
+Want to learn how skills, subagents, and memory work? See [Agentic AI](../../agentic.md) and [Claude Code Workflow](../../claude-code.md).
 
 ---
 
-### Step 1 – Initialize project folders
+### Step 1 — Scaffold project + fetch data
+
+We'll combine folder creation, dataset download, and GeoJSON sorting into a single prompt. **Open the folder you want to work in before running this prompt** — the agent creates everything relative to your current workspace.
 
 ```text
 TASK
-Create the following directory structure in the current repo  
-  data/  
-  map/  
-  code/  
-  prompts/
-Acknowledge when folders exist.
+1. Create folders: data/, map/, code/, prompts/
+2. Download https://geodacenter.github.io/data-and-lab/data/snow.zip into data/
+3. Unzip in place, delete the .zip
+4. Move every *.geojson file from the unzipped folder into map/. Ignore __MACOSX and non-geojson files.
+5. Save the script as code/setup.py and confirm each step.
 ```
+
+!!! Warning "If the download fails"
+    Grab the zip from the instructor share, or download it via your browser and drop it into `data/` manually before re-running the script.
 
 ---
 
-### Step 2 – Download & unzip “snow” dataset
+### Step 2 — Build the storymap
+
+This is the centerpiece. The agent will write the HTML/CSS/JS and serve it locally.
 
 ```text
 TASK
-1. Download https://geodacenter.github.io/data-and-lab/data/snow.zip into data/  
-2. Unzip it in place, then delete the original .zip  
-3. Write a brief summary of extracted files 
+Create map/snow_storymap.html using Leaflet (HTML/CSS/JS).
 
-Use Python scripting; save the script as code/download_data.py
+Layout:
+  - Scrolly story-map, mobile + desktop
+  - Each GeoJSON layer in map/ appears on scroll, disappears when past
+  - Short narrative caption per layer (1850 cholera context)
+
+Data styling:
+  - Choropleth on 'deaths' and 'deathdens'
+  - Death-count labels on polygons only (NOT points)
+
+Serve:
+  - Run `python -m http.server 51234` and open in browser
 ```
+
+!!! Warning "If the agent stalls or the map renders blank"
+    Skip ahead to Step 4 (one-shot) and let the agent rebuild from scratch. If port 51234 is already in use, ask the agent to pick another 5-digit port.
+
+!!! Tip "If a field is missing"
+    If `deathdens` isn't in the GeoJSON, ask the agent to compute it from `deaths` divided by polygon area.
 
 ---
 
-### Step 3 – Organize GeoJSON layers
+### Step 3 — Iterate aesthetics
+
+Critique the agent's output and ask for targeted improvements. Time-box this loop to 10 minutes.
 
 ```text
 TASK
-In the unzipped snow dataset, locate every *.geojson file.  
-Move the .geojson files into the map/ folder
-
-Ignore all other file types.  
-
-Confirm moves as successful.
+Open map/snow_storymap.html. Critique colors, fonts, and scroll feel.
+Propose up to 3 improvements. Wait for my approval, then apply them in place.
 ```
+
+!!! Tip "Running short on time?"
+    Step 3 is the most cuttable; skip straight to Step 4 if you need to.
 
 ---
 
-### Step 4 – Summarize accompanying PDFs
+### Step 4 — One-shot reveal
 
-```text
-TASK
-Within data/snow/, there are several PDF documentation files.
+Now open a fresh chat and paste the single prompt below. The pedagogical point is seeing the same workflow you just walked compressed into one prompt — that's the 2026 agent superpower.
 
-1. Extract their plain-text content and generate a markdown summary (≤ 200 words) of key variables & metadata.  
-2. Save these markdown text as data/snow_docs_summary.md
-```
-
----
-
-### Step 5 – Build a storytelling Leaflet map
-
-```text
-TASK
-Using Leaflet HTML, CSS, and JavaScript, create  
-  map/snow_storymap.html
-Requirements:
-  • The HTML must scroll like a Story Map,
-  • Layers appear when scrolled to and disappear when they are scrolled past
-  • Summarized text explains the relevance and meaning of each data set
-  • Use chloropleth colors for presence or absence of observations, such as 'deaths' and 'deathdens' for deaths and death density
-  • add the death count to polygons but not point layers
-  • Run local python web server on a high random port (e.g., 51234) to avoid conflicts  
-```
-
----
-
-### Step 6 – Iterate for aesthetics
-
-```text
-TASK
-Open map/snow_storymap.html and critique its look (colors, fonts, layout).  
-Suggest up to three improvements.  
-Wait for user approval, then implement changes inside the same file.
-```
-
----
-
-### Step 7 – Log every prompt
-
-```text
-TASK
-Create code/log_prompts.py that appends each user & assistant message  
-from this session into prompts/session_<timestamp>.md  
-Ensure it runs automatically at the end of each assistant response.
-```
-
----
-
-### Step 8 – Commit & push
-
-```text
-TASK
-Git add all new/modified files  
-Commit with message "Add snow GIS story-map lab"  
-Push to <your-GitHub-remote>  
-Report the commit URL on success.
-```
-
----
-
-### Step 9 – One Shot Prompt
-
-Now, try a new chat session and let's push everything through at once to see how it turns out:
+!!! Note "Yes, the prompt has typos"
+    The numbering jumps (two `6.`s) and "chloropleth" is misspelled. Both are preserved from the original 2025 lab on purpose — modern agents handle messy real-world prompts surprisingly well, and it's worth seeing that for yourself.
 
 ```text
 The goal for this project is to create a story map that tells the story of 1850's the cholera outbreak in London. We will use HTML, JS, CSS, and Python for the code. 
@@ -325,8 +215,36 @@ Requirements:
   • add the death count to polygons as labels, but to the not point layers
 ```
 
-### Next Steps
+Compare this output to what you built across Steps 1–3. Where did the agent do better with all-at-once context? Where did it cut corners?
 
-• Modify the prompts to use **QGISMCP** and build the layers there.
+---
 
-• Deploy the code and map via GitHub Pages.
+## Optional Homework
+
+Each link below extends a step we trimmed from the live lab — pick whichever interests you and run it on your own.
+
+### Sharpen your prompts
+
+- [Writing Prompts](../../prompts.md) — extends Step 0 with the structure behind well-engineered prompts.
+- [Vibe Coding](../../vibe.md) — deeper patterns for the iterate-with-the-agent loop you used in Step 3.
+
+### Bring documents into the workflow
+
+- [Text Mining](../../text_mining.md) — replaces the cut PDF-summary step with a richer document workflow.
+- [RAG](../../rag.md) — extends the storymap with retrieval over the cholera PDFs and other primary sources.
+
+### Automate the workflow
+
+- [Claude Code Workflow](../../claude-code.md) — covers the prompt-logging and session-automation step we skipped.
+- [Agentic AI](../../agentic.md) — frames the agent loop you just used.
+
+### Ship and extend the map
+
+- [VS Code & AI Tools](../../vscode.md) — covers the git commit/push step and IDE ergonomics.
+- [MCP](../../mcp.md) — required reading before trying QGISMCP for richer layer styling.
+- [Public Health AI Lab](./casestudy.md) — applies prompt-engineering techniques to SMS triage, outbreak synthesis, and chart abstraction.
+
+## Next Steps
+
+- Modify the prompts to use [QGISMCP](https://github.com/jjsantos01/qgis_mcp) and build the layers there.
+- Deploy the code and map via [GitHub Pages](https://pages.github.com/).

@@ -120,29 +120,118 @@ In response to the rapid rise of generative AI, specifically GPTs, new agreement
 | **Framework Convention on Artificial Intelligence** | September 5, 2024 | United States, United Kingdom, European Union, Andorra, Georgia, Iceland, Norway, Republic of Moldova, San Marino, Israel | The first legally binding international treaty on AI, aiming to ensure AI activities are consistent with human rights, democracy, and the rule of law. | [Council of Europe](https://www.coe.int/en/web/artificial-intelligence/the-framework-convention-on-artificial-intelligence){target=_blank} |
 | **AI Alliance Network** | December 11, 2024 | Russia, BRICS countries (Brazil, China, India, South Africa), Serbia, Indonesia, and others | An initiative to develop AI collaboratively, focusing on joint research, regulation, and commercialization of AI products among member countries. | [Reuters](https://www.reuters.com/technology/artificial-intelligence/russia-teams-up-with-brics-create-ai-alliance-putin-says-2024-12-11/){target=_blank} |
 
+## Blueprint for an AI Bill of Rights
+
+### Timeline and status
+
+The [**Blueprint for an AI Bill of Rights**](https://bidenwhitehouse.archives.gov/ostp/ai-bill-of-rights/){target=_blank} emerged from a public process announced in an October 2021 *Wired* essay by the White House Office of Science and Technology Policy (OSTP). It was released in October 2022 with **five principles** to guide the design, development, and deployment of automated systems:
+
+1. **Safe and Effective Systems** — protection from unsafe or ineffective systems.
+2. **Algorithmic Discrimination Protections** — equitable design and use of automated systems.
+3. **Data Privacy** — protection from abusive data practices, with agency over how your data is used.
+4. **Notice and Explanation** — knowing when an automated system is being used and how/why it affects you.
+5. **Human Alternatives, Consideration, and Fallback** — the ability to opt out and reach a human alternative when an automated system fails or causes harm.
+
+These principles were incorporated into President Biden's [October 2023 Executive Order on Safe, Secure, and Trustworthy AI](https://www.federalregister.gov/documents/2023/11/01/2023-24283/safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence){target=_blank}. The Executive Order was rescinded by President Trump's January 2025 [Removing Barriers to American Leadership in Artificial Intelligence](https://www.whitehouse.gov/presidential-actions/2025/01/removing-barriers-to-american-leadership-in-artificial-intelligence/){target=_blank}. The Blueprint itself was always non-binding guidance.
+
+### Constitution vs. Bill of Rights vs. Declaration of Independence
+
+Sociologist [Alondra Nelson](https://www.ias.edu/sss/faculty/nelson){target=_blank} — who led the Blueprint's development as acting director of OSTP — argues in [*A civic grammar for AI rights*](https://www.science.org/doi/10.1126/science.aeh7153){target=_blank} (Science, 2026) that the Blueprint drew its name from the first ten amendments to the U.S. Constitution, but in structural terms resembles a different founding document: the **Declaration of Independence**.
+
+> "Unlike the Bill of Rights, the Blueprint does not establish courts or enforcement mechanisms. It does not create procedures for redress. It declares. It states principles and claims rights against a concentration of power that most Americans cannot meaningfully constrain through existing institutions or processes."
+
+The five principles, Nelson argues, are statements of values — "social expectations, stated in the vocabulary Americans reach for when they want to contest power: Patients' Bill of Rights, Consumer Bill of Rights, Tenants' Bill of Rights, Workers' Bill of Rights, Taxpayers' Bill of Rights." The Blueprint extended that civic grammar to algorithmic systems.
+
+Nelson distinguishes the public Blueprint from **corporate "AI constitutions"** — internal training and alignment specifications written by AI companies for their own models. Anthropic's *Claude Constitution* is the canonical example. These corporate documents are not negotiated with the publics affected by AI deployments, can be revised by company fiat, and recent versions have quietly removed references to international human rights agreements. The deeper question, Nelson asks, is *who gets to author the foundational documents that govern AI* — companies, or publics?
+
+A third category emerged in May 2026 with Pope Leo XIV's first encyclical [*Magnifica Humanitas*](https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html){target=_blank} — neither a corporate document like the *Claude Constitution* nor a public-policy document like the Blueprint, but a transnational moral institution speaking on behalf of 1.4 billion Catholics (and addressed beyond them, to "every person of goodwill") claiming authority against both the technocratic paradigm and the states that abdicate the field. It is a *declaration* in Nelson's sense — moral vocabulary without courts or enforcement — and its principles (human dignity, common good, subsidiarity, solidarity, social justice) converge on the same protections [UNESCO](#table-2-international-ai-agreements), [OECD](#table-2-international-ai-agreements), the [EU AI Act](#table-2-international-ai-agreements), and the [Framework Convention](#table-3-declarations-on-ai) already enumerate: non-discrimination, transparency, human oversight, and recourse. What it uniquely adds is the extension of the historic Catholic doctrine of the *universal destination of goods* to "patents, algorithms, digital platforms, technological infrastructure and data," together with a named critique of frontier-lab concentration; what it does not provide is the operational machinery — algorithmic impact assessments, audit protocols, model evaluations — that Nelson identifies as the harder labor of translating grammar into enforcement.
+
+For the philosophical framing in depth (T. H. Marshall's social-citizenship framework, the diffusion mechanism, the limits of rights talk) and the full treatment of *Magnifica Humanitas*, see [AI Constitutions and Bills of Rights](ethics.md#ai-constitutions-and-bills-of-rights) and [Catholic social teaching](ethics.md#catholic-social-teaching-magnifica-humanitas-pope-leo-xiv-2026) in the Ethics lesson.
+
+### The Blueprint's "second life": cross-partisan diffusion
+
+Although rescinded at the federal level, the Blueprint, in Nelson's words, "has done what its metaphor suggests blueprints do: it has been built upon." State legislatures, governors, and advocacy organizations have produced their own AI bills of rights drawing directly from the five principles — often across explicitly opposed political coalitions:
+
+- **Connecticut (2023):** Democratic Governor Ned Lamont signed legislation directing state policy-makers to develop their own AI Bill of Rights.
+- **Oklahoma (2024):** The Republican-controlled House of Representatives introduced and passed an AI Bill of Rights, though it was not ultimately codified into law.
+- **Florida (2025):** Republican Governor Ron DeSantis pushed for an AI Bill of Rights through executive action and twice backed Florida Senate Bill 482, the "Artificial Intelligence Bill of Rights," which would codify several Blueprint principles into Florida law. The bill was blocked in the Florida House, where the Speaker aligned with the Trump administration's effort to prevent states from regulating AI.
+- **Student AI Bill of Rights (2026):** The National Student Legal Defense Network released a Student AI Bill of Rights.
+
+These actors did not coordinate. As Nelson puts it: "What the actors share is a vocabulary and a common perspective that AI is reshaping people's lives without their consultation." The driver of the diffusion is not relational but conceptual — what sociologists David Strang and John Meyer describe as alignment among "weakly related actors" through abstract typologies that travel "as a strategy for making sense of the world."
+
+### International convergence
+
+Legal scholar Yuval Shany has surveyed international standard-setting instruments — the [EU AI Act](https://artificialintelligenceact.eu/){target=_blank}, the [Council of Europe Framework Convention on AI](https://www.coe.int/en/web/artificial-intelligence/the-framework-convention-on-artificial-intelligence){target=_blank}, the United Nations Global Digital Compact, and national legislation in South Korea and Italy — and finds they coalesce around the same protections as the Blueprint: **non-discrimination, transparency, data privacy, and human alternatives**. The pattern predates the Blueprint: the EU's General Data Protection Regulation (GDPR) established data-protection rights nearly a decade earlier. The "bill of rights" frame is American; the underlying rights-claim convergence is global.
+
+### From declaration to enforcement
+
+Nelson is direct about what civic grammar alone cannot deliver. The harder labor that remains is "translating the grammar of rights into the standards, audit protocols, and enforcement mechanisms that give those sentences force." The institutional models exist:
+
+- **Algorithmic impact assessments** required before AI systems are shipped.
+- **Standardized evaluation methods** for detecting algorithmic risk and harm.
+- **Independent audit frameworks** that subject deployed systems to outside scrutiny.
+
+What is missing, in Nelson's account, is the political will to extend existing accountability frameworks to a domain that has so far resisted them — and the institutional coalitions, not just the vocabulary, required to deliver the principles the Blueprint declared.
+
+!!! info "Sources and further reading"
+
+    - Alondra Nelson, [*A civic grammar for AI rights*](https://www.science.org/doi/10.1126/science.aeh7153){target=_blank}, *Science* (2026). DOI: 10.1126/science.aeh7153
+    - Alondra Nelson, [Bluesky thread on these principles](https://bsky.app/profile/alondra.bsky.social/post/3mltfqoc7ok2y){target=_blank}
+    - [Blueprint for an AI Bill of Rights](https://bidenwhitehouse.archives.gov/ostp/ai-bill-of-rights/){target=_blank} (White House OSTP, October 2022, archived)
+    - [EO 14110: Safe, Secure, and Trustworthy AI](https://www.federalregister.gov/documents/2023/11/01/2023-24283/safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence){target=_blank} (Biden, October 2023, rescinded January 2025)
+    - [Removing Barriers to American Leadership in AI](https://www.whitehouse.gov/presidential-actions/2025/01/removing-barriers-to-american-leadership-in-artificial-intelligence/){target=_blank} (Trump, January 2025)
+    - Anthropic, [Claude's Constitution](https://www.anthropic.com/news/claudes-constitution){target=_blank}
+
 ## Current Legislation
 
-[National Conference of State Legislatures (NCSL) Artificial Intelligence 2025 Legislation](https://www.ncsl.org/technology-and-communication/artificial-intelligence-2025-legislation){target=_blank}
+[National Conference of State Legislatures (NCSL) Artificial Intelligence Legislation Database](https://www.ncsl.org/financial-services/artificial-intelligence-legislation-database){target=_blank}
+
+The current administration has focused most of its efforts on executive orders related to AI and federal agencies. The December 2025 [Executive Order 14365 "Ensuring a National Policy Framework for Artificial Intelligence"](https://www.whitehouse.gov/presidential-actions/2025/12/eliminating-state-law-obstruction-of-national-artificial-intelligence-policy/){target=_blank} asserts federal authority to challenge or override state AI laws through DOJ litigation, conditioned BEAD broadband funding, and an FTC policy statement. See also [pending congressional legislation](https://www.newsweek.com/trump-constitutional-crisis-ai-2076230){target=_blank} that would codify state-preemption.
 
 
-The previous administration had proposed a ["Blueprint for an AI Bill of Rights"](https://bidenwhitehouse.archives.gov/ostp/ai-bill-of-rights/){target=_blank}, and executive order around the ["Safe, Secure, and Trustworthy Development and Use of Artificial Intelligence"](https://www.federalregister.gov/documents/2023/11/01/2023-24283/safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence){target=_blank} which is now rescinded. 
+!!! Tip "2025–2026 Executive Orders"
 
-The current administration has instead focused most of its efforts on executive orders related to AI and federal agencies. [Pending legislation](https://www.newsweek.com/trump-constitutional-crisis-ai-2076230){target=_blank} would ban states' ability to enforce AI regulations. 
+    **January 2025**
 
+    * [Removing Barriers to American Leadership in Artificial Intelligence, January 23, 2025](https://www.whitehouse.gov/presidential-actions/2025/01/removing-barriers-to-american-leadership-in-artificial-intelligence/){target=_blank} — rescinded Biden's October 2023 EO on Safe, Secure, and Trustworthy AI
 
-!!! Tip "2025 Executive Orders"
-
-    * [REMOVING BARRIERS TO AMERICAN LEADERSHIP IN ARTIFICIAL INTELLIGENCE, January 23, 2025](https://www.whitehouse.gov/presidential-actions/2025/01/removing-barriers-to-american-leadership-in-artificial-intelligence/){target=_blank}
+    **April 2025**
 
     * [OMB Accelerating Federal Use of AI through Innovation, Governance, and Public Trust, April 3, 2025](https://www.whitehouse.gov/wp-content/uploads/2025/02/M-25-21-Accelerating-Federal-Use-of-AI-through-Innovation-Governance-and-Public-Trust.pdf){target=_blank}
 
         * [Fact Sheet: Eliminating Barriers for Federal Artificial Intelligence Use and Procurement, April 7, 2025](https://www.whitehouse.gov/fact-sheets/2025/04/fact-sheet-eliminating-barriers-for-federal-artificial-intelligence-use-and-procurement/){target=_blank}
 
-    * [ADVANCING ARTIFICIAL INTELLIGENCE EDUCATION FOR AMERICAN YOUTH, April 23, 2025](https://www.whitehouse.gov/presidential-actions/2025/04/advancing-artificial-intelligence-education-for-american-youth/){target=_blank}
+    * [Advancing Artificial Intelligence Education for American Youth, April 23, 2025](https://www.whitehouse.gov/presidential-actions/2025/04/advancing-artificial-intelligence-education-for-american-youth/){target=_blank}
+
+    **May 2025**
 
     * [Restoring Gold Standard Science, May 23, 2025](https://www.whitehouse.gov/presidential-actions/2025/05/restoring-gold-standard-science/){target=_blank}
 
         * [Fact Sheet: President Donald J. Trump is Restoring Gold Standard Science in America](https://www.whitehouse.gov/fact-sheets/2025/05/fact-sheet-president-donald-j-trump-deploys-advanced-nuclear-reactor-technologies-for-national-security/){target=_blank}
+
+    **July 2025 — America's AI Action Plan (three EOs paired with the 90-policy "Winning the Race" action plan)**
+
+    * **Promoting the Export of the American AI Technology Stack, July 23, 2025** — directs federal agencies to promote export of US AI software, hardware, and standards
+    * [EO 14318: Accelerating Federal Permitting of Data Center Infrastructure, July 23, 2025](https://www.whitehouse.gov/presidential-actions/2025/07/accelerating-federal-permitting-of-data-center-infrastructure/){target=_blank} — streamlines NEPA reviews and creates new categorical exclusions for AI-related data-center projects
+    * **Preventing Woke AI in the Federal Government, July 23, 2025** — bars federal procurement of AI models judged to embed "ideological bias," including DEI-aligned principles; mandates "Unbiased AI Principles" prioritizing "truth-seeking" and "ideological neutrality"
+
+    **December 2025**
+
+    * [EO 14365: Ensuring a National Policy Framework for Artificial Intelligence, December 11, 2025](https://www.whitehouse.gov/presidential-actions/2025/12/eliminating-state-law-obstruction-of-national-artificial-intelligence-policy/){target=_blank} — asserts federal authority to challenge or override state AI laws. Three operational mechanisms:
+
+        * Establishes an **AI Litigation Task Force** at the Department of Justice to challenge state AI laws in federal court (operational January 10, 2026)
+        * Directs the Department of Commerce to condition **$42 billion in BEAD** (Broadband Equity, Access and Deployment) funding on the repeal of state AI regulations deemed onerous
+        * Directs the **FTC** to issue a policy statement (by March 11, 2026) treating state-mandated bias mitigation as a per se deceptive trade practice
+
+        Carve-outs from preemption: child-safety laws, AI compute and data-center infrastructure laws, and state procurement of AI.
+
+    **2026 — implementation and forthcoming actions**
+
+    No new AI executive orders have been signed in calendar year 2026 (January–May). Activity has been implementation of EO 14365 and related deliverables:
+
+    * **January 9, 2026:** Attorney General [formally established the AI Litigation Task Force](https://www.paulhastings.com/insights/client-alerts/president-trump-signs-executive-order-challenging-state-ai-laws){target=_blank} at DOJ via memorandum (operational January 10)
+    * **March 20, 2026:** White House released the [National Policy Framework for Artificial Intelligence](https://www.whitehouse.gov/wp-content/uploads/2026/03/03.20.26-National-Policy-Framework-for-Artificial-Intelligence-Legislative-Recommendations.pdf){target=_blank} — legislative recommendations for Congress (non-binding; not an EO) on federal preemption, data-infrastructure buildout, and intellectual property
+    * **May 2026:** White House [reportedly studying](https://federalnewsnetwork.com/artificial-intelligence/2026/05/wh-studying-ai-security-executive-order/){target=_blank} an AI security executive order modeled on FDA-style pre-release evaluation of AI models
 
 As of today, there are no comprehensive federal laws or regulations that have been enacted to specifically regulate AI in the United States of America.  
 

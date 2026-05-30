@@ -592,6 +592,6 @@ questions I should ask the admissions office."
 
 ---
 
-**Last Updated:** January 2026
+**Last Updated:** May 2026
 
 *This guide reflects current best practices and will be updated as AI capabilities and institutional policies evolve.*

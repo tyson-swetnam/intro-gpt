@@ -1,0 +1,1763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Prompt Engineering Deep Dive — Agentic Workflows · UA PH&amp;AI 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<script src="deck-stage.js"></script>
+<style>
+  :root {
+    --ua-blue:        #0C234B;
+    --ua-blue-deep:   #07173a;
+    --ua-blue-mid:    #1b3870;
+    --ua-red:         #AB0520;
+    --ua-red-bright:  #c8102e;
+    --cream:          #f7f4ee;
+    --cream-warm:     #efe9dc;
+    --paper:          #fbfaf6;
+    --ink:            #161616;
+    --ink-soft:       #2a2a2a;
+    --mute:           #6b6b6b;
+    --rule:           #d8d2c4;
+    --code-bg:        #0f1623;
+    --code-fg:        #e6edf3;
+    --good:           #1f7a4d;
+    --warn:           #c87a00;
+
+    --pad-x:          110px;
+    --pad-top:        96px;
+    --pad-bottom:     90px;
+  }
+
+  html, body { margin: 0; padding: 0; background: #000; }
+  body { font-family: 'Manrope', system-ui, sans-serif; color: var(--ink); }
+
+  deck-stage section {
+    box-sizing: border-box;
+    overflow: hidden;
+    background: var(--cream);
+    color: var(--ink);
+    font-family: 'Manrope', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .slide {
+    padding: var(--pad-top) var(--pad-x) var(--pad-bottom);
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+  .slide-dark { background: var(--ua-blue); color: var(--cream); }
+  .slide-paper { background: var(--paper); }
+  .slide-red { background: var(--ua-red); color: var(--cream); }
+
+  .tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ua-red);
+  }
+  .slide-dark .tag { color: var(--cream-warm); opacity: 0.85; }
+  .slide-red .tag { color: var(--cream); opacity: 0.85; }
+
+  .title {
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 1.02;
+    letter-spacing: -0.02em;
+    margin: 0;
+    text-wrap: balance;
+  }
+  .display {
+    font-size: 140px;
+    font-weight: 800;
+    line-height: 0.95;
+    letter-spacing: -0.035em;
+    margin: 0;
+    text-wrap: balance;
+  }
+  .subtitle {
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 1.18;
+    color: var(--ink-soft);
+    margin: 0;
+    text-wrap: pretty;
+  }
+  .slide-dark .subtitle, .slide-red .subtitle { color: var(--cream-warm); }
+  .body {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.42;
+    color: var(--ink-soft);
+    margin: 0;
+    text-wrap: pretty;
+  }
+  .slide-dark .body { color: var(--cream-warm); }
+  .small {
+    font-size: 24px;
+    color: var(--mute);
+    line-height: 1.4;
+  }
+  .slide-dark .small { color: rgba(247,244,238,0.65); }
+  .mono { font-family: 'JetBrains Mono', monospace; }
+
+  .deck-header {
+    position: absolute;
+    top: 38px;
+    left: var(--pad-x);
+    right: var(--pad-x);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--mute);
+  }
+  .slide-dark .deck-header,
+  .slide-red .deck-header { color: rgba(247,244,238,0.55); }
+  .deck-header .lockup { display: flex; align-items: center; gap: 14px; }
+  .deck-header .ua-block {
+    display: inline-block;
+    width: 38px; height: 38px;
+    background: var(--ua-red);
+    color: var(--cream);
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: -0.04em;
+  }
+  .slide-red .deck-header .ua-block { background: var(--cream); color: var(--ua-red); }
+
+  .deck-footer {
+    position: absolute;
+    bottom: 38px;
+    left: var(--pad-x);
+    right: var(--pad-x);
+    display: flex;
+    justify-content: space-between;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--mute);
+  }
+  .slide-dark .deck-footer,
+  .slide-red .deck-footer { color: rgba(247,244,238,0.5); }
+
+  .cols-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; flex: 1; }
+  .cols-2-uneven { display: grid; grid-template-columns: 1.2fr 1fr; gap: 80px; flex: 1; }
+  .cols-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 36px; flex: 1; }
+  .cols-4 { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 24px; }
+
+  .card {
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    padding: 34px 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .slide-dark .card {
+    background: rgba(255,255,255,0.04);
+    border-color: rgba(247,244,238,0.18);
+    color: var(--cream);
+  }
+  .card h4 {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: -0.01em;
+    line-height: 1.05;
+  }
+  .card p {
+    font-size: 24px;
+    line-height: 1.4;
+    color: var(--ink-soft);
+    margin: 0;
+  }
+  .slide-dark .card p { color: var(--cream-warm); }
+  .card .kicker {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ua-red);
+  }
+
+  pre.code {
+    background: var(--code-bg);
+    color: var(--code-fg);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    line-height: 1.5;
+    padding: 36px 42px;
+    margin: 0;
+    border-radius: 4px;
+    overflow: hidden;
+    white-space: pre-wrap;
+  }
+  pre.code .c { color: #8b96a8; }
+  pre.code .k { color: #ffb86c; }
+  pre.code .s { color: #a6e22e; }
+  pre.code .v { color: #79c0ff; }
+  pre.code .x { color: #ff7b72; }
+  pre.code .y { color: #d2a8ff; }
+
+  .placeholder {
+    background:
+      repeating-linear-gradient(135deg,
+        rgba(12,35,75,0.06) 0,
+        rgba(12,35,75,0.06) 14px,
+        rgba(12,35,75,0.10) 14px,
+        rgba(12,35,75,0.10) 28px);
+    border: 1px solid var(--rule);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--ink-soft);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 24px;
+    box-sizing: border-box;
+  }
+
+  .section-slide {
+    padding: var(--pad-top) var(--pad-x) var(--pad-bottom);
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+  }
+  .section-slide .part-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 28px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    opacity: 0.7;
+    margin-bottom: 36px;
+  }
+  .section-slide .section-title {
+    font-size: 160px;
+    font-weight: 800;
+    line-height: 0.92;
+    letter-spacing: -0.035em;
+    margin: 0;
+    text-wrap: balance;
+  }
+  .section-slide .section-sub {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.3;
+    max-width: 1100px;
+    margin-top: 36px;
+    opacity: 0.85;
+  }
+
+  .title-slide {
+    height: 100%;
+    box-sizing: border-box;
+    padding: var(--pad-top) var(--pad-x) var(--pad-bottom);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+  }
+  .title-slide .grid-bg {
+    position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(247,244,238,0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(247,244,238,0.05) 1px, transparent 1px);
+    background-size: 80px 80px;
+    pointer-events: none;
+  }
+  .title-slide-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .step-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ua-red);
+    margin-bottom: 18px;
+  }
+
+  table.surfaces {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 26px;
+  }
+  table.surfaces th, table.surfaces td {
+    text-align: left;
+    padding: 18px 16px;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+  }
+  table.surfaces th {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--mute);
+    font-weight: 500;
+    border-bottom: 2px solid var(--ink);
+  }
+  table.surfaces td.tool {
+    font-weight: 700;
+    color: var(--ink);
+    font-size: 26px;
+  }
+  table.surfaces td.kind {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    color: var(--ua-red);
+    letter-spacing: 0.04em;
+  }
+  table.surfaces td.desc { color: var(--ink-soft); font-size: 24px; line-height: 1.35; }
+
+  .stack { display: flex; flex-direction: column; gap: 0; }
+  .stack-row {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 40px;
+    padding: 24px 0;
+    border-bottom: 1px solid var(--rule);
+    align-items: baseline;
+  }
+  .stack-row:last-child { border-bottom: none; }
+  .stack-row .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--ua-red);
+  }
+  .stack-row .val {
+    font-size: 28px;
+    color: var(--ink-soft);
+    line-height: 1.35;
+  }
+  .stack-row .val strong { color: var(--ink); font-weight: 700; }
+
+  /* Capability blocks */
+  .cap-block {
+    border: 1px solid var(--rule);
+    background: var(--paper);
+    padding: 32px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    min-height: 280px;
+  }
+  .cap-block .icon-letter {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--ua-red);
+    letter-spacing: -0.02em;
+  }
+  .cap-block h5 {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.1;
+  }
+  .cap-block p {
+    font-size: 24px;
+    line-height: 1.4;
+    color: var(--ink-soft);
+    margin: 0;
+  }
+
+  /* Arrow flow for agentic loop */
+  .loop-flow {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    align-items: center;
+    gap: 14px;
+  }
+  .loop-node {
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    padding: 22px 18px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-height: 140px;
+    justify-content: center;
+  }
+  .loop-node.hi {
+    background: var(--ua-blue);
+    border-color: var(--ua-blue);
+    color: var(--cream);
+  }
+  .loop-node .num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    color: var(--ua-red);
+    letter-spacing: 0.16em;
+  }
+  .loop-node.hi .num { color: var(--cream-warm); }
+  .loop-node .label {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.15;
+  }
+  .loop-arrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 36px;
+    color: var(--ua-red);
+    text-align: center;
+    font-weight: 700;
+  }
+
+  /* Quote callout */
+  .pullquote {
+    font-size: 44px;
+    line-height: 1.25;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+    text-wrap: pretty;
+  }
+  .slide-dark .pullquote { color: var(--cream); }
+  .pullquote::before {
+    content: "\201C";
+    font-family: 'Manrope', sans-serif;
+    font-size: 100px;
+    line-height: 0.5;
+    color: var(--ua-red);
+    vertical-align: -22px;
+    margin-right: 12px;
+  }
+  .attrib {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--mute);
+    margin-top: 32px;
+  }
+  .slide-dark .attrib { color: rgba(247,244,238,0.6); }
+
+  /* MCP diagram */
+  .mcp-diagram {
+    display: grid;
+    grid-template-columns: 1fr auto 1.6fr;
+    gap: 32px;
+    align-items: stretch;
+  }
+  .mcp-host, .mcp-server-stack {
+    border: 1px solid var(--rule);
+    background: var(--paper);
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .mcp-host { background: var(--ua-blue); color: var(--cream); border-color: var(--ua-blue); }
+  .mcp-host h5 { color: var(--cream); margin: 0; font-size: 26px; }
+  .mcp-host p { color: var(--cream-warm); margin: 0; font-size: 24px; line-height: 1.35; }
+  .mcp-host .kicker { color: var(--cream-warm); }
+  .mcp-server-stack { gap: 14px; }
+  .mcp-server {
+    border: 1px solid var(--rule);
+    padding: 16px 20px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--cream);
+  }
+  .mcp-server .name { color: var(--ink); font-weight: 700; }
+  .mcp-server .kind { color: var(--ua-red); font-size: 24px; letter-spacing: 0.08em; }
+  .mcp-bus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+  }
+  .mcp-bus .line {
+    width: 60px;
+    height: 2px;
+    background: var(--ua-red);
+  }
+  .mcp-bus .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    color: var(--ua-red);
+    letter-spacing: 0.16em;
+    transform: rotate(90deg);
+    transform-origin: center;
+    white-space: nowrap;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .kicker {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ua-red);
+  }
+
+  /* Sandbox tier columns */
+  .tier-card {
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    border-top: 6px solid var(--ua-red);
+    padding: 32px 32px 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .tier-card .level {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    color: var(--ua-red);
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+  .tier-card h4 {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+  }
+  .tier-card p { font-size: 24px; line-height: 1.4; margin: 0; color: var(--ink-soft); }
+  .tier-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .tier-card ul li {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    color: var(--ink-soft);
+    padding-left: 18px;
+    position: relative;
+    line-height: 1.4;
+  }
+  .tier-card ul li::before {
+    content: "›";
+    position: absolute;
+    left: 0;
+    color: var(--ua-red);
+    font-weight: 700;
+  }
+
+  /* Safety stack rows */
+  .safety-row {
+    display: grid;
+    grid-template-columns: 60px 1fr 2.2fr;
+    gap: 36px;
+    padding: 22px 0;
+    border-bottom: 1px solid var(--rule);
+    align-items: baseline;
+  }
+  .safety-row:last-child { border-bottom: none; }
+  .safety-row .n {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    color: var(--ua-red);
+    letter-spacing: 0.06em;
+  }
+  .safety-row .h {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--ink);
+    letter-spacing: -0.01em;
+    line-height: 1.15;
+  }
+  .safety-row .d {
+    font-size: 24px;
+    color: var(--ink-soft);
+    line-height: 1.4;
+  }
+
+  /* Inline warning band */
+  .warn-band {
+    background: var(--ua-red);
+    color: var(--cream);
+    padding: 28px 36px;
+    display: flex;
+    gap: 28px;
+    align-items: center;
+  }
+  .warn-band .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    flex: 0 0 auto;
+    border-right: 1px solid rgba(247,244,238,0.4);
+    padding-right: 28px;
+  }
+  .warn-band .msg { font-size: 26px; line-height: 1.35; }
+</style>
+</head>
+<body>
+
+<deck-stage width="1920" height="1080">
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       1 · TITLE
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="01 Title" class="slide-dark">
+    <div class="title-slide">
+      <div class="grid-bg"></div>
+      <div class="deck-header">
+        <div class="lockup">
+          <span class="ua-block">A</span>
+          <span>University of Arizona · BIO5 Institute</span>
+        </div>
+        <div>PH&amp;AI Summer School · 2nd Edition</div>
+      </div>
+
+      <div class="title-slide-content" style="margin-top: 40px;">
+        <div class="tag" style="font-size: 26px;">AI Fluency Track · Deep Dive</div>
+        <h1 class="display" style="font-size: 156px;">
+          Agentic<br>Engineering<span style="color: var(--ua-red-bright);">.</span>
+        </h1>
+        <p class="body" style="color: var(--cream-warm); font-size: 36px; max-width: 1200px;">
+          Past the chat window — into your filesystem, your shell, and your research stack.
+          Vibe coding · MCP · sandboxes · safety.
+        </p>
+      </div>
+
+      <div class="title-slide-content" style="gap: 12px;">
+        <div style="background: rgba(247,244,238,0.4); height: 1px; max-width: 600px;"></div>
+        <div style="display: flex; justify-content: space-between; align-items: flex-end;">
+          <div>
+            <div style="color: var(--cream); font-weight: 600; font-size: 36px;">Tyson Swetnam, PhD</div>
+            <div class="small mono" style="margin-top: 6px;">Associate Professor · BIO5 Institute</div>
+          </div>
+          <div class="mono small" style="text-align: right;">
+            Grand Challenges Research Building<br>
+            Tucson, AZ · June 2026
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       2 · THE MENTAL SHIFT
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="02 Mental Shift">
+    <div class="slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>02 / The Shift</div>
+      </div>
+
+      <div class="tag" style="margin-top: 40px;">What's Different This Time</div>
+      <h2 class="title" style="margin-top: 20px; max-width: 1600px;">The model isn't reading your prompt. It's reading your filesystem.</h2>
+
+      <div class="cols-2" style="margin-top: 80px; gap: 60px;">
+        <div class="card" style="border-left: 6px solid var(--mute);">
+          <div class="kicker" style="color: var(--mute);">Yesterday · the basics deck</div>
+          <h4>Prompt → response.</h4>
+          <p>A chat window. One turn at a time. The model sees what you paste. You see what it writes. The boundary between "your computer" and "the AI" is a textbox.</p>
+        </div>
+        <div class="card" style="border-left: 6px solid var(--ua-red);">
+          <div class="kicker">Today · this deck</div>
+          <h4>Prompt → tool calls → effects.</h4>
+          <p>The model reads your repo, edits files, runs your tests, calls APIs, queries databases — through standardized tool protocols. You approve actions, not paragraphs.</p>
+        </div>
+      </div>
+
+      <p class="body" style="margin-top: 60px; max-width: 1600px; font-size: 28px;">
+        Everything in the basics deck still applies — CRAFT, role, format. But the failure modes
+        change: an unclear prompt no longer wastes a turn. It wastes a <span style="font-weight: 700; color: var(--ink);">file</span>.
+      </p>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>02 · THE SHIFT</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       3 · WHAT YOU'LL LEAVE WITH
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="03 Outcome" class="slide-paper">
+    <div class="slide slide-paper">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>03 / Outcome</div>
+      </div>
+
+      <div class="tag" style="margin-top: 40px;">What You'll Leave With</div>
+      <h2 class="title" style="margin-top: 20px; max-width: 1600px;">Four lenses for the agentic stack.</h2>
+
+      <div class="cols-4" style="margin-top: 80px; gap: 28px;">
+        <div class="cap-block">
+          <span class="icon-letter">01.</span>
+          <h5>Vibe coding.</h5>
+          <p>The IDE / extension / CLI / browser landscape. How to choose a surface for the work.</p>
+        </div>
+        <div class="cap-block">
+          <span class="icon-letter">02.</span>
+          <h5>Local filesystems.</h5>
+          <p>What an agent on your machine can actually do — and how to scope its authority.</p>
+        </div>
+        <div class="cap-block">
+          <span class="icon-letter">03.</span>
+          <h5>MCP.</h5>
+          <p>The Model Context Protocol — USB-C for AI. Standard plug for tools, data, resources.</p>
+        </div>
+        <div class="cap-block">
+          <span class="icon-letter">04.</span>
+          <h5>Sandboxes.</h5>
+          <p>Containers, VMs, hosted notebooks. Where you let the agent run hot without setting the lab on fire.</p>
+        </div>
+      </div>
+
+      <p class="small" style="margin-top: 70px; max-width: 1500px;">
+        Companion page: <span class="mono" style="color: var(--ua-red); font-size: 24px;">tyson-swetnam.github.io/intro-gpt/vibe/</span> and
+        <span class="mono" style="color: var(--ua-red); font-size: 24px;">/research/</span>. Every section below has a deeper write-up there.
+      </p>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>03 · OUTCOME</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       4 · PART 1 · VIBE CODING
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="04 Part 1 Divider" class="slide-dark">
+    <div class="section-slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>Part 01 · Vibe Coding</div>
+      </div>
+      <div>
+        <div class="part-num">Part 01</div>
+        <h2 class="section-title">Vibe<br>coding.</h2>
+        <p class="section-sub">
+          An LLM, your IDE, your repo. The fastest way to ship code you don't fully understand —
+          and the fastest way to break something you do.
+        </p>
+      </div>
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>04 · PART 01</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       5 · KARPATHY QUOTE — WHAT VIBE CODING IS
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="05 Karpathy" class="slide-paper">
+    <div class="slide slide-paper">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>05 / Origin</div>
+      </div>
+
+      <div class="tag" style="margin-top: 40px;">February 2025 · Karpathy on X</div>
+      <h2 class="title" style="margin-top: 20px; max-width: 1600px;">Where the term came from — and what it actually means.</h2>
+
+      <div class="cols-2-uneven" style="margin-top: 80px; gap: 80px; flex: 0 1 auto;">
+        <div style="display: flex; flex-direction: column; justify-content: center;">
+          <p class="pullquote">
+            There's a new kind of coding I call <strong style="color: var(--ua-red);">vibe coding</strong>, where you fully give in to the vibes, embrace exponentials, and forget that the code even exists.
+          </p>
+          <div class="attrib">Andrej Karpathy · Feb 2 2025</div>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 22px; justify-content: center;">
+          <div class="card">
+            <div class="kicker">Working definition</div>
+            <p style="font-size: 26px;">Using an LLM to generate and edit code directly inside your IDE — the model is a collaborative partner, not a search engine you copy-paste from.</p>
+          </div>
+          <div class="card" style="border-left: 6px solid var(--ua-red);">
+            <div class="kicker">The trade</div>
+            <p style="font-size: 26px;">Speed in exchange for meaningful authority over your machine. Files, network, shell. Worth knowing what you handed over.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>05 · ORIGIN</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       6 · THE FOUR SURFACES
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="06 Four Surfaces">
+    <div class="slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>06 / Surfaces</div>
+      </div>
+
+      <div class="tag" style="margin-top: 40px;">Pick The Surface That Matches The Job</div>
+      <h2 class="title" style="margin-top: 20px; max-width: 1600px;">Four families. Different authority, different blast radius.</h2>
+
+      <div class="cols-4" style="margin-top: 56px; gap: 24px;">
+        <div class="tier-card">
+          <div class="level">01 · Desktop IDE</div>
+          <h4>Standalone editors.</h4>
+          <p>Full-fat editing experience. Agent sees the open repo.</p>
+          <ul>
+            <li>Claude Desktop</li>
+            <li>VS Code</li>
+            <li>Cursor</li>
+            <li>Positron (Posit)</li>
+            <li>Windsurf</li>
+            <li>Antigravity</li>
+          </ul>
+        </div>
+        <div class="tier-card">
+          <div class="level">02 · VS Code ext</div>
+          <h4>Inside your editor.</h4>
+          <p>Bring the agent to where you already work. BYOM in some cases.</p>
+          <ul>
+            <li>Claude Code</li>
+            <li>Gemini CLI Companion</li>
+            <li>OpenAI Codex</li>
+            <li>GitHub Copilot</li>
+            <li>Cline</li>
+            <li>Roo Code</li>
+          </ul>
+        </div>
+        <div class="tier-card">
+          <div class="level">03 · CLI</div>
+          <h4>Terminal-first.</h4>
+          <p>Scriptable, headless, scriptable into pipelines and CI.</p>
+          <ul>
+            <li>Aider</li>
+            <li>Claude Code CLI</li>
+            <li>OpenAI Codex CLI</li>
+            <li>Gemini CLI</li>
+            <li>OpenCode.ai</li>
+          </ul>
+        </div>
+        <div class="tier-card">
+          <div class="level">04 · Browser</div>
+          <h4>Sandboxed by default.</h4>
+          <p>No local filesystem. Code runs in a hosted Python or Node env.</p>
+          <ul>
+            <li>Claude Code (web)</li>
+            <li>ChatGPT</li>
+            <li>Google Gemini</li>
+            <li>OpenWebUI (self-host)</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="small" style="margin-top: 36px; max-width: 1500px; font-size: 24px;">
+        Authority increases left-to-right in your head, but is actually highest in <em>01 · Desktop IDE</em>:
+        that's the surface that touches your real files.
+      </p>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>06 · SURFACES</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       7 · CHOOSING A TOOL — DECISION TABLE
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="07 Tool Decision" class="slide-paper">
+    <div class="slide slide-paper">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>07 / Choosing</div>
+      </div>
+
+      <div class="tag" style="margin-top: 40px;">A First-Pass Decision Table</div>
+      <h2 class="title" style="margin-top: 20px; max-width: 1600px;">Match the surface to the situation. Try one. Switch when it stops fitting.</h2>
+
+      <table class="surfaces" style="margin-top: 56px;">
+        <thead>
+          <tr>
+            <th>If you are…</th>
+            <th>Surface</th>
+            <th>Reach for</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="desc">New to vibe coding, exploring</td>
+            <td class="kind">Browser</td>
+            <td class="tool">ChatGPT / Gemini / Claude.ai</td>
+            <td class="desc">No install, sandboxed Python, zero blast radius.</td>
+          </tr>
+          <tr>
+            <td class="desc">A researcher with R / Python notebooks</td>
+            <td class="kind">Desktop IDE</td>
+            <td class="tool">Positron · Cursor · VS Code</td>
+            <td class="desc">Native data-science tooling, agent has repo context.</td>
+          </tr>
+          <tr>
+            <td class="desc">Comfortable in terminal, scripting workflows</td>
+            <td class="kind">CLI</td>
+            <td class="tool">Claude Code CLI · Aider · Gemini CLI</td>
+            <td class="desc">Pipe into CI, run headless against many repos.</td>
+          </tr>
+          <tr>
+            <td class="desc">Working with sensitive data on your laptop</td>
+            <td class="kind">BYOM</td>
+            <td class="tool">Cline + Ollama · Aider + local LLM</td>
+            <td class="desc">Self-hosted model; nothing leaves the machine.</td>
+          </tr>
+          <tr>
+            <td class="desc">Already deep in GitHub PR review</td>
+            <td class="kind">VS Code ext</td>
+            <td class="tool">GitHub Copilot · Claude Code</td>
+            <td class="desc">Lives in the editor you already have open.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="small" style="margin-top: 24px; max-width: 1500px; font-size: 24px;">
+        None of these are permanent. The cost of switching is one afternoon of muscle memory.
+      </p>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>07 · CHOOSING</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       8 · PART 2 · LOCAL FILESYSTEMS
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="08 Part 2 Divider" class="slide-red">
+    <div class="section-slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>Part 02 · Local Filesystems</div>
+      </div>
+      <div>
+        <div class="part-num">Part 02</div>
+        <h2 class="section-title">Your<br>filesystem<br>is a tool.</h2>
+        <p class="section-sub">
+          Once you grant filesystem access, the agent has everything your user does.
+          That's the deal. Understand what it can reach.
+        </p>
+      </div>
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>08 · PART 02</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       9 · WHAT AN AGENT CAN DO
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="09 Agent Capabilities">
+    <div class="slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>09 / Capabilities</div>
+      </div>
+
+      <div class="tag" style="margin-top: 40px;">What An Agent On Your Machine Can Actually Do</div>
+      <h2 class="title" style="margin-top: 20px; max-width: 1600px;">Four authorities. Granted with one click. Worth saying out loud.</h2>
+
+      <div class="cols-4" style="margin-top: 70px; gap: 24px;">
+        <div class="cap-block">
+          <span class="icon-letter">FS.</span>
+          <h5>Filesystem.</h5>
+          <p>Read, modify, and delete files anywhere your user has permission. Not just the open repo — your home directory, your Downloads, your Dropbox.</p>
+        </div>
+        <div class="cap-block">
+          <span class="icon-letter">NET.</span>
+          <h5>Network.</h5>
+          <p>Make API calls, fetch URLs, exfiltrate data, install packages. The agent has your IP and your connectivity.</p>
+        </div>
+        <div class="cap-block">
+          <span class="icon-letter">SH.</span>
+          <h5>Shell.</h5>
+          <p>Execute arbitrary commands — file deletion, force pushes, cloud sync. The terminal is the terminal.</p>
+        </div>
+        <div class="cap-block">
+          <span class="icon-letter">ENV.</span>
+          <h5>Environment.</h5>
+          <p>Read environment variables — including secrets your shell exposes. API keys, database URLs, auth tokens.</p>
+        </div>
+      </div>
+
+      <div class="warn-band" style="margin-top: 70px;">
+        <div class="label">Heads-up</div>
+        <div class="msg">LLMs occasionally hallucinate package names. Attackers register them on PyPI / npm. If your agent installs dependencies without review, it can pull in malicious code. Read the <span class="mono">requirements.txt</span> diff.</div>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>09 · CAPABILITIES</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       10 · PRACTICES THAT KEEP IT MANAGEABLE
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="10 Practices" class="slide-paper">
+    <div class="slide slide-paper">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>10 / Practices</div>
+      </div>
+
+      <div class="tag" style="margin-top: 40px;">Practices That Keep This Manageable</div>
+      <h2 class="title" style="margin-top: 20px; max-width: 1600px;">Seven habits. Adopt them before you point an agent at code that matters.</h2>
+
+      <div class="stack" style="margin-top: 56px;">
+        <div class="stack-row">
+          <div class="label">01 · Review</div>
+          <div class="val">Read every command before approving. Most tools prompt — <strong>don't auto-approve everything.</strong></div>
+        </div>
+        <div class="stack-row">
+          <div class="label">02 · Scope</div>
+          <div class="val">Work inside project-specific virtual environments, not at user-root.</div>
+        </div>
+        <div class="stack-row">
+          <div class="label">03 · Secrets</div>
+          <div class="val">Never store secrets in code. Use environment variables and secret managers.</div>
+        </div>
+        <div class="stack-row">
+          <div class="label">04 · Sudo</div>
+          <div class="val">Be cautious with <span class="mono" style="font-size: 26px;">sudo</span> or administrator privileges. Agents rarely need them.</div>
+        </div>
+        <div class="stack-row">
+          <div class="label">05 · Monitor</div>
+          <div class="val">Actively watch agent actions when you're learning a new tool. Trust comes from observation.</div>
+        </div>
+        <div class="stack-row">
+          <div class="label">06 · Policy</div>
+          <div class="val">Follow your institution's security and privacy policies. UA has classifications. So does your IRB.</div>
+        </div>
+        <div class="stack-row">
+          <div class="label">07 · Sandbox</div>
+          <div class="val">For sensitive work, use containers or VMs — covered in Part 04.</div>
+        </div>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>10 · PRACTICES</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       11 · PART 3 · MCP
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="11 Part 3 Divider" class="slide-dark">
+    <div class="section-slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>Part 03 · Model Context Protocol</div>
+      </div>
+      <div>
+        <div class="part-num">Part 03 · MCP</div>
+        <h2 class="section-title">USB-C<br>for AI.</h2>
+        <p class="section-sub">
+          One protocol, any tool. The plug that lets the same agent talk to your filesystem,
+          your database, your calendar, your lab instruments.
+        </p>
+      </div>
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>11 · PART 03</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       12 · MCP CONCEPT
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="12 MCP Concept">
+    <div class="slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>12 / MCP · What</div>
+      </div>
+
+      <div class="tag" style="margin-top: 40px;">Model Context Protocol</div>
+      <h2 class="title" style="margin-top: 20px; max-width: 1600px;">An open protocol that standardizes how applications provide context to LLMs.</h2>
+
+      <div class="cols-2-uneven" style="margin-top: 70px; gap: 80px; flex: 0 1 auto;">
+        <div style="display: flex; flex-direction: column; justify-content: center; gap: 28px;">
+          <p class="body" style="font-size: 32px; color: var(--ink-soft);">
+            Before MCP: every agent shipped its own plugin system. Connecting Claude to your filesystem
+            meant one integration; connecting Cursor to the same filesystem meant another.
+          </p>
+          <p class="body" style="font-size: 32px; color: var(--ink);">
+            After MCP: write one server. Any compatible client can use it.
+            <strong>The "M×N" problem becomes "M + N".</strong>
+          </p>
+          <div class="card" style="border-left: 6px solid var(--ua-red);">
+            <div class="kicker">Maintained by</div>
+            <p style="font-size: 26px;">Anthropic, open spec at <span class="mono" style="font-size: 24px; color: var(--ua-red);">modelcontextprotocol.io</span>. Implementations from Anthropic, OpenAI, community.</p>
+          </div>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 18px; justify-content: center;">
+          <div class="card">
+            <div class="kicker">Tools</div>
+            <p style="font-size: 24px;">Functions the model can call — read a file, run a query, send an email.</p>
+          </div>
+          <div class="card">
+            <div class="kicker">Resources</div>
+            <p style="font-size: 24px;">Data the model can pull in — files, database rows, API responses.</p>
+          </div>
+          <div class="card">
+            <div class="kicker">Prompts</div>
+            <p style="font-size: 24px;">Reusable templates the server publishes for the client to surface.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>12 · MCP</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       13 · MCP ARCHITECTURE
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="13 MCP Architecture" class="slide-paper">
+    <div class="slide slide-paper">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>13 / MCP · How</div>
+      </div>
+
+      <div class="tag" style="margin-top: 32px;">Anatomy Of An MCP Connection</div>
+      <h2 class="title" style="margin-top: 14px; max-width: 1600px; font-size: 60px;">One host. One protocol. Many servers, each scoped to one job.</h2>
+
+      <div class="mcp-diagram" style="margin-top: 44px;">
+        <div class="mcp-host">
+          <div class="kicker">Host / Client</div>
+          <h5>Claude Desktop</h5>
+          <p style="margin-top: 6px;">The app the user talks to. Manages the model, the chat, and the list of attached servers.</p>
+          <div style="flex: 1;"></div>
+          <p style="font-family: 'JetBrains Mono', monospace; font-size: 24px; color: var(--cream-warm);">also: Cursor · VS Code · Cline · Claude Code</p>
+        </div>
+
+        <div class="mcp-bus">
+          <div class="label">MCP · JSON-RPC over stdio / SSE</div>
+        </div>
+
+        <div class="mcp-server-stack">
+          <div class="kicker">Servers · each a separate process</div>
+          <div class="mcp-server">
+            <span class="name">filesystem</span>
+            <span class="kind">read · write · list</span>
+          </div>
+          <div class="mcp-server">
+            <span class="name">github</span>
+            <span class="kind">issues · prs</span>
+          </div>
+          <div class="mcp-server">
+            <span class="name">postgres</span>
+            <span class="kind">query · schema</span>
+          </div>
+          <div class="mcp-server">
+            <span class="name">slack</span>
+            <span class="kind">channels · messages</span>
+          </div>
+          <div class="mcp-server">
+            <span class="name">your-own-thing</span>
+            <span class="kind">lab gear · REDCap</span>
+          </div>
+        </div>
+      </div>
+
+      <p class="small" style="margin-top: 36px; max-width: 1500px; font-size: 24px;">
+        Each server is its own process with its own permissions. You enable them one at a time
+        in the host's config — and you revoke them the same way.
+      </p>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>13 · MCP · ARCH</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       14 · MCP CONFIG EXAMPLE
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="14 MCP Config">
+    <div class="slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>14 / MCP · Config</div>
+      </div>
+
+      <div class="tag" style="margin-top: 36px;">From Zero To Connected</div>
+      <h2 class="title" style="margin-top: 16px; max-width: 1600px; font-size: 60px;">Connecting Claude Desktop to your project folder — the actual JSON.</h2>
+
+      <div class="cols-2-uneven" style="margin-top: 36px; gap: 48px; flex: 0 1 auto;">
+        <pre class="code" style="font-size: 24px; line-height: 1.4; padding: 24px 30px;"><span class="c">// claude_desktop_config.json</span>
+{
+  <span class="y">"mcpServers"</span>: {
+    <span class="y">"filesystem"</span>: {
+      <span class="y">"command"</span>: <span class="s">"npx"</span>,
+      <span class="y">"args"</span>: [
+        <span class="s">"-y"</span>,
+        <span class="s">"@modelcontextprotocol/server-filesystem"</span>,
+        <span class="s">"/Users/tswetnam/research/phai-2026"</span>
+      ]
+    },
+    <span class="y">"postgres"</span>: {
+      <span class="y">"command"</span>: <span class="s">"npx"</span>,
+      <span class="y">"args"</span>: [<span class="s">"-y"</span>, <span class="s">"@mcp/server-postgres"</span>],
+      <span class="y">"env"</span>: { <span class="y">"DATABASE_URL"</span>: <span class="s">"..."</span> }
+    }
+  }
+}</pre>
+        <div style="display: flex; flex-direction: column; gap: 22px; justify-content: center;">
+          <div class="card">
+            <div class="kicker">What this buys you</div>
+            <p style="font-size: 24px;">Claude can now read &amp; write files in your project folder and query your local Postgres — through tool calls you approve in the chat.</p>
+          </div>
+          <div class="card" style="border-left: 6px solid var(--ua-red);">
+            <div class="kicker">Scoping rule</div>
+            <p style="font-size: 24px;">The path you pass in is the leash — the filesystem server cannot reach outside it. Use this. Point each MCP at the narrowest scope that does the job.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>14 · MCP · CONFIG</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       15 · PART 4 · AI SANDBOXES
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="15 Part 4 Divider" class="slide-dark">
+    <div class="section-slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>Part 04 · AI Sandboxes</div>
+      </div>
+      <div>
+        <div class="part-num">Part 04</div>
+        <h2 class="section-title">Let it<br>run hot.</h2>
+        <p class="section-sub">
+          The point of a sandbox: somewhere the agent can experiment, install random packages,
+          and break things without taking your laptop down with it.
+        </p>
+      </div>
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>15 · PART 04</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       16 · THREE SANDBOX TIERS
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="16 Sandbox Tiers">
+    <div class="slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>16 / Sandboxes</div>
+      </div>
+
+      <div class="tag" style="margin-top: 40px;">Three Tiers Of Isolation</div>
+      <h2 class="title" style="margin-top: 20px; max-width: 1600px;">Pick the tier that matches the data sensitivity, not your comfort.</h2>
+
+      <div class="cols-3" style="margin-top: 70px; gap: 32px;">
+        <div class="tier-card">
+          <div class="level">Tier 01 · Soft</div>
+          <h4>Hosted notebook.</h4>
+          <p>ChatGPT's Python sandbox, Gemini code execution, Claude artifacts. The agent runs code in someone else's container.</p>
+          <ul>
+            <li>Zero install</li>
+            <li>No local file access</li>
+            <li>Ephemeral by default</li>
+            <li>Data leaves your machine</li>
+          </ul>
+        </div>
+        <div class="tier-card" style="border-top-color: var(--ua-blue);">
+          <div class="level" style="color: var(--ua-blue);">Tier 02 · Medium</div>
+          <h4>Container / devcontainer.</h4>
+          <p>Docker or VS Code devcontainer. Agent runs against your real repo but inside an isolated FS + network.</p>
+          <ul>
+            <li>Reproducible env</li>
+            <li>Limited host access</li>
+            <li>Survives destructive commands</li>
+            <li>Network still escapes</li>
+          </ul>
+        </div>
+        <div class="tier-card" style="border-top-color: var(--ink);">
+          <div class="level" style="color: var(--ink);">Tier 03 · Hard</div>
+          <h4>VM / data enclave.</h4>
+          <p>Full virtual machine or institutional enclave. For HIPAA, FERPA, CUI, or anything where leakage is unacceptable.</p>
+          <ul>
+            <li>Strong isolation</li>
+            <li>Auditable</li>
+            <li>Often offline</li>
+            <li>Heavy to spin up</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="small" style="margin-top: 60px; max-width: 1500px;">
+        Public health work crosses all three tiers in a week. Synthetic data → soft. Cohort exploration → medium.
+        Patient-level analysis → hard. Match the tier to the row.
+      </p>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>16 · SANDBOXES</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       17 · THE AGENTIC LOOP
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="17 Agentic Loop" class="slide-paper">
+    <div class="slide slide-paper">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>17 / The Loop</div>
+      </div>
+
+      <div class="tag" style="margin-top: 36px;">The Agentic Loop</div>
+      <h2 class="title" style="margin-top: 16px; max-width: 1600px; font-size: 60px;">Plan → act → observe → revise. The model that does this in a container is the one you trust.</h2>
+
+      <div style="display: grid; grid-template-columns: repeat(9, auto); align-items: center; justify-content: center; gap: 12px; margin-top: 60px;">
+        <div class="loop-node" style="min-height: 110px; min-width: 150px;">
+          <div class="num">01</div>
+          <div class="label">Goal</div>
+        </div>
+        <div class="loop-arrow" style="font-size: 30px;">→</div>
+        <div class="loop-node" style="min-height: 110px; min-width: 150px;">
+          <div class="num">02</div>
+          <div class="label">Plan</div>
+        </div>
+        <div class="loop-arrow" style="font-size: 30px;">→</div>
+        <div class="loop-node hi" style="min-height: 110px; min-width: 180px;">
+          <div class="num">03</div>
+          <div class="label">Act · tool call</div>
+        </div>
+        <div class="loop-arrow" style="font-size: 30px;">→</div>
+        <div class="loop-node" style="min-height: 110px; min-width: 150px;">
+          <div class="num">04</div>
+          <div class="label">Observe</div>
+        </div>
+        <div class="loop-arrow" style="font-size: 30px;">↻</div>
+        <div class="loop-node" style="min-height: 110px; min-width: 180px;">
+          <div class="num">05</div>
+          <div class="label">Revise &amp; loop</div>
+        </div>
+      </div>
+
+      <div class="cols-2" style="margin-top: 56px; flex: 0 1 auto; gap: 60px;">
+        <div class="card" style="padding: 26px 30px;">
+          <div class="kicker">Where humans belong</div>
+          <p style="font-size: 24px;">At <strong>step 03 approval</strong> for high-stakes actions, and at <strong>step 04 observation</strong> for everything. Don't auto-approve write tools.</p>
+        </div>
+        <div class="card" style="padding: 26px 30px;">
+          <div class="kicker">Why the sandbox matters</div>
+          <p style="font-size: 24px;">Steps 03→04 may run 50 iterations before surfacing to you. Each iteration touches the FS. A bad plan in a sandbox is a wasted minute; on your laptop it's a restore.</p>
+        </div>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>17 · LOOP</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       18 · PART 5 · AGENTIC RESEARCH
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="18 Part 5 Divider" class="slide-red">
+    <div class="section-slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>Part 05 · Agentic Research</div>
+      </div>
+      <div>
+        <div class="part-num">Part 05</div>
+        <h2 class="section-title">Putting it<br>to work.</h2>
+        <p class="section-sub">
+          Literature review · hypothesis generation · code &amp; data analysis. The same stack,
+          pointed at a real research problem.
+        </p>
+      </div>
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>18 · PART 05</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       19 · LIT REVIEW STACK
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="19 Lit Review">
+    <div class="slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>19 / Literature</div>
+      </div>
+
+      <div class="tag" style="margin-top: 40px;">Literature Review &amp; Synthesis</div>
+      <h2 class="title" style="margin-top: 20px; max-width: 1600px;">Four tools. Four jobs. Don't reach for the same one twice.</h2>
+
+      <div class="cols-4" style="margin-top: 70px; gap: 24px;">
+        <div class="cap-block">
+          <span class="icon-letter">P.</span>
+          <h5>Perplexity</h5>
+          <p style="font-family: 'JetBrains Mono', monospace; font-size: 24px; color: var(--ua-red);">Search &amp; summarize</p>
+          <p>The "what's out there on X?" tool. Web-first, citations inline, fast.</p>
+        </div>
+        <div class="cap-block">
+          <span class="icon-letter">G.</span>
+          <h5>Gemini Deep Research</h5>
+          <p style="font-family: 'JetBrains Mono', monospace; font-size: 24px; color: var(--ua-red);">Multi-step report</p>
+          <p>You pose a research question, it produces a structured report over many minutes.</p>
+        </div>
+        <div class="cap-block">
+          <span class="icon-letter">N.</span>
+          <h5>NotebookLM</h5>
+          <p style="font-family: 'JetBrains Mono', monospace; font-size: 24px; color: var(--ua-red);">Your own corpus</p>
+          <p>Upload your PDFs / docs / audio. Grounded answers, no hallucinated citations.</p>
+        </div>
+        <div class="cap-block">
+          <span class="icon-letter">S.</span>
+          <h5>ScholarAI / SemScholar</h5>
+          <p style="font-family: 'JetBrains Mono', monospace; font-size: 24px; color: var(--ua-red);">Peer-reviewed</p>
+          <p>Custom GPTs and tools pinned to academic indexes. For when "web" isn't enough.</p>
+        </div>
+      </div>
+
+      <p class="small" style="margin-top: 70px; max-width: 1500px;">
+        Rule of thumb: <strong style="color: var(--ink);">Perplexity</strong> for scoping,
+        <strong style="color: var(--ink);">ScholarAI</strong> for citations you'll actually cite,
+        <strong style="color: var(--ink);">NotebookLM</strong> for synthesizing what you've already collected.
+      </p>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>19 · LITERATURE</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       20 · HYPOTHESIS + ROLE
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="20 Hypothesis Roles" class="slide-paper">
+    <div class="slide slide-paper">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>20 / Hypothesis</div>
+      </div>
+
+      <div class="tag" style="margin-top: 40px;">Hypothesis Generation Via Role-Play</div>
+      <h2 class="title" style="margin-top: 20px; max-width: 1600px;">Roles aren't just style. They route which patterns the model surfaces.</h2>
+
+      <div class="cols-2" style="margin-top: 60px; gap: 60px; flex: 0 1 auto;">
+        <div style="display: flex; flex-direction: column; gap: 22px;">
+          <div class="step-label">Pattern 01 · Domain expert</div>
+          <pre class="code" style="font-size: 24px; line-height: 1.4;">I want you to act as a data scientist
+with complete knowledge of R, the
+TidyVerse, and RStudio.
+
+Write the code to:
+1. Create a new R project env
+2. Load Palmer Penguins
+3. Plot regressions of body mass,
+   bill length &amp; width by species
+
+Output as R + RMarkdown with text
+and code in ``` blocks.</pre>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 22px;">
+          <div class="step-label">Pattern 02 · Talk to a dead scientist</div>
+          <pre class="code" style="font-size: 24px; line-height: 1.4;">I want you to respond as though
+you are the mathematician
+Benoit Mandelbrot.
+
+Explain the relationship of
+lacunarity and fractal dimension
+for a self-affine series.
+
+Show results using mathematical
+equations in LaTeX or MathJax.</pre>
+          <p class="small" style="font-size: 24px;">Try with and without web search enabled. The deltas tell you which claims the model is generating vs. retrieving.</p>
+        </div>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>20 · HYPOTHESIS</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       21 · CODE EXECUTION SURFACES
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="21 Code Execution">
+    <div class="slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>21 / Code Execution</div>
+      </div>
+
+      <div class="tag" style="margin-top: 40px;">Where The Code Actually Runs</div>
+      <h2 class="title" style="margin-top: 20px; max-width: 1600px;">Same prompt. Five very different places it could execute.</h2>
+
+      <table class="surfaces" style="margin-top: 56px;">
+        <thead>
+          <tr>
+            <th>Surface</th>
+            <th>Where it runs</th>
+            <th>Sees your files?</th>
+            <th>Good for</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="tool">ChatGPT Python tool</td>
+            <td class="desc">OpenAI sandbox</td>
+            <td class="kind">No</td>
+            <td class="desc">Quick plots, data wrangling, "show me what this CSV looks like"</td>
+          </tr>
+          <tr>
+            <td class="tool">Gemini code execution</td>
+            <td class="desc">Google sandbox</td>
+            <td class="kind">No</td>
+            <td class="desc">Inline Python results in chat, large-context analysis</td>
+          </tr>
+          <tr>
+            <td class="tool">Claude Code (CLI / IDE)</td>
+            <td class="desc">Your machine</td>
+            <td class="kind">Yes — via MCP</td>
+            <td class="desc">Real repo work, multi-file refactors, test runs</td>
+          </tr>
+          <tr>
+            <td class="tool">Jupyter AI</td>
+            <td class="desc">Your kernel</td>
+            <td class="kind">Yes</td>
+            <td class="desc">Notebook-native AI in JupyterLab; great for R / Python research</td>
+          </tr>
+          <tr>
+            <td class="tool">Cline + Ollama</td>
+            <td class="desc">Your machine, local model</td>
+            <td class="kind">Yes</td>
+            <td class="desc">Sensitive code; nothing leaves the laptop</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="small" style="margin-top: 50px; max-width: 1500px;">
+        Match the row to the data classification. Synthetic test data → row 1. De-identified cohort → row 3.
+        IRB-sensitive → row 5, or push to an institutional enclave.
+      </p>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>21 · EXECUTION</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       22 · SAFETY STACK
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="22 Safety Stack" class="slide-paper">
+    <div class="slide slide-paper">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>22 / Safety</div>
+      </div>
+
+      <div class="tag" style="margin-top: 28px;">Coding Safely With AI</div>
+      <h2 class="title" style="margin-top: 10px; max-width: 1600px; font-size: 52px;">Six categories. Work through them in order before pointing an agent at code that matters.</h2>
+
+      <div class="stack" style="margin-top: 28px;">
+        <div class="safety-row" style="padding: 14px 0;">
+          <div class="n">01</div>
+          <div class="h" style="font-size: 26px;">Review every line.</div>
+          <div class="d" style="font-size: 24px; line-height: 1.3;">Correctness, efficiency, maintainability. Test edge cases. Check for SQL injection, XSS, weak auth, secret leakage. If you don't understand a block, ask the AI to explain it.</div>
+        </div>
+        <div class="safety-row" style="padding: 14px 0;">
+          <div class="n">02</div>
+          <div class="h" style="font-size: 26px;">Local execution risks.</div>
+          <div class="d" style="font-size: 24px; line-height: 1.3;">FS, network, shell, env vars. Review commands before approving. Project-scoped venvs. Never store secrets in code. Avoid admin privileges.</div>
+        </div>
+        <div class="safety-row" style="padding: 14px 0;">
+          <div class="n">03</div>
+          <div class="h" style="font-size: 26px;">Bias, licensing, IP.</div>
+          <div class="d" style="font-size: 24px; line-height: 1.3;">Models reproduce non-inclusive identifiers, deprecated patterns, licensed code. AI-generated code is "common practice," not "best practice." Check license compatibility. Document AI use.</div>
+        </div>
+        <div class="safety-row" style="padding: 14px 0;">
+          <div class="n">04</div>
+          <div class="h" style="font-size: 26px;">Privacy &amp; data handling.</div>
+          <div class="d" style="font-size: 24px; line-height: 1.3;">Prompts, file contents, terminal output, project metadata — all leave your machine. Don't share PHI/PII in prompts. For sensitive code: Cline+Ollama, Aider+local LLM.</div>
+        </div>
+        <div class="safety-row" style="padding: 14px 0;">
+          <div class="n">05</div>
+          <div class="h" style="font-size: 26px;">Accessibility.</div>
+          <div class="d" style="font-size: 24px; line-height: 1.3;">Ask for WCAG review on UI code. Alt text, ARIA, color contrast, keyboard nav. Audit identifiers and comments for inclusive language.</div>
+        </div>
+        <div class="safety-row" style="padding: 14px 0;">
+          <div class="n">06</div>
+          <div class="h" style="font-size: 26px;">Environmental footprint.</div>
+          <div class="d" style="font-size: 24px; line-height: 1.3;">Don't use a frontier model when a smaller one will do. Cache results. Avoid agentic loops that fire speculative requests. Cumulative compute is the cost.</div>
+        </div>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>22 · SAFETY</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       23 · RESOURCES
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="23 Resources">
+    <div class="slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>23 / Resources</div>
+      </div>
+
+      <div class="tag" style="margin-top: 40px;">Bookmarks</div>
+      <h2 class="title" style="margin-top: 20px; max-width: 1600px;">Where to keep reading after the room empties out.</h2>
+
+      <div class="stack" style="margin-top: 60px;">
+        <div class="stack-row">
+          <div class="label">Vibe Coding</div>
+          <div class="val mono" style="color: var(--ua-red); font-size: 26px;">tyson-swetnam.github.io/intro-gpt/vibe/</div>
+        </div>
+        <div class="stack-row">
+          <div class="label">Research</div>
+          <div class="val mono" style="color: var(--ua-red); font-size: 26px;">tyson-swetnam.github.io/intro-gpt/research/</div>
+        </div>
+        <div class="stack-row">
+          <div class="label">Agentic AI</div>
+          <div class="val mono" style="color: var(--ua-red); font-size: 26px;">tyson-swetnam.github.io/intro-gpt/agentic/</div>
+        </div>
+        <div class="stack-row">
+          <div class="label">MCP</div>
+          <div class="val mono" style="color: var(--ua-red); font-size: 26px;">modelcontextprotocol.io  ·  /intro-gpt/mcp/</div>
+        </div>
+        <div class="stack-row">
+          <div class="label">Sandboxes</div>
+          <div class="val mono" style="color: var(--ua-red); font-size: 26px;">tyson-swetnam.github.io/intro-gpt/ai_sandboxes/</div>
+        </div>
+        <div class="stack-row">
+          <div class="label">Local models</div>
+          <div class="val mono" style="color: var(--ua-red); font-size: 26px;">ollama.com  ·  /intro-gpt/ollama/</div>
+        </div>
+        <div class="stack-row">
+          <div class="label">Claude Code</div>
+          <div class="val mono" style="color: var(--ua-red); font-size: 26px;">docs.anthropic.com/en/docs/claude-code</div>
+        </div>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>23 · RESOURCES</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       24 · Q&A
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="24 Thank You" class="slide-dark">
+    <div class="slide slide-dark">
+      <div class="title-slide">
+        <div class="grid-bg"></div>
+        <div class="deck-header">
+          <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+          <div>End · Q&amp;A</div>
+        </div>
+
+        <div class="title-slide-content" style="margin-top: 0;">
+          <div class="tag" style="color: var(--cream-warm);">Now point one at something.</div>
+          <h2 class="display" style="font-size: 184px;">
+            Boot a<br>sandbox<span style="color: var(--ua-red-bright);">.</span>
+          </h2>
+          <p class="body" style="max-width: 1200px; font-size: 34px;">
+            Pick a real task from this week. Spin up a devcontainer. Attach one MCP.
+            Watch the agent loop. Approve every write. Decide what to delegate next.
+          </p>
+        </div>
+
+        <div class="title-slide-content" style="gap: 12px;">
+          <div style="background: rgba(247,244,238,0.4); height: 1px; max-width: 600px;"></div>
+          <div style="display: flex; justify-content: space-between; align-items: flex-end;">
+            <div>
+              <div style="color: var(--cream); font-weight: 600; font-size: 36px;">Tyson Swetnam, PhD</div>
+              <div class="small mono" style="margin-top: 6px;">tswetnam@arizona.edu · @tswetnam</div>
+            </div>
+            <div class="mono small" style="text-align: right;">
+              BIO5 Institute<br>
+              University of Arizona
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</deck-stage>
+
+</body>
+</html>

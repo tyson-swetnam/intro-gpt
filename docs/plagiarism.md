@@ -342,6 +342,8 @@ PaperPal embraces AI as a writing aid while helping users maintain academic inte
 
 ## Comprehensive Detection Tool Comparison
 
+*Plagiarism-detection tool pricing is not part of the May 2026 verification round — confirm current pricing on vendor pages.*
+
 | Tool | Primary Use | AI Detection | Plagiarism | LMS Integration | Pricing Model | Accuracy Claims | Best For |
 |------|-------------|--------------|------------|-----------------|---------------|-----------------|----------|
 | **Turnitin** | Higher Ed | Yes | Yes | Canvas, Blackboard, Moodle, D2L | Institutional licensing | 98% full AI content | Universities with existing Turnitin |
@@ -858,7 +860,7 @@ When citing AI assistance in your work:
 
 ```
 APA Style (7th edition):
-OpenAI. (2026). ChatGPT (version GPT-4.5) [Large language model].
+OpenAI. (2026). ChatGPT [Large language model].
 https://chat.openai.com/
 
 In-text: (OpenAI, 2026)
@@ -1009,6 +1011,6 @@ If you answer "no" to any question, revise before submitting.
 
 ---
 
-**Last Updated:** January 2026
+**Last Updated:** May 2026
 
 *This guide will be updated as detection technology and institutional practices evolve.*
