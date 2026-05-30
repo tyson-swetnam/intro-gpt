@@ -4,7 +4,7 @@ A self-paced online workshop on generative AI and prompt engineering for academi
 
 ## Authors/Contributors
 
-*   [Tyson Swetnam](https://github.com/tyson-swetnam)
+*   [Tyson Swetnam](https://github.com/tyson-swetnam), [Jeff Gillan](https://github.com/jeffgillan)
 
 ## License
 
