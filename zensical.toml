@@ -124,6 +124,7 @@ Ethics = [
 Tutorials = [
     { "Claude Code Workflow" = "claude-code.md" },
     { "KEYS Internship (BIO5)" = "tutorials/keys.md" },
+    { "Presentations" = "tutorials/presentations/index.md" },
     { "Public Health" = "tutorials/publichealth/casestudy.md" },
     { "Map making" = "tutorials/publichealth/gis.md" }
 ]

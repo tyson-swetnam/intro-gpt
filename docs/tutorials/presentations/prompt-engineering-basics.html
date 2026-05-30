@@ -1,0 +1,1495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Prompt Engineering Deep Dive — UA PH&amp;AI 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<script src="deck-stage.js"></script>
+<style>
+  :root {
+    --ua-blue:        #0C234B;
+    --ua-blue-deep:   #07173a;
+    --ua-blue-mid:    #1b3870;
+    --ua-red:         #AB0520;
+    --ua-red-bright:  #c8102e;
+    --cream:          #f7f4ee;
+    --cream-warm:     #efe9dc;
+    --paper:          #fbfaf6;
+    --ink:            #161616;
+    --ink-soft:       #2a2a2a;
+    --mute:           #6b6b6b;
+    --rule:           #d8d2c4;
+    --rule-strong:    #2a2a2a;
+    --code-bg:        #0f1623;
+    --code-fg:        #e6edf3;
+    --good:           #1f7a4d;
+
+    --type-display:   140px;
+    --type-title:     72px;
+    --type-subtitle:  44px;
+    --type-body:      32px;
+    --type-small:     26px;
+    --type-tag:       24px;
+    --type-mono-sm:   24px;
+
+    --pad-x:          110px;
+    --pad-top:        96px;
+    --pad-bottom:     90px;
+    --gap-title:      48px;
+    --gap-item:       28px;
+  }
+
+  html, body { margin: 0; padding: 0; background: #000; }
+  body { font-family: 'Manrope', system-ui, sans-serif; color: var(--ink); }
+
+  deck-stage section {
+    box-sizing: border-box;
+    overflow: hidden;
+    background: var(--cream);
+    color: var(--ink);
+    font-family: 'Manrope', system-ui, sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .slide {
+    padding: var(--pad-top) var(--pad-x) var(--pad-bottom);
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+  .slide-dark { background: var(--ua-blue); color: var(--cream); }
+  .slide-paper { background: var(--paper); }
+  .slide-red { background: var(--ua-red); color: var(--cream); }
+
+  .tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: var(--type-tag);
+    font-weight: 500;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ua-red);
+  }
+  .slide-dark .tag { color: var(--cream-warm); opacity: 0.85; }
+  .slide-red .tag { color: var(--cream); opacity: 0.85; }
+
+  .title {
+    font-size: var(--type-title);
+    font-weight: 700;
+    line-height: 1.02;
+    letter-spacing: -0.02em;
+    margin: 0;
+    text-wrap: balance;
+  }
+  .display {
+    font-size: var(--type-display);
+    font-weight: 800;
+    line-height: 0.95;
+    letter-spacing: -0.035em;
+    margin: 0;
+    text-wrap: balance;
+  }
+  .subtitle {
+    font-size: var(--type-subtitle);
+    font-weight: 500;
+    line-height: 1.18;
+    color: var(--ink-soft);
+    margin: 0;
+    text-wrap: pretty;
+  }
+  .slide-dark .subtitle, .slide-red .subtitle { color: var(--cream-warm); }
+  .body {
+    font-size: var(--type-body);
+    font-weight: 400;
+    line-height: 1.42;
+    color: var(--ink-soft);
+    margin: 0;
+    text-wrap: pretty;
+  }
+  .slide-dark .body { color: var(--cream-warm); }
+  .small {
+    font-size: var(--type-small);
+    color: var(--mute);
+    line-height: 1.4;
+  }
+  .slide-dark .small { color: rgba(247,244,238,0.65); }
+  .mono { font-family: 'JetBrains Mono', monospace; }
+
+  .deck-header {
+    position: absolute;
+    top: 38px;
+    left: var(--pad-x);
+    right: var(--pad-x);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--mute);
+  }
+  .slide-dark .deck-header,
+  .slide-red .deck-header { color: rgba(247,244,238,0.55); }
+  .deck-header .lockup { display: flex; align-items: center; gap: 14px; }
+  .deck-header .ua-block {
+    display: inline-block;
+    width: 38px; height: 38px;
+    background: var(--ua-red);
+    color: var(--cream);
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: -0.04em;
+  }
+  .slide-red .deck-header .ua-block { background: var(--cream); color: var(--ua-red); }
+
+  .deck-footer {
+    position: absolute;
+    bottom: 38px;
+    left: var(--pad-x);
+    right: var(--pad-x);
+    display: flex;
+    justify-content: space-between;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--mute);
+  }
+  .slide-dark .deck-footer,
+  .slide-red .deck-footer { color: rgba(247,244,238,0.5); }
+
+  .cols-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; flex: 1; }
+  .cols-2-uneven { display: grid; grid-template-columns: 1.2fr 1fr; gap: 80px; flex: 1; }
+  .cols-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 48px; flex: 1; }
+
+  .checklist { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: var(--gap-item); }
+  .checklist li { display: flex; gap: 22px; font-size: var(--type-body); line-height: 1.35; color: var(--ink-soft); }
+  .checklist .num {
+    flex: 0 0 auto;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 26px;
+    font-weight: 500;
+    color: var(--ua-red);
+    padding-top: 10px;
+    letter-spacing: 0.06em;
+  }
+  .slide-dark .checklist li { color: var(--cream-warm); }
+  .slide-dark .checklist .num { color: var(--cream); opacity: 0.7; }
+
+  .card {
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    padding: 38px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .slide-dark .card {
+    background: rgba(255,255,255,0.04);
+    border-color: rgba(247,244,238,0.18);
+    color: var(--cream);
+  }
+  .card h4 {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: -0.01em;
+    line-height: 1.05;
+  }
+  .card p {
+    font-size: 26px;
+    line-height: 1.4;
+    color: var(--ink-soft);
+    margin: 0;
+  }
+  .slide-dark .card p { color: var(--cream-warm); }
+  .card .kicker {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ua-red);
+  }
+
+  pre.code {
+    background: var(--code-bg);
+    color: var(--code-fg);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    line-height: 1.5;
+    padding: 36px 42px;
+    margin: 0;
+    border-radius: 4px;
+    overflow: hidden;
+    white-space: pre-wrap;
+  }
+  pre.code .c { color: #8b96a8; }
+  pre.code .k { color: #ffb86c; }
+  pre.code .s { color: #a6e22e; }
+  pre.code .v { color: #79c0ff; }
+  pre.code .x { color: #ff7b72; }
+
+  .rule { height: 1px; background: var(--rule); margin: 0; }
+  .rule-strong { height: 2px; background: var(--ink); margin: 0; }
+  .slide-dark .rule { background: rgba(247,244,238,0.18); }
+  .slide-dark .rule-strong { background: var(--cream); }
+
+  .placeholder {
+    background:
+      repeating-linear-gradient(135deg,
+        rgba(12,35,75,0.06) 0,
+        rgba(12,35,75,0.06) 14px,
+        rgba(12,35,75,0.10) 14px,
+        rgba(12,35,75,0.10) 28px);
+    border: 1px solid var(--rule);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--ink-soft);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 24px;
+    box-sizing: border-box;
+  }
+
+  .section-slide {
+    padding: var(--pad-top) var(--pad-x) var(--pad-bottom);
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+  }
+  .section-slide .part-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 28px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    opacity: 0.7;
+    margin-bottom: 36px;
+  }
+  .section-slide .section-title {
+    font-size: 160px;
+    font-weight: 800;
+    line-height: 0.92;
+    letter-spacing: -0.035em;
+    margin: 0;
+    text-wrap: balance;
+  }
+  .section-slide .section-sub {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.3;
+    max-width: 1100px;
+    margin-top: 36px;
+    opacity: 0.85;
+  }
+
+  .title-slide {
+    height: 100%;
+    box-sizing: border-box;
+    padding: var(--pad-top) var(--pad-x) var(--pad-bottom);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+  }
+  .title-slide .grid-bg {
+    position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(247,244,238,0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(247,244,238,0.05) 1px, transparent 1px);
+    background-size: 80px 80px;
+    pointer-events: none;
+  }
+  .title-slide-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .step-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ua-red);
+    margin-bottom: 18px;
+  }
+
+  table.surfaces {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 26px;
+  }
+  table.surfaces th, table.surfaces td {
+    text-align: left;
+    padding: 20px 20px;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+  }
+  table.surfaces th {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--mute);
+    font-weight: 500;
+    border-bottom: 2px solid var(--ink);
+  }
+  table.surfaces td.tool {
+    font-weight: 700;
+    color: var(--ink);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+  }
+  table.surfaces td.kind {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    color: var(--ua-red);
+  }
+  table.surfaces td.desc { color: var(--ink-soft); font-size: 24px; }
+
+  .stack { display: flex; flex-direction: column; gap: 0; }
+  .stack-row {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 40px;
+    padding: 28px 0;
+    border-bottom: 1px solid var(--rule);
+    align-items: baseline;
+  }
+  .stack-row:last-child { border-bottom: none; }
+  .stack-row .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--ua-red);
+  }
+  .stack-row .val {
+    font-size: 30px;
+    color: var(--ink-soft);
+    line-height: 1.35;
+  }
+  .stack-row .val strong { color: var(--ink); font-weight: 700; }
+
+  /* Pipeline pills */
+  .pipeline {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 18px;
+  }
+  .pipe {
+    border: 1px solid var(--rule);
+    background: var(--paper);
+    padding: 28px 26px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .pipe .num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    letter-spacing: 0.14em;
+    color: var(--ua-red);
+  }
+  .pipe h5 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    line-height: 1.05;
+  }
+  .pipe p { margin: 0; font-size: 24px; line-height: 1.4; color: var(--ink-soft); }
+  .pipe.hi {
+    background: var(--ua-blue);
+    border-color: var(--ua-blue);
+    color: var(--cream);
+  }
+  .pipe.hi h5 { color: var(--cream); }
+  .pipe.hi p { color: var(--cream-warm); }
+  .pipe.hi .num { color: var(--cream-warm); }
+
+  /* CRAFT letter monogram */
+  .craft-letter {
+    font-size: 360px;
+    font-weight: 800;
+    line-height: 0.85;
+    letter-spacing: -0.05em;
+    color: var(--ua-red);
+  }
+  .slide-dark .craft-letter { color: var(--cream); }
+
+  /* Good/Bad badges */
+  .bad-good { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+  .bg-card {
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    padding: 32px 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .bg-card .badge {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    padding: 6px 14px;
+    align-self: flex-start;
+  }
+  .bg-card.bad { border-left: 6px solid var(--ua-red); }
+  .bg-card.bad .badge { background: var(--ua-red); color: var(--cream); }
+  .bg-card.good { border-left: 6px solid var(--good); }
+  .bg-card.good .badge { background: var(--good); color: var(--cream); }
+  .bg-card .quote {
+    font-size: 28px;
+    line-height: 1.4;
+    color: var(--ink-soft);
+    font-family: 'JetBrains Mono', monospace;
+  }
+</style>
+</head>
+<body>
+
+<deck-stage width="1920" height="1080">
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       1 · TITLE SLIDE
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="01 Title" class="slide-dark">
+    <div class="title-slide">
+      <div class="grid-bg"></div>
+      <div class="deck-header">
+        <div class="lockup">
+          <span class="ua-block">A</span>
+          <span>University of Arizona · BIO5 Institute</span>
+        </div>
+        <div>PH&amp;AI Summer School · 2nd Edition</div>
+      </div>
+
+      <div class="title-slide-content" style="margin-top: 60px;">
+        <div class="tag" style="font-size: 26px;">AI Fluency Track · Deep Dive</div>
+        <h1 class="display" style="font-size: 168px;">
+          Prompt<br>Engineering,<br><span style="color: var(--ua-red-bright);">on purpose.</span>
+        </h1>
+      </div>
+
+      <div class="title-slide-content" style="gap: 12px;">
+        <div class="rule-strong" style="background: rgba(247,244,238,0.4); height: 1px; max-width: 600px;"></div>
+        <div style="display: flex; justify-content: space-between; align-items: flex-end;">
+          <div>
+            <div class="body" style="color: var(--cream); font-weight: 600; font-size: 36px;">Tyson Swetnam, PhD</div>
+            <div class="small" style="margin-top: 6px;">Associate Professor · BIO5 Institute</div>
+          </div>
+          <div class="mono small" style="text-align: right;">
+            Grand Challenges Research Building<br>
+            Tucson, AZ · June 2026
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       2 · WHAT YOU'LL LEAVE WITH
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="02 Outcome">
+    <div class="slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>02 / Outcome</div>
+      </div>
+
+      <div class="cols-2-uneven" style="margin-top: 70px;">
+        <div style="display: flex; flex-direction: column; justify-content: center;">
+          <div class="tag">What You'll Leave With</div>
+          <h2 class="title" style="margin-top: 24px;">Four things, transferable across every chat window you open.</h2>
+          <p class="body" style="margin-top: 36px; max-width: 720px;">
+            This deck mirrors <span class="mono" style="color: var(--ua-red); font-size: 28px;">intro-gpt/prompts/</span>.
+            Pull it up alongside — every section in the slides has a deeper write-up there.
+          </p>
+        </div>
+        <ul class="checklist" style="align-self: center;">
+          <li><span class="num">01</span><div><strong style="color: var(--ink);">Fundamentals.</strong> How AI models actually process and respond to prompts.</div></li>
+          <li><span class="num">02</span><div><strong style="color: var(--ink);">Modern features.</strong> Document upload, web search, multi-modal inputs.</div></li>
+          <li><span class="num">03</span><div><strong style="color: var(--ink);">Best practices.</strong> Structured approaches to writing effective prompts.</div></li>
+          <li><span class="num">04</span><div><strong style="color: var(--ink);">Advanced techniques.</strong> Context management, chaining, custom instructions.</div></li>
+        </ul>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>02 · OUTCOME</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       3 · SECTION DIVIDER · PART 1
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="03 Part 1 Divider" class="slide-dark">
+    <div class="section-slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>Part 01 · Mental Model</div>
+      </div>
+      <div>
+        <div class="part-num">Part 01</div>
+        <h2 class="section-title">What the model<br>actually sees.</h2>
+        <p class="section-sub">
+          Five stages from your keystrokes to its first token. Skip this and you'll
+          spend the rest of your career arguing with a black box.
+        </p>
+      </div>
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>03 · PART 01</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       4 · THE PROCESSING PIPELINE
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="04 Pipeline">
+    <div class="slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>04 / The Pipeline</div>
+      </div>
+
+      <div class="tag" style="margin-top: 40px;">How AI Models Process Your Input</div>
+      <h2 class="title" style="margin-top: 24px; max-width: 1500px;">Five stages between your keystrokes and the first generated token.</h2>
+
+      <div class="pipeline" style="margin-top: 90px;">
+        <div class="pipe">
+          <div class="num">01</div>
+          <h5>Tokenization.</h5>
+          <p>Your prompt is broken into smaller units — tokens. Whitespace, punctuation, sub-words.</p>
+        </div>
+        <div class="pipe">
+          <div class="num">02</div>
+          <h5>Context assembly.</h5>
+          <p>Uploaded documents and prior conversation are stitched in alongside your message.</p>
+        </div>
+        <div class="pipe hi">
+          <div class="num">03</div>
+          <h5>Attention.</h5>
+          <p>The model weighs which parts of that context matter for the next token. This is where prompt phrasing pays off.</p>
+        </div>
+        <div class="pipe">
+          <div class="num">04</div>
+          <h5>Generation.</h5>
+          <p>Response is produced token by token, conditioned on everything seen so far.</p>
+        </div>
+        <div class="pipe">
+          <div class="num">05</div>
+          <h5>Formatting.</h5>
+          <p>Output is structured according to your specifications — markdown, JSON, code blocks.</p>
+        </div>
+      </div>
+
+      <p class="small" style="margin-top: 80px; max-width: 1400px;">
+        Most "the AI didn't listen" complaints are actually stage 03 problems: the relevant
+        instruction was buried in a wall of context, and the model attended to something else.
+      </p>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>04 · PIPELINE</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       5 · CAPABILITY LANDSCAPE
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="05 Capability Table" class="slide-paper">
+    <div class="slide slide-paper">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>05 / Tooling 2026</div>
+      </div>
+
+      <div class="tag" style="margin-top: 40px;">Core Features of Today's AI Tools</div>
+      <h2 class="title" style="margin-top: 24px; max-width: 1600px;">The picture in mid-2026 — pick the surface that matches the job.</h2>
+
+      <table class="surfaces" style="margin-top: 56px;">
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>Claude</th>
+            <th>ChatGPT</th>
+            <th>Gemini</th>
+            <th>NotebookLM</th>
+            <th>Copilot</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="tool">Document upload</td>
+            <td class="desc">PDFs, text, code</td>
+            <td class="desc">PDFs, images, data</td>
+            <td class="desc">PDFs, images, GDrive</td>
+            <td class="desc">PDFs, Google Docs</td>
+            <td class="desc">PDFs, OneDrive</td>
+          </tr>
+          <tr>
+            <td class="tool">Web search</td>
+            <td class="kind">via MCP</td>
+            <td class="desc">Yes</td>
+            <td class="desc">Yes</td>
+            <td class="desc">Yes</td>
+            <td class="desc">Yes</td>
+          </tr>
+          <tr>
+            <td class="tool">Context window</td>
+            <td class="kind">200K</td>
+            <td class="kind">128K</td>
+            <td class="kind">2M</td>
+            <td class="desc">Document-based</td>
+            <td class="kind">128K</td>
+          </tr>
+          <tr>
+            <td class="tool">File analysis</td>
+            <td class="desc">Yes</td>
+            <td class="desc">Yes</td>
+            <td class="desc">Yes</td>
+            <td class="desc">Deep analysis</td>
+            <td class="desc">Yes</td>
+          </tr>
+          <tr>
+            <td class="tool">Code execution</td>
+            <td class="kind">Yes (MCP)</td>
+            <td class="desc">Yes</td>
+            <td class="desc">Yes</td>
+            <td class="desc" style="color: var(--mute);">No</td>
+            <td class="desc">Yes</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="small" style="margin-top: 50px; max-width: 1500px;">
+        Context-window size is rarely the bottleneck — placement and phrasing inside it usually are.
+        A 2M-token window does not exempt you from CRAFT.
+      </p>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>05 · TOOLING</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       6 · GOOD / BETTER / BEST
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="06 Good Better Best">
+    <div class="slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>06 / Anatomy</div>
+      </div>
+
+      <div class="tag" style="margin-top: 40px;">The Foundation · Clear Instructions</div>
+      <h2 class="title" style="margin-top: 24px; max-width: 1600px;">Same task, three drafts. Watch the prompt grow a spine.</h2>
+
+      <div class="cols-3" style="margin-top: 48px; gap: 36px;">
+        <div style="display: flex; flex-direction: column; gap: 14px;">
+          <div class="step-label" style="margin-bottom: 0;">Basic</div>
+          <pre class="code" style="font-size: 24px; padding: 22px 24px; line-height: 1.35;"><span class="c"># Basic</span>
+<span class="s">"Summarize this
+research paper
+in 3 bullet points"</span></pre>
+          <p class="small" style="font-size: 24px;">A request. No role. No structure. You can't predict what you'll get.</p>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 14px;">
+          <div class="step-label" style="margin-bottom: 0; color: var(--ink);">Better</div>
+          <pre class="code" style="font-size: 24px; padding: 22px 24px; line-height: 1.35;"><span class="c"># Better</span>
+<span class="s">"As a research
+scientist, summarize
+the key findings
+from this paper in
+3 bullets, focusing
+on methodology and
+results"</span></pre>
+          <p class="small" style="font-size: 24px;">Adds a <strong style="color: var(--ink);">role</strong> and a <strong style="color: var(--ink);">focus</strong>.</p>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 14px;">
+          <div class="step-label" style="margin-bottom: 0; color: var(--good);">Best</div>
+          <pre class="code" style="font-size: 24px; padding: 22px 24px; line-height: 1.35;"><span class="c"># Best</span>
+<span class="s">"You are a research
+scientist reviewing
+for a journal.
+Summarize the PDF
+in 3 bullets:
+1. Q &amp; hypothesis
+2. Methods &amp; n
+3. Findings &amp; limits
+Format as a list."</span></pre>
+          <p class="small" style="font-size: 24px;">Role · audience · scope · format. Reproducible.</p>
+        </div>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>06 · ANATOMY</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       7 · SECTION DIVIDER · PART 2 — CRAFT
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="07 Part 2 Divider" class="slide-red">
+    <div class="section-slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>Part 02 · The CRAFT Framework</div>
+      </div>
+      <div>
+        <div class="part-num">Part 02</div>
+        <h2 class="section-title">C·R·A·F·T</h2>
+        <p class="section-sub">
+          Context · Role · Action · Format · Tone. Five fields. One mnemonic.
+          The fastest way to make a prompt reproducible.
+        </p>
+      </div>
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>07 · PART 02</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       8 · CRAFT · CONTEXT
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="08 CRAFT Context">
+    <div class="slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>08 / CRAFT · 01</div>
+      </div>
+
+      <div class="cols-2-uneven" style="margin-top: 70px;">
+        <div style="display: flex; flex-direction: column; justify-content: center;">
+          <div class="craft-letter">C.</div>
+        </div>
+        <div style="display: flex; flex-direction: column; justify-content: center;">
+          <div class="tag">01 · Context</div>
+          <h2 class="title" style="margin-top: 20px;">Set the scene.</h2>
+          <p class="body" style="margin-top: 32px;">
+            Provide background information. What project is this? Who is the audience?
+            What's the upstream goal that this prompt serves?
+          </p>
+          <div class="card" style="margin-top: 40px;">
+            <div class="kicker">In practice</div>
+            <p style="font-size: 26px; font-family: 'JetBrains Mono', monospace;">"I'm preparing a grant proposal for NSF funding on AI in education…"</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>08 · CONTEXT</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       9 · CRAFT · ROLE
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="09 CRAFT Role" class="slide-paper">
+    <div class="slide slide-paper">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>09 / CRAFT · 02</div>
+      </div>
+
+      <div class="cols-2-uneven" style="margin-top: 70px;">
+        <div style="display: flex; flex-direction: column; justify-content: center;">
+          <div class="craft-letter">R.</div>
+        </div>
+        <div style="display: flex; flex-direction: column; justify-content: center;">
+          <div class="tag">02 · Role</div>
+          <h2 class="title" style="margin-top: 20px;">Define who the AI is.</h2>
+          <p class="body" style="margin-top: 32px;">
+            A role anchors the model to a register, a vocabulary, and a set of priors.
+            "Grant writer" produces different prose than "tweet writer", even with the same task.
+          </p>
+          <div class="card" style="margin-top: 40px;">
+            <div class="kicker">In practice</div>
+            <p style="font-size: 26px; font-family: 'JetBrains Mono', monospace;">"Act as an experienced grant writer and education researcher…"</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>09 · ROLE</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       10 · CRAFT · ACTION
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="10 CRAFT Action">
+    <div class="slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>10 / CRAFT · 03</div>
+      </div>
+
+      <div class="cols-2-uneven" style="margin-top: 70px;">
+        <div style="display: flex; flex-direction: column; justify-content: center;">
+          <div class="craft-letter">A.</div>
+        </div>
+        <div style="display: flex; flex-direction: column; justify-content: center;">
+          <div class="tag">03 · Action</div>
+          <h2 class="title" style="margin-top: 20px;">Specify the verb.</h2>
+          <p class="body" style="margin-top: 32px;">
+            One unambiguous task. "Review" is not "rewrite". "Summarize" is not "expand".
+            If you need three actions, number them.
+          </p>
+          <div class="card" style="margin-top: 40px;">
+            <div class="kicker">In practice</div>
+            <p style="font-size: 26px; font-family: 'JetBrains Mono', monospace;">"Review my draft introduction and suggest improvements…"</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>10 · ACTION</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       11 · CRAFT · FORMAT
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="11 CRAFT Format" class="slide-paper">
+    <div class="slide slide-paper">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>11 / CRAFT · 04</div>
+      </div>
+
+      <div class="cols-2-uneven" style="margin-top: 70px;">
+        <div style="display: flex; flex-direction: column; justify-content: center;">
+          <div class="craft-letter">F.</div>
+        </div>
+        <div style="display: flex; flex-direction: column; justify-content: center;">
+          <div class="tag">04 · Format</div>
+          <h2 class="title" style="margin-top: 20px;">Describe the shape.</h2>
+          <p class="body" style="margin-top: 32px;">
+            Markdown headers, bulleted lists, a comparison table, a JSON object,
+            tracked-changes. The model will pick a default if you don't — and you usually won't like it.
+          </p>
+          <div class="card" style="margin-top: 40px;">
+            <div class="kicker">In practice</div>
+            <p style="font-size: 26px; font-family: 'JetBrains Mono', monospace;">"Provide feedback as tracked changes with explanations…"</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>11 · FORMAT</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       12 · CRAFT · TONE
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="12 CRAFT Tone">
+    <div class="slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>12 / CRAFT · 05</div>
+      </div>
+
+      <div class="cols-2-uneven" style="margin-top: 70px;">
+        <div style="display: flex; flex-direction: column; justify-content: center;">
+          <div class="craft-letter">T.</div>
+        </div>
+        <div style="display: flex; flex-direction: column; justify-content: center;">
+          <div class="tag">05 · Tone</div>
+          <h2 class="title" style="margin-top: 20px;">Indicate style and voice.</h2>
+          <p class="body" style="margin-top: 32px;">
+            Professional · constructive · skeptical · plain-English-for-a-policymaker. Tone is
+            the one CRAFT field most people skip — and it's the difference between usable and rewriting from scratch.
+          </p>
+          <div class="card" style="margin-top: 40px;">
+            <div class="kicker">In practice</div>
+            <p style="font-size: 26px; font-family: 'JetBrains Mono', monospace;">"Professional, constructive, and encouraging."</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>12 · TONE</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       13 · CRAFT EXAMPLE — ALL TOGETHER
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="13 CRAFT Example" class="slide-dark">
+    <div class="slide slide-dark">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>13 / CRAFT in Full</div>
+      </div>
+
+      <div class="tag" style="margin-top: 40px; color: var(--cream-warm);">CRAFT · Worked Example</div>
+      <h2 class="title" style="margin-top: 24px; color: var(--cream); max-width: 1600px;">All five fields, one prompt, copy-able.</h2>
+
+      <div class="cols-2-uneven" style="margin-top: 56px;">
+        <pre class="code" style="font-size: 24px;"><span class="x">Context:</span> I'm preparing a grant proposal
+   for NSF funding on AI in education.
+
+<span class="x">Role:</span>    Act as an experienced grant
+   writer and education researcher.
+
+<span class="x">Action:</span>  Review my draft introduction
+   and suggest improvements.
+
+<span class="x">Format:</span>  Provide feedback as tracked
+   changes with explanations.
+
+<span class="x">Tone:</span>    Professional, constructive,
+   and encouraging.</pre>
+        <div style="display: flex; flex-direction: column; gap: 24px; justify-content: center;">
+          <div class="card" style="background: rgba(255,255,255,0.04); border-color: rgba(247,244,238,0.18);">
+            <div class="kicker" style="color: var(--cream-warm);">Why it works</div>
+            <p style="color: var(--cream-warm); font-size: 26px;">Every field constrains a different degree of freedom.
+            The model has nowhere to drift.</p>
+          </div>
+          <div class="card" style="background: rgba(255,255,255,0.04); border-color: rgba(247,244,238,0.18);">
+            <div class="kicker" style="color: var(--cream-warm);">Save it</div>
+            <p style="color: var(--cream-warm); font-size: 26px;">A reusable CRAFT block becomes a custom instruction,
+            a Project, or a prompt template.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>13 · CRAFT FULL</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       14 · SECTION DIVIDER · PART 3 — ADVANCED
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="14 Part 3 Divider" class="slide-dark">
+    <div class="section-slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>Part 03 · Advanced Techniques</div>
+      </div>
+      <div>
+        <div class="part-num">Part 03</div>
+        <h2 class="section-title">Past the<br>single prompt.</h2>
+        <p class="section-sub">
+          System instructions · few-shot · chaining · multi-modal · web search.
+          The vocabulary you need to recognize, even if you only use three of them this month.
+        </p>
+      </div>
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>14 · PART 03</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       15 · CUSTOM INSTRUCTIONS / SYSTEM PROMPTS
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="15 Custom Instructions">
+    <div class="slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>15 / Technique 01</div>
+      </div>
+
+      <div class="step-label" style="margin-top: 40px;">Technique 01</div>
+      <h2 class="title" style="margin-top: 8px; max-width: 1600px;">Custom instructions: CRAFT, but persistent.</h2>
+
+      <div class="cols-2-uneven" style="margin-top: 50px;">
+        <pre class="code" style="font-size: 24px;"><span class="c"># Project Context</span>
+I'm a data scientist working on
+machine learning projects.
+Always provide Python code examples
+using scikit-learn and pandas.
+Include docstrings and type hints
+in all code.
+
+<span class="c"># Response Preferences</span>
+- Be concise but thorough
+- Explain complex concepts with analogies
+- Always cite sources when making
+  factual claims</pre>
+        <div style="display: flex; flex-direction: column; gap: 24px; justify-content: center;">
+          <div class="card">
+            <div class="kicker">Where it lives</div>
+            <div style="display: grid; grid-template-columns: 120px 1fr; gap: 8px 20px; font-size: 26px; line-height: 1.4;">
+              <div style="font-weight: 600; color: var(--ink);">Claude</div><div style="color: var(--ink-soft);">System Instructions</div>
+              <div style="font-weight: 600; color: var(--ink);">Gemini</div><div style="color: var(--ink-soft);">Custom Instructions</div>
+              <div style="font-weight: 600; color: var(--ink);">ChatGPT</div><div style="color: var(--ink-soft);">Custom GPTs or Projects</div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="kicker">Why bother</div>
+            <p style="font-size: 26px;">It becomes a global rule applied to every prompt that follows — your defaults move up to the platform layer, not the chat.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>15 · SYSTEM PROMPTS</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       16 · FEW-SHOT
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="16 Few-Shot" class="slide-paper">
+    <div class="slide slide-paper">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>16 / Technique 02</div>
+      </div>
+
+      <div class="step-label" style="margin-top: 40px;">Technique 02 — Few-shot learning</div>
+      <h2 class="title" style="margin-top: 8px; max-width: 1600px;">Show, don't tell. Three labeled examples beat a paragraph of instructions.</h2>
+
+      <div class="cols-2-uneven" style="margin-top: 50px;">
+        <pre class="code" style="font-size: 24px;">I need to classify customer feedback.
+Here are examples:
+
+<span class="s">"The product arrived damaged"</span>
+   → Category: <span class="v">Shipping Issue</span>
+<span class="s">"Can't log into my account"</span>
+   → Category: <span class="v">Technical Support</span>
+<span class="s">"Love the new features!"</span>
+   → Category: <span class="v">Positive Feedback</span>
+
+Now classify these:
+1. "The app keeps crashing on startup"
+2. "Best purchase I've made this year"
+3. "Package was left in the rain"</pre>
+        <div style="display: flex; flex-direction: column; gap: 24px; justify-content: center;">
+          <div class="card">
+            <div class="kicker">Rule of thumb</div>
+            <p style="font-size: 26px;">3–5 examples is the sweet spot. Cover the corners of the label space, not just the easy cases.</p>
+          </div>
+          <div class="card" style="border-color: var(--ua-red);">
+            <div class="kicker">Public-health twist</div>
+            <p style="font-size: 26px;">Few-shot is how you teach a model your local ICD coding shorthand, your survey response taxonomy, or your team's review rubric — without fine-tuning.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>16 · FEW-SHOT</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       17 · PROMPT CHAINING
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="17 Chaining">
+    <div class="slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>17 / Technique 03</div>
+      </div>
+
+      <div class="step-label" style="margin-top: 40px;">Technique 03 — Prompt chaining</div>
+      <h2 class="title" style="margin-top: 8px; max-width: 1600px;">Build complex outputs through a sequence — not one mega-prompt.</h2>
+
+      <div class="stack" style="margin-top: 80px;">
+        <div class="stack-row" style="grid-template-columns: 260px 200px 1fr;">
+          <div class="label">Start broad</div>
+          <div class="mono small" style="color: var(--ua-red);">prompt 01</div>
+          <div class="val">"Outline a research paper on sustainable AI."</div>
+        </div>
+        <div class="stack-row" style="grid-template-columns: 260px 200px 1fr;">
+          <div class="label">Zoom in</div>
+          <div class="mono small" style="color: var(--ua-red);">prompt 02</div>
+          <div class="val">"Expand section 3 on energy-efficient training methods."</div>
+        </div>
+        <div class="stack-row" style="grid-template-columns: 260px 200px 1fr;">
+          <div class="label">Refine</div>
+          <div class="mono small" style="color: var(--ua-red);">prompt 03</div>
+          <div class="val">"Add citations and make the tone more academic."</div>
+        </div>
+        <div class="stack-row" style="grid-template-columns: 260px 200px 1fr;">
+          <div class="label">Polish</div>
+          <div class="mono small" style="color: var(--ua-red);">prompt 04</div>
+          <div class="val">"Format according to IEEE standards."</div>
+        </div>
+      </div>
+
+      <p class="small" style="margin-top: 60px; max-width: 1400px;">
+        Each turn corrects course. You're trading one undirected lottery ticket
+        for four checkpoints where you can intervene.
+      </p>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>17 · CHAINING</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       18 · MULTI-MODAL + WEB SEARCH
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="18 Multimodal Search" class="slide-paper">
+    <div class="slide slide-paper">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>18 / Techniques 04 + 05</div>
+      </div>
+
+      <div class="tag" style="margin-top: 40px;">Combining inputs &amp; live retrieval</div>
+      <h2 class="title" style="margin-top: 24px; max-width: 1600px;">Multi-modal prompting and web search — the two cheat codes most people leave on the table.</h2>
+
+      <div class="cols-2" style="margin-top: 40px; gap: 60px; flex: 0 1 auto;">
+        <div style="display: flex; flex-direction: column; gap: 18px; min-height: 0;">
+          <div class="step-label" style="margin-bottom: 0;">Technique 04 — Multi-modal</div>
+          <pre class="code" style="font-size: 24px; line-height: 1.4; padding: 28px 32px;">I've uploaded:
+1. A screenshot of my dashboard
+2. The underlying data in CSV
+3. Our brand guidelines PDF
+
+Create a redesigned dashboard:
+- improve data viz
+- adhere to our brand colors
+- highlight the data-dict KPIs</pre>
+          <p class="small" style="font-size: 24px;">A single prompt that sees pixels, rows, and rules at once.</p>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 18px; min-height: 0;">
+          <div class="step-label" style="margin-bottom: 0;">Technique 05 — Web search</div>
+          <pre class="code" style="font-size: 24px; line-height: 1.4; padding: 28px 32px;">Search for the latest research on
+the public health benefits of
+vaccination published in 2024.
+
+Focus on:
+- Top conferences (AHA, ASPPH)
+- mRNA, Bird Flu, COVID
+
+Summarize the top 5 with links.</pre>
+          <p class="small" style="font-size: 24px;">Pair retrieval with a citation requirement — or you get confident summaries with no source trail.</p>
+        </div>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>18 · MULTI-MODAL + SEARCH</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       19 · SECTION DIVIDER · PART 4 — PITFALLS
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="19 Part 4 Divider" class="slide-red">
+    <div class="section-slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>Part 04 · Common Pitfalls</div>
+      </div>
+      <div>
+        <div class="part-num">Part 04</div>
+        <h2 class="section-title">Four ways<br>to fail.</h2>
+        <p class="section-sub">
+          The mistakes that show up in every workshop, every cohort, every project —
+          and the small rewrites that fix them.
+        </p>
+      </div>
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>19 · PART 04</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       20 · PITFALLS · VAGUE / OVERLOAD
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="20 Pitfalls 1-2">
+    <div class="slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>20 / Pitfalls 01–02</div>
+      </div>
+
+      <div class="tag" style="margin-top: 40px;">The most common rewrites</div>
+      <h2 class="title" style="margin-top: 24px; max-width: 1600px;">Vague instructions &amp; information overload.</h2>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 60px;">
+        <div>
+          <div class="step-label" style="margin-bottom: 12px;">Pitfall 01 — Vague instructions</div>
+          <div class="bad-good" style="grid-template-columns: 1fr;">
+            <div class="bg-card bad">
+              <span class="badge">Poor</span>
+              <p class="quote">"Make this better."</p>
+            </div>
+            <div class="bg-card good">
+              <span class="badge">Better</span>
+              <p class="quote">"Improve this abstract by making it more concise (under 250 words), adding keywords, and ensuring it follows the journal's structure: background, methods, results, conclusions."</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="step-label" style="margin-bottom: 12px;">Pitfall 02 — Information overload</div>
+          <div class="bad-good" style="grid-template-columns: 1fr;">
+            <div class="bg-card bad">
+              <span class="badge">Poor</span>
+              <p class="quote">Uploading 50 documents without guidance.</p>
+            </div>
+            <div class="bg-card good">
+              <span class="badge">Better</span>
+              <p class="quote">"Focus on documents 1–3 which contain the methodology. Ignore the appendices."</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>20 · PITFALLS 01–02</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       21 · PITFALLS · ASSUMING / NO FORMAT
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="21 Pitfalls 3-4" class="slide-paper">
+    <div class="slide slide-paper">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>21 / Pitfalls 03–04</div>
+      </div>
+
+      <div class="tag" style="margin-top: 40px;">The other two everyone makes</div>
+      <h2 class="title" style="margin-top: 24px; max-width: 1600px;">Assuming knowledge &amp; leaving the format up to the model.</h2>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 60px;">
+        <div>
+          <div class="step-label" style="margin-bottom: 12px;">Pitfall 03 — Assuming knowledge</div>
+          <div class="bad-good" style="grid-template-columns: 1fr;">
+            <div class="bg-card bad">
+              <span class="badge">Poor</span>
+              <p class="quote">"Fix the usual issues."</p>
+            </div>
+            <div class="bg-card good">
+              <span class="badge">Better</span>
+              <p class="quote">"Check for: passive voice, sentences over 25 words, undefined acronyms, and missing Oxford commas."</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="step-label" style="margin-bottom: 12px;">Pitfall 04 — No output format</div>
+          <div class="bad-good" style="grid-template-columns: 1fr;">
+            <div class="bg-card bad">
+              <span class="badge">Poor</span>
+              <p class="quote">"Summarize this."</p>
+            </div>
+            <div class="bg-card good">
+              <span class="badge">Better</span>
+              <p class="quote">"Create an executive summary with: a 3-sentence overview, 5 key points as bullets, 1 paragraph on implications, formatted with markdown headers."</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>21 · PITFALLS 03–04</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       22 · CHECKLIST
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="22 Checklist">
+    <div class="slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>22 / Quick Reference</div>
+      </div>
+
+      <div class="tag" style="margin-top: 40px;">Tape This Above Your Monitor</div>
+      <h2 class="title" style="margin-top: 24px; max-width: 1500px;">Nine boxes. Run them before you hit return.</h2>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 22px 60px; margin-top: 80px;">
+        <div style="display: flex; gap: 20px; align-items: flex-start;">
+          <div class="mono" style="font-size: 26px; color: var(--ua-red);">[&nbsp;]</div>
+          <div><strong style="font-size: 28px;">Clear objective.</strong><div class="small">What do you want to achieve?</div></div>
+        </div>
+        <div style="display: flex; gap: 20px; align-items: flex-start;">
+          <div class="mono" style="font-size: 26px; color: var(--ua-red);">[&nbsp;]</div>
+          <div><strong style="font-size: 28px;">Context provided.</strong><div class="small">Background included?</div></div>
+        </div>
+        <div style="display: flex; gap: 20px; align-items: flex-start;">
+          <div class="mono" style="font-size: 26px; color: var(--ua-red);">[&nbsp;]</div>
+          <div><strong style="font-size: 28px;">Role defined.</strong><div class="small">Who should the AI act as?</div></div>
+        </div>
+        <div style="display: flex; gap: 20px; align-items: flex-start;">
+          <div class="mono" style="font-size: 26px; color: var(--ua-red);">[&nbsp;]</div>
+          <div><strong style="font-size: 28px;">Specific action.</strong><div class="small">Exact task described?</div></div>
+        </div>
+        <div style="display: flex; gap: 20px; align-items: flex-start;">
+          <div class="mono" style="font-size: 26px; color: var(--ua-red);">[&nbsp;]</div>
+          <div><strong style="font-size: 28px;">Output format.</strong><div class="small">Structure specified?</div></div>
+        </div>
+        <div style="display: flex; gap: 20px; align-items: flex-start;">
+          <div class="mono" style="font-size: 26px; color: var(--ua-red);">[&nbsp;]</div>
+          <div><strong style="font-size: 28px;">Examples given.</strong><div class="small">For complex tasks?</div></div>
+        </div>
+        <div style="display: flex; gap: 20px; align-items: flex-start;">
+          <div class="mono" style="font-size: 26px; color: var(--ua-red);">[&nbsp;]</div>
+          <div><strong style="font-size: 28px;">Constraints noted.</strong><div class="small">Length, style, content limits?</div></div>
+        </div>
+        <div style="display: flex; gap: 20px; align-items: flex-start;">
+          <div class="mono" style="font-size: 26px; color: var(--ua-red);">[&nbsp;]</div>
+          <div><strong style="font-size: 28px;">Documents referenced.</strong><div class="small">If using uploads?</div></div>
+        </div>
+        <div style="display: flex; gap: 20px; align-items: flex-start;">
+          <div class="mono" style="font-size: 26px; color: var(--ua-red);">[&nbsp;]</div>
+          <div><strong style="font-size: 28px;">Follow-up planned.</strong><div class="small">For iterative improvement?</div></div>
+        </div>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>22 · CHECKLIST</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       23 · RESOURCES
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="23 Resources" class="slide-paper">
+    <div class="slide slide-paper">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+        <div>23 / Resources</div>
+      </div>
+
+      <div class="tag" style="margin-top: 40px;">Bookmarks</div>
+      <h2 class="title" style="margin-top: 24px; max-width: 1500px;">Everything from today, plus the deeper write-ups.</h2>
+
+      <div class="stack" style="margin-top: 70px;">
+        <div class="stack-row">
+          <div class="label">This Page</div>
+          <div class="val mono" style="color: var(--ua-red); font-size: 26px;">tyson-swetnam.github.io/intro-gpt/prompts/</div>
+        </div>
+        <div class="stack-row">
+          <div class="label">Full Workshop</div>
+          <div class="val mono" style="color: var(--ua-red); font-size: 26px;">tyson-swetnam.github.io/intro-gpt/</div>
+        </div>
+        <div class="stack-row">
+          <div class="label">Anthropic</div>
+          <div class="val mono" style="color: var(--ua-red); font-size: 26px;">docs.anthropic.com/claude/docs/prompt-engineering</div>
+        </div>
+        <div class="stack-row">
+          <div class="label">OpenAI</div>
+          <div class="val mono" style="color: var(--ua-red); font-size: 26px;">platform.openai.com/docs/guides/prompt-engineering</div>
+        </div>
+        <div class="stack-row">
+          <div class="label">Google</div>
+          <div class="val mono" style="color: var(--ua-red); font-size: 26px;">ai.google.dev/gemini-api/docs/prompting-strategies</div>
+        </div>
+        <div class="stack-row">
+          <div class="label">Learn Prompting</div>
+          <div class="val mono" style="color: var(--ua-red); font-size: 26px;">learnprompting.org</div>
+        </div>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA PH&amp;AI 2026</div>
+        <div>23 · RESOURCES</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       24 · Q&A / THANK YOU
+       ════════════════════════════════════════════════════════════════════ -->
+  <section data-screen-label="24 Thank You" class="slide-dark">
+    <div class="slide slide-dark">
+      <div class="title-slide">
+        <div class="grid-bg"></div>
+        <div class="deck-header">
+          <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · AI Fluency</span></div>
+          <div>End · Q&amp;A</div>
+        </div>
+
+        <div class="title-slide-content" style="margin-top: 0;">
+          <div class="tag" style="color: var(--cream-warm);">Open the lab notebook</div>
+          <h2 class="display" style="font-size: 200px;">
+            Now you<br>try one<span style="color: var(--ua-red-bright);">.</span>
+          </h2>
+          <p class="body" style="max-width: 1100px; font-size: 36px;">
+            Pull up a chat window. Pick a task from your week. Write it CRAFT-style.
+            Compare it to the version you'd have typed an hour ago.
+          </p>
+        </div>
+
+        <div class="title-slide-content" style="gap: 12px;">
+          <div class="rule-strong" style="background: rgba(247,244,238,0.4); height: 1px; max-width: 600px;"></div>
+          <div style="display: flex; justify-content: space-between; align-items: flex-end;">
+            <div>
+              <div class="body" style="color: var(--cream); font-weight: 600; font-size: 36px;">Tyson Swetnam, PhD</div>
+              <div class="small mono" style="margin-top: 6px;">tswetnam@arizona.edu · @tswetnam</div>
+            </div>
+            <div class="mono small" style="text-align: right;">
+              BIO5 Institute<br>
+              University of Arizona
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</deck-stage>
+
+</body>
+</html>

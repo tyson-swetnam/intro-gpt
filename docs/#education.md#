@@ -1,4 +1,4 @@
-# AI in the Classroom
+ AI in the Classroom
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 
@@ -93,7 +93,9 @@ Major LMS providers have integrated AI capabilities directly into their platform
 * **[Moodle AI Tools](https://docs.moodle.org/501/en/AI_tools){target=_blank}** - Built-in AI summarization, explanation tools, and integration with OpenAI, Azure AI, and Ollama
 * **[D2L Brightspace Performance+](https://www.d2l.com/brightspace/performance/){target=_blank}** - Predictive analytics, at-risk learner identification, and adaptive learning pathways with Lumi AI assistant
 
-
+<!--
+Here
+-->
 
 These integrations are reducing barriers to faculty AI adoption while raising questions about data privacy and vendor dependence [(EDUCAUSE Review, 2025)](https://er.educause.edu){target=_blank}.
 
