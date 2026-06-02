@@ -186,7 +186,7 @@ What is missing, in Nelson's account, is the political will to extend existing a
 
 [National Conference of State Legislatures (NCSL) Artificial Intelligence Legislation Database](https://www.ncsl.org/financial-services/artificial-intelligence-legislation-database){target=_blank}
 
-The current administration has focused most of its efforts on executive orders related to AI and federal agencies. The December 2025 [Executive Order 14365 "Ensuring a National Policy Framework for Artificial Intelligence"](https://www.whitehouse.gov/presidential-actions/2025/12/eliminating-state-law-obstruction-of-national-artificial-intelligence-policy/){target=_blank} asserts federal authority to challenge or override state AI laws through DOJ litigation, conditioned BEAD broadband funding, and an FTC policy statement. See also [pending congressional legislation](https://www.newsweek.com/trump-constitutional-crisis-ai-2076230){target=_blank} that would codify state-preemption.
+The current administration has focused most of its efforts on executive orders related to AI and federal agencies. The December 2025 [Executive Order 14365 "Ensuring a National Policy Framework for Artificial Intelligence"](https://www.whitehouse.gov/presidential-actions/2025/12/eliminating-state-law-obstruction-of-national-artificial-intelligence-policy/){target=_blank} asserts federal authority to challenge or override state AI laws through DOJ litigation, conditioned BEAD broadband funding, and an FTC policy statement. The June 2026 [Executive Order "Promoting Advanced Artificial Intelligence Innovation and Security"](https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/){target=_blank} adds a **voluntary** federal benchmarking process for frontier-model cyber capabilities, while explicitly disclaiming any mandatory licensing regime. See also [pending congressional legislation](https://www.newsweek.com/trump-constitutional-crisis-ai-2076230){target=_blank} that would codify state-preemption.
 
 
 !!! Tip "2025–2026 Executive Orders"
@@ -225,15 +225,23 @@ The current administration has focused most of its efforts on executive orders r
 
         Carve-outs from preemption: child-safety laws, AI compute and data-center infrastructure laws, and state procurement of AI.
 
-    **2026 — implementation and forthcoming actions**
+    **2026 — implementation of EO 14365 and a new security-focused order**
 
-    No new AI executive orders have been signed in calendar year 2026 (January–May). Activity has been implementation of EO 14365 and related deliverables:
+    The first half of 2026 was dominated by implementation of EO 14365, culminating in a new standalone executive order in June:
 
     * **January 9, 2026:** Attorney General [formally established the AI Litigation Task Force](https://www.paulhastings.com/insights/client-alerts/president-trump-signs-executive-order-challenging-state-ai-laws){target=_blank} at DOJ via memorandum (operational January 10)
     * **March 20, 2026:** White House released the [National Policy Framework for Artificial Intelligence](https://www.whitehouse.gov/wp-content/uploads/2026/03/03.20.26-National-Policy-Framework-for-Artificial-Intelligence-Legislative-Recommendations.pdf){target=_blank} — legislative recommendations for Congress (non-binding; not an EO) on federal preemption, data-infrastructure buildout, and intellectual property
-    * **May 2026:** White House [reportedly studying](https://federalnewsnetwork.com/artificial-intelligence/2026/05/wh-studying-ai-security-executive-order/){target=_blank} an AI security executive order modeled on FDA-style pre-release evaluation of AI models
+    * **Late May 2026:** The White House [abruptly scrapped](https://www.nbcnews.com/tech/tech-news/trump-scraps-signing-landmark-executive-order-regulating-ai-rcna346288){target=_blank} the signing of a broader, stricter AI security order, with the President citing concerns it could harm American competitiveness
 
-As of today, there are no comprehensive federal laws or regulations that have been enacted to specifically regulate AI in the United States of America.  
+    **June 2026**
+
+    * [Promoting Advanced Artificial Intelligence Innovation and Security, June 2, 2026](https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/){target=_blank} — a narrowed replacement for the scrapped May order, focused on national-security evaluation of frontier-model cyber capabilities. Key provisions:
+
+        * Within 60 days, the **Treasury Department, NSA, CISA, and NIST**, with White House officials, must develop and maintain a **classified benchmarking process** to assess the "advanced cyber capabilities" of AI models and decide when a model qualifies as a **"covered frontier model."** Evaluations are run by the [Center for AI Standards and Innovation (CAISI)](https://www.nist.gov/caisi){target=_blank} housed within NIST.
+        * Asks companies, on a **voluntary** basis, to (1) engage the government to determine whether a model meets the "covered frontier model" designation, (2) provide the government access to those models for up to **30 days before** broader release, and (3) help select the **"trusted partners"** that receive early access — framed as strengthening critical-infrastructure cybersecurity.
+        * **No mandatory licensing.** The order expressly states that nothing in it authorizes "a mandatory governmental licensing, preclearance, or permitting requirement for the development, publication, release, or distribution of new AI models, including frontier models." ([Axios](https://www.axios.com/2026/06/02/trump-signs-new-ai-executive-order){target=_blank} characterized this as the administration "dodging AI rules for now.")
+
+As of today, there are no comprehensive federal laws or regulations that have been enacted to specifically regulate AI in the United States of America. The June 2026 order continues the administration's pattern of voluntary, security-framed measures rather than binding regulation.  
 
 ## AI Ethics
 
