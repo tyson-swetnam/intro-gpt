@@ -83,6 +83,35 @@ The categories above are easier to remember when you can map each to a deployed 
 !!! Warning "Training-scope bias in dermatology and retinopathy (selection bias)"
     AI dermatology and retinopathy models trained predominantly on lighter-skinned cohorts perform measurably worse on darker skin — a clear **selection bias** in the training data. The same logic applies to clinical text: if your chart-abstraction model has not seen code-switched notes or local abbreviations, the silent-failure rate on those records is higher. When you build LLM workflows on top of clinical data, the abstention rate (how often the model says "UNCLEAR") on under-represented inputs is your early-warning signal.
 
+## A 2026 case study: state-media bias across query languages
+
+Waight, Yang, Yuan and colleagues (2026) provide one of the first large-scale empirical demonstrations that authoritarian information ecosystems leave measurable fingerprints on commercial LLMs used by hundreds of millions of people. The University of Oregon-led team published their findings in *Nature*: **["State media control influences large language models"](https://www.nature.com/articles/s41586-026-10506-7){target=_blank}** ([DOI: 10.1038/s41586-026-10506-7](https://doi.org/10.1038/s41586-026-10506-7){target=_blank}).
+
+**What they did**
+
+The authors traced the pathway from online media to training data to model behavior through four converging methods:
+
+1. **Training-corpus analysis** — a 5-word-gram similarity audit of [CulturaX](https://huggingface.co/datasets/uonlp/CulturaX){target=_blank} (a widely-used multilingual training corpus) found that **~3.1 million Chinese-language documents (1.64%) match state-coordinated media corpora — roughly 41× the rate of Chinese Wikipedia.** For documents mentioning Chinese political leaders or institutions, match rates climbed as high as **24%**.
+2. **Small-model training experiments** — replicating the corpus → behavior effect by training their own models on controlled mixes.
+3. **Human evaluation** of model outputs across paired prompts.
+4. **Real-world chatbot audits** — dual audits comparing the same query in Chinese vs. English against commercial LLMs about Chinese government and political entities.
+
+The pattern was then replicated across **37 countries** with varying levels of media freedom.
+
+**Key finding**
+
+> Responses generated in Chinese are markedly more favorable toward China's institutions and leaders than the English-language counterparts to the same query, on the same model. Models queried in the languages of countries with lower media freedom show a stronger pro-regime valence than models queried in the languages of countries with higher media freedom.
+
+In bias-taxonomy terms, this is **data bias** with a new dimension: the same model can have different ideological valences depending on the query language, because each language slice of the training data is dominated by different source corpora — and those source corpora reflect the editorial control of the states that produce them.
+
+**Why this matters for the workshop**
+
+- **Translation is not neutral.** Asking the same question of the same LLM in English vs. Mandarin (or Russian, or Persian) may produce systematically different answers — not because the model "thinks differently" in each language, but because each language's training data was shaped by different editorial gatekeepers.
+- **Standard fairness metrics miss it.** Demographic parity, equalized odds, counterfactual fairness — none directly measure cross-language ideological skew. Detecting it requires the kind of dual-audit methodology Waight et al. demonstrate.
+- **It generalizes.** The 37-country replication suggests the mechanism applies wherever state-coordinated media is a significant share of a language's web presence — not just to obvious geopolitical hot-button queries.
+
+For a plain-language summary, see the Nature News & Views companion: [State media control shapes LLM behaviour by influencing training data](https://www.nature.com/articles/d41586-026-01486-9){target=_blank}. The authors also maintain a [project site](https://state-media-influence-llm.github.io/){target=_blank} with replication materials.
+
 ## Assessment
 
 ??? question "True or False: AI bias only originates from the data used to train the model."
