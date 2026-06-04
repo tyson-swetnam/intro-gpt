@@ -4,6 +4,12 @@
 
 A one-hour module for [BIO5 KEYS Research Internship](https://keys.arizona.edu/){target=_blank} students. Forty minutes of lecture on what generative AI is actually doing in life-sciences labs in 2026, followed by twenty minutes of hands-on practice on the University of Arizona's [genai.arizona.edu](https://genai.arizona.edu/){target=_blank} platform.
 
+!!! tip ":material-presentation: Slide deck for this lesson"
+
+    The full 60-minute lecture is available as a fullscreen slide deck:
+    **[Generative AI for Life Sciences — KEYS Internship](presentations/keys-internship-generative-ai.html){target=_blank}**.
+    Open in a new tab, press **F11** (Windows/Linux) or **Cmd + Ctrl + F** (macOS) for true fullscreen, and use arrow keys to navigate. See the [Presentations](presentations/overview.md) page for all decks.
+
 !!! Example "What you'll walk out with (60 min)"
 
     - A working mental model of what an LLM is doing when it answers you, and where that breaks
@@ -15,9 +21,6 @@ A one-hour module for [BIO5 KEYS Research Internship](https://keys.arizona.edu/)
 ## Who this is for
 
 KEYS interns working in BIO5-affiliated labs across bioscience, biomedical engineering, biotechnology, statistics, and computational biology. No coding background required. Some background in high-school biology helps; the specific examples will translate to whatever your lab does.
-
-!!! tip "Presenter mode"
-    The full 60-minute lecture is also available as a [slide deck](presentations/keys-internship-generative-ai.html){target=_blank} on the [Presentations](presentations/overview.md) page.
 
 ## Schedule
 
