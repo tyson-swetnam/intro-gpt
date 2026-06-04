@@ -50,6 +50,12 @@ Lab deck for the GIS practical: building an interactive story-map of a public-he
 
 **Pairs with:** [Vibe coding a Public Health Map](../publichealth/gis.md)
 
+### [Generative AI for Life Sciences — KEYS Internship](keys-internship-generative-ai.html){target=_blank}
+
+The 60-minute deck for the BIO5 KEYS Research Internship Program: what an LLM actually is, what it's good for in a life-sciences lab, the hallucination / privacy / disclosure failure modes, and four hands-on exercises on the U of A `genai.arizona.edu` platform.
+
+**Pairs with:** [KEYS Internship tutorial](../keys.md)
+
 ## About the deck shell
 
 These decks use a small custom element, `<deck-stage>`, served alongside the HTML at [`deck-stage.js`](deck-stage.js). It handles canvas scaling, keyboard and click navigation, the slide-count overlay, the thumbnail rail (suppressed here via `no-rail`), URL-hash persistence, speaker-notes postMessage, and the print-to-PDF stylesheet.
