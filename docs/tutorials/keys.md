@@ -16,6 +16,9 @@ A one-hour module for [BIO5 KEYS Research Internship](https://keys.arizona.edu/)
 
 KEYS interns working in BIO5-affiliated labs across bioscience, biomedical engineering, biotechnology, statistics, and computational biology. No coding background required. Some background in high-school biology helps; the specific examples will translate to whatever your lab does.
 
+!!! tip "Presenter mode"
+    The full 60-minute lecture is also available as a [slide deck](presentations/keys-internship-generative-ai.html){target=_blank} on the [Presentations](presentations/overview.md) page.
+
 ## Schedule
 
 | Block | Duration | Activity |

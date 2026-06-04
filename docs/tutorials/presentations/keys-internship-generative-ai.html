@@ -1,0 +1,1588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Generative AI for Life Sciences — KEYS Internship · UA BIO5 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<script src="deck-stage.js"></script>
+<style>
+  :root {
+    --ua-blue:        #0C234B;
+    --ua-blue-deep:   #07173a;
+    --ua-blue-mid:    #1b3870;
+    --ua-red:         #AB0520;
+    --ua-red-bright:  #c8102e;
+    --cream:          #f7f4ee;
+    --cream-warm:     #efe9dc;
+    --paper:          #fbfaf6;
+    --ink:            #161616;
+    --ink-soft:       #2a2a2a;
+    --mute:           #6b6b6b;
+    --rule:           #d8d2c4;
+    --code-bg:        #0f1623;
+    --code-fg:        #e6edf3;
+    --code-dim:       #8aa0b8;
+    --code-accent:    #ffb38a;
+
+    --pad-x:          110px;
+    --pad-top:        96px;
+    --pad-bottom:     90px;
+  }
+
+  html, body { margin: 0; padding: 0; background: #000; }
+  body { font-family: 'Manrope', system-ui, sans-serif; color: var(--ink); }
+
+  deck-stage section {
+    box-sizing: border-box;
+    overflow: hidden;
+    background: var(--cream);
+    color: var(--ink);
+    font-family: 'Manrope', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .slide {
+    padding: var(--pad-top) var(--pad-x) var(--pad-bottom);
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+  .slide-dark { background: var(--ua-blue); color: var(--cream); }
+  .slide-paper { background: var(--paper); }
+  .slide-red { background: var(--ua-red); color: var(--cream); }
+
+  .tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ua-red);
+  }
+  .slide-dark .tag { color: var(--cream-warm); opacity: 0.85; }
+  .slide-red .tag { color: var(--cream); opacity: 0.85; }
+
+  .title {
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 1.02;
+    letter-spacing: -0.02em;
+    margin: 0;
+    text-wrap: balance;
+  }
+  .display {
+    font-size: 140px;
+    font-weight: 800;
+    line-height: 0.95;
+    letter-spacing: -0.035em;
+    margin: 0;
+    text-wrap: balance;
+  }
+  .body {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.42;
+    color: var(--ink-soft);
+    margin: 0;
+    text-wrap: pretty;
+  }
+  .slide-dark .body { color: var(--cream-warm); }
+  .small {
+    font-size: 24px;
+    color: var(--mute);
+    line-height: 1.4;
+  }
+  .slide-dark .small { color: rgba(247,244,238,0.65); }
+  .mono { font-family: 'JetBrains Mono', monospace; }
+
+  .deck-header {
+    position: absolute;
+    top: 38px;
+    left: var(--pad-x);
+    right: var(--pad-x);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--mute);
+  }
+  .slide-dark .deck-header,
+  .slide-red .deck-header { color: rgba(247,244,238,0.55); }
+  .deck-header .lockup { display: flex; align-items: center; gap: 14px; }
+  .deck-header .ua-block {
+    display: inline-block;
+    width: 38px; height: 38px;
+    background: var(--ua-red);
+    color: var(--cream);
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: -0.04em;
+  }
+  .slide-red .deck-header .ua-block { background: var(--cream); color: var(--ua-red); }
+
+  .deck-footer {
+    position: absolute;
+    bottom: 38px;
+    left: var(--pad-x);
+    right: var(--pad-x);
+    display: flex;
+    justify-content: space-between;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--mute);
+  }
+  .slide-dark .deck-footer,
+  .slide-red .deck-footer { color: rgba(247,244,238,0.5); }
+
+  .cols-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; flex: 1; }
+  .cols-2-uneven { display: grid; grid-template-columns: 1.25fr 1fr; gap: 70px; flex: 1; }
+  .cols-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 36px; flex: 1; }
+  .cols-4 { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 24px; }
+
+  .card {
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    padding: 34px 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .slide-dark .card {
+    background: rgba(255,255,255,0.04);
+    border-color: rgba(247,244,238,0.18);
+    color: var(--cream);
+  }
+  .card h4 {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: -0.01em;
+    line-height: 1.05;
+  }
+  .card p {
+    font-size: 24px;
+    line-height: 1.4;
+    color: var(--ink-soft);
+    margin: 0;
+  }
+  .slide-dark .card p { color: var(--cream-warm); }
+  .card .kicker {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ua-red);
+  }
+
+  .placeholder {
+    background:
+      repeating-linear-gradient(135deg,
+        rgba(12,35,75,0.06) 0,
+        rgba(12,35,75,0.06) 14px,
+        rgba(12,35,75,0.10) 14px,
+        rgba(12,35,75,0.10) 28px);
+    border: 1px solid var(--rule);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--ink-soft);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 24px;
+    box-sizing: border-box;
+  }
+
+  .section-slide {
+    padding: var(--pad-top) var(--pad-x) var(--pad-bottom);
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+  }
+  .section-slide .part-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 28px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    opacity: 0.7;
+    margin-bottom: 36px;
+  }
+  .section-slide .section-title {
+    font-size: 150px;
+    font-weight: 800;
+    line-height: 0.92;
+    letter-spacing: -0.035em;
+    margin: 0;
+    text-wrap: balance;
+  }
+  .section-slide .section-sub {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.3;
+    max-width: 1150px;
+    margin-top: 36px;
+    opacity: 0.85;
+  }
+  .section-slide .timebox {
+    position: absolute;
+    top: var(--pad-top);
+    right: var(--pad-x);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 26px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    border: 1px solid rgba(247,244,238,0.4);
+    padding: 12px 22px;
+    opacity: 0.9;
+  }
+
+  .title-slide {
+    height: 100%;
+    box-sizing: border-box;
+    padding: var(--pad-top) var(--pad-x) var(--pad-bottom);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+  }
+  .title-slide .grid-bg {
+    position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(247,244,238,0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(247,244,238,0.05) 1px, transparent 1px);
+    background-size: 80px 80px;
+    pointer-events: none;
+  }
+  .title-slide-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  /* Schedule / spec table */
+  table.surfaces {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 26px;
+  }
+  table.surfaces th, table.surfaces td {
+    text-align: left;
+    padding: 22px 16px;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+  }
+  table.surfaces th {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--mute);
+    font-weight: 500;
+    border-bottom: 2px solid var(--ink);
+  }
+  table.surfaces td.tool {
+    font-weight: 700;
+    color: var(--ink);
+    font-size: 30px;
+  }
+  table.surfaces td.kind {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 26px;
+    color: var(--ua-red);
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+  }
+  table.surfaces td.desc { color: var(--ink-soft); font-size: 28px; line-height: 1.35; }
+  table.surfaces tr.hi td { background: rgba(171,5,32,0.05); }
+
+  .stack { display: flex; flex-direction: column; gap: 0; }
+  .stack-row {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 40px;
+    padding: 24px 0;
+    border-bottom: 1px solid var(--rule);
+    align-items: baseline;
+  }
+  .stack-row:last-child { border-bottom: none; }
+  .stack-row .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--ua-red);
+  }
+  .stack-row .val {
+    font-size: 28px;
+    color: var(--ink-soft);
+    line-height: 1.35;
+  }
+  .stack-row .val strong { color: var(--ink); font-weight: 700; }
+
+  /* Capability blocks */
+  .cap-block {
+    border: 1px solid var(--rule);
+    background: var(--paper);
+    padding: 32px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    min-height: 280px;
+  }
+  .cap-block .icon-letter {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--ua-red);
+    letter-spacing: -0.02em;
+  }
+  .cap-block h5 {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.1;
+  }
+  .cap-block p {
+    font-size: 24px;
+    line-height: 1.4;
+    color: var(--ink-soft);
+    margin: 0;
+  }
+
+  /* Pullquote */
+  .pullquote {
+    font-size: 46px;
+    line-height: 1.25;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+    text-wrap: pretty;
+  }
+  .slide-dark .pullquote { color: var(--cream); }
+  .pullquote::before {
+    content: "\201C";
+    font-family: 'Manrope', sans-serif;
+    font-size: 100px;
+    line-height: 0.5;
+    color: var(--ua-red);
+    vertical-align: -22px;
+    margin-right: 12px;
+  }
+  .attrib {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--mute);
+    margin-top: 32px;
+  }
+  .slide-dark .attrib { color: rgba(247,244,238,0.6); }
+
+  /* Numbered safety rows */
+  .safety-row {
+    display: grid;
+    grid-template-columns: 60px 1fr 2.2fr;
+    gap: 36px;
+    padding: 24px 0;
+    border-bottom: 1px solid var(--rule);
+    align-items: baseline;
+  }
+  .safety-row:last-child { border-bottom: none; }
+  .safety-row .n {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 26px;
+    color: var(--ua-red);
+    letter-spacing: 0.06em;
+  }
+  .safety-row .h {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--ink);
+    letter-spacing: -0.01em;
+    line-height: 1.15;
+  }
+  .safety-row .d {
+    font-size: 25px;
+    color: var(--ink-soft);
+    line-height: 1.4;
+  }
+
+  /* Numbered grid (three imperatives style) */
+  .num-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 32px;
+    margin-top: 50px;
+  }
+  .num-block {
+    border-top: 2px solid var(--ink);
+    padding-top: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .slide-dark .num-block { border-top-color: var(--cream); }
+  .num-block .num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 28px;
+    color: var(--ua-red);
+    letter-spacing: 0.08em;
+  }
+  .slide-dark .num-block .num { color: var(--ua-red-bright); }
+  .num-block h4 {
+    font-size: 34px;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: -0.01em;
+    line-height: 1.1;
+  }
+  .num-block p {
+    font-size: 24px;
+    line-height: 1.4;
+    color: var(--ink-soft);
+    margin: 0;
+  }
+  .slide-dark .num-block p { color: var(--cream-warm); }
+
+  /* Bulleted feature list */
+  .feat-list { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 18px; }
+  .feat-list li {
+    font-size: 27px;
+    line-height: 1.34;
+    color: var(--ink-soft);
+    padding-left: 34px;
+    position: relative;
+    text-wrap: pretty;
+  }
+  .feat-list li::before {
+    content: "→";
+    position: absolute; left: 0; top: 0;
+    color: var(--ua-red);
+    font-weight: 700;
+  }
+  .feat-list li strong { color: var(--ink); font-weight: 700; }
+
+  .list-head {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 26px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ua-red);
+    margin-bottom: 26px;
+    padding-bottom: 14px;
+    border-bottom: 2px solid var(--ink);
+  }
+
+  /* Warn / callout band */
+  .warn-band {
+    background: var(--ua-red);
+    color: var(--cream);
+    padding: 30px 40px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+  .warn-band .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    flex: 0 0 auto;
+    border-right: 1px solid rgba(247,244,238,0.4);
+    padding-right: 30px;
+  }
+  .warn-band .msg { font-size: 28px; line-height: 1.35; }
+  .warn-band.blue { background: var(--ua-blue); }
+
+  /* Exercise layout */
+  .exercise {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 56px;
+    flex: 1;
+    align-items: stretch;
+  }
+  .ex-left { display: flex; flex-direction: column; gap: 26px; justify-content: flex-start; }
+  .ex-badge {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 16px;
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .ex-badge .ex-no {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--cream);
+    background: var(--ua-red);
+    padding: 8px 18px;
+    letter-spacing: 0.08em;
+    white-space: nowrap;
+  }
+  .ex-badge .ex-time {
+    font-size: 24px;
+    color: var(--mute);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+  .ex-left h3 {
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -0.015em;
+    margin: 0;
+    text-wrap: balance;
+  }
+  .ex-left p { font-size: 27px; line-height: 1.4; color: var(--ink-soft); margin: 0; }
+  .reflect {
+    margin-top: 6px;
+    border-left: 4px solid var(--ua-blue);
+    padding: 4px 0 4px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .reflect .rh {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ua-blue);
+  }
+  .reflect ul { margin: 0; padding-left: 24px; display: flex; flex-direction: column; gap: 8px; }
+  .reflect li { font-size: 24px; line-height: 1.32; color: var(--ink-soft); }
+
+  /* Code block */
+  .codeblock {
+    background: var(--code-bg);
+    border-radius: 4px;
+    padding: 34px 36px;
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--code-fg);
+    font-size: 25px;
+    line-height: 1.5;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+  }
+  .codeblock .cb-head {
+    font-size: 24px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--code-dim);
+    margin-bottom: 22px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .codeblock .cb-head::before {
+    content: "";
+    width: 13px; height: 13px;
+    border-radius: 50%;
+    background: var(--code-accent);
+    box-shadow: 22px 0 0 #5b6b7e, 44px 0 0 #5b6b7e;
+    margin-right: 58px;
+  }
+  .codeblock .cb-body { white-space: pre-wrap; word-break: break-word; }
+  .codeblock .cb-body .ph { color: var(--code-accent); }
+  .codeblock .cb-body .dim { color: var(--code-dim); }
+  .codeblock .cb-num {
+    counter-reset: ln;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  /* Two-up risk cards with severity bar */
+  .riskcard {
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    border-top: 8px solid var(--ua-red);
+    padding: 34px 38px 38px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .riskcard .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ua-red);
+  }
+  .riskcard h4 { font-size: 36px; font-weight: 700; margin: 0; line-height: 1.08; letter-spacing: -0.01em; }
+  .riskcard ul { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px; }
+  .riskcard ul li {
+    font-size: 25px;
+    line-height: 1.35;
+    color: var(--ink-soft);
+    padding-left: 30px;
+    position: relative;
+  }
+  .riskcard ul li::before {
+    content: "✕";
+    position: absolute; left: 0;
+    color: var(--ua-red);
+    font-weight: 700;
+    font-size: 22px;
+  }
+
+  em { font-style: italic; }
+</style>
+</head>
+<body>
+
+<template id="__bundler_thumbnail" data-bg-color="#0C234B">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#0C234B"/>
+    <rect x="500" y="250" width="120" height="120" fill="#AB0520"/>
+    <text x="560" y="345" font-family="Manrope, sans-serif" font-size="100" font-weight="800" fill="#f7f4ee" text-anchor="middle">A</text>
+    <text x="600" y="500" font-family="Manrope, sans-serif" font-size="54" font-weight="700" fill="#f7f4ee" text-anchor="middle">KEYS · Generative AI</text>
+    <text x="600" y="560" font-family="monospace" font-size="26" letter-spacing="6" fill="#efe9dc" text-anchor="middle" opacity="0.7">BIO5 · LIFE SCIENCES</text>
+  </svg>
+</template>
+
+<deck-stage no-rail width="1920" height="1080">
+
+  <!-- ════════════════════════════ 1 · TITLE ════════════════════════════ -->
+  <section data-screen-label="01 Title" class="slide-dark">
+    <div class="title-slide">
+      <div class="grid-bg"></div>
+      <div class="deck-header">
+        <div class="lockup">
+          <span class="ua-block">A</span>
+          <span>University of Arizona · BIO5 Institute</span>
+        </div>
+        <div>KEYS Research Internship · GPT 101</div>
+      </div>
+
+      <div class="title-slide-content" style="margin-top: 30px;">
+        <div class="tag" style="font-size: 26px;">A One-Hour Module · No Coding Required</div>
+        <h1 class="display" style="font-size: 132px;">
+          Generative AI<br>for life-sciences<br>research<span style="color: var(--ua-red-bright);">.</span>
+        </h1>
+        <p class="body" style="color: var(--cream-warm); font-size: 36px; max-width: 1320px;">
+          Forty minutes on what AI is actually doing in BIO5 labs in 2026 — then
+          twenty minutes of hands-on practice on the U of A's own platform. You'll
+          leave with one prompt you'll use in your lab this week.
+        </p>
+      </div>
+
+      <div class="title-slide-content" style="gap: 12px;">
+        <div style="background: rgba(247,244,238,0.4); height: 1px; max-width: 600px;"></div>
+        <div style="display: flex; justify-content: space-between; align-items: flex-end;">
+          <div>
+            <div style="color: var(--cream); font-weight: 600; font-size: 32px;">Tyson Swetnam, PhD</div>
+            <div class="small mono" style="margin-top: 6px;">BIO5 Institute · genai.arizona.edu</div>
+          </div>
+          <div class="mono small" style="text-align: right;">
+            BIO5 KEYS Research Internship<br>
+            Summer 2026 · Tucson, AZ
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════ 2 · WHO + OUTCOMES ════════════════════════════ -->
+  <section data-screen-label="02 Who This Is For" class="slide-paper">
+    <div class="slide slide-paper">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>KEYS · GPT 101</span></div>
+        <div>02 / Orientation</div>
+      </div>
+
+      <div class="cols-2-uneven" style="margin-top: 70px; gap: 80px; align-items: start;">
+        <div>
+          <div class="tag">Who This Is For</div>
+          <h2 class="title" style="margin-top: 18px; font-size: 58px;">KEYS interns in BIO5 labs.</h2>
+          <p class="body" style="margin-top: 28px; font-size: 28px;">
+            Bioscience, biomedical engineering, biotechnology, statistics, and computational
+            biology. <strong style="color: var(--ink);">No coding background required.</strong>
+            Some high-school biology helps — the examples translate to whatever your lab does.
+          </p>
+          <div class="warn-band blue" style="margin-top: 40px;">
+            <div class="label">The point</div>
+            <div class="msg">Not to make you an expert in an hour — to give you a working mental model you can use in the moment.</div>
+          </div>
+        </div>
+        <div>
+          <div class="list-head">What you'll walk out with</div>
+          <ul class="feat-list">
+            <li>A working mental model of <strong>what an LLM is doing</strong> when it answers — and where that breaks</li>
+            <li>A short list of tasks AI is <strong>genuinely useful for</strong> in a bench-science or computational-biology lab</li>
+            <li>A clear sense of the <strong>failure modes</strong> — hallucinated citations, fabricated protocols, leaked data</li>
+            <li>First-hand experience <strong>comparing models</strong> and verifying AI-generated citations against primary sources</li>
+            <li>One <strong>reusable prompt</strong> for a task you'll actually do this week</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA KEYS · BIO5 2026</div>
+        <div>02 · ORIENTATION</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════ 3 · SCHEDULE ════════════════════════════ -->
+  <section data-screen-label="03 Schedule">
+    <div class="slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>KEYS · GPT 101</span></div>
+        <div>03 / The Hour</div>
+      </div>
+
+      <div class="tag" style="margin-top: 40px;">Sixty Minutes · Five Blocks</div>
+      <h2 class="title" style="margin-top: 20px; max-width: 1500px;">Forty minutes of lecture, twenty minutes hands-on.</h2>
+
+      <table class="surfaces" style="margin-top: 56px;">
+        <thead>
+          <tr>
+            <th style="width: 90px;">Block</th>
+            <th style="width: 200px;">Duration</th>
+            <th>Activity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="tool">1</td><td class="kind">5 min</td>
+            <td class="desc">Why this lesson exists</td>
+          </tr>
+          <tr>
+            <td class="tool">2</td><td class="kind">10 min</td>
+            <td class="desc">What generative AI actually is</td>
+          </tr>
+          <tr>
+            <td class="tool">3</td><td class="kind">15 min</td>
+            <td class="desc">What it's useful for in your lab</td>
+          </tr>
+          <tr>
+            <td class="tool">4</td><td class="kind">10 min</td>
+            <td class="desc">What it's risky for — and the policies that protect you</td>
+          </tr>
+          <tr class="hi">
+            <td class="tool">5</td><td class="kind">20 min</td>
+            <td class="desc"><strong>Hands-on at genai.arizona.edu</strong> — four exercises, five minutes each</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="deck-footer">
+        <div>UA KEYS · BIO5 2026</div>
+        <div>03 · THE HOUR</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════ 4 · PART 1 DIVIDER ════════════════════════════ -->
+  <section data-screen-label="04 Part 1 Divider" class="slide-dark">
+    <div class="section-slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>KEYS · GPT 101</span></div>
+        <div>Part 01 · Why This Exists</div>
+      </div>
+      <div class="timebox">5 min</div>
+      <div>
+        <div class="part-num">Part 01</div>
+        <h2 class="section-title">It changed<br>the workflow,<br>not the job.</h2>
+        <p class="section-sub">
+          AI didn't replace researchers in 2024–2026. It changed the daily work of nearly
+          every working scientist — including, almost certainly, your KEYS mentor.
+        </p>
+      </div>
+      <div class="deck-footer">
+        <div>UA KEYS · BIO5 2026</div>
+        <div>04 · PART 01</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════ 5 · THREE DECISIONS ════════════════════════════ -->
+  <section data-screen-label="05 Three Decisions" class="slide-paper">
+    <div class="slide slide-paper">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>KEYS · GPT 101</span></div>
+        <div>05 / Three Questions</div>
+      </div>
+
+      <div class="tag" style="margin-top: 40px;">The Whole Goal Of This Hour</div>
+      <h2 class="title" style="margin-top: 20px; max-width: 1600px;">In the moment, be able to answer three questions.</h2>
+
+      <div class="num-grid" style="margin-top: 80px;">
+        <div class="num-block">
+          <div class="num">01 · WORTH IT?</div>
+          <h4>Will this save me real time?</h4>
+          <p>A task where reaching for an AI assistant genuinely speeds you up — drafting, summarizing, debugging — without costing you accuracy.</p>
+        </div>
+        <div class="num-block">
+          <div class="num">02 · TRAP?</div>
+          <h4>Will it quietly produce a wrong answer?</h4>
+          <p>A task where the AI will hand you a confident, plausible answer that is wrong — and you won't catch it. Citations, protocols, statistics.</p>
+        </div>
+        <div class="num-block">
+          <div class="num">03 · ALLOWED?</div>
+          <h4>Would this break a rule?</h4>
+          <p>A task where pasting the data would violate your lab's policies, your mentor's trust, or federal law. Unpublished data, patient info, IP.</p>
+        </div>
+      </div>
+
+      <div class="warn-band blue" style="margin-top: 70px;">
+        <div class="label">Context · 2024</div>
+        <div class="msg"><strong>AlphaFold won the 2024 Nobel Prize in Chemistry</strong> for predicting protein structures from sequence — work that used to take years of crystallography per structure.</div>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA KEYS · BIO5 2026</div>
+        <div>05 · THREE QUESTIONS</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════ 6 · PART 2 DIVIDER ════════════════════════════ -->
+  <section data-screen-label="06 Part 2 Divider" class="slide-dark">
+    <div class="section-slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>KEYS · GPT 101</span></div>
+        <div>Part 02 · The Mental Model</div>
+      </div>
+      <div class="timebox">10 min</div>
+      <div>
+        <div class="part-num">Part 02</div>
+        <h2 class="section-title">It predicts<br>the next<br>word.</h2>
+        <p class="section-sub">
+          That's the whole trick — and understanding it tells you exactly where these
+          systems are brilliant and exactly where they fall apart.
+        </p>
+      </div>
+      <div class="deck-footer">
+        <div>UA KEYS · BIO5 2026</div>
+        <div>06 · PART 02</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════ 7 · LLM MENTAL MODEL ════════════════════════════ -->
+  <section data-screen-label="07 What An LLM Is">
+    <div class="slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>KEYS · GPT 101</span></div>
+        <div>07 / What An LLM Is</div>
+      </div>
+
+      <div class="cols-2-uneven" style="margin-top: 80px; gap: 80px; align-items: center; flex: 0 1 auto;">
+        <div>
+          <div class="tag">A Large Language Model (LLM)</div>
+          <p class="pullquote" style="margin-top: 24px;">
+            A pattern-recognition system trained on enormous amounts of text. Given everything
+            so far, it predicts the most likely next word. Then the next. Then the next.
+          </p>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 22px;">
+          <div class="card" style="border-left: 6px solid var(--ua-red);">
+            <div class="kicker">What it is not</div>
+            <p style="font-size: 26px;">Models like Claude, GPT, Gemini, Llama, and Gemma are <strong style="color: var(--ink);">not databases.</strong> They do not "look things up." They generate <em>plausible continuations</em> of your text.</p>
+          </div>
+          <div class="card">
+            <div class="kicker">Why it feels like thinking</div>
+            <p style="font-size: 26px;">They're so good at next-word prediction that the output feels like reasoning. Useful — as long as you remember what's actually happening underneath.</p>
+          </div>
+        </div>
+      </div>
+
+      <p class="small" style="margin-top: 56px; max-width: 1600px; font-size: 25px;">
+        Want the deeper version — transformers, training, foundation vs. fine-tuned models? See the <span class="mono" style="color: var(--ua-red);">AI Landscape</span> lesson. For today, "next-word predictor trained on text" is enough.
+      </p>
+
+      <div class="deck-footer">
+        <div>UA KEYS · BIO5 2026</div>
+        <div>07 · MENTAL MODEL</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════ 8 · THREE CONSEQUENCES ════════════════════════════ -->
+  <section data-screen-label="08 Three Consequences" class="slide-paper">
+    <div class="slide slide-paper">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>KEYS · GPT 101</span></div>
+        <div>08 / Consequences</div>
+      </div>
+
+      <div class="tag" style="margin-top: 40px;">Three Consequences That Matter In A Lab</div>
+      <h2 class="title" style="margin-top: 20px; max-width: 1600px;">If it predicts text, then three things follow directly.</h2>
+
+      <div class="stack" style="margin-top: 56px;">
+        <div class="safety-row">
+          <div class="n">01</div>
+          <div class="h">Hallucination is a feature, not a bug.</div>
+          <div class="d">When the model doesn't know, it produces plausible-sounding text anyway — because plausibility is what it was trained to optimize. Confident citations to papers that don't exist, protocols with invented temperatures, statistics with invented p-values.</div>
+        </div>
+        <div class="safety-row">
+          <div class="n">02</div>
+          <div class="h">Knowledge cutoffs are real.</div>
+          <div class="d">Each model has a date after which it knows nothing. Ask about a paper published last month and it may <em>invent one</em> rather than admit ignorance. Some models can search the web to compensate; many cannot.</div>
+        </div>
+        <div class="safety-row">
+          <div class="n">03</div>
+          <div class="h">The same prompt gives different answers.</div>
+          <div class="d">LLMs sample probabilistically. Run the same question twice and you may get two different — but equally confident — answers. That's a useful test, and you'll run it in Exercise 1.</div>
+        </div>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA KEYS · BIO5 2026</div>
+        <div>08 · CONSEQUENCES</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════ 9 · PART 3 DIVIDER ════════════════════════════ -->
+  <section data-screen-label="09 Part 3 Divider" class="slide-red">
+    <div class="section-slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>KEYS · GPT 101</span></div>
+        <div>Part 03 · Where It Earns Its Keep</div>
+      </div>
+      <div class="timebox">15 min</div>
+      <div>
+        <div class="part-num">Part 03</div>
+        <h2 class="section-title">What it's<br>useful for.</h2>
+        <p class="section-sub">
+          Four kinds of work you'll actually do this summer — and where an AI assistant
+          genuinely pulls its weight in each.
+        </p>
+      </div>
+      <div class="deck-footer">
+        <div>UA KEYS · BIO5 2026</div>
+        <div>09 · PART 03</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════ 10 · LITERATURE + WRITING ════════════════════════════ -->
+  <section data-screen-label="10 Literature And Writing">
+    <div class="slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>KEYS · GPT 101</span></div>
+        <div>10 / Useful · 1 of 2</div>
+      </div>
+
+      <div class="tag" style="margin-top: 40px;">Reading And Writing</div>
+      <h2 class="title" style="margin-top: 18px; max-width: 1600px; font-size: 60px;">Where AI saves the most time, day to day.</h2>
+
+      <div class="cols-2" style="margin-top: 64px; gap: 70px;">
+        <div>
+          <div class="list-head">Literature work</div>
+          <ul class="feat-list">
+            <li><strong>Summarize a paper</strong> you can't read in full — but read the abstract and figures yourself first</li>
+            <li><strong>Compare two papers</strong> side by side: "what do these have in common?"</li>
+            <li><strong>Fill vocabulary gaps</strong> — "what does ChIP-seq stand for and what is it measuring?"</li>
+            <li><strong>Draft a lit-review outline</strong> you then fill in with real reading</li>
+          </ul>
+        </div>
+        <div>
+          <div class="list-head">Writing</div>
+          <ul class="feat-list">
+            <li><strong>Tighten a paragraph</strong> — "improve clarity; do not change any factual claims"</li>
+            <li><strong>Turn bench notes into a methods draft</strong> — informal to formal scientific writing</li>
+            <li><strong>Catch grammar and structure</strong> before your mentor reads it</li>
+            <li><strong>Outline your KEYS presentation</strong>: question → methods → results → significance</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA KEYS · BIO5 2026</div>
+        <div>10 · USEFUL FOR</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════ 11 · CODE + THINKING ════════════════════════════ -->
+  <section data-screen-label="11 Code And Thinking" class="slide-paper">
+    <div class="slide slide-paper">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>KEYS · GPT 101</span></div>
+        <div>11 / Useful · 2 of 2</div>
+      </div>
+
+      <div class="tag" style="margin-top: 40px;">Code And Thinking</div>
+      <h2 class="title" style="margin-top: 18px; max-width: 1600px; font-size: 60px;">Even with no coding background, this is in reach.</h2>
+
+      <div class="cols-2" style="margin-top: 64px; gap: 70px;">
+        <div>
+          <div class="list-head">Code &amp; data analysis</div>
+          <ul class="feat-list">
+            <li><strong>Generate starter code</strong> for plots, stats tests, or data cleaning in Python or R</li>
+            <li><strong>Debug an error</strong> — paste the full traceback and ask what's going wrong</li>
+            <li><strong>Explain unfamiliar code</strong> your mentor wrote, line by line</li>
+            <li><strong>Convert data formats</strong> — CSV → JSON, FASTA → table, and so on</li>
+          </ul>
+        </div>
+        <div>
+          <div class="list-head">Thinking</div>
+          <ul class="feat-list">
+            <li><strong>Brainstorm experiment alternatives</strong> — "five other ways someone might test this"</li>
+            <li><strong>Walk through a hard concept</strong> at high-school level, then grad-student level</li>
+            <li><strong>Generate hypotheses</strong> — then <em>you</em> test them in lab, not the AI</li>
+            <li><strong>Steel-man objections</strong> — "what's the strongest critique of my approach?"</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="small" style="margin-top: 48px; max-width: 1600px; font-size: 25px;">
+        A chat interface like <span class="mono" style="color: var(--ua-red);">genai.arizona.edu</span> is the right starting point. For deeper AI-assisted coding, see the <span class="mono" style="color: var(--ua-red);">Vibe Coding</span> lesson.
+      </p>
+
+      <div class="deck-footer">
+        <div>UA KEYS · BIO5 2026</div>
+        <div>11 · USEFUL FOR</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════ 12 · REAL EXAMPLES ════════════════════════════ -->
+  <section data-screen-label="12 Real Examples">
+    <div class="slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>KEYS · GPT 101</span></div>
+        <div>12 / In The Wild</div>
+      </div>
+
+      <div class="tag" style="margin-top: 36px;">Real Life-Sciences AI You Should Be Able To Name</div>
+      <h2 class="title" style="margin-top: 12px; max-width: 1500px; font-size: 48px;">Not chatbots — the systems reshaping biology right now.</h2>
+
+      <div class="cols-3" style="margin-top: 40px; gap: 26px; flex: 0 1 auto; align-content: start; grid-auto-rows: min-content;">
+        <div class="cap-block" style="min-height: 0;">
+          <span class="icon-letter">AF</span>
+          <h5>AlphaFold</h5>
+          <p><strong style="color:var(--ink);">DeepMind.</strong> Protein structure prediction from sequence. The 2024 Chemistry Nobel.</p>
+        </div>
+        <div class="cap-block" style="min-height: 0;">
+          <span class="icon-letter">ESM</span>
+          <h5>ESM / ESMFold</h5>
+          <p><strong style="color:var(--ink);">Meta.</strong> Protein language models — structure and function straight from amino-acid sequence.</p>
+        </div>
+        <div class="cap-block" style="min-height: 0;">
+          <span class="icon-letter">Rx</span>
+          <h5>Drug discovery at scale</h5>
+          <p><strong style="color:var(--ink);">Recursion · Isomorphic · Insilico.</strong> AI generates and screens candidate molecules.</p>
+        </div>
+        <div class="cap-block" style="min-height: 0;">
+          <span class="icon-letter">FDA</span>
+          <h5>Cleared AI devices</h5>
+          <p><strong style="color:var(--ink);">Hundreds</strong> of FDA-cleared AI/ML medical devices — mostly in medical imaging.</p>
+        </div>
+        <div class="cap-block" style="min-height: 0;">
+          <span class="icon-letter">DNA</span>
+          <h5>Genomics foundation models</h5>
+          <p><strong style="color:var(--ink);">Evo · Borzoi.</strong> Systems that learn directly from DNA sequence at scale.</p>
+        </div>
+        <div class="cap-block" style="min-height: 0; background: var(--ua-blue); border-color: var(--ua-blue);">
+          <span class="icon-letter" style="color: var(--cream);">↻</span>
+          <h5 style="color: var(--cream);">The pattern</h5>
+          <p style="color: var(--cream-warm);">AI assists hypothesis &amp; pattern recognition. <strong style="color:var(--cream);">Experiments validate.</strong></p>
+        </div>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA KEYS · BIO5 2026</div>
+        <div>12 · IN THE WILD</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════ 13 · UNIFYING PATTERN ════════════════════════════ -->
+  <section data-screen-label="13 The Loop" class="slide-dark">
+    <div class="slide slide-dark">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>KEYS · GPT 101</span></div>
+        <div>13 / The Loop</div>
+      </div>
+
+      <div style="flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; max-width: 1500px;">
+        <div class="tag" style="color: var(--cream-warm);">The Unifying Pattern</div>
+        <p class="pullquote" style="margin-top: 30px; font-size: 64px; color: var(--cream);">
+          AI assists hypothesis generation and pattern recognition. <span style="color: var(--ua-red-bright);">Experiments validate.</span>
+        </p>
+        <p class="body" style="margin-top: 40px; font-size: 32px; max-width: 1400px;">
+          A model that predicts a protein structure or proposes a candidate molecule still needs
+          wet-lab or clinical confirmation before anyone trusts it.
+          <strong style="color: var(--cream);">Your KEYS project is the experiment side of that loop.</strong>
+        </p>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA KEYS · BIO5 2026</div>
+        <div>13 · THE LOOP</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════ 14 · PART 4 DIVIDER ════════════════════════════ -->
+  <section data-screen-label="14 Part 4 Divider" class="slide-red">
+    <div class="section-slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>KEYS · GPT 101</span></div>
+        <div>Part 04 · What It's Risky For</div>
+      </div>
+      <div class="timebox">10 min</div>
+      <div>
+        <div class="part-num">Part 04</div>
+        <h2 class="section-title">Where it<br>will burn<br>you.</h2>
+        <p class="section-sub">
+          Four failure modes — and the U of A policies that exist to protect you and your
+          mentor's research from the worst of them.
+        </p>
+      </div>
+      <div class="deck-footer">
+        <div>UA KEYS · BIO5 2026</div>
+        <div>14 · PART 04</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════ 15 · HALLUCINATION ════════════════════════════ -->
+  <section data-screen-label="15 Hallucination" class="slide-paper">
+    <div class="slide slide-paper">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>KEYS · GPT 101</span></div>
+        <div>15 / Risk · Hallucination</div>
+      </div>
+
+      <div class="tag" style="margin-top: 40px;">The Failure Mode To Internalize First</div>
+      <h2 class="title" style="margin-top: 18px; max-width: 1600px;">It will invent things, confidently, and look right doing it.</h2>
+
+      <div class="cols-3" style="margin-top: 60px; gap: 30px; flex: 0 1 auto;">
+        <div class="cap-block" style="min-height: 300px; border-top: 8px solid var(--ua-red);">
+          <span class="icon-letter">"</span>
+          <h5>Citations.</h5>
+          <p>Specific paper titles, authors, journals, and DOIs that look completely real — and are not.</p>
+        </div>
+        <div class="cap-block" style="min-height: 300px; border-top: 8px solid var(--ua-red);">
+          <span class="icon-letter">℃</span>
+          <h5>Protocol details.</h5>
+          <p>Concentrations, incubation times, temperatures, buffer recipes — invented out of thin air.</p>
+        </div>
+        <div class="cap-block" style="min-height: 300px; border-top: 8px solid var(--ua-red);">
+          <span class="icon-letter">p</span>
+          <h5>Statistics.</h5>
+          <p>Test results, p-values, and sample sizes pulled from nowhere and stated as fact.</p>
+        </div>
+      </div>
+
+      <div class="warn-band" style="margin-top: 60px;">
+        <div class="label">The rule</div>
+        <div class="msg">AI-generated facts are <strong>not facts</strong> until you have verified them against a primary source. You'll prove this to yourself in Exercise 2.</div>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA KEYS · BIO5 2026</div>
+        <div>15 · HALLUCINATION</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════ 16 · DATA PRIVACY ════════════════════════════ -->
+  <section data-screen-label="16 Data Privacy">
+    <div class="slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>KEYS · GPT 101</span></div>
+        <div>16 / Risk · Data Privacy</div>
+      </div>
+
+      <div class="tag" style="margin-top: 40px;">Where Your Data Goes When You Paste It</div>
+      <h2 class="title" style="margin-top: 18px; max-width: 1600px; font-size: 60px;">A commercial chatbot is a third party. Treat it like one.</h2>
+
+      <div class="cols-2" style="margin-top: 60px; gap: 60px;">
+        <div class="riskcard">
+          <div class="label">Never paste into a commercial chatbot</div>
+          <h4>The hard "do not" list.</h4>
+          <ul>
+            <li><strong style="color:var(--ink);">Unpublished research data</strong> from your lab</li>
+            <li><strong style="color:var(--ink);">Patient-identifying information.</strong> Ever. HIPAA exists</li>
+            <li><strong style="color:var(--ink);">Proprietary protocols</strong> — confidential or sponsor IP</li>
+          </ul>
+        </div>
+        <div class="riskcard" style="border-top-color: var(--ua-blue);">
+          <div class="label" style="color: var(--ua-blue);">Use the U of A platform instead</div>
+          <h4>genai.arizona.edu</h4>
+          <p style="font-size: 26px; color: var(--ink-soft); line-height: 1.4;">
+            FERPA-aligned. Your conversations are <strong style="color:var(--ink);">private and not used to train models.</strong>
+            When you need to work with sensitive material, this is where you go.
+          </p>
+          <p style="font-size: 25px; color: var(--ua-red); font-weight: 600; line-height: 1.35;">
+            Working with human-subjects data? Your project has IRB rules. Ask your mentor first.
+          </p>
+        </div>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA KEYS · BIO5 2026</div>
+        <div>16 · DATA PRIVACY</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════ 17 · DISCLOSURE + REPLACEMENT ════════════════════════════ -->
+  <section data-screen-label="17 Disclosure And Mentor" class="slide-paper">
+    <div class="slide slide-paper">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>KEYS · GPT 101</span></div>
+        <div>17 / Risk · Trust</div>
+      </div>
+
+      <div class="tag" style="margin-top: 40px;">Two More You'll Hit Sooner Than You Think</div>
+      <h2 class="title" style="margin-top: 18px; max-width: 1600px;">Disclose your AI use. And don't mistake it for your mentor.</h2>
+
+      <div class="cols-2" style="margin-top: 64px; gap: 60px;">
+        <div class="card" style="border-left: 6px solid var(--ua-red);">
+          <div class="kicker">The disclosure problem</div>
+          <h4>Be honest anyway.</h4>
+          <p style="font-size: 26px;">Many journals and fellowships now <strong style="color:var(--ink);">require disclosure</strong> of AI use. Your KEYS deliverable may too — ask before you lean on it heavily.</p>
+          <p style="font-size: 25px; color: var(--mute);">Research finds that disclosing AI use can make people trust you <em>less</em>. Disclose anyway — undisclosed use discovered later is far worse than the honesty hit.</p>
+        </div>
+        <div class="card" style="border-left: 6px solid var(--ua-blue);">
+          <div class="kicker">The replacement temptation</div>
+          <h4>It's a junior collaborator.</h4>
+          <p style="font-size: 26px;">AI is not your mentor, not the experimental method, not your scientific judgment. Treat it as a <strong style="color:var(--ink);">fast junior collaborator</strong> — occasionally wrong, with no stake in the outcome.</p>
+          <p style="font-size: 25px; color: var(--mute);">You still own the conclusions. <strong style="color:var(--ink);">Your name goes on the poster.</strong></p>
+        </div>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA KEYS · BIO5 2026</div>
+        <div>17 · TRUST</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════ 18 · PART 5 DIVIDER ════════════════════════════ -->
+  <section data-screen-label="18 Part 5 Divider" class="slide-dark">
+    <div class="section-slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>KEYS · GPT 101</span></div>
+        <div>Part 05 · Hands-On</div>
+      </div>
+      <div class="timebox">20 min</div>
+      <div>
+        <div class="part-num">Part 05</div>
+        <h2 class="section-title">Open your<br>laptop.</h2>
+        <p class="section-sub">
+          Four exercises, five minutes each, on genai.arizona.edu. Log in with your NetID.
+          The point is to <em>feel</em> what we just covered — especially the hallucination test.
+        </p>
+      </div>
+      <div class="deck-footer">
+        <div>UA KEYS · BIO5 2026</div>
+        <div>18 · PART 05</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════ 19 · GENAI PLATFORM ════════════════════════════ -->
+  <section data-screen-label="19 The Platform">
+    <div class="slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>KEYS · GPT 101</span></div>
+        <div>19 / The Platform</div>
+      </div>
+
+      <div class="cols-2-uneven" style="margin-top: 70px; gap: 80px; align-items: center; flex: 0 1 auto;">
+        <div>
+          <div class="tag">genai.arizona.edu</div>
+          <h2 class="title" style="margin-top: 18px; font-size: 58px;">One login. Many frontier models. Private.</h2>
+          <p class="body" style="margin-top: 28px; font-size: 28px;">
+            An OpenWebUI interface that gives you <strong style="color:var(--ink);">free access to multiple frontier
+            models</strong> — Claude, OpenAI, Gemma, Meta Llama, Amazon Nova — through a single chat window.
+            Conversations are private and are not used to train models.
+          </p>
+          <div class="warn-band blue" style="margin-top: 36px;">
+            <div class="label">Step 0</div>
+            <div class="msg">Open genai.arizona.edu &middot; log in with your UA NetID &middot; find the model selector at the top of the chat.</div>
+          </div>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 18px;">
+          <div class="card"><div class="kicker">Model selector</div><p style="font-size: 25px;">Switch models from the dropdown at the top — central to Exercise 1.</p></div>
+          <div class="card"><div class="kicker">Private by default</div><p style="font-size: 25px;">FERPA-aligned; your chats are not training data.</p></div>
+          <div class="card"><div class="kicker">Free for UA</div><p style="font-size: 25px;">No personal API key, no subscription. Just your NetID.</p></div>
+        </div>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA KEYS · BIO5 2026</div>
+        <div>19 · PLATFORM</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════ 20 · EXERCISE 1 ════════════════════════════ -->
+  <section data-screen-label="20 Exercise 1" class="slide-paper">
+    <div class="slide slide-paper">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>KEYS · GPT 101</span></div>
+        <div>20 / Exercise 1</div>
+      </div>
+
+      <div class="exercise" style="margin-top: 56px;">
+        <div class="ex-left">
+          <div class="ex-badge"><span class="ex-no">EX 1</span><span class="ex-time">5 min · Compare two models</span></div>
+          <h3>Ask the same research question twice — to two different models.</h3>
+          <p>Pick a topic from your KEYS lab. Ask one model the prompt on the right. Then switch models (selector at the top) and ask the <em>exact</em> same prompt.</p>
+          <div class="reflect">
+            <div class="rh">Reflection</div>
+            <ul>
+              <li>Did the two models agree?</li>
+              <li>Did either say something specific you couldn't immediately verify?</li>
+              <li>Which response would you actually use to prep for day one — and why?</li>
+            </ul>
+          </div>
+        </div>
+        <div class="codeblock">
+          <div class="cb-head">prompt · paste into genai.arizona.edu</div>
+          <div class="cb-body">I'm a high school student starting a research project in <span class="ph">&lt;your lab's area — e.g. CRISPR base editing, cancer-cell migration, microbiome data analysis&gt;</span>.
+
+Explain in plain language:
+1. What is the main experimental approach in this field?
+2. What are the most common pitfalls a new student makes?
+3. What should I ask my mentor about before I touch anything in the lab?</div>
+        </div>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA KEYS · BIO5 2026</div>
+        <div>20 · EXERCISE 1</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════ 21 · EXERCISE 2 ════════════════════════════ -->
+  <section data-screen-label="21 Exercise 2">
+    <div class="slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>KEYS · GPT 101</span></div>
+        <div>21 / Exercise 2 · The Important One</div>
+      </div>
+
+      <div class="exercise" style="margin-top: 56px;">
+        <div class="ex-left">
+          <div class="ex-badge"><span class="ex-no">EX 2</span><span class="ex-time">5 min · Test for hallucination</span></div>
+          <h3>Ask for three citations. Then check whether they exist.</h3>
+          <p>Ask the model for three papers supporting a claim from your field. Then paste each DOI into <span class="mono" style="color: var(--ua-red);">doi.org</span>. Some resolve to the paper described. Some redirect elsewhere. <strong style="color:var(--ink);">Some will not exist at all.</strong></p>
+          <div class="reflect">
+            <div class="rh">Reflection</div>
+            <ul>
+              <li>How many of the three were real?</li>
+              <li>Could you tell which were fake just from how they looked?</li>
+              <li>If you'd put these in a poster unchecked — what would have happened?</li>
+            </ul>
+          </div>
+        </div>
+        <div class="codeblock">
+          <div class="cb-head">prompt · then verify every DOI</div>
+          <div class="cb-body">List three peer-reviewed papers from the last five years that show <span class="ph">&lt;a specific claim relevant to your KEYS project — e.g. "off-target effects of CRISPR-Cas9 are reduced by high-fidelity variants"&gt;</span>.
+
+For each: authors, year, journal, DOI.
+
+<span class="dim"># Now paste each DOI into doi.org and see what actually resolves.</span></div>
+        </div>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA KEYS · BIO5 2026</div>
+        <div>21 · EXERCISE 2</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════ 22 · EXERCISE 3 ════════════════════════════ -->
+  <section data-screen-label="22 Exercise 3" class="slide-paper">
+    <div class="slide slide-paper">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>KEYS · GPT 101</span></div>
+        <div>22 / Exercise 3</div>
+      </div>
+
+      <div class="exercise" style="margin-top: 56px;">
+        <div class="ex-left">
+          <div class="ex-badge"><span class="ex-no">EX 3</span><span class="ex-time">5 min · Protocol explainer</span></div>
+          <h3>Have the AI walk you through a real protocol from your lab.</h3>
+          <p>Paste a short excerpt of a protocol you're learning this week — <strong style="color:var(--ink);">nothing your mentor flagged as confidential.</strong> Ask it to flag risks and silent-failure points.</p>
+          <div class="reflect">
+            <div class="rh">Reflection</div>
+            <ul>
+              <li>Did the explanation match what your mentor told you?</li>
+              <li>Where did it differ — and which version do you trust?</li>
+              <li>Anything it flagged as risky that your mentor hadn't? Bring it back to them.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="codeblock">
+          <div class="cb-head">prompt · paste a non-confidential excerpt</div>
+          <div class="cb-body">I'm a high school intern who has never run this protocol before. Walk me through it step by step, flagging:
+
+- Any safety concerns I should ask my PI about
+- Steps that could fail silently (give a wrong answer without an obvious error)
+- Reagents or instruments where a mistake would be expensive</div>
+        </div>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA KEYS · BIO5 2026</div>
+        <div>22 · EXERCISE 3</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════ 23 · EXERCISE 4 · CRAFT ════════════════════════════ -->
+  <section data-screen-label="23 Exercise 4 CRAFT">
+    <div class="slide">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>KEYS · GPT 101</span></div>
+        <div>23 / Exercise 4 · Take This Home</div>
+      </div>
+
+      <div class="exercise" style="margin-top: 56px;">
+        <div class="ex-left">
+          <div class="ex-badge"><span class="ex-no">EX 4</span><span class="ex-time">5 min · Write a CRAFT prompt</span></div>
+          <h3>Build one structured prompt for a real task this week.</h3>
+          <p><strong style="color:var(--ink);">C</strong>ontext · <strong style="color:var(--ink);">R</strong>ole · <strong style="color:var(--ink);">A</strong>ction · <strong style="color:var(--ink);">F</strong>ormat · <strong style="color:var(--ink);">T</strong>one. Run it, then change one piece and re-run — notice how much output quality shifts from small changes.</p>
+          <div class="reflect">
+            <div class="rh">Take it with you</div>
+            <ul>
+              <li>Save the version that worked best.</li>
+              <li>You'll use variations of it all summer.</li>
+              <li>This is the one deliverable from today you keep.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="codeblock">
+          <div class="cb-head">skeleton · the CRAFT framework</div>
+          <div class="cb-body"><span class="dim">[CONTEXT]</span> I am a KEYS intern in <span class="ph">&lt;lab / area&gt;</span>. My project involves <span class="ph">&lt;one sentence&gt;</span>. This week I'm working on <span class="ph">&lt;task&gt;</span>.
+
+<span class="dim">[ROLE]</span> Act as a <span class="ph">&lt;senior grad student / staff scientist&gt;</span> who is patient with the basics.
+
+<span class="dim">[ACTION]</span> <span class="ph">&lt;draft an outline / explain this / suggest 3 plot types&gt;</span>
+
+<span class="dim">[FORMAT]</span> <span class="ph">&lt;numbered list / table / paragraph&gt;</span>
+
+<span class="dim">[TONE]</span> Clear and direct. Flag anything you're uncertain about rather than inventing details.</div>
+        </div>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA KEYS · BIO5 2026</div>
+        <div>23 · EXERCISE 4</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════ 24 · AFTER CLASS ════════════════════════════ -->
+  <section data-screen-label="24 After Class" class="slide-paper">
+    <div class="slide slide-paper">
+      <div class="deck-header">
+        <div class="lockup"><span class="ua-block">A</span><span>KEYS · GPT 101</span></div>
+        <div>24 / Keep Going</div>
+      </div>
+
+      <div class="tag" style="margin-top: 36px;">When You Have Time This Summer</div>
+      <h2 class="title" style="margin-top: 14px; max-width: 1600px; font-size: 58px;">Where to go deeper after today.</h2>
+
+      <div class="stack" style="margin-top: 44px;">
+        <div class="stack-row" style="padding: 18px 0;">
+          <div class="label">Prompt Engineering</div>
+          <div class="val" style="font-size: 26px;">CRAFT, few-shot learning, chain-of-thought, prompt chaining</div>
+        </div>
+        <div class="stack-row" style="padding: 18px 0;">
+          <div class="label">AI in Research</div>
+          <div class="val" style="font-size: 26px;">Deep-research workflows, literature synthesis, hypothesis generation</div>
+        </div>
+        <div class="stack-row" style="padding: 18px 0;">
+          <div class="label">Vibe Coding</div>
+          <div class="val" style="font-size: 26px;">AI-assisted coding for data analysis and computational projects</div>
+        </div>
+        <div class="stack-row" style="padding: 18px 0;">
+          <div class="label">Ethics &amp; Bias</div>
+          <div class="val" style="font-size: 26px;">Nelson's "civic grammar," <em>Magnifica Humanitas</em>, and bias in medical &amp; biological AI</div>
+        </div>
+        <div class="stack-row" style="padding: 18px 0;">
+          <div class="label">Hands-on labs</div>
+          <div class="val" style="font-size: 26px;">Public Health AI Lab &middot; Vibe-Coding a Public Health Map (full agentic build)</div>
+        </div>
+        <div class="stack-row" style="padding: 18px 0;">
+          <div class="label">UA resources</div>
+          <div class="val mono" style="font-size: 24px; color: var(--ua-red);">responsibleai.arizona.edu &middot; libguides.library.arizona.edu/genAI</div>
+        </div>
+      </div>
+
+      <div class="deck-footer">
+        <div>UA KEYS · BIO5 2026</div>
+        <div>24 · KEEP GOING</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════ 25 · CLOSING ════════════════════════════ -->
+  <section data-screen-label="25 Closing" class="slide-dark">
+    <div class="slide slide-dark">
+      <div class="title-slide">
+        <div class="grid-bg"></div>
+        <div class="deck-header">
+          <div class="lockup"><span class="ua-block">A</span><span>KEYS · GPT 101</span></div>
+          <div>End · Go Build</div>
+        </div>
+
+        <div class="title-slide-content" style="margin-top: 0;">
+          <div class="tag" style="color: var(--cream-warm);">One hour. One habit that matters most.</div>
+          <h2 class="display" style="font-size: 150px;">
+            Verify<br>everything<span style="color: var(--ua-red-bright);">.</span>
+          </h2>
+          <p class="body" style="max-width: 1340px; font-size: 34px;">
+            AI is a fast junior collaborator — useful, occasionally wrong, no stake in your results.
+            Let it draft, summarize, and explain. Then you read the abstract, check the DOI, run the
+            experiment, and put your name on the poster.
+          </p>
+        </div>
+
+        <div class="title-slide-content" style="gap: 12px;">
+          <div style="background: rgba(247,244,238,0.4); height: 1px; max-width: 600px;"></div>
+          <div style="display: flex; justify-content: space-between; align-items: flex-end;">
+            <div>
+              <div style="color: var(--cream); font-weight: 600; font-size: 32px;">genai.arizona.edu</div>
+              <div class="small mono" style="margin-top: 6px;">Log in with your NetID · keep the prompt that worked</div>
+            </div>
+            <div class="mono small" style="text-align: right;">
+              BIO5 KEYS Research Internship<br>
+              University of Arizona · Summer 2026
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</deck-stage>
+
+</body>
+</html>
