@@ -1859,6 +1859,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#a-2026-case-study-state-media-bias-across-query-languages" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        A 2026 case study: state-media bias across query languages
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#assessment" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
@@ -2254,6 +2265,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#a-2026-case-study-state-media-bias-across-query-languages" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        A 2026 case study: state-media bias across query languages
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#assessment" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
@@ -2353,6 +2375,29 @@
 <p class="admonition-title">Training-scope bias in dermatology and retinopathy (selection bias)</p>
 <p>AI dermatology and retinopathy models trained predominantly on lighter-skinned cohorts perform measurably worse on darker skin — a clear <strong>selection bias</strong> in the training data. The same logic applies to clinical text: if your chart-abstraction model has not seen code-switched notes or local abbreviations, the silent-failure rate on those records is higher. When you build LLM workflows on top of clinical data, the abstention rate (how often the model says "UNCLEAR") on under-represented inputs is your early-warning signal.</p>
 </div>
+<h2 id="a-2026-case-study-state-media-bias-across-query-languages">A 2026 case study: state-media bias across query languages<a class="headerlink" href="#a-2026-case-study-state-media-bias-across-query-languages" title="Permanent link">&para;</a></h2>
+<p>Waight, Yang, Yuan and colleagues (2026) provide one of the first large-scale empirical demonstrations that authoritarian information ecosystems leave measurable fingerprints on commercial LLMs used by hundreds of millions of people. The University of Oregon-led team published their findings in <em>Nature</em>: <strong><a href="https://www.nature.com/articles/s41586-026-10506-7" target="_blank">"State media control influences large language models"</a></strong> (<a href="https://doi.org/10.1038/s41586-026-10506-7" target="_blank">DOI: 10.1038/s41586-026-10506-7</a>).</p>
+<p><strong>What they did</strong></p>
+<p>The authors traced the pathway from online media to training data to model behavior through four converging methods:</p>
+<ol>
+<li><strong>Training-corpus analysis</strong> — a 5-word-gram similarity audit of <a href="https://huggingface.co/datasets/uonlp/CulturaX" target="_blank">CulturaX</a> (a widely-used multilingual training corpus) found that <strong>~3.1 million Chinese-language documents (1.64%) match state-coordinated media corpora — roughly 41× the rate of Chinese Wikipedia.</strong> For documents mentioning Chinese political leaders or institutions, match rates climbed as high as <strong>24%</strong>.</li>
+<li><strong>Small-model training experiments</strong> — replicating the corpus → behavior effect by training their own models on controlled mixes.</li>
+<li><strong>Human evaluation</strong> of model outputs across paired prompts.</li>
+<li><strong>Real-world chatbot audits</strong> — dual audits comparing the same query in Chinese vs. English against commercial LLMs about Chinese government and political entities.</li>
+</ol>
+<p>The pattern was then replicated across <strong>37 countries</strong> with varying levels of media freedom.</p>
+<p><strong>Key finding</strong></p>
+<blockquote>
+<p>Responses generated in Chinese are markedly more favorable toward China's institutions and leaders than the English-language counterparts to the same query, on the same model. Models queried in the languages of countries with lower media freedom show a stronger pro-regime valence than models queried in the languages of countries with higher media freedom.</p>
+</blockquote>
+<p>In bias-taxonomy terms, this is <strong>data bias</strong> with a new dimension: the same model can have different ideological valences depending on the query language, because each language slice of the training data is dominated by different source corpora — and those source corpora reflect the editorial control of the states that produce them.</p>
+<p><strong>Why this matters for the workshop</strong></p>
+<ul>
+<li><strong>Translation is not neutral.</strong> Asking the same question of the same LLM in English vs. Mandarin (or Russian, or Persian) may produce systematically different answers — not because the model "thinks differently" in each language, but because each language's training data was shaped by different editorial gatekeepers.</li>
+<li><strong>Standard fairness metrics miss it.</strong> Demographic parity, equalized odds, counterfactual fairness — none directly measure cross-language ideological skew. Detecting it requires the kind of dual-audit methodology Waight et al. demonstrate.</li>
+<li><strong>It generalizes.</strong> The 37-country replication suggests the mechanism applies wherever state-coordinated media is a significant share of a language's web presence — not just to obvious geopolitical hot-button queries.</li>
+</ul>
+<p>For a plain-language summary, see the Nature News &amp; Views companion: <a href="https://www.nature.com/articles/d41586-026-01486-9" target="_blank">State media control shapes LLM behaviour by influencing training data</a>. The authors also maintain a <a href="https://state-media-influence-llm.github.io/" target="_blank">project site</a> with replication materials.</p>
 <h2 id="assessment">Assessment<a class="headerlink" href="#assessment" title="Permanent link">&para;</a></h2>
 <details class="question">
 <summary>True or False: AI bias only originates from the data used to train the model.</summary>
