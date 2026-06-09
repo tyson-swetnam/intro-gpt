@@ -294,6 +294,18 @@
     color: rgba(247,244,238,0.7);
   }
 
+  /* Real screenshots / scanned figures — drop-in replacement for .placeholder */
+  .shot {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    background: var(--paper);
+  }
+
   /* Section divider slides */
   .section-slide {
     padding: var(--pad-top) var(--pad-x) var(--pad-bottom);
@@ -535,8 +547,13 @@
             <li><span class="num">03</span><div><strong style="color: var(--ink);">A workflow</strong> you can re-aim at any public health dataset.</div></li>
           </ul>
         </div>
-        <div class="placeholder" style="min-height: 100%;">
-          [ screenshot ]<br>snow_storymap.html<br>broad-street pump + choropleth
+        <div class="placeholder" style="min-height: 100%; position: relative; padding: 0; overflow: hidden;">
+          <img class="shot"
+               src="../../assets/snow-storymap-broad-street.png"
+               alt="Death on Broad Street — the scrolling Leaflet story-map of the 1854 London cholera outbreak built in this workshop"
+               style="position: absolute; inset: 0; border: 0; border-radius: 0;"
+               onerror="this.style.display='none'">
+          <span style="padding: 24px;">Add screenshot:<br>docs/assets/snow-storymap-broad-street.png</span>
         </div>
       </div>
 
@@ -1059,10 +1076,10 @@ s2 = (ee.ImageCollection(<span class="s">"COPERNICUS/S2_SR"</span>)
           </p>
         </div>
         <div style="display: flex; flex-direction: column; gap: 20px;">
-          <div class="placeholder" style="height: 580px;">
-            [ image ]<br>John Snow's original<br>1854 cholera map
-          </div>
-          <p class="small" style="text-align: right;">Public domain · Wellcome Collection</p>
+          <img class="shot" style="height: 580px;"
+               src="../../assets/snow-cholera-map-1854.jpg"
+               alt="John Snow's original 1854 map of cholera deaths clustered around the Broad Street pump in Soho, London">
+          <p class="small" style="text-align: right;">Public domain · John Snow, 1854</p>
         </div>
       </div>
 
@@ -1239,8 +1256,13 @@ Data styling:
 Serve:
   - python -m http.server 51234</pre>
         <div style="display: flex; flex-direction: column; gap: 24px; justify-content: center;">
-          <div class="placeholder" style="height: 280px;">
-            [ screenshot ]<br>Expected output<br>scrolly map at :51234
+          <div class="placeholder" style="height: 280px; position: relative; padding: 0; overflow: hidden;">
+            <img class="shot"
+                 src="../../assets/snow-storymap-pumps.png"
+                 alt="snow_storymap.html running — 'Snow suspects the water': the Broad Street pump highlighted in red among Soho's public pumps, over the death-by-building choropleth"
+                 style="position: absolute; inset: 0; border: 0; border-radius: 0;"
+                 onerror="this.style.display='none'">
+            <span style="padding: 24px;">Add screenshot:<br>docs/assets/snow-storymap-pumps.png</span>
           </div>
           <div class="card">
             <div class="kicker">If a field is missing</div>
@@ -1508,7 +1530,7 @@ them in place.</pre>
           <div style="display: flex; justify-content: space-between; align-items: flex-end;">
             <div>
               <div class="body" style="color: var(--cream); font-weight: 600; font-size: 36px;">Tyson Swetnam, PhD</div>
-              <div class="small mono" style="margin-top: 6px;">tswetnam@arizona.edu · @tswetnam</div>
+              <div class="small mono" style="margin-top: 6px;">tswetnam@arizona.edu · @tysonswetnam</div>
             </div>
             <div class="mono small" style="text-align: right;">
               BIO5 Institute<br>
