@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<title>Ethics &amp; Environmental Impact — Panel · UA PH&amp;AI 2026</title>
+<title>AI Ethics &amp; the Law — Open-Mic AMA · UA PH&amp;AI 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
@@ -698,6 +698,24 @@
   }
   .slide-dark .panelist .who { color: var(--cream); }
 
+  /* Open-mic topic chips */
+  .chip {
+    font-family: 'Manrope', system-ui, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--ink-soft);
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    border-radius: 999px;
+    padding: 12px 24px;
+    letter-spacing: -0.01em;
+  }
+  .slide-dark .chip {
+    background: rgba(255,255,255,0.04);
+    border-color: rgba(247,244,238,0.2);
+    color: var(--cream-warm);
+  }
+
   /* Footprint figure: stacked bars */
   .footprint {
     display: grid;
@@ -824,8 +842,8 @@
     <rect x="470" y="250" width="120" height="120" fill="#AB0520"/>
     <text x="530" y="345" font-family="Manrope, sans-serif" font-size="100" font-weight="800" fill="#f7f4ee" text-anchor="middle">A</text>
     <text x="630" y="345" font-family="Manrope, sans-serif" font-size="100" font-weight="800" fill="#f7f4ee" text-anchor="start" opacity="0">.</text>
-    <text x="600" y="500" font-family="Manrope, sans-serif" font-size="56" font-weight="700" fill="#f7f4ee" text-anchor="middle">Ethics &amp; Environment</text>
-    <text x="600" y="560" font-family="monospace" font-size="28" letter-spacing="6" fill="#efe9dc" text-anchor="middle" opacity="0.7">UA PH&amp;AI · PANEL</text>
+    <text x="600" y="500" font-family="Manrope, sans-serif" font-size="56" font-weight="700" fill="#f7f4ee" text-anchor="middle">Ethics &amp; the Law</text>
+    <text x="600" y="560" font-family="monospace" font-size="28" letter-spacing="6" fill="#efe9dc" text-anchor="middle" opacity="0.7">UA PH&amp;AI · OPEN MIC</text>
   </svg>
 </template>
 
@@ -842,18 +860,18 @@
           <span class="ua-block">A</span>
           <span>University of Arizona · BIO5 Institute</span>
         </div>
-        <div>PH&amp;AI Summer School · Day 3 · Panel</div>
+        <div>PH&amp;AI Summer School · Day 3 · Open Mic</div>
       </div>
 
       <div class="title-slide-content" style="margin-top: 40px;">
-        <div class="tag" style="font-size: 26px;">Closing Session · Panel Discussion</div>
+        <div class="tag" style="font-size: 26px;">Closing Session · Open-Mic AMA</div>
         <h1 class="display" style="font-size: 148px;">
-          Ethics &amp;<br>environmental<br>impact<span style="color: var(--ua-red-bright);">.</span>
+          AI ethics<br>&amp; the law<span style="color: var(--ua-red-bright);">.</span>
         </h1>
         <p class="body" style="color: var(--cream-warm); font-size: 36px; max-width: 1300px;">
-          Who writes the rules — corporations or publics? What does an honest accounting
-          of the compute, the water, and the grid look like? An open conversation to
-          close the school.
+          An open-mic AMA to close the school — no panel, no script. Ask anything: who writes
+          the rules, who's liable when AI gets it wrong, and what an honest accounting of the
+          compute, the water, and the grid actually looks like. Bring the harder question.
         </p>
       </div>
 
@@ -861,7 +879,7 @@
         <div style="background: rgba(247,244,238,0.4); height: 1px; max-width: 600px;"></div>
         <div style="display: flex; justify-content: space-between; align-items: flex-end;">
           <div>
-            <div style="color: var(--cream); font-weight: 600; font-size: 32px;">Moderated by Tyson Swetnam, PhD</div>
+            <div style="color: var(--cream); font-weight: 600; font-size: 32px;">Hosted by Tyson Swetnam, PhD</div>
             <div class="small mono" style="margin-top: 6px;">Associate Professor · BIO5 Institute</div>
           </div>
           <div class="mono small" style="text-align: right;">
@@ -874,57 +892,45 @@
   </section>
 
   <!-- ════════════════════════════════════════════════════════════════════
-       2 · PANEL FORMAT
+       2 · OPEN-MIC FORMAT
        ════════════════════════════════════════════════════════════════════ -->
-  <section data-screen-label="02 Panel Format" class="slide-paper">
+  <section data-screen-label="02 Open-Mic Format" class="slide-paper">
     <div class="slide slide-paper">
       <div class="deck-header">
-        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics Panel</span></div>
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics &amp; Law</span></div>
         <div>02 / Format</div>
       </div>
 
       <div class="tag" style="margin-top: 40px;">How This Session Runs</div>
-      <h2 class="title" style="margin-top: 20px; max-width: 1600px;">Sixty minutes. Three panelists. Six questions.</h2>
+      <h2 class="title" style="margin-top: 20px; max-width: 1600px;">Sixty minutes. Open mic. Your questions.</h2>
 
       <div class="cols-3" style="margin-top: 70px; gap: 32px;">
         <div class="cap-block">
           <span class="icon-letter">10′</span>
           <h5>Framing.</h5>
-          <p>Tyson sets the question, the vocabulary, the stakes. The slides that follow are the shared substrate — not the lecture.</p>
+          <p>Tyson sets the question, the vocabulary, the stakes. The slides that follow are the shared substrate — not a lecture.</p>
         </div>
         <div class="cap-block">
-          <span class="icon-letter">35′</span>
-          <h5>Panel.</h5>
-          <p>Three voices working through six prompts. Brief openings, then real conversation — disagreement welcome.</p>
+          <span class="icon-letter">40′</span>
+          <h5>Open mic.</h5>
+          <p>The floor is yours. Ask anything about the ethics and the law of AI today — the seed prompts are only a starting point, and disagreement with them is fair game.</p>
         </div>
         <div class="cap-block">
-          <span class="icon-letter">15′</span>
-          <h5>Room.</h5>
-          <p>Open Q&amp;A. You've been reading and prompting for three days — bring the harder question, not the safe one.</p>
+          <span class="icon-letter">10′</span>
+          <h5>So what?</h5>
+          <p>We tie it back to your own work — what actually changes Tuesday morning. Bring the harder question, not the safe one.</p>
         </div>
       </div>
 
-      <div class="roster">
-        <div class="panelist">
-          <div class="portrait"></div>
-          <div>
-            <div class="who">Panelist 01</div>
-            <div class="role">Public Health · Ethics</div>
-          </div>
-        </div>
-        <div class="panelist">
-          <div class="portrait"></div>
-          <div>
-            <div class="who">Panelist 02</div>
-            <div class="role">Policy · Law</div>
-          </div>
-        </div>
-        <div class="panelist">
-          <div class="portrait"></div>
-          <div>
-            <div class="who">Panelist 03</div>
-            <div class="role">Sustainability · Compute</div>
-          </div>
+      <div style="margin-top: 56px; border-top: 1px solid var(--rule); padding-top: 30px;">
+        <div class="tag">On the table — ask about any of it</div>
+        <div style="display: flex; flex-wrap: wrap; gap: 14px; margin-top: 22px;">
+          <span class="chip">Ethics of AI</span>
+          <span class="chip">Rights &amp; the law</span>
+          <span class="chip">Regulation &amp; liability</span>
+          <span class="chip">Corporate vs public rule-making</span>
+          <span class="chip">Environmental cost</span>
+          <span class="chip">Public-health practice</span>
         </div>
       </div>
 
@@ -941,7 +947,7 @@
   <section data-screen-label="03 Ethics vs Ethical">
     <div class="slide">
       <div class="deck-header">
-        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics Panel</span></div>
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics &amp; Law</span></div>
         <div>03 / Two Questions</div>
       </div>
 
@@ -962,7 +968,7 @@
       </div>
 
       <p class="body" style="margin-top: 60px; max-width: 1600px; font-size: 28px;">
-        Most of today's panel lives in the first column. Most of what AI companies talk about lives in the second.
+        Most of today's conversation lives in the first column. Most of what AI companies talk about lives in the second.
         The gap between them is where most of the disagreement actually sits — <span style="font-weight: 700; color: var(--ink);">Siau &amp; Wang (2020)</span>.
       </p>
 
@@ -979,7 +985,7 @@
   <section data-screen-label="04 Dartmouth 1956" class="slide-paper">
     <div class="slide slide-paper">
       <div class="deck-header">
-        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics Panel</span></div>
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics &amp; Law</span></div>
         <div>04 / History</div>
       </div>
 
@@ -1022,7 +1028,7 @@
   <section data-screen-label="05 Inherited Frames">
     <div class="slide">
       <div class="deck-header">
-        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics Panel</span></div>
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics &amp; Law</span></div>
         <div>05 / Inherited Frames</div>
       </div>
 
@@ -1068,7 +1074,7 @@
   <section data-screen-label="06 Part 1 Divider" class="slide-dark">
     <div class="section-slide">
       <div class="deck-header">
-        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics Panel</span></div>
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics &amp; Law</span></div>
         <div>Part 01 · Two Grammars</div>
       </div>
       <div>
@@ -1092,7 +1098,7 @@
   <section data-screen-label="07 Two Documents" class="slide-paper">
     <div class="slide slide-paper">
       <div class="deck-header">
-        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics Panel</span></div>
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics &amp; Law</span></div>
         <div>07 / Two Documents</div>
       </div>
 
@@ -1141,7 +1147,7 @@
   <section data-screen-label="08 Civic Grammar">
     <div class="slide">
       <div class="deck-header">
-        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics Panel</span></div>
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics &amp; Law</span></div>
         <div>08 / Civic Grammar</div>
       </div>
 
@@ -1186,7 +1192,7 @@
   <section data-screen-label="09 Marshall" class="slide-paper">
     <div class="slide slide-paper">
       <div class="deck-header">
-        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics Panel</span></div>
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics &amp; Law</span></div>
         <div>09 / Marshall</div>
       </div>
 
@@ -1233,7 +1239,7 @@
   <section data-screen-label="10 Limits Of Rights Talk">
     <div class="slide">
       <div class="deck-header">
-        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics Panel</span></div>
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics &amp; Law</span></div>
         <div>10 / Limits</div>
       </div>
 
@@ -1276,7 +1282,7 @@
   <section data-screen-label="11 Three Imperatives" class="slide-dark">
     <div class="slide slide-dark">
       <div class="deck-header">
-        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics Panel</span></div>
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics &amp; Law</span></div>
         <div>11 / Three Imperatives</div>
       </div>
 
@@ -1319,7 +1325,7 @@
   <section data-screen-label="12 Part 2 Divider" class="slide-red">
     <div class="section-slide">
       <div class="deck-header">
-        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics Panel</span></div>
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics &amp; Law</span></div>
         <div>Part 02 · A Moral Response</div>
       </div>
       <div>
@@ -1343,7 +1349,7 @@
   <section data-screen-label="13 Magnifica Humanitas">
     <div class="slide">
       <div class="deck-header">
-        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics Panel</span></div>
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics &amp; Law</span></div>
         <div>13 / Encyclical</div>
       </div>
 
@@ -1394,7 +1400,7 @@
   <section data-screen-label="14 Core Teachings" class="slide-paper">
     <div class="slide slide-paper">
       <div class="deck-header">
-        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics Panel</span></div>
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics &amp; Law</span></div>
         <div>14 / Core Teachings</div>
       </div>
 
@@ -1441,7 +1447,7 @@
   <section data-screen-label="15 Calls To Action">
     <div class="slide">
       <div class="deck-header">
-        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics Panel</span></div>
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics &amp; Law</span></div>
         <div>15 / Calls To Action</div>
       </div>
 
@@ -1487,7 +1493,7 @@
   <section data-screen-label="16 Part 3 Divider" class="slide-dark">
     <div class="section-slide">
       <div class="deck-header">
-        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics Panel</span></div>
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics &amp; Law</span></div>
         <div>Part 03 · International Scaffolding</div>
       </div>
       <div>
@@ -1511,7 +1517,7 @@
   <section data-screen-label="17 Declarations" class="slide-paper">
     <div class="slide slide-paper">
       <div class="deck-header">
-        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics Panel</span></div>
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics &amp; Law</span></div>
         <div>17 / Declarations</div>
       </div>
 
@@ -1562,7 +1568,7 @@
       </table>
 
       <p class="small" style="margin-top: 30px; max-width: 1700px; font-size: 24px;">
-        Panel prompt: which of these has any practical effect on what a public health researcher in Arizona actually does next Tuesday?
+        Open-mic prompt: which of these has any practical effect on what a public health researcher in Arizona actually does next Tuesday?
       </p>
 
       <div class="deck-footer">
@@ -1578,7 +1584,7 @@
   <section data-screen-label="18 Part 4 Divider" class="slide-red">
     <div class="section-slide">
       <div class="deck-header">
-        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics Panel</span></div>
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics &amp; Law</span></div>
         <div>Part 04 · Footprint</div>
       </div>
       <div>
@@ -1602,7 +1608,7 @@
   <section data-screen-label="19 Where Cost Lands">
     <div class="slide">
       <div class="deck-header">
-        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics Panel</span></div>
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics &amp; Law</span></div>
         <div>19 / Where The Cost Lands</div>
       </div>
 
@@ -1649,7 +1655,7 @@
   <section data-screen-label="20 Marginal Cost" class="slide-paper">
     <div class="slide slide-paper">
       <div class="deck-header">
-        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics Panel</span></div>
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics &amp; Law</span></div>
         <div>20 / Marginal Cost</div>
       </div>
 
@@ -1690,7 +1696,7 @@
   <section data-screen-label="21 Environmental Bridge">
     <div class="slide">
       <div class="deck-header">
-        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics Panel</span></div>
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics &amp; Law</span></div>
         <div>21 / Bridge</div>
       </div>
 
@@ -1730,19 +1736,19 @@
   </section>
 
   <!-- ════════════════════════════════════════════════════════════════════
-       22 · PART 5 · DIVIDER · PANEL DISCUSSION
+       22 · PART 5 · DIVIDER · OPEN MIC
        ════════════════════════════════════════════════════════════════════ -->
   <section data-screen-label="22 Part 5 Divider" class="slide-dark">
     <div class="section-slide">
       <div class="deck-header">
-        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics Panel</span></div>
-        <div>Part 05 · Panel Discussion</div>
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics &amp; Law</span></div>
+        <div>Part 05 · Open Mic</div>
       </div>
       <div>
         <div class="part-num">Part 05</div>
-        <h2 class="section-title">Over to<br>the panel<span style="color: var(--ua-red-bright);">.</span></h2>
+        <h2 class="section-title">Over to<br>the room<span style="color: var(--ua-red-bright);">.</span></h2>
         <p class="section-sub">
-          Six prompts. The framing above is shared substrate — disagreement with it is fair game.
+          Seed prompts, not a script — the framing above is shared substrate, and disagreement with it is fair game. The mic is yours.
         </p>
       </div>
       <div class="deck-footer">
@@ -1758,11 +1764,11 @@
   <section data-screen-label="23 Discussion Questions" class="slide-paper">
     <div class="slide slide-paper">
       <div class="deck-header">
-        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics Panel</span></div>
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics &amp; Law</span></div>
         <div>23 / Questions</div>
       </div>
 
-      <div class="tag" style="margin-top: 28px;">Six Prompts For The Panel</div>
+      <div class="tag" style="margin-top: 28px;">Six Seed Prompts For The Room</div>
       <h2 class="title" style="margin-top: 12px; max-width: 1600px; font-size: 56px;">Pick the one you most want to argue with first.</h2>
 
       <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px; margin-top: 40px;">
@@ -1811,7 +1817,7 @@
   <section data-screen-label="24 Resources">
     <div class="slide">
       <div class="deck-header">
-        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics Panel</span></div>
+        <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics &amp; Law</span></div>
         <div>24 / Resources</div>
       </div>
 
@@ -1864,7 +1870,7 @@
       <div class="title-slide">
         <div class="grid-bg"></div>
         <div class="deck-header">
-          <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics Panel</span></div>
+          <div class="lockup"><span class="ua-block">A</span><span>PH&amp;AI · Ethics &amp; Law</span></div>
           <div>End · Thank You</div>
         </div>
 
