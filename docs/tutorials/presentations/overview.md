@@ -38,9 +38,9 @@ The follow-on deck pushing past single prompts into agentic workflows, multi-ste
 
 **Pairs with:** [Prompt Engineering](../../prompts.md), [Vibe Coding](../../vibe.md), and [Agentic AI](../../agentic.md)
 
-### [Ethics & Environmental Impact](ethics-and-environmental-impact.html){target=_blank}
+### [AI Ethics & the Law](ethics-and-environmental-impact.html){target=_blank}
 
-Panel deck covering responsible-use frameworks, the civic-grammar argument from Alondra Nelson, regulatory landscape, and the environmental cost of frontier-model training and inference.
+Closing-session **open-mic AMA** on the ethical and legal challenges AI poses today — responsible-use frameworks, the civic-grammar argument from Alondra Nelson, the regulatory landscape, and the environmental cost of frontier-model training and inference.
 
 **Pairs with:** [Ethics of AI](../../ethics.md), [Bias & Discrimination](../../bias.md), and [Ethical & Legal Considerations](../../legal.md)
 
