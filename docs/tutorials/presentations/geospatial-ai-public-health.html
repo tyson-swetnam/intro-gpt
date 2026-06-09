@@ -1256,8 +1256,13 @@ Data styling:
 Serve:
   - python -m http.server 51234</pre>
         <div style="display: flex; flex-direction: column; gap: 24px; justify-content: center;">
-          <div class="placeholder" style="height: 280px;">
-            [ screenshot ]<br>Expected output<br>scrolly map at :51234
+          <div class="placeholder" style="height: 280px; position: relative; padding: 0; overflow: hidden;">
+            <img class="shot"
+                 src="../../assets/snow-storymap-pumps.png"
+                 alt="snow_storymap.html running — 'Snow suspects the water': the Broad Street pump highlighted in red among Soho's public pumps, over the death-by-building choropleth"
+                 style="position: absolute; inset: 0; border: 0; border-radius: 0;"
+                 onerror="this.style.display='none'">
+            <span style="padding: 24px;">Add screenshot:<br>docs/assets/snow-storymap-pumps.png</span>
           </div>
           <div class="card">
             <div class="kicker">If a field is missing</div>
