@@ -2,6 +2,12 @@
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 
+!!! tip ":material-presentation: Slide deck for this lab"
+
+    This 90-minute lab pairs with a fullscreen slide deck:
+    **[Geospatial AI for Public Health](../presentations/geospatial-ai-public-health.html){target=_blank}**.
+    Open in a new tab, press **F11** (Windows/Linux) or **Cmd + Ctrl + F** (macOS) for true fullscreen, and use arrow keys to navigate. See the [Presentations](../presentations/overview.md) page for all decks.
+
 !!! Example "What you'll build (90 min)"
     A scrolling Leaflet story-map of the 1850 London cholera outbreak,
     served locally at http://localhost:51234. By minute 60 you should
