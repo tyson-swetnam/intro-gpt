@@ -34,6 +34,8 @@ The deeper treatment of foundational governance documents for AI — corporate "
 
 ## [:simple-weightsandbiases: Bias & Discrimination](bias.md)
 
+## [:material-leaf: Environmental & Health Impacts](environment.md)
+
 
 ## Assessment
 
