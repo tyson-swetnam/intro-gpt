@@ -40,6 +40,14 @@ As consumers of GPTs and other AI platforms, we must consider in what ways can w
 
     *Worth weighing against this lesson's companion on the [Environmental &amp; Health Impacts](environment.md) of the very build-out Bregman urges democracies to accelerate — fast data-center permitting reads differently from the fenceline of a gas-fired turbine.*
 
+To illustrate the sheer scale of that build-out, Bregman points to a chart from researcher **Fin Moorhouse** — total capital spending on AI data centers set against history's great megaprojects:
+
+<figure>
+<blockquote class="twitter-tweet" data-dnt="true"><a href="https://twitter.com/finmoorhouse/status/2044933442236776794"></a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<figcaption>The chart Bregman cites for the scale of the AI build-out — spending on data centers that he calls "larger than the Moon Landing and the Manhattan Project combined." Source: <a href="https://x.com/finmoorhouse/status/2044933442236776794" target="_blank" rel="noopener noreferrer">Fin Moorhouse</a>. (If the embed doesn't load, open the post directly.)</figcaption>
+</figure>
+
 ## AI Constitutions, Bills of Rights, and Pope Leo XIV's encyclical
 
 The deeper treatment of foundational governance documents for AI — corporate "AI constitutions" like Anthropic's *Claude Constitution*; the public *Blueprint for an AI Bill of Rights*; sociologist Alondra Nelson's "civic grammar" framework, T. H. Marshall's social-citizenship argument, and the three-imperatives framework from Nelson's *Daedalus* essay; and Pope Leo XIV's May 2026 encyclical *Magnifica Humanitas* — has been consolidated into the [Ethical & Legal Considerations](legal.md) lesson, where the U.S. Executive Orders, international agreements, and congressional context already live. Two anchors:
