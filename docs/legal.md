@@ -387,7 +387,9 @@ Current AI models are overwhelmingly based on European and North American histor
     
 Negative consequences of GPTs explosion into the public space are its mis-use as well as its adoption for illegal activity. 
     
-* [A lawyer submits a legal brief written by ChatGPT and is caught](https://www.nytimes.com/2023/05/27/nyregion/avianca-airline-lawsuit-chatgpt.html){target=_blank}
+* [A lawyer submits a legal brief written by ChatGPT and is caught](https://www.nytimes.com/2023/05/27/nyregion/avianca-airline-lawsuit-chatgpt.html){target=_blank} (2023)
+
+* By 2026 the problem had escalated from one embarrassed attorney to entire cases collapsing: a senior federal judge in Mississippi, [Sharion Aycock, sanctioned **all four** lawyers in an Aberdeen fee dispute after catching **both sides** independently filing AI-generated briefs full of fabricated citations and bogus quotations](https://www.nytimes.com/2026/06/09/us/ai-lawyers-sanctioned-mississippi.html){target=_blank}. She paused the trial, disqualified every attorney, barred the two who admitted using AI from her court for two years, and fined them between \$1,000 and \$3,500 — one of the strongest judicial rebukes of courtroom AI misuse to date.
 
 * [Prompt Injection Attacks](https://www.wired.com/story/chatgpt-prompt-injection-attack-security/){target=_blank}
 
