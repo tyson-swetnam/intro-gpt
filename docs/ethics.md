@@ -21,6 +21,25 @@ Over the next 70 years, Artificial Intelligence persisted mainly in [the minds o
 
 As consumers of GPTs and other AI platforms, we must consider in what ways can we use AI both effectively, and ethically.
 
+## Is AI denial the new climate denial?
+
+!!! Quote ":material-bullhorn: Rutger Bregman — 'An Inconvenient Truth About AI' (2026)"
+
+    Historian **Rutger Bregman** argues that the political polarity of denial has flipped. In [a widely shared essay (and video essay)](https://rutgerbregman.substack.com/p/an-inconvenient-truth-about-ai){target=_blank}, he writes:
+
+    > Twenty years ago, climate denial was a problem of the right. Today, AI denial is a problem of the left. And the consequences could be even more disastrous.
+
+    His case, condensed:
+
+    - **The skeptics keep moving the goalposts.** The "stochastic parrot / blurry JPEG / lumbering pattern-matcher" framing (Chomsky, Bender &amp; Gebru, and others) predicted the technology would stall. Instead the same systems have passed medical-licensing exams and out-diagnosed doctors, won gold at the International Mathematical Olympiad, out-scored PhDs in their own fields, and now write **more than 90% of the code** inside leading AI labs. Judging today's models from a frustrating attempt back in 2023, he writes, is "like judging smartphones by a 2007 BlackBerry."
+    - **The build-out is historic.** He calls the AI data-center boom the largest capital project in recorded human history — "larger than the Moon Landing and the Manhattan Project combined" — and notes one leading lab's revenue scaled from roughly \$1B to \$45B annualized in fifteen months. Even where parts of it are a bubble, "bubbles build infrastructure."
+    - **The risks are civilizational.** Biosecurity (chatbots that coach on engineering pathogens), cybersecurity (frontier models that can probe power grids and water systems), and — above all — **power**. He invokes the "**Intelligence Curse**": if the machines do the work, the people who own them no longer need the rest of us as workers, soldiers, taxpayers, or voters, dissolving the "no taxation without representation" bargain on which democracy was built.
+    - **But the answer is not "shut it down."** A blanket moratorium, Bregman argues, is *the left's own version of climate denial* — refusing to engage in the hope the future goes away. He calls instead for **state capacity** (institutes that evaluate frontier models the way the FDA evaluates drugs), **international coordination** (on the model of nuclear-arms treaties), democracies that actually **build**, and a **positive vision** (basic income, shorter work weeks) so the productivity gains are not captured by a tiny ownership class.
+
+    Whatever you make of his timeline, the essay is a sharp prompt for this course: **disengagement is itself an ethical choice.** Of one lab's decision to withhold a model it judged too dangerous to release, Bregman warns — "conscience is not a policy."
+
+    *Worth weighing against this lesson's companion on the [Environmental &amp; Health Impacts](environment.md) of the very build-out Bregman urges democracies to accelerate — fast data-center permitting reads differently from the fenceline of a gas-fired turbine.*
+
 ## AI Constitutions, Bills of Rights, and Pope Leo XIV's encyclical
 
 The deeper treatment of foundational governance documents for AI — corporate "AI constitutions" like Anthropic's *Claude Constitution*; the public *Blueprint for an AI Bill of Rights*; sociologist Alondra Nelson's "civic grammar" framework, T. H. Marshall's social-citizenship argument, and the three-imperatives framework from Nelson's *Daedalus* essay; and Pope Leo XIV's May 2026 encyclical *Magnifica Humanitas* — has been consolidated into the [Ethical & Legal Considerations](legal.md) lesson, where the U.S. Executive Orders, international agreements, and congressional context already live. Two anchors:
@@ -33,6 +52,8 @@ The deeper treatment of foundational governance documents for AI — corporate "
 ## [:material-mirror: Transparency & Accountability](transparency.md)
 
 ## [:simple-weightsandbiases: Bias & Discrimination](bias.md)
+
+## [:material-leaf: Environmental & Health Impacts](environment.md)
 
 
 ## Assessment

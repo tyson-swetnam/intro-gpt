@@ -117,7 +117,8 @@ Ethics = [
     { Overview = "ethics.md" },
     { Bias = "bias.md" },
     { Legal = "legal.md" },
-    { Transparency = "transparency.md" }
+    { Transparency = "transparency.md" },
+    { Environment = "environment.md" }
 ]
 
 [[project.nav]]
