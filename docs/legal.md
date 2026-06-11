@@ -374,6 +374,8 @@ Figure credit: :fontawesome-brands-creative-commons-by: [ChatGPT and Artificial 
 
 [:scales: Master list of current lawsuits against AI companies](https://chatgptiseatingtheworld.com/2024/08/27/master-list-of-lawsuits-v-ai-chatgpt-openai-microsoft-meta-midjourney-other-ai-cos/){target=_blank}
 
+Courts are also beginning to hold AI companies **directly liable for what their models assert**. In June 2026 the Regional Court of Munich [ruled against Google's AI Overviews](https://arstechnica.com/tech-policy/2026/06/nobody-needs-ai-to-search-the-internet-court-says-in-ruling-against-google/){target=_blank}, treating the AI-generated answers as Google's *own* speech rather than as neutral search results. The Overviews had tied two Munich publishers to "scams," "subscription traps," and "dubious business practices" — connections that appeared in none of the linked sources — and the court issued an injunction barring Google from repeating them. With barely 1% of readers clicking through to a source, the court was unmoved by the argument that this is simply how search works now: nobody needs an AI layer to search the internet.
+
 Current AI models are overwhelmingly based on European and North American historical literature and language. Over half of the [content on the internet (:simple-wikipedia:)](https://en.wikipedia.org/wiki/Languages_used_on_the_Internet) is written in English. This creates a [Eurocentric bias](https://www.historica.org/blog/the-impact-of-eurocentric-bias-in-ai-driven-historical-research) in AI training data, resulting in an erasure of global culture, experience, and language. Such [asymmetries need to be addressed](https://www.orfonline.org/expert-speak/global-perspectives-on-ai-bias-addressing-cultural-asymmetries-and-ethical-implications), but there is at present a lack economic incentives for large tech companies and organizations (see [The Imitation Game :brain:](#foundations-of-the-ethical-principles-for-ai) above). 
 
 
@@ -387,7 +389,9 @@ Current AI models are overwhelmingly based on European and North American histor
     
 Negative consequences of GPTs explosion into the public space are its mis-use as well as its adoption for illegal activity. 
     
-* [A lawyer submits a legal brief written by ChatGPT and is caught](https://www.nytimes.com/2023/05/27/nyregion/avianca-airline-lawsuit-chatgpt.html){target=_blank}
+* [A lawyer submits a legal brief written by ChatGPT and is caught](https://www.nytimes.com/2023/05/27/nyregion/avianca-airline-lawsuit-chatgpt.html){target=_blank} (2023)
+
+* By 2026 the problem had escalated from one embarrassed attorney to entire cases collapsing: a senior federal judge in Mississippi, [Sharion Aycock, sanctioned **all four** lawyers in an Aberdeen fee dispute after catching **both sides** independently filing AI-generated briefs full of fabricated citations and bogus quotations](https://www.nytimes.com/2026/06/09/us/ai-lawyers-sanctioned-mississippi.html){target=_blank}. She paused the trial, disqualified every attorney, barred the two who admitted using AI from her court for two years, and fined them between \$1,000 and \$3,500 — one of the strongest judicial rebukes of courtroom AI misuse to date.
 
 * [Prompt Injection Attacks](https://www.wired.com/story/chatgpt-prompt-injection-attack-security/){target=_blank}
 

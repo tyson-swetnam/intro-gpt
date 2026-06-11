@@ -51,6 +51,25 @@ This diagram traces the lineage of large language models from 2018-2023, showing
 
 ---
 
+### The Pace of Progress: AI's "Time Horizon"
+
+The clearest single picture of *how fast* capabilities are advancing comes from [METR](https://metr.org){target=_blank}, which measures the length of task — in **human** time — that an AI agent can finish on its own (at a 50% success rate). That horizon has been **doubling roughly every seven months — and, on the latest models, faster still**: from tasks a skilled person could do in seconds a few years ago to **multi-hour** tasks in 2026.
+
+**[AI's task-completion time horizon is doubling — interactive chart (AI Digest)](https://theaidigest.org/time-horizons){target=_blank}**
+
+<iframe
+    src="https://theaidigest.org/time-horizons"
+    frameborder="0"
+    width="800"
+    height="520"
+    title="METR task-completion time horizon over time — AI Digest"
+    loading="lazy"
+></iframe>
+
+On a log scale the trend is close to a straight line — steeper than the curves that defined earlier technology waves, and a major reason independent forecasters keep revising their timelines *forward* (a point Rutger Bregman presses in ["Is AI denial the new climate denial?"](ethics.md#is-ai-denial-the-new-climate-denial)). *If the embed doesn't load, open the [interactive version](https://theaidigest.org/time-horizons){target=_blank}.*
+
+---
+
 ### From Text Generation to World Simulation
 
 The evolution of generative AI has progressed through distinct phases:
