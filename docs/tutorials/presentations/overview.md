@@ -38,9 +38,9 @@ The follow-on deck pushing past single prompts into agentic workflows, multi-ste
 
 **Pairs with:** [Prompt Engineering](../../prompts.md), [Vibe Coding](../../vibe.md), and [Agentic AI](../../agentic.md)
 
-### [Ethics & Environmental Impact](ethics-and-environmental-impact.html){target=_blank}
+### [What Does AI Cost the Earth?](ethics-and-environmental-impact.html){target=_blank}
 
-Panel deck covering responsible-use frameworks, the civic-grammar argument from Alondra Nelson, regulatory landscape, and the environmental cost of frontier-model training and inference.
+Panel deck that opens with an honest, cited accounting of AI's environmental footprint — electricity, water, and carbon — then turns to the governance question that cost forces: who writes the rules, from Alondra Nelson's civic-grammar argument to *Magnifica Humanitas* and the international declarations already on the table.
 
 **Pairs with:** [Ethics of AI](../../ethics.md), [Bias & Discrimination](../../bias.md), and [Ethical & Legal Considerations](../../legal.md)
 
