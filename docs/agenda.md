@@ -114,6 +114,7 @@ Critical considerations for responsible AI use in academia.
 | Bias | Understanding and mitigating AI bias | [Bias](bias.md) |
 | Legal Considerations | Copyright, privacy, and legal issues | [Legal](legal.md) |
 | Transparency | Disclosing AI use and maintaining integrity | [Transparency](transparency.md) |
+| Environment | Environmental and health impacts of AI | [Environment](environment.md) |
 
 ### :material-notebook-edit: Hands-On Tutorials
 

@@ -162,6 +162,7 @@ Critical considerations for responsible AI use in academia.
 | [:material-scale-unbalanced: Bias](bias.md) | Understanding and mitigating AI bias |
 | [:material-gavel: Legal](legal.md) | Copyright, privacy, and legal considerations |
 | [:material-eye: Transparency](transparency.md) | Disclosing AI use and maintaining integrity |
+| [:material-leaf: Environment](environment.md) | Environmental and health impacts of AI |
 
 ### [:material-notebook-edit: Hands-On Tutorials](claude-code.md)
 
