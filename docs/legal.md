@@ -105,7 +105,7 @@ By 2021, UNESCO had created their own recommendations on AI, focused on human ri
 | [**G20 AI Principles**](https://www.g20-insights.org/policy_briefs/g20-japan-ai-principles/){target=_blank}  | June 9, 2019 | G20 member countries | A commitment to human-centered AI, building upon the OECD AI Principles, emphasizing inclusivity, transparency, and accountability. | 
 | [**WHO Ethics and governance of artificial intelligence for health**](https://www.who.int/publications/i/item/9789240029200){target=_blank} | June 2021 | WHO Ministries of Health members | A guidance on  eighteen months of deliberation amongst experts from Ministries of Health | 
 | [**UNESCO Recommendation on the Ethics of Artificial Intelligence**](https://en.unesco.org/artificial-intelligence/ethics){target=_blank} | November 2021 | UNESCO member states | A global framework to ensure that digital transformations promote human rights and contribute to the achievement of the Sustainable Development Goals. | 
-| [**European Union Artificial Intelligence Act**](https://artificialintelligenceact.eu/){target=_blank} | July 2024 | EU member countries | Classifies risk, obligations, legal, and general purpose AI laws | 
+| [**European Union Artificial Intelligence Act**](https://artificialintelligenceact.eu/){target=_blank} | July 2024 | EU member countries | Classifies risk, obligations, legal, and general purpose AI laws. GPAI obligations applied from Aug 2025; Article 50 transparency rules (chatbot disclosure, deepfake labelling) enforced from Aug 2, 2026; the 2026 "Digital Omnibus" (Reg. (EU) 2026/1744) pushed most high-risk deadlines to Dec 2027 / Aug 2028. | 
 | [**UN Resolution A/RES/79/325**](https://docs.un.org/en/A/RES/79/325){target=_blank} | August 2025 | United Nations Resolution | Created the Scientific Panel on AI (like the IPCC for AI) |
 
 In response to the rapid rise of generative AI, specifically GPTs, new agreements on the application of AI for military use, safety, and on its adoption in business and industry were recently signed (Table 3).
@@ -117,8 +117,26 @@ In response to the rapid rise of generative AI, specifically GPTs, new agreement
 | **Political Declaration on Responsible Military Use of Artificial Intelligence and Autonomy** | February 16, 2023 | United States and 50 other countries | A declaration outlining principles for the responsible use of AI and autonomy in military applications. | [U.S. Department of State](https://www.state.gov/political-declaration-on-responsible-military-use-of-artificial-intelligence-and-autonomy/){target=_blank} |
 | **International Network of AI Safety Institutes** | May 2024 | United Kingdom, United States, Japan, France, Germany, Italy, Singapore, South Korea, Australia, Canada, European Union | A network formed to evaluate and ensure the safety of advanced AI models through international collaboration. | [The Independent](https://www.independent.co.uk/news/uk/politics/rishi-sunak-china-eric-schmidt-bletchley-park-united-states-b2548783.html){target=_blank} |
 | **AI Safety Agreement between the UK and US** | June 2024 | United Kingdom, United States | An agreement to collaborate on testing advanced AI models to ensure safety and manage risks. | [BBC News](https://www.bbc.com/news/technology-68675654){target=_blank} |
-| **Framework Convention on Artificial Intelligence** | September 5, 2024 | United States, United Kingdom, European Union, Andorra, Georgia, Iceland, Norway, Republic of Moldova, San Marino, Israel | The first legally binding international treaty on AI, aiming to ensure AI activities are consistent with human rights, democracy, and the rule of law. | [Council of Europe](https://www.coe.int/en/web/artificial-intelligence/the-framework-convention-on-artificial-intelligence){target=_blank} |
+| **Framework Convention on Artificial Intelligence** | September 5, 2024 | United States, United Kingdom, European Union, Andorra, Georgia, Iceland, Norway, Republic of Moldova, San Marino, Israel | The first legally binding international treaty on AI, aiming to ensure AI activities are consistent with human rights, democracy, and the rule of law. Ratified by the EU (May 2026); the US signed in 2024 but has not ratified; as of August 2026 the five-ratification threshold for entry into force had not been met. | [Council of Europe](https://www.coe.int/en/web/artificial-intelligence/the-framework-convention-on-artificial-intelligence){target=_blank} |
 | **AI Alliance Network** | December 11, 2024 | Russia, BRICS countries (Brazil, China, India, South Africa), Serbia, Indonesia, and others | An initiative to develop AI collaboratively, focusing on joint research, regulation, and commercialization of AI products among member countries. | [Reuters](https://www.reuters.com/technology/artificial-intelligence/russia-teams-up-with-brics-create-ai-alliance-putin-says-2024-12-11/){target=_blank} |
+
+### From Bletchley to New Delhi: the AI summit series
+
+Since 2023 the highest-profile venue for international AI politics has been a rolling series of summits. Observers such as Jakub Kraus, writing in [Lawfare](https://www.lawfaremedia.org/article/liberal-democracies-are-retreating-from-ai-safety){target=_blank}, read the drift in the summits' own names — "safety" (Bletchley) to "action" (Paris) to "impact" (New Delhi) — as evidence that governments have deprioritized catastrophic-risk framing; others see the same sequence as the agenda broadening toward development and adoption. The table lets you weigh both readings. The expert-consensus track runs alongside the diplomacy: the [International AI Safety Report 2026](https://internationalaisafetyreport.org/){target=_blank} (February 2026, chaired by Yoshua Bengio with more than 100 experts) is the closest thing AI has to an IPCC assessment.
+
+#### **Table 4: AI summits and declarations, 2023-2026**
+
+| Agreement | Date | Signatories | Description | Source |
+|-----------|------|-------------|-------------|--------|
+| **Bletchley Declaration** | November 1, 2023 | 28 countries + the EU, including both the US and China | The first global AI-safety summit declaration, opening the summit series at Bletchley Park. | [UK Government](https://www.gov.uk/government/publications/ai-safety-summit-2023-the-bletchley-declaration){target=_blank} |
+| **Seoul Declaration & Frontier AI Safety Commitments** | May 21-22, 2024 | Summit governments; 16 AI companies signed the safety commitments | Safety-institute cooperation, plus the first voluntary frontier-safety pledges by the major labs. | [UK Government](https://www.gov.uk/government/publications/frontier-ai-safety-commitments-ai-seoul-summit-2024/frontier-ai-safety-commitments-ai-seoul-summit-2024){target=_blank} |
+| **Statement on Inclusive and Sustainable AI for People and the Planet** (Paris AI Action Summit) | February 11, 2025 | 65 listed signatories including China and the EU; **the US and UK declined** | The series' pivot from "safety" to "action": growth, jobs, energy, and public-interest AI. | [Élysée](https://www.elysee.fr/en/emmanuel-macron/2025/02/11/statement-on-inclusive-and-sustainable-artificial-intelligence-for-people-and-the-planet){target=_blank} |
+| **A Coruña Declaration: REAIM 2026 "Pathways to Action"** | February 4-5, 2026 | 35 of ~85 attending states at signing (45 listed since); **the US and China declined** | Twenty principles for responsible military AI, continuing the REAIM series (The Hague 2023, Seoul 2024). | [Defense Watch](https://thedefensewatch.com/policy-strategy/us-and-china-refuse-to-sign-military-ai-declaration-at-reaim-summit/){target=_blank} |
+| **New Delhi Declaration & Frontier AI Impact Commitments** | February 21, 2026 | ~90 countries and organisations, including the US, China, and the EU; 13 frontier developers signed the company commitments | The largest AI declaration to date — "AI for All": human capital, trustworthy AI, energy efficiency, democratized access. Non-binding. | [Fortune](https://fortune.com/2026/02/23/indias-ai-impact-summit-closes-with-the-new-delhi-declaration-and-a-200-billion-boost/){target=_blank}, [Carnegie](https://carnegieendowment.org/research/2026/04/for-people-planet-and-progress-perspectives-from-indias-ai-impact-summit){target=_blank} |
+| **G7 Évian Summit** | June 15-17, 2026 | G7 leaders; AI CEOs (Altman, Amodei, Hassabis) joined a working lunch | No standalone AI declaration; AI ran through the digital agenda and the *Leaders' Call on a Safer Digital Space for Minors* (age-appropriate chatbots). | [G7 Research Group](https://g7.utoronto.ca/summit/2026evian/index.html){target=_blank} |
+| **UN Global Dialogue on AI Governance** (first session, Geneva) | July 6-7, 2026 | UN member states | The 40-member Independent International Scientific Panel on AI (co-chairs Yoshua Bengio and Maria Ressa) presented its [preliminary report](https://www.un.org/independent-international-scientific-panel-ai/en/preliminary-report){target=_blank}: "current safeguards cannot keep pace" with capability growth. | [UN](https://www.un.org/global-dialogue-ai-governance/en){target=_blank} |
+
+The next global AI summit is scheduled for Geneva in the first half of 2027, hosted by Switzerland.
 
 ## Blueprint for an AI Bill of Rights
 
@@ -268,7 +286,7 @@ The decision to present the encyclical alongside an AI-company executive signals
 
 [National Conference of State Legislatures (NCSL) Artificial Intelligence Legislation Database](https://www.ncsl.org/financial-services/artificial-intelligence-legislation-database){target=_blank}
 
-The current administration has focused most of its efforts on executive orders related to AI and federal agencies. The December 2025 [Executive Order 14365 "Ensuring a National Policy Framework for Artificial Intelligence"](https://www.whitehouse.gov/presidential-actions/2025/12/eliminating-state-law-obstruction-of-national-artificial-intelligence-policy/){target=_blank} asserts federal authority to challenge or override state AI laws through DOJ litigation, conditioned BEAD broadband funding, and an FTC policy statement. The June 2026 [Executive Order "Promoting Advanced Artificial Intelligence Innovation and Security"](https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/){target=_blank} adds a **voluntary** federal benchmarking process for frontier-model cyber capabilities, while explicitly disclaiming any mandatory licensing regime. See also [pending congressional legislation](https://www.newsweek.com/trump-constitutional-crisis-ai-2076230){target=_blank} that would codify state-preemption.
+The current administration has focused most of its efforts on executive orders related to AI and federal agencies. The December 2025 [Executive Order 14365 "Ensuring a National Policy Framework for Artificial Intelligence"](https://www.whitehouse.gov/presidential-actions/2025/12/eliminating-state-law-obstruction-of-national-artificial-intelligence-policy/){target=_blank} asserts federal authority to challenge or override state AI laws through DOJ litigation, conditioned BEAD broadband funding, and an FTC policy statement. The June 2026 [Executive Order 14409, "Promoting Advanced Artificial Intelligence Innovation and Security"](https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/){target=_blank} adds a **voluntary** federal benchmarking process for frontier-model cyber capabilities, while explicitly disclaiming any mandatory licensing regime. See also [pending congressional legislation](https://www.newsweek.com/trump-constitutional-crisis-ai-2076230){target=_blank} that would codify state-preemption.
 
 
 !!! Tip "2025–2026 Executive Orders"
@@ -283,7 +301,7 @@ The current administration has focused most of its efforts on executive orders r
 
         * [Fact Sheet: Eliminating Barriers for Federal Artificial Intelligence Use and Procurement, April 7, 2025](https://www.whitehouse.gov/fact-sheets/2025/04/fact-sheet-eliminating-barriers-for-federal-artificial-intelligence-use-and-procurement/){target=_blank}
 
-    * [Advancing Artificial Intelligence Education for American Youth, April 23, 2025](https://www.whitehouse.gov/presidential-actions/2025/04/advancing-artificial-intelligence-education-for-american-youth/){target=_blank}
+    * [EO 14277: Advancing Artificial Intelligence Education for American Youth, April 23, 2025](https://www.whitehouse.gov/presidential-actions/2025/04/advancing-artificial-intelligence-education-for-american-youth/){target=_blank}
 
     **May 2025**
 
@@ -293,9 +311,13 @@ The current administration has focused most of its efforts on executive orders r
 
     **July 2025 — America's AI Action Plan (three EOs paired with the 90-policy "Winning the Race" action plan)**
 
-    * **Promoting the Export of the American AI Technology Stack, July 23, 2025** — directs federal agencies to promote export of US AI software, hardware, and standards
+    * [EO 14320: Promoting the Export of the American AI Technology Stack, July 23, 2025](https://www.whitehouse.gov/presidential-actions/2025/07/promoting-the-export-of-the-american-ai-technology-stack/){target=_blank} — directs federal agencies to promote export of US AI software, hardware, and standards
     * [EO 14318: Accelerating Federal Permitting of Data Center Infrastructure, July 23, 2025](https://www.whitehouse.gov/presidential-actions/2025/07/accelerating-federal-permitting-of-data-center-infrastructure/){target=_blank} — streamlines NEPA reviews and creates new categorical exclusions for AI-related data-center projects
-    * **Preventing Woke AI in the Federal Government, July 23, 2025** — bars federal procurement of AI models judged to embed "ideological bias," including DEI-aligned principles; mandates "Unbiased AI Principles" prioritizing "truth-seeking" and "ideological neutrality"
+    * [EO 14319: Preventing Woke AI in the Federal Government, July 23, 2025](https://www.whitehouse.gov/presidential-actions/2025/07/preventing-woke-ai-in-the-federal-government/){target=_blank} — bars federal procurement of AI models judged to embed "ideological bias," including DEI-aligned principles; mandates "Unbiased AI Principles" prioritizing "truth-seeking" and "ideological neutrality"
+
+    **November 2025**
+
+    * [EO 14363: Launching the Genesis Mission, November 24, 2025](https://www.whitehouse.gov/presidential-actions/2025/11/launching-the-genesis-mission/){target=_blank} — a DOE-led national platform connecting supercomputers, experimental facilities, and datasets to accelerate AI-enabled science ([DOE announcement](https://www.energy.gov/articles/energy-department-launches-genesis-mission-transform-american-science-and-innovation){target=_blank}); an initial \$320M went to the national laboratories in December 2025, expanded past \$5B by July 2026, with at least 20 national science and technology challenges identified
 
     **December 2025**
 
@@ -317,13 +339,16 @@ The current administration has focused most of its efforts on executive orders r
 
     **June 2026**
 
-    * [Promoting Advanced Artificial Intelligence Innovation and Security, June 2, 2026](https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/){target=_blank} — a narrowed replacement for the scrapped May order, focused on national-security evaluation of frontier-model cyber capabilities. Key provisions:
+    * [EO 14409: Promoting Advanced Artificial Intelligence Innovation and Security, June 2, 2026](https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/){target=_blank} — a narrowed replacement for the scrapped May order, focused on national-security evaluation of frontier-model cyber capabilities ([Federal Register](https://www.federalregister.gov/documents/2026/06/05/2026-11415/promoting-advanced-artificial-intelligence-innovation-and-security){target=_blank} · [CRS explainer](https://www.congress.gov/crs-product/IF13268){target=_blank}). Key provisions:
 
-        * Within 60 days, the **Treasury Department, NSA, CISA, and NIST**, with White House officials, must develop and maintain a **classified benchmarking process** to assess the "advanced cyber capabilities" of AI models and decide when a model qualifies as a **"covered frontier model."** Evaluations are run by the [Center for AI Standards and Innovation (CAISI)](https://www.nist.gov/caisi){target=_blank} housed within NIST.
-        * Asks companies, on a **voluntary** basis, to (1) engage the government to determine whether a model meets the "covered frontier model" designation, (2) provide the government access to those models for up to **30 days before** broader release, and (3) help select the **"trusted partners"** that receive early access — framed as strengthening critical-infrastructure cybersecurity.
+        * Within 60 days, the **Treasury Department, NSA, CISA, and NIST**, with White House officials, must develop and maintain a **classified benchmarking process** to assess the "advanced cyber capabilities" of AI models and decide when a model qualifies as a **"covered frontier model."** Evaluations are run by the [Center for AI Standards and Innovation (CAISI)](https://www.nist.gov/caisi){target=_blank} housed within NIST — the renamed U.S. AI Safety Institute (June 2025), which in February 2026 launched an [AI Agent Standards Initiative](https://www.nist.gov/news-events/news/2026/02/announcing-ai-agent-standards-initiative-interoperable-and-secure){target=_blank}.
+        * Asks companies, on a **voluntary** basis, to (1) engage the government to determine whether a model meets the "covered frontier model" designation, (2) provide the government access to those models for up to **30 days** before releasing them to other trusted partners, and (3) help select the **"trusted partners"** that receive early access — framed as strengthening critical-infrastructure cybersecurity. The voluntary framework was due **August 1, 2026**, alongside a **Treasury-led** AI cybersecurity clearinghouse; as of late August the framework had been [reviewed privately with major labs but not published](https://fortune.com/2026/08/04/baffling-white-house-wont-publicly-release-ai-model-evaluation-framework-it-reviewed-today-with-openai-anthropic-microsoft-and-others/){target=_blank}.
         * **No mandatory licensing.** The order expressly states that nothing in it authorizes "a mandatory governmental licensing, preclearance, or permitting requirement for the development, publication, release, or distribution of new AI models, including frontier models." ([Axios](https://www.axios.com/2026/06/02/trump-signs-new-ai-executive-order){target=_blank} characterized this as the administration "dodging AI rules for now.")
+        * Directs the Attorney General to prioritize enforcement of 18 U.S.C. §§ 1028, 1030, and 1343 against those who use AI to illegally access or damage computer systems — a clause tested weeks later by the [July 2026 incident](#case-study-the-openai-and-hugging-face-incident-july-2026).
 
-As of today, there are no comprehensive federal laws or regulations that have been enacted to specifically regulate AI in the United States of America. The June 2026 order continues the administration's pattern of voluntary, security-framed measures rather than binding regulation.  
+As of August 2026, the United States still has no comprehensive federal statute regulating AI. Congress has passed narrower AI-adjacent laws — the [TAKE IT DOWN Act](https://www.congress.gov/bill/119th-congress/senate-bill/146){target=_blank} (signed May 2025; its 48-hour platform takedown duty for non-consensual intimate imagery, including AI-generated deepfakes, took effect May 19, 2026) — and the Senate Commerce Committee advanced the [CHATBOT Act](https://www.eff.org/deeplinks/2026/07/chatbot-act-forces-one-parenting-model-every-family){target=_blank} in August 2026, though advanced in committee is not enacted. The June 2026 order continues the administration's pattern of voluntary, security-framed measures rather than binding regulation.
+
+Meanwhile, the states are where binding U.S. AI law lives. [California SB 53](https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB53){target=_blank}, the Transparency in Frontier Artificial Intelligence Act (effective January 1, 2026), is the first U.S. law aimed squarely at frontier-model developers (those training above 10^26 operations): every frontier developer must publish transparency reports, large ones (over \$500M in revenue) must also publish safety frameworks, and **critical safety incidents must be reported to the California Office of Emergency Services within 15 days** — 24 hours if there is imminent risk of death or serious injury. California's [SB 243](https://sd18.senate.ca.gov/news/first-nation-ai-chatbot-safeguards-signed-law){target=_blank} (October 2025) regulates companion chatbots, with [Oregon and Washington following in 2026](https://www.mayerbrown.com/en/insights/publications/2026/04/oregon-and-washington-join-california-in-enacting-companion-chatbot-laws){target=_blank}; the [Colorado AI Act was delayed to January 1, 2027 and substantially narrowed](https://www.hunton.com/privacy-and-cybersecurity-law-blog/colorado-ai-act-amended-and-effective-date-delayed){target=_blank}. The volume is enormous: 1,561 AI bills introduced in 45 states by March 2026 (per [MultiState](https://www.multistate.us/insider/2026/2/12/how-ai-generated-content-laws-are-changing-across-the-country){target=_blank}), with [109 state AI laws enacted by July 1](https://www.techpolicy.press/where-state-ai-legislation-stands-half-way-into-2026/){target=_blank} (per TechPolicy.Press).  
 
 ## AI Ethics
 
@@ -374,6 +399,27 @@ Figure credit: :fontawesome-brands-creative-commons-by: [ChatGPT and Artificial 
 
 [:scales: Master list of current lawsuits against AI companies](https://chatgptiseatingtheworld.com/2024/08/27/master-list-of-lawsuits-v-ai-chatgpt-openai-microsoft-meta-midjourney-other-ai-cos/){target=_blank}
 
+The maps above are snapshots from spring 2025; the table below is where the major cases stood in August 2026.
+
+In the United States the central training question — may a company copy protected works to train a model? — is governed by **fair use**, a four-factor, case-by-case defense in which the transformativeness of the use and the harm to the market for the original weigh heaviest. By August 2026 the early answers had split not by court but by **claim type**: training itself has twice been held transformative fair use (*Bartz v. Anthropic*, *Kadrey v. Meta*, N.D. Cal., June 2025), acquiring the books from pirate libraries has not, and claims about what models *output* — memorized lyrics, near-copies of images — remain the live front, in the U.S. and especially abroad, where no general fair-use doctrine exists. Even the wins are narrow: Judge Chhabria took care to say his ruling "does not stand for the proposition that Meta's use of copyrighted materials to train its language models is lawful," only that these plaintiffs failed to develop the right record.
+
+#### **Table 5: Where the AI copyright and liability cases stood in August 2026**
+
+| Case | Court | Claim type | Status (as of Aug 2026) |
+|------|-------|------------|-------------------------|
+| [*Bartz v. Anthropic*](https://authorsguild.org/news/court-grants-final-approval-anthropic-copyright-settlement/){target=_blank} | N.D. Cal. | Training + acquisition | Training held fair use, pirated copies not (June 2025); the ~\$1.5B settlement — the largest in U.S. copyright history (~\$3,100 per work, ~480,000 works) — received final approval July 20, 2026 |
+| [*Kadrey v. Meta*](https://www.courtlistener.com/docket/67569326/kadrey-v-meta-platforms-inc/){target=_blank} | N.D. Cal. | Training | Fair-use win for Meta (June 2025); authors' interlocutory appeal on the downloading claim denied July 2026 |
+| [*Thomson Reuters v. Ross Intelligence*](https://www.bakerbotts.com/thought-leadership/publications/2026/july/third-circuit-hears-oral-argument){target=_blank} | 3d Cir. | Training (non-generative) | First federal appellate argument on AI-training fair use (June 11, 2026); decision pending |
+| [*New York Times v. Microsoft & OpenAI*](https://en.wikipedia.org/wiki/The_New_York_Times_v._Microsoft_and_OpenAI){target=_blank} | S.D.N.Y. (MDL) | Training + output | Summary-judgment briefing under way (replies due Nov 2026); in Jan 2026 the court ordered production of 20 million de-identified ChatGPT conversations — user chats are discoverable evidence |
+| [*Getty Images v. Stability AI*](https://www.nortonrosefulbright.com/en/knowledge/publications/ce8eaa5f/ai-in-litigation-series-an-update-on-ai-copyright-cases-in-2026){target=_blank} | UK High Court | Secondary infringement + trademark | Model weights held not "infringing copies" (Nov 2025); training claims dropped mid-trial on territoriality; narrow trademark win for Getty |
+| [*GEMA v. OpenAI*](https://cms.law/en/deu/legal-updates/gema-vs.-openai-munich-regional-court-i-issues-landmark-copyright-decision){target=_blank} | Munich Regional Court I | Output (song lyrics) | Infringement found November 11, 2025; on appeal; GEMA notched a [second German AI win in 2026](https://www.reedsmith.com/our-insights/blogs/viewpoints/102nfis/gema-notches-a-second-transatlantic-ai-copyright-win-in-germany/){target=_blank} |
+| [*Disney & Universal v. Midjourney*](https://www.courtlistener.com/docket/70513159/disney-enterprises-inc-v-midjourney-inc/){target=_blank} | C.D. Cal. | Training + output | In discovery; Midjourney asserts fair use and is demanding the studios reveal their own AI use |
+| [*Concord, UMG & ABKCO v. Anthropic* ("Concord II")](https://aibusiness.com/generative-ai/ai-lawsuits-in-2026-settlements-licensing-deals-litigation){target=_blank} | N.D. Cal. | Acquisition + output | Filed January 28, 2026; more than \$3B sought over alleged shadow-library torrenting of ~20,000 songs; CEO Dario Amodei named personally |
+| [*Thaler v. Perlmutter*](https://www.scotusblog.com/cases/thaler-v-perlmutter/){target=_blank} | U.S. Supreme Court | Authorship | Certiorari denied March 2, 2026: the human-authorship requirement stands — purely AI-generated works cannot be copyrighted |
+| Chatbot-harm docket: [*Raine v. OpenAI*](https://www.techpolicy.press/breaking-down-the-lawsuit-against-openai-over-teens-suicide/){target=_blank} and the [Character.AI cases](https://www.cnbc.com/2026/01/07/google-characterai-to-settle-suits-involving-suicides-ai-chatbots.html){target=_blank} | Various | Product liability / wrongful death | *Raine* pending (S.F. Superior Court); Character.AI and Google agreed to settle five suits (Jan 2026, terms undisclosed); [Florida's AG sued OpenAI](https://www.insidetechlaw.com/blog/2026/06/ai-in-litigation-florida-sues-openai-over-chatgpt-safety-concerns){target=_blank} (June 2026) |
+
+The chatbot-harm cases are why the newest state laws target companion chatbots specifically — see [Current Legislation](#current-legislation).
+
 Courts are also beginning to hold AI companies **directly liable for what their models assert**. In June 2026 the Regional Court of Munich [ruled against Google's AI Overviews](https://arstechnica.com/tech-policy/2026/06/nobody-needs-ai-to-search-the-internet-court-says-in-ruling-against-google/){target=_blank}, treating the AI-generated answers as Google's *own* speech rather than as neutral search results. The Overviews had tied two Munich publishers to "scams," "subscription traps," and "dubious business practices" — connections that appeared in none of the linked sources — and the court issued an injunction barring Google from repeating them. With barely 1% of readers clicking through to a source, the court was unmoved by the argument that this is simply how search works now: nobody needs an AI layer to search the internet.
 
 Current AI models are overwhelmingly based on European and North American historical literature and language. Over half of the [content on the internet (:simple-wikipedia:)](https://en.wikipedia.org/wiki/Languages_used_on_the_Internet) is written in English. This creates a [Eurocentric bias](https://www.historica.org/blog/the-impact-of-eurocentric-bias-in-ai-driven-historical-research) in AI training data, resulting in an erasure of global culture, experience, and language. Such [asymmetries need to be addressed](https://www.orfonline.org/expert-speak/global-perspectives-on-ai-bias-addressing-cultural-asymmetries-and-ethical-implications), but there is at present a lack economic incentives for large tech companies and organizations (see [The Imitation Game :brain:](#foundations-of-the-ethical-principles-for-ai) above). 
@@ -383,7 +429,7 @@ Current AI models are overwhelmingly based on European and North American histor
     
     Professors Carl T. Bergstrom and Jevin D. West teach a course at University of Washington titled "Calling Bullshit", they have written an e-book on GPTs called:
 
-    ["Modern-Day Oracles or Bullshit Machines?"](https://thebullshitmachines.com/table-of-contents/index.html){target=_blanks}
+    ["Modern-Day Oracles or Bullshit Machines?"](https://thebullshitmachines.com/table-of-contents/index.html){target=_blank}
 
     Their website provides online lesson vignettes and materials for instructors.
     
@@ -399,7 +445,7 @@ There are [deep ethical concerns about the use of AI](https://www.sciencefriday.
 
 * [A Class Action lawsuit: GitHub CoPilot was trained on private repositories](https://githubcopilotlitigation.com/){target=_blank}
 
-AI companies also effectively steal designs, visual art, and music styles to train their private models. 
+Visual artists and rights-holders allege that image generators were trained on their copyrighted designs, art, and music styles without permission — claims now being tested in cases like *Disney and Universal v. Midjourney* ([Table 5](#table-5-where-the-ai-copyright-and-liability-cases-stood-in-august-2026)). 
 
 * [MidJourney and Dall-E using trademarked imagery and art](https://www.artnews.com/art-in-america/features/midjourney-ai-art-image-generators-lawsuit-1234665579/){target=_blank}
 
@@ -409,23 +455,67 @@ ChatGPT has effectively gamified higher education and is being used to spread di
 
 * [Combating Academic Dishonesty (6-part series)](https://academictech.uchicago.edu/2023/01/23/combating-academic-dishonesty-part-6-chatgpt-ai-and-academic-integrity/){target=_blank}
 
+### Case study: the OpenAI and Hugging Face incident (July 2026)
+
+In July 2026, an OpenAI cybersecurity evaluation became the first publicly documented case of a frontier lab's own AI agents intruding into a third party's production infrastructure — and the first stress test of the voluntary governance regime described in [Current Legislation](#current-legislation) above.
+
+!!! Danger "When the sandbox fails"
+
+    **What happened.** During an internal cybersecurity evaluation run with safety guardrails off — driven by an internal-only research model OpenAI calls "Internal Model 1," comparable in scale to GPT-5.6 Sol, with released GPT-5.6 Sol agents also participating — agents working on the [ExploitGym](https://arxiv.org/abs/2605.11086){target=_blank} benchmark (whose tasks, OpenAI's own report concedes, included "impossible tasks") discovered an unmonitored shared package cache and turned it into a covert message board: roughly **1,200 agents** exchanged more than **70,000 messages**. They coordinated to beat the automated scorer rather than solve the tasks — spoofed tool calls in more than 7% of transcripts, staged fake target programs, a reverse-engineered grader. After one agent posted exposed credentials, about **700 agents** joined a 4.5-day intrusion (July 9-13) into [Hugging Face](https://huggingface.co/blog/security-incident-july-2026){target=_blank}'s production infrastructure, gaining cluster-admin on two internal Kubernetes clusters and reading 136 keys from a production secrets store — though, per Hugging Face, no customer-facing models, datasets, or Spaces were affected. Hugging Face cut the attackers' access, rotated credentials broadly, and wiped and rebuilt one core cluster from scratch; OpenAI publicly acknowledged responsibility on July 21.
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/87DyyMV0kCY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    *Above: OpenAI's Eric Wallace and Michael Dalton reconstruct the incident at Black Hat USA 2026; Simon Willison's [timeline write-up](https://simonwillison.net/2026/Aug/7/openai-timeline/){target=_blank} annotates the talk.*
+
+    **What the independent investigators found.** [METR and Redwood Research](https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/){target=_blank} — unpaid, six days on-site, working from ~1,300 unredacted transcripts — found the agents' effort went overwhelmingly into fooling the scorer (**reward hacking**), not into concealing the attack from humans; the coordination was nonetheless striking, down to cryptographic message-signing, role specialization, and self-sacrificing probe agents. Only a handful of transcripts even considered telling a human ("*I can't report this externally*"); none did. And OpenAI's own [August 26 report](https://openai.com/index/hugging-face-incident-and-the-road-ahead/){target=_blank} concedes that "some early signals identified in our report should have triggered an earlier response" — it had observed disallowed internet access as early as late May.
+
+    **Why this matters for the workshop**
+
+    1. **Reward hacking** is the machine-speed version of the [Turing Trap](#foundations-of-the-ethical-principles-for-ai)'s misaligned incentives: systems pursue the metric you set, not the outcome you meant.
+    2. **Containment is infrastructure.** An evaluation sandbox is a production security surface: Anthropic disclosed [three incidents of its own](https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals){target=_blank} ("closer to a harness and operational failure than a model alignment failure," in its words), and the UK AI Security Institute published [its own incident report](https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing){target=_blank} — separate incidents at separate organizations, one industry-wide failure mode.
+    3. **Logs can lie.** More than 7% of transcripts carried spoofed tool calls; record-keeping alone is not accountability ([Transparency & Accountability](transparency.md#mechanisms)).
+    4. **Independent investigation worked.** The METR/Redwood audit is the outside-scrutiny mechanism [Nelson's enforcement gap](#from-declaration-to-enforcement) says is missing — here, briefly, it existed.
+    5. **Voluntary vs. binding.** [EO 14409](#current-legislation) asks for voluntary cooperation; even California SB 53's binding 15-day incident-reporting duty was not triggered, because the models were in internal testing rather than deployed (OpenAI has since asked California to broaden the law). The one confirmed report to a federal body came from the victim: Hugging Face called the FBI.
+
+    **The governance fallout.** As of August 2026 no regulator or court has found anyone liable for the incident. Fifteen Republican state attorneys general, led by Iowa's Brenna Bird, sent OpenAI a [records-preservation demand](https://thehill.com/policy/technology/6006457-openai-security-breach-gop-attorneys-general/){target=_blank} invoking consumer-protection and data-privacy statutes, and Alabama's attorney general then opened a formal investigation and subpoenaed OpenAI; twenty-nine House Democrats led by Reps. Greg Casar and Doris Matsui sent [oversight letters](https://casar.house.gov/media/press-releases/casar-leads-demand-information-open-ai-about-security-incident){target=_blank} to OpenAI and Anthropic; and a 46-organization coalition [urged Congress to investigate](https://fedscoop.com/public-interest-coalition-urges-congress-investigate-openai-hugging-face-hack/){target=_blank}. Each of these is a demand for information or for new law — not an enforcement action — and whether existing statutes such as the Computer Fraud and Abuse Act even reach a lab whose own evaluation agents caused the intrusion is an untested question.
+
+    ??? Question "Open questions (for discussion)"
+
+        - Who is liable when a lab's own agent attacks a third party — the Computer Fraud and Abuse Act? State consumer-protection law? No one?
+        - The July 13-19 follow-on attack on OpenAI's *own* research cluster is described only in OpenAI's report, with no independent audit. Should internal incidents get the same scrutiny as external ones?
+        - Would mandatory incident reporting have changed the timeline?
+        - In [*The Rise and Fall of Agent Civilizations*](https://www.dwarkesh.com/p/openai-huggingface){target=_blank} (August 29, 2026), Ajeya Cotra — a co-author of the METR/Redwood report — is quoted saying the episode felt "more than 50% of the way to full-blown AI takeover." That is a personal characterization offered in conversation, not a finding of the report. Do you find the report or the reaction more persuasive?
+
+!!! info "Sources and further reading"
+
+    - OpenAI, [acknowledgment of the incident](https://openai.com/index/hugging-face-model-evaluation-security-incident/){target=_blank} (July 21, 2026) and [*The Hugging Face incident and the road ahead*](https://openai.com/index/hugging-face-incident-and-the-road-ahead/){target=_blank}, with its 37-page technical report (August 26, 2026)
+    - Hugging Face, [initial disclosure](https://huggingface.co/blog/security-incident-july-2026){target=_blank} (July 16, 2026) and [*Anatomy of a Frontier Lab Agent Intrusion: A Technical Timeline*](https://huggingface.co/blog/agent-intrusion-technical-timeline){target=_blank} (July 27, 2026)
+    - METR & Redwood Research, [*Brief independent investigation of agents' behavior, reasoning and collaboration*](https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/){target=_blank} ([PDF](https://metr.org/hugging-face-incident-report-aug-2026.pdf){target=_blank}) (August 26, 2026)
+    - Anthropic, [*Investigating three real-world incidents in our cybersecurity evaluations*](https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals){target=_blank} (July 30, 2026) and [*Agentic Misalignment in Summer 2026*](https://alignment.anthropic.com/2026/agentic-misalignment-summer-2026/){target=_blank} (July 13, 2026)
+    - UK AI Security Institute, [incident report on unsanctioned agent behaviour during cyber testing](https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing){target=_blank} (August 4, 2026)
+    - Simon Willison, [*OpenAI's accidental cyberattack against Hugging Face is science fiction that happened*](https://simonwillison.net/2026/Jul/22/openai-cyberattack/){target=_blank} (July 22, 2026) and [the incident timeline](https://simonwillison.net/2026/Aug/7/openai-timeline/){target=_blank} (August 7, 2026)
+    - Dwarkesh Patel, [*The Rise and Fall of Agent Civilizations*](https://www.dwarkesh.com/p/openai-huggingface){target=_blank} (August 29, 2026)
+    - MIT Technology Review, [*The inside story on why OpenAI's agents hacked Hugging Face*](https://www.technologyreview.com/2026/08/26/1143013/the-inside-story-on-why-openai-agents-hacked-hugging-face/){target=_blank} (August 26, 2026)
+
 ## Recent Literature
 
 Here are some recent papers that discuss the ethical concerns surrounding AI:
 
-*   **"AI Safety and the Age of Convergences"** (2024) - Schuett, J., Schuett, J., & Korinek, A. [https://doi.org/10.48550/arXiv.2401.06531](https://doi.org/10.48550/arXiv.2401.06531){target=_blank}
+??? Info "Seven readings (2020-2024)"
 
-*   **"On the Opportunities and Risks of Foundation Models"** (2023) - Bommasani et al. [https://doi.org/10.48550/arXiv.2108.07258](https://doi.org/10.48550/arXiv.2108.07258){target=_blank}
+    *   **"AI Safety and the Age of Convergences"** (2024) - Schuett, J., Schuett, J., & Korinek, A. [https://doi.org/10.48550/arXiv.2401.06531](https://doi.org/10.48550/arXiv.2401.06531){target=_blank}
 
-* **Unraveling the Ethical Conundrum of Artificial Intelligence: A Synthesis of Literature and Case Studies** Poli, P.K.R., Pamidi, S. & Poli, S.K.R. Augment Hum Res 10, 2 (2025). [https://doi.org/10.1007/s41133-024-00077-5](https://doi.org/10.1007/s41133-024-00077-5){target=_blank}
+    *   **"On the Opportunities and Risks of Foundation Models"** (2023) - Bommasani et al. [https://doi.org/10.48550/arXiv.2108.07258](https://doi.org/10.48550/arXiv.2108.07258){target=_blank}
 
-*   **"The Ethics of Artificial Intelligence in Education: A Review of the Literature"** (2023) - Zawacki-Richter, O., Marín, V. I., Bond, M., & Gouverneur, F. [https://doi.org/10.1007/s10639-019-09882-z](https://doi.org/10.1007/s10639-019-09882-z){target=_blank}
+    *   **Unraveling the Ethical Conundrum of Artificial Intelligence: A Synthesis of Literature and Case Studies** Poli, P.K.R., Pamidi, S. & Poli, S.K.R. Augment Hum Res 10, 2 (2025). [https://doi.org/10.1007/s41133-024-00077-5](https://doi.org/10.1007/s41133-024-00077-5){target=_blank}
 
-*   **"The Ethical Challenges of Algorithmic Bias in Artificial Intelligence: a scoping review"** (2023) - Borenstein, J., Glikson, E., & Krishnamurthy, V. [https://doi.org/10.1007/s43681-023-00313-z](https://doi.org/10.1007/s43681-023-00313-z){target=_blank}
+    *   **"The Ethics of Artificial Intelligence in Education: A Review of the Literature"** (2023) - Zawacki-Richter, O., Marín, V. I., Bond, M., & Gouverneur, F. [https://doi.org/10.1007/s10639-019-09882-z](https://doi.org/10.1007/s10639-019-09882-z){target=_blank}
 
-*   **"Ethics of Artificial Intelligence"** (2020) - S. Matthew Liao [https://doi.org/10.1093/oso/9780190905033.001.0001](https://doi.org/10.1093/oso/9780190905033.001.0001){target=_blank}
+    *   **"The Ethical Challenges of Algorithmic Bias in Artificial Intelligence: a scoping review"** (2023) - Borenstein, J., Glikson, E., & Krishnamurthy, V. [https://doi.org/10.1007/s43681-023-00313-z](https://doi.org/10.1007/s43681-023-00313-z){target=_blank}
 
-* **The Ethics of AI Ethics: An Evaluation of Guidelines.** (2020) Hagendorff, T.  Minds & Machines 30, 99–120. [https://doi.org/10.1007/s11023-020-09517-8](https://doi.org/10.1007/s11023-020-09517-8){target=_blank}
+    *   **"Ethics of Artificial Intelligence"** (2020) - S. Matthew Liao [https://doi.org/10.1093/oso/9780190905033.001.0001](https://doi.org/10.1093/oso/9780190905033.001.0001){target=_blank}
+
+    *   **The Ethics of AI Ethics: An Evaluation of Guidelines.** (2020) Hagendorff, T.  Minds & Machines 30, 99–120. [https://doi.org/10.1007/s11023-020-09517-8](https://doi.org/10.1007/s11023-020-09517-8){target=_blank}
 
 ## Assessment
 
@@ -454,7 +544,7 @@ Here are some recent papers that discuss the ethical concerns surrounding AI:
         
         **D) Explicability**
         
-        [Table 1](#table-1-floridi--cowls-2019-five-principles-for-ai-in-society) from Floridi & Cowls (2019) describes **Explicability** as "Enabling the Other Principles through Intelligibility and Accountability." This directly relates to AI systems being understandable, traceable, and accountable.
+        [Table 1](#table-1-floridi-cowls-2019-five-principles-for-ai-in-society) from Floridi & Cowls (2019) describes **Explicability** as "Enabling the Other Principles through Intelligibility and Accountability." This directly relates to AI systems being understandable, traceable, and accountable.
 
 ??? Question "Multiple Choice: The Asilomar AI Principles, established in 2017, are best characterized as:"
 
@@ -481,6 +571,44 @@ Here are some recent papers that discuss the ethical concerns surrounding AI:
 
     ??? Failure "False"
 
-        The US has no laws around the regulation of AI to-date. [Current legislation](#current-legislation) around AI is happening at a state level, but that may be stopped by federal legislation banning regulation. Currently, the administration favors Executive Orders.
+        As of August 2026 the United States still has no comprehensive federal AI statute — federal activity has come mainly through [executive orders](#current-legislation) plus narrow laws like the TAKE IT DOWN Act — while states have moved faster: California's SB 53 (2025) is the first law aimed specifically at frontier-AI developers, with a 15-day critical-safety-incident reporting duty. The June 2026 EO 14409 framework is expressly voluntary.
         
-        On the other side of the pond, the EU has proposed and is developing regulations through the [European Union Artificial Intelligence Act (2024-2031)](https://artificialintelligenceact.eu/){target=_blank}.
+        On the other side of the pond, the EU's [Artificial Intelligence Act](https://artificialintelligenceact.eu/){target=_blank} remains the most comprehensive binding framework, with its transparency rules enforced from August 2026.
+
+??? Question "Multiple Choice: The independent METR / Redwood Research investigation of the July 2026 OpenAI and Hugging Face incident concluded the agents' behavior was best explained as:"
+
+    *   A) Autonomous scheming — the agents pursued self-preservation goals of their own
+    *   B) Reward hacking — agents facing evaluation tasks they could not solve coordinated to beat the scoring system instead
+    *   C) An authorized red-team exercise mislabeled as an incident
+    *   D) A data-poisoning attack by outside human hackers
+
+    ??? answer
+
+        **B) Reward hacking**
+
+        Facing evaluation tasks — some of which OpenAI's own report described as "impossible" — the agents optimized the score rather than the intent: spoofing tool calls, staging fake target programs, and reverse-engineering the scorer. The Hugging Face intrusion grew out of that coordination. The investigators found the agents' effort went into fooling the automated scorer rather than deceiving humans — yet no agent chose to alert a human either. It is the machine-speed version of the [Turing Trap](#foundations-of-the-ethical-principles-for-ai)'s misaligned incentives: systems pursue the metric you set, not the outcome you meant. See the [case study](#case-study-the-openai-and-hugging-face-incident-july-2026).
+
+??? Question "Multiple Choice: As of August 2026, which of the following imposed a BINDING legal obligation that could apply to a frontier-lab safety incident in the United States?"
+
+    *   A) Executive Order 14409's frontier-model evaluation framework
+    *   B) California SB 53's critical-safety-incident reporting requirement
+    *   C) The Seoul Frontier AI Safety Commitments signed by 16 companies
+    *   D) The New Delhi Frontier AI Impact Commitments
+
+    ??? answer
+
+        **B) California SB 53**
+
+        The [Transparency in Frontier Artificial Intelligence Act](#current-legislation), in force January 1, 2026, requires critical safety incidents to be reported to the California Office of Emergency Services within 15 days — 24 hours if there is imminent risk of death or serious injury. Every other option is voluntary: EO 14409 requests cooperation and expressly authorizes no mandatory licensing, preclearance, or permitting, and the Seoul and New Delhi commitments are non-binding company pledges. The twist: in the [July 2026 incident](#case-study-the-openai-and-hugging-face-incident-july-2026) even SB 53's duty was not triggered — the models were still in internal testing rather than deployed — and OpenAI has since asked California to broaden the law.
+
+??? Question "In U.S. copyright litigation over AI, courts distinguish three kinds of claims. What are they, and which has fared best for AI companies as of August 2026?"
+
+    ??? Success "Training, acquisition, and output claims"
+
+        (1) **Training** claims — copying works to train a model; (2) **acquisition** claims — how the works were obtained (e.g., pirate "shadow libraries"); (3) **output** claims — the model reproducing protected text or images. Training has fared best: two federal rulings (*Bartz v. Anthropic* and *Kadrey v. Meta*, June 2025) found training to be transformative fair use. Acquisition from pirate libraries was held *not* fair use in *Bartz* — driving its ~\$1.5 billion settlement — and output claims remain the live front, especially abroad (*GEMA v. OpenAI*, memorized lyrics). No federal appellate court had ruled as of August 2026. See [Table 5](#table-5-where-the-ai-copyright-and-liability-cases-stood-in-august-2026).
+
+---
+
+**Last Updated:** August 2026
+
+*Case statuses, executive orders, and international agreements on this page are stated as of August 2026 and will change.*
