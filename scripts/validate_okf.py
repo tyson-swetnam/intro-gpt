@@ -158,6 +158,11 @@ def check_file(rep, docs: Path, path: Path):
             rep.warn(rel, f"description is {len(desc)} chars (>300)")
         if "](" in desc or SHORTCODE_RE.search(desc):
             rep.warn(rel, "description should be plain text (no markdown/shortcodes)")
+        # Zensical's native <meta name="description"> interpolates without
+        # escaping (MiniJinja autoescape is off), so these break the attribute.
+        unsafe = [c for c in '"<>' if c in desc]
+        if unsafe:
+            rep.error(rel, f"description contains attribute-breaking characters: {unsafe}")
 
     # resource
     resource = meta.get("resource")

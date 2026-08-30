@@ -89,18 +89,26 @@ def main():
 
     sections = flatten_nav(cfg.get("nav", []))
 
-    # Coverage: docs pages missing from nav go into a trailing "Other" section.
+    # Coverage: docs pages missing from nav go into a trailing "Other" section,
+    # except OKF-reserved files (log.md), which are deliberately unnavigated
+    # and get a "Meta" section without a warning.
     in_nav = {rel for _, pages in sections for _, rel in pages}
-    extras = []
+    reserved, extras = [], []
     for path in sorted(docs.rglob("*.md")):
         rel = str(path.relative_to(docs))
-        if rel not in in_nav and not any(
+        if rel in in_nav or any(
             part.startswith(("#", ".#")) or part.endswith("~") for part in path.parts
         ):
+            continue
+        if rel == "log.md":
+            reserved.append((None, rel))
+        else:
             extras.append((None, rel))
     if extras:
         problems.append(f"pages not in nav (added under 'Other'): {[r for _, r in extras]}")
         sections.append(("Other", extras))
+    if reserved:
+        sections.append(("Meta", reserved))
 
     lines = [f"# {cfg['site_name']}", "", f"> {cfg['site_description']}", ""]
     full = [f"# {cfg['site_name']} — full content", "",
