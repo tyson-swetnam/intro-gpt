@@ -201,6 +201,8 @@ Consider these approaches along a spectrum from prohibited to encouraged:
 
     Update your policy at the start of each term as AI capabilities and norms evolve.
 
+For how peer institutions have formalized these choices — including Salisbury University's closely parallel AI Inclusive / AI Conditional / AI Restrictive syllabus framework — see [University AI task-force reports and policies](#university-ai-task-force-reports-and-policies) below.
+
 ### Learning Objective Generation
 
 AI excels at helping faculty articulate clear, measurable learning objectives:
@@ -735,6 +737,27 @@ Point graduate students to these research-focused AI resources:
 
     [How to handle AI in Schools by CommonSense.org](https://www.commonsense.org/education/articles/chatgpt-and-beyond-how-to-handle-ai-in-schools){target=_blank}
 
+## University AI task-force reports and policies
+
+Universities are no longer improvising: since 2023 many have run formal task forces on AI in teaching and learning, and their published reports are the best benchmarking material available when drafting your own course, departmental, or campus policy. A selection worth reading, from single campuses to global:
+
+**Campus task-force reports:**
+
+* [University of Virginia - Report of the Generative AI in Teaching and Learning Task Force](https://genai.provost.virginia.edu/task-force-report){target=_blank} (2023) - one of the earliest, built on six faculty town halls and surveys of 504 students and 181 faculty.
+* [University of South Carolina - Report of the 2024-2025 Provost's Task Force on the Use of AI Tools in Teaching and Learning](https://swan.sc.edu/about/offices_and_divisions/cte/teaching_resources/docs/ai_task_force_report.pdf){target=_blank} - research-based guidelines centered on building campus-wide AI literacy, with action items on policy changes, faculty development, tool procurement, and a system for regularly updating the guidelines.
+* [Salisbury University - AI Task Force Final Report, Teaching & Learning Working Group](https://www.salisbury.edu/administration/campus-governance/faculty-senate/_files/25-26/2026-04-14/ai-task-force-rpts/2026-AI-Task-Force-Fnl-Rpt-Teach-Lng.pdf){target=_blank} (April 2026) - proposes a three-tier syllabus framework (**AI Inclusive, AI Conditional, AI Restrictive**) much like the [sample policies above](#syllabus-ai-policies-2026-best-practices), plus phased faculty-development steps and AI language for the academic-misconduct policy.
+* [University of Notre Dame - Curriculum and Learning Task Force](https://data-ai-computing.nd.edu/education/curriculum-and-learning-task-force/){target=_blank} (2025-2026) - recommendations on new AI courses, programs, and degrees, and the services and training faculty and students need for AI in teaching, learning, and assessment.
+
+**System- and senate-level governance:**
+
+* [University of California Academic Senate - AI Workgroup Report and Recommendations](https://senate.universityofcalifornia.edu/_files/reports/council-chair-to-senate-divisions-senate-ai-workgroup-report.pdf){target=_blank} (endorsed December 2025; transmitted to divisions January 2026) - a systemwide framework built on three principles, **agency, adaptability, and trustworthiness**, spanning instruction, research, admissions, and data stewardship.
+* [University of Manchester (UK) - AI in Teaching and Learning Policy](https://documents.manchester.ac.uk/display.aspx?DocID=79331){target=_blank} (Senate-approved April 2026; effective September 1, 2026) - a rare example of binding institutional *policy* rather than guidance: rules for AI in assessed work, permitted student and staff use, and compliance monitoring.
+
+**Global:**
+
+* [Brookings Global Task Force on AI in Education - *A New Direction for Students in an AI World: Prosper, Prepare, Protect*](https://www.brookings.edu/projects/brookings-global-task-force-on-ai-in-education/){target=_blank} (January 2026) - three pillars for AI in education worldwide, with a caution that carelessly deployed AI's risks to foundational learning can outweigh its benefits.
+
+*For the macroeconomic frame around these campus debates — jobs, critical thinking, and the transition Bill Gates says "we are not preparing for" — see the [Gates essay in the Ethics module](ethics.md#bill-gates-we-are-not-preparing-for-it-2026).*
 
 ## References
 
