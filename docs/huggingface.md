@@ -1,3 +1,34 @@
+---
+type: Research Guide
+title: Hugging Face
+description: >-
+  Guide to the Hugging Face Hub: finding models and datasets, CLI
+  authentication, and running open models locally with Transformers,
+  llama.cpp, or Ollama.
+resource: https://tyson-swetnam.github.io/intro-gpt/huggingface/
+tags: [research, huggingface, local-llm]
+sources:
+  - resource: https://huggingface.co
+    title: Hugging Face
+  - resource: https://huggingface.co/docs
+    title: Hugging Face Documentation
+  - resource: https://huggingface.co/models
+    title: Model Hub
+  - resource: https://huggingface.co/datasets
+    title: Dataset Hub
+  - resource: https://huggingface.co/docs/transformers
+    title: Transformers Library
+  - resource: https://github.com/oobabooga/text-generation-webui
+    title: text-generation-webui
+generated:
+  by: human:tswetnam
+  at: "2026-05-09T19:15:29Z"
+verified:
+  - by: human:tswetnam
+    at: "2026-05-09T19:15:29Z"
+status: stable
+---
+
 # Hugging Face
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.

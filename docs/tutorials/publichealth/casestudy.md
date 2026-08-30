@@ -1,3 +1,34 @@
+---
+type: Tutorial
+title: Public Health AI Lab — Triage, Surveillance, Abstraction
+description: >-
+  Hands-on lab applying few-shot, chaining, chain-of-thought, and structured
+  output to SMS triage, outbreak briefs, and chart abstraction.
+resource: https://tyson-swetnam.github.io/intro-gpt/tutorials/publichealth/casestudy/
+tags: [tutorial, public-health, prompt-engineering]
+sources:
+  - resource: https://iris.who.int/bitstream/handle/10665/341996/9789240029200-eng.pdf
+    title: WHO Ethics and Governance of AI for Health
+  - resource: https://arxiv.org/abs/2404.06962
+    title: PandemicLLM
+  - resource: https://doi.org/10.2105/AJPH.2024.307888
+    title: The Way Forward to Embrace AI in Public Health
+    author: Hattab et al.
+  - resource: https://www.itu.int/en/ITU-T/focusgroups/ai4h/Pages/default.aspx
+    title: ITU/WHO Focus Group on AI for Health
+  - resource: https://endingpandemics.org/
+    title: Ending Pandemics
+  - resource: https://www.pennmedicine.org/news/news-releases/2024
+    title: Penn Medicine clinical summarization pilots
+generated:
+  by: human:tswetnam
+  at: "2026-05-09T22:21:28Z"
+verified:
+  - by: human:tswetnam
+    at: "2026-05-09T22:21:28Z"
+status: stable
+---
+
 # Public Health AI Lab — Triage, Surveillance, Abstraction
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.

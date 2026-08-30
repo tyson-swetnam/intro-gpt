@@ -1,3 +1,35 @@
+---
+type: Research Guide
+title: Retrieval Augmented Generation (RAG)
+description: >-
+  How retrieval-augmented generation grounds LLM answers in your documents,
+  covering embeddings, vector databases, and tools like NotebookLM and OpenWebUI.
+resource: https://tyson-swetnam.github.io/intro-gpt/rag/
+tags: [research, rag, local-llm]
+sources:
+  - resource: https://arxiv.org/abs/2005.11401
+    title: Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks
+    author: Lewis et al.
+  - resource: https://arxiv.org/abs/2202.01110
+    title: A Survey on Retrieval-Augmented Text Generation
+  - resource: https://vickiboykis.com/what_are_embeddings/
+    title: What are Embeddings?
+    author: Vicki Boykis
+  - resource: https://openwebui.com
+    title: OpenWebUI
+  - resource: https://python.langchain.com/docs/tutorials/rag/
+    title: LangChain RAG Tutorial
+  - resource: https://notebooklm.google/
+    title: NotebookLM
+generated:
+  by: human:tswetnam
+  at: "2026-05-09T19:15:29Z"
+verified:
+  - by: human:tswetnam
+    at: "2026-05-09T19:15:29Z"
+status: stable
+---
+
 # Retrieval Augmented Generation (RAG)
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
@@ -362,7 +394,7 @@ Several frameworks simplify building RAG applications:
     print(response)
     ```
 
-    **Note**: This requires API keys and Python packages. See [Code Execution](execution.md) for environment setup.
+    **Note**: This requires API keys and Python packages. See [AI Sandboxes](ai_sandboxes.md) for environment setup.
 
 ## RAG for Academic Research
 
@@ -534,5 +566,5 @@ RAG is powerful but not perfect. Understanding its limitations helps you use it 
 
 - **[NotebookLM](notebooklm.md)** - Consumer-friendly RAG for research
 - **[Text Mining](text_mining.md)** - Techniques for processing large text collections
-- **[Code Execution](execution.md)** - Setting up environments for custom RAG development
+- **[AI Sandboxes](ai_sandboxes.md)** - Setting up environments for custom RAG development
 - **[Agentic AI](agentic.md)** - How RAG combines with autonomous AI agents

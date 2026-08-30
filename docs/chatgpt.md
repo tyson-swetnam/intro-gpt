@@ -1,3 +1,35 @@
+---
+type: Setup Guide
+title: OpenAI ChatGPT
+description: >-
+  Set up a ChatGPT account, compare subscription tiers from Free to Pro and
+  Enterprise, and create OpenAI API keys for programmatic access.
+resource: https://tyson-swetnam.github.io/intro-gpt/chatgpt/
+tags: [setup, openai, pricing]
+sources:
+  - resource: https://openai.com/chatgpt/pricing/
+    title: ChatGPT pricing
+  - resource: https://openai.com/api/pricing/
+    title: OpenAI API Pricing
+  - resource: https://platform.openai.com/docs/models
+    title: OpenAI models documentation
+  - resource: https://platform.openai.com/docs/overview
+    title: OpenAI API Documentation
+  - resource: https://github.com/openai/openai-cookbook
+    title: OpenAI Cookbook
+  - resource: https://arxiv.org/abs/2303.08774
+    title: GPT-4 Technical Report
+    author: OpenAI
+generated:
+  by: human:tswetnam
+  at: "2026-05-10T19:02:57Z"
+verified:
+  - by: human:tswetnam
+    at: "2026-05-10T19:02:57Z"
+status: stable
+stale_after: "2026-11-01T00:00:00Z"
+---
+
 # :fontawesome-brands-openai: OpenAI ChatGPT
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />

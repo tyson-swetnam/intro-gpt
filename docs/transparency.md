@@ -1,3 +1,41 @@
+---
+type: Ethics Guide
+title: Transparency and Accountability
+description: >-
+  Defines AI transparency and explainable AI, surveys accountability
+  frameworks from NIST, OECD, WHO, and the EU AI Act, and examines
+  audit-log integrity.
+resource: https://tyson-swetnam.github.io/intro-gpt/transparency/
+tags: [ethics, bias, legal, public-health]
+sources:
+  - resource: https://www.unesco.org/en/legal-affairs/recommendation-ethics-artificial-intelligence
+    title: UNESCO Recommendation on the Ethics of Artificial Intelligence
+  - resource: https://www.nist.gov/itl/ai-risk-management-framework
+    title: NIST AI Risk Management Framework
+  - resource: https://oecd.ai/en/ai-principles
+    title: OECD AI Principles
+  - resource: https://www.who.int/news/item/18-01-2024-who-releases-ai-ethics-and-governance-guidance-for-large-multi-modal-models
+    title: WHO AI Ethics and Governance Guidance for Large Multi-Modal Models
+  - resource: https://artificialintelligenceact.eu/
+    title: EU Artificial Intelligence Act
+  - resource: https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/
+    title: OpenAI and Hugging Face Incident Investigation
+    author: METR and Redwood Research
+  - resource: https://alignment.anthropic.com/2026/agentic-misalignment-summer-2026/
+    title: Agentic Misalignment Evaluations (Summer 2026)
+    author: Anthropic
+  - resource: https://www.aclu.org/news/privacy-technology/algorithms-in-health-care-may-worsen-medical-racism
+    title: Algorithms in Health Care May Worsen Medical Racism
+    author: ACLU
+generated:
+  by: human:tswetnam
+  at: "2026-08-30T15:21:35-06:00"
+verified:
+  - by: human:tswetnam
+    at: "2026-08-30T15:21:35-06:00"
+status: stable
+---
+
 # Transparency and Accountability
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.

@@ -1,3 +1,39 @@
+---
+type: Research Guide
+title: AI Sandboxes
+description: >-
+  Compares traditional VM and container sandboxes with agentic AI sandboxes
+  in coding tools, and surveys university and cloud sandbox programs for
+  safe AI use.
+resource: https://tyson-swetnam.github.io/intro-gpt/ai_sandboxes/
+tags: [research, setup, pricing, education, agentic-ai]
+sources:
+  - resource: https://www.anthropic.com/engineering/claude-code-sandboxing
+    title: Claude Code Sandboxing
+  - resource: https://openai.com/index/codex/
+    title: OpenAI Codex
+  - resource: https://ai.google.dev/gemini-api/docs/get-started/tutorial
+    title: Gemini CLI
+  - resource: https://www.huit.harvard.edu/ai-sandbox
+    title: Harvard AI Sandbox
+  - resource: https://uit.stanford.edu/news/ai-playground-safer-ai-platform-stanford-community
+    title: Stanford AI Playground
+  - resource: https://coe.gatech.edu/news/2024/04/georgia-tech-unveils-new-ai-makerspace-collaboration-nvidia
+    title: Georgia Tech AI Makerspace
+  - resource: https://aws.amazon.com/education/awseducate/
+    title: AWS Educate
+  - resource: https://azure.microsoft.com/en-us/free/students
+    title: Azure for Students
+generated:
+  by: human:tswetnam
+  at: "2026-05-10T18:42:02Z"
+verified:
+  - by: human:tswetnam
+    at: "2026-05-10T18:42:02Z"
+status: stable
+stale_after: "2026-11-01T00:00:00Z"
+---
+
 # AI Sandboxes
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.

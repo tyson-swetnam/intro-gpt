@@ -1,3 +1,30 @@
+---
+type: Tutorial
+title: Vibe coding a Public Health Map
+description: >-
+  A 90-minute lab guiding an AI coding agent to build a scrolling Leaflet
+  story map of London's 1850 cholera outbreak from the John Snow GeoJSON
+  dataset.
+resource: https://tyson-swetnam.github.io/intro-gpt/tutorials/publichealth/gis/
+tags: [tutorial, public-health, gis, coding, prompt-engineering, agentic-ai]
+sources:
+  - resource: https://geodacenter.github.io/data-and-lab/data/snow.zip
+    title: John Snow cholera dataset (GeoDa Center)
+  - resource: https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem
+    title: Filesystem MCP server
+  - resource: https://github.com/jjsantos01/qgis_mcp
+    title: QGIS MCP
+  - resource: https://pages.github.com/
+    title: GitHub Pages
+generated:
+  by: human:tswetnam
+  at: "2026-06-09T16:26:32Z"
+verified:
+  - by: human:tswetnam
+    at: "2026-06-09T16:26:32Z"
+status: stable
+---
+
 # Vibe coding a Public Health Map
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.

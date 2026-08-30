@@ -1,3 +1,29 @@
+---
+type: Setup Guide
+title: Microsoft Copilot
+description: >-
+  How University of Arizona users sign in to Microsoft Copilot with Enterprise
+  Data Protection and where Copilot fits in Microsoft 365.
+resource: https://tyson-swetnam.github.io/intro-gpt/microsoft/
+tags: [setup, microsoft]
+sources:
+  - resource: https://copilot.cloud.microsoft/
+    title: Microsoft Copilot portal
+  - resource: https://learn.microsoft.com/en-us/copilot/microsoft-365/enterprise-data-protection
+    title: Enterprise Data Protection in Microsoft 365 Copilot
+  - resource: https://m365.cloud.microsoft
+    title: Microsoft 365 Copilot app
+  - resource: https://techcommunity.microsoft.com/blog/microsoft365copilotblog/microsoft-365-copilot-wave-2-ai-innovations-in-sharepoint-and-onedrive/4245159
+    title: Microsoft 365 Copilot Wave 2 announcement
+generated:
+  by: human:tswetnam
+  at: "2025-01-05T17:51:57-07:00"
+verified:
+  - by: human:tswetnam
+    at: "2025-01-05T17:51:57-07:00"
+status: stable
+---
+
 # :material-microsoft: Microsoft Copilot
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a>.

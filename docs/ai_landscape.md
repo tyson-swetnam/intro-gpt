@@ -1,3 +1,41 @@
+---
+type: Overview
+title: The Landscape
+description: >-
+  Maps the 2026 generative AI ecosystem: foundation model evolution, agentic
+  AI autonomy levels, digital twins, world models, and a glossary of key terms.
+resource: https://tyson-swetnam.github.io/intro-gpt/ai_landscape/
+tags: [workshop, pricing, agentic-ai, mcp]
+sources:
+  - resource: https://arxiv.org/abs/1706.03762
+    title: Attention Is All You Need
+    author: Vaswani et al.
+  - resource: https://arxiv.org/abs/2304.13712
+    title: Harnessing the Power of LLMs in Practice
+    author: Yang et al.
+  - resource: https://metr.org
+    title: METR
+  - resource: https://arxiv.org/abs/2508.07407
+    title: A Comprehensive Survey of Self-Evolving AI Agents
+    author: Fang et al.
+  - resource: https://arxiv.org/abs/2504.21853
+    title: A Survey of Interactive Generative Video
+    author: Yu et al.
+  - resource: https://arxiv.org/abs/1803.10122
+    title: World Models
+    author: Ha & Schmidhuber
+  - resource: https://deepmind.google/blog/genie-3-a-new-frontier-for-world-models/
+    title: "Genie 3: A new frontier for world models"
+generated:
+  by: human:tswetnam
+  at: "2026-06-10T23:20:03Z"
+verified:
+  - by: human:tswetnam
+    at: "2026-06-10T23:20:03Z"
+status: stable
+stale_after: "2026-11-01T00:00:00Z"
+---
+
 # The Landscape
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.

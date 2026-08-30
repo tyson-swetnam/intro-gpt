@@ -22,6 +22,7 @@ edit_uri = "edit/main/docs/"
 
 [project.theme]
 name = "material"
+custom_dir = "overrides"
 language = "en"
 logo = "assets/ua.png"
 favicon = "assets/ua.ico"

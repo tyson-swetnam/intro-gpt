@@ -1,3 +1,41 @@
+---
+type: Ethics Guide
+title: Ethical & Legal Considerations
+description: >-
+  AI ethics and law: international agreements, US executive orders and state
+  statutes, copyright litigation, and the 2026 OpenAI-Hugging Face incident.
+resource: https://tyson-swetnam.github.io/intro-gpt/legal/
+tags: [ethics, legal, academic-integrity]
+sources:
+  - resource: https://doi.org/10.1093/mind/LIX.236.433
+    title: Computing Machinery and Intelligence
+    author: Alan Turing
+  - resource: https://doi.org/10.1162%2F99608f92.8cd550d1
+    title: A Unified Framework of Five Principles for AI in Society
+    author: Luciano Floridi and Josh Cowls
+  - resource: https://artificialintelligenceact.eu/
+    title: EU Artificial Intelligence Act
+  - resource: https://bidenwhitehouse.archives.gov/ostp/ai-bill-of-rights/
+    title: Blueprint for an AI Bill of Rights
+  - resource: https://www.science.org/doi/10.1126/science.aeh7153
+    title: A civic grammar for AI rights
+    author: Alondra Nelson
+  - resource: https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html
+    title: Magnifica Humanitas
+    author: Pope Leo XIV
+  - resource: https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/
+    title: METR & Redwood Research incident investigation
+  - resource: https://www.ncsl.org/financial-services/artificial-intelligence-legislation-database
+    title: NCSL AI Legislation Database
+generated:
+  by: human:tswetnam
+  at: "2026-08-30T15:21:35-06:00"
+verified:
+  - by: human:tswetnam
+    at: "2026-08-30T15:21:35-06:00"
+status: stable
+---
+
 # Ethical & Legal Considerations
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.

@@ -1,3 +1,35 @@
+---
+type: Setup Guide
+title: Choosing the Right AI Platform
+description: >-
+  Comparison tables of AI platforms for chat, research, coding, and
+  image/video, with May 2026 pricing and US restrictions on Chinese AI
+  services.
+resource: https://tyson-swetnam.github.io/intro-gpt/choose/
+tags: [setup, pricing, anthropic, openai, google, microsoft]
+sources:
+  - resource: https://www.anthropic.com/pricing
+    title: Anthropic Pricing
+  - resource: https://ai.google.dev/pricing
+    title: Gemini API Pricing
+  - resource: https://openai.com/api/pricing/
+    title: OpenAI API Pricing
+  - resource: https://help.openai.com/en/articles/20001152-what-to-know-about-the-sora-discontinuation
+    title: Sora Discontinuation FAQ
+  - resource: https://www.congress.gov/bill/119th-congress/house-bill/1121
+    title: H.R. 1121 No DeepSeek on Government Devices Act
+  - resource: https://llm-stats.com/leaderboards/best-ai-for-image-generation
+    title: LLM Stats Image Generation Leaderboard
+generated:
+  by: human:tswetnam
+  at: "2026-05-10T19:02:57Z"
+verified:
+  - by: human:tswetnam
+    at: "2026-05-10T19:02:57Z"
+status: stable
+stale_after: "2026-11-01T00:00:00Z"
+---
+
 # Choosing the Right AI Platform
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.

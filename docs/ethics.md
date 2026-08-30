@@ -1,3 +1,33 @@
+---
+type: Ethics Guide
+title: Ethics of Artificial Intelligence
+description: >-
+  Traces AI ethics from the 1956 Dartmouth workshop to the 2026 essays of
+  Bregman and Gates on AI denial, governance, and the economic transition.
+resource: https://tyson-swetnam.github.io/intro-gpt/ethics/
+tags: [ethics]
+sources:
+  - resource: https://rutgerbregman.substack.com/p/an-inconvenient-truth-about-ai
+    title: An Inconvenient Truth About AI
+    author: Rutger Bregman
+  - resource: https://www.gatesnotes.com/a-turbulent-ai-era-and-critical-choices-to-make
+    title: The turbulent AI era is here
+    author: Bill Gates
+  - resource: https://spectrum.ieee.org/dartmouth-ai-workshop
+    title: IEEE Spectrum on the 1956 Dartmouth AI workshop
+  - resource: https://home.dartmouth.edu/about/artificial-intelligence-ai-coined-dartmouth
+    title: Artificial Intelligence coined at Dartmouth
+  - resource: https://techcrunch.com/2026/08/26/bill-gates-wants-to-see-a-robot-tax-and-human-reserved-jobs-to-mitigate-harms-from-ai/
+    title: TechCrunch interview with Bill Gates on robot taxes
+generated:
+  by: human:tswetnam
+  at: "2026-08-30T15:21:35-06:00"
+verified:
+  - by: human:tswetnam
+    at: "2026-08-30T15:21:35-06:00"
+status: stable
+---
+
 # Ethics of Artificial Intelligence
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.

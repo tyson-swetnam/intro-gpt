@@ -1,3 +1,33 @@
+---
+type: Ethics Guide
+title: Bias and Discrimination
+description: >-
+  Sources of AI bias, prevention strategies, real public-health harms, and a
+  2026 Nature study of state-media influence on LLMs across query languages.
+resource: https://tyson-swetnam.github.io/intro-gpt/bias/
+tags: [ethics, bias, public-health]
+sources:
+  - resource: https://www.science.org/doi/10.1126/science.aax2342
+    title: Dissecting racial bias in an algorithm used to manage the health of populations
+    author: Obermeyer et al.
+  - resource: https://www.nature.com/articles/s41586-026-10506-7
+    title: State media control influences large language models
+    author: Waight, Yang, Yuan et al.
+  - resource: https://www.aclu.org/news/privacy-technology/algorithms-in-health-care-may-worsen-medical-racism
+    title: Algorithms in Health Care May Worsen Medical Racism
+  - resource: https://huggingface.co/datasets/uonlp/CulturaX
+    title: CulturaX multilingual training corpus
+  - resource: https://www.nature.com/articles/d41586-026-01486-9
+    title: State media control shapes LLM behaviour by influencing training data
+generated:
+  by: human:tswetnam
+  at: "2026-06-03T23:27:38Z"
+verified:
+  - by: human:tswetnam
+    at: "2026-06-03T23:27:38Z"
+status: stable
+---
+
 # Bias and Discrimination
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.

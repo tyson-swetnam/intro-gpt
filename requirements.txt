@@ -24,3 +24,6 @@ wheel
 
 # Additional requirements
 requests>=2.26
+
+# OKF validation and llms.txt generation (scripts/)
+pyyaml

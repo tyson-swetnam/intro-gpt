@@ -59,6 +59,15 @@ Dispatch **4 parallel general-purpose sub-agents** — one per file cluster — 
 3. `docs/gemini.md` + `docs/index.md` + `docs/vscode.md` + `docs/rag.md` — Google subscriptions, homepage subscription summary, Copilot pricing in vscode.md, RAG comparison table.
 4. `docs/ai_landscape.md` + `docs/tutoring.md` + `docs/daily-productivity.md` + `docs/admissions.md` + `docs/plagiarism.md` + `docs/teaching.md` + `docs/gradio.md` + any other file with a stale stamp. Update stamps only; add a "not re-verified [Month Year]" caveat for sections with edu/plagiarism/research-tool pricing that this round did not verify.
 
+### OKF metadata maintenance (same pass)
+
+Every page carries OKF v0.2 frontmatter (see `CLAUDE.md`). When a pricing page's body changes in this refresh:
+- Bump its `stale_after` to the first of the month six months out (e.g. a November 2026 refresh sets `stale_after: "2027-05-01T00:00:00Z"`), keeping it in step with the new "as of" stamp.
+- Update `generated.at` to the current date (ISO-8601, quoted).
+- Do **NOT** touch `verified` — verification entries are added only by a human (the merge is the human review).
+- Append one `**Update**` line under a new `## YYYY-MM-DD` heading (newest first) in `docs/log.md` summarizing the pricing pass.
+- Run `python3 scripts/validate_okf.py docs` before committing.
+
 ## Phase D — Commit and push
 
 Once all 4 update agents have reported back:

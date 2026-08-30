@@ -1,3 +1,33 @@
+---
+type: Research Guide
+title: Text Mining Resources
+description: >-
+  Text and data mining sources for research, from licensed APIs like Scopus
+  and ProQuest to open corpora like arXiv, HathiTrust, and government records.
+resource: https://tyson-swetnam.github.io/intro-gpt/text_mining/
+tags: [research, data-analysis]
+sources:
+  - resource: https://libguides.princeton.edu/textmining/sources
+    title: Princeton University Text Mining LibGuide
+  - resource: https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf
+    title: NIST AI Risk Management Framework
+  - resource: https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.200-1.pdf
+    title: NIST Trustworthy and Responsible AI Taxonomy
+  - resource: https://zenodo.org/records/14201006
+    title: GREI AI Taxonomy for Data Repositories
+  - resource: https://www.jstor.org/dfr/
+    title: JSTOR Data for Research
+  - resource: https://arxiv.org/help/bulk_data
+    title: arXiv Bulk Data
+generated:
+  by: human:tswetnam
+  at: "2026-01-09T12:48:32-07:00"
+verified:
+  - by: human:tswetnam
+    at: "2026-01-09T12:48:32-07:00"
+status: stable
+---
+
 # Text Mining Resources
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.

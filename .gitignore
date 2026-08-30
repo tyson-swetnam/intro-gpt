@@ -1,0 +1,14 @@
+# Build output
+site/
+.cache/
+
+# macOS
+.DS_Store
+
+# Emacs backup/autosave/lock files
+\#*\#
+.\#*
+*~
+
+# Python
+__pycache__/
