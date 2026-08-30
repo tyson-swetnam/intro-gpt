@@ -1,3 +1,25 @@
+---
+type: Overview
+title: Self-Paced Online Workshop
+description: >-
+  Agenda for a self-paced 8-12 hour workshop on generative AI for academics,
+  spanning platform setup, prompt engineering, education, research, and ethics.
+resource: https://tyson-swetnam.github.io/intro-gpt/agenda/
+tags: [workshop]
+sources:
+  - resource: https://www.go-fair.org/fair-principles/
+    title: FAIR Principles
+  - resource: https://www.gida-global.org/care
+    title: CARE Principles for Indigenous Data Governance
+generated:
+  by: human:tswetnam
+  at: "2026-08-30T15:21:35-06:00"
+verified:
+  - by: human:tswetnam
+    at: "2026-08-30T15:21:35-06:00"
+status: stable
+---
+
 # Self-Paced Online Workshop
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
@@ -97,7 +119,7 @@ Advanced topics for researchers using AI in their work.
 | NotebookLM | Google's AI research assistant | [NotebookLM](notebooklm.md) |
 | Ollama | Running LLMs locally | [Ollama](ollama.md) |
 | RAG (Retrieval Augmented Generation) | Building AI with custom knowledge bases | [RAG](rag.md) |
-| OpenAI API | Programming with OpenAI's API | [OpenAI API](openai.md) |
+| OpenAI API | Programming with OpenAI's API | [OpenAI API](chatgpt.md) |
 | HuggingFace | Open-source models and datasets | [HuggingFace](huggingface.md) |
 | Gradio | Building AI interfaces | [Gradio](gradio.md) |
 | Posit (RStudio) | AI tools for R users | [Posit](posit.md) |

@@ -1,3 +1,42 @@
+---
+type: Tutorial
+title: Generative AI for Life Sciences Research — KEYS Internship
+description: >-
+  A one-hour KEYS internship module on generative AI in life-sciences labs:
+  uses, hallucination and privacy risks, and hands-on exercises at
+  genai.arizona.edu.
+resource: https://tyson-swetnam.github.io/intro-gpt/tutorials/keys/
+tags: [tutorial, education, research]
+sources:
+  - resource: https://genai.arizona.edu/
+    title: U of A GenAI platform
+  - resource: https://responsibleai.arizona.edu/u-of-a-gen-ai
+    title: U of A Responsible AI platform details
+  - resource: https://www.fda.gov/medical-devices/software-medical-device-samd/artificial-intelligence-and-machine-learning-aiml-enabled-medical-devices
+    title: FDA AI/ML-enabled medical devices
+  - resource: https://theconversation.com/being-honest-about-using-ai-at-work-makes-people-trust-you-less-research-finds-253590
+    title: Being honest about using AI at work makes people trust you less
+  - resource: https://doi.org/10.1038/s41586-021-03819-2
+    title: Highly accurate protein structure prediction with AlphaFold
+    author: Jumper, J. et al.
+  - resource: https://doi.org/10.1126/science.ade2574
+    title: Evolutionary-scale prediction of atomic-level protein structure with a language model
+    author: Lin, Z. et al.
+  - resource: https://doi.org/10.48550/arXiv.2108.07258
+    title: On the Opportunities and Risks of Foundation Models
+    author: Bommasani, R. et al.
+  - resource: https://doi.org/10.1145/3442188.3445922
+    title: "On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?"
+    author: Bender, E. M. et al.
+generated:
+  by: human:tswetnam
+  at: "2026-06-04T20:22:15Z"
+verified:
+  - by: human:tswetnam
+    at: "2026-06-04T20:22:15Z"
+status: stable
+---
+
 # Generative AI for Life Sciences Research — KEYS Internship
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.

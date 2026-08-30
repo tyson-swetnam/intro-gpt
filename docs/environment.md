@@ -1,3 +1,31 @@
+---
+type: Ethics Guide
+title: Environmental & Health Impacts of AI
+description: >-
+  Surveys the environmental and health costs of AI data centers — electricity,
+  water, e-waste, and air pollution — and what responsible use looks like.
+resource: https://tyson-swetnam.github.io/intro-gpt/environment/
+tags: [ethics, sustainability, public-health]
+sources:
+  - resource: https://www.iea.org/reports/energy-and-ai
+    title: Energy and AI (IEA)
+  - resource: https://arxiv.org/abs/2412.06288
+    title: The Unpaid Toll
+  - resource: https://arxiv.org/abs/2304.03271
+    title: Making AI Less "Thirsty"
+  - resource: https://www.nature.com/articles/s43588-024-00726-0
+    title: Modeling the increase of electronic waste due to generative AI
+  - resource: https://earthjustice.org/case/xai-illegal-gas-power-plant-data-center-colossus
+    title: NAACP v. xAI (Earthjustice)
+generated:
+  by: human:tswetnam
+  at: "2026-06-10T22:09:52Z"
+verified:
+  - by: human:tswetnam
+    at: "2026-06-10T22:09:52Z"
+status: stable
+---
+
 # Environmental & Health Impacts of AI
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.

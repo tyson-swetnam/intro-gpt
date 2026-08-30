@@ -1,3 +1,23 @@
+---
+type: Tutorial
+title: Presentation Decks
+description: >-
+  Index of five HTML slide decks from the UA Public Health and AI Summer School
+  2026, covering prompt engineering, AI ethics, geospatial AI, and life sciences.
+resource: https://tyson-swetnam.github.io/intro-gpt/tutorials/presentations/overview/
+tags: [tutorial, workshop, public-health]
+sources:
+  - resource: https://keys.arizona.edu/
+    title: BIO5 KEYS Research Internship
+generated:
+  by: human:tswetnam
+  at: "2026-06-11T05:34:28Z"
+verified:
+  - by: human:tswetnam
+    at: "2026-06-11T05:34:28Z"
+status: stable
+---
+
 # Presentation Decks
 
 A small library of HTML slide decks authored for the [UA Public Health & AI Summer School](https://keys.arizona.edu/){target=_blank} 2026. Each deck is a self-contained 1920×1080 presentation that pairs with one or more workshop docs lessons.

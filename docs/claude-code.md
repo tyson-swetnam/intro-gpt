@@ -1,3 +1,33 @@
+---
+type: Tutorial
+title: "Claude Code: Setup and Usage Tutorial"
+description: >-
+  Set up Anthropic's Claude Code CLI and VS Code extension, then use
+  conversational Git, custom agents, slash commands, and sandboxes for
+  AI-assisted coding.
+resource: https://tyson-swetnam.github.io/intro-gpt/claude-code/
+tags: [tutorial, anthropic, coding, agentic-ai, setup, github]
+sources:
+  - resource: https://docs.anthropic.com/en/docs/claude-code
+    title: Claude Code Documentation
+  - resource: https://docs.claude.com/en/docs/about-claude/models
+    title: Anthropic Models and Pricing
+  - resource: https://modelcontextprotocol.io
+    title: Model Context Protocol
+  - resource: https://console.anthropic.com
+    title: Anthropic Console
+  - resource: https://github.com/anthropics/anthropic-cookbook
+    title: Anthropic Cookbook
+generated:
+  by: human:tswetnam
+  at: "2026-05-10T18:01:12Z"
+verified:
+  - by: human:tswetnam
+    at: "2026-05-10T18:01:12Z"
+status: stable
+stale_after: "2026-11-01T00:00:00Z"
+---
+
 # Claude Code: Setup and Usage Tutorial
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.

@@ -1,3 +1,33 @@
+---
+type: Education Guide
+title: AI in Admissions and Job Recruiting
+description: >-
+  Guidance for ethical AI use in college admissions and job recruiting:
+  application screening, essay brainstorming, interview prep, and disclosure
+  norms.
+resource: https://tyson-swetnam.github.io/intro-gpt/admissions/
+tags: [education, productivity, academic-integrity, ethics]
+sources:
+  - resource: https://www.edweek.org/technology/1-in-3-college-applicants-used-ai-for-essay-help-did-they-cheat/2024/07
+    title: EdWeek survey on applicant AI essay use
+  - resource: https://www.forbes.com/sites/brennanbarnard/2024/09/17/college-admission-an-ai-revolution/
+    title: "College Admission: An AI Revolution"
+    author: Brennan Barnard
+  - resource: https://www.ed.gov/about/ed-overview/artificial-intelligence-ai-guidance
+    title: US Department of Education AI guidance
+  - resource: https://www.gse.harvard.edu/ideas/usable-knowledge/24/09/students-are-using-ai-already-heres-what-they-think-adults-should-know
+    title: Harvard GSE on students already using AI
+  - resource: https://www.thenation.com/article/society/artificial-intelligence-chatgpt-college-applications/
+    title: The Nation on AI in college applications
+generated:
+  by: human:tswetnam
+  at: "2026-05-09T19:43:45Z"
+verified:
+  - by: human:tswetnam
+    at: "2026-05-09T19:43:45Z"
+status: stable
+---
+
 # AI in Admissions and Job Recruiting
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.

@@ -1,3 +1,30 @@
+---
+type: Prompting Guide
+title: Vibe Coding
+description: >-
+  Compares vibe coding tools — desktop IDEs, VS Code extensions, CLIs, and
+  browser platforms — and covers safe practices for AI agents running code locally.
+resource: https://tyson-swetnam.github.io/intro-gpt/vibe/
+tags: [prompt-engineering, coding, agentic-ai, mcp]
+sources:
+  - resource: https://twitter.com/karpathy/status/1886192184808149383?ref_src=twsrc%5Etfw
+    title: Andrej Karpathy's vibe coding tweet
+    author: Andrej Karpathy
+  - resource: https://hackaday.com/2025/04/12/vibe-check-false-packages-a-new-llm-security-risk/
+    title: "Vibe Check: False Packages, a New LLM Security Risk"
+  - resource: https://modelcontextprotocol.io/introduction
+    title: Model Context Protocol introduction
+  - resource: https://docs.anthropic.com/en/docs/claude-code
+    title: Claude Code documentation
+generated:
+  by: human:tswetnam
+  at: "2026-05-10T18:42:02Z"
+verified:
+  - by: human:tswetnam
+    at: "2026-05-10T18:42:02Z"
+status: stable
+---
+
 # Vibe Coding
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.

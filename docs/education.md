@@ -1,3 +1,40 @@
+---
+type: Education Guide
+title: AI in the Classroom
+description: >-
+  How AI is reshaping higher education: AI literacy frameworks, adoption
+  trends, AI-enhanced pedagogy, process-based assessment, and institutional
+  readiness.
+resource: https://tyson-swetnam.github.io/intro-gpt/education/
+tags: [education, academic-integrity, bias]
+sources:
+  - resource: https://ai4k12.org/
+    title: AI4K12 Initiative
+  - resource: https://www.iste.org/standards/iste-standards-for-students
+    title: ISTE Standards for Students
+  - resource: https://doi.org/10.1007/s40979-023-00146-z
+    title: Testing of Detection Tools for AI-Generated Text
+    author: Weber-Wulff et al.
+  - resource: https://doi.org/10.1016/j.patter.2023.100779
+    title: GPT Detectors Are Biased Against Non-Native English Writers
+    author: Liang et al.
+  - resource: https://www.instructure.com/canvas
+    title: Canvas by Instructure
+  - resource: https://www.anthology.com/ai-design-assistant
+    title: Blackboard AI Design Assistant
+  - resource: https://docs.moodle.org/501/en/AI_tools
+    title: Moodle AI Tools
+  - resource: https://www.d2l.com/brightspace/performance/
+    title: D2L Brightspace Performance+
+generated:
+  by: human:tswetnam
+  at: "2026-08-30T15:21:35-06:00"
+verified:
+  - by: human:tswetnam
+    at: "2026-08-30T15:21:35-06:00"
+status: stable
+---
+
 # AI in the Classroom
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.

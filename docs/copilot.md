@@ -1,3 +1,29 @@
+---
+type: Setup Guide
+title: GitHub Copilot
+description: >-
+  Set up GitHub Copilot for AI code completion: create a GitHub account, claim
+  education access, and install the extension in VS Code or Visual Studio.
+resource: https://tyson-swetnam.github.io/intro-gpt/copilot/
+tags: [setup, github, microsoft, coding]
+sources:
+  - resource: https://github.com/signup
+    title: GitHub Sign Up
+  - resource: https://education.github.com/discount_requests/application
+    title: GitHub Education Discount Application
+  - resource: https://code.visualstudio.com/
+    title: Visual Studio Code
+  - resource: https://visualstudio.microsoft.com/
+    title: Visual Studio
+generated:
+  by: human:tswetnam
+  at: "2025-01-02T13:30:25-07:00"
+verified:
+  - by: human:tswetnam
+    at: "2025-01-02T13:30:25-07:00"
+status: stable
+---
+
 # :octicons-copilot-48: GitHub Copilot
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.

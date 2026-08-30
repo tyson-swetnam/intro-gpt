@@ -1,3 +1,34 @@
+---
+type: Research Guide
+title: Posit (RStudio)
+description: >-
+  Install Positron and RStudio, then use Posit's ellmer (R) and chatlas
+  (Python) packages to run cloud or local Ollama LLMs in data analysis
+  workflows.
+resource: https://tyson-swetnam.github.io/intro-gpt/posit/
+tags: [research, coding, data-analysis, setup, local-llm]
+sources:
+  - resource: https://posit.co/
+    title: Posit
+  - resource: https://github.com/posit-dev/positron
+    title: Positron
+  - resource: https://posit.co/download/rstudio-desktop/
+    title: RStudio Desktop
+  - resource: https://posit.co/download/rstudio-server/
+    title: RStudio Server
+  - resource: https://ellmer.tidyverse.org/
+    title: ellmer
+  - resource: https://posit-dev.github.io/chatlas/
+    title: chatlas
+generated:
+  by: human:tswetnam
+  at: "2026-05-09T19:15:29Z"
+verified:
+  - by: human:tswetnam
+    at: "2026-05-09T19:15:29Z"
+status: stable
+---
+
 # :simple-posit: Posit (RStudio)
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.

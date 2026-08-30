@@ -1,3 +1,33 @@
+---
+type: Research Guide
+title: Gradio
+description: >-
+  Build Python web interfaces for machine learning demos with Gradio, connect
+  Hugging Face or Ollama models, and deploy free apps to Hugging Face Spaces.
+resource: https://tyson-swetnam.github.io/intro-gpt/gradio/
+tags: [research, huggingface, coding]
+sources:
+  - resource: https://www.gradio.app/docs/
+    title: Gradio Documentation
+  - resource: https://github.com/gradio-app/gradio
+    title: Gradio GitHub repository
+  - resource: https://www.gradio.app/guides/sharing-your-app#security-and-file-access
+    title: Gradio security guidelines
+  - resource: https://huggingface.co/spaces
+    title: Hugging Face Spaces
+  - resource: https://huggingface.co/docs/hub/spaces-overview
+    title: Hugging Face Spaces overview
+  - resource: https://huggingface.co/pricing
+    title: Hugging Face pricing
+generated:
+  by: human:tswetnam
+  at: "2026-05-09T19:43:45Z"
+verified:
+  - by: human:tswetnam
+    at: "2026-05-09T19:43:45Z"
+status: stable
+---
+
 # Gradio
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
@@ -577,4 +607,4 @@ This creates a temporary public URL (valid for 72 hours) that anyone can access.
 - **[Hugging Face](huggingface.md):** Learn how to find and use pre-trained models for your Gradio apps
 - **[Ollama](ollama.md):** Run local models that can power your Gradio interfaces
 - **[Jupyter AI](jupyter.md):** Integrate AI assistants into your notebook workflows
-- **[Code Execution](execution.md):** Understand safe practices for running code in AI applications
+- **[AI Sandboxes](ai_sandboxes.md):** Understand safe practices for running code in AI applications

@@ -1,3 +1,34 @@
+---
+type: Education Guide
+title: "AI Tutoring: Student's Guide to Learning with AI"
+description: >-
+  How students can use ChatGPT, Claude, and Gemini as tutors: prompts for
+  explanations, quizzes, and study plans, plus hallucination and integrity
+  cautions.
+resource: https://tyson-swetnam.github.io/intro-gpt/tutoring/
+tags: [education, prompt-engineering, academic-integrity]
+sources:
+  - resource: https://www.anthropic.com/learn/claude-for-you
+    title: "Claude for You: AI Fluency Framework"
+  - resource: https://education.github.com/pack
+    title: GitHub Student Developer Pack
+  - resource: https://www.wolframalpha.com/
+    title: Wolfram Alpha
+  - resource: https://photomath.com/
+    title: Photomath
+  - resource: https://phet.colorado.edu/
+    title: PhET Interactive Simulations
+  - resource: https://www.duolingo.com/
+    title: Duolingo
+generated:
+  by: human:tswetnam
+  at: "2026-05-09T19:43:45Z"
+verified:
+  - by: human:tswetnam
+    at: "2026-05-09T19:43:45Z"
+status: stable
+---
+
 # AI Tutoring: Student's Guide to Learning with AI
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.

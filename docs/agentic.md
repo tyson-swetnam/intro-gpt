@@ -1,3 +1,27 @@
+---
+type: Research Guide
+title: Agentic AI
+description: >-
+  Explains how agentic AI systems plan, act, and iterate autonomously,
+  covering the agent loop, MCP tool use, vibe coding tools, and safe-use practices.
+resource: https://tyson-swetnam.github.io/intro-gpt/agentic/
+tags: [research, agentic-ai, mcp, coding]
+sources:
+  - resource: https://claude.ai/download
+    title: Claude Desktop download
+  - resource: https://docs.anthropic.com
+    title: Anthropic Claude documentation
+  - resource: https://python.langchain.com/docs/modules/agents/
+    title: LangChain Agents
+generated:
+  by: human:tswetnam
+  at: "2026-01-16T11:25:28-07:00"
+verified:
+  - by: human:tswetnam
+    at: "2026-01-16T11:25:28-07:00"
+status: stable
+---
+
 # Agentic AI
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
@@ -49,7 +73,7 @@ Agentic systems often employ chain-of-thought reasoning, breaking problems into 
 
 The term **["vibe coding"](vibe.md)** describes one of the most prominent applications of agentic AI today—where developers collaborate with AI agents directly in their development environment. Modern agentic coding tools include:
 
-- **[:simple-anthropic: Claude Code](vibe.md#claude-code-vs-code-extension)** - VS Code extension with autonomous coding capabilities
+- **[:simple-anthropic: Claude Code](vibe.md#claude-code)** - VS Code extension with autonomous coding capabilities
 - **[:material-cursor-default-click: Cursor](vibe.md#cursor)** - Standalone editor with powerful agentic features
 - **[:material-robot: Cline](vibe.md#cline)** - Open-source VS Code extension pioneering "bring your own model" approach
 - **[:octicons-copilot-16: GitHub Copilot](vibe.md#github-copilot)** - Integrated agentic coding with GitHub workflows
@@ -169,7 +193,7 @@ The combination of **[vibe coding tools](vibe.md)**, **[MCP integration](mcp.md)
 
 To experience agentic AI firsthand:
 
-1. **Try vibe coding**: Install [Claude Code](vibe.md#claude-code-vs-code-extension) or [Cursor](vibe.md#cursor) and experience agentic coding assistance
+1. **Try vibe coding**: Install [Claude Code](vibe.md#claude-code) or [Cursor](vibe.md#cursor) and experience agentic coding assistance
 2. **Explore MCP**: Set up [Claude Desktop](https://claude.ai/download){target=_blank} with [MCP servers](mcp.md) to see context-aware assistance
 3. **Experiment with prompting**: Practice breaking down complex tasks and letting the AI agent iterate on solutions
 4. **Learn the tools**: Explore the various [vibe coding platforms](vibe.md) to find the best fit for your workflow
@@ -191,7 +215,7 @@ To experience agentic AI firsthand:
     - Follow your institution's security policies
     - Be aware of what tools and systems your AI agent can access
 
-    Learn more in our [Vibe Coding security warnings](vibe.md#security-considerations).
+    Learn more in our [Vibe Coding security warnings](vibe.md#coding-safely-with-ai).
 
 ## Further Resources
 

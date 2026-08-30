@@ -1,3 +1,26 @@
+---
+type: Research Guide
+title: Model Context Protocol (MCP)
+description: >-
+  How the Model Context Protocol connects AI assistants to live application
+  context, covering client-server architecture, communication flow, and
+  benefits.
+resource: https://tyson-swetnam.github.io/intro-gpt/mcp/
+tags: [research, mcp, anthropic, agentic-ai]
+sources:
+  - resource: https://modelcontextprotocol.io/introduction
+    title: Model Context Protocol introduction
+  - resource: https://modelcontextprotocol.io/docs/getting-started/intro
+    title: MCP getting started guide
+generated:
+  by: human:tswetnam
+  at: "2026-02-04T11:18:28-07:00"
+verified:
+  - by: human:tswetnam
+    at: "2026-02-04T11:18:28-07:00"
+status: stable
+---
+
 # Model Context Protocol (MCP) 
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
