@@ -207,4 +207,6 @@ This website follows the [FAIR](https://www.go-fair.org/fair-principles/){target
 
 All materials are freely available and licensed under [Creative Commons Attribution 4.0](http://creativecommons.org/licenses/by/4.0/).
 
+This site is also machine-readable: every page is published in the Open Knowledge Format with a raw markdown source, and an `llms.txt` index is provided — see the [For AI Agents](agents.md) guide.
+
 [:material-arrow-right: Get started with the full agenda](agenda.md){ .md-button .md-button--primary }

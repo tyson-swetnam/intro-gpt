@@ -67,7 +67,8 @@ toggle = { icon = "material/brightness-4", name = "Switch to system preference" 
 Home = [
     { Welcome = "index.md" },
     { Agenda = "agenda.md" },
-    { Landscape = "ai_landscape.md" }
+    { Landscape = "ai_landscape.md" },
+    { "For AI Agents" = "agents.md" }
 ]
 
 [[project.nav]]
