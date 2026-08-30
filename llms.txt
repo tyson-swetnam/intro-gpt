@@ -2,51 +2,67 @@
 
 > Documentation for Prompt Engineering 101 Workshop
 
-Raw markdown source for every page on this site. Each `<path>.md`
-below is the source of the rendered page at https://tyson-swetnam.github.io/intro-gpt/<path>/.
+## Home
 
-## Pages
+- [Generative AI & Prompt Engineering](https://tyson-swetnam.github.io/intro-gpt/index.md): Self-paced workshop on generative AI and prompt engineering for academic research and education, with modules on setup, teaching, research, and ethics.
+- [Self-Paced Online Workshop](https://tyson-swetnam.github.io/intro-gpt/agenda.md): Agenda for a self-paced 8-12 hour workshop on generative AI for academics, spanning platform setup, prompt engineering, education, research, and ethics.
+- [The Landscape](https://tyson-swetnam.github.io/intro-gpt/ai_landscape.md): Maps the 2026 generative AI ecosystem: foundation model evolution, agentic AI autonomy levels, digital twins, world models, and a glossary of key terms.
 
-- [AI in Admissions and Job Recruiting](https://tyson-swetnam.github.io/intro-gpt/admissions.md)
-- [Self-Paced Online Workshop](https://tyson-swetnam.github.io/intro-gpt/agenda.md)
-- [Agentic AI](https://tyson-swetnam.github.io/intro-gpt/agentic.md)
-- [The Landscape](https://tyson-swetnam.github.io/intro-gpt/ai_landscape.md)
-- [AI Sandboxes](https://tyson-swetnam.github.io/intro-gpt/ai_sandboxes.md)
-- [Bias and Discrimination](https://tyson-swetnam.github.io/intro-gpt/bias.md)
-- [:fontawesome-brands-openai: OpenAI ChatGPT](https://tyson-swetnam.github.io/intro-gpt/chatgpt.md)
-- [Choosing the Right AI Platform](https://tyson-swetnam.github.io/intro-gpt/choose.md)
-- [Claude Code: Setup and Usage Tutorial](https://tyson-swetnam.github.io/intro-gpt/claude-code.md)
-- [:simple-claude: Anthropic Claude](https://tyson-swetnam.github.io/intro-gpt/claude.md)
-- [:octicons-copilot-48: GitHub Copilot](https://tyson-swetnam.github.io/intro-gpt/copilot.md)
-- [General Productivity](https://tyson-swetnam.github.io/intro-gpt/daily-productivity.md)
-- [AI in the Classroom](https://tyson-swetnam.github.io/intro-gpt/education.md)
-- [Environmental & Health Impacts of AI](https://tyson-swetnam.github.io/intro-gpt/environment.md)
-- [Ethics of Artificial Intelligence](https://tyson-swetnam.github.io/intro-gpt/ethics.md)
-- [:simple-googlegemini: Google Gemini](https://tyson-swetnam.github.io/intro-gpt/gemini.md)
-- [Gradio](https://tyson-swetnam.github.io/intro-gpt/gradio.md)
-- [Hugging Face](https://tyson-swetnam.github.io/intro-gpt/huggingface.md)
-- [Generative AI & Prompt Engineering](https://tyson-swetnam.github.io/intro-gpt/index.md)
-- [:simple-jupyter: Jupyter AI](https://tyson-swetnam.github.io/intro-gpt/jupyter.md)
-- [Ethical & Legal Considerations](https://tyson-swetnam.github.io/intro-gpt/legal.md)
-- [Log](https://tyson-swetnam.github.io/intro-gpt/log.md)
-- [Model Context Protocol (MCP)](https://tyson-swetnam.github.io/intro-gpt/mcp.md)
-- [:material-microsoft: Microsoft Copilot](https://tyson-swetnam.github.io/intro-gpt/microsoft.md)
-- [Google NotebookLM](https://tyson-swetnam.github.io/intro-gpt/notebooklm.md)
-- [Ollama](https://tyson-swetnam.github.io/intro-gpt/ollama.md)
-- [Plagiarism Detection and AI-Generated Content](https://tyson-swetnam.github.io/intro-gpt/plagiarism.md)
-- [:simple-posit: Posit (RStudio)](https://tyson-swetnam.github.io/intro-gpt/posit.md)
-- [Prompt Engineering](https://tyson-swetnam.github.io/intro-gpt/prompts.md)
-- [Retrieval Augmented Generation (RAG)](https://tyson-swetnam.github.io/intro-gpt/rag.md)
-- [Overview](https://tyson-swetnam.github.io/intro-gpt/research.md)
-- [Teaching with AI](https://tyson-swetnam.github.io/intro-gpt/teaching.md)
-- [Text Mining Resources](https://tyson-swetnam.github.io/intro-gpt/text_mining.md)
-- [Transparency and Accountability](https://tyson-swetnam.github.io/intro-gpt/transparency.md)
-- [Generative AI for Life Sciences Research — KEYS Internship](https://tyson-swetnam.github.io/intro-gpt/tutorials/keys.md)
-- [Presentation Decks](https://tyson-swetnam.github.io/intro-gpt/tutorials/presentations/overview.md)
-- [Public Health AI Lab — Triage, Surveillance, Abstraction](https://tyson-swetnam.github.io/intro-gpt/tutorials/publichealth/casestudy.md)
-- [Vibe coding a Public Health Map](https://tyson-swetnam.github.io/intro-gpt/tutorials/publichealth/gis.md)
-- [AI Tutoring: Student's Guide to Learning with AI](https://tyson-swetnam.github.io/intro-gpt/tutoring.md)
-- [Vibe Coding](https://tyson-swetnam.github.io/intro-gpt/vibe.md)
-- [:material-microsoft-visual-studio-code: Visual Studio Code and AI-Powered Development](https://tyson-swetnam.github.io/intro-gpt/vscode.md)
+## Setup
 
-Full content of every page in one file: https://tyson-swetnam.github.io/intro-gpt/llms-full.txt
+- [Anthropic Claude](https://tyson-swetnam.github.io/intro-gpt/claude.md): How to access Anthropic Claude via claude.ai, Claude Code, the desktop app, and the API, plus MCP setup, subscription pricing, and model tiers.
+- [Google Gemini](https://tyson-swetnam.github.io/intro-gpt/gemini.md): How to access Google Gemini via the web app, AI Studio, and Android, with subscription pricing, student discounts, and step-by-step Gemini API key setup.
+- [OpenAI ChatGPT](https://tyson-swetnam.github.io/intro-gpt/chatgpt.md): Set up a ChatGPT account, compare subscription tiers from Free to Pro and Enterprise, and create OpenAI API keys for programmatic access.
+- [Microsoft Copilot](https://tyson-swetnam.github.io/intro-gpt/microsoft.md): How University of Arizona users sign in to Microsoft Copilot with Enterprise Data Protection and where Copilot fits in Microsoft 365.
+- [GitHub Copilot](https://tyson-swetnam.github.io/intro-gpt/copilot.md): Set up GitHub Copilot for AI code completion: create a GitHub account, claim education access, and install the extension in VS Code or Visual Studio.
+
+## Prompt Engineering
+
+- [Prompt Engineering](https://tyson-swetnam.github.io/intro-gpt/prompts.md): Core prompt engineering techniques for modern AI assistants: the CRAFT framework, document uploads, few-shot examples, prompt chaining, and common pitfalls.
+- [General Productivity](https://tyson-swetnam.github.io/intro-gpt/daily-productivity.md): Use AI assistants for everyday work: drafting emails, summarizing meetings, no-code data analysis, and deep research tools compared side by side.
+- [Vibe Coding](https://tyson-swetnam.github.io/intro-gpt/vibe.md): Compares vibe coding tools — desktop IDEs, VS Code extensions, CLIs, and browser platforms — and covers safe practices for AI agents running code locally.
+- [Choosing the Right AI Platform](https://tyson-swetnam.github.io/intro-gpt/choose.md): Comparison tables of AI platforms for chat, research, coding, and image/video, with May 2026 pricing and US restrictions on Chinese AI services.
+
+## Education
+
+- [AI in the Classroom](https://tyson-swetnam.github.io/intro-gpt/education.md): How AI is reshaping higher education: AI literacy frameworks, adoption trends, AI-enhanced pedagogy, process-based assessment, and institutional readiness.
+- [Teaching with AI](https://tyson-swetnam.github.io/intro-gpt/teaching.md): Faculty guidance on AI-augmented course design, syllabus AI policies, automated grading, FERPA compliance, and mentoring graduate students.
+- [AI Tutoring: Student's Guide to Learning with AI](https://tyson-swetnam.github.io/intro-gpt/tutoring.md): How students can use ChatGPT, Claude, and Gemini as tutors: prompts for explanations, quizzes, and study plans, plus hallucination and integrity cautions.
+- [AI in Admissions and Job Recruiting](https://tyson-swetnam.github.io/intro-gpt/admissions.md): Guidance for ethical AI use in college admissions and job recruiting: application screening, essay brainstorming, interview prep, and disclosure norms.
+- [Plagiarism Detection and AI-Generated Content](https://tyson-swetnam.github.io/intro-gpt/plagiarism.md): Compares AI detectors like Turnitin, GPTZero, and Copyleaks, their false-positive risks, and process-based assessment alternatives to detection.
+
+## Research
+
+- [Overview](https://tyson-swetnam.github.io/intro-gpt/research.md): How generative and predictive AI support academic research: literature review tools, data analysis prompts, coding assistance, and hypothesis generation.
+- [Agentic AI](https://tyson-swetnam.github.io/intro-gpt/agentic.md): Explains how agentic AI systems plan, act, and iterate autonomously, covering the agent loop, MCP tool use, vibe coding tools, and safe-use practices.
+- [AI Sandboxes](https://tyson-swetnam.github.io/intro-gpt/ai_sandboxes.md): Compares traditional VM and container sandboxes with agentic AI sandboxes in coding tools, and surveys university and cloud sandbox programs for safe AI use.
+- [Model Context Protocol (MCP)](https://tyson-swetnam.github.io/intro-gpt/mcp.md): How the Model Context Protocol connects AI assistants to live application context, covering client-server architecture, communication flow, and benefits.
+- [Google NotebookLM](https://tyson-swetnam.github.io/intro-gpt/notebooklm.md): Guide to Google NotebookLM, a source-grounded AI notebook for research and teaching, covering key features, citations, audio overviews, and Plus plans.
+- [Ollama](https://tyson-swetnam.github.io/intro-gpt/ollama.md): Install and run open LLMs locally with Ollama: setup for macOS, Linux, and Windows, model management, REST API and Python use, and custom Modelfiles.
+- [Retrieval Augmented Generation (RAG)](https://tyson-swetnam.github.io/intro-gpt/rag.md): How retrieval-augmented generation grounds LLM answers in your documents, covering embeddings, vector databases, and tools like NotebookLM and OpenWebUI.
+- [Hugging Face](https://tyson-swetnam.github.io/intro-gpt/huggingface.md): Guide to the Hugging Face Hub: finding models and datasets, CLI authentication, and running open models locally with Transformers, llama.cpp, or Ollama.
+- [Gradio](https://tyson-swetnam.github.io/intro-gpt/gradio.md): Build Python web interfaces for machine learning demos with Gradio, connect Hugging Face or Ollama models, and deploy free apps to Hugging Face Spaces.
+- [Jupyter AI](https://tyson-swetnam.github.io/intro-gpt/jupyter.md): Introduces Jupyter AI and its Jupyternaut chatbot, which brings generative AI assistance directly into Jupyter notebooks.
+- [Posit (RStudio)](https://tyson-swetnam.github.io/intro-gpt/posit.md): Install Positron and RStudio, then use Posit's ellmer (R) and chatlas (Python) packages to run cloud or local Ollama LLMs in data analysis workflows.
+- [Visual Studio Code and AI-Powered Development](https://tyson-swetnam.github.io/intro-gpt/vscode.md): Install VS Code, Positron, or Google Antigravity and set up AI coding extensions such as Claude Code, GitHub Copilot, Cline, and local models via Ollama.
+- [Text Mining Resources](https://tyson-swetnam.github.io/intro-gpt/text_mining.md): Text and data mining sources for research, from licensed APIs like Scopus and ProQuest to open corpora like arXiv, HathiTrust, and government records.
+
+## Ethics
+
+- [Ethics of Artificial Intelligence](https://tyson-swetnam.github.io/intro-gpt/ethics.md): Traces AI ethics from the 1956 Dartmouth workshop to the 2026 essays of Bregman and Gates on AI denial, governance, and the economic transition.
+- [Bias and Discrimination](https://tyson-swetnam.github.io/intro-gpt/bias.md): Sources of AI bias, prevention strategies, real public-health harms, and a 2026 Nature study of state-media influence on LLMs across query languages.
+- [Ethical & Legal Considerations](https://tyson-swetnam.github.io/intro-gpt/legal.md): AI ethics and law: international agreements, US executive orders and state statutes, copyright litigation, and the 2026 OpenAI-Hugging Face incident.
+- [Transparency and Accountability](https://tyson-swetnam.github.io/intro-gpt/transparency.md): Defines AI transparency and explainable AI, surveys accountability frameworks from NIST, OECD, WHO, and the EU AI Act, and examines audit-log integrity.
+- [Environmental & Health Impacts of AI](https://tyson-swetnam.github.io/intro-gpt/environment.md): Surveys the environmental and health costs of AI data centers — electricity, water, e-waste, and air pollution — and what responsible use looks like.
+
+## Tutorials
+
+- [Claude Code: Setup and Usage Tutorial](https://tyson-swetnam.github.io/intro-gpt/claude-code.md): Set up Anthropic's Claude Code CLI and VS Code extension, then use conversational Git, custom agents, slash commands, and sandboxes for AI-assisted coding.
+- [Generative AI for Life Sciences Research — KEYS Internship](https://tyson-swetnam.github.io/intro-gpt/tutorials/keys.md): A one-hour KEYS internship module on generative AI in life-sciences labs: uses, hallucination and privacy risks, and hands-on exercises at genai.arizona.edu.
+- [Presentation Decks](https://tyson-swetnam.github.io/intro-gpt/tutorials/presentations/overview.md): Index of five HTML slide decks from the UA Public Health and AI Summer School 2026, covering prompt engineering, AI ethics, geospatial AI, and life sciences.
+- [Public Health AI Lab — Triage, Surveillance, Abstraction](https://tyson-swetnam.github.io/intro-gpt/tutorials/publichealth/casestudy.md): Hands-on lab applying few-shot, chaining, chain-of-thought, and structured output to SMS triage, outbreak briefs, and chart abstraction.
+- [Vibe coding a Public Health Map](https://tyson-swetnam.github.io/intro-gpt/tutorials/publichealth/gis.md): A 90-minute lab guiding an AI coding agent to build a scrolling Leaflet story map of London's 1850 cholera outbreak from the John Snow GeoJSON dataset.
+
+## Meta
+
+- [Change Log](https://tyson-swetnam.github.io/intro-gpt/log.md): Dated history of notable changes to the GPT 101 workshop documentation.
