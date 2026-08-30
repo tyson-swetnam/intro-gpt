@@ -1,0 +1,49 @@
+# GPT 101
+
+> Documentation for Prompt Engineering 101 Workshop
+
+Raw markdown source for every page on this site. Each `<path>.md`
+below is the source of the rendered page at https://tyson-swetnam.github.io/intro-gpt/<path>/.
+
+## Pages
+
+- [AI in Admissions and Job Recruiting](https://tyson-swetnam.github.io/intro-gpt/admissions.md)
+- [Self-Paced Online Workshop](https://tyson-swetnam.github.io/intro-gpt/agenda.md)
+- [Agentic AI](https://tyson-swetnam.github.io/intro-gpt/agentic.md)
+- [The Landscape](https://tyson-swetnam.github.io/intro-gpt/ai_landscape.md)
+- [AI Sandboxes](https://tyson-swetnam.github.io/intro-gpt/ai_sandboxes.md)
+- [Bias and Discrimination](https://tyson-swetnam.github.io/intro-gpt/bias.md)
+- [:fontawesome-brands-openai: OpenAI ChatGPT](https://tyson-swetnam.github.io/intro-gpt/chatgpt.md)
+- [Choosing the Right AI Platform](https://tyson-swetnam.github.io/intro-gpt/choose.md)
+- [Claude Code: Setup and Usage Tutorial](https://tyson-swetnam.github.io/intro-gpt/claude-code.md)
+- [:simple-claude: Anthropic Claude](https://tyson-swetnam.github.io/intro-gpt/claude.md)
+- [:octicons-copilot-48: GitHub Copilot](https://tyson-swetnam.github.io/intro-gpt/copilot.md)
+- [General Productivity](https://tyson-swetnam.github.io/intro-gpt/daily-productivity.md)
+- [AI in the Classroom](https://tyson-swetnam.github.io/intro-gpt/education.md)
+- [Environmental & Health Impacts of AI](https://tyson-swetnam.github.io/intro-gpt/environment.md)
+- [Ethics of Artificial Intelligence](https://tyson-swetnam.github.io/intro-gpt/ethics.md)
+- [:simple-googlegemini: Google Gemini](https://tyson-swetnam.github.io/intro-gpt/gemini.md)
+- [Gradio](https://tyson-swetnam.github.io/intro-gpt/gradio.md)
+- [Hugging Face](https://tyson-swetnam.github.io/intro-gpt/huggingface.md)
+- [Generative AI & Prompt Engineering](https://tyson-swetnam.github.io/intro-gpt/index.md)
+- [:simple-jupyter: Jupyter AI](https://tyson-swetnam.github.io/intro-gpt/jupyter.md)
+- [Ethical & Legal Considerations](https://tyson-swetnam.github.io/intro-gpt/legal.md)
+- [Model Context Protocol (MCP)](https://tyson-swetnam.github.io/intro-gpt/mcp.md)
+- [:material-microsoft: Microsoft Copilot](https://tyson-swetnam.github.io/intro-gpt/microsoft.md)
+- [Google NotebookLM](https://tyson-swetnam.github.io/intro-gpt/notebooklm.md)
+- [Ollama](https://tyson-swetnam.github.io/intro-gpt/ollama.md)
+- [Plagiarism Detection and AI-Generated Content](https://tyson-swetnam.github.io/intro-gpt/plagiarism.md)
+- [:simple-posit: Posit (RStudio)](https://tyson-swetnam.github.io/intro-gpt/posit.md)
+- [Prompt Engineering](https://tyson-swetnam.github.io/intro-gpt/prompts.md)
+- [Retrieval Augmented Generation (RAG)](https://tyson-swetnam.github.io/intro-gpt/rag.md)
+- [Overview](https://tyson-swetnam.github.io/intro-gpt/research.md)
+- [Teaching with AI](https://tyson-swetnam.github.io/intro-gpt/teaching.md)
+- [Text Mining Resources](https://tyson-swetnam.github.io/intro-gpt/text_mining.md)
+- [Transparency and Accountability](https://tyson-swetnam.github.io/intro-gpt/transparency.md)
+- [Generative AI for Life Sciences Research — KEYS Internship](https://tyson-swetnam.github.io/intro-gpt/tutorials/keys.md)
+- [Presentation Decks](https://tyson-swetnam.github.io/intro-gpt/tutorials/presentations/overview.md)
+- [Public Health AI Lab — Triage, Surveillance, Abstraction](https://tyson-swetnam.github.io/intro-gpt/tutorials/publichealth/casestudy.md)
+- [Vibe coding a Public Health Map](https://tyson-swetnam.github.io/intro-gpt/tutorials/publichealth/gis.md)
+- [AI Tutoring: Student's Guide to Learning with AI](https://tyson-swetnam.github.io/intro-gpt/tutoring.md)
+- [Vibe Coding](https://tyson-swetnam.github.io/intro-gpt/vibe.md)
+- [:material-microsoft-visual-studio-code: Visual Studio Code and AI-Powered Development](https://tyson-swetnam.github.io/intro-gpt/vscode.md)
