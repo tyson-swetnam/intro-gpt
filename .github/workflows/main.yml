@@ -3,10 +3,13 @@ on:
   push:
     branches:
       - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
   build:
-    name: Deploy docs
+    name: Build docs (deploy on main)
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -17,10 +20,28 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Validate OKF frontmatter
+        run: python3 scripts/validate_okf.py docs
+
       - name: Build site with Zensical
         run: zensical build
 
+      # Publish the raw markdown sources (with OKF frontmatter) as siblings
+      # of the rendered pages: /page/ has its source at /page.md. If a
+      # subdirectory index.md is ever added, extend this step and the
+      # homepage branch in overrides/main.html.
+      - name: Expose raw markdown sources
+        run: |
+          rsync -a --prune-empty-dirs \
+            --exclude='.#*' --exclude='#*#' --exclude='*~' --exclude='.DS_Store' \
+            --include='*/' --include='*.md' --exclude='*' \
+            docs/ site/
+
+      - name: Generate llms.txt and llms-full.txt
+        run: python3 scripts/generate_llms_txt.py --config zensical.toml --docs docs --out site --strict
+
       - name: Deploy to GitHub Pages
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}

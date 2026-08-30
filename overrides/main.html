@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+
+{#-
+  Agent-readability head injection.
+
+  The engine is MiniJinja with autoescape OFF: every attribute
+  interpolation of author-supplied strings needs `| e`, and JSON-LD
+  scalars go through `| tojson` (HTML-safe \uXXXX escaping, so no
+  </script> breakout is possible).
+
+  Raw markdown sources are copied into site/ post-build by CI, so every
+  rendered page ".../page/" has a sibling ".../page.md"; the homepage
+  maps to ".../index.md". If a subdirectory index.md is ever added,
+  extend the homepage branch below and the CI copy step in
+  .github/workflows/main.yml.
+-#}
+{% block extrahead %}
+  {%- if page and page.canonical_url %}
+    {%- if page.canonical_url == "https://tyson-swetnam.github.io/intro-gpt/" %}
+      {%- set md_url = page.canonical_url ~ "index.md" %}
+    {%- else %}
+      {%- set md_url = page.canonical_url | trim("/") ~ ".md" %}
+    {%- endif %}
+    {%- set head_title = page.title %}
+    {%- if page.meta and page.meta.title %}
+      {%- set head_title = page.meta.title %}
+    {%- endif %}
+    <link rel="alternate" type="text/markdown" href="{{ md_url }}" title="Markdown source">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="{{ config.site_name | e }}">
+    <meta property="og:url" content="{{ page.canonical_url }}">
+    <meta property="og:title" content="{{ head_title | e }}">
+    {%- if page.meta and page.meta.description %}
+    <meta property="og:description" content="{{ page.meta.description | e }}">
+    {%- endif %}
+    <meta property="og:image" content="https://tyson-swetnam.github.io/intro-gpt/assets/banner3_ai.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LearningResource",
+      "name": {{ head_title | tojson }},
+      {%- if page.meta and page.meta.description %}
+      "description": {{ page.meta.description | tojson }},
+      {%- endif %}
+      {%- if page.meta and page.meta.type is string %}
+      "learningResourceType": {{ page.meta.type | tojson }},
+      {%- endif %}
+      {%- if page.meta and page.meta.generated and page.meta.generated.at is string %}
+      "datePublished": {{ page.meta.generated.at | tojson }},
+      "dateModified": {{ page.meta.generated.at | tojson }},
+      {%- endif %}
+      "url": {{ page.canonical_url | tojson }},
+      "encoding": {
+        "@type": "MediaObject",
+        "contentUrl": {{ md_url | tojson }},
+        "encodingFormat": "text/markdown"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "inLanguage": "en",
+      "publisher": {
+        "@type": "Organization",
+        "name": "University of Arizona",
+        "url": "https://www.arizona.edu/"
+      },
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": {{ config.site_name | tojson }},
+        "url": "https://tyson-swetnam.github.io/intro-gpt/"
+      }
+    }
+    </script>
+  {%- endif %}
+{% endblock %}
