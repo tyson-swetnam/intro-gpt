@@ -281,7 +281,7 @@ Successful AI integration requires coordinated institutional effort across multi
     * Conduct regular audits of AI tool usage and outcomes
     * Maintain human oversight of AI-generated decisions
     * Build in flexibility to adjust policies as technology evolves
-    * Learn from peer institutions and share lessons learned
+    * Learn from peer institutions and share lessons learned — see the collection of [university AI task-force reports and policies](teaching.md#university-ai-task-force-reports-and-policies) (UVA, South Carolina, UC, Salisbury, Notre Dame, Manchester, and Brookings' global task force)
 
     **Innovation Enablers:**
 
