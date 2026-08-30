@@ -1,3 +1,34 @@
+---
+type: Setup Guide
+title: Anthropic Claude
+description: >-
+  How to access Anthropic Claude via claude.ai, Claude Code, the desktop
+  app, and the API, plus MCP setup, subscription pricing, and model tiers.
+resource: https://tyson-swetnam.github.io/intro-gpt/claude/
+tags: [setup, anthropic, pricing, mcp]
+sources:
+  - resource: https://docs.claude.com/en/docs/about-claude/models
+    title: Anthropic models documentation
+  - resource: https://docs.anthropic.com/
+    title: Claude Documentation
+  - resource: https://modelcontextprotocol.io
+    title: Model Context Protocol
+  - resource: https://claude.ai/
+    title: Claude.ai
+  - resource: https://docs.anthropic.com/en/docs/claude-code
+    title: Claude Code Documentation
+  - resource: https://github.com/anthropics/anthropic-cookbook
+    title: Anthropic Cookbook
+generated:
+  by: human:tswetnam
+  at: "2026-05-09T19:43:45Z"
+verified:
+  - by: human:tswetnam
+    at: "2026-05-09T19:43:45Z"
+status: stable
+stale_after: "2026-11-01T00:00:00Z"
+---
+
 # :simple-claude: Anthropic Claude
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.

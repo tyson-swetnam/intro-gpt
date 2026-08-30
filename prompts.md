@@ -1,3 +1,34 @@
+---
+type: Prompting Guide
+title: Prompt Engineering
+description: >-
+  Core prompt engineering techniques for modern AI assistants: the CRAFT
+  framework, document uploads, few-shot examples, prompt chaining, and
+  common pitfalls.
+resource: https://tyson-swetnam.github.io/intro-gpt/prompts/
+tags: [prompt-engineering]
+sources:
+  - resource: https://www.geeky-gadgets.com/craft-prompt-framework/
+    title: CRAFT Prompt Framework
+  - resource: https://docs.anthropic.com/claude/docs/prompt-engineering
+    title: Anthropic Prompt Engineering Guide
+  - resource: https://platform.openai.com/docs/guides/prompt-engineering
+    title: OpenAI Prompt Engineering Best Practices
+  - resource: https://ai.google.dev/gemini-api/docs/prompting-strategies
+    title: Google Gemini Prompting Strategies
+  - resource: https://github.com/f/awesome-chatgpt-prompts
+    title: Awesome ChatGPT Prompts
+  - resource: https://learnprompting.org/
+    title: Learn Prompting
+generated:
+  by: human:tswetnam
+  at: "2026-01-16T11:25:28-07:00"
+verified:
+  - by: human:tswetnam
+    at: "2026-01-16T11:25:28-07:00"
+status: stable
+---
+
 # Prompt Engineering
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.

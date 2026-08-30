@@ -1,3 +1,37 @@
+---
+type: Research Guide
+title: Overview
+description: >-
+  How generative and predictive AI support academic research: literature
+  review tools, data analysis prompts, coding assistance, and hypothesis
+  generation.
+resource: https://tyson-swetnam.github.io/intro-gpt/research/
+tags: [research, data-analysis, coding, prompt-engineering]
+sources:
+  - resource: https://perplexity.ai
+    title: Perplexity AI
+  - resource: https://gemini.google.com/app
+    title: Google Gemini Deep Research
+  - resource: https://notebooklm.google
+    title: Google NotebookLM
+  - resource: https://chatgpt.com/g/g-L2HknCZTC-scholar-ai
+    title: ScholarAI custom GPT
+  - resource: https://chatgpt.com/g/g-kZ0eYXlJe-scholar-gpt
+    title: ScholarGPT custom GPT
+  - resource: https://www.semanticscholar.org/
+    title: Semantic Scholar
+  - resource: https://www.engraved.blog/building-a-virtual-machine-inside/
+    title: Building a Virtual Machine inside ChatGPT
+    author: Jonas Degrave
+generated:
+  by: human:tswetnam
+  at: "2026-05-10T18:01:12Z"
+verified:
+  - by: human:tswetnam
+    at: "2026-05-10T18:01:12Z"
+status: stable
+---
+
 # Overview
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.

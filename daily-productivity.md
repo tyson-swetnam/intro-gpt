@@ -1,3 +1,31 @@
+---
+type: Prompting Guide
+title: General Productivity
+description: >-
+  Use AI assistants for everyday work: drafting emails, summarizing meetings,
+  no-code data analysis, and deep research tools compared side by side.
+resource: https://tyson-swetnam.github.io/intro-gpt/daily-productivity/
+tags: [prompt-engineering, productivity, data-analysis, research]
+sources:
+  - resource: https://www.zoom.com/en/ai-assistant/
+    title: Zoom AI Companion
+  - resource: https://m365.cloud.microsoft/
+    title: Microsoft 365 Copilot
+  - resource: https://scholar.google.com/scholar_labs/search
+    title: Google Scholar Labs
+  - resource: https://modelcontextprotocol.io
+    title: Model Context Protocol
+  - resource: https://raw.githubusercontent.com/allisonhorst/palmerpenguins/main/inst/extdata/penguins.csv
+    title: Palmer Penguins dataset
+generated:
+  by: human:tswetnam
+  at: "2026-05-10T18:01:12Z"
+verified:
+  - by: human:tswetnam
+    at: "2026-05-10T18:01:12Z"
+status: stable
+---
+
 # General Productivity
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.

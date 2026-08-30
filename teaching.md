@@ -1,3 +1,38 @@
+---
+type: Education Guide
+title: Teaching with AI
+description: >-
+  Faculty guidance on AI-augmented course design, syllabus AI policies,
+  automated grading, FERPA compliance, and mentoring graduate students.
+resource: https://tyson-swetnam.github.io/intro-gpt/teaching/
+tags: [education, productivity, academic-integrity]
+sources:
+  - resource: https://platform.openai.com/docs/chatgpt-education/educator-considerations-for-chatgpt
+    title: OpenAI Educator Considerations for ChatGPT
+  - resource: https://www.gse.harvard.edu/ideas/usable-knowledge/24/09/students-are-using-ai-already-heres-what-they-think-adults-should-know
+    title: Students Are Using AI Already (Harvard GSE)
+  - resource: https://mitsloanedtech.mit.edu/ai/teach/ai-detectors-dont-work/
+    title: AI Detectors Don't Work (MIT Sloan EdTech)
+  - resource: https://doi.org/10.1016/j.patter.2023.100779
+    title: GPT detectors are biased against non-native English writers
+    author: Liang et al.
+  - resource: https://doi.org/10.1007/s40979-023-00146-z
+    title: Testing of detection tools for AI-generated text
+    author: Weber-Wulff et al.
+  - resource: https://link.springer.com/article/10.1007/s11528-023-00896-0
+    title: "Prompting Change: Prompt Engineering in Education (TechTrends)"
+    author: Cain, W.
+  - resource: https://senate.universityofcalifornia.edu/_files/reports/council-chair-to-senate-divisions-senate-ai-workgroup-report.pdf
+    title: UC Academic Senate AI Workgroup Report
+generated:
+  by: human:tswetnam
+  at: "2026-08-30T15:21:35-06:00"
+verified:
+  - by: human:tswetnam
+    at: "2026-08-30T15:21:35-06:00"
+status: stable
+---
+
 # Teaching with AI
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.

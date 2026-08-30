@@ -28,6 +28,7 @@ below is the source of the rendered page at https://tyson-swetnam.github.io/intr
 - [Generative AI & Prompt Engineering](https://tyson-swetnam.github.io/intro-gpt/index.md)
 - [:simple-jupyter: Jupyter AI](https://tyson-swetnam.github.io/intro-gpt/jupyter.md)
 - [Ethical & Legal Considerations](https://tyson-swetnam.github.io/intro-gpt/legal.md)
+- [Log](https://tyson-swetnam.github.io/intro-gpt/log.md)
 - [Model Context Protocol (MCP)](https://tyson-swetnam.github.io/intro-gpt/mcp.md)
 - [:material-microsoft: Microsoft Copilot](https://tyson-swetnam.github.io/intro-gpt/microsoft.md)
 - [Google NotebookLM](https://tyson-swetnam.github.io/intro-gpt/notebooklm.md)

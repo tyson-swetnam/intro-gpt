@@ -1,3 +1,34 @@
+---
+type: Research Guide
+title: Ollama
+description: >-
+  Install and run open LLMs locally with Ollama: setup for macOS, Linux,
+  and Windows, model management, REST API and Python use, and custom
+  Modelfiles.
+resource: https://tyson-swetnam.github.io/intro-gpt/ollama/
+tags: [research, local-llm, setup]
+sources:
+  - resource: https://ollama.com/
+    title: Ollama
+  - resource: https://ollama.com/library
+    title: Ollama Model Library
+  - resource: https://github.com/ollama/ollama
+    title: Ollama GitHub Repository
+  - resource: https://github.com/ollama/ollama/blob/main/docs/api.md
+    title: Ollama API Documentation
+  - resource: https://langchain.com/
+    title: LangChain
+  - resource: https://github.com/open-webui/open-webui
+    title: Open WebUI
+generated:
+  by: human:tswetnam
+  at: "2026-05-09T19:15:29Z"
+verified:
+  - by: human:tswetnam
+    at: "2026-05-09T19:15:29Z"
+status: stable
+---
+
 # Ollama
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.

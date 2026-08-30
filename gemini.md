@@ -1,3 +1,35 @@
+---
+type: Setup Guide
+title: Google Gemini
+description: >-
+  How to access Google Gemini via the web app, AI Studio, and Android,
+  with subscription pricing, student discounts, and step-by-step Gemini
+  API key setup.
+resource: https://tyson-swetnam.github.io/intro-gpt/gemini/
+tags: [setup, google, pricing]
+sources:
+  - resource: https://gemini.google.com/
+    title: Gemini web app
+  - resource: https://aistudio.google.com
+    title: Google AI Studio
+  - resource: https://notebooklm.google.com/
+    title: NotebookLM
+  - resource: https://workspace.google.com/solutions/ai/
+    title: Google Workspace AI
+  - resource: https://deepmind.google/technologies/gemini/nano/
+    title: Gemini Nano
+  - resource: https://support.google.com/gemini/answer/14525875
+    title: Gemini availability
+generated:
+  by: human:tswetnam
+  at: "2026-05-09T19:43:45Z"
+verified:
+  - by: human:tswetnam
+    at: "2026-05-09T19:43:45Z"
+status: stable
+stale_after: "2026-11-01T00:00:00Z"
+---
+
 # :simple-googlegemini: Google Gemini
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.

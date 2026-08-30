@@ -1,3 +1,36 @@
+---
+type: Education Guide
+title: Plagiarism Detection and AI-Generated Content
+description: >-
+  Compares AI detectors like Turnitin, GPTZero, and Copyleaks, their
+  false-positive risks, and process-based assessment alternatives to detection.
+resource: https://tyson-swetnam.github.io/intro-gpt/plagiarism/
+tags: [education, academic-integrity, pricing]
+sources:
+  - resource: https://doi.org/10.1007/s40979-023-00146-z
+    title: Testing of detection tools for AI-generated text
+    author: Weber-Wulff et al.
+  - resource: https://doi.org/10.1016/j.patter.2023.100779
+    title: GPT detectors are biased against non-native English writers
+    author: Liang et al.
+  - resource: https://mitsloanedtech.mit.edu/ai/teach/ai-detectors-dont-work/
+    title: AI Detectors Don't Work
+  - resource: https://www.turnitin.com/products/features/ai-writing-detection
+    title: Turnitin AI Writing Detection
+  - resource: https://copyleaks.com/
+    title: Copyleaks
+  - resource: https://gptzero.me/
+    title: GPTZero
+generated:
+  by: human:tswetnam
+  at: "2026-05-09T19:43:45Z"
+verified:
+  - by: human:tswetnam
+    at: "2026-05-09T19:43:45Z"
+status: stable
+stale_after: "2026-11-01T00:00:00Z"
+---
+
 # Plagiarism Detection and AI-Generated Content
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.

@@ -1,3 +1,26 @@
+---
+okf_version: "0.2"
+type: Index
+title: Generative AI & Prompt Engineering
+description: >-
+  Self-paced workshop on generative AI and prompt engineering for academic
+  research and education, with modules on setup, teaching, research, and ethics.
+resource: https://tyson-swetnam.github.io/intro-gpt/
+tags: [workshop, prompt-engineering, education, research, ethics]
+sources:
+  - resource: https://www.go-fair.org/fair-principles/
+    title: FAIR Data Principles
+  - resource: https://www.gida-global.org/care
+    title: CARE Principles for Indigenous Data Governance
+generated:
+  by: human:tswetnam
+  at: "2026-08-30T15:21:35-06:00"
+verified:
+  - by: human:tswetnam
+    at: "2026-08-30T15:21:35-06:00"
+status: stable
+---
+
 # Generative AI & Prompt Engineering
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
@@ -75,7 +98,7 @@ This workshop is organized into **five main modules** with an estimated **8-12 h
         1. [:simple-githubcopilot: GitHub Copilot](copilot.md) - AI pair programming
         2. [:material-palette-swatch: Vibe Coding](vibe.md) - AI-assisted development
         3. [:material-link-variant: Model Context Protocol](mcp.md) - Tool integration
-        4. [:material-api: OpenAI API](openai.md) - Programmatic access
+        4. [:material-api: OpenAI API](chatgpt.md) - Programmatic access
 
 ## Prerequisites
 
@@ -145,7 +168,7 @@ Advanced topics for researchers using AI in their work.
 | [:simple-google: NotebookLM](notebooklm.md) | Google's AI research assistant |
 | [:material-server: Ollama](ollama.md) | Running LLMs locally |
 | [:material-database-search: RAG](rag.md) | Retrieval Augmented Generation for custom knowledge bases |
-| [:material-api: OpenAI API](openai.md) | Programming with OpenAI's API |
+| [:material-api: OpenAI API](chatgpt.md) | Programming with OpenAI's API |
 | [:hugging: HuggingFace](huggingface.md) | Open-source models and datasets |
 | [:hugging: Gradio](gradio.md) | Building AI interfaces |
 | [:material-chart-box: Posit (RStudio)](posit.md) | AI tools for R users |
@@ -171,6 +194,8 @@ Apply your learning with practical case studies and tutorials.
 | Tutorial | Description |
 |----------|-------------|
 | [:simple-anthropic: Claude Code Workflow](claude-code.md) | Complete workflow using Claude Code |
+| [:material-key: KEYS Internship (BIO5)](tutorials/keys.md) | AI-assisted research skills for BIO5 summer interns |
+| [:material-presentation: Presentations](tutorials/presentations/overview.md) | Workshop slide decks for classroom delivery |
 | [:material-hospital-building: Public Health AI Lab](tutorials/publichealth/casestudy.md) | Hands-on lab: SMS triage, outbreak synthesis, chart abstraction |
 | [:material-map: GIS & Map Making](tutorials/publichealth/gis.md) | Creating maps with AI assistance |
 

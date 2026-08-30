@@ -1,3 +1,35 @@
+---
+type: Research Guide
+title: Visual Studio Code and AI-Powered Development
+description: >-
+  Install VS Code, Positron, or Google Antigravity and set up AI coding
+  extensions such as Claude Code, GitHub Copilot, Cline, and local models
+  via Ollama.
+resource: https://tyson-swetnam.github.io/intro-gpt/vscode/
+tags: [research, coding, github, pricing, setup, local-llm]
+sources:
+  - resource: https://code.visualstudio.com/
+    title: Visual Studio Code
+  - resource: https://github.com/posit-dev/positron
+    title: Posit Positron
+  - resource: https://antigravity.google/
+    title: Google Antigravity
+  - resource: https://marketplace.visualstudio.com/items?itemName=anthropic.claude-code
+    title: Claude Code extension
+  - resource: https://marketplace.visualstudio.com/items?itemName=GitHub.copilot
+    title: GitHub Copilot extension
+  - resource: https://github.com/cline/cline
+    title: Cline
+generated:
+  by: human:tswetnam
+  at: "2026-05-09T19:43:45Z"
+verified:
+  - by: human:tswetnam
+    at: "2026-05-09T19:43:45Z"
+status: stable
+stale_after: "2026-11-01T00:00:00Z"
+---
+
 # :material-microsoft-visual-studio-code: Visual Studio Code and AI-Powered Development
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
