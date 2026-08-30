@@ -39,6 +39,8 @@ jobs:
 
       - name: Generate llms.txt and llms-full.txt
         run: python3 scripts/generate_llms_txt.py --config zensical.toml --docs docs --out site --strict
+      - name: Add agent-readable markdown and llms.txt
+        run: python3 scripts/agent_markdown.py
 
       - name: Deploy to GitHub Pages
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
