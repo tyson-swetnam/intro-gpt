@@ -10,6 +10,7 @@ resource: https://tyson-swetnam.github.io/intro-gpt/log/
 
 ## 2026-08-30
 
+- **Creation**: [For AI Agents](agents.md) — guide to the site's machine-readable endpoints and OKF trust signals.
 - **Update**: Adopted the [Open Knowledge Format v0.2](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md){target=_blank} across all pages, with agent-readable publishing (raw markdown sources, llms.txt, JSON-LD).
 - **Update**: [Legal Issues](legal.md), [Ethics](ethics.md), [Transparency](transparency.md), [Teaching with AI](teaching.md) — August 2026 refresh: case studies, EU AI Act status, university AI task-force policies.
 

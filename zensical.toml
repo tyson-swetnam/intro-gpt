@@ -25,7 +25,7 @@ name = "material"
 custom_dir = "overrides"
 language = "en"
 logo = "assets/ua.png"
-favicon = "assets/ua.ico"
+favicon = "assets/robot.svg"
 features = [
     "navigation.instant",
     "navigation.tracking",
@@ -67,7 +67,8 @@ toggle = { icon = "material/brightness-4", name = "Switch to system preference" 
 Home = [
     { Welcome = "index.md" },
     { Agenda = "agenda.md" },
-    { Landscape = "ai_landscape.md" }
+    { Landscape = "ai_landscape.md" },
+    { "For AI Agents" = "agents.md" }
 ]
 
 [[project.nav]]
