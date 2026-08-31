@@ -24,8 +24,8 @@ edit_uri = "edit/main/docs/"
 name = "material"
 custom_dir = "overrides"
 language = "en"
-logo = "assets/ua.png"
-favicon = "assets/robot.svg"
+logo = "assets/unm.png"
+favicon = "assets/unm.ico"
 features = [
     "navigation.instant",
     "navigation.tracking",
