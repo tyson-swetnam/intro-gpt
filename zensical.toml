@@ -5,8 +5,8 @@
 site_name = "GPT 101"
 site_url = "https://tyson-swetnam.github.io/intro-gpt"
 site_description = "Documentation for Prompt Engineering 101 Workshop"
-site_author = "University of Arizona"
-copyright = "Copyright &copy; 2026 University of Arizona"
+site_author = "UNM Center for Advanced Research Computing"
+copyright = "Copyright &copy; 2026 UNM Center for Advanced Research Computing"
 
 docs_dir = "docs"
 site_dir = "site"
@@ -182,6 +182,11 @@ custom_checkbox = true
 
 # Extra Configuration (Social, Analytics, CSS/JS)
 [project.extra]
+# Sibling OKF bundles advertised in llms.txt (see scripts/generate_llms_txt.py)
+related_llms = [
+    "https://unm-carc.github.io/llms.txt",
+    "https://unm-carc.github.io/docs/llms.txt"
+]
 
 [[project.extra.social]]
 icon = "fontawesome/brands/orcid"
