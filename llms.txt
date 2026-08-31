@@ -7,6 +7,7 @@
 - [Generative AI & Prompt Engineering](https://tyson-swetnam.github.io/intro-gpt/index.md): Self-paced workshop on generative AI and prompt engineering for academic research and education, with modules on setup, teaching, research, and ethics.
 - [Self-Paced Online Workshop](https://tyson-swetnam.github.io/intro-gpt/agenda.md): Agenda for a self-paced 8-12 hour workshop on generative AI for academics, spanning platform setup, prompt engineering, education, research, and ethics.
 - [The Landscape](https://tyson-swetnam.github.io/intro-gpt/ai_landscape.md): Maps the 2026 generative AI ecosystem: foundation model evolution, agentic AI autonomy levels, digital twins, world models, and a glossary of key terms.
+- [For AI Agents](https://tyson-swetnam.github.io/intro-gpt/agents.md): How AI agents and harnesses should consume this site: llms.txt discovery, raw markdown sources with OKF frontmatter, and trust signals.
 
 ## Setup
 
