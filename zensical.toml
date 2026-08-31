@@ -25,7 +25,7 @@ name = "material"
 custom_dir = "overrides"
 language = "en"
 logo = "assets/ua.png"
-favicon = "assets/ua.ico"
+favicon = "assets/robot.svg"
 features = [
     "navigation.instant",
     "navigation.tracking",
