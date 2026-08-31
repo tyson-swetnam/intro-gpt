@@ -8,6 +8,10 @@ resource: https://tyson-swetnam.github.io/intro-gpt/log/
 
 # Log
 
+## 2026-08-31
+
+- **Update**: Workshop stewardship transferred to the [UNM Center for Advanced Research Computing](https://carc.unm.edu/){target=_blank}: new UNM icons, attribution, and cross-links to the CARC OKF bundles. Originally developed at the University of Arizona.
+
 ## 2026-08-30
 
 - **Creation**: [For AI Agents](agents.md) — guide to the site's machine-readable endpoints and OKF trust signals.

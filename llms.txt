@@ -2,6 +2,9 @@
 
 > Documentation for Prompt Engineering 101 Workshop
 
+Related OKF bundle: https://unm-carc.github.io/llms.txt
+Related OKF bundle: https://unm-carc.github.io/docs/llms.txt
+
 ## Home
 
 - [Generative AI & Prompt Engineering](https://tyson-swetnam.github.io/intro-gpt/index.md): Self-paced workshop on generative AI and prompt engineering for academic research and education, with modules on setup, teaching, research, and ethics.

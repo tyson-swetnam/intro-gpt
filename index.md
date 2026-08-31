@@ -14,10 +14,10 @@ sources:
     title: CARE Principles for Indigenous Data Governance
 generated:
   by: human:tswetnam
-  at: "2026-08-30T15:21:35-06:00"
+  at: "2026-08-31T00:00:00Z"
 verified:
   - by: human:tswetnam
-    at: "2026-08-30T15:21:35-06:00"
+    at: "2026-08-31T00:00:00Z"
 status: stable
 ---
 
@@ -201,7 +201,9 @@ Apply your learning with practical case studies and tutorials.
 
 ## About This Workshop
 
-This workshop is developed and maintained by the University of Arizona [BIO5 Institute](https://bio5.org/){target=_blank}, [AI2S](https://responsibleai.arizona.edu/ai2s){target=_blank}, & [College of Information Science](https://infosci.arizona.edu){target=_blank}.
+This workshop is maintained and taught by the [University of New Mexico Center for Advanced Research Computing (CARC)](https://carc.unm.edu/){target=_blank}. CARC's research-computing documentation — high-performance computing, storage, and research software — lives at [unm-carc.github.io/docs](https://unm-carc.github.io/docs/){target=_blank}.
+
+The workshop was originally developed at the University of Arizona by the [BIO5 Institute](https://bio5.org/){target=_blank}, [AI2S](https://responsibleai.arizona.edu/ai2s){target=_blank}, & [College of Information Science](https://infosci.arizona.edu){target=_blank}.
 
 This website follows the [FAIR](https://www.go-fair.org/fair-principles/){target=_blank} and [CARE](https://www.gida-global.org/care){target=_blank} data principles and hopes to help further open science.
 

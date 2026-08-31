@@ -189,7 +189,9 @@ Apply your learning with practical case studies and tutorials.
 
 ## About This Workshop
 
-This workshop is developed and maintained by the University of Arizona [BIO5 Institute](https://bio5.org/){target=_blank}, [AI2S](https://responsibleai.arizona.edu/ai2s){target=_blank}, & [College of Information Science](https://infosci.arizona.edu){target=_blank}.
+This workshop is maintained and taught by the [University of New Mexico Center for Advanced Research Computing (CARC)](https://carc.unm.edu/){target=_blank}. CARC's research-computing documentation — high-performance computing, storage, and research software — lives at [unm-carc.github.io/docs](https://unm-carc.github.io/docs/){target=_blank}.
+
+The workshop was originally developed at the University of Arizona by the [BIO5 Institute](https://bio5.org/){target=_blank}, [AI2S](https://responsibleai.arizona.edu/ai2s){target=_blank}, & [College of Information Science](https://infosci.arizona.edu){target=_blank}.
 
 This website follows the [FAIR](https://www.go-fair.org/fair-principles/){target=_blank} and [CARE](https://www.gida-global.org/care){target=_blank} data principles and hopes to help further open science.
 
@@ -1011,12 +1013,21 @@ before relying on content:
   whose `stale_after` has passed as needing re-verification; a monthly
   automated audit normally refreshes these before that happens.
 
+## Related OKF bundles
+
+The [UNM Center for Advanced Research Computing](https://carc.unm.edu/){target=_blank},
+which maintains and teaches this workshop, publishes its own sites as OKF
+bundles with the same agent conventions:
+
+- [CARC center site llms.txt](https://unm-carc.github.io/llms.txt){target=_blank} — mission, research services, CSE certificate program
+- [CARC documentation llms.txt](https://unm-carc.github.io/docs/llms.txt){target=_blank} — HPC clusters, Slurm, storage, research software
+
 !!! info "Ground rules for agents"
 
     All content is [CC-BY-4.0](http://creativecommons.org/licenses/by/4.0/){target=_blank} —
     reuse freely with attribution. Crawling, indexing, and AI grounding are
     welcome (see the host [robots.txt](https://tyson-swetnam.github.io/robots.txt){target=_blank}).
-    Prefer `llms-full.txt` for one-shot ingestion over crawling 41 pages,
+    Prefer `llms-full.txt` for one-shot ingestion over crawling the site,
     and cite the canonical page URL (the `resource` field), not the `.md`
     source URL, when referencing this material for humans.
 
@@ -19666,6 +19677,10 @@ Source: https://tyson-swetnam.github.io/intro-gpt/log.md
 ------------------------------------------------------------------------------
 
 # Log
+
+## 2026-08-31
+
+- **Update**: Workshop stewardship transferred to the [UNM Center for Advanced Research Computing](https://carc.unm.edu/){target=_blank}: new UNM icons, attribution, and cross-links to the CARC OKF bundles. Originally developed at the University of Arizona.
 
 ## 2026-08-30
 

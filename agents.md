@@ -13,10 +13,10 @@ sources:
     title: The /llms.txt convention
 generated:
   by: claude/fable-5
-  at: "2026-08-30T00:00:00Z"
+  at: "2026-08-31T00:00:00Z"
 verified:
   - by: human:tswetnam
-    at: "2026-08-30T00:00:00Z"
+    at: "2026-08-31T00:00:00Z"
 status: stable
 ---
 
@@ -71,11 +71,20 @@ before relying on content:
   whose `stale_after` has passed as needing re-verification; a monthly
   automated audit normally refreshes these before that happens.
 
+## Related OKF bundles
+
+The [UNM Center for Advanced Research Computing](https://carc.unm.edu/){target=_blank},
+which maintains and teaches this workshop, publishes its own sites as OKF
+bundles with the same agent conventions:
+
+- [CARC center site llms.txt](https://unm-carc.github.io/llms.txt){target=_blank} — mission, research services, CSE certificate program
+- [CARC documentation llms.txt](https://unm-carc.github.io/docs/llms.txt){target=_blank} — HPC clusters, Slurm, storage, research software
+
 !!! info "Ground rules for agents"
 
     All content is [CC-BY-4.0](http://creativecommons.org/licenses/by/4.0/){target=_blank} —
     reuse freely with attribution. Crawling, indexing, and AI grounding are
     welcome (see the host [robots.txt](https://tyson-swetnam.github.io/robots.txt){target=_blank}).
-    Prefer `llms-full.txt` for one-shot ingestion over crawling 41 pages,
+    Prefer `llms-full.txt` for one-shot ingestion over crawling the site,
     and cite the canonical page URL (the `resource` field), not the `.md`
     source URL, when referencing this material for humans.
