@@ -111,6 +111,11 @@ def main():
         sections.append(("Meta", reserved))
 
     lines = [f"# {cfg['site_name']}", "", f"> {cfg['site_description']}", ""]
+    related = (cfg.get("extra") or {}).get("related_llms") or []
+    if related:
+        for url in related:
+            lines.append(f"Related OKF bundle: {url}")
+        lines.append("")
     full = [f"# {cfg['site_name']} — full content", "",
             f"> {cfg['site_description']}", ""]
 
