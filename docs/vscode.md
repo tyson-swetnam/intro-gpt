@@ -2,9 +2,9 @@
 type: Research Guide
 title: Visual Studio Code and AI-Powered Development
 description: >-
-  Install VS Code, Positron, or Google Antigravity and set up AI coding
-  extensions such as Claude Code, GitHub Copilot, Cline, and local models
-  via Ollama.
+  Install VS Code, Positron, Cursor, or Google Antigravity and set up AI
+  coding extensions like Claude Code, GitHub Copilot, Cline, and local
+  models via Ollama.
 resource: https://tyson-swetnam.github.io/intro-gpt/vscode/
 tags: [research, coding, github, pricing, setup, local-llm]
 sources:
@@ -20,14 +20,16 @@ sources:
     title: GitHub Copilot extension
   - resource: https://github.com/cline/cline
     title: Cline
+  - resource: https://cursor.com/pricing
+    title: Cursor pricing
 generated:
   by: human:tswetnam
-  at: "2026-05-09T19:43:45Z"
+  at: "2026-09-30T00:00:00Z"
 verified:
   - by: human:tswetnam
     at: "2026-05-09T19:43:45Z"
 status: stable
-stale_after: "2026-11-01T00:00:00Z"
+stale_after: "2027-03-01T00:00:00Z"
 ---
 
 # :material-microsoft-visual-studio-code: Visual Studio Code and AI-Powered Development
@@ -41,8 +43,8 @@ stale_after: "2026-11-01T00:00:00Z"
 This guide covers:
 
 - **VS Code installation** on all major platforms
-- **Alternative VS Code-based IDEs** (Positron, Google Antigravity)
-- **AI coding extensions** (Claude Code, GitHub Copilot, Cline, Roo Code, and more)
+- **Alternative VS Code-based IDEs** (Positron, Google Antigravity, Cursor)
+- **AI coding extensions** (Claude Code, GitHub Copilot, Cline, and more)
 - **Local AI integration** with Ollama
 - **Practical workflows** for academic users
 
@@ -343,6 +345,15 @@ Would you like me to run this script to test it?
 
 ---
 
+### Cursor
+
+:material-cursor-default: **[Cursor](https://cursor.com/){target=_blank}** is a VS Code fork with an agent-first interface: you describe the change and the built-in agent (running frontier models or Cursor's in-house Composer 2.5) plans, edits, and runs it, with the editor as the review surface. It imports your VS Code extensions, settings, and keybindings in one step.
+
+- **Plans (September 2026):** Hobby free (no card, limited agent requests); Pro $20/mo; Pro+ $60/mo; Ultra $200/mo; Teams Standard $40/user/mo; Teams Premium $120/user/mo; Enterprise custom. See [cursor.com/pricing](https://cursor.com/pricing){target=_blank}.
+- **Students:** the free Hobby tier is open to anyone; there is no standing free-Pro year, only on-campus and online event promotions (see [cursor.com/students](https://cursor.com/en-US/students){target=_blank}).
+
+---
+
 ## 3. AI Extensions for VS Code
 
 VS Code's extension marketplace offers numerous AI coding assistants. Here are the most powerful options:
@@ -413,15 +424,19 @@ Suggested improvements:
 
 | Plan | Price | Features |
 |------|-------|----------|
-| **Individual / Pro** | $10/month | Code completions, chat |
-| **Pro+** | $39/user/month | Claude Opus access, 5x Pro premium requests |
+| **Free** | $0 | Limited: 2,000 completions/month, limited chat and agent use, automatic model selection |
+| **Pro** | $10/month | 1,500 AI credits/month; chat, agent mode, cloud agent, code review |
+| **Pro+** | $39/month | 7,000 AI credits/month; Claude Opus access |
+| **Max** | $100/month | 20,000 AI credits/month; priority access |
 | **Business** | $19/user/month | Team management, policy controls |
-| **Enterprise** | $39/user/month | Advanced security, fine-tuning |
-| **Free for Education (Free Pro)** | $0 | Full access for verified students, educators, and OSS maintainers |
+| **Enterprise** | $39/user/month | Advanced security, organisation-wide features |
+| **Student / Teacher** | $0 | Free via GitHub Education: Copilot Student plan for verified students, complimentary Pro for teachers and OSS maintainers |
 
-!!! warning "Billing change (May 2026)"
+!!! warning "Billing and sign-ups (September 2026)"
 
-    GitHub Copilot transitions to usage-based billing with monthly AI Credits effective June 1, 2026 --- see vendor pricing page.
+    - Usage on paid plans has been metered in **GitHub AI Credits** since June 1, 2026 (1 credit = $0.01; code completions never consume credits).
+    - New individual sign-ups (Student, Pro, Pro+) were paused on April 20, 2026 and reopened gradually from June 17, 2026.
+    - Claude Opus models are available on Pro+ and above only.
 
 !!! info "See Full Setup Instructions"
 
@@ -499,24 +514,7 @@ Do you want me to apply these changes?
 
 ### Roo Code
 
-:material-kangaroo: **[Roo Code](https://marketplace.visualstudio.com/items?itemName=RooVeterinaryInc.roo-cline){target=_blank}** is a fork of Cline focused on rapid feature development and customization.
-
-**Key Features:**
-
-- All Cline features plus experimental capabilities
-- Custom model presets and configurations
-- Advanced prompt customization
-- Frequent updates with new features
-- Community-driven development
-
-**Installation:**
-
-1. Open VS Code Extensions
-2. Search for "Roo Code" or "Roo Cline"
-3. Click **Install**
-4. Configure API keys same as Cline
-
-**Best For:** Users who want cutting-edge features and don't mind occasional instability.
+:material-kangaroo: **Roo Code**, a fork of Cline, was archived on May 15, 2026 and its repository is now read-only. Existing installs keep working but receive no updates or security fixes. Use [Cline](#cline-formerly-claude-dev) instead: it remains active, free, and model-agnostic.
 
 ---
 
@@ -571,11 +569,12 @@ Do you want me to apply these changes?
 | Extension | Provider | Pricing | Agentic | Local Models | Best For |
 |-----------|----------|---------|---------|--------------|----------|
 | [Claude Code](claude-code.md) | Anthropic | API or subscription | Yes | No | Full-stack development, documentation |
-| [GitHub Copilot](copilot.md) | GitHub/OpenAI | $10-39/month | Limited | No | Inline completions, GitHub users |
+| [GitHub Copilot](copilot.md) | GitHub (OpenAI, Anthropic, Google models) | $0–100/month | Yes | No | Inline completions, GitHub users |
+| OpenAI Codex | OpenAI | Included in all ChatGPT plans (limited on Free/Go) or API | Yes | No | Cloud + CLI + IDE agent |
 | Cline | Multi-provider | API costs only | Yes | Yes (Ollama) | Budget-conscious, model flexibility |
-| Roo Code | Multi-provider | API costs only | Yes | Yes (Ollama) | Experimental features |
 | CodeGPT | Multi-provider | API costs only | Limited | Yes (Ollama) | Simple setup, multi-provider |
 | Gemini Companion | Google | API or free tier | Limited | No | Google Cloud users |
+| Cursor (standalone IDE) | Cursor | $0–200/mo | Yes | No | Agent-first editor |
 
 !!! tip "Recommendation for Academic Users"
 
@@ -672,9 +671,7 @@ Run AI models locally for privacy, offline access, and cost savings. See our ful
 | Extension | Ollama Support | Configuration |
 |-----------|---------------|---------------|
 | Cline | Native | Select "Ollama" provider |
-| Roo Code | Native | Select "Ollama" provider |
 | CodeGPT | Native | Select "Ollama" provider |
-| Continue | Native | Add Ollama to config |
 
 ### Configuration Example (Cline)
 
@@ -928,7 +925,6 @@ graph TD
 | Privacy/offline | Cline + Ollama | Everything runs locally |
 | Google integration | Gemini extensions | Native Google Cloud support |
 | Free option | Copilot (edu) or Cline + Ollama | No cost for students/educators |
-| Experimental features | Roo Code | Cutting-edge capabilities |
 
 ### Combining Multiple Extensions
 
@@ -1043,7 +1039,7 @@ You can install multiple AI extensions and use them for different tasks:
 
 !!! tip "Getting Started Checklist"
 
-    1. :material-checkbox-blank-outline: Install VS Code (or Positron/Antigravity)
+    1. :material-checkbox-blank-outline: Install VS Code (or Positron/Antigravity/Cursor)
     2. :material-checkbox-blank-outline: Choose and install an AI extension
     3. :material-checkbox-blank-outline: Set up API keys securely
     4. :material-checkbox-blank-outline: Test with a simple coding request
