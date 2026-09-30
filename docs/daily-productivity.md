@@ -19,7 +19,7 @@ sources:
     title: Palmer Penguins dataset
 generated:
   by: human:tswetnam
-  at: "2026-05-10T18:01:12Z"
+  at: "2026-09-30T00:00:00Z"
 verified:
   - by: human:tswetnam
     at: "2026-05-10T18:01:12Z"
@@ -62,7 +62,7 @@ Every major chat LLM now ships with built-in sandboxed code execution. You uploa
 
 **Available on:**
 
-- :fontawesome-brands-openai: ChatGPT — Advanced Data Analysis (Plus/Team)
+- :fontawesome-brands-openai: ChatGPT — data analysis with sandboxed Python (all tiers; higher limits on Plus)
 - :simple-anthropic: Claude — Artifacts (Pro+, Python sandbox)
 - :simple-google: Gemini — chat plus Workspace integration
 - :material-brain: Perplexity Pro — web search plus Python execution
@@ -133,25 +133,25 @@ Zoom can also highlight key parts of the meeting recording, or break down the re
     - **Canvas:** A collaborative workspace for writing and coding projects with iterative editing
     - **Memory:** Remembers preferences and context across conversations for personalized assistance
     - **Custom GPTs:** Access specialized GPTs from the GPT Store or create your own for specific workflows
-    - **Plugins:** Extend functionality with third-party tools (calendar, web browsing, data analysis, etc.)
+    - **Plugins (skills, apps, MCP servers):** Extend functionality with third-party tools (calendar, web browsing, data analysis, etc.)
 
     !!! Danger "**Make certain these integrations meet University security requirements**"
 
-        Never submit student information, private conversations (Zoom AI Summaries), or other sensitive information through ChatGPT unless using a University of Arizona Enterprise license.
+        Never submit student information, private conversations (Zoom AI Summaries), or other sensitive information through ChatGPT unless your institution provides an enterprise or education licence (ChatGPT Edu, Claude for Education, Microsoft 365 Copilot) — check with campus IT; UNM users: see [CARC](https://carc.unm.edu/){target=_blank}.
 
 !!! Example ":material-microsoft: Microsoft Copilot integration in Microsoft Office 365"
 
-    University of Arizona officially uses Microsoft Office Online for office productivity. This includes integration with Microsoft Copilot into Office 365.
+    Many universities license Microsoft 365; Copilot Chat is included with work/school accounts, while Microsoft 365 Copilot (the add-on inside Word, Excel, Outlook, and Teams) is licensed separately by the institution.
 
     Microsoft Copilot features are available through the [https://m365.cloud.microsoft/](https://m365.cloud.microsoft/){target=_blank} domain and directly within Microsoft 365 applications.
 
-    Access to Copilot features may be controlled by your department or UITS. If you need access, contact your department's system administrator. 
+    Access to Copilot features may be controlled by your department or central IT. If you need access, contact your department's system administrator.
 
 !!! Example ":simple-google: Google Gemini integration in Google Workspaces"
 
-    University of Arizona continues to have access to [Google Workspace](https://workspace.google.com/discover), but may be limited by your department or UITS.
+    Many universities use [Google Workspace for Education](https://workspace.google.com/discover){target=_blank}; Gemini in Gmail, Docs, and Drive is available when your Workspace administrator turns it on, and access may be controlled by your department or central IT.
 
-    [Google for Education](https://edu.google.com/intl/ALL_us/) also has integration with Gemini, which needs to be authorized by a system administrator. 
+    [Gemini for Education](https://edu.google.com/intl/ALL_us/ai/gemini-for-education/){target=_blank} describes the administrator controls; data from education accounts is not human-reviewed or used to train models.
 
 ## Chat Use Cases
 
@@ -199,21 +199,21 @@ Suppose you're using an AI assistant as a personal planner. This prompt involves
     - **Requirements:** Enterprise Microsoft 365 account with Copilot access
     - **Setup:** Calendar integration is enabled by default for M365 Copilot users
     - **Access:** Available through [m365.cloud.microsoft](https://m365.cloud.microsoft/){target=_blank} or Copilot in Outlook
-    - **Note:** Access may be controlled by your department or UITS administrator
+    - **Note:** Access may be controlled by your department or central IT
 
-    **:fontawesome-brands-openai: ChatGPT Plus/Pro Calendar Plugins**
+    **:fontawesome-brands-openai: ChatGPT apps/connectors for Google Calendar or Outlook (installed from the Plugin Directory)**
 
-    - **Requirements:** ChatGPT Plus or Pro subscription
+    - **Requirements:** A ChatGPT account; app availability varies by plan, and workspace admins can restrict which plugins are allowed
     - **Setup:**
-        1. Open ChatGPT and start a new chat
-        2. Click the GPT Store icon or search for calendar plugins
-        3. Install "Google Calendar" or "Outlook Calendar" plugin
-        4. Authorize the plugin to access your calendar
-    - **Limitations:** Plugin availability may change; check the GPT Store for current options
+        1. Open ChatGPT settings and browse the Plugin Directory (apps and connectors)
+        2. Find the Google Calendar or Outlook Calendar app
+        3. Connect it and authorize access to your calendar
+        4. Ask ChatGPT about your schedule in a new chat
+    - **Limitations:** Availability may change; check the Plugin Directory for current options
 
     **:simple-google: Google Gemini with Google Workspace**
 
-    - **Requirements:** Google One AI Premium subscription or Google Workspace account
+    - **Requirements:** Google AI Pro subscription or Google Workspace account
     - **Setup:** Calendar integration is built-in when signed in with a Google account
     - **Access:** Available at [gemini.google.com](https://gemini.google.com){target=_blank}
     - **Note:** May require system administrator authorization for Google Workspace for Education accounts
@@ -236,7 +236,7 @@ Suppose you're using an AI assistant as a personal planner. This prompt involves
         - **Review your institution's IT policies** before enabling calendar integrations
         - **Use enterprise/education licenses** rather than personal accounts when available
 
-        For University of Arizona users, consult UITS policies and use officially sanctioned integrations (primarily Microsoft 365 Copilot).
+        Consult your campus IT and data-governance policies; UNM users: see [CARC](https://carc.unm.edu/){target=_blank}.
 
 
 ### Example 2: Drafting Emails with AI
@@ -245,13 +245,13 @@ Modern email platforms include built-in AI assistants that can help you draft, r
 
 ??? example "Drafting emails with AI assistance"
 
-    === "Microsoft Copilot (Outlook Online - UA Users)"
+    === "Microsoft Copilot (Outlook on the web — work/school account)"
 
         **Accessing Copilot in Outlook:**
 
-        University of Arizona users have access to Microsoft Copilot through Office 365 Online.
+        Many universities provide Copilot in Outlook on the web through Microsoft 365 work/school accounts; check with your campus IT.
 
-        1. Go to [outlook.office.com](https://outlook.office.com){target=_blank} and sign in with your UA NetID
+        1. Go to [outlook.office.com](https://outlook.office.com){target=_blank} and sign in with your institutional account
         2. Click **"New mail"** to start composing an email
         3. In the compose window, look for the **Copilot icon** (sparkle/star icon) in the toolbar
         4. Click the Copilot icon and select **"Draft with Copilot"**
@@ -308,9 +308,9 @@ Modern email platforms include built-in AI assistants that can help you draft, r
             - **Draft with Copilot:** Generate emails from prompts
             - **Coaching by Copilot:** Get suggestions for tone, clarity, and sentiment
             - **Summarize:** Condense long email threads
-            - **Available to:** All UA students, faculty, and staff through Office 365
+            - **Available to:** Work/school accounts where your institution has enabled Copilot
 
-    === "Google Gmail (Non-UA Users)"
+    === "Google Gmail (Workspace or personal account)"
 
         **Accessing "Help me write" in Gmail:**
 
@@ -397,7 +397,7 @@ Modern AI platforms offer sophisticated research capabilities that go far beyond
 
     All these approaches are designed for tasks that benefit from sustained, careful analysis rather than quick responses.
 
-#### Extended Thinking with Claude Opus 4.5
+#### Extended Thinking with Claude (Opus 5.5 / Sonnet 5.5)
 
 Extended Thinking is particularly valuable when you need the AI to work through complex reasoning, analyze nuanced problems, or consider multiple perspectives before responding. When enabled, Claude shows you its "thinking" process, making its reasoning transparent and verifiable.
 
@@ -564,7 +564,7 @@ Google Scholar Labs represents a new approach to academic literature search by u
 
 !!! tip "Accessing Google Scholar Labs"
 
-    Google Scholar Labs is currently experimental (as of May 2026):
+    Google Scholar Labs is currently experimental (as of May 2026; not re-checked September 2026):
 
     - Visit [https://scholar.google.com/scholar_labs/search](https://scholar.google.com/scholar_labs/search){target=_blank}
     - Requires logging in with a Google account

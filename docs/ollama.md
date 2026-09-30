@@ -22,7 +22,7 @@ sources:
     title: Open WebUI
 generated:
   by: human:tswetnam
-  at: "2026-05-09T19:15:29Z"
+  at: "2026-09-30T00:00:00Z"
 verified:
   - by: human:tswetnam
     at: "2026-05-09T19:15:29Z"
@@ -1008,22 +1008,10 @@ Access at `http://localhost:3000`. Open WebUI automatically detects your Ollama 
 
 ### VS Code Integration
 
-Install the [Continue](https://continue.dev/){target=_blank} extension for AI-assisted coding with Ollama:
+Install the open-source [Cline](https://cline.bot/){target=_blank} extension for AI-assisted coding with Ollama. (Continue.dev, previously recommended here, joined Cursor in June 2026 and is no longer maintained.)
 
-1. Install the Continue extension from VS Code marketplace
-2. Configure to use Ollama in settings:
-
-```json
-{
-  "models": [
-    {
-      "title": "Ollama",
-      "provider": "ollama",
-      "model": "deepseek-coder"
-    }
-  ]
-}
-```
+1. Install the Cline extension from the VS Code marketplace
+2. In Cline's settings, choose **Ollama** as the API provider, keep the default base URL `http://localhost:11434`, and pick a model you have pulled (for example `deepseek-coder`)
 
 ### Obsidian Integration
 

@@ -12,8 +12,8 @@ sources:
     title: Claude Code Sandboxing
   - resource: https://openai.com/index/codex/
     title: OpenAI Codex
-  - resource: https://ai.google.dev/gemini-api/docs/get-started/tutorial
-    title: Gemini CLI
+  - resource: https://antigravity.google/
+    title: Antigravity CLI (formerly Gemini CLI)
   - resource: https://www.huit.harvard.edu/ai-sandbox
     title: Harvard AI Sandbox
   - resource: https://uit.stanford.edu/news/ai-playground-safer-ai-platform-stanford-community
@@ -26,12 +26,12 @@ sources:
     title: Azure for Students
 generated:
   by: human:tswetnam
-  at: "2026-05-10T18:42:02Z"
+  at: "2026-09-30T00:00:00Z"
 verified:
   - by: human:tswetnam
     at: "2026-05-10T18:42:02Z"
 status: stable
-stale_after: "2026-11-01T00:00:00Z"
+stale_after: "2027-03-01T00:00:00Z"
 ---
 
 # AI Sandboxes
@@ -86,18 +86,18 @@ Traditional sandboxes are ideal for:
 !!! tip "Recommendation for AI Experimentation"
     If you are experimenting with AI tools that execute code, consider running them inside a virtual machine or container first. This provides an extra layer of protection while you learn how the tools behave.
 
-### UA Resources for Traditional Sandboxes
+### Institutional Resources for Traditional Sandboxes
 
-The University of Arizona provides managed cloud services that support traditional sandbox environments:
+Many campuses offer managed cloud/VM services that support traditional sandbox environments (example: [University of Arizona Managed Cloud Services](https://it.arizona.edu/managed-cloud-services){target=_blank}); UNM users: see CARC's HPC and cloud documentation at [unm-carc.github.io/docs](https://unm-carc.github.io/docs/){target=_blank}.
 
-- **[Managed Cloud Services](https://it.arizona.edu/managed-cloud-services){target=_blank}** - AWS-based virtual machines and development environments
+- **Campus managed cloud services** - Virtual machines and development environments provisioned by your central IT or research-computing group
 - **CyVerse Discovery Environment** - Container-based computing platform (see below)
 
 ---
 
 ## Agentic AI Sandboxes
 
-Agentic AI sandboxes are a newer concept that emerged with the rise of AI coding assistants like Claude Code, OpenAI Codex, and Gemini CLI. These tools can read files, write code, and execute commands on your computer, which creates significant security considerations.
+Agentic AI sandboxes are a newer concept that emerged with the rise of AI coding assistants like Claude Code, OpenAI Codex, and Antigravity CLI (formerly Gemini CLI). These tools can read files, write code, and execute commands on your computer, which creates significant security considerations.
 
 ### What Are Agentic AI Sandboxes?
 
@@ -138,11 +138,11 @@ Several major AI coding assistants now include sandbox modes:
 - Runs code in isolated containers
 - Limited network access by default
 
-#### Gemini CLI
+#### Antigravity CLI (formerly Gemini CLI)
 
-[:simple-google: Gemini CLI](https://ai.google.dev/gemini-api/docs/get-started/tutorial){target=_blank} offers sandbox modes for safer execution.
+[:simple-google: Antigravity CLI (formerly Gemini CLI)](https://antigravity.google/){target=_blank} offers sandbox modes for safer execution.
 
-- UA credentials work for authentication
+- Works with your institutional Google account if your campus has enabled Gemini; the open-source [Gemini CLI](https://github.com/google-gemini/gemini-cli){target=_blank} still works with an API key
 - Configurable permission levels
 
 !!! warning "Critical Security Consideration"
@@ -300,24 +300,24 @@ The Discovery Environment offers pre-configured applications for running agentic
    export OPENAI_API_KEY="your-api-key"
    ```
 
-### Gemini CLI in Discovery Environment
+### Antigravity CLI (formerly Gemini CLI) in Discovery Environment
 
-[:simple-google: Gemini CLI](https://ai.google.dev/gemini-api/docs/get-started/tutorial){target=_blank} works with UA credentials.
+[:simple-google: Antigravity CLI (formerly Gemini CLI)](https://antigravity.google/){target=_blank} works with your institutional Google account if your campus has enabled Gemini.
 
 **Setup:**
 
 1. Launch the CloudShell application in the Discovery Environment
-2. Authenticate using your UA Google account
-3. Configure Gemini CLI for your project
+2. Authenticate using your institutional Google account (or a personal Google account or API key)
+3. Configure Antigravity CLI for your project
 
-!!! tip "UA Credential Integration"
-    University of Arizona personnel can use their UA credentials to authenticate with Gemini CLI, simplifying access management.
+!!! tip "Institutional Google accounts"
+    Antigravity CLI (formerly Gemini CLI) works with your institutional Google account if your campus has enabled Gemini, simplifying access management; check with your campus IT.
 
 ---
 
 ## AI Sandbox Landscape in Higher Education
 
-Universities and major technology companies have recognized the importance of providing safe AI experimentation environments for students. This section explores the broader landscape of AI sandbox offerings beyond the University of Arizona, demonstrating how institutions worldwide are addressing the need for secure, accessible AI learning platforms.
+Universities and major technology companies have recognized the importance of providing safe AI experimentation environments for students. This section explores the broader landscape of AI sandbox offerings beyond the CyVerse Discovery Environment, demonstrating how institutions worldwide are addressing the need for secure, accessible AI learning platforms.
 
 ### University-Hosted AI Sandbox Platforms
 
@@ -479,7 +479,7 @@ Major technology companies provide educational cloud sandbox programs to univers
 
 - **Access:** Any full-time student 18+ at verified institution; [no credit card required](https://azure.microsoft.com/en-us/free/students){target=_blank}
 - **Delivery:** Standard Azure cloud portal with "Azure for Students" subscription
-- **Features:** [\$100 in Azure credit (renewable annually)](https://azure.microsoft.com/en-us/free/students){target=_blank}, 25+ free Azure products for 12 months, access to Azure OpenAI Service, GitHub Student benefits
+- **Features:** [\$100 in Azure credit (renewable annually)](https://azure.microsoft.com/en-us/free/students){target=_blank}, 25+ free Azure products for 12 months, access to Microsoft Foundry (formerly Azure OpenAI Service), GitHub Student benefits
 - **Target:** Individual student developers and learners doing class projects
 - **Longevity:** Established ~2017, widely used in university CS/IT programs
 
@@ -610,7 +610,7 @@ flowchart TD
 | **Traditional Sandboxes** | VMs and containers that isolate entire environments; proven technology for decades |
 | **Agentic AI Sandboxes** | Built-in safety features in AI coding tools; restrict AI capabilities |
 | **Layered Security** | Combining both approaches provides defense in depth |
-| **Discovery Environment** | UA platform providing container isolation ideal for running AI tools |
+| **Discovery Environment** | CyVerse (University of Arizona) platform providing container isolation ideal for running AI tools |
 | **Best Practice** | Enable sandbox features, review code before execution, use isolated environments for sensitive work |
 
 !!! success "Key Takeaway"
@@ -618,7 +618,8 @@ flowchart TD
 
 ## Further Resources
 
-- **[Managed Cloud Services (UA IT)](https://it.arizona.edu/managed-cloud-services){target=_blank}** - AWS resources for VMs and development environments
+- **[UNM CARC documentation](https://unm-carc.github.io/docs/){target=_blank}** - HPC and cloud resources for UNM users
+- **[Managed Cloud Services (University of Arizona IT, example)](https://it.arizona.edu/managed-cloud-services){target=_blank}** - AWS resources for VMs and development environments
 - **[Claude Code Sandboxing Documentation](https://www.anthropic.com/engineering/claude-code-sandboxing){target=_blank}** - Official Anthropic sandboxing guide
 - **[Claude Code Documentation](https://docs.anthropic.com/en/docs/claude-code){target=_blank}** - Complete Claude Code reference
 - **[Agentic AI Overview](agentic.md)** - Understanding agentic AI concepts

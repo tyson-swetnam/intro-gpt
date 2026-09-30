@@ -14,7 +14,7 @@ sources:
     title: CARE Principles for Indigenous Data Governance
 generated:
   by: human:tswetnam
-  at: "2026-08-31T00:00:00Z"
+  at: "2026-09-30T00:00:00Z"
 verified:
   - by: human:tswetnam
     at: "2026-08-31T00:00:00Z"
@@ -110,6 +110,7 @@ This workshop is organized into **five main modules** with an estimated **8-12 h
    - [:fontawesome-brands-openai: ChatGPT](chatgpt.md) - Free or Plus ($20/month)
    - [:simple-google: Google Gemini](gemini.md) - Free or AI Pro ($19.99/month)
    - [:material-microsoft: Microsoft Copilot](microsoft.md) - Free with Microsoft 365
+   - **Students and educators:** Google AI Pro is free for 12 months for US college students (claim by Dec 31, 2026); ChatGPT Plus has a 4-free-months offer for US students through Oct 31, 2026 (verify); GitHub Copilot Student and Perplexity Education Pro ($10/mo) are also available — see [Education & Research Offers](choose.md#education-research-offers-september-2026).
 
 :material-check: **No prior AI experience required** - This workshop starts with the basics and progresses to advanced topics
 
@@ -125,11 +126,11 @@ Get started with major AI platforms. Each guide includes account setup, interfac
 
 | Platform | Description |
 |----------|-------------|
-| [:simple-anthropic: Claude](claude.md) | Anthropic's AI with Projects, Artifacts, and MCP support |
-| [:fontawesome-brands-openai: ChatGPT](chatgpt.md) | OpenAI's ChatGPT with GPTs, Canvas, and Advanced Voice |
+| [:simple-anthropic: Claude](claude.md) | Anthropic's AI with Projects, Artifacts, Claude Code, and MCP support |
+| [:fontawesome-brands-openai: ChatGPT](chatgpt.md) | OpenAI's ChatGPT with Codex, deep research, plugins, and voice |
 | [:simple-google: Gemini](gemini.md) | Google's AI with workspace integration and multimodal capabilities |
-| [:material-microsoft: Microsoft Copilot](microsoft.md) | AI integrated into Microsoft 365 applications |
-| [:simple-githubcopilot: GitHub Copilot](copilot.md) | AI pair programming for developers |
+| [:material-microsoft: Microsoft Copilot](microsoft.md) | Copilot Chat and Microsoft 365 Copilot for work and school accounts |
+| [:simple-githubcopilot: GitHub Copilot](copilot.md) | AI pair programming; free for students and teachers |
 
 ### [:material-text-box-edit: Prompt Engineering](prompts.md)
 
@@ -165,7 +166,7 @@ Advanced topics for researchers using AI in their work.
 | [:material-shield-lock: AI Sandboxes](ai_sandboxes.md) | Safe environments for AI experimentation |
 | [:simple-jupyter: Jupyter AI](jupyter.md) | AI integration in Jupyter notebooks |
 | [:material-link-variant: Model Context Protocol](mcp.md) | Claude's MCP for tool integration |
-| [:simple-google: NotebookLM](notebooklm.md) | Google's AI research assistant |
+| [:simple-google: Gemini Notebook (formerly NotebookLM)](notebooklm.md) | Google's source-grounded research notebook |
 | [:material-server: Ollama](ollama.md) | Running LLMs locally |
 | [:material-database-search: RAG](rag.md) | Retrieval Augmented Generation for custom knowledge bases |
 | [:material-api: OpenAI API](chatgpt.md) | Programming with OpenAI's API |

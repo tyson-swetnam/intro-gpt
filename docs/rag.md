@@ -2,8 +2,8 @@
 type: Research Guide
 title: Retrieval Augmented Generation (RAG)
 description: >-
-  How retrieval-augmented generation grounds LLM answers in your documents,
-  covering embeddings, vector databases, and tools like NotebookLM and OpenWebUI.
+  How retrieval-augmented generation grounds LLM answers in your documents:
+  embeddings, vector databases, Gemini Notebook (formerly NotebookLM), OpenWebUI.
 resource: https://tyson-swetnam.github.io/intro-gpt/rag/
 tags: [research, rag, local-llm]
 sources:
@@ -19,11 +19,11 @@ sources:
     title: OpenWebUI
   - resource: https://python.langchain.com/docs/tutorials/rag/
     title: LangChain RAG Tutorial
-  - resource: https://notebooklm.google/
-    title: NotebookLM
+  - resource: https://notebook.google.com/
+    title: Gemini Notebook (formerly NotebookLM)
 generated:
   by: human:tswetnam
-  at: "2026-05-09T19:15:29Z"
+  at: "2026-09-30T00:00:00Z"
 verified:
   - by: human:tswetnam
     at: "2026-05-09T19:15:29Z"
@@ -61,7 +61,7 @@ status: stable
 
 You may already be using RAG without realizing it:
 
-- **[NotebookLM](notebooklm.md)**: Google's research tool uses RAG to answer questions based only on your uploaded sources
+- **[Gemini Notebook (formerly NotebookLM)](notebooklm.md)**: Google's research notebook uses RAG to answer questions based only on your uploaded sources
 - **ChatGPT with file uploads**: When you upload PDFs, ChatGPT retrieves relevant sections to answer your questions
 - **Claude Projects**: Custom knowledge bases that Claude references during conversations
 - **[OpenWebUI](https://openwebui.com){target=_blank}**: Self-hosted interface with Knowledge collections for local, private RAG
@@ -160,16 +160,16 @@ You do not need to be a programmer to benefit from RAG. Several platforms provid
 
 | Tool | How to Access RAG | Best For |
 |------|------------------|----------|
-| **[NotebookLM](notebooklm.md)** | Upload sources to a notebook | Research, literature reviews, studying |
+| **[Gemini Notebook](notebooklm.md)** | Upload sources to a notebook | Research, literature reviews, studying |
 | **ChatGPT Plus** | Upload files or enable "Browse" | General document Q&A |
 | **Claude Pro** | Create a Project with files | Long-form document analysis |
-| **Gemini Advanced** | Upload files or connect Google Drive | Google Workspace integration |
+| **Gemini (AI Pro)** | Upload files or connect Google Drive | Google Workspace integration |
 | **Microsoft Copilot** | Access via Microsoft 365 | Enterprise documents |
 | **[OpenWebUI](https://openwebui.com){target=_blank}** | Create Knowledge collections or upload files | Privacy-sensitive data, local/offline use |
 
-!!! example "Try It: RAG with NotebookLM"
+!!! example "Try It: RAG with Gemini Notebook"
 
-    1. Go to [NotebookLM](https://notebooklm.google/){target=_blank}
+    1. Go to [Gemini Notebook](https://notebook.google.com/){target=_blank}
     2. Create a new notebook
     3. Upload 2-3 research papers on a topic you are studying
     4. Ask questions like:
@@ -321,7 +321,7 @@ If you manage an OpenWebUI instance, you can tune RAG performance in **Admin Pan
 
 #### Comparison: OpenWebUI vs. Other RAG Tools
 
-| Feature | OpenWebUI | NotebookLM | ChatGPT (Plus) | Claude Projects |
+| Feature | OpenWebUI | Gemini Notebook | ChatGPT (Plus) | Claude Projects |
 |---------|-----------|------------|----------------|-----------------|
 | **Cost** | Free (self-hosted) | Free | $20/month | $20/month |
 | **Data Privacy** | Full local control | Google servers | OpenAI servers | Anthropic servers |
@@ -564,7 +564,7 @@ RAG is powerful but not perfect. Understanding its limitations helps you use it 
 
 ### Related Workshop Content
 
-- **[NotebookLM](notebooklm.md)** - Consumer-friendly RAG for research
+- **[Gemini Notebook](notebooklm.md)** - Consumer-friendly RAG for research
 - **[Text Mining](text_mining.md)** - Techniques for processing large text collections
 - **[AI Sandboxes](ai_sandboxes.md)** - Setting up environments for custom RAG development
 - **[Agentic AI](agentic.md)** - How RAG combines with autonomous AI agents
