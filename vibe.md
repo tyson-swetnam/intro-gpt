@@ -18,7 +18,7 @@ sources:
     title: Claude Code documentation
 generated:
   by: human:tswetnam
-  at: "2026-05-10T18:42:02Z"
+  at: "2026-09-30T00:00:00Z"
 verified:
   - by: human:tswetnam
     at: "2026-05-10T18:42:02Z"
@@ -71,7 +71,7 @@ Microsoft's popular open-source code editor with extensive extension ecosystem, 
 
 :material-apple: :material-microsoft-windows: :simple-linux: :material-license: :material-api:
 
-A popular standalone fork of VS Code, focused on integrating new models with stability and offering a flat-fee pricing model.
+A popular standalone fork of VS Code, focused on integrating new models with stability and offering a flat-fee pricing model. Free Hobby; Pro $20; Pro+ $60; Ultra $200 (per month).
 
 #### [:simple-posit: Positron](https://github.com/posit-dev/positron){target=_blank}
 
@@ -91,11 +91,11 @@ Firebase's integrated development environment for building and deploying Firebas
 
 Google's experimental AI-powered standalone IDE with advanced Gemini integration for next-generation development workflows.
 
-#### [:material-surfing: Windsurf](https://windsurf.com/editor){target=_blank}
+#### [:material-surfing: Devin Desktop (formerly Windsurf)](https://devin.ai/){target=_blank}
 
 :material-apple: :material-microsoft-windows: :simple-linux: :material-license: :material-api:
 
-Standalone editor offering similar agentic and inline features with tiered pricing and a "just works" usability orientation.
+Standalone editor offering similar agentic and inline features with tiered pricing and a "just works" usability orientation. Cognition renamed Windsurf to Devin Desktop on June 2, 2026; the free tier was kept and Devin Pro is $20/mo.
 
 ### VS Code Extensions
 
@@ -105,7 +105,7 @@ Standalone editor offering similar agentic and inline features with tiered prici
 
 Official Anthropic VS Code extension providing AI pair programming with Claude models, featuring multi-file editing, debugging, and terminal integration.
 
-#### [:simple-google: Gemini CLI Companion](https://marketplace.visualstudio.com/items?itemName=Google.gemini-cli-vscode-ide-companion){target=_blank}
+#### [:simple-google: Gemini CLI Companion (now Antigravity)](https://marketplace.visualstudio.com/items?itemName=Google.gemini-cli-vscode-ide-companion){target=_blank}
 
 :material-microsoft-visual-studio-code: :material-license: :material-api:
 
@@ -132,7 +132,7 @@ VS Code extension that's open-source and model-agnostic, pioneering features lik
 
 :material-microsoft-visual-studio-code: :material-open-source-initiative: :material-api:
 
-VS Code extension derived from Cline, prioritizes rapid feature development and customization, serving users interested in experimental capabilities.
+VS Code extension derived from Cline that prioritized rapid feature development and customization. **Archived May 2026** — use Cline or the ZooCode fork instead.
 
 ### Command Line Interface (CLI) Tools
 
@@ -148,17 +148,17 @@ A popular command-line tool for AI-driven coding, often used with local or remot
 
 Official Anthropic command-line interface for Claude, enabling AI-assisted development directly from the terminal with support for MCP servers.
 
-#### [:fontawesome-brands-openai: OpenAI Codex CLI](https://github.com/features/copilot){target=_blank}
+#### [:fontawesome-brands-openai: OpenAI Codex CLI](https://github.com/openai/codex){target=_blank}
 
 :simple-gnubash: :material-license: :material-api:
 
-Command-line access to OpenAI's Codex models, integrated with GitHub Copilot for terminal-based AI assistance.
+Command-line access to OpenAI's Codex coding agent for terminal-based AI assistance. Included in all ChatGPT plans (limited on Free/Go).
 
-#### [:simple-google: Google Gemini CLI](https://ai.google.dev/gemini-api/docs/get-started/tutorial?lang=python){target=_blank}
+#### [:simple-google: Google Antigravity CLI (formerly Gemini CLI)](https://antigravity.google/){target=_blank}
 
 :simple-gnubash: :material-license: :material-api:
 
-Google's command-line interface for Gemini models, providing AI coding assistance and integration with Google Cloud services.
+Google's command-line coding agent. Free, AI Pro, and AI Ultra access moved from Gemini CLI to Antigravity CLI on June 18, 2026; the open-source [Gemini CLI](https://github.com/google-gemini/gemini-cli){target=_blank} still works with an API key.
 
 #### [:material-code-braces: OpenCode.ai](https://opencode.ai/){target=_blank}
 
@@ -178,7 +178,7 @@ Browser-based version of Claude Code providing AI pair programming capabilities 
 
 :material-web: :material-license: :material-api:
 
-OpenAI's ChatGPT runs a sandboxed Python environment for executing code, analyzing data, and generating visualizations directly in the browser. Available on Plus and Team tiers.
+OpenAI's ChatGPT runs a sandboxed Python environment for executing code, analyzing data, and generating visualizations directly in the browser. Available on all tiers with usage limits; Codex on every plan.
 
 #### [:simple-google: Google Gemini](https://gemini.google.com){target=_blank}
 
@@ -269,7 +269,7 @@ When you use a cloud AI agent, the following typically leaves your machine:
 
 - Don't share sensitive data, credentials, or personal information in prompts.
 - Review your organization's data classification policies before connecting agents to sensitive directories.
-- Use local or self-hosted models for highly sensitive code when possible — Cline and Roo Code support BYOM via Ollama; Aider and OpenCode.ai work with local LLMs. See [ollama.md](ollama.md).
+- Use local or self-hosted models for highly sensitive code when possible — Cline (and the ZooCode fork of Roo Code) supports BYOM via Ollama; Aider and OpenCode.ai work with local LLMs. See [ollama.md](ollama.md).
 - Be aware of each service's data retention policy.
 - Consider anonymizing or redacting data before sharing with AI tools.
 

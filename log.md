@@ -8,6 +8,11 @@ resource: https://tyson-swetnam.github.io/intro-gpt/log/
 
 # Log
 
+## 2026-09-30
+
+- **Update**: September 2026 platform, subscription, and API refresh. [Choosing a Platform](choose.md) restructured with an "Education & Research Offers" section and a free-API-tier table; dormant or off-topic platforms retired (Jasper, Pi, Vicuna, Latimer, Merlin, Amazon Titan, OpenResearcher, StarCoder, Code Llama, Phind, Continue.dev, Scholar GPT/ScholarAI); current tools added (Cursor, OpenAI Codex, Google Antigravity and Jules, Devin Desktop, Kiro, Ai2 Asta, Edison Scientific, Undermind, SciSpace, OpenAI Prism, OpenRouter, Cerebras, xAI and Perplexity APIs); renames applied (NotebookLM → Gemini Notebook, Windsurf → Devin Desktop, Le Chat → Mistral Vibe, Azure AI Studio → Microsoft Foundry, HuggingChat → HuggingChat Omni, FutureHouse → Edison Scientific); Sora, ChatGPT Atlas, the Llama API, and GitHub Models marked discontinued.
+- **Update**: [Microsoft Copilot](microsoft.md) and [GitHub Copilot](copilot.md) rewritten with September 2026 plan tables, education access, and institution-neutral sign-in steps; [Claude](claude.md), [ChatGPT](chatgpt.md), [Gemini](gemini.md), [VS Code & AI Tools](vscode.md), and [Claude Code Workflow](claude-code.md) pricing and model blocks updated; campus-access notes across the site made institution-neutral (UNM users are pointed to CARC); the monthly pricing-refresh runbook updated to match.
+
 ## 2026-08-31
 
 - **Update**: Workshop stewardship transferred to the [UNM Center for Advanced Research Computing](https://carc.unm.edu/){target=_blank}: new UNM icons, attribution, and cross-links to the CARC OKF bundles. Originally developed at the University of Arizona.

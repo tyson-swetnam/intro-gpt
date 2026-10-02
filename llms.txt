@@ -14,18 +14,18 @@ Related OKF bundle: https://unm-carc.github.io/docs/llms.txt
 
 ## Setup
 
-- [Anthropic Claude](https://tyson-swetnam.github.io/intro-gpt/claude.md): How to access Anthropic Claude via claude.ai, Claude Code, the desktop app, and the API, plus MCP setup, subscription pricing, and model tiers.
-- [Google Gemini](https://tyson-swetnam.github.io/intro-gpt/gemini.md): How to access Google Gemini via the web app, AI Studio, and Android, with subscription pricing, student discounts, and step-by-step Gemini API key setup.
-- [OpenAI ChatGPT](https://tyson-swetnam.github.io/intro-gpt/chatgpt.md): Set up a ChatGPT account, compare subscription tiers from Free to Pro and Enterprise, and create OpenAI API keys for programmatic access.
-- [Microsoft Copilot](https://tyson-swetnam.github.io/intro-gpt/microsoft.md): How University of Arizona users sign in to Microsoft Copilot with Enterprise Data Protection and where Copilot fits in Microsoft 365.
-- [GitHub Copilot](https://tyson-swetnam.github.io/intro-gpt/copilot.md): Set up GitHub Copilot for AI code completion: create a GitHub account, claim education access, and install the extension in VS Code or Visual Studio.
+- [Anthropic Claude](https://tyson-swetnam.github.io/intro-gpt/claude.md): How to access Anthropic Claude via claude.ai, Claude Code, the desktop app, and the API, plus MCP setup, September 2026 plan pricing, and model tiers.
+- [Google Gemini](https://tyson-swetnam.github.io/intro-gpt/gemini.md): Access Google Gemini via the web app, AI Studio, and Android, with September 2026 pricing, the free year of AI Pro for US college students, and API key setup.
+- [OpenAI ChatGPT](https://tyson-swetnam.github.io/intro-gpt/chatgpt.md): Set up a ChatGPT account, compare the September 2026 plans from Free and Go to the Pro tiers, Business, and Edu, and create OpenAI API keys.
+- [Microsoft Copilot](https://tyson-swetnam.github.io/intro-gpt/microsoft.md): Use Copilot Chat and Microsoft 365 Copilot with a work or school account: September 2026 plans, education pricing, and Microsoft Foundry for developers.
+- [GitHub Copilot](https://tyson-swetnam.github.io/intro-gpt/copilot.md): Set up GitHub Copilot in VS Code and other editors: September 2026 plans from Free to Max, AI Credits billing, and free access for students and teachers.
 
 ## Prompt Engineering
 
 - [Prompt Engineering](https://tyson-swetnam.github.io/intro-gpt/prompts.md): Core prompt engineering techniques for modern AI assistants: the CRAFT framework, document uploads, few-shot examples, prompt chaining, and common pitfalls.
 - [General Productivity](https://tyson-swetnam.github.io/intro-gpt/daily-productivity.md): Use AI assistants for everyday work: drafting emails, summarizing meetings, no-code data analysis, and deep research tools compared side by side.
 - [Vibe Coding](https://tyson-swetnam.github.io/intro-gpt/vibe.md): Compares vibe coding tools — desktop IDEs, VS Code extensions, CLIs, and browser platforms — and covers safe practices for AI agents running code locally.
-- [Choosing the Right AI Platform](https://tyson-swetnam.github.io/intro-gpt/choose.md): Comparison tables of AI platforms for chat, research, coding, and image/video, with May 2026 pricing and US restrictions on Chinese AI services.
+- [Choosing the Right AI Platform](https://tyson-swetnam.github.io/intro-gpt/choose.md): Compare AI platforms for chat, research, code, media, and APIs, with September 2026 pricing, education and research offers, and US restrictions on Chinese AI.
 
 ## Education
 
@@ -41,14 +41,14 @@ Related OKF bundle: https://unm-carc.github.io/docs/llms.txt
 - [Agentic AI](https://tyson-swetnam.github.io/intro-gpt/agentic.md): Explains how agentic AI systems plan, act, and iterate autonomously, covering the agent loop, MCP tool use, vibe coding tools, and safe-use practices.
 - [AI Sandboxes](https://tyson-swetnam.github.io/intro-gpt/ai_sandboxes.md): Compares traditional VM and container sandboxes with agentic AI sandboxes in coding tools, and surveys university and cloud sandbox programs for safe AI use.
 - [Model Context Protocol (MCP)](https://tyson-swetnam.github.io/intro-gpt/mcp.md): How the Model Context Protocol connects AI assistants to live application context, covering client-server architecture, communication flow, and benefits.
-- [Google NotebookLM](https://tyson-swetnam.github.io/intro-gpt/notebooklm.md): Guide to Google NotebookLM, a source-grounded AI notebook for research and teaching, covering key features, citations, audio overviews, and Plus plans.
+- [Gemini Notebook (formerly Google NotebookLM)](https://tyson-swetnam.github.io/intro-gpt/notebooklm.md): Guide to Gemini Notebook, Google's source-grounded AI notebook (renamed from NotebookLM in July 2026): citations, audio overviews, free and bundled plans.
 - [Ollama](https://tyson-swetnam.github.io/intro-gpt/ollama.md): Install and run open LLMs locally with Ollama: setup for macOS, Linux, and Windows, model management, REST API and Python use, and custom Modelfiles.
-- [Retrieval Augmented Generation (RAG)](https://tyson-swetnam.github.io/intro-gpt/rag.md): How retrieval-augmented generation grounds LLM answers in your documents, covering embeddings, vector databases, and tools like NotebookLM and OpenWebUI.
+- [Retrieval Augmented Generation (RAG)](https://tyson-swetnam.github.io/intro-gpt/rag.md): How retrieval-augmented generation grounds LLM answers in your documents: embeddings, vector databases, Gemini Notebook (formerly NotebookLM), OpenWebUI.
 - [Hugging Face](https://tyson-swetnam.github.io/intro-gpt/huggingface.md): Guide to the Hugging Face Hub: finding models and datasets, CLI authentication, and running open models locally with Transformers, llama.cpp, or Ollama.
 - [Gradio](https://tyson-swetnam.github.io/intro-gpt/gradio.md): Build Python web interfaces for machine learning demos with Gradio, connect Hugging Face or Ollama models, and deploy free apps to Hugging Face Spaces.
 - [Jupyter AI](https://tyson-swetnam.github.io/intro-gpt/jupyter.md): Introduces Jupyter AI and its Jupyternaut chatbot, which brings generative AI assistance directly into Jupyter notebooks.
 - [Posit (RStudio)](https://tyson-swetnam.github.io/intro-gpt/posit.md): Install Positron and RStudio, then use Posit's ellmer (R) and chatlas (Python) packages to run cloud or local Ollama LLMs in data analysis workflows.
-- [Visual Studio Code and AI-Powered Development](https://tyson-swetnam.github.io/intro-gpt/vscode.md): Install VS Code, Positron, or Google Antigravity and set up AI coding extensions such as Claude Code, GitHub Copilot, Cline, and local models via Ollama.
+- [Visual Studio Code and AI-Powered Development](https://tyson-swetnam.github.io/intro-gpt/vscode.md): Install VS Code, Positron, Cursor, or Google Antigravity and set up AI coding extensions like Claude Code, GitHub Copilot, Cline, and local models via Ollama.
 - [Text Mining Resources](https://tyson-swetnam.github.io/intro-gpt/text_mining.md): Text and data mining sources for research, from licensed APIs like Scopus and ProQuest to open corpora like arXiv, HathiTrust, and government records.
 
 ## Ethics

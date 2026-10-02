@@ -13,7 +13,7 @@ sources:
     title: CARE Principles for Indigenous Data Governance
 generated:
   by: human:tswetnam
-  at: "2026-08-30T15:21:35-06:00"
+  at: "2026-09-30T00:00:00Z"
 verified:
   - by: human:tswetnam
     at: "2026-08-30T15:21:35-06:00"
@@ -116,7 +116,7 @@ Advanced topics for researchers using AI in their work.
 | AI Sandboxes | Safe environments for AI experimentation | [AI Sandboxes](ai_sandboxes.md) |
 | Jupyter AI | AI integration in Jupyter notebooks | [Jupyter AI](jupyter.md) |
 | Model Context Protocol | Claude's MCP for tool integration | [MCP](mcp.md) |
-| NotebookLM | Google's AI research assistant | [NotebookLM](notebooklm.md) |
+| Gemini Notebook | Google's source-grounded research notebook (formerly NotebookLM) | [Gemini Notebook](notebooklm.md) |
 | Ollama | Running LLMs locally | [Ollama](ollama.md) |
 | RAG (Retrieval Augmented Generation) | Building AI with custom knowledge bases | [RAG](rag.md) |
 | OpenAI API | Programming with OpenAI's API | [OpenAI API](chatgpt.md) |
@@ -185,7 +185,7 @@ To get the most out of this workshop, you'll need:
 
    - [ChatGPT](chatgpt.md) (Free or Plus)
    - [Claude](claude.md) (Free or Pro)
-   - [Google Gemini](gemini.md) (Free or Advanced)
+   - [Google Gemini](gemini.md) (Free or AI Pro)
    - [Microsoft Copilot](microsoft.md) (with Microsoft 365)
 
 :material-check: **Optional for developers**: [GitHub](copilot.md) account with GitHub Copilot access

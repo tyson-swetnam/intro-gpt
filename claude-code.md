@@ -20,12 +20,12 @@ sources:
     title: Anthropic Cookbook
 generated:
   by: human:tswetnam
-  at: "2026-05-10T18:01:12Z"
+  at: "2026-09-30T00:00:00Z"
 verified:
   - by: human:tswetnam
     at: "2026-05-10T18:01:12Z"
 status: stable
-stale_after: "2026-11-01T00:00:00Z"
+stale_after: "2027-03-01T00:00:00Z"
 ---
 
 # Claude Code: Setup and Usage Tutorial
@@ -75,9 +75,9 @@ Claude Code acts as a pair programmer that understands context, writes code, cre
     
     Other popular options include:
      
-    [**:material-google: Google Gemini CLI**](https://geminicli.com/){:target="_blank"}
+    [**:material-google: Google Antigravity CLI**](https://antigravity.google/){:target="_blank"} (formerly the Gemini CLI free tier; the open-source [Gemini CLI](https://github.com/google-gemini/gemini-cli){:target="_blank"} still works with an API key)
     
-    [**:fontawesome-brands-openai: ChatGPT Codex**](https://chat.openai.com/codex){:target="_blank"}
+    [**:fontawesome-brands-openai: OpenAI Codex**](https://github.com/openai/codex){:target="_blank"}
     
     [**:simple-opensourceinitiative: OpenCode.ai**](https://opencode.ai){:target="_blank"}
     
@@ -108,7 +108,7 @@ Claude Code represents the evolution of AI-assisted development—moving beyond 
     | Feature | Claude Code CLI | Claude Code VS Code Extension |
     |---------|----------------|------------------------------|
     | **Platform** | :simple-gnubash: Terminal/Command Line | :material-microsoft-visual-studio-code: VS Code Editor |
-    | **Installation** | :simple-gnubash: `npm install -g @anthropic-ai/claude` | VS Code Extensions Marketplace |
+    | **Installation** | :simple-gnubash: `npm install -g @anthropic-ai/claude-code` | VS Code Extensions Marketplace |
     | **Interface** | Text-based conversations in terminal | Integrated chat panel + inline edits |
     | **File Editing** | Creates/modifies files via CLI commands | Direct in-editor modifications |
     | **Context Awareness** | Full project directory access | VS Code workspace integration |
@@ -132,12 +132,12 @@ Claude Code represents the evolution of AI-assisted development—moving beyond 
 
 #### Option 1: Claude.ai
 
-**Claude Pro** (\$20/month), **Claude Max** (\$100/month, 5x Pro), **Claude Max** (\$200/month, 20x Pro) 
+**Claude Pro** (\$20/month), **Claude Max** (\$100/month, 5x Pro), **Claude Max** (\$200/month, 20x Pro). **Team Standard/Premium and Enterprise also include Claude Code.**
 
-- Access to Claude Code CLI and VS Code Extension
+- Access to Claude Code in the terminal, VS Code/JetBrains, the desktop app, and the web
 - Extended usage limits (5x more than free tier)
 - Priority access during high-traffic periods
-- Access to all Claude models (Sonnet, Opus, Haiku)
+- Access to all Claude models (Fable, Opus, Sonnet, Haiku)
 - Early access to new features
 
 **Best for**: Individual developers and frequent users
@@ -156,11 +156,12 @@ For programmatic access and integration:
 **Best for**: Teams, developers who want fine-grained control, batch processing, or integration with other tools
 
 !!! info "API Pricing by tier"
-    Per million tokens, as of May 2026 (see [docs.claude.com](https://docs.claude.com/en/docs/about-claude/models){target=_blank} for current rates):
+    Per million tokens, as of September 2026 (see the [models overview](https://platform.claude.com/docs/en/about-claude/models/overview){target=_blank} for current rates):
 
-    - **Sonnet** (balanced): $3 input / $15 output
-    - **Opus** (flagship, Opus 4.5+): $5 input / $25 output
-    - **Haiku** (Haiku 4.5, fast & cost-efficient): $1 input / $5 output
+    - **Claude Fable 5.1** (`claude-fable-5-1`, frontier): $10 input / $50 output
+    - **Claude Opus 5.5** (`claude-opus-5-5`, flagship): $4 input / $20 output
+    - **Claude Sonnet 5.5** (`claude-sonnet-5-5`, balanced): $2 input / $10 output
+    - **Claude Haiku 4.5** (`claude-haiku-4-5`, fast & cost-efficient): $1 input / $5 output
 
     For most coding tasks, the Sonnet tier provides the best balance of capability and cost.
 
@@ -2945,7 +2946,7 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Install Claude Code
-RUN npm install -g @anthropic-ai/claude
+RUN npm install -g @anthropic-ai/claude-code
 
 # Install GitHub CLI
 RUN curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | \
@@ -2991,7 +2992,7 @@ Common issues and their solutions.
 
 ### Installation Problems
 
-**Issue**: `npm install -g @anthropic-ai/claude` fails
+**Issue**: `npm install -g @anthropic-ai/claude-code` fails
 
 **Solutions**:
 
@@ -3012,7 +3013,7 @@ Common issues and their solutions.
 
 3. **Try without global:**
    ```bash
-   npx @anthropic-ai/claude --version
+   npx @anthropic-ai/claude-code --version
    ```
 
 4. **Permissions issue:**
@@ -3125,7 +3126,7 @@ Common issues and their solutions.
 
 2. **Use faster model:**
    ```bash
-   You: /model claude-haiku-latest  # alias; pin a dated ID for production — see https://docs.claude.com/en/docs/about-claude/models
+   You: /model claude-haiku-4-5  # current IDs: https://platform.claude.com/docs/en/about-claude/models/overview
    ```
 
 3. **Close unnecessary files (VS Code):**
@@ -3371,7 +3372,7 @@ jobs:
           node-version: '18'
 
       - name: Install Claude Code
-        run: npm install -g @anthropic-ai/claude
+        run: npm install -g @anthropic-ai/claude-code
 
       - name: Run Code Review
         env:

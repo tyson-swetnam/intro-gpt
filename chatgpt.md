@@ -2,32 +2,35 @@
 type: Setup Guide
 title: OpenAI ChatGPT
 description: >-
-  Set up a ChatGPT account, compare subscription tiers from Free to Pro and
-  Enterprise, and create OpenAI API keys for programmatic access.
+  Set up a ChatGPT account, compare the September 2026 plans from Free and Go
+  to the Pro tiers, Business, and Edu, and create OpenAI API keys.
 resource: https://tyson-swetnam.github.io/intro-gpt/chatgpt/
 tags: [setup, openai, pricing]
 sources:
   - resource: https://openai.com/chatgpt/pricing/
     title: ChatGPT pricing
-  - resource: https://openai.com/api/pricing/
-    title: OpenAI API Pricing
+  - resource: https://developers.openai.com/api/docs/pricing
+    title: OpenAI API pricing
   - resource: https://platform.openai.com/docs/models
     title: OpenAI models documentation
   - resource: https://platform.openai.com/docs/overview
     title: OpenAI API Documentation
   - resource: https://github.com/openai/openai-cookbook
     title: OpenAI Cookbook
-  - resource: https://arxiv.org/abs/2303.08774
-    title: GPT-4 Technical Report
-    author: OpenAI
+  - resource: https://openai.com/index/chatgpt-for-teachers/
+    title: ChatGPT for Teachers
+  - resource: https://openai.com/chatgpt/education/
+    title: ChatGPT Edu
+  - resource: https://prism.openai.com/
+    title: OpenAI Prism
 generated:
   by: human:tswetnam
-  at: "2026-05-10T19:02:57Z"
+  at: "2026-09-30T00:00:00Z"
 verified:
   - by: human:tswetnam
     at: "2026-05-10T19:02:57Z"
 status: stable
-stale_after: "2026-11-01T00:00:00Z"
+stale_after: "2027-03-01T00:00:00Z"
 ---
 
 # :fontawesome-brands-openai: OpenAI ChatGPT
@@ -56,7 +59,7 @@ ChatGPT is powered by a family of large language models (LLMs) spanning flagship
 
 **Initiate Upgrade:**
 
-   - Click **"Upgrade to Plus"** ($20/mo), or **"Upgrade to Pro"** ($200/mo).
+   - Click **"Upgrade to Plus"** ($20/mo) or one of the Pro tiers ($100, $200, or $500/mo).
    - A pricing page will appear with current subscription options.
 
 !!! Info "Compare ChatGPT with Other AI Platforms"
@@ -77,53 +80,54 @@ ChatGPT is powered by a family of large language models (LLMs) spanning flagship
 
 ## ChatGPT Subscription Plans
 
-!!! info "Pricing tiers, as of May 2026 (check [OpenAI's pricing page](https://openai.com/chatgpt/pricing/){target=_blank} for current rates)"
+!!! info "Pricing tiers, as of September 2026 (check [OpenAI's pricing page](https://openai.com/chatgpt/pricing/){target=_blank} for current rates)"
 
     **Free Tier ($0)**
 
-    - Limited GPT-5.x access; reasoning models throttled
+    - GPT-5.6 Luna in chat; limited Codex access
     - Standard response speed
     - **Shows ads on US accounts** (rolled out Feb 9, 2026)
     - Good for casual users exploring AI capabilities
 
     **ChatGPT Go ($8/month)**
 
-    - Launched globally Jan 15, 2026
-    - Higher limits than Free
+    - About 10x the Free usage limits
     - Ads on US accounts
 
     **ChatGPT Plus ($20/month)**
 
-    - Priority access during peak hours
-    - Faster response speeds
-    - Access to flagship multimodal and reasoning-focused models
-    - Image generation
-    - File uploads, voice mode, and data analysis
-    - Custom GPTs and GPT Store access
-    - Advanced Voice mode with natural conversation
+    - GPT-5.6 Sol in chat; GPT-6 models in the Work and Codex surfaces
+    - Full deep research
+    - Codex (agentic coding)
+    - Image generation, file uploads, voice mode, and data analysis (sandboxed Python)
+    - No ads
 
-    **ChatGPT Pro ($100/month) `(verify)`**
+    **ChatGPT Pro ($100/month)**
 
-    - NEW tier launched April 9, 2026 (sits between Plus and $200) `(verify)`
-    - Higher limits than Plus, below the $200 Pro tier
+    - 5x Plus usage
+    - GPT-6 Pro (Astra) in chat
 
     **ChatGPT Pro ($200/month)**
 
-    - Everything in Plus
-    - ~20x Plus usage
-    - Unlimited access to frontier reasoning models
-    - Unlimited access to the flagship multimodal model
-    - Higher limits on advanced features
-    - Deep Research tool for comprehensive analysis
-    - Priority access to newest features
+    - 20x Plus usage
+    - New sign-ups were paused Sept 10–29, 2026 and have resumed with lower limits `(verify)`
 
-    **ChatGPT Team / Business ($25/user/month annual, or $30/user/month monthly)**
+    **ChatGPT Pro 500 ($500/month)**
+
+    - 25x Plus usage
+    - GPT-6 Astra Ultrafast
+    - Launched Sept 29, 2026 `(verify)`
+
+    **ChatGPT Business Standard ($25/seat/month, or $20/seat/month annual)**
 
     - Everything in Plus
     - Admin controls and workspace management
-    - Higher usage limits per user
     - Data excluded from training by default
-    - Minimum 2 users required
+    - Minimum 2 seats
+
+    **ChatGPT Business Premium ($125/seat/month, or $100/seat/month annual)**
+
+    - 5x Business Standard usage
 
     **ChatGPT Enterprise (Custom pricing)**
 
@@ -133,20 +137,33 @@ ChatGPT is powered by a family of large language models (LLMs) spanning flagship
     - Custom data retention policies
     - Priority support
 
-    **ChatGPT Edu** — contact sales
+    **ChatGPT Edu** — an institutional licence bought by the university (no individual student discount); see [openai.com/chatgpt/education](https://openai.com/chatgpt/education/){target=_blank}
 
-!!! note "Heads-up (May 2026)"
-    - The **Free tier shows ads on US accounts** (since Feb 9, 2026).
-    - **Sora discontinued.** OpenAI shut down the Sora web and app on April 26, 2026; the API will sunset September 24, 2026. Video generation in ChatGPT is in transition; a successor model ("Spud") is reportedly in development. For video work today, migrate to [Veo 3](https://deepmind.google/technologies/veo/){target=_blank}, [Runway](https://runwayml.com/){target=_blank}, or [Kling](https://klingai.com/){target=_blank}.
-    - A **new ChatGPT Pro $100/month tier** launched April 9, 2026, sitting between Plus and the $200 tier `(verify)`.
+    **Education and student offers**
 
-!!! info "API Pricing (per million tokens, May 2026) `(verify)`"
-    OpenAI's pricing page returned 403 at verification time; values below carry verify markers.
+    - **ChatGPT for Teachers:** free for verified US K-12 educators through June 2028 — [openai.com/index/chatgpt-for-teachers](https://openai.com/index/chatgpt-for-teachers/){target=_blank}
+    - **Back to School 2026:** verified US college students get 4 free months of Plus; claim by Oct 31, 2026 `(verify)` — [help.openai.com](https://help.openai.com/en/articles/20001493-chatgpt-back-to-school-offer-for-students){target=_blank}
+    - **Codex credits for students:** $100 in Codex credits for US/Canada university students — [developers.openai.com/community/students](https://developers.openai.com/community/students){target=_blank}
 
-    - **GPT-5.4** (flagship): $2.50 input / $15 output `(verify)`
-    - **GPT-5** (prev-gen flagship): $1.25 input / $10 output
-    - **GPT-5-mini**: $0.25 input / $2 output
-    - **o3 / o4-mini** (reasoning): ~$2.00 / $1.10 input rates `(verify)`
+!!! note "Heads-up (September 2026)"
+    - **Sora is fully discontinued.** OpenAI shut down the Sora web and app on April 26, 2026 and completed the API sunset on September 24, 2026; no successor has been named. For video work, use [Veo 3.1](https://deepmind.google/models/veo/){target=_blank}, [Runway](https://runwayml.com/){target=_blank}, or [Kling](https://kling.ai/){target=_blank}.
+    - **ChatGPT Atlas browser discontinued** on August 9, 2026; the browser agent moved into the ChatGPT desktop app and the Chrome extension.
+    - **GPT-6 Astra** was released September 2026 and **GPT-6.1 Sol** on September 29, 2026.
+    - **Custom GPTs are being retired** in favor of plugins (skills + apps + MCP), Enterprise first (December 2026), with consumer plans expected to follow `(verify)`.
+    - **Prism:** a free, LaTeX-native scientific-writing workspace at [prism.openai.com](https://prism.openai.com/){target=_blank} (launched January 2026 on GPT-5.2).
+
+!!! info "API Pricing (per million tokens, September 2026)"
+    Official rates from [developers.openai.com/api/docs/pricing](https://developers.openai.com/api/docs/pricing){target=_blank}; check that page for current rates.
+
+    - **GPT-6 Astra** (flagship): $10 input / $50 output (Ultrafast tier: $60 / $300)
+    - **GPT-6.1 Sol** (released Sept 29, 2026): $2 input / $10 output
+    - **GPT-6 Sol**: $2 input / $10 output
+    - **GPT-6 Luna** (cheapest): $0.10 input / $0.50 output
+    - **GPT-5.6 Sol**: $4 input / $20 output
+    - **GPT-5.6 Terra**: $2 input / $12 output
+    - **GPT-5.6 Luna**: $0.20 input / $1.20 output
+    - **GPT-5.3-Codex** (coding): $1.75 input / $14 output
+    - **GPT Image 2**: token-priced (about $0.05 per medium 1024px image) `(verify)`
 
 ## Using ChatGPT
 
@@ -159,18 +176,20 @@ ChatGPT is powered by a family of large language models (LLMs) spanning flagship
 - **Voice Mode:** Use voice input and receive spoken responses (Plus feature).
 - **Canvas:** Collaborative editing workspace for writing and coding projects.
 
-**Custom GPTs:**
+**Custom GPTs and plugins:**
 
-- **GPT Store:** Browse and use specialized GPTs created by OpenAI and the community.
-- **Create Your Own:** Build custom GPTs with specific instructions, knowledge, and capabilities.
+- **Custom GPTs are being retired** in favor of plugins — Enterprise workspaces first (December 2026), with consumer plans expected to follow `(verify)`. Existing GPTs and the GPT Store still work for now.
+- **Plugins** (since July 2026) bundle skills, apps, and MCP servers into one installable package; browse them in the Plugin Directory.
 - **Use Cases:** Research assistants, writing helpers, coding tutors, language learning, and more.
 
 **Advanced Features:**
 
 - **Web Browsing:** Search the internet for current information (enabled by default for Plus users).
-- **Sandboxed Python:** Run Python code, analyze data, create visualizations, and process files in a browser-based sandbox.
+- **Data analysis (sandboxed Python):** Run Python code, analyze data, create visualizations, and process files in a browser-based sandbox.
 - **GPT Image 1.5 / 2:** Generate and edit images from text descriptions (DALL-E 3 was sunset May 2026).
 - **Advanced Voice:** Natural, conversational voice interactions with low latency.
+- **Codex:** agentic coding in the cloud, terminal, and VS Code — included in every plan (limited on Free/Go).
+- **Deep research** (Plus and above): multi-step web research that returns a cited report.
 
 ---
 
@@ -216,7 +235,7 @@ from openai import OpenAI
 client = OpenAI(api_key="your-api-key")
 
 response = client.chat.completions.create(
-    model="<current-openai-model-id>",  # see https://platform.openai.com/docs/models
+    model="gpt-6-sol",  # or "gpt-6-luna" for cheap tasks; model names change — check https://developers.openai.com/api/docs/pricing
     messages=[
         {"role": "user", "content": "Hello, GPT!"}
     ]
@@ -230,7 +249,7 @@ print(response.choices[0].message.content)
 
 - **Documentation:** Visit the [OpenAI API Documentation](https://platform.openai.com/docs/overview){target=_blank} for guidance, code examples, and model parameters.
 
-- **Pricing:** Review the [OpenAI API Pricing](https://openai.com/api/pricing/){target=_blank} page for cost details, which are based on tokens processed.
+- **Pricing:** Review the [OpenAI API Pricing](https://developers.openai.com/api/docs/pricing){target=_blank} page for cost details, which are based on tokens processed.
 
 - **Rate Limits:** Familiarize yourself with [API rate limits](https://platform.openai.com/docs/guides/rate-limits){target=_blank} to prevent disruptions.
 

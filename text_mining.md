@@ -21,7 +21,7 @@ sources:
     title: arXiv Bulk Data
 generated:
   by: human:tswetnam
-  at: "2026-01-09T12:48:32-07:00"
+  at: "2026-09-30T00:00:00Z"
 verified:
   - by: human:tswetnam
     at: "2026-01-09T12:48:32-07:00"
@@ -46,7 +46,7 @@ This guide provides information on text mining resources
 
 - **[Constellate](https://constellate.org/){target=_blank}**: Constellate was the text analytics service from ITHAKA (JSTOR and Portico). It was a platform for teaching, learning, and performing text analysis using archival repositories of scholarly and primary source content. Constellate was sunset in June 2025.
 
-    *Access Note*: create a free account with your @arizona.edu email address to obtain full functionality of the platform.
+    *Access Note*: create a free account with your institutional email address to obtain full functionality of the platform.
 
 - **[Dimensions Plus API](https://www.dimensions.ai/){target=_blank}**: Dimensions Plus includes grants, publications, citations, alternative metrics, clinical trials, patents, and policy documents. Must register with NetID and Password and email support@dimensions.ai to enable API access. 
 

@@ -28,12 +28,12 @@ sources:
     title: "Genie 3: A new frontier for world models"
 generated:
   by: human:tswetnam
-  at: "2026-06-10T23:20:03Z"
+  at: "2026-09-30T00:00:00Z"
 verified:
   - by: human:tswetnam
     at: "2026-06-10T23:20:03Z"
 status: stable
-stale_after: "2026-11-01T00:00:00Z"
+stale_after: "2027-03-01T00:00:00Z"
 ---
 
 # The Landscape
@@ -62,7 +62,7 @@ stale_after: "2026-11-01T00:00:00Z"
 
 The generative AI landscape has transformed dramatically since the release of ChatGPT in November 2022. What began as text-generation models has exploded into a diverse ecosystem of platforms capable of creating text, images, video, code, and music—while also evolving from simple chatbots into sophisticated **agentic systems** that can autonomously complete complex tasks.
 
-This page provides an overview of the generative AI landscape as of May 2026, focusing on three key perspectives:
+This page provides an overview of the generative AI landscape as of September 2026, focusing on three key perspectives:
 
 1. **The Evolution of Foundation Models** - How we arrived at today's capable AI systems
 2. **Platform Comparison** - Choosing the right tool for your needs
@@ -128,7 +128,7 @@ The evolution of generative AI has progressed through distinct phases:
 
 - AI evolved from responding to acting
 - Systems can now plan, use tools, and complete multi-step tasks autonomously
-- Examples: Claude Code, GitHub Copilot Workspace, ChatGPT with Canvas
+- Examples: Claude Code, GitHub Copilot cloud agent, OpenAI Codex, ChatGPT with Canvas
 
 **Phase 4: Interactive World Models (Emerging)**
 
@@ -202,32 +202,32 @@ The AI landscape now includes dozens of platforms, each optimized for different 
 **📊 [Choosing the Right AI Platform](choose.md)** includes:
 
 - **Platform Comparison Tables** by use case (Chat, Research, Code, Image/Video)
-- **Agentic Browsers** - AI-powered web browsers (Perplexity Comet, Dia, Fellou, etc.)
+- **Agentic Browsers** - AI-powered web browsers (Perplexity Comet, Claude for Chrome, Dia, Fellou, etc.)
 - **API Pricing for Developers** - Token-level costs for Claude, Gemini, OpenAI, Mistral, etc.
 - **Educational Platforms** - IXL, Khan Academy, Codecademy, Duolingo, and more
 - **Student Discounts** - Special pricing for students and educators
 - **Federal Restrictions** - Important compliance information for US-based researchers
 
-All pricing verified **May 2026** (core AI vendors).
+All pricing verified **September 2026** (core AI vendors).
 
 ### Quick Recommendations
 
 **For Academic Research:**
 
-- **Literature Review**: Perplexity, Claude, ScholarAI, Consensus
-- **Data Analysis**: Claude (200K context), ChatGPT (Advanced Data Analysis)
-- **Writing Assistance**: Claude (strong reasoning), ChatGPT Plus (plugins)
-- **Citation Management**: NotebookLM (RAG capabilities)
+- **Literature Review**: Perplexity, Claude, Ai2 Asta, Edison Scientific (formerly FutureHouse), Consensus
+- **Data Analysis**: Claude (1M context), ChatGPT (data analysis)
+- **Writing Assistance**: Claude (strong reasoning), ChatGPT (Codex; plugins bundling skills, apps, and MCP servers)
+- **Citation Management**: Gemini Notebook (formerly NotebookLM; RAG capabilities)
 
 **For Education:**
 
-- **Students (Budget)**: Free options - HuggingFace Chat, Google AI Pro (1 yr free for students), Perplexity Education ($10/mo with SheerID verification)
+- **Students (Budget)**: HuggingChat Omni (free), Google AI Plus ($4.99/mo), Google AI Pro (free 12 months for US college students, claim by Dec 31, 2026), Perplexity Education Pro ($10/mo), GitHub Copilot Student (free)
 - **Teachers**: GitHub Copilot (free for educators), Claude (strong pedagogy), ChatGPT
 - **Tutoring**: Khan Academy (free AI tutor Khanmigo), Claude, ChatGPT
 
 **For Coding:**
 
-- **IDE Integration**: [Claude Code](claude-code.md), GitHub Copilot, Continue.dev
+- **IDE Integration**: [Claude Code](claude-code.md), GitHub Copilot, Cursor, OpenAI Codex, Google Antigravity
 - **Learning to Code**: ChatGPT (interactive execution), Replit AI
 - **Code Review**: Claude (strong analysis), GitHub Copilot
 - **See also**: Our [Vibe Coding guide](vibe.md) for detailed agentic coding workflows
@@ -235,9 +235,9 @@ All pricing verified **May 2026** (core AI vendors).
 **For Creative Work:**
 
 - **Images**: Midjourney (quality), ChatGPT Image (convenience), Stable Diffusion (control)
-- **Video**: Veo 3 (Google), Runway Gen-4.5, Kling AI (OpenAI's Sora was discontinued April 2026)
+- **Video**: Veo 3.1 (Google), Runway Gen-4.5, Kling 3.0 (OpenAI's Sora was discontinued April 2026)
 - **Music**: Suno, Udio
-- **Writing**: Claude (creative writing), ChatGPT, Jasper (marketing)
+- **Writing**: Claude (creative writing), ChatGPT
 
 ---
 
@@ -277,14 +277,14 @@ AI assistants that can search the web, execute code, or access plugins when prom
 
 **Capabilities**: Web search, calculations, code execution (sandboxed), API calls
 
-**Examples**: ChatGPT with plugins, Claude with MCP, Gemini with search
+**Examples**: ChatGPT with plugins (skills, apps, MCP), Claude with MCP, Gemini with search
 
 #### Level 3: Autonomous Task Completion
 Single agents that can complete multi-step tasks independently.
 
 **Capabilities**: Break down goals, iterate on solutions, use multiple tools in sequence
 
-**Examples**: Claude Code (with agentic coding), GitHub Copilot Workspace, Devin
+**Examples**: Claude Code (with agentic coding), GitHub Copilot cloud agent, OpenAI Codex, Devin / Devin Desktop (formerly Windsurf)
 
 **Use Cases**:
 - Writing and deploying a feature from a description
@@ -325,11 +325,22 @@ Several platforms now offer agentic capabilities beyond simple chat:
 - Integrated with [Model Context Protocol (MCP)](mcp.md) for tool extensibility
 - Best for: Complex refactoring, feature implementation, debugging
 
-**GitHub Copilot Workspace**
+**GitHub Copilot cloud agent**
 
-- Agentic coding environment in GitHub
+- Agentic coding environment in GitHub (Copilot Pro and above)
 - Plans implementation, edits multiple files, creates PRs
 - Best for: Issue resolution, feature development
+
+**OpenAI Codex**
+
+- Cloud, CLI, and IDE coding agent; included in all ChatGPT plans (limited on Free/Go)
+- Best for: Delegated coding tasks and pull-request-sized changes
+
+**Google Antigravity and Jules**
+
+- Antigravity: agentic IDE and CLI with a free individual tier (higher limits bundled with Google AI Pro and AI Ultra)
+- Jules: Google's asynchronous coding agent; 15 free tasks/day (100/day with AI Pro)
+- Best for: Gemini-centric development and background task delegation
 
 **ChatGPT with Canvas / Projects**
 
@@ -337,9 +348,10 @@ Several platforms now offer agentic capabilities beyond simple chat:
 - Can maintain context across sessions with Projects
 - Best for: Writing, planning, iterative document creation
 
-**Perplexity Comet / Dia / Fellou** (Agentic Browsers)
+**Perplexity Comet / Claude for Chrome / Dia / Fellou** (Agentic Browsers)
 
-- Browsers with AI agents that can navigate, extract data, complete forms
+- Browsers and browser extensions with AI agents that can navigate, extract data, complete forms
+- ChatGPT Atlas was discontinued Aug 9, 2026; its browser-agent work moved into ChatGPT and Codex
 - See [Agentic Browsers comparison](choose.md#agentic-browsers-ai-powered-web-browsers)
 
 **CrewAI / AutoGen** (Multi-Agent Frameworks)
@@ -412,7 +424,7 @@ World models matter because they're the missing piece between today's reactive a
 - **V-JEPA 2** (Meta) — learns physical-world dynamics from video and is used for robot planning.
 - **GAIA-1** (Wayve) — autonomous-driving world model that predicts how a driving scene unfolds given the ego-vehicle's actions.
 - **NVIDIA Cosmos** — open foundation models for "physical AI"; the platform layer being used to build world models for robotics and autonomous systems.
-- **Veo 3** (Google DeepMind) and **Sora** (OpenAI, discontinued April 2026) — video generators that learn implicit world physics. Their failure modes (object-permanence violations, gravity slips, hands with too many fingers) are diagnostic of how complete the implicit world model actually is. Sora pioneered this framing; the discontinuation reflected economics rather than technical failure (operating costs of $8–12M/month against under $2M/month in revenue).
+- **Veo 3.1** (Google DeepMind) and **Sora** (OpenAI, discontinued April 2026) — video generators that learn implicit world physics. Their failure modes (object-permanence violations, gravity slips, hands with too many fingers) are diagnostic of how complete the implicit world model actually is. Sora pioneered this framing; the discontinuation reflected economics rather than technical failure (operating costs of $8–12M/month against under $2M/month in revenue).
 
 A useful rule of thumb: if you can ask the system "what happens if I do X?" and the answer can be acted on, it's a world model. If you can only ask "what does this scene look like?", it's still generative video.
 
@@ -431,7 +443,7 @@ A useful rule of thumb: if you can ask the system "what happens if I do X?" and 
 
 An annually updated overview of the machine learning, AI, and data ecosystem—covering infrastructure, tools, applications, and industry trends.
 
-**[HuggingFace Arena LLM Leaderboard](https://lmarena.ai/leaderboard){target=_blank}**
+**[LMArena Leaderboard](https://lmarena.ai/leaderboard){target=_blank}**
 
 A community-driven leaderboard ranking AI models based on blind human evaluations (users vote on responses without knowing which model generated them).
 

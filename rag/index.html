@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="How retrieval-augmented generation grounds LLM answers in your documents, covering embeddings, vector databases, and tools like NotebookLM and OpenWebUI.">
+        <meta name="description" content="How retrieval-augmented generation grounds LLM answers in your documents: embeddings, vector databases, Gemini Notebook (formerly NotebookLM), OpenWebUI.">
       
       
         <meta name="author" content="UNM Center for Advanced Research Computing">
@@ -25,7 +25,7 @@
       
       
       <link rel="icon" href="../assets/unm.ico">
-      <meta name="generator" content="zensical-0.0.57">
+      <meta name="generator" content="zensical-0.0.67">
     
     
       
@@ -36,12 +36,12 @@
       
         
       
-      <link rel="stylesheet" href="../assets/stylesheets/modern/main.5da3a30f.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/modern/main.4ae390e2.min.css">
       
         
           
         
-        <link rel="stylesheet" href="../assets/stylesheets/modern/palette.812a03bb.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/modern/palette.96d1a7e4.min.css">
       
       
 
@@ -83,7 +83,7 @@
     <meta property="og:site_name" content="GPT 101">
     <meta property="og:url" content="https://tyson-swetnam.github.io/intro-gpt/rag/">
     <meta property="og:title" content="Retrieval Augmented Generation (RAG)">
-    <meta property="og:description" content="How retrieval-augmented generation grounds LLM answers in your documents, covering embeddings, vector databases, and tools like NotebookLM and OpenWebUI.">
+    <meta property="og:description" content="How retrieval-augmented generation grounds LLM answers in your documents: embeddings, vector databases, Gemini Notebook (formerly NotebookLM), OpenWebUI.">
     <meta property="og:image" content="https://tyson-swetnam.github.io/intro-gpt/assets/banner3_ai.png">
     <meta name="twitter:card" content="summary_large_image">
     <script type="application/ld+json">
@@ -91,10 +91,10 @@
       "@context": "https://schema.org",
       "@type": "LearningResource",
       "name": "Retrieval Augmented Generation (RAG)",
-      "description": "How retrieval-augmented generation grounds LLM answers in your documents, covering embeddings, vector databases, and tools like NotebookLM and OpenWebUI.",
+      "description": "How retrieval-augmented generation grounds LLM answers in your documents: embeddings, vector databases, Gemini Notebook (formerly NotebookLM), OpenWebUI.",
       "learningResourceType": "Research Guide",
-      "datePublished": "2026-05-09T19:15:29Z",
-      "dateModified": "2026-05-09T19:15:29Z",
+      "datePublished": "2026-09-30T00:00:00Z",
+      "dateModified": "2026-09-30T00:00:00Z",
       "url": "https://tyson-swetnam.github.io/intro-gpt/rag/",
       "encoding": {
         "@type": "MediaObject",
@@ -598,20 +598,21 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_1">
+              <span class="md-nav__icon md-icon"></span>
+              
   
   Home
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+              
+                
+                  
   
   
   
@@ -642,10 +643,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -676,10 +677,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -710,10 +711,11 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -769,18 +771,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_2">
+              <span class="md-nav__icon md-icon"></span>
+              
   
   Setup
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -811,10 +814,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -845,10 +848,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -879,10 +882,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -913,10 +916,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -947,10 +950,11 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -1004,18 +1008,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_3">
+              <span class="md-nav__icon md-icon"></span>
+              
   
   Prompt Engineering
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -1046,10 +1051,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1080,10 +1085,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1114,10 +1119,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1148,10 +1153,11 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -1207,18 +1213,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_4">
+              <span class="md-nav__icon md-icon"></span>
+              
   
   Education
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -1249,10 +1256,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1283,10 +1290,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1317,10 +1324,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1351,10 +1358,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1385,10 +1392,11 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -1465,18 +1473,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_5">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+            <label class="md-nav__title" for="__nav_5">
+              <span class="md-nav__icon md-icon"></span>
+              
   
   Research
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -1507,10 +1516,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1541,10 +1550,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1575,10 +1584,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1609,10 +1618,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1625,7 +1634,7 @@
   <span class="md-ellipsis">
     
   
-  NotebookLM
+  Gemini Notebook
 
     
   </span>
@@ -1643,10 +1652,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1677,10 +1686,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
     
@@ -2143,10 +2152,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2177,10 +2186,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2211,10 +2220,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2245,10 +2254,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2279,10 +2288,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2313,10 +2322,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2347,10 +2356,11 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -2406,18 +2416,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_6">
+              <span class="md-nav__icon md-icon"></span>
+              
   
   Ethics
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -2448,10 +2459,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2482,10 +2493,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2516,10 +2527,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2550,10 +2561,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2584,10 +2595,11 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -2643,18 +2655,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_7">
+              <span class="md-nav__icon md-icon"></span>
+              
   
   Tutorials
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -2685,10 +2698,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2719,10 +2732,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2753,10 +2766,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2787,10 +2800,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2821,10 +2834,11 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -3263,6 +3277,7 @@
                 
                   
 
+
 <h1 id="retrieval-augmented-generation-rag">Retrieval Augmented Generation (RAG)<a class="headerlink" href="#retrieval-augmented-generation-rag" title="Permanent link">&para;</a></h1>
 <p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
 <h2 id="what-is-rag">What is RAG?<a class="headerlink" href="#what-is-rag" title="Permanent link">&para;</a></h2>
@@ -3322,7 +3337,7 @@
 <h3 id="real-world-examples-of-rag">Real-World Examples of RAG<a class="headerlink" href="#real-world-examples-of-rag" title="Permanent link">&para;</a></h3>
 <p>You may already be using RAG without realizing it:</p>
 <ul>
-<li><strong><a href="../notebooklm/">NotebookLM</a></strong>: Google's research tool uses RAG to answer questions based only on your uploaded sources</li>
+<li><strong><a href="../notebooklm/">Gemini Notebook (formerly NotebookLM)</a></strong>: Google's research notebook uses RAG to answer questions based only on your uploaded sources</li>
 <li><strong>ChatGPT with file uploads</strong>: When you upload PDFs, ChatGPT retrieves relevant sections to answer your questions</li>
 <li><strong>Claude Projects</strong>: Custom knowledge bases that Claude references during conversations</li>
 <li><strong><a href="https://openwebui.com" target="_blank">OpenWebUI</a></strong>: Self-hosted interface with Knowledge collections for local, private RAG</li>
@@ -3445,7 +3460,7 @@
 </thead>
 <tbody>
 <tr>
-<td><strong><a href="../notebooklm/">NotebookLM</a></strong></td>
+<td><strong><a href="../notebooklm/">Gemini Notebook</a></strong></td>
 <td>Upload sources to a notebook</td>
 <td>Research, literature reviews, studying</td>
 </tr>
@@ -3460,7 +3475,7 @@
 <td>Long-form document analysis</td>
 </tr>
 <tr>
-<td><strong>Gemini Advanced</strong></td>
+<td><strong>Gemini (AI Pro)</strong></td>
 <td>Upload files or connect Google Drive</td>
 <td>Google Workspace integration</td>
 </tr>
@@ -3477,9 +3492,9 @@
 </tbody>
 </table>
 <div class="admonition example">
-<p class="admonition-title">Try It: RAG with NotebookLM</p>
+<p class="admonition-title">Try It: RAG with Gemini Notebook</p>
 <ol>
-<li>Go to <a href="https://notebooklm.google/" target="_blank">NotebookLM</a></li>
+<li>Go to <a href="https://notebook.google.com/" target="_blank">Gemini Notebook</a></li>
 <li>Create a new notebook</li>
 <li>Upload 2-3 research papers on a topic you are studying</li>
 <li>Ask questions like:<ul>
@@ -3659,7 +3674,7 @@
 <tr>
 <th>Feature</th>
 <th>OpenWebUI</th>
-<th>NotebookLM</th>
+<th>Gemini Notebook</th>
 <th>ChatGPT (Plus)</th>
 <th>Claude Projects</th>
 </tr>
@@ -3965,7 +3980,7 @@
 </ul>
 <h3 id="related-workshop-content">Related Workshop Content<a class="headerlink" href="#related-workshop-content" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong><a href="../notebooklm/">NotebookLM</a></strong> - Consumer-friendly RAG for research</li>
+<li><strong><a href="../notebooklm/">Gemini Notebook</a></strong> - Consumer-friendly RAG for research</li>
 <li><strong><a href="../text_mining/">Text Mining</a></strong> - Techniques for processing large text collections</li>
 <li><strong><a href="../ai_sandboxes/">AI Sandboxes</a></strong> - Setting up environments for custom RAG development</li>
 <li><strong><a href="../agentic/">Agentic AI</a></strong> - How RAG combines with autonomous AI agents</li>
@@ -4135,7 +4150,7 @@
 </footer>
       
     </div>
-    <div class="md-dialog" data-md-component="dialog">
+    <div class="md-dialog" data-md-component="dialog" role="status" aria-atomic="true">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
@@ -4143,10 +4158,14 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate":null,"base":"..","features":["navigation.instant","navigation.tracking","navigation.tabs","navigation.tabs.sticky","navigation.indexes","navigation.top","search.highlight","search.share","search.suggest","content.code.copy","content.code.prettify","content.tooltips"],"search":"../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
+      
+      
+        
+        
+      <script id="__config" type="application/json">{"annotate":null,"base":"..","features":["navigation.instant","navigation.tracking","navigation.tabs","navigation.tabs.sticky","navigation.indexes","navigation.top","search.highlight","search.share","search.suggest","content.code.copy","content.code.prettify","content.tooltips"],"redirect":null,"search":"../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","clipboard.error":"Could not copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
     
     
-      <script src="../assets/javascripts/bundle.49251538.min.js"></script>
+      <script src="../assets/javascripts/bundle.67a597eb.min.js"></script>
       
     
   </body>
