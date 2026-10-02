@@ -22,7 +22,7 @@ sources:
     title: Duolingo
 generated:
   by: human:tswetnam
-  at: "2026-05-09T19:43:45Z"
+  at: "2026-09-30T00:00:00Z"
 verified:
   - by: human:tswetnam
     at: "2026-05-09T19:43:45Z"
@@ -97,7 +97,7 @@ Here's how you can use AI to become a more effective self-tutor:
             introductory biology.
             ```
             
-        === "ChatGPT o1 Response"
+        === "ChatGPT (reasoning model) Response"
 
             Photosynthesis is like a plant’s way of making its own food using sunlight. Here’s a simple way to picture what happens:
 
@@ -867,7 +867,7 @@ For a comprehensive comparison of AI-powered educational platforms including IXL
 
 The table includes:
 - Subject areas and target audiences
-- Current pricing (verified May 2026 for core AI vendors; edu-tool pricing not re-verified — check vendor pages)
+- Current pricing (verified September 2026 for core AI vendors; edu-tool pricing not re-verified — check vendor pages)
 - Key features and capabilities
 - Links to all platforms
 

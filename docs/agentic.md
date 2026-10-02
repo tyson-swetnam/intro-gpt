@@ -15,7 +15,7 @@ sources:
     title: LangChain Agents
 generated:
   by: human:tswetnam
-  at: "2026-01-16T11:25:28-07:00"
+  at: "2026-09-30T00:00:00Z"
 verified:
   - by: human:tswetnam
     at: "2026-01-16T11:25:28-07:00"
@@ -77,7 +77,7 @@ The term **["vibe coding"](vibe.md)** describes one of the most prominent applic
 - **[:material-cursor-default-click: Cursor](vibe.md#cursor)** - Standalone editor with powerful agentic features
 - **[:material-robot: Cline](vibe.md#cline)** - Open-source VS Code extension pioneering "bring your own model" approach
 - **[:octicons-copilot-16: GitHub Copilot](vibe.md#github-copilot)** - Integrated agentic coding with GitHub workflows
-- **[:material-surfing: Windsurf](vibe.md#windsurf)** - Standalone editor with agentic inline features
+- **[:material-surfing: Devin Desktop (formerly Windsurf)](vibe.md#devin-desktop-formerly-windsurf)** - Standalone editor with agentic inline features
 
 These tools demonstrate agentic behavior by:
 

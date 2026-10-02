@@ -12,8 +12,8 @@ sources:
     title: Perplexity AI
   - resource: https://gemini.google.com/app
     title: Google Gemini Deep Research
-  - resource: https://notebooklm.google
-    title: Google NotebookLM
+  - resource: https://notebook.google.com/
+    title: Gemini Notebook (formerly NotebookLM)
   - resource: https://chatgpt.com/g/g-L2HknCZTC-scholar-ai
     title: ScholarAI custom GPT
   - resource: https://chatgpt.com/g/g-kZ0eYXlJe-scholar-gpt
@@ -25,7 +25,7 @@ sources:
     author: Jonas Degrave
 generated:
   by: human:tswetnam
-  at: "2026-05-10T18:01:12Z"
+  at: "2026-09-30T00:00:00Z"
 verified:
   - by: human:tswetnam
     at: "2026-05-10T18:01:12Z"
@@ -124,7 +124,7 @@ GPTs are excellent summarization tools. When coupled with large corpuses of publ
 
 [Google Deep Research](https://gemini.google.com/app) is positioning itself as a platform for in depth prompts on specific topics.
 
-[Google NotebookLM](https://notebooklm.google) allows you to personalize your research by providing your own literature or knowledge (files, images, audio).
+[Gemini Notebook (formerly NotebookLM)](https://notebook.google.com/){target=_blank} allows you to personalize your research by providing your own literature or knowledge (files, images, audio).
 
 ### Custom ChatGPTs for Literature Review
 

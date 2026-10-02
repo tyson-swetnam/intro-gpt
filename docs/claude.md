@@ -2,31 +2,35 @@
 type: Setup Guide
 title: Anthropic Claude
 description: >-
-  How to access Anthropic Claude via claude.ai, Claude Code, the desktop
-  app, and the API, plus MCP setup, subscription pricing, and model tiers.
+  How to access Anthropic Claude via claude.ai, Claude Code, the desktop app,
+  and the API, plus MCP setup, September 2026 plan pricing, and model tiers.
 resource: https://tyson-swetnam.github.io/intro-gpt/claude/
 tags: [setup, anthropic, pricing, mcp]
 sources:
-  - resource: https://docs.claude.com/en/docs/about-claude/models
-    title: Anthropic models documentation
-  - resource: https://docs.anthropic.com/
+  - resource: https://platform.claude.com/docs/en/about-claude/models/overview
+    title: Claude models overview
+  - resource: https://claude.com/pricing
+    title: Claude pricing
+  - resource: https://docs.claude.com/
     title: Claude Documentation
   - resource: https://modelcontextprotocol.io
     title: Model Context Protocol
   - resource: https://claude.ai/
     title: Claude.ai
-  - resource: https://docs.anthropic.com/en/docs/claude-code
+  - resource: https://code.claude.com/docs/en/overview
     title: Claude Code Documentation
   - resource: https://github.com/anthropics/anthropic-cookbook
     title: Anthropic Cookbook
+  - resource: https://claude.com/solutions/education
+    title: Claude for Education
 generated:
   by: human:tswetnam
-  at: "2026-05-09T19:43:45Z"
+  at: "2026-09-30T00:00:00Z"
 verified:
   - by: human:tswetnam
     at: "2026-05-09T19:43:45Z"
 status: stable
-stale_after: "2026-11-01T00:00:00Z"
+stale_after: "2027-03-01T00:00:00Z"
 ---
 
 # :simple-claude: Anthropic Claude
@@ -43,11 +47,11 @@ There are multiple ways to access Claude:
    *   **Sign up:** Create an account using your email address or with a Google account
    *   **Log in:** If you already have an account, log in with your credentials
 
-**2. Claude Code (VS Code Extension):**
+**2. Claude Code (terminal, VS Code/JetBrains, desktop app, and web):**
 
-   *   **Install:** Search for "Claude Code" in VS Code Extensions marketplace or visit [claude.ai/code](https://claude.ai/code){target=_blank}
-   *   **Features:** AI pair programming, code generation, debugging, and refactoring directly in VS Code
-   *   **Authentication:** Requires Anthropic API key or Claude Pro subscription
+   *   **Install:** `curl -fsSL https://claude.ai/install.sh | bash` (recommended) or `npm install -g @anthropic-ai/claude-code`, then run `claude` in your project folder; also available as a VS Code / JetBrains extension, in the Claude desktop app, and on the web at [claude.ai/code](https://claude.ai/code){target=_blank}. Docs: [code.claude.com/docs](https://code.claude.com/docs/en/overview){target=_blank}
+   *   **Features:** Agentic pair programming — reads your codebase, writes and refactors code across files, runs commands, and manages Git
+   *   **Authentication:** Included with Pro, Max, Team, and Enterprise plans, or use an API key
 
 **3. Claude Desktop App:**
 
@@ -59,7 +63,7 @@ There are multiple ways to access Claude:
 
    *   **Sign Up:** Go to [https://console.anthropic.com/](https://console.anthropic.com/){target=_blank} to create an account
    *   **API Key:** Generate an API key from your console dashboard
-   *   **Documentation:** [https://docs.anthropic.com/](https://docs.anthropic.com/){target=_blank}
+   *   **Documentation:** [https://docs.claude.com/](https://docs.claude.com/){target=_blank}
 
 !!! Warning "**Treat your API key like a password**" 
     Do not share it publicly or commit it to version control platforms (like GitHub).
@@ -112,33 +116,39 @@ The Model Context Protocol is an open standard that enables Claude to interact w
 
 **Learn More:** [modelcontextprotocol.io](https://modelcontextprotocol.io){target=_blank}
 
-!!! info "Subscription Plans and Pricing"
+!!! info "Subscription Plans and Pricing (as of September 2026 — check [claude.com/pricing](https://claude.com/pricing){target=_blank} for current rates)"
 
-    *   **Claude Free:** Access to the Sonnet tier with usage limits
-    *   **Claude Pro ($20/month):**
+    *   **Claude Free ($0):** Access to the current Sonnet-tier model with usage limits
+    *   **Claude Pro ($20/month, or $17/month annual):**
         - 5x more usage vs free tier
-        - Access to the Opus and Haiku tiers
+        - Includes Claude Code, Claude in Chrome, Claude Science, and Projects
+        - Access to the Opus tier
         - Priority access during high-traffic periods
         - Early access to new features
-        - Includes Claude Code
     *   **Claude Max ($100/month, 5x Pro; $200/month, 20x Pro):**
         - Extended usage limits
         - Priority access to newest models
-    *   **Claude Team Standard ($25/user/month, 5–150 users):**
-        - Everything in Pro (does NOT include Claude Code)
+    *   **Claude Team Standard ($25/seat/month, or $20/seat/month annual):**
+        - Everything in Pro, **including Claude Code**
         - SAML SSO and admin controls
         - Central billing and administration
         - Team collaboration features
-    *   **Claude Team Premium ($125/seat/month, or $100/seat/month annual; 5-seat min) `(verify)`:**
+    *   **Claude Team Premium ($125/seat/month, or $100/seat/month annual):**
         - 5x Team Standard usage
-        - Includes Claude Code `(verify)`
-    *   **Claude Enterprise:** Custom pricing — contact sales
-    *   **API Pricing (per million tokens, as of May 2026 — check [docs.claude.com](https://docs.claude.com/en/docs/about-claude/models){target=_blank} for current rates):**
-        - Sonnet (balanced): $3 input / $15 output
-        - Opus (flagship, Opus 4.5+): $5 input / $25 output
-        - Haiku (Haiku 4.5, fast & cost-efficient): $1 input / $5 output
-        - Prompt caching: 90% discount on cache reads (0.10x); cache write 1.25x (5min) or 2x (1hr)
-        - Batch API: 50% off input + output
+    *   **Claude Enterprise ($20/seat/month billed annually, plus usage at API rates):** contact sales
+    *   **Claude for Education:** institutional plans with learning mode, Claude Code, and API access; there is no individual student discount — see [claude.com/solutions/education](https://claude.com/solutions/education){target=_blank}
+    *   **For researchers:**
+        - [Anthropic AI for Science](https://support.claude.com/en/articles/11199177-anthropic-s-ai-for-science-program){target=_blank}: up to $20,000 in API credits for 6 months
+        - [Team plan for scientists](https://claude.com/programs/team-plan-for-scientists){target=_blank}: PIs get free Team Standard seats and Premium seats at $15/seat for 12 months
+    *   **API Pricing (per million tokens, as of September 2026 — check the [models overview](https://platform.claude.com/docs/en/about-claude/models/overview){target=_blank} for current rates):**
+        - Claude Fable 5.1 (`claude-fable-5-1`, frontier): $10 input / $50 output
+        - Claude Opus 5.5 (`claude-opus-5-5`, released Sept 22, 2026): $4 input / $20 output
+        - Claude Sonnet 5.5 (`claude-sonnet-5-5`, released Sept 28, 2026): $2 input / $10 output
+        - Claude Haiku 4.5 (`claude-haiku-4-5`, fast & cost-efficient): $1 input / $5 output
+        - Context window: 1M tokens on Fable, Opus, and Sonnet; 200K on Haiku 4.5
+        - Prompt caching: cache reads cost 10% of the input price (5% on Opus 5.5, 2.5% on Fable 5.1); cache writes 1.25x (5 min) or 2x (1 hr)
+        - Batch API: 50% off input and output
+        - Also available on Amazon Bedrock, Google Cloud Vertex AI, and Microsoft Foundry
 
     **Compare with other AI platforms:** See [Choosing the Right AI Platform](choose.md) for detailed comparisons with ChatGPT, Gemini, and more.
 
@@ -152,19 +162,19 @@ The Model Context Protocol is an open standard that enables Claude to interact w
 *   **Artifacts:** Claude can create and edit code, documents, and diagrams in a dedicated panel
 *   **File Uploads:** Upload images, PDFs, and text files (up to 5 files, 10MB each)
 
-**Claude Code (VS Code Extension):**
+**Claude Code (terminal, VS Code/JetBrains, desktop app, and web):**
 
-*   **Installation:** 
-    1. Open VS Code
-    2. Go to Extensions (Ctrl/Cmd + Shift + X)
-    3. Search for "Claude Code"
-    4. Click Install
+*   **Installation:**
+    1. Run `curl -fsSL https://claude.ai/install.sh | bash` (recommended) or `npm install -g @anthropic-ai/claude-code`
+    2. Open a terminal in your project folder and run `claude`
+    3. Optionally install the "Claude Code" extension for VS Code or JetBrains, or use it from the Claude desktop app or [claude.ai/code](https://claude.ai/code){target=_blank}
+    4. Sign in with your Claude account (Pro, Max, Team, or Enterprise) or an API key
 *   **Features:**
-    - Inline code completion
-    - Chat interface within VS Code
-    - Code explanation and refactoring
+    - Agentic coding: reads, writes, and refactors code across multiple files
+    - Runs tests and shell commands and manages Git through conversation
+    - Chat panel and inline edits in VS Code and JetBrains
     - Multi-file context awareness
-    - Terminal command suggestions
+    - Full walkthrough: [Claude Code tutorial](claude-code.md) and [code.claude.com/docs](https://code.claude.com/docs/en/overview){target=_blank}
 
 **Claude Desktop App:**
 
@@ -187,7 +197,7 @@ The Model Context Protocol is an open standard that enables Claude to interact w
     client = Anthropic(api_key="your-api-key")
     
     response = client.messages.create(
-        model="claude-sonnet-latest",  # alias; for production, pin to a dated ID — see https://docs.claude.com/en/docs/about-claude/models
+        model="claude-sonnet-5-5",  # current IDs: https://platform.claude.com/docs/en/about-claude/models/overview
         max_tokens=1000,
         messages=[
             {"role": "user", "content": "Hello, Claude!"}
@@ -212,48 +222,47 @@ Claude is a family of large language models (LLMs) developed by Anthropic, a com
 *   **Helpful and Honest Responses:** Designed with Constitutional AI for safer, more aligned outputs
 *   **Advanced Reasoning:** Excels at complex analysis, math, and multi-step problem-solving
 *   **Strong Coding Abilities:** Excellent for software development, debugging, and code review
-*   **Large Context Window:** Up to 200,000 tokens (approximately 150,000 words or 500 pages)
+*   **Large Context Window:** 1M tokens (about 750,000 words) on current models
 *   **Vision Capabilities:** Can analyze images, charts, diagrams, and screenshots
 
 ## Claude Model Family
 
-Anthropic publishes Claude in three tiers. For an authoritative, up-to-date list of model IDs, see the [Anthropic models documentation](https://docs.claude.com/en/docs/about-claude/models){target=_blank}.
+Anthropic publishes Claude in tiers. As of September 2026 the current lineup is **Fable 5.1**, **Opus 5.5**, **Sonnet 5.5**, and **Haiku 4.5**. For an authoritative, up-to-date list of model IDs, see the [Claude models overview](https://platform.claude.com/docs/en/about-claude/models/overview){target=_blank}.
 
-*   **Sonnet:**
-    - Balanced tier
-    - Best for coding, analysis, and creative tasks
-    - Excellent performance-to-cost ratio
-    - Alias: `claude-sonnet-latest` (pin a dated ID for production)
+*   **Fable (Claude Fable 5.1):**
+    - Frontier tier — Anthropic's most capable model, for the hardest reasoning and long-running agentic tasks
+    - Model ID: `claude-fable-5-1`
 
-*   **Opus:**
-    - Flagship tier
-    - Best for complex reasoning and advanced tasks
-    - Highest intelligence and capability
-    - Alias: `claude-opus-latest` (pin a dated ID for production)
+*   **Opus (Claude Opus 5.5):**
+    - Flagship tier — complex reasoning and advanced coding at a lower price than Fable
+    - Model ID: `claude-opus-5-5`
 
-*   **Haiku:**
-    - Fast and cost-effective tier
-    - Great for simple tasks and high-volume applications
-    - Optimized for speed and efficiency
-    - Alias: `claude-haiku-latest` (pin a dated ID for production)
+*   **Sonnet (Claude Sonnet 5.5):**
+    - Balanced tier — best for everyday coding, analysis, and creative tasks, with an excellent performance-to-cost ratio
+    - Model ID: `claude-sonnet-5-5`
+
+*   **Haiku (Claude Haiku 4.5):**
+    - Fast, cost-effective tier — great for simple tasks and high-volume applications
+    - Model ID: `claude-haiku-4-5`
 
 !!! note "Model Selection"
-    The Sonnet tier is recommended for most use cases as it offers the best combination of capability, speed, and cost. Use Opus for tasks requiring maximum intelligence and reasoning, and Haiku for high-volume, simple tasks.
+    The Sonnet tier is recommended for most use cases as it offers the best combination of capability, speed, and cost. Use Opus or Fable for tasks requiring maximum intelligence and reasoning, and Haiku for high-volume, simple tasks.
 
 
 ## Further Resources
 
 *   **Anthropic Website:** [https://www.anthropic.com/](https://www.anthropic.com/){target=_blank}
-*   **Claude Documentation:** [https://docs.anthropic.com/](https://docs.anthropic.com/){target=_blank}
-*   **API Reference:** [https://docs.anthropic.com/en/api/](https://docs.anthropic.com/en/api/){target=_blank}
-*   **Prompt Engineering Guide:** [https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering){target=_blank}
-*   **Claude Code Documentation:** [https://docs.anthropic.com/en/docs/claude-code](https://docs.anthropic.com/en/docs/claude-code){target=_blank}
+*   **Claude Documentation:** [https://docs.claude.com/](https://docs.claude.com/){target=_blank}
+*   **API Reference:** [https://docs.claude.com/en/api/](https://docs.claude.com/en/api/){target=_blank}
+*   **Prompt Engineering Guide:** [https://docs.claude.com/en/docs/build-with-claude/prompt-engineering](https://docs.claude.com/en/docs/build-with-claude/prompt-engineering){target=_blank}
+*   **Claude Code Documentation:** [https://code.claude.com/docs/en/overview](https://code.claude.com/docs/en/overview){target=_blank}
+*   **Pricing:** [https://claude.com/pricing](https://claude.com/pricing){target=_blank}
 *   **Model Context Protocol:** [https://modelcontextprotocol.io](https://modelcontextprotocol.io){target=_blank}
 *   **Anthropic Cookbook:** [https://github.com/anthropics/anthropic-cookbook](https://github.com/anthropics/anthropic-cookbook){target=_blank}
 *   **Community Discord:** [https://discord.gg/anthropic](https://discord.gg/anthropic){target=_blank}
 
 !!! tip "Getting Started Recommendations"
     1. Start with the free tier at [claude.ai](https://claude.ai) to explore Claude's capabilities
-    2. For developers, try Claude Code in VS Code for an enhanced coding experience
+    2. For developers, try Claude Code in your terminal or VS Code for an enhanced coding experience
     3. Install Claude Desktop if you want MCP integration and native OS features
     4. Experiment with different models to find the right balance of capability and cost for your needs

@@ -26,7 +26,7 @@ sources:
     title: UC Academic Senate AI Workgroup Report
 generated:
   by: human:tswetnam
-  at: "2026-08-30T15:21:35-06:00"
+  at: "2026-09-30T00:00:00Z"
 verified:
   - by: human:tswetnam
     at: "2026-08-30T15:21:35-06:00"
@@ -156,7 +156,7 @@ Consider these approaches along a spectrum from prohibited to encouraged:
 
     *AI Policy: Prohibited Use*
 
-    "In this course, all work must be your own, completed without the assistance of AI tools such as ChatGPT, Claude, Gemini, or similar technologies. Using AI to generate, edit, or substantially assist with any assignment constitutes a violation of academic integrity and will be treated as plagiarism under the [University Code of Academic Integrity](https://deanofstudents.arizona.edu/policies/code-academic-integrity){target=_blank}.
+    "In this course, all work must be your own, completed without the assistance of AI tools such as ChatGPT, Claude, Gemini, or similar technologies. Using AI to generate, edit, or substantially assist with any assignment constitutes a violation of academic integrity and will be treated as plagiarism under the University Code of Academic Integrity (link your campus policy here; [example](https://deanofstudents.arizona.edu/policies/code-academic-integrity){target=_blank}).
 
     **Rationale:** This course focuses on developing your individual writing and critical thinking skills. Using AI shortcuts this development and prevents you from building essential capabilities.
 
@@ -445,7 +445,8 @@ AI enables faculty to create diverse teaching materials without specialized tech
 
 **AI Image Tools:**
 
-* **DALL-E 3 (via ChatGPT Plus):** Generate custom diagrams, illustrations, examples
+* **GPT Image 2 (via ChatGPT):** Generate custom diagrams, illustrations, examples
+* **Gemini Nano Banana (via Gemini):** Generate and edit images conversationally in the Gemini app
 * **Midjourney:** High-quality artistic images for presentations
 * **Adobe Firefly:** Commercial-safe AI images integrated with Adobe tools
 * **Stable Diffusion:** Open-source image generation (requires technical setup)
@@ -523,7 +524,7 @@ To ensure FERPA compliance:
 
 ### Academic Integrity
 
-- [Develop clear policies](https://libguides.library.arizona.edu/students-chatgpt/integrity){target=_blank} on the appropriate use of AI tools for all assignments and exams. The existing [Code of Academic Integrity](https://deanofstudents.arizona.edu/policies/code-academic-integrity){target=_blank} already explains how to deal with cases of plagiarism.
+- Develop clear policies on the appropriate use of AI tools for all assignments and exams (example: [University of Arizona library guide](https://libguides.library.arizona.edu/students-chatgpt/integrity){target=_blank}). Your institution's existing code of academic integrity (example: [University of Arizona](https://deanofstudents.arizona.edu/policies/code-academic-integrity){target=_blank}) already explains how to deal with cases of plagiarism.
 - **Note on AI Detection Tools:** Research shows AI detection tools are unreliable, producing false positives that disproportionately affect non-native English speakers [(Liang et al., 2023)](https://doi.org/10.1016/j.patter.2023.100779){target=_blank}; [(Weber-Wulff et al., 2024)](https://doi.org/10.1007/s40979-023-00146-z){target=_blank}. Rather than relying on detection, consider process-based assessment and AI-transparent assignments. See [Plagiarism & AI Detection](plagiarism.md) for comprehensive discussion of detection tools, their limitations, and alternative assessment approaches.
 
 ### Technical Security Measures
@@ -744,7 +745,9 @@ Point graduate students to these research-focused AI resources:
 
 ***
 
-## More Resources on AI at University of Arizona
+## Campus AI resources (examples)
+
+Your own campus likely has an equivalent — check with your teaching center or IT. UNM users: see [CARC](https://carc.unm.edu/){target=_blank}.
 
 [University of Arizona Artificial Intelligence](https://artificialintelligence.arizona.edu/){target=_blank} 
 
@@ -757,7 +760,7 @@ Point graduate students to these research-focused AI resources:
 
     Google offers self-paced courses on generative AI. 
     
-    Register with your @arizona.edu Google account and enroll in this 2-hour workshop: 
+    Register with your institutional or personal Google account and enroll in this 2-hour workshop: 
     [:simple-google: Generative AI For Educators](https://skillshop.exceedlms.com/student/path/1176018-generative-ai-for-educators){target=_blank} 
 
 !!! Info "Teaching with ChatGPT"
