@@ -2,11 +2,11 @@
 type: Education Guide
 title: AI in the Classroom
 description: >-
-  How AI is reshaping higher education: AI literacy frameworks, adoption
-  trends, AI-enhanced pedagogy, process-based assessment, and institutional
-  readiness.
+  How AI is reshaping higher education: AI literacy, 2026 research on
+  tutor-style versus answer-seeking AI use, pedagogy, assessment, and the
+  CS/DS shift.
 resource: https://tyson-swetnam.github.io/intro-gpt/education/
-tags: [education, academic-integrity, bias]
+tags: [education, research, academic-integrity, bias]
 sources:
   - resource: https://ai4k12.org/
     title: AI4K12 Initiative
@@ -18,17 +18,21 @@ sources:
   - resource: https://doi.org/10.1016/j.patter.2023.100779
     title: GPT Detectors Are Biased Against Non-Native English Writers
     author: Liang et al.
-  - resource: https://www.instructure.com/canvas
-    title: Canvas by Instructure
-  - resource: https://www.anthology.com/ai-design-assistant
-    title: Blackboard AI Design Assistant
-  - resource: https://docs.moodle.org/501/en/AI_tools
-    title: Moodle AI Tools
-  - resource: https://www.d2l.com/brightspace/performance/
-    title: D2L Brightspace Performance+
+  - resource: https://arxiv.org/abs/2607.08849
+    title: Experimental Evidence on the Learning Impact of Generative AI
+    author: Contractor and Reyes
+  - resource: https://arxiv.org/abs/2604.04721
+    title: AI Assistance Reduces Persistence and Hurts Independent Performance
+    author: Liu et al.
+  - resource: https://arxiv.org/pdf/2605.21629v1
+    title: "Faster Completion, Less Learning: Generative AI Reduced Study Time on Math Problems and the Knowledge They Build"
+    author: Rismanchian et al.
+  - resource: https://arunis100.medium.com/agent-science-and-engineering-the-future-of-cs-and-data-science-c70cd0e5e58a
+    title: "Agent Science and Engineering: The Future of CS and Data Science"
+    author: Arun Kumar
 generated:
   by: human:tswetnam
-  at: "2026-08-30T15:21:35-06:00"
+  at: "2026-10-03T00:00:00Z"
 verified:
   - by: human:tswetnam
     at: "2026-08-30T15:21:35-06:00"
@@ -202,6 +206,34 @@ Students develop skills in effective AI collaboration:
 *   **Research Assistance:**
     *   LLMs can assist researchers with literature reviews, data analysis, and even drafting research papers, accelerating the research process.
 
+!!! quote "Paradigm shift: Agent Science and Engineering in CS and Data Science"
+
+    In [Agent Science and Engineering: The Future of CS and Data Science](https://arunis100.medium.com/agent-science-and-engineering-the-future-of-cs-and-data-science-c70cd0e5e58a){target=_blank} (September 29, 2026), Arun Kumar, a professor in Computer Science and Engineering and the Halıcıoğlu Data Science Institute at UC San Diego, argues that AI agents are disrupting the intellectual foundations of both fields, not only the jobs: "CS and DS are converging into a new field — I call it Agent Science and Engineering (ASE)."
+
+    - **What shifts:** CS moves up the abstraction ladder, away from hand-written code; data science moves toward whole-system awareness. Most software engineers, data engineers, and data scientists become ASE professionals, while a smaller cohort keeps writing low-level code.
+    - **The new intellectual core:** earning trust in agents through evals, optimizations, and tradeoffs, drawing on statistics, HCI, formal verification, economics, and cognitive science.
+    - **What he asks of universities:** ASE degrees or pathways not buried under outdated prerequisites; real industry capstones; and metered access to both frontier and open models for every student, faculty member, and staff member, "akin to WiFi."
+
+    He warns that departments treating "all LLM-assisted learning" as cheating "are mistaking the forest for the trees." The research below shows why the distinction matters: how students use AI decides whether they learn.
+
+## What the Research Says: Tutor or Shortcut?
+
+A cluster of 2026 studies, covered by [The New York Times Magazine (September 29, 2026)](https://www.nytimes.com/interactive/2026/09/29/magazine/ai-chatbots-brain-development-study.html){target=_blank}, points the same way. Students who use a chatbot as a tutor, for explanations, hints, and checking their reasoning, do as well or better when tested on their own. Students who use it to produce answers or finished work do worse once the AI is gone.
+
+!!! abstract "Three 2026 studies"
+
+    - **[Experimental Evidence on the Learning Impact of Generative AI](https://arxiv.org/abs/2607.08849){target=_blank}** (Contractor and Reyes, Middlebury College). In a randomized experiment, AI access raised undergraduates' scores on unaided knowledge tests by 0.27 standard deviations, and the gain held a week later. Students who used AI to explain concepts wrote better essays on their own a week later; students who had AI generate text lost their short-run gains once it was removed.
+    - **[AI Assistance Reduces Persistence and Hurts Independent Performance](https://arxiv.org/abs/2604.04721){target=_blank}** (Liu, Christian, Dumbalska, Bakker, and Dubey). Across randomized trials with 1,222 people on math and reading tasks, about ten minutes of AI help improved assisted performance, but participants then did worse on their own and gave up more often. The losses were concentrated among people who used the AI for direct answers; those who asked for hints or clarification held steady or improved.
+    - **[Faster Completion, Less Learning](https://arxiv.org/pdf/2605.21629v1){target=_blank}** (Rismanchian, Uzun, Matayoshi, Cosyn, and Kurd-Misto). In ten years of data and 3.2 million interactions on the ALEKS math platform, time spent on AI-susceptible word problems fell 26.9% among college students after ChatGPT's release (31.3% among high-school students). On proctored retention questions, the odds of a correct answer fell 25%. The authors call this "cognitive surrender."
+
+    All three are 2026 preprints or discussion papers that had not yet completed journal peer review.
+
+!!! tip "What this means for teaching"
+
+    - **Design for the tutor pattern.** Ask students to attempt a problem first, then use AI for hints, explanations, or critique of their own work, not for the answer. See [AI Tutoring](tutoring.md) for student-facing prompts.
+    - **Assess some work without AI.** Gains that disappear when the AI is removed are not learning; in-class and proctored checks show what students can do alone. See [Process-Based Assessment](#process-based-assessment-strategies) below.
+    - **Prefer tutor-style modes.** Several platforms now offer learning or study modes built to guide rather than answer; see [Education & Research Offers](choose.md#education-research-offers-september-2026).
+
 ## Challenges and Ethical Considerations
 
 *   **Academic Integrity:**
@@ -217,6 +249,7 @@ Students develop skills in effective AI collaboration:
 *   **Over-Reliance on Technology:**
     *   There's a risk that over-reliance on AI tools could diminish the development of critical thinking, problem-solving, and independent learning skills among students.
     *   Maintaining a balance between leveraging AI and fostering human interaction and mentorship is crucial.
+    *   2026 studies show the risk depends on how students use AI; see [What the Research Says](#what-the-research-says-tutor-or-shortcut).
 *   **The Digital Divide:**
     *   Unequal access to technology and digital literacy can exacerbate existing inequalities, creating a digital divide between students who have access to and can effectively use AI tools and those who cannot.
     *   While many AI tools offer free tiers, premium features that provide competitive advantages may be cost-prohibitive for some students.

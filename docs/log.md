@@ -8,6 +8,10 @@ resource: https://tyson-swetnam.github.io/intro-gpt/log/
 
 # Log
 
+## 2026-10-03
+
+- **Update**: [AI in the Classroom](education.md) — new "What the Research Says: Tutor or Shortcut?" section on three 2026 studies of tutor-style versus answer-seeking AI use (via The New York Times Magazine), and an admonition on Arun Kumar's "Agent Science and Engineering" paradigm shift for CS and Data Science education.
+
 ## 2026-09-30
 
 - **Update**: September 2026 platform, subscription, and API refresh. [Choosing a Platform](choose.md) restructured with an "Education & Research Offers" section and a free-API-tier table; dormant or off-topic platforms retired (Jasper, Pi, Vicuna, Latimer, Merlin, Amazon Titan, OpenResearcher, StarCoder, Code Llama, Phind, Continue.dev, Scholar GPT/ScholarAI); current tools added (Cursor, OpenAI Codex, Google Antigravity and Jules, Devin Desktop, Kiro, Ai2 Asta, Edison Scientific, Undermind, SciSpace, OpenAI Prism, OpenRouter, Cerebras, xAI and Perplexity APIs); renames applied (NotebookLM → Gemini Notebook, Windsurf → Devin Desktop, Le Chat → Mistral Vibe, Azure AI Studio → Microsoft Foundry, HuggingChat → HuggingChat Omni, FutureHouse → Edison Scientific); Sora, ChatGPT Atlas, the Llama API, and GitHub Models marked discontinued.
