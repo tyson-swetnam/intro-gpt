@@ -29,7 +29,7 @@ Related OKF bundle: https://unm-carc.github.io/docs/llms.txt
 
 ## Education
 
-- [AI in the Classroom](https://tyson-swetnam.github.io/intro-gpt/education.md): How AI is reshaping higher education: AI literacy frameworks, adoption trends, AI-enhanced pedagogy, process-based assessment, and institutional readiness.
+- [AI in the Classroom](https://tyson-swetnam.github.io/intro-gpt/education.md): How AI is reshaping higher education: AI literacy, 2026 research on tutor-style versus answer-seeking AI use, pedagogy, assessment, and the CS/DS shift.
 - [Teaching with AI](https://tyson-swetnam.github.io/intro-gpt/teaching.md): Faculty guidance on AI-augmented course design, syllabus AI policies, automated grading, FERPA compliance, and mentoring graduate students.
 - [AI Tutoring: Student's Guide to Learning with AI](https://tyson-swetnam.github.io/intro-gpt/tutoring.md): How students can use ChatGPT, Claude, and Gemini as tutors: prompts for explanations, quizzes, and study plans, plus hallucination and integrity cautions.
 - [AI in Admissions and Job Recruiting](https://tyson-swetnam.github.io/intro-gpt/admissions.md): Guidance for ethical AI use in college admissions and job recruiting: application screening, essay brainstorming, interview prep, and disclosure norms.
