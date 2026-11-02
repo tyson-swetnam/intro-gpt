@@ -8,6 +8,10 @@ resource: https://tyson-swetnam.github.io/intro-gpt/log/
 
 # Log
 
+## 2026-11-01
+
+- **Update**: [Ethical & Legal Considerations](legal.md) — corrections checked against primary sources: EO 14110 was revoked by EO 14148 (January 20, 2025), not by *Removing Barriers* (EO 14179); EO 14110 adopted practices derived from the Blueprint rather than its principles wholesale, and no order rescinded the Blueprint itself; Alondra Nelson's OSTP title; *Magnifica Humanitas* addressees (¶16), length (245 paragraphs, not 235 pages), signing date, and presentation programme.
+
 ## 2026-10-03
 
 - **Update**: [AI in the Classroom](education.md) — new "What the Research Says: Tutor or Shortcut?" section on three 2026 studies of tutor-style versus answer-seeking AI use (via The New York Times Magazine), and an admonition on Arun Kumar's "Agent Science and Engineering" paradigm shift for CS and Data Science education.
