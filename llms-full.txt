@@ -14407,7 +14407,7 @@ The next global AI summit is scheduled for Geneva in the first half of 2027, hos
 
 ## Blueprint for an AI Bill of Rights
 
-How should the values that guide AI systems be set, and by whom? Two distinct answers have emerged: **corporate AI constitutions** written by AI companies for their own models (Anthropic's *Claude Constitution* is the canonical example), and **public AI bills of rights** developed through democratic processes (the White House *Blueprint for an AI Bill of Rights*, October 2022, is the leading example). Sociologist [Alondra Nelson](https://www.ias.edu/sss/faculty/nelson){target=_blank} — who led the Blueprint's development as acting director of the White House Office of Science and Technology Policy (OSTP) — argues in [*A civic grammar for AI rights*](https://www.science.org/doi/10.1126/science.aeh7153){target=_blank} (Science, 2026) that these two forms of foundational document do very different work, and that one of them is structurally insufficient as a source of democratic legitimacy.
+How should the values that guide AI systems be set, and by whom? Two distinct answers have emerged: **corporate AI constitutions** written by AI companies for their own models (Anthropic's *Claude Constitution* is the canonical example), and **public AI bills of rights** developed through democratic processes (the White House *Blueprint for an AI Bill of Rights*, October 2022, is the leading example). Sociologist [Alondra Nelson](https://www.ias.edu/sss/faculty/nelson){target=_blank} — who led the White House Office of Science and Technology Policy (OSTP) team that developed the Blueprint, as OSTP Deputy Director for Science and Society (from February 2022 she also performed the duties of OSTP director) — argues in [*A civic grammar for AI rights*](https://www.science.org/doi/10.1126/science.aeh7153){target=_blank} (Science, 2026) that these two forms of foundational document do very different work, and that one of them is structurally insufficient as a source of democratic legitimacy.
 
 A third category emerged in May 2026 with Pope Leo XIV's first encyclical [*Magnifica Humanitas*](#catholic-social-teaching-magnifica-humanitas-pope-leo-xiv-2026): a transnational moral institution speaking on behalf of 1.4 billion Catholics, claiming authority against both the technocratic paradigm and the states that abdicate the field. The encyclical is treated in its own section below.
 
@@ -14421,7 +14421,7 @@ The [**Blueprint for an AI Bill of Rights**](https://bidenwhitehouse.archives.go
 4. **Notice and Explanation** — knowing when an automated system is being used and how/why it affects you.
 5. **Human Alternatives, Consideration, and Fallback** — the ability to opt out and reach a human alternative when an automated system fails or causes harm.
 
-These principles were incorporated into President Biden's [October 2023 Executive Order on Safe, Secure, and Trustworthy AI](https://www.federalregister.gov/documents/2023/11/01/2023-24283/safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence){target=_blank}. The Executive Order was rescinded by President Trump's January 2025 [Removing Barriers to American Leadership in Artificial Intelligence](https://www.whitehouse.gov/presidential-actions/2025/01/removing-barriers-to-american-leadership-in-artificial-intelligence/){target=_blank}. The Blueprint itself was always non-binding guidance.
+President Biden's [October 2023 Executive Order on Safe, Secure, and Trustworthy AI](https://www.federalregister.gov/documents/2023/11/01/2023-24283/safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence){target=_blank} (EO 14110) drew on it, requiring federal agencies to follow "practices derived from OSTP's Blueprint for an AI Bill of Rights and the NIST AI Risk Management Framework" in their own use of AI. EO 14110 was revoked on January 20, 2025 by President Trump's [EO 14148, *Initial Rescissions of Harmful Executive Orders and Actions*](https://www.govinfo.gov/content/pkg/FR-2025-01-28/html/2025-01901.htm){target=_blank}; three days later, [Removing Barriers to American Leadership in Artificial Intelligence](https://www.whitehouse.gov/presidential-actions/2025/01/removing-barriers-to-american-leadership-in-artificial-intelligence/){target=_blank} (EO 14179) ordered a review of actions taken under "the revoked Executive Order 14110." The Blueprint itself was always non-binding guidance ("non-binding and does not constitute U.S. government policy"); no executive order names it, and it remains in the Biden White House archive.
 
 ### Corporate constitutions vs. public bills of rights
 
@@ -14446,7 +14446,7 @@ This pattern reflects what sociologists David Strang and John Meyer call **insti
 
 ### The Blueprint's "second life": cross-partisan diffusion
 
-Although rescinded at the federal level, the Blueprint, in Nelson's words, "has done what its metaphor suggests blueprints do: it has been built upon." State legislatures, governors, and advocacy organizations have produced their own AI bills of rights drawing directly from the five principles — often across explicitly opposed political coalitions:
+Although the executive order that drew on it was revoked, the Blueprint, in Nelson's words, "has done what its metaphor suggests blueprints do: it has been built upon." State legislatures, governors, and advocacy organizations have produced their own AI bills of rights drawing directly from the five principles — often across explicitly opposed political coalitions:
 
 - **Connecticut (2023):** Democratic Governor Ned Lamont signed legislation directing state policy-makers to develop their own AI Bill of Rights.
 - **Oklahoma (2024):** The Republican-controlled House of Representatives introduced and passed an AI Bill of Rights, though it was not ultimately codified into law.
@@ -14506,17 +14506,18 @@ What is missing, in Nelson's account, is the political will to extend existing a
     - Alondra Nelson, [Bluesky thread on these principles](https://bsky.app/profile/alondra.bsky.social/post/3mltfqoc7ok2y){target=_blank}
     - T. H. Marshall, "Citizenship and Social Class" (1950)
     - [Blueprint for an AI Bill of Rights](https://bidenwhitehouse.archives.gov/ostp/ai-bill-of-rights/){target=_blank} (White House OSTP, October 2022, archived)
-    - [EO 14110: Safe, Secure, and Trustworthy AI](https://www.federalregister.gov/documents/2023/11/01/2023-24283/safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence){target=_blank} (Biden, October 2023, rescinded January 2025)
-    - [Removing Barriers to American Leadership in AI](https://www.whitehouse.gov/presidential-actions/2025/01/removing-barriers-to-american-leadership-in-artificial-intelligence/){target=_blank} (Trump, January 2025)
+    - [EO 14110: Safe, Secure, and Trustworthy AI](https://www.federalregister.gov/documents/2023/11/01/2023-24283/safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence){target=_blank} (Biden, October 2023; revoked January 20, 2025)
+    - [EO 14148: Initial Rescissions of Harmful Executive Orders and Actions](https://www.govinfo.gov/content/pkg/FR-2025-01-28/html/2025-01901.htm){target=_blank} (Trump, January 20, 2025; Sec. 2(ggg) revokes EO 14110)
+    - [Removing Barriers to American Leadership in AI](https://www.whitehouse.gov/presidential-actions/2025/01/removing-barriers-to-american-leadership-in-artificial-intelligence/){target=_blank} (Trump, January 23, 2025)
     - Anthropic, [Claude's Constitution](https://www.anthropic.com/news/claudes-constitution){target=_blank}
 
 ## Catholic social teaching: *Magnifica Humanitas* (Pope Leo XIV, 2026)
 
-On May 25, 2026, Pope Leo XIV released [*Magnifica Humanitas*](https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html){target=_blank} ("Magnificent Humanity"), his first encyclical, addressed to Catholics and "every person of goodwill." The 235-page document treats artificial intelligence as the central moral question of the age and frames AI as a new industrial revolution requiring a parallel foundational moral response.
+On May 25, 2026, Pope Leo XIV released [*Magnifica Humanitas*](https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html){target=_blank} ("Magnificent Humanity"), his first encyclical, *On Safeguarding the Human Person in the Time of Artificial Intelligence*. It is addressed "to all the Catholic faithful, to all Christians and to all men and women of goodwill" (¶16). The document, 245 numbered paragraphs long, treats artificial intelligence as the central moral question of the age and frames AI as a new industrial revolution requiring a parallel foundational moral response.
 
-The signing date is deliberate: **May 15, 2026** is the **135th anniversary of Pope Leo XIII's *Rerum Novarum*** (1891), the foundational encyclical of modern Catholic social teaching, written to address the dignity of workers amid the 19th-century industrial revolution. Leo XIV explicitly places AI alongside that earlier disruption as a moment demanding renewed teaching.
+The encyclical is signed **May 15, 2026**, the **135th anniversary of Pope Leo XIII's *Rerum Novarum*** (1891), the foundational encyclical of modern Catholic social teaching, written to address the dignity of workers amid the 19th-century industrial revolution. Leo XIV explicitly places AI alongside that earlier disruption as a moment demanding renewed teaching.
 
-In a break with tradition, Pope Leo personally presented the encyclical at the Vatican alongside Chris Olah, co-founder of Anthropic — the first time a pontiff has presented an encyclical himself rather than delegating the task to cardinals.
+The encyclical was presented in the Vatican's Synod Hall on the day of its release. The [Vatican's announced programme](https://www.vaticannews.va/en/pope/news/2026-05/pope-leo-xiv-first-encyclical-magnifica-humanitas.html){target=_blank} listed five speakers — Cardinal Víctor Manuel Fernández, Cardinal Michael Czerny, theologian Anna Rowlands, Anthropic co-founder Christopher Olah, and Leocadie Lushombo — followed by closing remarks from Cardinal Secretary of State Pietro Parolin and then an address and blessing by Pope Leo XIV. Italian news agency ANSA reported that a pontiff attending and speaking at the presentation of his own encyclical was a first.
 
 ### Core teachings
 
@@ -14530,7 +14531,7 @@ In a break with tradition, Pope Leo personally presented the encyclical at the V
 
 - **"Disarm AI"** — withdraw AI from military applications and from purely economic interests; direct it to the common good.
 - **Stricter state and international regulation** of AI companies, not industry self-governance.
-- An explicit address to "every person of goodwill" extends the encyclical's claims of moral force beyond its Catholic audience — a move consistent with how *Laudato Si'* (2015, on climate) and the Vatican's *Antiqua et Nova* (January 2025, the Dicastery for the Doctrine of the Faith's earlier note on AI) sought ethical common ground beyond doctrinal lines.
+- An explicit address "to all men and women of goodwill" (¶16) extends the encyclical's claims of moral force beyond its Catholic audience — a move consistent with how *Laudato Si'* (2015, on climate) and the Vatican's *Antiqua et Nova* (January 2025, the Dicastery for the Doctrine of the Faith's earlier note on AI) sought ethical common ground beyond doctrinal lines.
 
 ### Convergence with Nelson's civic grammar
 
@@ -14560,7 +14561,7 @@ The current administration has focused most of its efforts on executive orders r
 
     **January 2025**
 
-    * [Removing Barriers to American Leadership in Artificial Intelligence, January 23, 2025](https://www.whitehouse.gov/presidential-actions/2025/01/removing-barriers-to-american-leadership-in-artificial-intelligence/){target=_blank} — rescinded Biden's October 2023 EO on Safe, Secure, and Trustworthy AI
+    * [Removing Barriers to American Leadership in Artificial Intelligence, January 23, 2025](https://www.whitehouse.gov/presidential-actions/2025/01/removing-barriers-to-american-leadership-in-artificial-intelligence/){target=_blank} — ordered a review of actions taken under Biden's October 2023 EO 14110 on Safe, Secure, and Trustworthy AI, which [EO 14148](https://www.govinfo.gov/content/pkg/FR-2025-01-28/html/2025-01901.htm){target=_blank} had revoked on January 20, 2025
 
     **April 2025**
 
@@ -19859,6 +19860,10 @@ Source: https://tyson-swetnam.github.io/intro-gpt/log.md
 ------------------------------------------------------------------------------
 
 # Log
+
+## 2026-11-01
+
+- **Update**: [Ethical & Legal Considerations](legal.md) — corrections checked against primary sources: EO 14110 was revoked by EO 14148 (January 20, 2025), not by *Removing Barriers* (EO 14179); EO 14110 adopted practices derived from the Blueprint rather than its principles wholesale, and no order rescinded the Blueprint itself; Alondra Nelson's OSTP title; *Magnifica Humanitas* addressees (¶16), length (245 paragraphs, not 235 pages), signing date, and presentation programme.
 
 ## 2026-10-03
 
