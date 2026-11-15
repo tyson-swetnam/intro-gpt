@@ -8,9 +8,9 @@ description: >-
 resource: https://tyson-swetnam.github.io/intro-gpt/
 tags: [workshop, prompt-engineering, education, research, ethics]
 sources:
-  - resource: https://www.go-fair.org/fair-principles/
+  - resource: https://www.gida-global.org/careprinciples
     title: FAIR Data Principles
-  - resource: https://www.gida-global.org/care
+  - resource: https://www.gida-global.org/careprinciples
     title: CARE Principles for Indigenous Data Governance
 generated:
   by: human:tswetnam
@@ -206,7 +206,7 @@ This workshop is maintained and taught by the [University of New Mexico Center f
 
 The workshop was originally developed at the University of Arizona by the [BIO5 Institute](https://bio5.org/){target=_blank}, [AI2S](https://responsibleai.arizona.edu/ai2s){target=_blank}, & [College of Information Science](https://infosci.arizona.edu){target=_blank}.
 
-This website follows the [FAIR](https://www.go-fair.org/fair-principles/){target=_blank} and [CARE](https://www.gida-global.org/care){target=_blank} data principles and hopes to help further open science.
+This website follows the [FAIR](https://www.go-fair.org/fair-principles/){target=_blank} and [CARE](https://www.gida-global.org/careprinciples){target=_blank} data principles and hopes to help further open science.
 
 All materials are freely available and licensed under [Creative Commons Attribution 4.0](http://creativecommons.org/licenses/by/4.0/).
 
